@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest.Entities
+﻿namespace AuxLabs.SimpleTwitch.Rest.Models
 {
     public enum AnalyticType
     {
