@@ -4,13 +4,16 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
 {
     public class EmoteTheme
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonPropertyName("dark")]
-        public EmoteFormat Dark { get; set; }
-        [JsonPropertyName("light")]
-        public EmoteFormat Light { get; set; }
+        public EmoteFormat Dark { get; init; } = default!;
 
-        [JsonConstructor]
-        public EmoteTheme(EmoteFormat dark, EmoteFormat light)
-            => (Dark, Light) = (dark, light);
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("light")]
+        public EmoteFormat Light { get; init; } = default!;
     }
 }

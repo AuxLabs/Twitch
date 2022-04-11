@@ -4,15 +4,22 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
 {
     public class Commercial
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonPropertyName("length")]
-        public int Length { get; set; }
-        [JsonPropertyName("message")]
-        public string Message { get; set; }
-        [JsonPropertyName("retry_after")]
-        public int RetryAfter { get; set; }
+        public int Length { get; init; } = default!;
 
-        [JsonConstructor]
-        public Commercial(int length, string msg, int retryAfter)
-            => (Length, Message, RetryAfter) = (length, msg, retryAfter);
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("message")]
+        public string Message { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("retry_after")]
+        public int RetryAfter { get; init; } = default!;
     }
 }

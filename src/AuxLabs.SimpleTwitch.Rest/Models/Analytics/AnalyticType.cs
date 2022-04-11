@@ -2,7 +2,7 @@
 {
     public enum AnalyticType
     {
-        None,
+        None = 0,
         OverviewV2
     }
 }

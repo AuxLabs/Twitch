@@ -1,8 +1,10 @@
 ﻿namespace AuxLabs.SimpleTwitch.Rest.Models
 {
-    public enum ProductType
+    public enum UserType
     {
         None = 0,
-        BitsInExtension
+        Staff,
+        Admin,
+        GlobalModerator
     }
 }

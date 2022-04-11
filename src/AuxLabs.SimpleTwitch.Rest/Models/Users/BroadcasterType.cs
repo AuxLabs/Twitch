@@ -1,8 +1,9 @@
 ﻿namespace AuxLabs.SimpleTwitch.Rest.Models
 {
-    public enum ProductType
+    public enum BroadcasterType
     {
         None = 0,
-        BitsInExtension
+        Partner, 
+        Affiliate
     }
 }

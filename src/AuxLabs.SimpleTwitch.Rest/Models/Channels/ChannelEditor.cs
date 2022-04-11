@@ -2,17 +2,24 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Models
 {
-    public class ChannelEditor
+    public record class ChannelEditor
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
-        [JsonPropertyName("user_name")]
-        public string UserName { get; set; }
-        [JsonPropertyName("created_at")]
-        public DateTime CreatedAt { get; set; }
+        public string UserId { get; init; } = default!;
 
-        [JsonConstructor]
-        public ChannelEditor( string userId, string userName, DateTime createdAt)
-            => (UserId, UserName, CreatedAt) = (userId, userName, createdAt);
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("user_name")]
+        public string UserName { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; init; } = default!;
     }
 }

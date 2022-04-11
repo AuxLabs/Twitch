@@ -4,31 +4,46 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
 {
     public class ProductData
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonPropertyName("domain")]
-        public string Domain { get; set; }
-        [JsonPropertyName("sku")]
-        public string Sku { get; set; }
-        [JsonPropertyName("cost")]
-        public Cost Cost { get; set; }
-        [JsonPropertyName("in_development")]
-        public bool InDevelopment { get; set; }
-        [JsonPropertyName("displayName")]
-        public string DisplayName { get; set; }
-        [JsonPropertyName("expiration")]
-        public DateTime? ExpiresAt { get; set; }
-        [JsonPropertyName("broadcast")]
-        public bool IsBroadcast { get; set; }
+        public string Domain { get; init; } = default!;
 
-        [JsonConstructor]
-        public ProductData(
-            string domain, 
-            string sku, 
-            Cost cost, 
-            bool inDev, 
-            string displayName, 
-            DateTime? expiresAt, 
-            bool isBroadcast)
-            => (Domain, Sku, Cost, InDevelopment, DisplayName, ExpiresAt, IsBroadcast)
-            = (domain, sku, cost, inDev, displayName, expiresAt, isBroadcast);
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("sku")]
+        public string Sku { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("cost")]
+        public Cost Cost { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("in_development")]
+        public bool InDevelopment { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("displayName")]
+        public string DisplayName { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("expiration")]
+        public DateTime? ExpiresAt { get; init; } = default!;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonPropertyName("broadcast")]
+        public bool IsBroadcast { get; init; } = default!;
     }
 }
