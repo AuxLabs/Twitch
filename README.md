@@ -19,7 +19,7 @@ var twitch = new TwitchRestClient
     ClientId = "client id"
 };
 
-var response = await helix.GetUsersAsync(new GetUsersParams
+var response = await twitch.GetUsersAsync(new GetUsersParams
 {
     UserNames = new[] { "exampleuser" }
 });
