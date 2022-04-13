@@ -5,23 +5,24 @@ using System.Net.Http.Headers;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class TwitchRestClient : ITwitchApi, IDisposable
+    public class TwitchRestApiClient : ITwitchApi, IDisposable
     {
         private readonly ITwitchApi _api;
 
         public AuthenticationHeaderValue Authorization { get => _api.Authorization; set => _api.Authorization = value; }
         public string ClientId { get => _api.ClientId; set => _api.ClientId = value; }
 
-        public TwitchRestClient()
+        public TwitchRestApiClient()
             : this(TwitchConstants.BaseUrl) { }
-        public TwitchRestClient(string baseUrl)
+        public TwitchRestApiClient(string baseUrl)
             : this(new HttpClient { BaseAddress = new Uri(baseUrl) }) { }
-        public TwitchRestClient(HttpClient httpClient)
+        public TwitchRestApiClient(HttpClient httpClient)
         {
             _api = new RestClient(httpClient)
             {
-                RequestBodySerializer = new Net.JsonRequestBodySerializer(),
+                RequestBodySerializer = new Net.JsonBodySerializer(),
                 ResponseDeserializer = new Net.JsonResponseDeserializer(),
+                RequestQueryParamSerializer = new Net.JsonQueryParamSerializer(),
             }.For<ITwitchApi>();
         }
 
@@ -30,7 +31,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostChannelCommercialParams args)
             => _api.PostCommercialAsync(args);
 
-        public Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query] object args)
+        public Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query] GetExtensionAnalyticsParams args)
         {
             throw new NotImplementedException();
         }

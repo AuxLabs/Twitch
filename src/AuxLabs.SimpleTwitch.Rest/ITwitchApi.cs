@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<Commercial>> PostCommercialAsync([Body]PostChannelCommercialParams args);
 
         [Get("analytics/extensions")]
-        Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query]object args);
+        Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query]GetExtensionAnalyticsParams args);
         [Get("analytics/games")]
         Task<TwitchResponse<Analytic>> GetGameAnalyticsAsync([Query]object args);
 

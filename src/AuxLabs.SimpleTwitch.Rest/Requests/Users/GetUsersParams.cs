@@ -2,10 +2,8 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetUsersParams : IRequest
+    public class GetUsersParams : BaseRequest
     {
-        public string[] Scopes { get; } = default!;
-
         [Query("id")]
         public IEnumerable<string>? UserIds { get; set; }
         [Query("login")]

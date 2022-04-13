@@ -2,19 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class PostChannelCommercialParams : IRequest
+    public class PostChannelCommercialParams : BaseRequest
     {
-        [JsonIgnore]
-        public string[] Scopes { get; } = { "channel:edit:commercial" };
+        public override string[]? Scopes { get; } = { "channel:edit:commercial" };
 
         /// <summary>
-        /// 
+        /// ID of the channel requesting a commercial
         /// </summary>
         [JsonPropertyName("broadcaster_id")]
         public string BroadcasterId { get; set; }
 
         /// <summary>
-        /// 
+        /// Desired length of the commercial in seconds.
         /// </summary>
         [JsonPropertyName("length")]
         public int Length { get; set; }

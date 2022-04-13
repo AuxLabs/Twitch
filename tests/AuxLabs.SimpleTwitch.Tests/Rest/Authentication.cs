@@ -27,7 +27,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
         [Fact]
         public async Task SuccessfulLoginAsync()
         {
-            var twitch = new TwitchRestClient()
+            var twitch = new TwitchRestApiClient()
             {
                 Authorization = new AuthenticationHeaderValue("Bearer", _config["twitch:token"]),
                 ClientId = _config["twitch:client_id"]!

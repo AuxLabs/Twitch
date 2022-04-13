@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace AuxLabs.SimpleTwitch.Rest.Net
 {
-    internal class JsonRequestBodySerializer : RequestBodySerializer
+    internal class JsonBodySerializer : RequestBodySerializer
     {
         public override HttpContent? SerializeBody<T>(T body, RequestBodySerializerInfo info)
         {
