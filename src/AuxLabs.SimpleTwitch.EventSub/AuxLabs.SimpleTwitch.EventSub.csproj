@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
+    <ProjectReference Include="..\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
   </ItemGroup>
 
 </Project>
