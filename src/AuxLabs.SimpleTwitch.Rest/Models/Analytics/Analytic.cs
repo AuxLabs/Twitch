@@ -11,25 +11,25 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("extension_id")]
-        public string ExtensionId { get; init; } = default!;
+        public string ExtensionId { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("url")]
-        public string URL { get; init; } = default!;
+        public string URL { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("type")]
         [JsonConverter(typeof(NullableEnumStringConverter<AnalyticType>))]
-        public AnalyticType Type { get; init; } = default!;
+        public AnalyticType Type { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("date_range")]
-        public DateRange DateRange { get; init; } = default!;
+        public DateRange DateRange { get; init; }
     }
 }

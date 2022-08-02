@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
     public class PostChannelCommercialParams : BaseRequest
     {
-        public override string[]? Scopes { get; } = { "channel:edit:commercial" };
+        public override string[] Scopes { get; } = { "channel:edit:commercial" };
 
         /// <summary>
         /// ID of the channel requesting a commercial

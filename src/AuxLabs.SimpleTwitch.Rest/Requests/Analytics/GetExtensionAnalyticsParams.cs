@@ -11,7 +11,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
         /// Cursor for forward pagination
         /// </summary>
         [JsonPropertyName("after")]
-        public string? After { get; set; }
+        public string After { get; set; }
 
         /// <summary>
         /// Ending date/time for returned reports
@@ -23,7 +23,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
         /// Client ID value assigned to the extension when it is created
         /// </summary>
         [JsonPropertyName("extension_id")]
-        public string? ExtensionId { get; set; }
+        public string ExtensionId { get; set; }
 
         /// <summary>
         /// Maximum number of objects to return

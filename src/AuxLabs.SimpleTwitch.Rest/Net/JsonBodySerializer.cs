@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Net
 {
     internal class JsonBodySerializer : RequestBodySerializer
     {
-        public override HttpContent? SerializeBody<T>(T body, RequestBodySerializerInfo info)
+        public override HttpContent SerializeBody<T>(T body, RequestBodySerializerInfo info)
         {
             if (body == null)
                 return null;

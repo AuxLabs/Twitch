@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Net
 {
     internal class NullableEnumStringConverter<T> : JsonConverter<T>
     {
-        public override T? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var value = reader.GetString();
 

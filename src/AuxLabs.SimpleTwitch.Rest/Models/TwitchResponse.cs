@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("data")]
-        public IEnumerable<T>? Data { get; init; }
+        public IEnumerable<T> Data { get; init; }
 
         /// <summary>
         /// 

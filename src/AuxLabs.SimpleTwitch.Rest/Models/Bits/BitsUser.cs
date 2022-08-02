@@ -9,30 +9,30 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; init; } = default!;
+        public string UserId { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("user_login")]
-        public string UserLogin { get; init; } = default!;
+        public string UserLogin { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("user_name")]
-        public string UserName { get; init; } = default!;
+        public string UserName { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("rank")]
-        public int Rank { get; init; } = default!;
+        public int Rank { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("score")]
-        public int Score { get; init; } = default!;
+        public int Score { get; init; }
     }
 }

@@ -8,18 +8,18 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; init; } = default!;
+        public string UserId { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("user_name")]
-        public string UserName { get; init; } = default!;
+        public string UserName { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("created_at")]
-        public DateTime CreatedAt { get; init; } = default!;
+        public DateTime CreatedAt { get; init; }
     }
 }

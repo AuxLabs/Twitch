@@ -9,13 +9,13 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("amount")]
-        public int Amount { get; init; } = default!;
+        public int Amount { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("type")]
         [JsonConverter(typeof(NullableEnumStringConverter<CostType>))]
-        public CostType Type { get; init; } = default!;
+        public CostType Type { get; init; }
     }
 }

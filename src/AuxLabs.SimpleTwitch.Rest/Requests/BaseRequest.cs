@@ -5,6 +5,6 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
     public abstract class BaseRequest
     {
         [JsonIgnore]
-        public virtual string[]? Scopes { get; }
+        public virtual string[] Scopes { get; }
     }
 }

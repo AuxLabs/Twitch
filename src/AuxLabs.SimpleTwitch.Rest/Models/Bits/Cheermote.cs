@@ -8,36 +8,36 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("min_bits")]
-        public int MinimumBits { get; init; } = default!;
+        public int MinimumBits { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("id")]
-        public string Id { get; init; } = default!;
+        public string Id { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("color")]
-        public string Color { get; init; } = default!;
+        public string Color { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("images")]
-        public EmoteTheme Images { get; init; } = default!;
+        public EmoteTheme Images { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("can_cheer")]
-        public bool CanCheer { get; init; } = default!;
+        public bool CanCheer { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("show_in_bits_card")]
-        public bool ShowInBitsCard { get; init; } = default!;
+        public bool ShowInBitsCard { get; init; }
     }
 }

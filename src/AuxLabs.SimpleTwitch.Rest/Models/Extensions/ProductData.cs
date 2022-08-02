@@ -8,42 +8,42 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("domain")]
-        public string Domain { get; init; } = default!;
+        public string Domain { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("sku")]
-        public string Sku { get; init; } = default!;
+        public string Sku { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("cost")]
-        public Cost Cost { get; init; } = default!;
+        public Cost Cost { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("in_development")]
-        public bool InDevelopment { get; init; } = default!;
+        public bool InDevelopment { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("displayName")]
-        public string DisplayName { get; init; } = default!;
+        public string DisplayName { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("expiration")]
-        public DateTime? ExpiresAt { get; init; } = default!;
+        public DateTime? ExpiresAt { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("broadcast")]
-        public bool IsBroadcast { get; init; } = default!;
+        public bool IsBroadcast { get; init; }
     }
 }

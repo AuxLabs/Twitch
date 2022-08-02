@@ -13,21 +13,28 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Header("Client-ID")]
         string ClientId { get; set; }
 
+        // Ads
+
         [Post("channels/commercial")]
         Task<TwitchResponse<Commercial>> PostCommercialAsync([Body]PostChannelCommercialParams args);
+
+        // Analytics
 
         [Get("analytics/extensions")]
         Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query]GetExtensionAnalyticsParams args);
         [Get("analytics/games")]
         Task<TwitchResponse<Analytic>> GetGameAnalyticsAsync([Query]object args);
 
+        // Bits
+
         [Get("bits/leaderboard")]
         Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([Query]object args);
         [Get("bits/cheermotes")]
         Task<TwitchResponse<Cheermote>> GetCheermotesasync([Query] object args);
-
         [Get("extensions/transactions")]
         Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([Query]object args);
+
+        // Channels
 
         [Get("channels")]
         Task<Channel> GetChannelAsync([Query]object args);
@@ -35,6 +42,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task ModifyChannelAsync([Query] object args);
         [Get("channels/editors")]
         Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query] object args);
+
+        // Channel Points
 
         [Post("channel_points/custom_rewards")]
         Task<object> CreateRewardsAsync([Query]object args);
@@ -48,6 +57,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<object> ModifyRewardAsync([Query] object args);
         [Patch("channel_points/custom_rewards/redemptions")]
         Task<object> ModifyRewardRedemptionAsync([Query] object args);
+
+        // Chat
 
         [Get("chat/emotes")]
         Task<TwitchResponse<object>> GetChannelEmotesAsync([Query]object args);
@@ -63,11 +74,21 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<object>> GetChatSettingsAsync([Query]object args);
         [Patch("chat/settings")]
         Task<TwitchResponse<object>> ModifyChatSettingsAsync([Query]object args);
+        [Post("chat/announcements")]
+        Task<TwitchResponse<object>> PostChatAnnouncementAsync([Query] object args);
+        [Get("chat/color")]
+        Task<TwitchResponse<object>> GetUserChatColorAsync([Query]string userId);
+        [Put("chat/color")]
+        Task<TwitchResponse<object>> ModifyUserChatColor([Query] object args);
+
+        // Clips
 
         [Post("clips")]
         Task<object> CreateClipAsync([Query] object args);
         [Get("clips")]
         Task<object> GetClipsAsync([Query] object args);
+
+        // Entitlements
 
         [Get("entitlements/codes")]
         Task<object> GetCodeStatusAsync([Query] object args);

@@ -8,12 +8,12 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// 
         /// </summary>
         [JsonPropertyName("animated")]
-        public EmoteImage AnimatedImage { get; init; } = default!;
+        public EmoteImage AnimatedImage { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("static")]
-        public EmoteImage StaticImage { get; init; } = default!;
+        public EmoteImage StaticImage { get; init; }
     }
 }

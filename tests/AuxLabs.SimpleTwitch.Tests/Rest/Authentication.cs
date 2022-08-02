@@ -41,8 +41,6 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
             Assert.NotNull(self);
             Assert.NotEmpty(self?.Data);
             Assert.NotEmpty(self?.Data?.First().Id);
-
-            _output.WriteLine(JsonSerializer.Serialize(self));
         }
     }
 }
