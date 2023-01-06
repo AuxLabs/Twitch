@@ -1,10 +1,8 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using AuxLabs.SimpleTwitch.Rest.Requests;
 using Microsoft.Extensions.Configuration;
-using System.Diagnostics;
 using System.Linq;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
@@ -30,7 +28,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
             var twitch = new TwitchRestApiClient()
             {
                 Authorization = new AuthenticationHeaderValue("Bearer", _config["twitch:token"]),
-                ClientId = _config["twitch:client_id"]!
+                ClientId = _config["twitch:client_id"]
             };
 
             var self = await twitch.GetUsersAsync(new GetUsersParams

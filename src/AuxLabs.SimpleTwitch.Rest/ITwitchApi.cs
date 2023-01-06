@@ -21,9 +21,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Analytics
 
         [Get("analytics/extensions")]
-        Task<TwitchResponse<Analytic>> GetExtensionAnalyticsAsync([Query]GetExtensionAnalyticsParams args);
+        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([Query]GetExtensionAnalyticsParams args);
         [Get("analytics/games")]
-        Task<TwitchResponse<Analytic>> GetGameAnalyticsAsync([Query]object args);
+        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([Query]GetGameAnalyticsParams args);
 
         // Bits
 
@@ -99,12 +99,63 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Post("entitlements/codes")]
         Task<object> RedeemCodeAsync([Query] object args);
 
-        // extensions
-        // eventsub
-        // games
-        // goals
-        // hype train
-        // moderations
+        // Extensions
+
+        [Get("extensions/configurations")]
+        Task<object> GetExtensionConfigurationAsync([Query] object args);
+        [Put("extensions/configurations")]
+        Task<object> ModifyExtensionConfigurationAsync([Query] object args);
+        [Put("extensions/required_configuration")]
+        Task<object> ModifyExtensionRequiredConfigurationAsync([Query] object args);
+        [Post("extensions/pubsub")]
+        Task<object> PostExtensionPubsubMessageAsync([Query] object args);
+        [Get("extensions/live")]
+        Task<object> GetExtensionLiveChannelsAsync([Query] object args);
+        [Get("extensions/jwt/secrets")]
+        Task<object> GetExtensionSecretsAsync([Query] object args);
+        [Post("extensions/jwt/secrets")]
+        Task<object> PostExtensionSecretsAsync([Query] object args);
+        [Post("extensions/chat")]
+        Task<object> PostExtensionChatMessageAsync([Query] object args);
+        [Get("extensions")]
+        Task<object> GetExtensionsAsync([Query] object args);
+        [Get("extensions/released")]
+        Task<object> GetReleasedExtensionsAsync([Query] object args);
+        [Get("bits/extensions")]
+        Task<object> GetExtensionBitsProductsAsync([Query] object args);
+        [Put("bits/extensions")]
+        Task<object> ModifyExtensionBitsProductsAsync([Query] object args);
+
+        // EventSub
+
+        [Post("eventsub/subscriptions")]
+        Task<object> PostEventSubSubcriptionAsync([Query] object args);
+        [Delete("eventsub/subscriptions")]
+        Task<object> DeleteEventSubSubcrptionAsync([Query] object args);
+        [Get("eventsub/subscriptions")]
+        Task<object> GetEventSubSubcriptionAsync([Query] object args);
+
+        // Games
+
+        [Get("games/top")]
+        Task<object> GetTopGamesAsync([Query] object args);
+        [Get("games")]
+        Task<object> GetGamesAsync([Query] object args);
+
+        // Goals
+
+        [Get("goals")]
+        Task<object> GetGoalsAsync([Query] object args);
+
+        // Hype Train
+
+        [Get("hypetrain/events")]
+        Task<object> GetHypetrainEventsAsync([Query] object args);
+
+        // Moderation
+
+
+
         // polls
         // predictions
         // schedule
@@ -115,6 +166,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         // tags
         // teams
         // users
+        // whispers
 
         [Get("users")]
         Task<TwitchResponse<User>> GetUsersAsync([Query]GetUsersParams args);

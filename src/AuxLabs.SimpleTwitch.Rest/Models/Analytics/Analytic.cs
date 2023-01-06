@@ -5,14 +5,8 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
 {
     // helix/analytics/extensions
     // helix/analytics/games
-    public record class Analytic
+    public abstract class Analytic
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonPropertyName("extension_id")]
-        public string ExtensionId { get; init; }
-
         /// <summary>
         /// 
         /// </summary>
