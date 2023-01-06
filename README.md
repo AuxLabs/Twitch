@@ -13,15 +13,14 @@ Development builds are not yet available.
 ##### Rest
 An example of authenticating with the client and requesting a user by name
 ```csharp
-var twitch = new TwitchRestClient
+var twitch = new TwitchRestApiClient()
 {
-    Authorization = new AuthenticationHeaderValue("Bearer", "oauth token"),
-    ClientId = "client id"
+    Authorization = new AuthenticationHeaderValue("Bearer", "oauth token")
 };
 
-var response = await twitch.GetUsersAsync(new GetUsersParams
+var user = await twitch.GetUsersAsync(new GetUsersParams
 {
-    UserNames = new[] { "exampleuser" }
+    UserNames = new[] { "auxlabs" }
 });
 
 var user = response.Data.FirstOrDefault();
