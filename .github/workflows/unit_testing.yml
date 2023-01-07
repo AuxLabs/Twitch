@@ -1,7 +1,75 @@
 name: Unit Testing
+on: [ push ]
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+jobs:
+  check-cache-for-twitch-cli:
+    name: Check Cache For Twitch CLI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache Twitch CLI
+        id: cache-twitch-cli
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-twitch-cli
+        with:
+          path: ~/.twitch-cli
+          key: ${{ runner.os }}-twitch-cli
+      - if: ${{ steps.cache-npm.outputs.cache-hit == 'true' }}
+        name: Update Twitch CLI
+        run: brew upgrade twitchdev/twitch/twitch-cli
+    
+  get-twitch-cli:
+    if: ${{ steps.cache-twitch-cli.outputs.cache-hit != 'true' }}
+    name: Install Twitch CLI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Brew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      - name: Install Twitch CLI
+        run: brew install twitchdev/twitch/twitch-cli
+  
+  initialize-twitch-cli:
+    name: Iinitialize Twitch CLI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize Mock API
+        run: |
+          twitch mock-api generate -c 250
+          twitch mock-api start
+  
+  get-net-core-sdk:
+    name: Get .Net Core SDK
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+      
+  deploy-release:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    name: Deploy Release Build to Package Manager
+    runs-on: ubuntu-latest
+    steps:
+      - name: RELEASE Placeholder
+        run: echo "This is just a placeholder"
+      
+  deploy-develop:
+    if: ${{ github.ref == 'refs/heads/dev' }}
+    name: Deploy Development Build to Package Manager
+    runs-on: ubuntu-latest
+    steps:
+      - name: DEVELOP Placeholder
+        run: echo "This is just a placeholder"
+    
