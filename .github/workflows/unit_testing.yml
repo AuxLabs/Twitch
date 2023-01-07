@@ -2,8 +2,8 @@ name: Unit Testing
 on: [ push ]
 
 jobs:
-  get-twitch-cli:
-    name: Get Twitch CLI
+  build:
+    name: Build and Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
