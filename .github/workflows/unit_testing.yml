@@ -18,15 +18,12 @@ jobs:
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
       - name: Install Twitch CLI
-        run: |
-          /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
-          cd /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/
-          ls -x
+        run: /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
 
       - name: Initialize Mock API
         run: | 
-          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/twitch mock-api generate -c 250
-          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/twitch mock-api start
+          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/bin/twitch mock-api generate -c 250
+          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/bin/twitch mock-api start
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
