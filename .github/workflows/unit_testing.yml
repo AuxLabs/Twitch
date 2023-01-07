@@ -11,12 +11,8 @@ jobs:
       - name: Install Brew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           
-      - name: Configure Brew Path 1
-        run: echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/runner/.bash_profile
-      - name: Configure Brew Path 2
-        run: echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bash_profile
-      - name: Configure Brew Path 3
-        run: eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+      - name: Configure Brew Path
+        run: echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >> ~/.bash_profile
 
       - name: Install Twitch CLI
         run: brew install twitchdev/twitch/twitch-cli
