@@ -22,10 +22,8 @@ jobs:
 
       - name: Initialize Mock API
         run: | 
-          cd /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/*/
-          cd
-          twitch mock-api generate -c 250
-          twitch mock-api start
+          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/twitch mock-api generate -c 250
+          /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/twitch mock-api start
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
