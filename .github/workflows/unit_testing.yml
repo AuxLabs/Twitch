@@ -20,7 +20,7 @@ jobs:
         run: brew upgrade twitchdev/twitch/twitch-cli
     
   get-twitch-cli:
-    if: ${{ steps.cache-twitch-cli.outputs.cache-hit != 'true' }}
+    if: steps.cache-twitch-cli.outputs.cache-hit != 'true'
     name: Install Twitch CLI
     runs-on: ubuntu-latest
     steps:
