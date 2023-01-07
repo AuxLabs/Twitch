@@ -22,7 +22,8 @@ jobs:
 
       - name: Initialize Mock API
         run: | 
-          cd /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/*
+          cd /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/*/
+          cd
           twitch mock-api generate -c 250
           twitch mock-api start
 
