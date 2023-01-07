@@ -18,7 +18,10 @@ jobs:
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
       - name: Install Twitch CLI
-        run: /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
+        run: |
+          /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
+          cd /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/
+          ls -x
 
       - name: Initialize Mock API
         run: | 
