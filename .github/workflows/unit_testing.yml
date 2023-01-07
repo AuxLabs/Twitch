@@ -13,22 +13,17 @@ jobs:
         env:
           cache-name: cache-twitch-cli
         with:
-          path: ~/.twitch-cli
+          path: /home/linuxbrew/.linuxbrew/
           key: ${{ runner.os }}-twitch-cli
-      - if: ${{ steps.cache-npm.outputs.cache-hit == 'true' }}
+      - if: ${{ steps.cache-twitch-cli.outputs.cache-hit == 'true' }}
         name: Update Twitch CLI
         run: brew upgrade twitchdev/twitch/twitch-cli
-    
-  get-twitch-cli:
-    if: steps.cache-twitch-cli.outputs.cache-hit != 'true'
-    name: Install Twitch CLI
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Brew
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      - name: Install Twitch CLI
-        run: brew install twitchdev/twitch/twitch-cli
-  
+      - if: ${{ steps.cache-twitch-cli.outputs.cache-hit != 'true' }}
+        name: Install Twitch CLI
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install twitchdev/twitch/twitch-cli
+
   initialize-twitch-cli:
     name: Iinitialize Twitch CLI
     runs-on: ubuntu-latest
