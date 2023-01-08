@@ -31,7 +31,6 @@
   <ItemGroup>
     <Folder Include="Chat\" />
     <Folder Include="EventSub\" />
-    <Folder Include="Net\" />
     <Folder Include="PubSub\" />
   </ItemGroup>
 

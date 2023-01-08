@@ -18,6 +18,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
         [JsonPropertyName("length")]
         public int Length { get; set; }
 
+        public PostChannelCommercialParams() { }
         public PostChannelCommercialParams(string broadcasterId, int length)
             => (BroadcasterId, Length) = (broadcasterId, length);
 

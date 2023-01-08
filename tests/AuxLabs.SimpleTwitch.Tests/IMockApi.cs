@@ -13,11 +13,22 @@ namespace AuxLabs.SimpleTwitch.Tests
         [Query("client_secret")]
         string ClientSecret { get; set; }
 
+        [Get("units/categories")]
+        Task<TwitchResponse<object>> GetCategoriesAsync();
         [Get("units/clients")]
         Task<TwitchResponse<Client>> GetClientsAsync();
-
+        [Get("units/streams")]
+        Task<TwitchResponse<object>> GetStreamsAsync();
+        [Get("units/subscriptions")]
+        Task<TwitchResponse<object>> GetSubscriptionsAsync();
+        [Get("units/tags")]
+        Task<TwitchResponse<object>> GetTagsAsync();
+        [Get("units/teams")]
+        Task<TwitchResponse<object>> GetTeamsAsync();
         [Get("units/users")]
         Task<TwitchResponse<User>> GetUsersAsync();
+        [Get("units/videos")]
+        Task<TwitchResponse<object>> GetVideosAsync();
 
         [Post("auth/token?grant_type=client_credentials")]
         Task<AccessToken> GetAppTokenAsync();
