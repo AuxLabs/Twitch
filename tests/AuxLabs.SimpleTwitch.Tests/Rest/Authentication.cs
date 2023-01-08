@@ -1,6 +1,5 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using AuxLabs.SimpleTwitch.Rest.Requests;
-using Microsoft.Extensions.Configuration;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -9,31 +8,30 @@ using Xunit.Abstractions;
 
 namespace AuxLabs.SimpleTwitch.Tests.Rest
 {
+    [Collection("Mock")]
     public class Authentication
     {
         private readonly ITestOutputHelper _output;
-        private readonly IConfiguration _config;
+        private readonly MockApiFixture _fixture;
 
-        public Authentication(ITestOutputHelper output)
+        public Authentication(ITestOutputHelper output, MockApiFixture fixture)
         {
             _output = output;
-            _config = new ConfigurationBuilder()
-                .AddJsonFile("./_config.json")
-                .Build();
+            _fixture = fixture;
         }
 
         [Fact]
         public async Task SuccessfulLoginAsync()
         {
-            var twitch = new TwitchRestApiClient()
+            var twitch = new TwitchRestApiClient(TestConstants.MockApiUrl)
             {
-                Authorization = new AuthenticationHeaderValue("Bearer", _config["twitch:token"]),
-                ClientId = _config["twitch:client_id"]
+                Authorization = new AuthenticationHeaderValue("Bearer", _fixture.User.Token),
+                ClientId = _fixture.ClientId
             };
 
             var self = await twitch.GetUsersAsync(new GetUsersParams
             {
-                UserNames = new[] { "auxlabs" }
+                UserNames = new[] { _fixture.Users.First().Login }
             });
 
             Assert.NotNull(self);

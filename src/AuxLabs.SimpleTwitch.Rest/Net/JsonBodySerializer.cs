@@ -1,5 +1,8 @@
 ﻿using RestEase;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
+
+[assembly: InternalsVisibleTo("AuxLabs.SimpleTwitch.Tests", AllInternalsVisible = true)]
 
 namespace AuxLabs.SimpleTwitch.Rest.Net
 {
