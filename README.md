@@ -1,4 +1,4 @@
-[![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png)](https://discord.gg/yd8x2wM) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AuxLabs/SimpleTwitch/Unit%20Testing?logo=github) ![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget) ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget)
+[![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png)](https://discord.gg/yd8x2wM) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/unit_testing.yml?logo=github) ![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget) ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget)
 
 # SimpleTwitch
 
