@@ -1,7 +1,5 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using AuxLabs.SimpleTwitch.Rest.Requests;
+﻿using AuxLabs.SimpleTwitch.Rest.Requests;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
@@ -31,8 +29,9 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
 
             Assert.NotNull(users);
             Assert.NotEmpty(users?.Data);
-            Assert.NotEmpty(users?.Data?.First().Id);
-            Assert.Equal(randomUsers.Count(), users.Total);
+            Assert.NotNull(users.Data?.First().Id);
+            Assert.NotEmpty(users.Data.First().Id);
+            Assert.Equal(randomUsers.Count(), users.Data.Count());
         }
 
         [Fact]
@@ -46,8 +45,9 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
 
             Assert.NotNull(users);
             Assert.NotEmpty(users?.Data);
-            Assert.NotEmpty(users?.Data?.First().Id);
-            Assert.Equal(randomUsers.Count(), users.Total);
+            Assert.NotNull(users.Data?.First().Id);
+            Assert.NotEmpty(users.Data.First().Id);
+            Assert.Equal(randomUsers.Count(), users.Data.Count());
         }
 
         [Fact]

@@ -4,7 +4,6 @@
     {
         public const string BaseUrl = "http://localhost:8080/";
         public const string MockApiUrl = BaseUrl + "mock/";
-        public const string UnitsApiUrl = BaseUrl + "units/";
         public const string WebSocketUrl = "ws://localhost:8080/eventsub";
 
         public static string AllScopes

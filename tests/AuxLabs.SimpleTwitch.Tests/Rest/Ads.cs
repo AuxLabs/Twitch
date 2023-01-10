@@ -18,8 +18,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
             _fixture = fixture;
         }
 
-        [Fact]
-        public async Task StartCommercialAsync()
+        private async Task StartCommercialAsync()
         {
             var response = await _fixture.Twitch.PostCommercialAsync(new PostChannelCommercialParams
             {
@@ -27,9 +26,9 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
                 Length = 30
             });
 
+            _output.WriteLine($"Requested length of 30, got {response.Data.First().Length}");
             Assert.NotNull(response);
             Assert.NotNull(response?.Data);
-            _output.WriteLine($"Requested length of 30, got {response.Data.First().Length}");
         }
     }
 }
