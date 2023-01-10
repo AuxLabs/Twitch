@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,6 +8,51 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\ChannelPoints\" />
+    <Folder Include="Models\Charity\" />
+    <Folder Include="Models\Clips\" />
+    <Folder Include="Models\Entitlements\" />
+    <Folder Include="Models\EventSub\" />
+    <Folder Include="Models\Games\" />
+    <Folder Include="Models\Goals\" />
+    <Folder Include="Models\HypeTrain\" />
+    <Folder Include="Models\Moderation\" />
+    <Folder Include="Models\Music\" />
+    <Folder Include="Models\Polls\" />
+    <Folder Include="Models\Predictions\" />
+    <Folder Include="Models\Raids\" />
+    <Folder Include="Models\Schedule\" />
+    <Folder Include="Models\Search\" />
+    <Folder Include="Models\Streams\" />
+    <Folder Include="Models\Subscriptions\" />
+    <Folder Include="Models\Tags\" />
+    <Folder Include="Models\Videos\" />
+    <Folder Include="Models\Whispers\" />
+    <Folder Include="Requests\ChannelPoints\" />
+    <Folder Include="Requests\Charity\" />
+    <Folder Include="Requests\Chat\" />
+    <Folder Include="Requests\Clips\" />
+    <Folder Include="Requests\Entitlements\" />
+    <Folder Include="Requests\Extensions\" />
+    <Folder Include="Requests\EventSub\" />
+    <Folder Include="Requests\Games\" />
+    <Folder Include="Requests\Goals\" />
+    <Folder Include="Requests\HypeTrain\" />
+    <Folder Include="Requests\Moderation\" />
+    <Folder Include="Requests\Music\" />
+    <Folder Include="Requests\Whispers\" />
+    <Folder Include="Requests\Videos\" />
+    <Folder Include="Requests\Tags\" />
+    <Folder Include="Requests\Subscriptions\" />
+    <Folder Include="Requests\Streams\" />
+    <Folder Include="Requests\Search\" />
+    <Folder Include="Requests\Schedule\" />
+    <Folder Include="Requests\Raids\" />
+    <Folder Include="Requests\Predictions\" />
+    <Folder Include="Requests\Polls\" />
   </ItemGroup>
 
 </Project>
