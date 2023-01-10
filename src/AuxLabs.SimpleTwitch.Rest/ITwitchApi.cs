@@ -166,58 +166,40 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Post("moderation/enforcements/status")]
         Task<TwitchResponse<object>> GetModerationStatusAsync([Query] object args);
-
         [Post("moderation/automod/message")]
         Task<TwitchResponse<object>> GetAutomodMessagesAsync([Query] object args);
-
         [Get("moderation/automod/settings")]
         Task<TwitchResponse<object>> GetAutomodSettingsAsync([Query] object args);
-
         [Put("moderation/automod/settings")]
         Task<TwitchResponse<object>> ModifyAutomodSettingsAsync([Query] object args);
-
         [Get("moderation/banned")]
         Task<TwitchResponse<object>> GetBannedUsersAsync([Query] object args);
-
         [Post("moderation/bans")]
         Task<TwitchResponse<object>> PostBanAsync([Query] object args);
-
         [Delete("moderation/bans")]
         Task<TwitchResponse<object>> DeleteBanAsync([Query] object args);
-
         [Get("moderation/blocked_terms")]
         Task<TwitchResponse<object>> GetBlockedTermsAsync([Query] object args);
-
         [Post("moderation/blocked_terms")]
         Task<TwitchResponse<object>> PostBlockedTermAsync([Query] object args);
-
         [Delete("moderation/blocked_term")]
         Task<TwitchResponse<object>> DeleteBlockedTermAsync([Query] object args);
-
         [Delete("moderation/chat")]
         Task<TwitchResponse<object>> DeleteChatMessagesAsync([Query] object args);
-
         [Get("moderation/moderators")]
         Task<TwitchResponse<object>> GetModeratorsAsync([Query] object args);
-
         [Post("moderation/moderators")]
         Task<TwitchResponse<object>> PostModeratorAsync([Query] object args);
-
         [Delete("moderation/moderators")]
         Task<TwitchResponse<object>> DeleteModeratorAsync([Query] object args);
-
         [Get("channels/vips")]
         Task<TwitchResponse<object>> GetVipsAsync([Query] object args);
-
         [Post("channels/vips")]
         Task<TwitchResponse<object>> PostVipAsync([Query] object args);
-
         [Delete("channels/vips")]
         Task<TwitchResponse<object>> DeleteVipAsync([Query] object args);
-
         [Put("moderation/shield_mode")]
         Task<TwitchResponse<object>> ModifyShieldModeAsync([Query] object args);
-
         [Get("moderation/shield_mode")]
         Task<TwitchResponse<object>> GetShieldModeAsync([Query] object args);
 
@@ -225,10 +207,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("polls")]
         Task<TwitchResponse<object>> GetPollAsync([Query] object args);
-
         [Post("polls")]
         Task<TwitchResponse<object>> PostPollAsync([Query] object args);
-
         [Patch("polls")]
         Task<TwitchResponse<object>> EndPollAsync([Query] object args);
 
@@ -236,10 +216,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("predictions")]
         Task<TwitchResponse<object>> GetPredictionAsync([Query] object args);
-
         [Post("predictions")]
         Task<TwitchResponse<object>> PostPredictionAsync([Query] object args);
-
         [Patch("predictions")]
         Task<TwitchResponse<object>> EndPredictionaAsync([Query] object args);
 
@@ -247,7 +225,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Post("raids")]
         Task<TwitchResponse<object>> PostRaidAsync([Query] object args);
-
         [Delete("raids")]
         Task<TwitchResponse<object>> DeleteRaidAsync([Query] object args);
 
@@ -255,19 +232,14 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("schedule")]
         Task<TwitchResponse<object>> GetScheduleAsync([Query] object args);
-
         [Get("schedule/icalendar")]
         Task<TwitchResponse<object>> GetCalendarAsync([Query] object args);
-
         [Patch("schedule/settings")]
         Task<TwitchResponse<object>> ModifyScheduleAsync([Query] object args);
-
         [Post("schedule/segment")]
         Task<TwitchResponse<object>> PostScheduleSegmentAsync([Query] object args);
-
         [Patch("schedule/segment")]
         Task<TwitchResponse<object>> ModifyScheduleSegmentAsync([Query] object args);
-
         [Delete("schedule/segment")]
         Task<TwitchResponse<object>> DeleteScheduleSegmentAsync([Query] object args);
 
@@ -275,7 +247,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("search/categories")]
         Task<TwitchResponse<object>> GetCategoriesAsync([Query] object args);
-
         [Get("search/channels")]
         Task<TwitchResponse<object>> GetChannelsAsync([Query] object args);
 
@@ -283,10 +254,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("soundtrack/current_track")]
         Task<TwitchResponse<object>> GetCurrentTrackAsync([Query] object args);
-
         [Get("soundtrack/playlist")]
         Task<TwitchResponse<object>> GetCurrentPlaylistAsync([Query] object args);
-
         [Get("soundtrack/playlists")]
         Task<TwitchResponse<object>> GetPlaylistsAsync([Query] object args);
 
@@ -294,16 +263,12 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("streams/key")]
         Task<TwitchResponse<object>> GetStreamKeyAsync([Query] object args);
-
         [Get("streams")]
         Task<TwitchResponse<object>> GetStreamsAsync([Query] object args);
-
         [Get("streams/followed")]
         Task<TwitchResponse<object>> GetFollowedStreamsAsync([Query] object args);
-
         [Post("streams/markers")]
         Task<TwitchResponse<object>> PostStreamMarkerAsync([Query] object args);
-
         [Get("streams/markers")]
         Task<TwitchResponse<object>> GetStreamMarkersAsync([Query] object args);
 
@@ -311,7 +276,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("subscriptions")]
         Task<TwitchResponse<object>> GetSubscriptionsAsync([Query] object args);
-
         [Get("subscriptions/user")]
         Task<TwitchResponse<object>> GetSubscriberAsync([Query] object args);
 
@@ -319,10 +283,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("tags/streams")]
         Task<TwitchResponse<object>> GetTagsAsync([Query] object args);
-
         [Get("streams/tags")]
         Task<TwitchResponse<object>> GetTagsAsync([Query("broadcaster_id")] string id);
-
         [Put("streams/tags")]
         Task<TwitchResponse<object>> ModifyTagsAsync([Query] object args);
 
@@ -330,7 +292,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("teams/channel")]
         Task<TwitchResponse<object>> GetTeamsAsync([Query("broadcaster_id")] string id);
-
         [Get("teams")]
         Task<TwitchResponse<object>> GetTeamsAsync([Query] object args);
 
@@ -338,28 +299,20 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("users")]
         Task<TwitchResponse<User>> GetUsersAsync([Query] GetUsersParams args);
-
         [Put("users")]
         Task<TwitchResponse<object>> ModifyUserAsync([Query] object args);
-
         [Get("users/follows")]
         Task<TwitchResponse<object>> GetFollowsAsync([Query] object args);
-
         [Get("users/blocks")]
         Task<TwitchResponse<object>> GetBlocksAsync([Query] object args);
-
         [Put("users/blocks")]
         Task<TwitchResponse<object>> PostBlockAsync([Query] object args);
-
         [Delete("users/blocks")]
         Task<TwitchResponse<object>> DeleteBlockAsync([Query] object args);
-
         [Get("users/extensions/list")]
         Task<TwitchResponse<object>> GetUserExtensionsAsync([Query] object args);
-
         [Get("users/extensions")]
         Task<TwitchResponse<object>> GetActiveExtensionsAsync([Query] object args);
-
         [Put("users/extesions")]
         Task<TwitchResponse<object>> ModifyExtensionsAsync([Query] object args);
 
@@ -367,7 +320,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         [Get("videos")]
         Task<TwitchResponse<object>> GetVideosAsync([Query] object args);
-
         [Delete("videos")]
         Task<IEnumerable<string>> DeleteVideoAsync([Query] string id);
 
