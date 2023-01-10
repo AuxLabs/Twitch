@@ -263,9 +263,9 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersParams args)
             => _api.GetUsersAsync(args);
-        public Task<TwitchResponse<object>> ModifyUserAsync(object args)
-            => _api.ModifyUserAsync(args);
-        public Task<TwitchResponse<object>> GetFollowsAsync(object args)
+        public Task<TwitchResponse<User>> ModifyUserAsync(string description)
+            => _api.ModifyUserAsync(description);
+        public Task<TwitchResponse<Follower>> GetFollowsAsync(GetFollowsParams args)
             => _api.GetFollowsAsync(args);
         public Task<TwitchResponse<object>> GetBlocksAsync(object args)
             => _api.GetBlocksAsync(args);
