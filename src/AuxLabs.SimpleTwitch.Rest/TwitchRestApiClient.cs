@@ -5,17 +5,22 @@ using System.Net.Http.Headers;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class TwitchRestApiClient : ITwitchApi, IDisposable
+    public class TwitchRestApiClient : ITwitchApi, ITwitchIdentityApi, IDisposable
     {
         private readonly ITwitchApi _api;
 
         public AuthenticationHeaderValue Authorization { get => _api.Authorization; set => _api.Authorization = value; }
         public string ClientId { get => _api.ClientId; set => _api.ClientId = value; }
 
+        public Identity Identity { get; internal set; }
+
         public TwitchRestApiClient()
-            : this(TwitchConstants.BaseUrl) { }
+            : this(TwitchConstants.ApiUrl) { }
         public TwitchRestApiClient(string baseUrl)
-            : this(new HttpClient { BaseAddress = new Uri(baseUrl) }) { }
+            : this(new HttpClient
+            { 
+                BaseAddress = new Uri(baseUrl) 
+            }) { }
         public TwitchRestApiClient(HttpClient httpClient)
         {
             _api = new RestClient(httpClient)
@@ -23,10 +28,21 @@ namespace AuxLabs.SimpleTwitch.Rest
                 RequestBodySerializer = new Net.JsonBodySerializer(),
                 ResponseDeserializer = new Net.JsonResponseDeserializer(),
                 RequestQueryParamSerializer = new Net.JsonQueryParamSerializer(),
+                RequestPathParamSerializer = new StringEnumRequestPathParamSerializer()
             }.For<ITwitchApi>();
         }
 
         public void Dispose() => _api.Dispose();
+
+        public async Task<Identity> ValidateAsync()
+        {
+            var idApi = new RestClient().For<ITwitchIdentityApi>();
+            idApi.Authorization = Authorization;
+
+            Identity = await idApi.ValidateAsync();
+            idApi.Dispose();
+            return Identity;
+        }
 
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
             => _api.PostCommercialAsync(args);
