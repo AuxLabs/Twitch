@@ -35,7 +35,7 @@ namespace AuxLabs.SimpleTwitch.Tests
             App = Mock.GetAppTokenAsync().GetAwaiter().GetResult();
             AuthorizedUser = Mock.GetUsersAsync().GetAwaiter().GetResult().Data.FirstOrDefault();
 
-            User = Mock.GetUserTokenAsync(AuthorizedUser.Id, "user:edit").GetAwaiter().GetResult();
+            User = Mock.GetUserTokenAsync(AuthorizedUser.Id, "?scope=" + TestConstants.AllScopes).GetAwaiter().GetResult();
 
             Twitch = new TwitchRestApiClient(TestConstants.MockApiUrl)
             {

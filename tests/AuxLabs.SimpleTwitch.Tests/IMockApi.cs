@@ -36,7 +36,7 @@ namespace AuxLabs.SimpleTwitch.Tests
         [Post("auth/authorize?grant_type=user_token")]
         Task<AccessToken> GetUserTokenAsync(
             [Query("user_id")]string userId,
-            [Query("scope", QuerySerializationMethod.ToString)]string scopes);
+            [RawQueryString]string scopes);
     }
 
     public class Client
