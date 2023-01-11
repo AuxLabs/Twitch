@@ -1,15 +1,17 @@
-﻿using System.Text.Json.Serialization;
-
-namespace AuxLabs.SimpleTwitch.Rest.Requests
+﻿namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetGameAnalyticsParams : GetAnalyticsParams
+    public class GetGameAnalyticsParams : GetAnalyticsParams, IScoped
     {
-        public override string[] Scopes { get; } = { "analytics:read:games" };
+        public string[] Scopes { get; } = { "analytics:read:games" };
 
-        /// <summary>
-        /// Game ID
-        /// </summary>
-        [JsonPropertyName("game_id")]
         public string GameId { get; set; }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            var map = base.CreateQueryMap();
+            if (GameId != null)
+                map["game_id"] = GameId;
+            return map;
+        }
     }
 }

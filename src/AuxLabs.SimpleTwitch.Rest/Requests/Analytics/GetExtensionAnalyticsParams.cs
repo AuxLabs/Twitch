@@ -2,14 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetExtensionAnalyticsParams : GetAnalyticsParams
+    public class GetExtensionAnalyticsParams : GetAnalyticsParams, IScoped
     {
-        public override string[] Scopes { get; } = { "analytics:read:extensions" };
+        public string[] Scopes { get; } = { "analytics:read:extensions" };
 
-        /// <summary>
-        /// Client ID value assigned to the extension when it is created
-        /// </summary>
-        [JsonPropertyName("extension_id")]
         public string ExtensionId { get; set; }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            var map = base.CreateQueryMap();
+            if (ExtensionId != null)
+                map["extension_id"] = ExtensionId;
+            return map;
+        }
     }
 }

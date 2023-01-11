@@ -3,7 +3,6 @@ using AuxLabs.SimpleTwitch.Rest.Models;
 using AuxLabs.SimpleTwitch.Rest.Net;
 using AuxLabs.SimpleTwitch.Rest.Requests;
 using RestEase;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;

@@ -21,18 +21,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Analytics
 
         [Get("analytics/extensions")]
-        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([Query] GetExtensionAnalyticsParams args);
+        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsParams args);
         [Get("analytics/games")]
-        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([Query] GetGameAnalyticsParams args);
+        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsParams args);
 
         // Bits
 
         [Get("bits/leaderboard")]
-        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([Query] GetBitsLeaderboardRequest args);
+        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardRequest args);
         [Get("bits/cheermotes")]
         Task<TwitchResponse<Cheermote>> GetCheermotesasync([Query("broadcaster_id")] string broadcasterId);
         [Get("extensions/transactions")]
-        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([Query] GetExtensionTransactionsRequest args);
+        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap] GetExtensionTransactionsRequest args);
 
         // Channels
 
@@ -298,7 +298,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Users
 
         [Get("users")]
-        Task<TwitchResponse<User>> GetUsersAsync([Query] GetUsersParams args);
+        Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersParams args);
         [Put("users")]
         Task<TwitchResponse<User>> ModifyUserAsync([Query("description")] string description);
         [Get("users/follows")]

@@ -1,17 +1,27 @@
 ﻿namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetFollowsParams
+    public class GetFollowsParams : QueryMap<string>
     {
-        [JsonPropertyName("from_id")]
         public string FromId { get; set; }
 
-        [JsonPropertyName("to_id")]
         public string ToId { get; set; }
 
-        [JsonPropertyName("first")]
         public int First { get; set; }
 
-        [JsonPropertyName("after")]
         public string After { get; set; }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            var map = new Dictionary<string, string>();
+            if (After != null)
+                map["from_id"] = FromId;
+            if (After != null)
+                map["to_id"] = ToId;
+            if (After != null)
+                map["first"] = First.ToString();
+            if (After != null)
+                map["after"] = After;
+            return map;
+        }
     }
 }

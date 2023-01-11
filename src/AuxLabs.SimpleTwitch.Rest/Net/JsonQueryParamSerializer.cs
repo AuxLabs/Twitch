@@ -1,5 +1,4 @@
 ﻿using RestEase;
-using System.Text.Json;
 
 namespace AuxLabs.SimpleTwitch.Rest.Net
 {

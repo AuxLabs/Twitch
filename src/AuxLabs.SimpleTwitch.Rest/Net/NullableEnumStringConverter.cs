@@ -1,7 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-
-namespace AuxLabs.SimpleTwitch.Rest.Net
+﻿namespace AuxLabs.SimpleTwitch.Rest.Net
 {
     internal class NullableEnumStringConverter<T> : JsonConverter<T>
     {

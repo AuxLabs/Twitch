@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetExtensionTransactionsRequest :BaseRequest
+    public class GetExtensionTransactionsRequest : QueryMap<string>
     {
         [JsonPropertyName("extension_id")]
         public string ExtensionId { get; set; }
@@ -11,9 +11,23 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
         public string Id { get; set; }
 
         [JsonPropertyName("first")]
-        public int First { get; set; }
+        public int? First { get; set; }
 
         [JsonPropertyName("after")]
         public string After { get; set; }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            var map = new Dictionary<string, string>();
+            if (ExtensionId != null)
+                map["extension_id"] = ExtensionId;
+            if (Id != null)
+                map["id"] = Id;
+            if (First != null)
+                map["first"] = First.ToString();
+            if (After != null)
+                map["after"] = After;
+            return map;
+        }
     }
 }
