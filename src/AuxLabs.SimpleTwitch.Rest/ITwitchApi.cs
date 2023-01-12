@@ -246,9 +246,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Search
 
         [Get("search/categories")]
-        Task<TwitchResponse<object>> GetCategoriesAsync([Query] object args);
+        Task<TwitchResponse<object>> SearchCategoriesAsync([Query] object args);
         [Get("search/channels")]
-        Task<TwitchResponse<object>> GetChannelsAsync([Query] object args);
+        Task<TwitchResponse<object>> SearchChannelsAsync([Query] object args);
 
         // Music
 

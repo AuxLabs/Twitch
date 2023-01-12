@@ -278,10 +278,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> DeleteScheduleSegmentAsync(object args)
             => _api.DeleteScheduleSegmentAsync(args);
 
-        public Task<TwitchResponse<object>> GetCategoriesAsync(object args)
-            => _api.GetCategoriesAsync(args);
-        public Task<TwitchResponse<object>> GetChannelsAsync(object args)
-            => _api.GetChannelsAsync(args);
+        public Task<TwitchResponse<object>> SearchCategoriesAsync(object args)
+            => _api.SearchCategoriesAsync(args);
+        public Task<TwitchResponse<object>> SearchChannelsAsync(object args)
+            => _api.SearchChannelsAsync(args);
 
         public Task<TwitchResponse<object>> GetCurrentTrackAsync(object args)
             => _api.GetCurrentTrackAsync(args);

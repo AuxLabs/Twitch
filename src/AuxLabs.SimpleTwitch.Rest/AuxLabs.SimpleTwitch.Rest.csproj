@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="../../AuxLabs.SimpleTwitch.targets" />
+  <Import Project="../../AuxLabs.Twitch.targets" />
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <Description>A low level .Net Core implementation of the Twitch REST API.</Description>
+    <Description>A higher level wrapped library built over AuxLabs.SimpleTwitch</Description>
   </PropertyGroup>
 
   <ItemGroup>
