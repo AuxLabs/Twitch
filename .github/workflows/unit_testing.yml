@@ -1,8 +1,9 @@
-name: Unit Testing
+name: Build, Test, and Deploy Development Build
 on: [ push ]
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
+  NUGET_AUTH_TOKEN: ${{ secrets.PKG_TOKEN }}
 
 jobs:
   build:
@@ -10,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Echo
+        run: echo "$GITHUB_REF"
 
       - name: Install Brew
         run: |
@@ -28,30 +32,28 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.PKG_TOKEN}}
           
       - name: Install dependencies
         run: dotnet restore
         
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build --configuration Release --no-restore
         
       - name: Test
         run: dotnet test --no-restore --verbosity normal
   
       - name: Create Packages
         run: |
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
         
 #      - if: github.ref == 'refs/heads/develop'
 #        name: Publish Development Package to Github
-#        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
+#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
 
-      - if: github.ref == 'refs/heads/master'
+      - if: github.ref == 'refs/heads/main'
         name: Publish Development Package to Github
-        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
+        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
