@@ -3,9 +3,9 @@
     {
       "src": [
         {
-          "files": [
-            "../src/**.csproj"
-          ]
+          "files": ["**/*.csproj"],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": "../src"
         }
       ],
       "dest": "api",
@@ -23,8 +23,8 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "tutorials/**.md",
+          "tutorials/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
@@ -49,17 +49,19 @@
       }
     ],
     "dest": "_site",
+    "globalMetadata": {
+      "_enableSearch": true
+    },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default",
-      "material/material"
+      "templates/default"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
+    "keepFileLink": true,
+    "cleanupCacheHistory": true,
     "disableGitFeatures": false
   }
 }
