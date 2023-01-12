@@ -25,11 +25,8 @@ jobs:
       with:
         brew: install docfx
 
-    - name: Get install location
-      run: |
-        DOCFX_DIR=$(which docfx)
-        echo "$DOCFX_DIR"
-        cd DOCFX_DIR
+    - name: Add docfx to path
+      run: export PATH=$(which docfx)
 
     - name: DocFX Build
       working-directory: docs
