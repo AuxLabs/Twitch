@@ -53,8 +53,8 @@ jobs:
         
 #      - if: github.ref == 'refs/heads/develop'
 #        name: Publish Development Package to Github
-#        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
+#        run: dotnet nuget push "./pkgs/*.nupkg" -k {{ secrets.PKG_TOKEN }} -verbosity detailed
 
       - if: github.ref == 'refs/heads/main'
         name: Publish Development Package to Github
-        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
+        run: dotnet nuget push "./pkgs/*.nupkg" -k {{ secrets.PKG_TOKEN }} -verbosity detailed
