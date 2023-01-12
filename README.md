@@ -11,6 +11,10 @@ Being a base level implementation of the Twitch APIs, this library will be more 
 
 Development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
 
+### Documentation
+
+The API reference, starter tutorials, and other documentation will be available at [the documentation site](https://auxlabs.org/SimpleTwitch/).
+
 ### Samples
 
 ##### Rest
