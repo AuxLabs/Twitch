@@ -1,9 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <Description>A low level .Net Core implementation of the Twitch Chat API.</Description>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,6 +7,8 @@
     <Nullable>disable</Nullable>
     <RootNamespace>AuxLabs.SimpleTwitch</RootNamespace>
     <AssemblyName>AuxLabs.SimpleTwitch</AssemblyName>
+    <Description>The core components for the SimpleTwitch library, shared across multiple projects.</Description>
+    <NuspecFile>
   </PropertyGroup>
 
   <ItemGroup>
