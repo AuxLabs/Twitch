@@ -9,7 +9,7 @@ jobs:
     name: Build, Test, and Deploy Development Build
     runs-on: ubuntu-latest
     permissions:
-      packages: read|write
+      packages: write
     steps:
       - uses: actions/checkout@v3
       
