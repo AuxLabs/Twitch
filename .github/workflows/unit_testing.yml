@@ -1,7 +1,5 @@
 name: Build, Test, and Deploy Development Build
 on: [ push ]
-permissions:
-  packages: read|write
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
@@ -10,6 +8,8 @@ jobs:
   build:
     name: Build, Test, and Deploy Development Build
     runs-on: ubuntu-latest
+    permissions:
+      packages: read|write
     steps:
       - uses: actions/checkout@v3
       
