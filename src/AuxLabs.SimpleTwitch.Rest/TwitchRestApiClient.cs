@@ -8,6 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class TwitchRestApiClient : ITwitchApi, ITwitchIdentityApi, IDisposable
     {
         private readonly ITwitchApi _api;
+        private bool _disposed = false;
 
         public AuthenticationHeaderValue Authorization { get => _api.Authorization; set => _api.Authorization = value; }
         public string ClientId { get => _api.ClientId; set => _api.ClientId = value; }
@@ -32,11 +33,25 @@ namespace AuxLabs.SimpleTwitch.Rest
             }.For<ITwitchApi>();
         }
 
-        public void Dispose() => _api.Dispose();
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                    _api.Dispose();
+                
+                _disposed = true;
+            }
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
         public async Task<Identity> ValidateAsync()
         {
-            var idApi = new RestClient().For<ITwitchIdentityApi>();
+            var idApi = new RestClient(TwitchConstants.IdentityUrl).For<ITwitchIdentityApi>();
             idApi.Authorization = Authorization;
 
             Identity = await idApi.ValidateAsync();
@@ -44,25 +59,52 @@ namespace AuxLabs.SimpleTwitch.Rest
             return Identity;
         }
 
+        /// <summary>
+        /// Starts a commercial on the specified channel.
+        /// </summary>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
             => _api.PostCommercialAsync(args);
 
+        /// <summary>
+        /// Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports as CSV files.
+        /// </summary>
         public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams args)
             => _api.GetExtensionAnalyticsAsync(args);
+        /// <summary>
+        /// Gets an analytics report for one or more games. The response contains the URLs used to download the reports as CSV files.
+        /// </summary>
         public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsParams args)
             => _api.GetGameAnalyticsAsync(args);
+        /// <summary>
+        /// Gets the Bits leaderboard for the authenticated broadcaster.
+        /// </summary>
         public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardRequest args)
             => _api.GetBitsLeaderboardAsync(args);
 
+        /// <summary>
+        /// Gets a list of Cheermotes that users can use to cheer Bits in any Bits-enabled channel’s chat room.
+        /// </summary>
         public Task<TwitchResponse<Cheermote>> GetCheermotesasync(string broadcasterId)
             => _api.GetCheermotesasync(broadcasterId);
+        /// <summary>
+        /// Gets an extension’s list of transactions.
+        /// </summary>
         public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsRequest args)
             => _api.GetExtensionTransactionAsync(args);
 
-        public Task<Channel> GetChannelAsync(object args)
-            => _api.GetChannelAsync(args);
-        public Task ModifyChannelAsync(object args)
-            => _api.ModifyChannelAsync(args);
+        /// <summary>
+        /// Gets information about one or more channels.
+        /// </summary>
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(params string[] broadcasterIds)
+            => _api.GetChannelsAsync(broadcasterIds);
+        /// <summary>
+        /// Updates a channel’s properties.
+        /// </summary>
+        public Task ModifyChannelAsync(string broadcasterId, object args)
+            => _api.ModifyChannelAsync(broadcasterId, args);
+        /// <summary>
+        /// Gets the broadcaster’s list editors.
+        /// </summary>
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(object args)
             => _api.GetChannelEditorsAsync(args);
 

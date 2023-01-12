@@ -5,51 +5,57 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
     public record class Channel
     {
         /// <summary>
-        /// Twitch User ID of this channel owner.
+        /// An ID that uniquely identifies the broadcaster.
         /// </summary>
         [JsonPropertyName("broadcaster_id")]
         public string BroadcasterId { get; init; }
 
         /// <summary>
-        /// Broadcaster’s user login name.
+        /// The broadcaster’s login name.
         /// </summary>
         [JsonPropertyName("broadcaster_login")]
         public string BroadcasterLogin { get; init; }
 
         /// <summary>
-        /// Twitch user display name of this channel owner.
+        /// The broadcaster’s display name.
         /// </summary>
         [JsonPropertyName("broadcaster_name")]
         public string BroadcasterName { get; init; }
 
         /// <summary>
-        /// Language of the channel.
+        /// The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code.
         /// </summary>
         [JsonPropertyName("broadcaster_language")]
         public string BroadcasterLanguage { get; init; }
 
         /// <summary>
-        /// Current game ID being played on the channel.
+        /// An ID that uniquely identifies the game that the broadcaster is playing or last played.
         /// </summary>
         [JsonPropertyName("game_id")]
         public string GameId { get; init; }
 
         /// <summary>
-        /// Name of the game being played on the channel.
+        /// The name of the game that the broadcaster is playing or last played.
         /// </summary>
         [JsonPropertyName("game_name")]
         public string GameName { get; init; }
 
         /// <summary>
-        /// Title of the stream.
+        /// The title of the stream that the broadcaster is currently streaming or last streamed.
         /// </summary>
         [JsonPropertyName("title")]
         public string Title { get; init; }
 
         /// <summary>
-        /// Stream delay in seconds.
+        /// The value of the broadcaster’s stream delay setting, in seconds.
         /// </summary>
         [JsonPropertyName("delay")]
-        public int Delay { get; init; }
+        public uint Delay { get; init; }
+
+        /// <summary>
+        /// The tags applied to the channel.
+        /// </summary>
+        [JsonPropertyName("tags")]
+        public IEnumerable<string> Tags { get; init; }
     }
 }

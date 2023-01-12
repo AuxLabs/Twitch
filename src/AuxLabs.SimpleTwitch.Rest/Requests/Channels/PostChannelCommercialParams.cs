@@ -7,12 +7,12 @@ namespace AuxLabs.SimpleTwitch.Rest.Requests
         public string[] Scopes { get; } = { "channel:edit:commercial" };
 
         /// <summary>
-        /// ID of the channel requesting a commercial
+        /// Id of the channel requesting a commercial.
         /// </summary>
         public string BroadcasterId { get; set; }
 
         /// <summary>
-        /// Desired length of the commercial in seconds.
+        /// Desired length of the commercial in seconds. Optional.
         /// </summary>
         public int? Length { get; set; }
 

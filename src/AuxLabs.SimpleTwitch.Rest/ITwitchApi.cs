@@ -16,7 +16,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Ads
 
         [Post("channels/commercial")]
-        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body]PostChannelCommercialParams args);
+        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostChannelCommercialParams args);
 
         // Analytics
 
@@ -37,9 +37,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         // Channels
 
         [Get("channels")]
-        Task<Channel> GetChannelAsync([Query] object args);
+        Task<TwitchResponse<Channel>> GetChannelsAsync([Query("broadcaster_id")] string[] broadcasterId);
         [Patch("channels")]
-        Task ModifyChannelAsync([Query] object args);
+        Task ModifyChannelAsync([Query("broadcaster_id")] string broadcasterId, [Body]object args);
         [Get("channels/editors")]
         Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query] object args);
 
