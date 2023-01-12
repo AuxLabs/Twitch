@@ -3,6 +3,7 @@ on: [ push ]
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
+  NUGET_AUTH_TOKEN: ${{ secrets.PKG_TOKEN }}
 
 jobs:
   build:
@@ -31,8 +32,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.PKG_TOKEN}}
           
       - name: Install dependencies
         run: dotnet restore
@@ -53,8 +52,8 @@ jobs:
         
 #      - if: github.ref == 'refs/heads/develop'
 #        name: Publish Development Package to Github
-#        run: dotnet nuget push "./pkgs/*.nupkg" -k {{ secrets.PKG_TOKEN }} -verbosity detailed
+#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
 
       - if: github.ref == 'refs/heads/main'
         name: Publish Development Package to Github
-        run: dotnet nuget push "./pkgs/*.nupkg" -k {{ secrets.PKG_TOKEN }} -verbosity detailed
+        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
