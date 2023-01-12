@@ -8,7 +8,6 @@
     <RootNamespace>AuxLabs.SimpleTwitch</RootNamespace>
     <AssemblyName>AuxLabs.SimpleTwitch</AssemblyName>
     <Description>The core components for the SimpleTwitch library, shared across multiple projects.</Description>
-    <NuspecFile>
   </PropertyGroup>
 
   <ItemGroup>
