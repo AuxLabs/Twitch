@@ -42,16 +42,16 @@ jobs:
   
       - name: Create Packages
         run: |
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "../../pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
         
 #      - if: github.ref == 'refs/heads/develop'
 #        name: Publish Development Package to Github
 #        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
 
-      - if: github.ref == 'refs/heads/master'
+      - if: $GITHUB_REF == 'refs/heads/master'
         name: Publish Development Package to Github
         run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
