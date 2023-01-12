@@ -18,7 +18,7 @@ namespace AuxLabs.SimpleTwitch.Tests
         [Get("units/clients")]
         Task<TwitchResponse<Client>> GetClientsAsync();
         [Get("units/streams")]
-        Task<TwitchResponse<object>> GetStreamsAsync();
+        Task<TwitchResponse<Channel>> GetChannelsAsync();
         [Get("units/subscriptions")]
         Task<TwitchResponse<object>> GetSubscriptionsAsync();
         [Get("units/tags")]
