@@ -10,7 +10,7 @@ on:
 
 jobs:
   generate-docs:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions: write-all
     steps:
     - uses: actions/checkout@v3
@@ -21,14 +21,9 @@ jobs:
         dotnet-version: ${{ matrix.dotnet-version }}
         
     - name: Setup DocFX
-      uses: ConorMacBride/install-package@v1
+      uses: crazy-max/ghaction-chocolatey@v1
       with:
-        brew: install docfx
-
-    - name: Add docfx to path
-      run: |
-        which docfx
-        export PATH=$(which docfx)
+        args: install docfx
 
     - name: DocFX Build
       working-directory: docs
