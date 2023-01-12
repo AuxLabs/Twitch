@@ -3,12 +3,14 @@ on: [ push ]
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
-  NUGET_AUTH_TOKEN: ${{ secrets.PKG_TOKEN }}
+  NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 jobs:
   build:
     name: Build, Test, and Deploy Development Build
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v3
       
@@ -52,8 +54,8 @@ jobs:
         
 #      - if: github.ref == 'refs/heads/develop'
 #        name: Publish Development Package to Github
-#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
+#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
       - if: github.ref == 'refs/heads/main'
         name: Publish Development Package to Github
-        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
+        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"

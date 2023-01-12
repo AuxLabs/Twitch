@@ -14,7 +14,7 @@ Development builds are available publicly through [Github Packages](https://gith
 ### Samples
 
 ##### Rest
-An example of authenticating with the client and requesting a user by name
+An example of authenticating with the client and requesting the current authorized user.
 ```csharp
 var twitch = new TwitchRestApiClient()
 {
