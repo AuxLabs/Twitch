@@ -1,4 +1,4 @@
-name: Unit Testing
+name: Build, Test, and Deploy Development Build
 on: [ push ]
 env:
   HOMEBREW_NO_ENV_HINTS: true
@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Echo
+        run: echo "$GITHUB_REF"
 
       - name: Install Brew
         run: |
@@ -52,6 +55,6 @@ jobs:
 #        name: Publish Development Package to Github
 #        run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
 
-      - if: $GITHUB_REF == 'refs/heads/master'
+      - if: ${{ GITHUB_REF }} == 'refs/heads/master'
         name: Publish Development Package to Github
         run: dotnet nuget push "./pkgs/*.nupkg" {{ secrets.PKG_TOKEN }} -verbosity detailed
