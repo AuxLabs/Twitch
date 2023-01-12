@@ -1,3 +1,4 @@
+name: Publish Documentation
 on:
   push:
     branches:
@@ -5,13 +6,12 @@ on:
     paths:
     - src/**
     - docs/**
-    - .github/workflows/docs.yml
+    - .github/workflows/publish_docs.yml
 
 jobs:
   generate-docs:
     runs-on: windows-latest
-    permissions:
-      pages: write
+    permissions: write-all
     steps:
     - uses: actions/checkout@v3
 
@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-
+        
     - name: Setup DocFX
       uses: crazy-max/ghaction-chocolatey@v1
       with:
@@ -31,7 +31,6 @@ jobs:
       continue-on-error: false
 
     - name: Publish
-      if: github.event_name == 'push'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
