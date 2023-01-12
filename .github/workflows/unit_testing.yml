@@ -1,5 +1,11 @@
 name: Build, Test, and Deploy Development Build
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - 'docs/**'
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
@@ -49,10 +55,10 @@ jobs:
 #          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
 #          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
         
-#      - if: github.ref == 'refs/heads/develop'
-#        name: Publish Development Package to Github
+#      - if: github.ref == 'refs/heads/main'
+#        name: Publish Release Package to Nuget
 #        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
-      - if: github.ref == 'refs/heads/main'
+      - if: github.ref == 'refs/heads/main' # Change to develop branch later
         name: Publish Development Package to Github
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
