@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and Answers
+    url: https://github.com/AuxLabs/SimpleTwitch/discussions
+    about: "If you're just looking for help with using the library, ask your question in Discussions."
+  - name: Discord
+    url: https://discord.gg/yd8x2wM
+    about: "If you prefer, you can also ask your questions on Discord. Though this doesn't help future googlers who are asking your same question."
