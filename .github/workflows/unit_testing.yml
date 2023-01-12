@@ -1,7 +1,7 @@
 name: Build, Test, and Deploy Development Build
 on: [ push ]
 permissions:
-  packages: read-all|write-all
+  packages: read|write
 env:
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
