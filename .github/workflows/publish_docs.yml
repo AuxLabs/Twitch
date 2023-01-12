@@ -19,11 +19,17 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-
+        
     - name: Setup DocFX
       uses: ConorMacBride/install-package@v1
       with:
         brew: install docfx
+
+    - name: Get install location
+      run: |
+        DOCFX_DIR=$(which docfx)
+        echo "$DOCFX_DIR"
+        cd DOCFX_DIR
 
     - name: DocFX Build
       working-directory: docs
