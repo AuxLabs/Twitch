@@ -9,7 +9,7 @@ Being a base level implementation of the Twitch APIs, this library will be more 
 
 ### Builds
 
-Development builds are not yet available.
+Development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
 
 ### Samples
 
