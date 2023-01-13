@@ -13,6 +13,14 @@ jobs:
     runs-on: windows-latest
     permissions: write-all
     steps:
+    - name: Wait for tests to succeed
+      uses: lewagon/wait-on-check-action@v1.2.0
+      with:
+        ref: ${{ github.ref }}
+        check-name: 'Build, Test, and Deploy Development Build'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        wait-interval: 15
+    
     - uses: actions/checkout@v3
 
     - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
