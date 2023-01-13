@@ -8,6 +8,7 @@
         public string CommandRaw { get; set; }
         public string Parameters { get; set; }
 
+        public IrcMessage() { }
         public IrcMessage(string prefix, IrcCommand ircCommand, string parameters)
         {
             Prefix = prefix;

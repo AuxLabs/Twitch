@@ -16,7 +16,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Identity Identity { get; internal set; }
 
         public TwitchRestApiClient()
-            : this(TwitchConstants.ApiUrl) { }
+            : this(TwitchConstants.RestApiUrl) { }
         public TwitchRestApiClient(string baseUrl)
             : this(new HttpClient
             { 
@@ -51,7 +51,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public async Task<Identity> ValidateAsync()
         {
-            var idApi = new RestClient(TwitchConstants.IdentityUrl).For<ITwitchIdentityApi>();
+            var idApi = new RestClient(TwitchConstants.RestIdentityUrl).For<ITwitchIdentityApi>();
             idApi.Authorization = Authorization;
 
             Identity = await idApi.ValidateAsync();
