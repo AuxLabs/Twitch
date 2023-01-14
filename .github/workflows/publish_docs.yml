@@ -14,7 +14,7 @@ jobs:
     permissions: write-all
     steps:
     - name: Wait for tests to succeed
-      uses: lewagon/wait-on-check-action@v1.1.0
+      uses: lewagon/wait-on-check-action@v1.2.0
       with:
         ref: ${{ github.ref }}
         check-name: 'Build, Test, and Deploy Development Build'
