@@ -1,13 +1,13 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Requests
 {
-    public class ClearChatRequest : BaseRequest
+    public class ClearChatRequest : IrcMessage
     {
-        public override IrcCommand Command { get; }
-
-        public ClearChatRequest() { }
-        public ClearChatRequest(string channelName, string userName)
+        public ClearChatRequest(string channelName, string userName = null)
         {
             Command = IrcCommand.ClearChat;
+            Parameters = $"#{channelName}";
+            if (userName != null)
+                Parameters += $" :{userName}";
         }
     }
 }

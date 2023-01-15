@@ -35,7 +35,18 @@ Console.WriteLine($"{user.DisplayName} is a {user.BroadcasterType}, their accoun
 ```
 
 ##### Chat
-Not yet implemented
+An example of authenticating with the client and joining the authorized user's channel
+```csharp
+string username = "auxlabs";
+var twitch = new TwitchChatApiClient();
+twitch.Connected += () =>
+{
+    twitch.SendIdentify(username, "oauth token");
+    twitch.Send(new JoinChannelRequest(username));
+};
+
+await twitch.RunAsync();
+```
 
 ##### PubSub
 Not yet implemented

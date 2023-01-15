@@ -12,25 +12,28 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         public TwitchChatConfig Config { get; }
 
+        private readonly MemoryStream _stream;
+        private int _lastSeq;
+        private bool _receivedData;
+
         public TwitchChatApiClient(TwitchChatConfig config = default) : base(-1)
         {
             Config = config;
+            _stream = new MemoryStream();
         }
 
-        protected override async Task SendAsync(ClientWebSocket client, IrcMessage payload, CancellationToken cancelToken)
+        public void Run()
+            => Run(TwitchConstants.ChatSecureWebSocketUrl);
+        public Task RunAsync()
+            => RunAsync(TwitchConstants.ChatSecureWebSocketUrl);
+
+        public override void SendIdentify(string username, string password)
         {
-            var data = JsonSerializer.SerializeToUtf8Bytes(payload); // Temporary not irc serializer
-            var buffer = new ArraySegment<byte>(data, 0, data.Length);
-            await client.SendAsync(buffer, WebSocketMessageType.Binary, true, cancelToken);
-            OnPayloadSent(payload, buffer.Count);
-        }
-        protected override void OnPayloadSent(IrcMessage payload, int bufferSize)
-            => base.OnPayloadSent(payload, bufferSize);
-        
-        protected override void SendIdentify()
-        {
-            Send(new IrcMessage(IrcCommand.Password, ""));
-            Send(new IrcMessage(IrcCommand.Nickname, ""));
+            if (!password.StartsWith("oauth:"))
+                password.Insert(0, "oauth:");
+
+            Send(new IrcMessage(IrcCommand.Password, password));
+            Send(new IrcMessage(IrcCommand.Nickname, username));
 
             var builder = new StringBuilder();
             if (Config.RequestMembership)
@@ -46,6 +49,16 @@ namespace AuxLabs.SimpleTwitch.Chat
             }
         }
 
+        protected override async Task SendAsync(ClientWebSocket client, IrcMessage payload, CancellationToken cancelToken)
+        {
+            var data = JsonSerializer.SerializeToUtf8Bytes(payload); // Temporary not irc serializer
+            var buffer = new ArraySegment<byte>(data, 0, data.Length);
+            await client.SendAsync(buffer, WebSocketMessageType.Binary, true, cancelToken);
+            OnPayloadSent(payload, buffer.Count);
+        }
+        protected override void OnPayloadSent(IrcMessage payload, int bufferSize)
+            => base.OnPayloadSent(payload, bufferSize);
+
         protected override void SendHeartbeat() => Send(new IrcMessage
         {
             Command = IrcCommand.Ping
@@ -56,12 +69,36 @@ namespace AuxLabs.SimpleTwitch.Chat
             Command = IrcCommand.Pong
         });
 
-        protected override Task<IrcMessage> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
+        protected override async Task<IrcMessage> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
-            return Task.FromResult(default(IrcMessage));
-        }
+            _stream.Position = 0;
+            _stream.SetLength(0);
 
-        protected override void HandleEventAsync(IrcMessage payload, TaskCompletionSource<bool> readySignal)
+            WebSocketReceiveResult result;
+            do
+            {
+                var buffer = _stream.GetBuffer();
+                result = await client.ReceiveAsync(buffer, cancelToken).ConfigureAwait(false);
+                _stream.Write(buffer);
+                _receivedData = true;
+
+                if (result.CloseStatus != null)
+                    throw new Sockets.WebSocketClosedException(result.CloseStatus.Value, result.CloseStatusDescription);
+            }
+            while (!result.EndOfMessage);
+
+            var value = Encoding.UTF8.GetString(_stream.ToArray());
+
+            var payload = new IrcMessage();
+
+            HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
+            OnPayloadReceived(payload, _stream.Length);
+            return payload;
+        }
+        protected override void OnPayloadReceived(IrcMessage payload, long bufferSize)
+            => base.OnPayloadReceived(payload, bufferSize);
+
+        protected override void HandleEvent(IrcMessage payload, TaskCompletionSource<bool> readySignal)
         {
             bool hasTags = payload.Tags != null;
             var parameters = new string[0];

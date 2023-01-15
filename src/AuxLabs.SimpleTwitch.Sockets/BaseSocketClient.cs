@@ -12,7 +12,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
         public event Action<SerializationException> DeserializationError;
 
         // Raw events
-        public event Action<TPayload, int> ReceivedPayload;
+        public event Action<TPayload, long> ReceivedPayload;
         public event Action<TPayload, int> SentPayload;
 
         public ConnectionState State { get; private set; }
@@ -44,18 +44,18 @@ namespace AuxLabs.SimpleTwitch.Sockets
             _runCts.Cancel(); // Start canceled
         }
 
+        public abstract void SendIdentify(string username, string password);
         protected abstract Task SendAsync(ClientWebSocket client, TPayload payload, CancellationToken cancelToken);
-        protected abstract void SendIdentify();
         protected abstract void SendHeartbeat();
         protected abstract void SendHeartbeatAck();
         protected abstract Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken);
-        protected abstract void HandleEventAsync(TPayload payload, TaskCompletionSource<bool> readySignal);
+        protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
 
         protected virtual void OnPayloadSent(TPayload payload, int bufferSize)
         {
             SentPayload?.Invoke(payload, bufferSize);
         }
-        protected virtual void OnPayloadReceived(TPayload payload, int bufferSize)
+        protected virtual void OnPayloadReceived(TPayload payload, long bufferSize)
         {
             ReceivedPayload?.Invoke(payload, bufferSize);
         }
@@ -107,11 +107,6 @@ namespace AuxLabs.SimpleTwitch.Sockets
                         var uri = new Uri(_url); // TODO: Enable
                         await client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
 
-                        // Receive HELLO (timeout = ConnectionTimeoutMillis)
-                        var receiveTask = ReceiveAsync(client, readySignal, cancelToken);
-                        await WhenAny(new Task[] { receiveTask }, ConnectionTimeoutMillis,
-                            "Timed out waiting for HELLO").ConfigureAwait(false);
-
                         // Start tasks here since HELLO must be handled before another thread can send/receive
                         _sendQueue = new BlockingCollection<TPayload>();
                         tasks = new[]
@@ -121,13 +116,6 @@ namespace AuxLabs.SimpleTwitch.Sockets
                         };
                         if (_heartbeatRate > -1)
                             tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
-
-                        // Send IDENTIFY/RESUME
-                        SendIdentify();
-                        await WhenAny(tasks.Append(readySignal.Task), IdentifyTimeoutMillis,
-                            "Timed out waiting for READY or InvalidSession").ConfigureAwait(false);
-                        if (await readySignal.Task.ConfigureAwait(false) == false)
-                            continue; // Invalid session
 
                         // Success
                         backoffMillis = InitialBackoffMillis;
@@ -317,7 +305,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
             Stop();
         }
 
-        protected void Send(TPayload payload)
+        public void Send(TPayload payload)
         {
             if (!_runCts.IsCancellationRequested)
                 _sendQueue?.Add(payload);

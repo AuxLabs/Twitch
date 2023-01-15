@@ -21,12 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\AuxLabs.SimpleTwitch.Chat\AuxLabs.SimpleTwitch.Chat.csproj" />
     <ProjectReference Include="..\..\src\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
     <ProjectReference Include="..\..\src\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Chat\" />
     <Folder Include="EventSub\" />
     <Folder Include="PubSub\" />
   </ItemGroup>
