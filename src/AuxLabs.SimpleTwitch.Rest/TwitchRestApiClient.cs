@@ -84,8 +84,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary>
         /// Gets a list of Cheermotes that users can use to cheer Bits in any Bits-enabled channel’s chat room.
         /// </summary>
-        public Task<TwitchResponse<Cheermote>> GetCheermotesasync(string broadcasterId)
-            => _api.GetCheermotesasync(broadcasterId);
+        public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
+            => _api.GetCheermotesAsync(broadcasterId);
         /// <summary>
         /// Gets an extension’s list of transactions.
         /// </summary>

@@ -30,7 +30,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("bits/leaderboard")]
         Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardRequest args);
         [Get("bits/cheermotes")]
-        Task<TwitchResponse<Cheermote>> GetCheermotesasync([Query("broadcaster_id")] string broadcasterId);
+        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([Query("broadcaster_id")] string broadcasterId);
         [Get("extensions/transactions")]
         Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap] GetExtensionTransactionsRequest args);
 
