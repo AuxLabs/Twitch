@@ -1,14 +1,19 @@
-﻿using System.Net.WebSockets;
+﻿using System.Collections.Concurrent;
+using System.Net.WebSockets;
+using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Sockets
 {
-    public abstract class BaseSocketClient<TPayload> : ISocketClient
+    public abstract class BaseSocketClient<TPayload>
     {
         // Status events
         public event Action Connected;
         public event Action<Exception> Disconnected;
-        public event Action SessionCreated;
-        public event Action SessionLost;
+        public event Action<SerializationException> DeserializationError;
+
+        // Raw events
+        public event Action<TPayload, int> ReceivedPayload;
+        public event Action<TPayload, int> SentPayload;
 
         public ConnectionState State { get; private set; }
 
@@ -25,44 +30,199 @@ namespace AuxLabs.SimpleTwitch.Sockets
         private Task _connectionTask;
         private CancellationTokenSource _runCts;
 
-        public BaseSocketClient()
+        private int _heartbeatRate;
+        private string _url;
+        private BlockingCollection<TPayload> _sendQueue;
+        private bool _receivedData;
+
+        public BaseSocketClient(int heartbeatRate)
         {
+            _heartbeatRate = heartbeatRate;
             _stateLock = new SemaphoreSlim(1, 1);
             _connectionTask = Task.CompletedTask;
             _runCts = new CancellationTokenSource();
             _runCts.Cancel(); // Start canceled
         }
 
-        public abstract void Send();
-        public abstract Task SendAsync();
-        public abstract void SendIdentify();
-        public abstract void SendHeartbeat();
-        public abstract void SendHeartbeatAck();
-        public abstract Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken);
-        public abstract void HandleEventAsync(TPayload payload, TaskCompletionSource<bool> readySignal);
+        protected abstract Task SendAsync(ClientWebSocket client, TPayload payload, CancellationToken cancelToken);
+        protected abstract void SendIdentify();
+        protected abstract void SendHeartbeat();
+        protected abstract void SendHeartbeatAck();
+        protected abstract Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken);
+        protected abstract void HandleEventAsync(TPayload payload, TaskCompletionSource<bool> readySignal);
 
-        public void Run()
-            => RunAsync().ConfigureAwait(false).GetAwaiter().GetResult();
-        public Task RunAsync()
+        protected virtual void OnPayloadSent(TPayload payload, int bufferSize)
         {
-            return Task.CompletedTask;
+            SentPayload?.Invoke(payload, bufferSize);
+        }
+        protected virtual void OnPayloadReceived(TPayload payload, int bufferSize)
+        {
+            ReceivedPayload?.Invoke(payload, bufferSize);
         }
 
-        private Task RunInternalAsync(CancellationToken runCancelToken)
+        public void Run(string url)
+            => RunAsync(url).ConfigureAwait(false).GetAwaiter().GetResult();
+        public async Task RunAsync(string url)
         {
-            return Task.CompletedTask;
+            Task exceptionSignal;
+            await _stateLock.WaitAsync().ConfigureAwait(false);
+            try
+            {
+                await StopAsyncInternal().ConfigureAwait(false);
+
+                _url = url;
+                _runCts = new CancellationTokenSource();
+
+                _connectionTask = RunTaskAsync(_runCts.Token);
+                exceptionSignal = _connectionTask;
+            }
+            finally
+            {
+                _stateLock.Release();
+            }
+            await exceptionSignal.ConfigureAwait(false);
+        }
+        private async Task RunTaskAsync(CancellationToken runCancelToken)
+        {
+            Task[] tasks = null;
+            bool isRecoverable = true;
+            int backoffMillis = InitialBackoffMillis;
+            var jitter = new Random();
+
+            while (isRecoverable)
+            {
+                Exception disconnectEx = null;
+                var connectionCts = new CancellationTokenSource();
+                var cancelToken = CancellationTokenSource.CreateLinkedTokenSource(runCancelToken, connectionCts.Token).Token;
+                using (var client = new ClientWebSocket())
+                {
+                    try
+                    {
+                        cancelToken.ThrowIfCancellationRequested();
+                        var readySignal = new TaskCompletionSource<bool>();
+                        _receivedData = true;
+
+                        // Connect
+                        State = ConnectionState.Connecting;
+                        var uri = new Uri(_url); // TODO: Enable
+                        await client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
+
+                        // Receive HELLO (timeout = ConnectionTimeoutMillis)
+                        var receiveTask = ReceiveAsync(client, readySignal, cancelToken);
+                        await WhenAny(new Task[] { receiveTask }, ConnectionTimeoutMillis,
+                            "Timed out waiting for HELLO").ConfigureAwait(false);
+
+                        // Start tasks here since HELLO must be handled before another thread can send/receive
+                        _sendQueue = new BlockingCollection<TPayload>();
+                        tasks = new[]
+                        {
+                            RunSendAsync(client, cancelToken),
+                            RunReceiveAsync(client, readySignal, cancelToken)
+                        };
+                        if (_heartbeatRate > -1)
+                            tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
+
+                        // Send IDENTIFY/RESUME
+                        SendIdentify();
+                        await WhenAny(tasks.Append(readySignal.Task), IdentifyTimeoutMillis,
+                            "Timed out waiting for READY or InvalidSession").ConfigureAwait(false);
+                        if (await readySignal.Task.ConfigureAwait(false) == false)
+                            continue; // Invalid session
+
+                        // Success
+                        backoffMillis = InitialBackoffMillis;
+                        State = ConnectionState.Connected;
+                        Connected?.Invoke();
+
+                        // Wait until an exception occurs (due to cancellation or failure)
+                        await WhenAny(tasks).ConfigureAwait(false);
+                    }
+                    catch (Exception ex)
+                    {
+                        disconnectEx = ex;
+                        isRecoverable = IsRecoverable(ex);
+                        if (!isRecoverable)
+                            throw;
+                    }
+                    finally
+                    {
+                        var oldState = State;
+                        State = ConnectionState.Disconnecting;
+
+                        // Wait for the other tasks to complete
+                        connectionCts.Cancel();
+                        if (tasks != null)
+                        {
+                            try { await Task.WhenAll(tasks).ConfigureAwait(false); }
+                            catch { } // We already captured the root exception
+                        }
+
+                        // receiveTask and sendTask must have completed before we can send/receive from a different thread
+                        if (client.State == WebSocketState.Open)
+                        {
+                            try { await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None).ConfigureAwait(false); }
+                            catch { } // We don't actually care if sending a close msg fails
+                        }
+
+                        State = ConnectionState.Disconnected;
+                        if (oldState == ConnectionState.Connected)
+                            Disconnected?.Invoke(disconnectEx);
+                    }
+                    if (isRecoverable)
+                    {
+                        backoffMillis = (int)(backoffMillis * (BackoffMultiplier + (jitter.NextDouble() * BackoffJitter * 2.0 - BackoffJitter)));
+                        if (backoffMillis > MaxBackoffMillis)
+                            backoffMillis = MaxBackoffMillis;
+                        await Task.Delay(backoffMillis).ConfigureAwait(false);
+                    }
+                }
+            }
+            _runCts.Cancel(); // Reset to initial canceled state
         }
         private Task RunReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
-            return Task.CompletedTask;
+            return Task.Run(async () =>
+            {
+                while (true)
+                {
+                    cancelToken.ThrowIfCancellationRequested();
+                    try
+                    {
+                        await ReceiveAsync(client, readySignal, cancelToken).ConfigureAwait(false);
+                    }
+                    catch (SerializationException ex)
+                    {
+                        DeserializationError?.Invoke(ex);
+                    }
+                }
+            });
         }
         private Task RunSendAsync(ClientWebSocket client, CancellationToken cancelToken)
         {
-            return Task.CompletedTask;
+            return Task.Run(async () =>
+            {
+                while (true)
+                {
+                    cancelToken.ThrowIfCancellationRequested();
+                    var payload = _sendQueue.Take(cancelToken);
+                    await SendAsync(client, payload, cancelToken).ConfigureAwait(false);
+                }
+            });
         }
         private Task RunHeartbeatAsync(int rate, CancellationToken cancelToken)
         {
-            return Task.CompletedTask;
+            return Task.Run(async () =>
+            {
+                while (true)
+                {
+                    cancelToken.ThrowIfCancellationRequested();
+                    if (!_receivedData)
+                        throw new TimeoutException("No data was received since the last heartbeat");
+                    _receivedData = false;
+                    SendHeartbeat();
+                    await Task.Delay(rate, cancelToken).ConfigureAwait(false);
+                }
+            });
         }
 
         private async Task WhenAny(IEnumerable<Task> tasks)
@@ -155,6 +315,12 @@ namespace AuxLabs.SimpleTwitch.Sockets
         public void Dispose()
         {
             Stop();
+        }
+
+        protected void Send(TPayload payload)
+        {
+            if (!_runCts.IsCancellationRequested)
+                _sendQueue?.Add(payload);
         }
     }
 }

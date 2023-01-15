@@ -8,5 +8,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 {
     internal class IrcParser
     {
+
     }
 }

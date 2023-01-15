@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace AuxLabs.SimpleTwitch.Rest.Requests
+namespace AuxLabs.SimpleTwitch
 {
     public abstract class QueryMap<T> : IQueryMap<T>
     {
