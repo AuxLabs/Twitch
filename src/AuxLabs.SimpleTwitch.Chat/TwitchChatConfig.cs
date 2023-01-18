@@ -16,5 +16,10 @@
         /// Adds additional metadata to the command and membership messages.
         /// </summary>
         public bool RequestTags { get; init; }
+
+        /// <summary>
+        /// Specify a custom serializer for chat irc messages
+        /// </summary>
+        public IIrcSerializer IrcSerializer { get; init; } = null;
     }
 }

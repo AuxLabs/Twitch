@@ -2,11 +2,11 @@
 {
     public struct EmotePosition
     {
-        public string Name { get; }
-        public int StartIndex { get; }
-        public int EndIndex { get; }
+        public string Id { get; init; }
+        public int StartIndex { get; init; }
+        public int EndIndex { get; init; }
 
         public EmotePosition(string name, int start, int end)
-            => (Name, StartIndex, EndIndex) = (name, start, end);
+            => (Id, StartIndex, EndIndex) = (name, start, end);
     }
 }

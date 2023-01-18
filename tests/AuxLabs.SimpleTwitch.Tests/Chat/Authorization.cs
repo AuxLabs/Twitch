@@ -3,12 +3,19 @@ using AuxLabs.SimpleTwitch.Chat.Requests;
 using System;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace AuxLabs.SimpleTwitch.Tests.Chat
 {
     public class Authorization
     {
         private readonly TwitchChatApiClient _twitch;
+        private readonly ITestOutputHelper _output;
+
+        public Authorization(ITestOutputHelper output)
+        {
+            _output = output;
+        }
 
         public Authorization()
         {
@@ -20,18 +27,24 @@ namespace AuxLabs.SimpleTwitch.Tests.Chat
             });
 
             _twitch.Connected += OnConnectedAsync;
+            _twitch.SentPayload += OnPayloadSent;
         }
 
         [Fact]
-        public async Task ConnectAsync()
+        public void ConnectAsync()
         {
-            await _twitch.RunAsync();
+            _twitch.Run();
         }
 
         private void OnConnectedAsync()
         {
             _twitch.SendIdentify("auxlabs", "");
             _twitch.Send(new JoinChannelRequest("auxlabs"));
+        }
+
+        private void OnPayloadSent(IrcMessage msg, int size)
+        {
+            _output.WriteLine(msg.ToString());
         }
     }
 }

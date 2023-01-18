@@ -261,7 +261,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
                             case 4004: // Reconnect grace time expired
                             case 4005: // Network timeout
                             case 4006: // Network error
-                            case 4007: // Invalid reconnect
+                            //case 4007: // Invalid reconnect
                                 return true;
                         }
                     }

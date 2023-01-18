@@ -20,6 +20,10 @@ namespace AuxLabs.SimpleTwitch.Chat
         Mode,
         [EnumMember(Value = "NAMES")]       // List current chatters in a channel
         Names,
+        [EnumMember(Value = "353")]         // Repeating list of names until 366
+        NamesStart,
+        [EnumMember(Value = "366")]         // End of names list
+        NamesEnd,
         [EnumMember(Value = "NOTICE")]      // General notices from the server
         Notice,
         [EnumMember(Value = "RECONNECT")]   // Rejoin channels after a restart
@@ -32,6 +36,8 @@ namespace AuxLabs.SimpleTwitch.Chat
         UserState,
         [EnumMember(Value = "CAP * ACK")]   // Response to cap req
         CapabilityAcknowledge,
+        [EnumMember(Value = "CAP * NAK")]   // Response to denied cap req
+        CapabilityDenied,
 
         [EnumMember(Value = "PING")]        // Ping
         Ping,
@@ -44,6 +50,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         [EnumMember(Value = "JOIN")]        // Join a channel
         Join,
         [EnumMember(Value = "PART")]        // Leave a channel
-        Part
+        Part,
     }
 }
