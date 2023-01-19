@@ -23,7 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{7A271F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuxLabs.SimpleTwitch.Sockets", "src\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj", "{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "examples\Example\Example.csproj", "{17D3B263-D66B-432A-B51A-458D620F6345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "tests\Testing\Testing.csproj", "{17D3B263-D66B-432A-B51A-458D620F6345}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5053E45-73CE-4AB0-89D4-3578B2FA0AEA}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		AuxLabs.SimpleTwitch.targets = AuxLabs.SimpleTwitch.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

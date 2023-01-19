@@ -44,9 +44,16 @@ twitch.Connected += () =>
     twitch.SendIdentify(username, "oauth token");
     twitch.Send(new JoinChannelRequest(username));
 };
+twitch.MessageReceived += (args) =>
+{
+    Console.WriteLine($"#{args.ChannelName} {name}: {args.Message}");
+}
 
 await twitch.RunAsync();
 ```
 
 ##### PubSub
+Not yet implemented
+
+##### EventSub
 Not yet implemented
