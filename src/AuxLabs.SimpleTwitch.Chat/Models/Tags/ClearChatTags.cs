@@ -24,11 +24,13 @@
 
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>();
-            map["tim-sent-ts"] = Timestamp.ToString();
-            map["room-id"] = ChannelId;
-            map["target-user-id"] = TargetUserId;
-            map["ban-duration"] = BanDuration.ToString();
+            var map = new Dictionary<string, string>
+            {
+                ["tim-sent-ts"] = Timestamp.ToString(),
+                ["room-id"] = ChannelId,
+                ["target-user-id"] = TargetUserId,
+                ["ban-duration"] = BanDuration.ToString()
+            };
             return map;
         }
         public void LoadQueryMap(IReadOnlyDictionary<string, string> map)

@@ -34,6 +34,8 @@ namespace AuxLabs.SimpleTwitch.Chat
         UserNotice,
         [EnumMember(Value = "USERSTATE")]   // Identifies a user's current chat settings
         UserState,
+        [EnumMember(Value = "GLOBALUSERSTATE")]   // Provides user info on login
+        GlobalUserState,
         [EnumMember(Value = "CAP * ACK")]   // Response to cap req
         CapabilityAcknowledge,
         [EnumMember(Value = "CAP * NAK")]   // Response to denied cap req
