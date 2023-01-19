@@ -33,7 +33,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override void SendIdentify(string username, string password)
         {
             if (!password.StartsWith("oauth:"))
-                password.Insert(0, "oauth:");
+                password = password.Insert(0, "oauth:");
 
             var builder = new StringBuilder();
             if (Config.RequestMembership)
