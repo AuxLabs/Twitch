@@ -33,7 +33,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
         private int _heartbeatRate;
         private string _url;
         private BlockingCollection<TPayload> _sendQueue;
-        private bool _receivedData;
+        protected bool ReceivedData;
 
         public BaseSocketClient(int heartbeatRate)
         {
@@ -48,7 +48,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
         protected abstract Task SendAsync(ClientWebSocket client, TPayload payload, CancellationToken cancelToken);
         protected abstract void SendHeartbeat();
         protected abstract void SendHeartbeatAck();
-        protected abstract Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken);
+        protected abstract Task ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken);
         protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
 
         protected virtual void OnPayloadSent(TPayload payload, int bufferSize)
@@ -100,7 +100,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
                     {
                         cancelToken.ThrowIfCancellationRequested();
                         var readySignal = new TaskCompletionSource<bool>();
-                        _receivedData = true;
+                        ReceivedData = true;
 
                         // Connect
                         State = ConnectionState.Connecting;
@@ -204,9 +204,9 @@ namespace AuxLabs.SimpleTwitch.Sockets
                 while (true)
                 {
                     cancelToken.ThrowIfCancellationRequested();
-                    if (!_receivedData)
+                    if (!ReceivedData)
                         throw new TimeoutException("No data was received since the last heartbeat");
-                    _receivedData = false;
+                    ReceivedData = false;
                     SendHeartbeat();
                     await Task.Delay(rate, cancelToken).ConfigureAwait(false);
                 }
