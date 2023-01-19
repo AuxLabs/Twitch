@@ -3,6 +3,6 @@
     public interface IIrcSerializer
     {
         ReadOnlyMemory<byte> Write(IrcMessage msg);
-        IrcMessage Read(ReadOnlySpan<byte> data);
+        IEnumerable<IrcMessage> Read(ReadOnlySpan<byte> data);
     }
 }

@@ -2,21 +2,21 @@
 using AuxLabs.SimpleTwitch.Sockets;
 using System.Net.WebSockets;
 using System.Text;
-using System.Text.Json;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
     public class TwitchChatApiClient : BaseSocketClient<IrcMessage>
     {
+        public event Action<IrcMessage> UnknownCommandReceived;
+
         public event Action<ClearChatEventArgs> ChatCleared;
         public event Action<MessageEventArgs> MessageReceived;
+        public event Action<GlobalUserStateTags> GlobalUserStateReceived;
 
         public TwitchChatConfig Config { get; }
 
         private readonly IIrcSerializer _serializer;
         private readonly MemoryStream _stream;
-        private int _lastSeq;
-        private bool _receivedData;
 
         public TwitchChatApiClient(TwitchChatConfig config = default) : base(-1)
         {
@@ -71,7 +71,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             Command = IrcCommand.Pong
         });
 
-        protected override async Task<IrcMessage> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
+        protected override async Task ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
             _stream.Position = 0;
             _stream.SetLength(0);
@@ -83,7 +83,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 result = await client.ReceiveAsync(buffer, cancelToken).ConfigureAwait(false);
                 _stream.Write(buffer.ToArray(), 0, result.Count);
 
-                _receivedData = true;
+                ReceivedData = true;
 
                 if (result.CloseStatus != null)
                     throw new Sockets.WebSocketClosedException(result.CloseStatus.Value, result.CloseStatusDescription);
@@ -91,10 +91,12 @@ namespace AuxLabs.SimpleTwitch.Chat
             while (!result.EndOfMessage);
 
             var payload = _serializer.Read(_stream.ToArray());
-
-            HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
-            OnPayloadReceived(payload, _stream.Length);
-            return payload;
+            
+            foreach (var item in payload)
+            {
+                HandleEvent(item, readySignal); // Must be before event so slow user handling can't trigger timeouts
+                OnPayloadReceived(item, _stream.Length);
+            }
         }
         protected override void OnPayloadReceived(IrcMessage payload, long bufferSize)
             => base.OnPayloadReceived(payload, bufferSize);
@@ -102,7 +104,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         protected override void HandleEvent(IrcMessage payload, TaskCompletionSource<bool> readySignal)
         {
             bool hasTags = payload.Tags != null;
-            var parameters = new string[0];
+            var parameters = Array.Empty<string>();
 
             switch (payload.Command)
             {
@@ -152,8 +154,6 @@ namespace AuxLabs.SimpleTwitch.Chat
                 case IrcCommand.NamesEnd:
                     break;
 
-                case IrcCommand.Notice:
-                    break;
                 case IrcCommand.Reconnect:
                     break;
                 case IrcCommand.RoomState:
@@ -162,6 +162,12 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
                 case IrcCommand.UserState:
                     break;
+                case IrcCommand.GlobalUserState:
+                    var globalUserStateTags = new GlobalUserStateTags();
+                    if (hasTags)
+                        globalUserStateTags.LoadQueryMap(payload.Tags);
+                    GlobalUserStateReceived?.Invoke(globalUserStateTags);
+                    break;
                 case IrcCommand.CapabilityAcknowledge:
                     break;
 
@@ -169,9 +175,19 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
                 case IrcCommand.Part:
                     break;
+
+                case IrcCommand.Notice:
+                    HandleNoticeEvent(payload, readySignal);
+                    break;
                 default:
+                    UnknownCommandReceived?.Invoke(payload);
                     break;
             };
+        }
+
+        private void HandleNoticeEvent(IrcMessage payload, TaskCompletionSource<bool> readySignal)
+        {
+
         }
     }
 }

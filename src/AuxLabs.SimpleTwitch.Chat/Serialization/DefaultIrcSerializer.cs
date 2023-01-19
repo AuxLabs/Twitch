@@ -11,17 +11,22 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             return new ReadOnlyMemory<byte>(bytes);
         }
 
-        public IrcMessage Read(ReadOnlySpan<byte> data)
+        public IEnumerable<IrcMessage> Read(ReadOnlySpan<byte> data)
         {
-            var response = new IrcMessage();
+            var response = new List<IrcMessage>();
+            var msg = new IrcMessage();
 
             if (GetSection(ref data) == IrcTokenType.TagIndicator)
-                response.Tags = ReadTags(ref data);
-            
-            response.Prefix = new IrcPrefix(ReadPrefix(ref data));
-            response.CommandRaw = ReadCommand(ref data);
-            response.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(response.CommandRaw);
-            response.Parameters = ReadParameters(ref data);
+                msg.Tags = ReadTags(ref data);
+
+            msg.Prefix = new IrcPrefix(ReadPrefix(ref data));
+            msg.CommandRaw = ReadCommand(ref data);
+            msg.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(msg.CommandRaw);
+            msg.Parameters = ReadParameters(ref data);
+
+            response.Add(msg);
+            if (data.Length > 0)
+                response.AddRange(Read(data));
 
             return response;
         }
@@ -95,7 +100,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             for (int i = 1; i < remaining.Length; i++)
             {
                 var c = remaining[i];
-                if (c == (byte)'#' || c == (byte)':')
+                if (c == (byte)'#' || c == (byte)':' || char.IsLower((char)c))
                 {
                     var result = Encoding.UTF8.GetString(remaining[1..(i - 1)]);
                     remaining = remaining[(i - 1)..];
@@ -107,6 +112,19 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private string ReadParameters(ref ReadOnlySpan<byte> remaining)
         {
+            for (int i = 1; i < remaining.Length; i++)
+            {
+                var r = remaining[i];
+                var n = remaining[i + 1];
+                if (r == (byte)'\r' && n == (byte)'\n')
+                {
+                    var test1 = Encoding.UTF8.GetString(remaining);
+                    var result = Encoding.UTF8.GetString(remaining[..i]).Trim();
+                    remaining = remaining[(i + 2)..];
+                    return result;
+                }
+            }
+            var test2 = Encoding.UTF8.GetString(remaining);
             return Encoding.UTF8.GetString(remaining).Trim();
         }
 

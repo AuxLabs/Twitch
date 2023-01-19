@@ -26,7 +26,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             var builder = new StringBuilder();
             if (Tags != null)
             {
-                builder.Append("@");
+                builder.Append('@');
                 foreach (var tag in Tags)
                     builder.Append($";{tag.Key}={tag.Value}");
                 builder.Append(' ');
@@ -35,7 +35,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             // Prefix value in a sent message is constant, so custom values are ignored
             //builder.Append($":{TwitchConstants.ChatHost} ");
 
-            var commandRaw = Command.GetEnumMemberValue();
+            var commandRaw = CommandRaw ?? Command.GetEnumMemberValue();
             builder.Append($"{commandRaw} {Parameters}");
             return builder.ToString();
         }

@@ -8,11 +8,15 @@
         public Badge(string name, int version = 1) 
             => (Name, Version) = (name, version);
 
+        public override string ToString()
+            => $"{Name}/{Version}";
+
         public static void Parse(string value, out Badge badge)
         {
             var info = value.Split('/');
             var name = info[0];
-            int.TryParse(info[1], out var version);
+            if (!int.TryParse(info[1], out var version))
+                throw new ArgumentException(info[1]);
             badge = new Badge(name, version);
         }
 

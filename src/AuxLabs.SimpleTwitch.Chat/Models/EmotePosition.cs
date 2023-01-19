@@ -8,6 +8,9 @@
         public EmotePosition(string name, IReadOnlyCollection<(int, int)> indices)
             => (Id, Indices) = (name, indices);
 
+        public override string ToString()
+            => $"{Id}:{Indices.Select(x => $"{x.Start}-{x.End}")}";
+
         public static void Parse(string value, out EmotePosition emote)
         {
             var info = value.Split(':');
