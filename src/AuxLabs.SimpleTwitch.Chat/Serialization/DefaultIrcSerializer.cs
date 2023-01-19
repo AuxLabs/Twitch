@@ -16,10 +16,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             var response = new IrcMessage();
 
             if (GetSection(ref data) == IrcTokenType.TagIndicator)
-            {
                 response.Tags = ReadTags(ref data);
-            }
-
+            
             response.Prefix = new IrcPrefix(ReadPrefix(ref data));
             response.CommandRaw = ReadCommand(ref data);
             response.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(response.CommandRaw);
@@ -84,7 +82,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
                 var c = remaining[i];
                 if (c == (byte)' ')
                 {
-                    var test = Encoding.UTF8.GetString(remaining);
                     var result = Encoding.UTF8.GetString(remaining[1..i]);
                     remaining = remaining[i..];
                     return result;
@@ -100,7 +97,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
                 var c = remaining[i];
                 if (c == (byte)'#' || c == (byte)':')
                 {
-                    var test = Encoding.UTF8.GetString(remaining);
                     var result = Encoding.UTF8.GetString(remaining[1..(i - 1)]);
                     remaining = remaining[(i - 1)..];
                     return result;
