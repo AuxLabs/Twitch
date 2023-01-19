@@ -139,7 +139,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
             map["badges"] = string.Join(',', Badges.Select(x => $"{x.Name}/{x.Version}"));
             map["badge-info"] = BadgeInfo;
             map["bits"] = Bits.ToString();
-            map["emotes"] = string.Join(',', Emotes.Select(x => $"{x.Id}:{x.StartIndex}-{x.EndIndex}"));
+            map["emotes"] = string.Join(',', Emotes.Select(x => $"{x.Id}:{x.Indices.Select(y => $"{y.Start}-{y.End}")}"));
             map["mod"] = IsMod ? "1" : "0";
             map["subscriber"] = IsSubscriber ? "1" : "0"; ;
             map["turbo"] = IsTurbo ? "1" : "0"; ;
@@ -169,17 +169,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
             {
-                if (!string.IsNullOrWhiteSpace(str))
-                {
-                    var badges = new List<Badge>();
-                    var badgeArr = str.Split(',');
-                    foreach (var item in badgeArr)
-                    {
-                        var info = item.Split('/');
-                        badges.Add(new Badge(info[0], int.Parse(info[1])));
-                    }
+                if (Badge.TryParseMany(str, out var badges))
                     Badges = badges;
-                }
             }
             if (map.TryGetValue("badge-info", out str))
                 BadgeInfo = str;
@@ -192,27 +183,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
             }
             if (map.TryGetValue("emotes", out str))
             {
-                if (!string.IsNullOrWhiteSpace(str))
-                {
-                    var emotes = new List<EmotePosition>();
-                    var emoteArr = str.Split(',');
-                    string lastEmote = null;
-                    foreach (var item in emoteArr)
-                    {
-                        var info = item.Split(':', '-');
-                        bool useLast = info.Count() == 2;
-
-                        var emote = new EmotePosition
-                        {
-                            Id = useLast ? lastEmote : info[0],
-                            StartIndex = int.Parse(info[(useLast ? 0 : 1)]),
-                            EndIndex = int.Parse(info[(useLast ? 1 : 2)]),
-                        };
-
-                        emotes.Add(emote);
-                    }
+                if (EmotePosition.TryParseMany(str, out var emotes))
                     Emotes = emotes;
-                }
             }
             if (map.TryGetValue("mod", out str))
                 IsMod = str == "1";
