@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.Sockets.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {

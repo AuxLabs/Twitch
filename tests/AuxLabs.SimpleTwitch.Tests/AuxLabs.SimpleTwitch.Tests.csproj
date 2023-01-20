@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Chat\" />
     <Folder Include="EventSub\" />
     <Folder Include="PubSub\" />
   </ItemGroup>

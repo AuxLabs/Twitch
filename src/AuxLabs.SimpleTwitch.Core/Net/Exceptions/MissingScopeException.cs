@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch
 {
-    public class MissingScopeException : ArgumentException
+    public class MissingScopeException : TwitchException
     {
         public MissingScopeException(string scope)
             : this(new[] { scope }) { }

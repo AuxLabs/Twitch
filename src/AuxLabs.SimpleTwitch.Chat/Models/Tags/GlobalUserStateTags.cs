@@ -49,7 +49,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
             var map = new Dictionary<string, string>
             {
                 ["user-id"] = UserId,
-                ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
+                ["user-type"] = UserType.GetEnumMemberValue(),
                 ["display-name"] = DisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = string.Join(',', Badges),

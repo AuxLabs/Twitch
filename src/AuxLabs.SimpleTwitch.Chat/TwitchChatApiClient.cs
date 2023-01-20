@@ -1,6 +1,5 @@
 ﻿using AuxLabs.SimpleTwitch.Chat.Models;
 using AuxLabs.SimpleTwitch.Sockets;
-using System.Net.WebSockets;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
@@ -12,6 +11,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public event Action<ClearChatEventArgs> ChatCleared;
         public event Action<MessageEventArgs> MessageReceived;
         public event Action<GlobalUserStateTags> GlobalUserStateReceived;
+        public event Action<NoticeEventArgs> NoticeReceived;
 
         // config variables
         private readonly bool _commandsRequested;
@@ -137,17 +137,23 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 case IrcCommand.Notice:
-                    HandleNoticeEvent(payload, readySignal);
+                    var noticeArgs = new NoticeEventArgs();
+                    if (hasTags)
+                    {
+                        noticeArgs.Tags = new();
+                        noticeArgs.Tags.LoadQueryMap(payload.Tags);
+                    }
+
+                    parameters = payload.Parameters.Split(' ', 2);
+                    noticeArgs.ChannelName = parameters[0].Trim('#');
+                    noticeArgs.Message = parameters.LastOrDefault().Trim(':');
+
+                    NoticeReceived?.Invoke(noticeArgs);
                     break;
                 default:
                     UnknownCommandReceived?.Invoke(payload);
                     break;
             };
-        }
-
-        private void HandleNoticeEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
-        {
-
         }
     }
 }
