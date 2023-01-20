@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Requests
 {
-    public class JoinChannelRequest : IrcMessage
+    public class JoinChannelRequest : IrcPayload
     {
         public JoinChannelRequest() { }
         public JoinChannelRequest(string channelName)

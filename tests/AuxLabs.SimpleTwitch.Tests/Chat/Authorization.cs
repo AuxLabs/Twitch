@@ -42,7 +42,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Chat
             _twitch.Send(new JoinChannelRequest("auxlabs"));
         }
 
-        private void OnPayloadSent(IrcMessage msg, int size)
+        private void OnPayloadSent(IrcPayload msg, int size)
         {
             _output.WriteLine(msg.ToString());
         }

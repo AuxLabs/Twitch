@@ -1,37 +1,33 @@
-﻿using System.Runtime.Serialization;
+﻿using AuxLabs.SimpleTwitch.Sockets;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat.Serialization
 {
-    public sealed class DefaultIrcSerializer : IIrcSerializer
+    public sealed class DefaultIrcSerializer : ISerializer<IrcPayload>
     {
-        public ReadOnlyMemory<byte> Write(IrcMessage msg)
+        public ReadOnlyMemory<byte> Write(IrcPayload msg)
         {
             var bytes = Encoding.UTF8.GetBytes(msg.ToString());
             return new ReadOnlyMemory<byte>(bytes);
         }
 
-        public IEnumerable<IrcMessage> Read(ReadOnlySpan<byte> data)
+        public IrcPayload Read(ref ReadOnlySpan<byte> data)
         {
-            var response = new List<IrcMessage>();
-            var msg = new IrcMessage();
+            var payload = new IrcPayload();
 
             if (GetSection(ref data) == IrcTokenType.TagIndicator)
-                msg.Tags = ReadTags(ref data);
+                payload.Tags = ReadTags(ref data);
 
-            msg.Prefix = new IrcPrefix(ReadPrefix(ref data));
-            msg.CommandRaw = ReadCommand(ref data);
-            msg.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(msg.CommandRaw);
-            msg.Parameters = ReadParameters(ref data);
+            payload.Prefix = new IrcPrefix(ReadPrefix(ref data));
+            payload.CommandRaw = ReadCommand(ref data);
+            payload.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(payload.CommandRaw);
+            payload.Parameters = ReadParameters(ref data);
 
-            response.Add(msg);
-            if (data.Length > 0)
-                response.AddRange(Read(data));
-
-            return response;
+            return payload;
         }
 
-        private Dictionary<string, string> ReadTags(ref ReadOnlySpan<byte> remaining)
+        private static Dictionary<string, string> ReadTags(ref ReadOnlySpan<byte> remaining)
         {
             var tags = new Dictionary<string, string>();
 
@@ -80,7 +76,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             return tags;
         }
 
-        private string ReadPrefix(ref ReadOnlySpan<byte> remaining)
+        private static string ReadPrefix(ref ReadOnlySpan<byte> remaining)
         {
             for (int i = 1; i < remaining.Length; i++)
             {
@@ -95,7 +91,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             throw new SerializationException("Irc message prefix was not found.");
         }
 
-        private string ReadCommand(ref ReadOnlySpan<byte> remaining)
+        private static string ReadCommand(ref ReadOnlySpan<byte> remaining)
         {
             for (int i = 1; i < remaining.Length; i++)
             {
@@ -110,7 +106,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             return Encoding.UTF8.GetString(remaining).Trim();
         }
 
-        private string ReadParameters(ref ReadOnlySpan<byte> remaining)
+        private static string ReadParameters(ref ReadOnlySpan<byte> remaining)
         {
             for (int i = 1; i < remaining.Length; i++)
             {
@@ -118,17 +114,15 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
                 var n = remaining[i + 1];
                 if (r == (byte)'\r' && n == (byte)'\n')
                 {
-                    var test1 = Encoding.UTF8.GetString(remaining);
                     var result = Encoding.UTF8.GetString(remaining[..i]).Trim();
                     remaining = remaining[(i + 2)..];
                     return result;
                 }
             }
-            var test2 = Encoding.UTF8.GetString(remaining);
             return Encoding.UTF8.GetString(remaining).Trim();
         }
 
-        private IrcTokenType GetSection(ref ReadOnlySpan<byte> remaining)
+        private static IrcTokenType GetSection(ref ReadOnlySpan<byte> remaining)
         {
             for (int i = 0; i < remaining.Length; i++)
             {
@@ -149,17 +143,13 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private static IrcTokenType GetTagTokenType(byte c)
         {
-            switch (c)
+            return c switch
             {
-                case (byte)'=':
-                    return IrcTokenType.TagKeyValueSeparator;
-                case (byte)';':
-                    return IrcTokenType.TagKeyValueEnd;
-                case (byte)' ':
-                    return IrcTokenType.TagEnd;
-                default:
-                    return IrcTokenType.None;
-            }
+                (byte)'=' => IrcTokenType.TagKeyValueSeparator,
+                (byte)';' => IrcTokenType.TagKeyValueEnd,
+                (byte)' ' => IrcTokenType.TagEnd,
+                _ => IrcTokenType.None,
+            };
         }
     }
 }

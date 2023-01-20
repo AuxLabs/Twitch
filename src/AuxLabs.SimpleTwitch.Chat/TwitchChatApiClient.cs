@@ -5,24 +5,28 @@ using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class TwitchChatApiClient : BaseSocketClient<IrcMessage>
+    public class TwitchChatApiClient : BaseSocketClient<IrcPayload>
     {
-        public event Action<IrcMessage> UnknownCommandReceived;
+        public event Action<IrcPayload> UnknownCommandReceived;
 
         public event Action<ClearChatEventArgs> ChatCleared;
         public event Action<MessageEventArgs> MessageReceived;
         public event Action<GlobalUserStateTags> GlobalUserStateReceived;
 
-        public TwitchChatConfig Config { get; }
+        // config variables
+        private readonly bool _commandsRequested;
+        private readonly bool _membershipRequested;
+        private readonly bool _tagsRequested;
 
-        private readonly IIrcSerializer _serializer;
-        private readonly MemoryStream _stream;
+        protected override ISerializer<IrcPayload> Serializer { get; }
 
         public TwitchChatApiClient(TwitchChatConfig config = default) : base(-1)
         {
-            Config = config;
-            _serializer = Config.IrcSerializer ?? new DefaultIrcSerializer();
-            _stream = new MemoryStream();
+            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer();
+
+            _commandsRequested = config.RequestCommands;
+            _membershipRequested = config.RequestMembership;
+            _tagsRequested = config.RequestTags;
         }
 
         public void Run()
@@ -36,72 +40,33 @@ namespace AuxLabs.SimpleTwitch.Chat
                 password = password.Insert(0, "oauth:");
 
             var builder = new StringBuilder();
-            if (Config.RequestMembership)
+            if (_membershipRequested)
                 builder.Append("twitch.tv/membership ");
-            if (Config.RequestCommands)
+            if (_commandsRequested)
                 builder.Append("twitch.tv/commands ");
-            if (Config.RequestTags)
+            if (_tagsRequested)
                 builder.Append("twitch.tv/tags");
             if (builder.Length > 0)
             {
                 builder.Insert(0, ":");
-                Send(new IrcMessage(IrcCommand.CapabilityRequest, builder.ToString()));
+                Send(new IrcPayload(IrcCommand.CapabilityRequest, builder.ToString()));
             }
 
-            Send(new IrcMessage(IrcCommand.Password, password));
-            Send(new IrcMessage(IrcCommand.Nickname, username));
+            Send(new IrcPayload(IrcCommand.Password, password));
+            Send(new IrcPayload(IrcCommand.Nickname, username));
         }
 
-        protected override async Task SendAsync(ClientWebSocket client, IrcMessage payload, CancellationToken cancelToken)
-        {
-            var data = _serializer.Write(payload);
-            await client.SendAsync(data, WebSocketMessageType.Text, true, cancelToken);
-            OnPayloadSent(payload, data.Length);
-        }
-        protected override void OnPayloadSent(IrcMessage payload, int bufferSize)
-            => base.OnPayloadSent(payload, bufferSize);
-
-        protected override void SendHeartbeat() => Send(new IrcMessage
+        protected override void SendHeartbeat() => Send(new IrcPayload
         {
             Command = IrcCommand.Ping
         });
 
-        protected override void SendHeartbeatAck() => Send(new IrcMessage
+        protected override void SendHeartbeatAck() => Send(new IrcPayload
         {
             Command = IrcCommand.Pong
         });
 
-        protected override async Task ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
-        {
-            _stream.Position = 0;
-            _stream.SetLength(0);
-
-            WebSocketReceiveResult result;
-            do
-            {
-                var buffer = new ArraySegment<byte>(new byte[10 * 1024]);
-                result = await client.ReceiveAsync(buffer, cancelToken).ConfigureAwait(false);
-                _stream.Write(buffer.ToArray(), 0, result.Count);
-
-                ReceivedData = true;
-
-                if (result.CloseStatus != null)
-                    throw new Sockets.WebSocketClosedException(result.CloseStatus.Value, result.CloseStatusDescription);
-            }
-            while (!result.EndOfMessage);
-
-            var payload = _serializer.Read(_stream.ToArray());
-            
-            foreach (var item in payload)
-            {
-                HandleEvent(item, readySignal); // Must be before event so slow user handling can't trigger timeouts
-                OnPayloadReceived(item, _stream.Length);
-            }
-        }
-        protected override void OnPayloadReceived(IrcMessage payload, long bufferSize)
-            => base.OnPayloadReceived(payload, bufferSize);
-
-        protected override void HandleEvent(IrcMessage payload, TaskCompletionSource<bool> readySignal)
+        protected override void HandleEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
             bool hasTags = payload.Tags != null;
             var parameters = Array.Empty<string>();
@@ -135,14 +100,9 @@ namespace AuxLabs.SimpleTwitch.Chat
                     parameters = payload.Parameters.Split(' ', 2);
                     messageArgs.ChannelName = parameters[0].Trim('#');
                     messageArgs.Message = parameters.LastOrDefault().Trim(':');
-                    messageArgs.UserName = payload.Prefix.Username;
+                    messageArgs.UserName = payload.Prefix?.Username;
 
                     MessageReceived?.Invoke(messageArgs);
-                    break;
-
-                case IrcCommand.Ping:
-                    break;
-                case IrcCommand.Pong:
                     break;
                 case IrcCommand.Mode:
                     break;
@@ -185,7 +145,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             };
         }
 
-        private void HandleNoticeEvent(IrcMessage payload, TaskCompletionSource<bool> readySignal)
+        private void HandleNoticeEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
 
         }

@@ -3,18 +3,18 @@ using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class IrcMessage<TTags> where TTags : IDictionary<string, string>
+    public class IrcPayload<TTags> where TTags : IDictionary<string, string>
     {
         public TTags Tags { get; set; }
-        public IrcPrefix Prefix { get; set; }
+        public IrcPrefix? Prefix { get; set; } = null;
         public IrcCommand Command { get; set; }
         public string CommandRaw { get; set; }
         public string Parameters { get; set; }
 
-        public IrcMessage() { }
-        public IrcMessage(IrcCommand ircCommand, string parameters)
+        public IrcPayload() { }
+        public IrcPayload(IrcCommand ircCommand, string parameters)
             : this(null, ircCommand, parameters) { }
-        public IrcMessage(string prefix, IrcCommand ircCommand, string parameters)
+        public IrcPayload(string prefix, IrcCommand ircCommand, string parameters)
         {
             Prefix = new IrcPrefix(prefix);
             Command = ircCommand;
@@ -32,8 +32,8 @@ namespace AuxLabs.SimpleTwitch.Chat
                 builder.Append(' ');
             }
 
-            // Prefix value in a sent message is constant, so custom values are ignored
-            //builder.Append($":{TwitchConstants.ChatHost} ");
+            if (Prefix != null)
+                builder.Append($":{Prefix} ");
 
             var commandRaw = CommandRaw ?? Command.GetEnumMemberValue();
             builder.Append($"{commandRaw} {Parameters}");
@@ -42,12 +42,12 @@ namespace AuxLabs.SimpleTwitch.Chat
     }
 
     // Provide a generic dictionary implementation for when Tag type isn't known, or isn't needed to be known
-    public class IrcMessage : IrcMessage<Dictionary<string, string>>
+    public class IrcPayload : IrcPayload<Dictionary<string, string>>
     {
-        public IrcMessage() { }
-        public IrcMessage(IrcCommand ircCommand, string parameters)
+        public IrcPayload() { }
+        public IrcPayload(IrcCommand ircCommand, string parameters)
             : base(ircCommand, parameters) { }
-        public IrcMessage(string prefix, IrcCommand ircCommand, string parameters)
+        public IrcPayload(string prefix, IrcCommand ircCommand, string parameters)
             : base(prefix, ircCommand, parameters) { }
     }
 }

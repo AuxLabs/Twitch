@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using AuxLabs.SimpleTwitch.Sockets;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class TwitchChatConfig
     {
@@ -20,6 +22,6 @@
         /// <summary>
         /// Specify a custom serializer for chat irc messages
         /// </summary>
-        public IIrcSerializer IrcSerializer { get; init; } = null;
+        public ISerializer<IrcPayload> IrcSerializer { get; init; } = null;
     }
 }

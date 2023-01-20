@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Requests
 {
-    public class ClearChatRequest : IrcMessage
+    public class ClearChatRequest : IrcPayload
     {
         public ClearChatRequest(string channelName, string userName = null)
         {
