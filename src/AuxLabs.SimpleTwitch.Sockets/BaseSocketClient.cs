@@ -1,4 +1,6 @@
-﻿using System.Collections.Concurrent;
+﻿// Code modified from Wumpus.Net's GatewaySocketClient
+
+using System.Collections.Concurrent;
 using System.Net.WebSockets;
 using System.Runtime.Serialization;
 
