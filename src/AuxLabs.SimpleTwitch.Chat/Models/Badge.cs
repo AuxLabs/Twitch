@@ -3,9 +3,9 @@
     public struct Badge
     {
         public string Name { get; }
-        public int Version { get; }
+        public string Version { get; }
 
-        public Badge(string name, int version = 1) 
+        public Badge(string name, string version = "1") 
             => (Name, Version) = (name, version);
 
         public override string ToString()
@@ -15,9 +15,7 @@
         {
             var info = value.Split('/');
             var name = info[0];
-            if (!int.TryParse(info[1], out var version))
-                throw new ArgumentException(info[1]);
-            badge = new Badge(name, version);
+            badge = new Badge(name, info[1]);
         }
 
         public static bool TryParseMany(string value, out IReadOnlyCollection<Badge> badges)
