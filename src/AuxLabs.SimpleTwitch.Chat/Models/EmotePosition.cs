@@ -3,13 +3,13 @@
     public struct EmotePosition
     {
         public string Id { get; init; }
-        public IReadOnlyCollection<(int Start, int End)> Indices { get; init; }
+        public IReadOnlyCollection<Range> Ranges { get; init; }
 
-        public EmotePosition(string name, IReadOnlyCollection<(int, int)> indices)
-            => (Id, Indices) = (name, indices);
+        public EmotePosition(string name, IReadOnlyCollection<Range> ranges)
+            => (Id, Ranges) = (name, ranges);
 
         public override string ToString()
-            => $"{Id}:{Indices.Select(x => $"{x.Start}-{x.End}")}";
+            => $"{Id}:{Ranges.Select(x => $"{x.Start}-{x.End}")}";
 
         public static void Parse(string value, out EmotePosition emote)
         {
@@ -17,19 +17,19 @@
             var id = info[0];
             var positions = info[1].Split(',');
 
-            var indices = new List<(int, int)>();
+            var ranges = new List<Range>();
             foreach (var item in positions)
             {
                 var position = item.Split('-');
                 int start = int.Parse(position[0]);
                 int end = int.Parse(position[1]);
-                indices.Add((start, end));
+                ranges.Add(new Range(start, end));
             }
 
             emote = new EmotePosition
             {
                 Id = id,
-                Indices = indices.AsReadOnly()
+                Ranges = ranges.AsReadOnly()
             };
         }
 
