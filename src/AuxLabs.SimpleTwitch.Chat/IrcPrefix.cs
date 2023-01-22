@@ -13,6 +13,12 @@
             _value = prefix;
             if (!string.IsNullOrWhiteSpace(prefix))
             {
+                if (!prefix.Contains('!') && !prefix.Contains('@'))
+                {
+                    Host = prefix[1..];
+                    return;
+                }
+
                 var split = prefix.Split(':', '!', '@');
                 Nickname = split.ElementAtOrDefault(0);
                 Username = split.ElementAtOrDefault(1);
