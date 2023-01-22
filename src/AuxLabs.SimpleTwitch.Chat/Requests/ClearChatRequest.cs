@@ -2,12 +2,14 @@
 {
     public class ClearChatRequest : IrcPayload
     {
+        public ClearChatRequest() { }
         public ClearChatRequest(string channelName, string userName = null)
         {
             Command = IrcCommand.ClearChat;
-            Parameters = $"#{channelName}";
+            var parameters = new[] { $"#{channelName}" };
             if (userName != null)
-                Parameters += $" :{userName}";
+                parameters.Append($" :{userName}");
+            Parameters = parameters;
         }
     }
 }

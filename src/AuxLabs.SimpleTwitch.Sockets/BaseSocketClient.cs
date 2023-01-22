@@ -14,8 +14,8 @@ namespace AuxLabs.SimpleTwitch.Sockets
         public event Action<SerializationException> DeserializationError;
 
         // Raw events
-        public event Action<TPayload, long> ReceivedPayload;
-        public event Action<TPayload, int> SentPayload;
+        public event Action<TPayload, long> PayloadReceived;
+        public event Action<TPayload, int> PayloadSent;
 
         public ConnectionState State { get; private set; }
         protected abstract ISerializer<TPayload> Serializer { get; }
@@ -304,7 +304,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
         {
             var data = Serializer.Write(payload);
             await client.SendAsync(data, WebSocketMessageType.Text, true, cancelToken);
-            SentPayload?.Invoke(payload, data.Length);
+            PayloadSent?.Invoke(payload, data.Length);
         }
 
         private async Task ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
@@ -334,7 +334,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
             var payload = Serializer.Read(ref data);
 
             HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
-            ReceivedPayload?.Invoke(payload, _stream.Length);
+            PayloadReceived?.Invoke(payload, _stream.Length);
             if (data.Length != 0)
                 RecursiveRead(data, readySignal);
         }

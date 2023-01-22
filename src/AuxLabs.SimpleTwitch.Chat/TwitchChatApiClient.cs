@@ -1,4 +1,5 @@
 ﻿using AuxLabs.SimpleTwitch.Chat.Models;
+using AuxLabs.SimpleTwitch.Chat.Requests;
 using AuxLabs.SimpleTwitch.Sockets;
 using System.Text;
 
@@ -14,19 +15,21 @@ namespace AuxLabs.SimpleTwitch.Chat
         public event Action<NoticeEventArgs> NoticeReceived;
 
         // config variables
-        private readonly bool _commandsRequested;
-        private readonly bool _membershipRequested;
-        private readonly bool _tagsRequested;
+        public readonly bool CommandsRequested;
+        public readonly bool MembershipRequested;
+        public readonly bool TagsRequested;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
-        public TwitchChatApiClient(TwitchChatConfig config = default) : base(-1)
+        public TwitchChatApiClient(TwitchChatConfig config = null) : base(-1)
         {
+            if (config == null) config = new TwitchChatConfig();
+
             Serializer = config.IrcSerializer ?? new DefaultIrcSerializer();
 
-            _commandsRequested = config.RequestCommands;
-            _membershipRequested = config.RequestMembership;
-            _tagsRequested = config.RequestTags;
+            CommandsRequested = config.RequestCommands;
+            MembershipRequested = config.RequestMembership;
+            TagsRequested = config.RequestTags;
         }
 
         public void Run()
@@ -39,18 +42,8 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (!password.StartsWith("oauth:"))
                 password = password.Insert(0, "oauth:");
 
-            var builder = new StringBuilder();
-            if (_membershipRequested)
-                builder.Append("twitch.tv/membership ");
-            if (_commandsRequested)
-                builder.Append("twitch.tv/commands ");
-            if (_tagsRequested)
-                builder.Append("twitch.tv/tags");
-            if (builder.Length > 0)
-            {
-                builder.Insert(0, ":");
-                Send(new IrcPayload(IrcCommand.CapabilityRequest, builder.ToString()));
-            }
+            var capReq = new CapabilityRequest(membership: MembershipRequested, tags: TagsRequested, commands: CommandsRequested);
+            if (capReq.IsValid) Send(capReq);
 
             Send(new IrcPayload(IrcCommand.Password, password));
             Send(new IrcPayload(IrcCommand.Nickname, username));
@@ -74,46 +67,31 @@ namespace AuxLabs.SimpleTwitch.Chat
             switch (payload.Command)
             {
                 case IrcCommand.ClearChat:
-                    var clearChatArgs = new ClearChatEventArgs();
+                    var clearChatArgs = new ClearChatEventArgs(payload.Parameters);
                     if (hasTags)
-                    {
-                        clearChatArgs.Tags = new();
-                        clearChatArgs.Tags.LoadQueryMap(payload.Tags);
-                    }
-
-                    parameters = payload.Parameters.Split(' ');
-                    clearChatArgs.ChannelName = parameters[0].Trim('#');
-                    clearChatArgs.UserName = parameters.ElementAtOrDefault(1)?.Trim(':');
-
+                        clearChatArgs.Tags = (ClearChatTags)payload.Tags;
                     ChatCleared?.Invoke(clearChatArgs);
                     break;
+
                 case IrcCommand.ClearMessage:
                     break;
+
                 case IrcCommand.Message:
-                    var messageArgs = new MessageEventArgs();
+                    var messageArgs = new MessageEventArgs(payload.Prefix, payload.Parameters);
                     if (hasTags)
-                    {
-                        messageArgs.Tags = new();
-                        messageArgs.Tags.LoadQueryMap(payload.Tags);
-                    }
-
-                    parameters = payload.Parameters.Split(' ', 2);
-                    messageArgs.ChannelName = parameters[0].Trim('#');
-                    messageArgs.Message = parameters.LastOrDefault().Trim(':');
-                    messageArgs.UserName = payload.Prefix?.Username;
-
+                        messageArgs.Tags = (MessageTags)payload.Tags;
                     MessageReceived?.Invoke(messageArgs);
                     break;
+
                 case IrcCommand.Mode:
                     break;
 
                 case IrcCommand.Names:
                     break;
-                case IrcCommand.NamesStart:
+                case IrcCommand.NamesList:
                     break;
                 case IrcCommand.NamesEnd:
                     break;
-
                 case IrcCommand.Reconnect:
                     break;
                 case IrcCommand.RoomState:
@@ -123,11 +101,9 @@ namespace AuxLabs.SimpleTwitch.Chat
                 case IrcCommand.UserState:
                     break;
                 case IrcCommand.GlobalUserState:
-                    var globalUserStateTags = new GlobalUserStateTags();
-                    if (hasTags)
-                        globalUserStateTags.LoadQueryMap(payload.Tags);
-                    GlobalUserStateReceived?.Invoke(globalUserStateTags);
+                    GlobalUserStateReceived?.Invoke((GlobalUserStateTags)payload.Tags);
                     break;
+
                 case IrcCommand.CapabilityAcknowledge:
                     break;
 
@@ -137,19 +113,12 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 case IrcCommand.Notice:
-                    var noticeArgs = new NoticeEventArgs();
+                    var noticeArgs = new NoticeEventArgs(payload.Parameters);
                     if (hasTags)
-                    {
-                        noticeArgs.Tags = new();
-                        noticeArgs.Tags.LoadQueryMap(payload.Tags);
-                    }
-
-                    parameters = payload.Parameters.Split(' ', 2);
-                    noticeArgs.ChannelName = parameters[0].Trim('#');
-                    noticeArgs.Message = parameters.LastOrDefault().Trim(':');
-
+                        noticeArgs.Tags = (NoticeTags)payload.Tags;
                     NoticeReceived?.Invoke(noticeArgs);
                     break;
+
                 default:
                     UnknownCommandReceived?.Invoke(payload);
                     break;

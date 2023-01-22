@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetBitsLeaderboardRequest : QueryMap<string>
+    public class GetBitsLeaderboardRequest : QueryMap
     {
         public string UserId { get; set; }
 

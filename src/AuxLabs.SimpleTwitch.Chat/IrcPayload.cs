@@ -1,22 +1,23 @@
-﻿using System.Runtime.Serialization;
+﻿using AuxLabs.SimpleTwitch.Chat.Models;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class IrcPayload<TTags> where TTags : IDictionary<string, string>
+    public class IrcPayload
     {
-        public TTags Tags { get; set; }
+        public BaseTags Tags { get; set; } = null;
         public IrcPrefix? Prefix { get; set; } = null;
         public IrcCommand Command { get; set; }
         public string CommandRaw { get; set; }
-        public string Parameters { get; set; }
+        public IReadOnlyCollection<string> Parameters { get; set; }
 
         public IrcPayload() { }
-        public IrcPayload(IrcCommand ircCommand, string parameters)
+        public IrcPayload(IrcCommand ircCommand, params string[] parameters)
             : this(null, ircCommand, parameters) { }
-        public IrcPayload(string prefix, IrcCommand ircCommand, string parameters)
+        public IrcPayload(string prefix, IrcCommand ircCommand, params string[] parameters)
         {
-            Prefix = new IrcPrefix(prefix);
+            if (prefix != null)
+                Prefix = new IrcPrefix(prefix);
             Command = ircCommand;
             Parameters = parameters;
         }
@@ -27,27 +28,39 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (Tags != null)
             {
                 builder.Append('@');
-                foreach (var tag in Tags)
+                foreach (var tag in Tags.CreateQueryMap())
                     builder.Append($";{tag.Key}={tag.Value}");
                 builder.Append(' ');
             }
 
             if (Prefix != null)
-                builder.Append($":{Prefix} ");
+                builder.Append($"{Prefix} ");
 
             var commandRaw = CommandRaw ?? Command.GetEnumMemberValue();
-            builder.Append($"{commandRaw} {Parameters}");
+            builder.Append(commandRaw);
+            if (Parameters.Count > 0)
+                builder.Append($" {string.Join(' ', Parameters)}");
             return builder.ToString();
         }
-    }
 
-    // Provide a generic dictionary implementation for when Tag type isn't known, or isn't needed to be known
-    public class IrcPayload : IrcPayload<Dictionary<string, string>>
-    {
-        public IrcPayload() { }
-        public IrcPayload(IrcCommand ircCommand, string parameters)
-            : base(ircCommand, parameters) { }
-        public IrcPayload(string prefix, IrcCommand ircCommand, string parameters)
-            : base(prefix, ircCommand, parameters) { }
+        public static Dictionary<IrcCommand, Type> CommandTypeSelector => new()
+        {
+            [IrcCommand.ClearChat] = typeof(ClearChatTags),
+            [IrcCommand.ClearMessage] = typeof(ClearMessageTags),
+            [IrcCommand.Message] = typeof(MessageTags),
+
+            //[IrcCommand.Mode] = typeof(BaseTags),
+            //[IrcCommand.Names] = typeof(BaseTags),
+            //[IrcCommand.NamesList] = typeof(BaseTags),
+            //[IrcCommand.NamesEnd] = typeof(BaseTags),
+            [IrcCommand.Notice] = typeof(NoticeTags),
+            //[IrcCommand.Reconnect] = typeof(BaseTags),
+            [IrcCommand.RoomState] = typeof(RoomStateTags),
+            //[IrcCommand.UserNotice] = typeof(BaseTags),
+            //[IrcCommand.UserState] = typeof(BaseTags),
+            [IrcCommand.GlobalUserState] = typeof(GlobalUserStateTags),
+            //[IrcCommand.CapabilityAcknowledge] = typeof(BaseTags),
+            //[IrcCommand.CapabilityDenied] = typeof(BaseTags)
+        };
     }
 }

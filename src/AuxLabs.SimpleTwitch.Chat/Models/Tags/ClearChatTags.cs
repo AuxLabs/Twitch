@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class ClearChatTags : QueryMap<string>
+    public class ClearChatTags : BaseTags
     {
         /// <summary>
         /// The date and time this event occurred.
@@ -33,7 +33,7 @@
             };
             return map;
         }
-        public void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+        public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("tim-sent-ts", out string str))
                 Timestamp = DateTime.Parse(str);

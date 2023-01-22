@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class PartChannelEvent
+    public class PartChannelEventArgs
     {
         public string ChannelName { get; set; }
         public string UserName { get; set; }

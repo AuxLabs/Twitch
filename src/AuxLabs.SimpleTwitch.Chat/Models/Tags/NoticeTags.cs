@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class NoticeTags : QueryMap<string>
+    public class NoticeTags : BaseTags
     {
         /// <summary>
         /// A value to determine the action’s outcome.
@@ -21,7 +21,7 @@
             };
             return map;
         }
-        public void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+        public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("msg-id", out string str))
                 NoticeType = EnumHelper.GetValueFromEnumMember<NoticeType>(str);

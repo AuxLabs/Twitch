@@ -9,8 +9,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         ClearChat,
         [EnumMember(Value = "CLEARMSG")]    // Single message is removed
         ClearMessage,
-        [EnumMember(Value = "HOSTTARGET")]  // Channel starts or stops hosting
-        HostTarget,
         [EnumMember(Value = "PRIVMSG")]     // Send a message to a channel
         Message,
 
@@ -21,7 +19,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         [EnumMember(Value = "NAMES")]       // List current chatters in a channel
         Names,
         [EnumMember(Value = "353")]         // Repeating list of names until 366
-        NamesStart,
+        NamesList,
         [EnumMember(Value = "366")]         // End of names list
         NamesEnd,
         [EnumMember(Value = "NOTICE")]      // General notices from the server
@@ -52,6 +50,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         [EnumMember(Value = "JOIN")]        // Join a channel
         Join,
         [EnumMember(Value = "PART")]        // Leave a channel
-        Part,
+        Part
     }
 }

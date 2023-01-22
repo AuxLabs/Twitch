@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class MessageTags : QueryMap<string>
+    public class MessageTags : BaseTags
     {
         /// <summary>
         /// An ID that uniquely identifies the message.
@@ -106,7 +106,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
 
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
+            return new Dictionary<string, string>
             {
                 ["id"] = Id,
                 ["room-id"] = ChannelId,
@@ -129,9 +129,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
                 ["reply-parent-display-name"] = ReplyParentDisplayName,
                 ["reply-parent-msg-body"] = ReplyParentMessage.Replace(" ", "\\s")
             };
-            return map;
         }
-        public void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+        public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("id", out string str))
                 Id = str;

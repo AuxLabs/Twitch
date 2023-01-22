@@ -7,8 +7,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     [Header("User-Agent", "Auxlabs (https://github.com/AuxLabs/SimpleTwitch)")]
     public interface ITwitchIdentityApi : IDisposable
     {
-        Identity Identity { get; }
-
         [Header("Authorization")]
         AuthenticationHeaderValue Authorization { get; set; }
 

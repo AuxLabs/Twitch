@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class RoomStateTags
+    public class RoomStateTags : BaseTags
     {
         /// <summary>
         /// An ID that identifies the channel.
@@ -47,5 +47,18 @@
         /// </summary>
         [IrcTagName("subs-only")]
         public bool IsSubsOnly { get; set; }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            var map = new Dictionary<string, string>
+            {
+                
+            };
+            return map;
+        }
+        public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+        {
+
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public abstract class GetAnalyticsParams : QueryMap<string>
+    public abstract class GetAnalyticsParams : QueryMap
     {
         /// <summary>
         /// Cursor for forward pagination

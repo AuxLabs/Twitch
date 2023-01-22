@@ -2,6 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch
 {
+    public abstract class QueryMap : QueryMap<string> { }       // QueryMap defaults to string values
     public abstract class QueryMap<T> : IQueryMap<T>
     {
         private IDictionary<string, T> _map = null;

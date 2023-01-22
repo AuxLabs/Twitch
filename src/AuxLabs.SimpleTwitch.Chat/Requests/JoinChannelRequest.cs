@@ -6,7 +6,7 @@
         public JoinChannelRequest(string channelName)
         {
             Command = IrcCommand.Join;
-            Parameters = $"#{channelName}";
+            Parameters = new[] { $"#{channelName}" };
         }
     }
 }

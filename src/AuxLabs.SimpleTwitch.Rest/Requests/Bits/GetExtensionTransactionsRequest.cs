@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest.Requests
 {
-    public class GetExtensionTransactionsRequest : QueryMap<string>
+    public class GetExtensionTransactionsRequest : QueryMap
     {
         [JsonPropertyName("extension_id")]
         public string ExtensionId { get; set; }

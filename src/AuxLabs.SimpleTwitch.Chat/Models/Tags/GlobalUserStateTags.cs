@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Chat.Models
 {
-    public class GlobalUserStateTags : QueryMap<string>
+    public class GlobalUserStateTags : BaseTags
     {
         /// <summary>
         /// The user’s ID.
@@ -59,7 +59,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
             };
             return map;
         }
-        public void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+        public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("user-id", out string str))
                 UserId = str;
