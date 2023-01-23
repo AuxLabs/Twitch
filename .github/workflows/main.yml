@@ -16,7 +16,7 @@ jobs:
         dotnet: [ 'net6.0' ]
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet }}
@@ -53,7 +53,7 @@ jobs:
         run: "/home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli"
       - name: Initialize Mock API
         run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet }}
@@ -73,7 +73,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-${{ github.run_number }}_${{ matrix.dotnet }}
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet }}
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
             dotnet-version: ${{ matrix.dotnet }}
