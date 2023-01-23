@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/a/SimpleTwitch/SimpleTwitch/docs",
+  "source_base_path": "/home/runner/work/SimpleTwitch/SimpleTwitch/docs",
   "xrefmap": "xrefmap.yml",
   "files": [],
   "incremental_info": [
@@ -23,7 +23,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 139,
+          "total_file_count": 167,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
