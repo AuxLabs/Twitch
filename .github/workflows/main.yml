@@ -19,7 +19,7 @@ jobs:
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}          
+          dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install Dependencies
         run: dotnet restore
       - name: Build
@@ -78,6 +78,8 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
+      - name: Install Dependencies
+        run: dotnet restore
       - name: Create Packages
         run: |
           dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
@@ -101,7 +103,7 @@ jobs:
         with:
             dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install
-        run: dotnet install -g docfx
+        run: dotnet tool install -g docfx
       - name: Build
         run: docfx docs/docfx.json
       - name: Deploy
