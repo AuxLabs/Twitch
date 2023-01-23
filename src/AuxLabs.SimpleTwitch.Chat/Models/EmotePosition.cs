@@ -2,14 +2,20 @@
 {
     public struct EmotePosition
     {
+        /// <summary>
+        /// An ID that uniquely identifies this emote
+        /// </summary>
         public string Id { get; init; }
+        /// <summary>
+        /// A collection of positions this emote appears in a message
+        /// </summary>
         public IReadOnlyCollection<Range> Ranges { get; init; }
 
         public EmotePosition(string name, IReadOnlyCollection<Range> ranges)
             => (Id, Ranges) = (name, ranges);
 
         public override string ToString()
-            => $"{Id}:{Ranges.Select(x => $"{x.Start}-{x.End}")}";
+            => $"{Id}:{string.Join(',', Ranges.Select(x => $"{x.Start.Value}-{x.End.Value}"))}";
 
         public static void Parse(string value, out EmotePosition emote)
         {
