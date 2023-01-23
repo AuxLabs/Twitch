@@ -80,6 +80,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-${{ github.run_number }}_${{ matrix.dotnet }}
+          path: "./src"
       - name: Install Dependencies
         run: dotnet restore
       - name: Create Packages
