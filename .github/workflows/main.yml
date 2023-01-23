@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-${{ github.run_number }}_${{ matrix.dotnet-version }}
-          path: ./bin/Release/
+          path: "/home/runner/work/SimpleTwitch/SimpleTwitch/src/*/bin/Release/${{ matrix.dotnet-version }}/*"
           retention-days: 1
 
   test:
