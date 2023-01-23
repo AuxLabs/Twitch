@@ -5,38 +5,43 @@
         /// <summary>
         /// The date and time this event occurred.
         /// </summary>
-        [IrcTagName("tmi-sent-ts")]
         public DateTime Timestamp { get; set; }
 
         /// <summary>
         /// A UUID that identifies the message that was removed.
         /// </summary>
-        [IrcTagName("target-msg-id")]
         public string TargetMessageId { get; set; }
 
         /// <summary>
         /// The name of the user who sent the message.
         /// </summary>
-        [IrcTagName("login")]
         public string Login { get; set; }
 
         /// <summary>
         /// The ID of the channel (chat room) where the message was removed from.
         /// </summary>
-        [IrcTagName("room-id")]
         public string ChannelId { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
+            return new Dictionary<string, string>
             {
-
+                ["tim-sent-ts"] = Timestamp.ToString(),
+                ["target-msg-id"] = TargetMessageId,
+                ["login"] = Login,
+                ["room-id"] = ChannelId
             };
-            return map;
         }
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
-
+            if (map.TryGetValue("tim-sent-ts", out string str))
+                Timestamp = DateTime.Parse(str);
+            if (map.TryGetValue("target-msg-id", out str))
+                TargetMessageId = str;
+            if (map.TryGetValue("login", out str))
+                Login = str;
+            if (map.TryGetValue("room-id", out str))
+                ChannelId = str;
         }
     }
 }
