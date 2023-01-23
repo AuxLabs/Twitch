@@ -10,9 +10,16 @@ namespace AuxLabs.SimpleTwitch.Chat
         public event Action<IrcPayload> UnknownCommandReceived;
 
         public event Action<ClearChatEventArgs> ChatCleared;
+        public event Action<ClearMessageEventArgs> MessageCleared;
         public event Action<MessageEventArgs> MessageReceived;
         public event Action<GlobalUserStateTags> GlobalUserStateReceived;
+
+        public event Action<RoomStateEventArgs> RoomStateReceived;
+
+        public event Action<MembershipEventArgs> ChannelJoined;
+        public event Action<MembershipEventArgs> ChannelLeft;
         public event Action<NoticeEventArgs> NoticeReceived;
+        public event Action<UserNoticeEventArgs> UserNoticeReceived;
 
         // config variables
         public readonly bool CommandsRequested;
@@ -62,24 +69,24 @@ namespace AuxLabs.SimpleTwitch.Chat
         protected override void HandleEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
             bool hasTags = payload.Tags != null;
-            var parameters = Array.Empty<string>();
 
             switch (payload.Command)
             {
                 case IrcCommand.ClearChat:
                     var clearChatArgs = new ClearChatEventArgs(payload.Parameters);
-                    if (hasTags)
-                        clearChatArgs.Tags = (ClearChatTags)payload.Tags;
+                    if (hasTags) clearChatArgs.Tags = (ClearChatTags)payload.Tags;
                     ChatCleared?.Invoke(clearChatArgs);
                     break;
 
                 case IrcCommand.ClearMessage:
+                    var clearMsgArgs = new ClearMessageEventArgs(payload.Parameters);
+                    if (hasTags) clearMsgArgs.Tags = (ClearMessageTags)payload.Tags;
+                    MessageCleared?.Invoke(clearMsgArgs);
                     break;
 
                 case IrcCommand.Message:
                     var messageArgs = new MessageEventArgs(payload.Prefix, payload.Parameters);
-                    if (hasTags)
-                        messageArgs.Tags = (MessageTags)payload.Tags;
+                    if (hasTags) messageArgs.Tags = (MessageTags)payload.Tags;
                     MessageReceived?.Invoke(messageArgs);
                     break;
 
@@ -94,9 +101,17 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
                 case IrcCommand.Reconnect:
                     break;
+
                 case IrcCommand.RoomState:
+                    var roomStateArgs = new RoomStateEventArgs(payload.Parameters);
+                    if (hasTags) roomStateArgs.Tags = (RoomStateTags)payload.Tags;
+                    RoomStateReceived?.Invoke(roomStateArgs);
                     break;
+
                 case IrcCommand.UserNotice:
+                    var userNoticeArgs = new UserNoticeEventArgs(payload.Parameters);
+                    if (hasTags) userNoticeArgs.Tags = (UserNoticeTags)payload.Tags;
+                    UserNoticeReceived?.Invoke(userNoticeArgs);
                     break;
                 case IrcCommand.UserState:
                     break;
@@ -108,14 +123,18 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 case IrcCommand.Join:
+                    var joinArgs = new MembershipEventArgs(payload.Prefix.Value, payload.Parameters);
+                    ChannelJoined?.Invoke(joinArgs);
                     break;
+
                 case IrcCommand.Part:
+                    var leftArgs = new MembershipEventArgs(payload.Prefix.Value, payload.Parameters);
+                    ChannelLeft?.Invoke(leftArgs);
                     break;
 
                 case IrcCommand.Notice:
                     var noticeArgs = new NoticeEventArgs(payload.Parameters);
-                    if (hasTags)
-                        noticeArgs.Tags = (NoticeTags)payload.Tags;
+                    if (hasTags) noticeArgs.Tags = (NoticeTags)payload.Tags;
                     NoticeReceived?.Invoke(noticeArgs);
                     break;
 
