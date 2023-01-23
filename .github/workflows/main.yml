@@ -16,10 +16,10 @@ jobs:
         dotnet: [ 'net6.0' ]
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: ${{ matrix.dotnet }}
       - name: Install Dependencies
         run: dotnet restore
       - name: Build
@@ -27,7 +27,7 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet-version }}
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
           path: "/home/runner/work/SimpleTwitch/SimpleTwitch/src/*/bin/Release/${{ matrix.dotnet-version }}/*"
           retention-days: 1
 
@@ -43,7 +43,7 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet-version }}
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
       - name: Install Brew
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -53,15 +53,15 @@ jobs:
         run: "/home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli"
       - name: Initialize Mock API
         run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: ${{ matrix.dotnet }}
       - name: Test
         run: dotnet test --no-restore --verbosity normal
 
   publish_develop:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' # Change to develop branch later
+    if: github.ref == 'refs/heads/main' # Change to develop branch later
     name: Publish to GitHub
     needs: test
     runs-on: ubuntu-latest
@@ -72,36 +72,37 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet-version }}
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: ${{ matrix.dotnet }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
       - name: Install Dependencies
         run: dotnet restore
       - name: Create Packages
         run: |
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
 #      - name: Publish
 #        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
 # Add a publish release to nuget job later
 
   publish_docs:
+    if: github.ref == 'refs/heads/main'
     name: Publish Documentation
     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-            dotnet-version: ${{ matrix.dotnet-version }}
+            dotnet-version: ${{ matrix.dotnet }}
       - name: Install
         run: dotnet tool install -g docfx
       - name: Build
