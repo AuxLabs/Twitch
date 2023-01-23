@@ -68,15 +68,15 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
       - name: Install Dependencies
         run: dotnet restore
       - name: Create Packages
@@ -86,8 +86,8 @@ jobs:
           dotnet pack "./AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
 #          dotnet pack "./AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
 #          dotnet pack "./AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#      - name: Publish
-#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
+      - name: Publish
+        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
 # Add a publish release to nuget job later
 
