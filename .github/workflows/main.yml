@@ -69,6 +69,8 @@ jobs:
         dotnet: [ 'net6.0' ]
     permissions:
       packages: write
+    env:
+      ARTIFACT_DIR: "/home/runner/work/SimpleTwitch/SimpleTwitch/src"
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
@@ -84,11 +86,11 @@ jobs:
         run: dotnet restore
       - name: Create Packages
         run: |
-          dotnet pack "./AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-#          dotnet pack "./AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
       - name: Publish
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
