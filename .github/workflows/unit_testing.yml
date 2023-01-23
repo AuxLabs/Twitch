@@ -31,7 +31,7 @@ jobs:
         run: /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
 
       - name: Initialize Mock API
-        run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start"
+        run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
