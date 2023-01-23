@@ -66,8 +66,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
-    env:
-      ARTIFACT_DIR: "/home/runner/work/SimpleTwitch/SimpleTwitch"
+    strategy:
+      matrix:
+        dotnet: [ 'net6.0' ]
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
@@ -78,16 +79,17 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build-${{ github.run_number }}_net6.0
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
       - name: Install Dependencies
         run: dotnet restore
       - name: Create Packages
         run: |
-          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "$ARTIFACT_DIR/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Sockets/AuxLabs.SimpleTwitch.Sockets.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
       - name: Publish
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
 
