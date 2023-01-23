@@ -20,6 +20,11 @@ namespace AuxLabs.SimpleTwitch.Chat
         public bool RequestTags { get; init; } = true;
 
         /// <summary>
+        /// Should an exception be thrown if an unhandled event is received from twitch
+        /// </summary>
+        public bool ThrowOnUnknownCommand { get; init; } = false;
+
+        /// <summary>
         /// Specify a custom serializer for chat irc messages
         /// </summary>
         public ISerializer<IrcPayload> IrcSerializer { get; init; } = null;

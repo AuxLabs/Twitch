@@ -1,7 +1,6 @@
 ﻿using AuxLabs.SimpleTwitch.Chat.Models;
 using AuxLabs.SimpleTwitch.Chat.Requests;
 using AuxLabs.SimpleTwitch.Sockets;
-using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
@@ -25,6 +24,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public readonly bool CommandsRequested;
         public readonly bool MembershipRequested;
         public readonly bool TagsRequested;
+        public readonly bool ThrowOnUnknownCommand;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
@@ -37,6 +37,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             CommandsRequested = config.RequestCommands;
             MembershipRequested = config.RequestMembership;
             TagsRequested = config.RequestTags;
+            ThrowOnUnknownCommand = config.ThrowOnUnknownCommand;
         }
 
         public void Run()
@@ -140,6 +141,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 
                 default:
                     UnknownCommandReceived?.Invoke(payload);
+                    if (ThrowOnUnknownCommand)
+                        throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}` was received", payload);
                     break;
             };
         }
