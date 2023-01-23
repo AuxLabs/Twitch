@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - 'docs/**'
 env:
+  TWITCH_CLI_VERSION: 1.1.15
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
   NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -30,7 +31,7 @@ jobs:
         run: /home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli
 
       - name: Initialize Mock API
-        run: /home/linuxbrew/.linuxbrew/Cellar/twitch-cli/1.1.14/bin/twitch mock-api start &
+        run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start"
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
