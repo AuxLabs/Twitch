@@ -1,0 +1,112 @@
+name: Main
+on: [push]
+env:
+  TWITCH_CLI_VERSION: "1.1.15"
+  HOMEBREW_NO_ENV_HINTS: true
+  HOMEBREW_NO_INSTALL_CLEANUP: true
+  NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+jobs:
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        dotnet: [ 'net6.0' ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}          
+      - name: Install Dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-${{ $GITHUB_RUN_NUMBER }}_${{ matrix.dotnet-version }}
+          path: ./bin/Release/
+          retention-days: 1
+
+  test:
+    name: Test
+    needs: build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ windows-latest, macOS-latest, ubuntu-latest ]
+        dotnet: [ 'net6.0' ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-${{ $GITHUB_RUN_NUMBER }}_${{ matrix.dotnet-version }}
+      - name: Install Brew
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bash_profile
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+      - name: Install Twitch CLI
+        run: "/home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli"
+      - name: Initialize Mock API
+        run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+
+  publish_develop:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' # Change to develop branch later
+    name: Publish to GitHub
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-${{ $GITHUB_RUN_NUMBER }}_${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+          source-url: https://nuget.pkg.github.com/AuxLabs/index.json
+      - name: Create Packages
+        run: |
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Core/AuxLabs.SimpleTwitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Rest/AuxLabs.SimpleTwitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#          dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+#      - name: Publish
+#        run: dotnet nuget push "./pkgs/*.nupkg" -k "$GITHUB_TOKEN"
+
+# Add a publish release to nuget job later
+
+  publish_docs:
+    name: Publish Documentation
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+            dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install
+        run: dotnet install -g docfx
+      - name: Build
+        run: docfx docs/docfx.json
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: docs/_site
