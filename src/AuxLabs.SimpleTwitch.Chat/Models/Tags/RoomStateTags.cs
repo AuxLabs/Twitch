@@ -32,6 +32,12 @@
         public bool IsR9k { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [IrcTagName("rituals")]
+        public bool IsRituals { get; set; }
+
+        /// <summary>
         /// Indicates whether users must wait between sending messages.
         /// </summary>
         public bool IsSlow  => SlowSeconds > 0;
@@ -52,13 +58,32 @@
         {
             var map = new Dictionary<string, string>
             {
-                
+                ["room-id"] = ChannelId,
+                ["emote-only"] = IsEmoteOnly ? "1" : "0",
+                ["followers-only"] = FollowersOnlyMinutes.ToString(),
+                ["r9k"] = IsR9k ? "1" : "0",
+                ["rituals"] = IsRituals ? "1" : "0",
+                ["slow"] = IsSlow ? "1" : "0",
+                ["subs-only"] = IsSubsOnly ? "1" : "0"
             };
             return map;
         }
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
-
+            if (map.TryGetValue("room-id", out string str))
+                ChannelId = str;
+            if (map.TryGetValue("emote-only", out str))
+                IsEmoteOnly = str == "1";
+            if (map.TryGetValue("followers-only", out str))
+                FollowersOnlyMinutes = int.Parse(str);
+            if (map.TryGetValue("r9k", out str))
+                IsR9k = str == "1";
+            if (map.TryGetValue("rituals", out str))
+                IsRituals = str == "1";
+            if (map.TryGetValue("slow", out str))
+                SlowSeconds = int.Parse(str);
+            if (map.TryGetValue("subs-only", out str))
+                IsSubsOnly = str == "1";
         }
     }
 }
