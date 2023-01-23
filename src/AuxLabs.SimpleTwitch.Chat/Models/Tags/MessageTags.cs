@@ -35,6 +35,11 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
         public string DisplayName { get; set; }
 
         /// <summary>
+        /// The user’s login name.
+        /// </summary>
+        public string Login { get; set; }
+
+        /// <summary>
         /// The color of the user’s name in the chat room.
         /// </summary>
         public Color Color { get; set; }
@@ -58,6 +63,11 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
         /// A collection of emotes and their position in the message.
         /// </summary>
         public IReadOnlyCollection<EmotePosition> Emotes { get; set; }
+
+        /// <summary>
+        /// The message value when someone uses the /me chat command
+        /// </summary>
+        public string Action { get; set; }
 
         /// <summary>
         /// Indicates whether the user is a moderator.
@@ -114,11 +124,12 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
                 ["user-id"] = UserId,
                 ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
                 ["display-name"] = DisplayName,
+                ["login"] = Login,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
                 ["bits"] = Bits.ToString(),
-                ["emotes"] = string.Join(',', Emotes),
+                ["emotes"] = Emotes != null ? string.Join(',', Emotes) : Action,
                 ["mod"] = IsMod ? "1" : "0",
                 ["subscriber"] = IsSubscriber ? "1" : "0",
                 ["turbo"] = IsTurbo ? "1" : "0",
@@ -127,7 +138,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
                 ["reply-parent-user-id"] = ReplyParentUserId,
                 ["reply-parent-user-login"] = ReplyParentUserLogin,
                 ["reply-parent-display-name"] = ReplyParentDisplayName,
-                ["reply-parent-msg-body"] = ReplyParentMessage.Replace(" ", "\\s")
+                ["reply-parent-msg-body"] = ReplyParentMessage?.Replace(" ", "\\s")
             };
         }
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
@@ -144,6 +155,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
                 UserType = EnumHelper.GetValueFromEnumMember<UserType>(str);
             if (map.TryGetValue("display-name", out str))
                 DisplayName = str;
+            if (map.TryGetValue("login", out str))
+                Login = str;
             if (map.TryGetValue("color", out str))
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
@@ -164,6 +177,8 @@ namespace AuxLabs.SimpleTwitch.Chat.Models
             {
                 if (EmotePosition.TryParseMany(str, out var emotes))
                     Emotes = emotes;
+                else
+                    Action = str;
             }
             if (map.TryGetValue("mod", out str))
                 IsMod = str == "1";
