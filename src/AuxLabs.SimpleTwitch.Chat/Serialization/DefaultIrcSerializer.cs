@@ -26,9 +26,21 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             payload.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(payload.CommandRaw);
             payload.Parameters = ReadParameters(ref data);
 
-            if (tags != null && IrcPayload.CommandTypeSelector.TryGetValue(payload.Command, out var type))
+            // Convert tags dictionary into compatible type
+            if (tags != null && IrcPayload.TagsTypeSelector.TryGetValue(payload.Command, out var type))
             {
-                payload.Tags = (BaseTags)Activator.CreateInstance(type);
+                if (type == typeof(UserNoticeTags))
+                {
+                    var notice = EnumHelper.GetValueFromEnumMember<UserNoticeType>(tags["msg-id"]);
+                    if (IrcPayload.UserNoticeTypeSelector.TryGetValue(notice, out var noticeType))
+                        payload.Tags = (UserNoticeTags)Activator.CreateInstance(noticeType);
+                    else
+                        payload.Tags = (UserNoticeTags)Activator.CreateInstance(type);
+
+                }
+                else
+                    payload.Tags = (BaseTags)Activator.CreateInstance(type);
+
                 payload.Tags.LoadQueryMap(tags);
             }
 
@@ -37,7 +49,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private static Dictionary<string, string> ReadTags(ref ReadOnlySpan<byte> remaining)
         {
-            var input = Encoding.UTF8.GetString(remaining);
             var tags = new Dictionary<string, string>();
 
             int i = 0;
@@ -87,7 +98,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private static string ReadPrefix(ref ReadOnlySpan<byte> remaining)
         {
-            var input = Encoding.UTF8.GetString(remaining);
             for (int i = 1; i < remaining.Length; i++)
             {
                 var c = remaining[i];
@@ -103,7 +113,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private static string ReadCommand(ref ReadOnlySpan<byte> remaining)
         {
-            var input = Encoding.UTF8.GetString(remaining);
             for (int i = 1; i < remaining.Length; i++)
             {
                 var c = remaining[i];
@@ -125,7 +134,6 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
 
         private static IReadOnlyCollection<string> ReadParameters(ref ReadOnlySpan<byte> remaining)
         {
-            var input = Encoding.UTF8.GetString(remaining);
             var parameters = new List<string>();
 
             int i = 0;
@@ -134,7 +142,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
             foreach (var c in remaining)
             {
                 var n = remaining[i + 1];
-                if (c == (byte)':')     // Read to end of message
+                if (c == (byte)':' && !readToEnd)     // Read to end of message
                 {
                     readToEnd = true;
                     start = i;
@@ -146,8 +154,7 @@ namespace AuxLabs.SimpleTwitch.Chat.Serialization
                 } else
                 if (c == (byte)'\r' && n == (byte)'\n')     // End of message reached
                 {
-                    if (readToEnd)
-                        parameters.Add(Encoding.UTF8.GetString(remaining[start..i]));
+                    parameters.Add(Encoding.UTF8.GetString(remaining[start..i]));
                     remaining = remaining[(i + 2)..];
                     break;
                 }

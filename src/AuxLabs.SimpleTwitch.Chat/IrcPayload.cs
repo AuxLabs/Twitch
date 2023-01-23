@@ -28,8 +28,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (Tags != null)
             {
                 builder.Append('@');
-                foreach (var tag in Tags.CreateQueryMap())
-                    builder.Append($";{tag.Key}={tag.Value}");
+                builder.Append(string.Join(';', Tags.CreateQueryMap().Select(x => $"{x.Key}={x.Value}")));
                 builder.Append(' ');
             }
 
@@ -43,7 +42,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             return builder.ToString();
         }
 
-        public static Dictionary<IrcCommand, Type> CommandTypeSelector => new()
+        public static Dictionary<IrcCommand, Type> TagsTypeSelector => new()
         {
             [IrcCommand.ClearChat] = typeof(ClearChatTags),
             [IrcCommand.ClearMessage] = typeof(ClearMessageTags),
@@ -56,11 +55,24 @@ namespace AuxLabs.SimpleTwitch.Chat
             [IrcCommand.Notice] = typeof(NoticeTags),
             //[IrcCommand.Reconnect] = typeof(BaseTags),
             [IrcCommand.RoomState] = typeof(RoomStateTags),
-            //[IrcCommand.UserNotice] = typeof(BaseTags),
+            [IrcCommand.UserNotice] = typeof(UserNoticeTags),
             //[IrcCommand.UserState] = typeof(BaseTags),
             [IrcCommand.GlobalUserState] = typeof(GlobalUserStateTags),
             //[IrcCommand.CapabilityAcknowledge] = typeof(BaseTags),
             //[IrcCommand.CapabilityDenied] = typeof(BaseTags)
+        };
+
+        public static Dictionary<UserNoticeType, Type> UserNoticeTypeSelector => new()
+        {
+            [UserNoticeType.Subscription] = typeof(SubscriptionTags),
+            [UserNoticeType.Resubscription] = typeof(SubscriptionTags),
+            [UserNoticeType.SubscriptionGift] = typeof(SubscriptionGiftTags),
+            [UserNoticeType.SubscriptionGiftUpgrade] = typeof(SubscriptionGiftUpgradeTags),
+            [UserNoticeType.SubscriptionGiftUpgradeAnonymous] = typeof(SubscriptionGiftUpgradeAnonymousTags),
+
+            [UserNoticeType.Raid] = typeof(RaidTags),
+            [UserNoticeType.Ritual] = typeof(RitualTags),
+            [UserNoticeType.BitsBadgeTier] = typeof(BitsBadgeTierTags),
         };
     }
 }
