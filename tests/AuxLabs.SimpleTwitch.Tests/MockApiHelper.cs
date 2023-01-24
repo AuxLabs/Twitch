@@ -7,7 +7,7 @@ namespace AuxLabs.SimpleTwitch.Tests
 {
     public static class MockApiHelper
     {
-        private static readonly Random R = new();
+        private static readonly Random R = new Random();
 
         public static async Task<IEnumerable<string>> GetRandomUsernamesAsync(this IMockApi mock, int count = 5)
         {
