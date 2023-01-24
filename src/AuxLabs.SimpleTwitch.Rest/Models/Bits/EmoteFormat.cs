@@ -8,12 +8,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("animated")]
-        public EmoteImage AnimatedImage { get; init; }
+        public EmoteImage AnimatedImage { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("static")]
-        public EmoteImage StaticImage { get; init; }
+        public EmoteImage StaticImage { get; }
     }
 }

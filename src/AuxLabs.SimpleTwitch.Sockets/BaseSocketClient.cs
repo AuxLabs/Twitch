@@ -1,8 +1,14 @@
 ﻿// Code modified from Wumpus.Net's GatewaySocketClient
 
+using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.WebSockets;
 using System.Runtime.Serialization;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Sockets
 {

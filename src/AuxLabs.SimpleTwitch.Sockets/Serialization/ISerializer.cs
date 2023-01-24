@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.Sockets
+﻿using System;
+
+namespace AuxLabs.SimpleTwitch.Sockets
 {
     public interface ISerializer<TPayload>
     {

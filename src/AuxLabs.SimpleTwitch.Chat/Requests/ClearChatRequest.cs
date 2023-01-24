@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System.Linq;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class ClearChatRequest : IrcPayload
     {

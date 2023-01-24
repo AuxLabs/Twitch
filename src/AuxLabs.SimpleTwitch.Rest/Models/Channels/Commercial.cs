@@ -8,18 +8,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("length")]
-        public int Length { get; init; }
+        public int Length { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("message")]
-        public string Message { get; init; }
+        public string Message { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("retry_after")]
-        public int RetryAfter { get; init; }
+        public int RetryAfter { get; }
     }
 }

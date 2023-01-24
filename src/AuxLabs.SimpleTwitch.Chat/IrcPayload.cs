@@ -1,4 +1,6 @@
-﻿using AuxLabs.SimpleTwitch.Chat;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
@@ -42,7 +44,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             return builder.ToString();
         }
 
-        public static Dictionary<IrcCommand, Type> TagsTypeSelector => new()
+        public static Dictionary<IrcCommand, Type> TagsTypeSelector => new Dictionary<IrcCommand, Type>()
         {
             [IrcCommand.ClearChat] = typeof(ClearChatTags),
             [IrcCommand.ClearMessage] = typeof(ClearMessageTags),
@@ -62,7 +64,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             //[IrcCommand.CapabilityDenied] = typeof(BaseTags)
         };
 
-        public static Dictionary<UserNoticeType, Type> UserNoticeTypeSelector => new()
+        public static Dictionary<UserNoticeType, Type> UserNoticeTypeSelector => new Dictionary<UserNoticeType, Type>()
         {
             [UserNoticeType.Subscription] = typeof(SubscriptionTags),
             [UserNoticeType.Resubscription] = typeof(SubscriptionTags),

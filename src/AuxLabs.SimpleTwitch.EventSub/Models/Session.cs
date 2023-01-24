@@ -1,4 +1,7 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub
+﻿using System;
+using System.Text.Json.Serialization;
+
+namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class Session
     {

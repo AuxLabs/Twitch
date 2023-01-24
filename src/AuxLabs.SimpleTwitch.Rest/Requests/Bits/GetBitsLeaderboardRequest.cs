@@ -1,4 +1,5 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
+﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest

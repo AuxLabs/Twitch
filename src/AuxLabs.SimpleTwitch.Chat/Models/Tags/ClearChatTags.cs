@@ -1,4 +1,7 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System;
+using System.Collections.Generic;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class ClearChatTags : BaseTags
     {

@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("game_id")]
-        public string GameId { get; init; }
+        public string GameId { get; }
 
     }
 }

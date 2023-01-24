@@ -1,4 +1,7 @@
-﻿namespace AuxLabs.SimpleTwitch
+﻿using System.Threading;
+using System.Threading.Tasks;
+
+namespace AuxLabs.SimpleTwitch
 {
     public interface IRestClient
     {

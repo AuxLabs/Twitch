@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -10,19 +10,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("url")]
-        public string URL { get; init; }
+        public string URL { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("type")]
         [JsonConverter(typeof(NullableEnumStringConverter<AnalyticType>))]
-        public AnalyticType Type { get; init; }
+        public AnalyticType Type { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("date_range")]
-        public DateRange DateRange { get; init; }
+        public DateRange DateRange { get; }
     }
 }

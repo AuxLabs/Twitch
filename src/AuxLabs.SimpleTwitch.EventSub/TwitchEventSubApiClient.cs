@@ -1,4 +1,6 @@
 ﻿using AuxLabs.SimpleTwitch.Sockets;
+using System;
+using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {

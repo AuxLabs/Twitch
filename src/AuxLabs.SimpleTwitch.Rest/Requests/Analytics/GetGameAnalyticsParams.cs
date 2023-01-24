@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest
+﻿using System.Collections.Generic;
+
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetGameAnalyticsParams : GetAnalyticsParams, IScoped
     {

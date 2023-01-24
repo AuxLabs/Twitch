@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,25 +9,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("data")]
-        public IEnumerable<T> Data { get; init; }
+        public IEnumerable<T> Data { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("total")]
-        public int? Total { get; init; }
+        public int? Total { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("date_range")]
-        public DateRange? DateRange { get; init; }
+        public DateRange? DateRange { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("pagination")]
-        public Pagination? Pagination { get; init; }
+        public Pagination? Pagination { get; }
     }
 
     public struct Pagination
@@ -35,6 +36,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// Marks the top of the next page of results following a request.
         /// </summary>
         [JsonPropertyName("cursor")]
-        public string Cursor { get; init; }
+        public string Cursor { get; }
     }
 }

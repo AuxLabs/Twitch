@@ -1,4 +1,7 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class ClearChatEventArgs
     {

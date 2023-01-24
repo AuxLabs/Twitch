@@ -1,4 +1,7 @@
-﻿using System.Xml;
+﻿using System;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {

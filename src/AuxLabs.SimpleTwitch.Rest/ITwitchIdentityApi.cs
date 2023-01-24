@@ -1,6 +1,7 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using RestEase;
+﻿using RestEase;
+using System;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {

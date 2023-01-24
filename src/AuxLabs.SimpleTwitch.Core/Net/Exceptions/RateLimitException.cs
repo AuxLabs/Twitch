@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch
+﻿using System;
+
+namespace AuxLabs.SimpleTwitch
 {
     public class RateLimitedException : TimeoutException
     {

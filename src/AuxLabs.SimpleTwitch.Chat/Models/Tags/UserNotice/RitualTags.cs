@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System.Collections.Generic;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class RitualTags : UserNoticeTags
     {

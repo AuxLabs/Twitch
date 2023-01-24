@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch
+﻿using System.Collections.Generic;
+
+namespace AuxLabs.SimpleTwitch
 {
     public class MissingScopeException : TwitchException
     {

@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch
@@ -29,8 +31,7 @@ namespace AuxLabs.SimpleTwitch
                     return (T)member;
                 }
             }
-            return default(T);
+            return default;
         }
-
     }
 }

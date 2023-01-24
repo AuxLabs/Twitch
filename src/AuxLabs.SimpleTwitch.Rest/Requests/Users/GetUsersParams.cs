@@ -1,4 +1,4 @@
-﻿using RestEase;
+﻿using System.Collections.Generic;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {

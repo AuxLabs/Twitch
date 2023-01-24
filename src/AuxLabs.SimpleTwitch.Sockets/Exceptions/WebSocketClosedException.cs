@@ -1,4 +1,5 @@
-﻿using System.Net.WebSockets;
+﻿using System;
+using System.Net.WebSockets;
 
 namespace AuxLabs.SimpleTwitch.Sockets
 {

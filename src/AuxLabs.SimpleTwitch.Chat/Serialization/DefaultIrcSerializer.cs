@@ -1,5 +1,6 @@
-﻿using AuxLabs.SimpleTwitch.Chat;
-using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.Sockets;
+using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 

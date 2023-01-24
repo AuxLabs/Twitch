@@ -1,26 +1,29 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest
+﻿using System;
+using System.Text.Json.Serialization;
+
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class Follower
     {
         [JsonPropertyName("followed_at")]
-        public DateTime FollowedAt { get; init; }
+        public DateTime FollowedAt { get; }
 
         [JsonPropertyName("from_id")]
-        public string FromId { get; init; }
+        public string FromId { get; }
 
         [JsonPropertyName("from_login")]
-        public string FromLogin { get; init; }
+        public string FromLogin { get; }
 
         [JsonPropertyName("from_name")]
-        public string FromName { get; init; }
+        public string FromName { get; }
 
         [JsonPropertyName("to_id")]
-        public string ToId { get; init; }
+        public string ToId { get; }
 
         [JsonPropertyName("to_login")]
-        public string ToLogin { get; init; }
+        public string ToLogin { get; }
 
         [JsonPropertyName("to_name")]
-        public string ToName { get; init; }
+        public string ToName { get; }
     }
 }

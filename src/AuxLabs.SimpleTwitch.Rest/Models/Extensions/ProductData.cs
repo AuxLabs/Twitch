@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,42 +9,42 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("domain")]
-        public string Domain { get; init; }
+        public string Domain { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("sku")]
-        public string Sku { get; init; }
+        public string Sku { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("cost")]
-        public Cost Cost { get; init; }
+        public Cost Cost { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("in_development")]
-        public bool InDevelopment { get; init; }
+        public bool InDevelopment { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("displayName")]
-        public string DisplayName { get; init; }
+        public string DisplayName { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("expiration")]
-        public DateTime? ExpiresAt { get; init; }
+        public DateTime? ExpiresAt { get; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("broadcast")]
-        public bool IsBroadcast { get; init; }
+        public bool IsBroadcast { get; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using AuxLabs.SimpleTwitch.Sockets;
+using System;
+using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
@@ -28,7 +30,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         public TwitchChatApiClient(TwitchChatConfig config = null) : base(-1)
         {
-            if (config == null) config = new TwitchChatConfig();
+            config ??= new TwitchChatConfig();
 
             Serializer = config.IrcSerializer ?? new DefaultIrcSerializer();
 
