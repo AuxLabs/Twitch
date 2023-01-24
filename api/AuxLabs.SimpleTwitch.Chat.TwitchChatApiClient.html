@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TwitchChatApiClient
+ | AuxLabs.SimpleTwitch Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TwitchChatApiClient
+ | AuxLabs.SimpleTwitch Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient">
+
+
+  <h1 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient" class="text-break">Class TwitchChatApiClient
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html">BaseSocketClient</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a>&gt;</div>
+    <div class="level2"><span class="xref">TwitchChatApiClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Connected">BaseSocketClient&lt;IrcPayload&gt;.Connected</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Disconnected">BaseSocketClient&lt;IrcPayload&gt;.Disconnected</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_DeserializationError">BaseSocketClient&lt;IrcPayload&gt;.DeserializationError</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_PayloadReceived">BaseSocketClient&lt;IrcPayload&gt;.PayloadReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_PayloadSent">BaseSocketClient&lt;IrcPayload&gt;.PayloadSent</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_State">BaseSocketClient&lt;IrcPayload&gt;.State</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_ReceivedData">BaseSocketClient&lt;IrcPayload&gt;.ReceivedData</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_System_String_">BaseSocketClient&lt;IrcPayload&gt;.Run(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_System_String_">BaseSocketClient&lt;IrcPayload&gt;.RunAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Stop">BaseSocketClient&lt;IrcPayload&gt;.Stop()</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_StopAsync">BaseSocketClient&lt;IrcPayload&gt;.StopAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Dispose">BaseSocketClient&lt;IrcPayload&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient-1.html#AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Send__0_">BaseSocketClient&lt;IrcPayload&gt;.Send(IrcPayload)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AuxLabs.SimpleTwitch.Chat.html">AuxLabs.SimpleTwitch.Chat</a></h6>
+  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Chat.dll</h6>
+  <h5 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TwitchChatApiClient : BaseSocketClient&lt;IrcPayload&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient__ctor_AuxLabs_SimpleTwitch_Chat_TwitchChatConfig_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.%23ctor(AuxLabs.SimpleTwitch.Chat.TwitchChatConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L31">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.#ctor*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient__ctor_AuxLabs_SimpleTwitch_Chat_TwitchChatConfig_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.#ctor(AuxLabs.SimpleTwitch.Chat.TwitchChatConfig)">TwitchChatApiClient(TwitchChatConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TwitchChatApiClient(TwitchChatConfig config = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.TwitchChatConfig.html">TwitchChatConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_CommandsRequested.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.CommandsRequested%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L24">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_CommandsRequested" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.CommandsRequested">CommandsRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool CommandsRequested</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MembershipRequested.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MembershipRequested%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L25">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MembershipRequested" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MembershipRequested">MembershipRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool MembershipRequested</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_TagsRequested.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.TagsRequested%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L26">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_TagsRequested" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.TagsRequested">TagsRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool TagsRequested</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ThrowOnUnknownCommand.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ThrowOnUnknownCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L27">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ThrowOnUnknownCommand" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ThrowOnUnknownCommand">ThrowOnUnknownCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool ThrowOnUnknownCommand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Serializer.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Serializer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L29">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Serializer_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Serializer*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Serializer" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Serializer">Serializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ISerializer&lt;IrcPayload&gt; Serializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Sockets.ISerializer-1.html">ISerializer</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AuxLabs.SimpleTwitch.Sockets.BaseSocketClient&lt;AuxLabs.SimpleTwitch.Chat.IrcPayload&gt;.Serializer</span></div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_HandleEvent_AuxLabs_SimpleTwitch_Chat_IrcPayload_System_Threading_Tasks_TaskCompletionSource_System_Boolean__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.HandleEvent(AuxLabs.SimpleTwitch.Chat.IrcPayload%2CSystem.Threading.Tasks.TaskCompletionSource%7BSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L70">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_HandleEvent_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.HandleEvent*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_HandleEvent_AuxLabs_SimpleTwitch_Chat_IrcPayload_System_Threading_Tasks_TaskCompletionSource_System_Boolean__" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.HandleEvent(AuxLabs.SimpleTwitch.Chat.IrcPayload,System.Threading.Tasks.TaskCompletionSource{System.Boolean})">HandleEvent(IrcPayload, TaskCompletionSource&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void HandleEvent(IrcPayload payload, TaskCompletionSource&lt;bool&gt; readySignal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCompletionSource</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">readySignal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AuxLabs.SimpleTwitch.Sockets.BaseSocketClient&lt;AuxLabs.SimpleTwitch.Chat.IrcPayload&gt;.HandleEvent(AuxLabs.SimpleTwitch.Chat.IrcPayload, System.Threading.Tasks.TaskCompletionSource&lt;System.Boolean&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Run.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Run%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L43">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Run_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Run*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_Run" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.Run">Run()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_RunAsync.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.RunAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L45">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_RunAsync_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.RunAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_RunAsync" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.RunAsync">RunAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeat.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L60">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeat_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeat*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeat" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeat">SendHeartbeat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SendHeartbeat()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AuxLabs.SimpleTwitch.Sockets.BaseSocketClient&lt;AuxLabs.SimpleTwitch.Chat.IrcPayload&gt;.SendHeartbeat()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeatAck.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeatAck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L65">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeatAck_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeatAck*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendHeartbeatAck" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendHeartbeatAck">SendHeartbeatAck()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SendHeartbeatAck()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AuxLabs.SimpleTwitch.Sockets.BaseSocketClient&lt;AuxLabs.SimpleTwitch.Chat.IrcPayload&gt;.SendHeartbeatAck()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendIdentify_System_String_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendIdentify(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L48">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendIdentify_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendIdentify*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_SendIdentify_System_String_System_String_" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.SendIdentify(System.String,System.String)">SendIdentify(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SendIdentify(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AuxLabs.SimpleTwitch.Sockets.BaseSocketClient&lt;AuxLabs.SimpleTwitch.Chat.IrcPayload&gt;.SendIdentify(System.String, System.String)</span></div>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChannelJoined.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChannelJoined%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L18">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChannelJoined" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChannelJoined">ChannelJoined</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;MembershipEventArgs&gt; ChannelJoined</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.MembershipEventArgs.html">MembershipEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChannelLeft.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChannelLeft%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L19">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChannelLeft" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChannelLeft">ChannelLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;MembershipEventArgs&gt; ChannelLeft</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.MembershipEventArgs.html">MembershipEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChatCleared.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChatCleared%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L11">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_ChatCleared" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.ChatCleared">ChatCleared</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ClearChatEventArgs&gt; ChatCleared</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.ClearChatEventArgs.html">ClearChatEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_GlobalUserStateReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.GlobalUserStateReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L14">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_GlobalUserStateReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.GlobalUserStateReceived">GlobalUserStateReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;GlobalUserStateTags&gt; GlobalUserStateReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.GlobalUserStateTags.html">GlobalUserStateTags</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MessageCleared.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MessageCleared%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L12">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MessageCleared" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MessageCleared">MessageCleared</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ClearMessageEventArgs&gt; MessageCleared</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.ClearMessageEventArgs.html">ClearMessageEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MessageReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MessageReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L13">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_MessageReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.MessageReceived">MessageReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;MessageEventArgs&gt; MessageReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.MessageEventArgs.html">MessageEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_NoticeReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.NoticeReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L20">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_NoticeReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.NoticeReceived">NoticeReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NoticeEventArgs&gt; NoticeReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.NoticeEventArgs.html">NoticeEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_RoomStateReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.RoomStateReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L16">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_RoomStateReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.RoomStateReceived">RoomStateReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;RoomStateEventArgs&gt; RoomStateReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.RoomStateEventArgs.html">RoomStateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_UnknownCommandReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.UnknownCommandReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L9">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_UnknownCommandReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.UnknownCommandReceived">UnknownCommandReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IrcPayload&gt; UnknownCommandReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_UserNoticeReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.UserNoticeReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L21">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient_UserNoticeReceived" data-uid="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.UserNoticeReceived">UserNoticeReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;UserNoticeEventArgs&gt; UserNoticeReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Models.UserNoticeEventArgs.html">UserNoticeEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_TwitchChatApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/TwitchChatApiClient.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AuxLabs.SimpleTwitch
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
