@@ -1,10 +1,10 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Net;
+﻿using AuxLabs.SimpleTwitch.Rest;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
     // helix/extensions/transactions
-    public record class ExtensionTransaction
+    public class ExtensionTransaction
     {
         /// <summary>
         /// 

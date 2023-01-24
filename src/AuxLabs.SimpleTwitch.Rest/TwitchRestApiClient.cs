@@ -1,6 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Models;
-using AuxLabs.SimpleTwitch.Rest.Requests;
-using RestEase;
+﻿using RestEase;
 using System.Net.Http.Headers;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -26,9 +24,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             _api = new RestClient(httpClient)
             {
-                RequestBodySerializer = new Net.JsonBodySerializer(),
-                ResponseDeserializer = new Net.JsonResponseDeserializer(),
-                RequestQueryParamSerializer = new Net.JsonQueryParamSerializer(),
+                RequestBodySerializer = new JsonBodySerializer(),
+                ResponseDeserializer = new JsonResponseDeserializer(),
+                RequestQueryParamSerializer = new JsonQueryParamSerializer(),
                 RequestPathParamSerializer = new StringEnumRequestPathParamSerializer()
             }.For<ITwitchApi>();
         }
@@ -64,6 +62,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// </summary>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
             => _api.PostCommercialAsync(args);
+
+        /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialParams)" />
+        public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialParams> action)
+        {
+            var args = new PostChannelCommercialParams();
+            action(args);
+            return PostCommercialAsync(args);
+        }
 
         /// <summary>
         /// Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports as CSV files.

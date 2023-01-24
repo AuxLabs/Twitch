@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat.Serialization
+﻿namespace AuxLabs.SimpleTwitch.Chat
 {
     public enum IrcTokenType
     {

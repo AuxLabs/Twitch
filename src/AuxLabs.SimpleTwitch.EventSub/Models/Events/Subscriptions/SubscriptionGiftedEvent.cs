@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models.Events.Subscriptions
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class SubscriptionGiftedEvent
     {

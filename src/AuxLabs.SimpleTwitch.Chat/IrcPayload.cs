@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Chat.Models;
+﻿using AuxLabs.SimpleTwitch.Chat;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat

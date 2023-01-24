@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public enum BitsPeriod
     {

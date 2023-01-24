@@ -1,6 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Chat.Models;
-using AuxLabs.SimpleTwitch.Chat.Requests;
-using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.Sockets;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {

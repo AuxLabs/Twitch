@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models.Events.Predictions
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class PredictionEndedEvent
     {

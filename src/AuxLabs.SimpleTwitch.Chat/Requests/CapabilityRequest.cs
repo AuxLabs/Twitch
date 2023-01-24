@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat.Requests
+﻿namespace AuxLabs.SimpleTwitch.Chat
 {
     public class CapabilityRequest : IrcPayload
     {

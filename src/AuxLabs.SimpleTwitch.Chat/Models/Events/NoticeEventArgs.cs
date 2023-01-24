@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat.Models
+﻿namespace AuxLabs.SimpleTwitch.Chat
 {
     public class NoticeEventArgs
     {

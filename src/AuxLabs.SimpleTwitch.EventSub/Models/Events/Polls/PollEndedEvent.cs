@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models.Events.Polls
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class PollEndedEvent
     {

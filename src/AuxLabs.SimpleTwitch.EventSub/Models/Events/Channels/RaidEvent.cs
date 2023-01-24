@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class RaidEvent
     {

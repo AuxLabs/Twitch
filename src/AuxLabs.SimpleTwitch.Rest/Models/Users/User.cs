@@ -1,14 +1,12 @@
-﻿using System.Text.Json.Serialization;
-
-namespace AuxLabs.SimpleTwitch.Rest.Models
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
-    public record class User
+    public class User
     {
         /// <summary>
         /// User’s broadcaster type
         /// </summary>
         [JsonPropertyName("broadcaster_type")]
-        [JsonConverter(typeof(Net.NullableEnumStringConverter<BroadcasterType>))]
+        [JsonConverter(typeof(NullableEnumStringConverter<BroadcasterType>))]
         public BroadcasterType BroadcasterType { get; init; }
 
         /// <summary>
@@ -51,7 +49,7 @@ namespace AuxLabs.SimpleTwitch.Rest.Models
         /// User’s type
         /// </summary>
         [JsonPropertyName("type")]
-        [JsonConverter(typeof(Net.NullableEnumStringConverter<UserType>))]
+        [JsonConverter(typeof(NullableEnumStringConverter<UserType>))]
         public UserType Type { get; init; }
 
         /// <summary>

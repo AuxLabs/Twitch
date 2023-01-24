@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest.Requests
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
     public interface IScoped
     {

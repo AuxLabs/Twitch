@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace AuxLabs.SimpleTwitch.Net
+namespace AuxLabs.SimpleTwitch
 {
     public struct RestResponse
     {

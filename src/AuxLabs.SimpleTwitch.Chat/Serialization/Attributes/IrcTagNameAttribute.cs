@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat.Serialization
+﻿namespace AuxLabs.SimpleTwitch.Chat
 {
     [AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple = false)]
     public class IrcTagNameAttribute : Attribute

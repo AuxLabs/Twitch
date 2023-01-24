@@ -1,6 +1,6 @@
 ﻿using RestEase;
 
-namespace AuxLabs.SimpleTwitch.Rest.Requests
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetUsersParams : QueryMap<string[]>, IScoped
     {

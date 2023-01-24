@@ -1,6 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.EventSub.Models;
-
-namespace AuxLabs.SimpleTwitch.EventSub.Requests
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class BaseRequest
     {

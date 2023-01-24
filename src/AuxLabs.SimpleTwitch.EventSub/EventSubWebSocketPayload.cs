@@ -1,6 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class TwitchWebSocketResponse<T>
+    public class EventSubWebSocketPayload
     {
         /// <summary>
         /// An object that identifies the message.
@@ -12,6 +12,6 @@
         /// An object that contains the message.
         /// </summary>
         [JsonPropertyName("payload")]
-        public T Payload { get; set; }
+        public object Payload { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models.Chat
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public enum ChatColor
     {

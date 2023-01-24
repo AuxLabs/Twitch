@@ -1,13 +1,10 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
-using AuxLabs.SimpleTwitch.Rest.Models;
-using AuxLabs.SimpleTwitch.Rest.Net;
-using AuxLabs.SimpleTwitch.Rest.Requests;
 using RestEase;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xunit;
-using JsonResponseDeserializer = AuxLabs.SimpleTwitch.Rest.Net.JsonResponseDeserializer;
+using JsonResponseDeserializer = AuxLabs.SimpleTwitch.Rest.JsonResponseDeserializer;
 
 namespace AuxLabs.SimpleTwitch.Tests
 {

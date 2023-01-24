@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest.Net
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
     internal class NullableEnumStringConverter<T> : JsonConverter<T>
     {

@@ -1,9 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
     // helix/bits/leaderboard
-    public record class BitsUser
+    public class BitsUser
     {
         /// <summary>
         /// 

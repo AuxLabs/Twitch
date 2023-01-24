@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest.Models
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
     public enum UserType
     {

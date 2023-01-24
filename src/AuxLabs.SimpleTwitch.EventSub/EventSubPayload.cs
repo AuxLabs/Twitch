@@ -1,6 +1,6 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class TwitchResponse
+    public class EventSubPayload
     {
         [JsonPropertyName("challenge")]
         public string Challenge { get; set; }

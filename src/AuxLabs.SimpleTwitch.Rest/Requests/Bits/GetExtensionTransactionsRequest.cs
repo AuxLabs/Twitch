@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Requests
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetExtensionTransactionsRequest : QueryMap
     {

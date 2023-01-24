@@ -1,25 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="../../AuxLabs.SimpleTwitch.targets" />
+	<Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-    <Description>A low level .Net Core implementation of the Twitch Chat API.</Description>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<Description>A low level .Net Core implementation of the Twitch Chat API.</Description>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;1591</NoWarn>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>1701;1702;1591</NoWarn>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
-    <ProjectReference Include="..\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
-    <ProjectReference Include="..\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
+		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
+		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj" />
+	</ItemGroup>
 
 </Project>

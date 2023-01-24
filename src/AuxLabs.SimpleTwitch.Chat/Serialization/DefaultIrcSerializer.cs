@@ -1,9 +1,9 @@
-﻿using AuxLabs.SimpleTwitch.Chat.Models;
+﻿using AuxLabs.SimpleTwitch.Chat;
 using AuxLabs.SimpleTwitch.Sockets;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace AuxLabs.SimpleTwitch.Chat.Serialization
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public sealed class DefaultIrcSerializer : ISerializer<IrcPayload>
     {

@@ -1,7 +1,7 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Net;
+﻿using AuxLabs.SimpleTwitch.Rest;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class Cost
     {

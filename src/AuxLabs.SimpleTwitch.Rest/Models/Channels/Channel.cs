@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
-    public record class Channel
+    public class Channel
     {
         /// <summary>
         /// An ID that uniquely identifies the broadcaster.

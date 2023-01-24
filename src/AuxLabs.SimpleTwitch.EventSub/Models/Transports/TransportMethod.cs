@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub.Models
+namespace AuxLabs.SimpleTwitch.EventSub
 {
     public enum TransportMethod
     {

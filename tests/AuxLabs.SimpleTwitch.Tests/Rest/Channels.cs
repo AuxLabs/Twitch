@@ -8,12 +8,10 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
     [Collection("Mock")]
     public class Channels
     {
-        private readonly ITestOutputHelper _output;
         private readonly MockApiFixture _fixture;
 
-        public Channels(ITestOutputHelper output, MockApiFixture fixture)
+        public Channels(MockApiFixture fixture)
         {
-            _output = output;
             _fixture = fixture;
         }
 

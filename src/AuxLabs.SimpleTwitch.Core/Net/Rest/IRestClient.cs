@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Net
+﻿namespace AuxLabs.SimpleTwitch
 {
     public interface IRestClient
     {

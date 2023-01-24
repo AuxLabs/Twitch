@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AuxLabs.SimpleTwitch.Rest.Net
+namespace AuxLabs.SimpleTwitch.Rest
 {
     internal class SnakeCaseNamingPolicy : JsonNamingPolicy
     {

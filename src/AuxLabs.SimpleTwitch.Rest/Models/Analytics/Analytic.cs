@@ -1,7 +1,6 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Net;
-using System.Text.Json.Serialization;
+﻿using AuxLabs.SimpleTwitch.Rest;
 
-namespace AuxLabs.SimpleTwitch.Rest.Models
+namespace AuxLabs.SimpleTwitch.Rest
 {
     // helix/analytics/extensions
     // helix/analytics/games

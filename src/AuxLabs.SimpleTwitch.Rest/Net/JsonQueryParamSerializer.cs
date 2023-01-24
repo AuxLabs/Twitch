@@ -1,6 +1,6 @@
 ﻿using RestEase;
 
-namespace AuxLabs.SimpleTwitch.Rest.Net
+namespace AuxLabs.SimpleTwitch.Rest
 {
     internal class JsonQueryParamSerializer : RequestQueryParamSerializer
     {

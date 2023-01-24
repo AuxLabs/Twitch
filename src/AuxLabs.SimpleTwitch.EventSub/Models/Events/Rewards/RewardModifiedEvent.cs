@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub.Models.Events.Rewards
+﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class RewardModifiedEvent
     {

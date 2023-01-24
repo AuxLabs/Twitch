@@ -1,7 +1,7 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Models;
+﻿using AuxLabs.SimpleTwitch.Rest;
 using System.Xml;
 
-namespace AuxLabs.SimpleTwitch.Rest.Requests
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public abstract class GetAnalyticsParams : QueryMap
     {

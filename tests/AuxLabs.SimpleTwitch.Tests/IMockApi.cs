@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Models;
+﻿using AuxLabs.SimpleTwitch.Rest;
 using RestEase;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;

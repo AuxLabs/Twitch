@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Chat.Models
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public enum NoticeType
     {

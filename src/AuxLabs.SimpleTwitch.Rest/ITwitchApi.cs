@@ -1,6 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Models;
-using AuxLabs.SimpleTwitch.Rest.Requests;
-using RestEase;
+﻿using RestEase;
 using System.Net.Http.Headers;
 
 namespace AuxLabs.SimpleTwitch.Rest

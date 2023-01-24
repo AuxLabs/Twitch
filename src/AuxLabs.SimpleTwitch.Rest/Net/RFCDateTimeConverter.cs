@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 
-namespace AuxLabs.SimpleTwitch.Rest.Net
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class RFCDateTimeConverter : JsonConverter<DateTime>
     {
