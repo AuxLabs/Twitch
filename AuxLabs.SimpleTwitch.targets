@@ -5,7 +5,7 @@
         <Authors>Auxesis</Authors>
         <PackageTags>twitch,tv,dot,net,core,rest,api,lib,library,socket,websocket,chat,irc,tcp</PackageTags>
         <PackageProjectUrl>https://github.com/AuxLabs/SimpleTwitch</PackageProjectUrl>
-        <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>git://github.com/AuxLabs/SimpleTwitch</RepositoryUrl>
     </PropertyGroup>

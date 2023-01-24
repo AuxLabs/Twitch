@@ -1,9 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-	<Nullable>disable</Nullable>
+	  <Nullable>disable</Nullable>
+    <Description>The core components for all SimpleTwitch libraries that require sockets.</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
