@@ -3,14 +3,12 @@
     {
       "src": [
         {
-          "files": ["**/*.csproj"],
-          "exclude": [ "**/bin/**", "**/obj/**" ],
-          "src": "../src"
+          "src": "../src",
+          "files": ["**.csproj"]
         }
       ],
       "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
@@ -49,19 +47,14 @@
       }
     ],
     "dest": "_site",
-    "globalMetadata": {
-      "_enableSearch": true
-    },
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
     "template": [
-      "templates/default"
+      "default",
+      "_templates/material"
     ],
-    "postProcessors": [],
-    "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": true,
-    "cleanupCacheHistory": true,
-    "disableGitFeatures": false
+    "globalMetadata": {
+      "_appTitle": "AuxLabs.SimpleTwitch Documentation",
+      "_appFooter": "AuxLabs.SimpleTwitch",
+      "_enableSearch": true
+    }
   }
 }

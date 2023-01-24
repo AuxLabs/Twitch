@@ -1,9 +1,9 @@
 /* COLOR VARIABLES*/
 :root {
-  --header-bg-color: #0d47a1;
-  --header-ft-color: #fff;
-  --highlight-light: #5e92f3;
-  --highlight-dark: #003c8f;
+  --header-bg-color: #6441a5;
+  --header-ft-color: #ffffff;
+  --highlight-light: #956dd7;
+  --highlight-dark: #331775;
   --accent-dim: #e0e0e0;
   --accent-super-dim: #f3f3f3;
   --font-color: #34393e;
@@ -14,6 +14,7 @@
 
 body {
   color: var(--font-color);
+  background-color: #F5F5F6;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
@@ -115,7 +116,7 @@ article h4 {
 
 .subnav {
   border-top: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #E1E2E1;
 }
 
 .navbar-inverse {
