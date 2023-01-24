@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dotnet: [ 'net6.0' ]
+        dotnet: [ 'net6.0', 'netstandard2.1' ]
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dotnet: [ 'net6.0' ]
+        dotnet: [ 'net6.0', 'netstandard2.1' ]
     steps:
       - uses: actions/checkout@v3
       - name: Download Build Artifacts
@@ -68,7 +68,7 @@ jobs:
       packages: write
     strategy:
       matrix:
-        dotnet: [ 'net6.0' ]
+        dotnet: [ 'net6.0', 'netstandard2.1' ]
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
@@ -103,10 +103,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+      - name: Setup .NET Core SDK net6.0
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: net6.0
       - name: Install
         run: dotnet tool install -g docfx
       - name: Build
