@@ -1,42 +1,31 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System;
+using System.Collections.Generic;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public struct EmotePosition
     {
         /// <summary>
         /// An ID that uniquely identifies this emote
         /// </summary>
-        public string Id { get; init; }
+        public string Id { get; }
         /// <summary>
-        /// A collection of positions this emote appears in a message
+        /// The position of this emote in a message
         /// </summary>
-        public IReadOnlyCollection<Range> Ranges { get; init; }
+        public Range Range { get; }
 
-        public EmotePosition(string name, IReadOnlyCollection<Range> ranges)
-            => (Id, Ranges) = (name, ranges);
+        public EmotePosition(string id, Range range)
+            => (Id, Range) = (id, range);
 
         public override string ToString()
-            => $"{Id}:{string.Join(',', Ranges.Select(x => $"{x.Start.Value}-{x.End.Value}"))}";
+            => $"{Id}:{Range.Start.Value}-{Range.End.Value}";
 
-        public static void Parse(string value, out EmotePosition emote)
+        public static void Parse(string id, string range, out EmotePosition emote)
         {
-            var info = value.Split(':');
-            var id = info[0];
-            var positions = info[1].Split(',');
-
-            var ranges = new List<Range>();
-            foreach (var item in positions)
-            {
-                var position = item.Split('-');
-                int start = int.Parse(position[0]);
-                int end = int.Parse(position[1]);
-                ranges.Add(new Range(start, end));
-            }
-
-            emote = new EmotePosition
-            {
-                Id = id,
-                Ranges = ranges.AsReadOnly()
-            };
+            var position = range.Split('-');
+            int start = int.Parse(position[0]);
+            int end = int.Parse(position[1]);
+            emote = new EmotePosition(id, new Range(start, end));
         }
 
         public static bool TryParseMany(string value, out IReadOnlyCollection<EmotePosition> emotes)
@@ -48,11 +37,16 @@
             }
 
             var response = new List<EmotePosition>();
-            var emoteArr = value.Split('/');
-            foreach (var item in emoteArr)
+            foreach (var emote in value.Split('/')) // Loop through emote ids
             {
-                Parse(item, out var emote);
-                response.Add(emote);
+                var emoteSplit = emote.Split(':');
+                var emoteId = emoteSplit[0];
+
+                foreach (var range in emote.Split(',')) // Loop through ranges in emote
+                {
+                    Parse(emoteId, range, out var result);
+                    response.Add(result);
+                }
             }
 
             emotes = response.AsReadOnly();
