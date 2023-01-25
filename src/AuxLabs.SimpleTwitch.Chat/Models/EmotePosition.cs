@@ -42,7 +42,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 var emoteSplit = emote.Split(':');
                 var emoteId = emoteSplit[0];
 
-                foreach (var range in emote.Split(',')) // Loop through ranges in emote
+                foreach (var range in emoteSplit[1].Split(',')) // Loop through ranges in emote
                 {
                     Parse(emoteId, range, out var result);
                     response.Add(result);
