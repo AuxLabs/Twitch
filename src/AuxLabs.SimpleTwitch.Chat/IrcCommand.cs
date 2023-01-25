@@ -11,6 +11,8 @@ namespace AuxLabs.SimpleTwitch.Chat
         ClearMessage,
         [EnumMember(Value = "PRIVMSG")]     // Send a message to a channel
         Message,
+        [EnumMember(Value = "WHISPER")]     // Send a message to a user
+        Whisper,
 
         [EnumMember(Value = "PONG")]        // Pong
         Pong,
@@ -50,6 +52,21 @@ namespace AuxLabs.SimpleTwitch.Chat
         [EnumMember(Value = "JOIN")]        // Join a channel
         Join,
         [EnumMember(Value = "PART")]        // Leave a channel
-        Part
+        Part,
+
+        [EnumMember(Value = "001")]
+        RPL_Welcome,
+        [EnumMember(Value = "002")]
+        RPL_YourHost,
+        [EnumMember(Value = "003")]
+        RPL_Created,
+        [EnumMember(Value = "004")]
+        RPL_MyInfo,
+        [EnumMember(Value = "375")]
+        RPL_MotdStart,
+        [EnumMember(Value = "372")]
+        RPL_Motd,
+        [EnumMember(Value = "376")]
+        RPL_MotdEnd
     }
 }

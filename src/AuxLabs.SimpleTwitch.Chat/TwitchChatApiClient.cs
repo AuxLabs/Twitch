@@ -6,19 +6,33 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class TwitchChatApiClient : BaseSocketClient<IrcPayload>
     {
+        /// <summary> Triggered when the Twitch IRC server needs to terminate the connection. </summary>
+        public event Action Reconnect;
+
+        /// <summary> Triggered when an unhandled irc command is received. </summary>
         public event Action<IrcPayload> UnknownCommandReceived;
-
+        /// <summary> Triggered when someone removes all messages from the channel or from a specified user. </summary>
         public event Action<ClearChatEventArgs> ChatCleared;
+        /// <summary> Triggered when someone removes a single message from the chat room. </summary>
         public event Action<ClearMessageEventArgs> MessageCleared;
-        public event Action<MessageEventArgs> MessageReceived;
+        /// <summary> Triggered after authenticated with the server. Indicates the authenticated user's chat settings. </summary>
         public event Action<GlobalUserStateTags> GlobalUserStateReceived;
-
-        public event Action<RoomStateEventArgs> RoomStateReceived;
-
-        public event Action<MembershipEventArgs> ChannelJoined;
-        public event Action<MembershipEventArgs> ChannelLeft;
+        /// <summary> Triggered to indicate the outcome of an action. </summary>
         public event Action<NoticeEventArgs> NoticeReceived;
+        /// <summary> Triggered when a message is received in a channel. </summary>
+        public event Action<MessageEventArgs> MessageReceived;
+        /// <summary> Triggered when you join a channel or when the channel’s chat settings change. Indicates the chat's current settings. </summary>
+        public event Action<RoomStateEventArgs> RoomStateReceived;
+        /// <summary> Triggered when events relating to a user in a channel occur. e.g. subscriptions, gifts, raids... </summary>
         public event Action<UserNoticeEventArgs> UserNoticeReceived;
+        /// <summary> Triggered when the bot joins a channel. Indicates the authenticated user's state in said channel. </summary>
+        public event Action<object> UserStateReceived;
+        /// <summary> Triggered when a whisper is received. </summary>
+        public event Action<object> WhisperReceived;
+        /// <summary> Triggered when a user joins a channel. </summary>
+        public event Action<MembershipEventArgs> ChannelJoined;
+        /// <summary> Triggered when a user leaves a channel. </summary>
+        public event Action<MembershipEventArgs> ChannelLeft;
 
         // config variables
         public readonly bool CommandsRequested;
@@ -73,6 +87,10 @@ namespace AuxLabs.SimpleTwitch.Chat
 
             switch (payload.Command)
             {
+                case IrcCommand.Reconnect:
+                    Reconnect?.Invoke();
+                    break;
+
                 case IrcCommand.ClearChat:
                     var clearChatArgs = new ClearChatEventArgs(payload.Parameters);
                     if (hasTags) clearChatArgs.Tags = (ClearChatTags)payload.Tags;
@@ -85,22 +103,20 @@ namespace AuxLabs.SimpleTwitch.Chat
                     MessageCleared?.Invoke(clearMsgArgs);
                     break;
 
+                case IrcCommand.GlobalUserState:
+                    GlobalUserStateReceived?.Invoke((GlobalUserStateTags)payload.Tags);
+                    break;
+
+                case IrcCommand.Notice:
+                    var noticeArgs = new NoticeEventArgs(payload.Parameters);
+                    if (hasTags) noticeArgs.Tags = (NoticeTags)payload.Tags;
+                    NoticeReceived?.Invoke(noticeArgs);
+                    break;
+
                 case IrcCommand.Message:
                     var messageArgs = new MessageEventArgs(payload.Prefix, payload.Parameters);
                     if (hasTags) messageArgs.Tags = (MessageTags)payload.Tags;
                     MessageReceived?.Invoke(messageArgs);
-                    break;
-
-                case IrcCommand.Mode:
-                    break;
-
-                case IrcCommand.Names:
-                    break;
-                case IrcCommand.NamesList:
-                    break;
-                case IrcCommand.NamesEnd:
-                    break;
-                case IrcCommand.Reconnect:
                     break;
 
                 case IrcCommand.RoomState:
@@ -114,13 +130,11 @@ namespace AuxLabs.SimpleTwitch.Chat
                     if (hasTags) userNoticeArgs.Tags = (UserNoticeTags)payload.Tags;
                     UserNoticeReceived?.Invoke(userNoticeArgs);
                     break;
+
                 case IrcCommand.UserState:
                     break;
-                case IrcCommand.GlobalUserState:
-                    GlobalUserStateReceived?.Invoke((GlobalUserStateTags)payload.Tags);
-                    break;
 
-                case IrcCommand.CapabilityAcknowledge:
+                case IrcCommand.Whisper:
                     break;
 
                 case IrcCommand.Join:
@@ -133,10 +147,24 @@ namespace AuxLabs.SimpleTwitch.Chat
                     ChannelLeft?.Invoke(leftArgs);
                     break;
 
-                case IrcCommand.Notice:
-                    var noticeArgs = new NoticeEventArgs(payload.Parameters);
-                    if (hasTags) noticeArgs.Tags = (NoticeTags)payload.Tags;
-                    NoticeReceived?.Invoke(noticeArgs);
+                case IrcCommand.Mode:
+                    break;
+                case IrcCommand.Names:
+                    break;
+                case IrcCommand.NamesList:
+                    break;
+                case IrcCommand.NamesEnd:
+                    break;
+                case IrcCommand.CapabilityAcknowledge:
+                    break;
+
+                case IrcCommand.RPL_Welcome:        // Ignorable messages sent after authentication
+                case IrcCommand.RPL_YourHost:
+                case IrcCommand.RPL_Created:
+                case IrcCommand.RPL_MyInfo:
+                case IrcCommand.RPL_MotdStart:
+                case IrcCommand.RPL_Motd:
+                case IrcCommand.RPL_MotdEnd:
                     break;
 
                 default:
