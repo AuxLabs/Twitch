@@ -21,17 +21,18 @@ An example of authenticating with the client and requesting the current authoriz
 ```csharp
 var twitch = new TwitchRestApiClient()
 {
-    Authorization = new AuthenticationHeaderValue("Bearer", "oauth token")
+    Authorization = new AuthenticationHeaderValue("Bearer", "oauth token"),
+    ClientId = "client id"
 };
 
 var identity = await twitch.ValidateAsync();
-var user = await twitch.GetUsersAsync(new GetUsersParams
+var response = await twitch.GetUsersAsync(args =>
 {
-    UserIds = new[] { identity.UserId }
+    args.UserIds = new[] { identity.UserId };
 });
 
 var user = response.Data.FirstOrDefault();
-Console.WriteLine($"{user.DisplayName} is a {user.BroadcasterType}, their account was created on {user.CreatedAt}.");
+Console.WriteLine($"{user?.DisplayName} is a {user?.BroadcasterType}, their account was created on {user?.CreatedAt}.");
 ```
 
 ##### Chat

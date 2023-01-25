@@ -1,20 +1,16 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
-using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AuxLabs.SimpleTwitch.Tests.Rest
 {
-    [Collection("Mock")]
+    [Collection("mock")]
     public class Ads
     {
-        private readonly ITestOutputHelper _output;
         private readonly MockApiFixture _fixture;
 
-        public Ads(ITestOutputHelper output, MockApiFixture fixture)
+        public Ads(MockApiFixture fixture)
         {
-            _output = output;
             _fixture = fixture;
         }
 
@@ -26,7 +22,6 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
                 Length = 30
             });
 
-            _output.WriteLine($"Requested length of 30, got {response.Data.First().Length}");
             Assert.NotNull(response);
             Assert.NotNull(response?.Data);
         }

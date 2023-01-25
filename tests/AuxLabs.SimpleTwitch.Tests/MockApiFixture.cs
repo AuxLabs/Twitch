@@ -1,6 +1,8 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using RestEase;
+using System;
 using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xunit;
@@ -25,7 +27,8 @@ namespace AuxLabs.SimpleTwitch.Tests
                 ResponseDeserializer = new JsonResponseDeserializer()
             }.For<IMockApi>();
 
-            var client = Mock.GetClientsAsync().GetAwaiter().GetResult().Data.FirstOrDefault();
+            var result = Mock.GetClientsAsync().GetAwaiter().GetResult();
+            var client = result.Data.FirstOrDefault();
             Mock.ClientId = client.Id;
             Mock.ClientSecret = client.Secret;
 
@@ -55,6 +58,6 @@ namespace AuxLabs.SimpleTwitch.Tests
         }
     }
 
-    [CollectionDefinition("Mock")]
+    [CollectionDefinition("mock")]
     public class MockApiCollection : ICollectionFixture<MockApiFixture> { }
 }

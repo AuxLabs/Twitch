@@ -34,15 +34,12 @@ jobs:
     name: Test
     needs: build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dotnet: [ 'net6.0', 'netstandard2.1' ]
     steps:
       - uses: actions/checkout@v3
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
+          name: build-${{ github.run_number }}
       - name: Install Brew
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -55,7 +52,7 @@ jobs:
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: net6.0
       - name: Install Dependencies
         run: dotnet restore
       - name: Test

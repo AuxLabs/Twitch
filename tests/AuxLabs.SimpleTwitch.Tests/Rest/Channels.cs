@@ -1,11 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AuxLabs.SimpleTwitch.Tests.Rest
 {
-    [Collection("Mock")]
+    [Collection("mock")]
     public class Channels
     {
         private readonly MockApiFixture _fixture;

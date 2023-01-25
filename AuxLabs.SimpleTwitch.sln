@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{23B59A5B-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A662A963-C964-49FC-B1F1-C274712248BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuxLabs.SimpleTwitch.Tests", "tests\AuxLabs.SimpleTwitch.Tests\AuxLabs.SimpleTwitch.Tests.csproj", "{0E419C6B-6CC9-4D02-B151-C36D6B724419}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{7A271F57-FB77-41B0-B8C5-2396A809A61D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuxLabs.SimpleTwitch.Sockets", "src\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj", "{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}"
@@ -28,8 +26,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		AuxLabs.SimpleTwitch.targets = AuxLabs.SimpleTwitch.targets
 		LICENSE = LICENSE
+		.github\workflows\main.yml = .github\workflows\main.yml
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuxLabs.SimpleTwitch.Tests", "tests\AuxLabs.SimpleTwitch.Tests\AuxLabs.SimpleTwitch.Tests.csproj", "{37DC7A5D-B7B6-4745-BC97-68273944FD7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "tests\Testing\Testing.csproj", "{D529D0EB-0E0C-4893-AE19-0144C25F68B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,14 +60,18 @@ Global
 		{1E16ABE3-DD32-4A8E-B6D2-0AA63F55D57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E16ABE3-DD32-4A8E-B6D2-0AA63F55D57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E16ABE3-DD32-4A8E-B6D2-0AA63F55D57F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E419C6B-6CC9-4D02-B151-C36D6B724419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E419C6B-6CC9-4D02-B151-C36D6B724419}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E419C6B-6CC9-4D02-B151-C36D6B724419}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E419C6B-6CC9-4D02-B151-C36D6B724419}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DC7A5D-B7B6-4745-BC97-68273944FD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DC7A5D-B7B6-4745-BC97-68273944FD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DC7A5D-B7B6-4745-BC97-68273944FD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DC7A5D-B7B6-4745-BC97-68273944FD7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D529D0EB-0E0C-4893-AE19-0144C25F68B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D529D0EB-0E0C-4893-AE19-0144C25F68B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D529D0EB-0E0C-4893-AE19-0144C25F68B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D529D0EB-0E0C-4893-AE19-0144C25F68B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,8 +82,9 @@ Global
 		{9E3D6C0B-85E1-47E1-90EB-DB65F7224171} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
 		{25E720AA-BCC3-4B1A-84D7-56FF985D7D21} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
 		{1E16ABE3-DD32-4A8E-B6D2-0AA63F55D57F} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
-		{0E419C6B-6CC9-4D02-B151-C36D6B724419} = {A662A963-C964-49FC-B1F1-C274712248BE}
 		{9DE6DBBA-810D-4A5E-B614-DCB754C45CBF} = {7A271F57-FB77-41B0-B8C5-2396A809A61D}
+		{37DC7A5D-B7B6-4745-BC97-68273944FD7B} = {A662A963-C964-49FC-B1F1-C274712248BE}
+		{D529D0EB-0E0C-4893-AE19-0144C25F68B0} = {A662A963-C964-49FC-B1F1-C274712248BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {361079B4-1C89-4323-AA00-5C8EB0EBE16A}
