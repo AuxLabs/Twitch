@@ -12,5 +12,13 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             ChannelName = parameters.ElementAt(0).Trim('#');
         }
+
+        public static RoomStateEventArgs Create(IrcPayload payload)
+        {
+            var args = new RoomStateEventArgs(payload.Parameters);
+            if (payload.Tags != null)
+                args.Tags = (RoomStateTags)payload.Tags;
+            return args;
+        }
     }
 }
