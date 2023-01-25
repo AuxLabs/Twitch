@@ -17,22 +17,12 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public Identity Identity { get; internal set; }
 
-        public TwitchRestApiClient()
-            : this(TwitchConstants.RestApiUrl) { }
-        public TwitchRestApiClient(string baseUrl)
-            : this(new HttpClient
-            { 
-                BaseAddress = new Uri(baseUrl) 
-            }) { }
-        public TwitchRestApiClient(HttpClient httpClient)
+        public TwitchRestApiClient(IRateLimiter rateLimiter = null)
+            : this(TwitchConstants.RestApiUrl, rateLimiter) { }
+        public TwitchRestApiClient(string url, IRateLimiter rateLimiter = null)
         {
-            _api = new RestClient(httpClient)
-            {
-                RequestBodySerializer = new JsonBodySerializer(),
-                ResponseDeserializer = new JsonResponseDeserializer(),
-                RequestQueryParamSerializer = new JsonQueryParamSerializer(),
-                RequestPathParamSerializer = new StringEnumRequestPathParamSerializer()
-            }.For<ITwitchApi>();
+            var httpClient = new HttpClient { BaseAddress = new Uri(url) };
+            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, rateLimiter));
         }
 
         protected virtual void Dispose(bool disposing)
@@ -48,12 +38,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public void Dispose()
         {
             Dispose(true);
-            GC.SuppressFinalize(this);
         }
 
         public async Task<Identity> ValidateAsync()
         {
-            var idApi = new RestClient(TwitchConstants.RestIdentityUrl).For<ITwitchIdentityApi>();
+            var idApi = RestClient.For<ITwitchIdentityApi>(TwitchConstants.RestIdentityUrl);
             idApi.Authorization = Authorization;
 
             Identity = await idApi.ValidateAsync();
@@ -64,43 +53,65 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary>
         /// Starts a commercial on the specified channel.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
             => _api.PostCommercialAsync(args);
-
         /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialParams)" />
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialParams> action)
-        {
-            var args = new PostChannelCommercialParams();
-            action(args);
-            return PostCommercialAsync(args);
-        }
+            => PostCommercialAsync(action.InvokeReturn());
 
         /// <summary>
         /// Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports as CSV files.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams args)
             => _api.GetExtensionAnalyticsAsync(args);
+        /// <inheritdoc cref="GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams)" />
+        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(Action<GetExtensionAnalyticsParams> action)
+            => GetExtensionAnalyticsAsync(action.InvokeReturn());
+
         /// <summary>
         /// Gets an analytics report for one or more games. The response contains the URLs used to download the reports as CSV files.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsParams args)
             => _api.GetGameAnalyticsAsync(args);
+        /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsParams)" />
+        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(Action<GetGameAnalyticsParams> action)
+            => GetGameAnalyticsAsync(action.InvokeReturn());
+
         /// <summary>
         /// Gets the Bits leaderboard for the authenticated broadcaster.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardRequest args)
             => _api.GetBitsLeaderboardAsync(args);
+        /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardRequest)" />
+        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardRequest> action)
+            => GetBitsLeaderboardAsync(action.InvokeReturn());
 
         /// <summary>
         /// Gets a list of Cheermotes that users can use to cheer Bits in any Bits-enabled channel’s chat room.
         /// </summary>
+        /// <param name="broadcasterId">The id of the broadcaster to get emotes from</param>
+        /// <returns></returns>
         public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
             => _api.GetCheermotesAsync(broadcasterId);
+
         /// <summary>
         /// Gets an extension’s list of transactions.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsRequest args)
             => _api.GetExtensionTransactionAsync(args);
+        /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsRequest)" />
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsRequest> action)
+            => GetExtensionTransactionAsync(action.InvokeReturn());
 
         /// <summary>
         /// Gets information about one or more channels.
@@ -115,6 +126,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary>
         /// Gets the broadcaster’s list editors.
         /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(object args)
             => _api.GetChannelEditorsAsync(args);
 
@@ -329,8 +342,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetTeamsAsync(object args)
             => _api.GetTeamsAsync(args);
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args">Available arguments for this request</param>
+        /// <returns></returns>
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersParams args)
             => _api.GetUsersAsync(args);
+        /// <inheritdoc cref="GetUsersAsync(GetUsersParams)" />
+        public Task<TwitchResponse<User>> GetUsersAsync(Action<GetUsersParams> action)
+            => GetUsersAsync(action.InvokeReturn());
         public Task<TwitchResponse<User>> ModifyUserAsync(string description)
             => _api.ModifyUserAsync(description);
         public Task<TwitchResponse<Follower>> GetFollowsAsync(GetFollowsParams args)

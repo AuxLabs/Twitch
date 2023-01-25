@@ -107,11 +107,11 @@ namespace AuxLabs.SimpleTwitch.Sockets
                     _sendQueue = new BlockingCollection<TPayload>();
                     tasks = new[]
                     {
-                            RunSendAsync(client, cancelToken),
-                            RunReceiveAsync(client, readySignal, cancelToken)
-                        };
+                        RunSendAsync(client, cancelToken),
+                        RunReceiveAsync(client, readySignal, cancelToken)
+                    };
                     if (_heartbeatRate > -1)
-                        _ = tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
+                        tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
 
                     // Success
                     backoffMillis = InitialBackoffMillis;
