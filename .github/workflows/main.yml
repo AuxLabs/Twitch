@@ -42,7 +42,7 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet-version }}
+          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
       - name: Install Brew
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
