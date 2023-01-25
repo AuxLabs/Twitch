@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public bool RequestCommands { get; set; } = true;
 
         /// <summary>
-        /// Lets your bot receive JOIN and PART events when users join and leave the chat room
+        /// Lets your bot receive JOIN and PART events when users join and leave the chat room.
         /// </summary>
         public bool RequestMembership { get; set; } = true;
 
@@ -20,12 +20,22 @@ namespace AuxLabs.SimpleTwitch.Chat
         public bool RequestTags { get; set; } = true;
 
         /// <summary>
-        /// Should an exception be thrown if an unhandled event is received from twitch
+        /// Should the client forward event types to their respective events.
+        /// </summary>
+        public bool ShouldHandleEvents { get; set; } = true;
+
+        /// <summary>
+        /// Should an exception be thrown if an unhandled event is received from twitch.
         /// </summary>
         public bool ThrowOnUnknownCommand { get; set; } = false;
 
         /// <summary>
-        /// Specify a custom serializer for chat irc messages
+        /// How many messages to keep in the cache per channel.
+        /// </summary>
+        public int MessageCacheSize { get; set; } = 1000;
+
+        /// <summary>
+        /// Specify a custom serializer for chat irc messages.
         /// </summary>
         public ISerializer<IrcPayload> IrcSerializer { get; set; } = null;
     }

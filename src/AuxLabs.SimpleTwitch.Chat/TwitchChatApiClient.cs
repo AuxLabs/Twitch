@@ -38,7 +38,9 @@ namespace AuxLabs.SimpleTwitch.Chat
         public readonly bool CommandsRequested;
         public readonly bool MembershipRequested;
         public readonly bool TagsRequested;
+        public readonly bool ShouldHandleEvents;
         public readonly bool ThrowOnUnknownCommand;
+        public readonly int MessageCacheSize;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
@@ -51,7 +53,9 @@ namespace AuxLabs.SimpleTwitch.Chat
             CommandsRequested = config.RequestCommands;
             MembershipRequested = config.RequestMembership;
             TagsRequested = config.RequestTags;
+            ShouldHandleEvents = config.ShouldHandleEvents;
             ThrowOnUnknownCommand = config.ThrowOnUnknownCommand;
+            MessageCacheSize = config.MessageCacheSize;
         }
 
         public void Run()
@@ -83,6 +87,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override void HandleEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
+            if (!ShouldHandleEvents) return;
             bool hasTags = payload.Tags != null;
 
             switch (payload.Command)
@@ -114,8 +119,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 case IrcCommand.Message:
-                    var messageArgs = new MessageEventArgs(payload.Prefix, payload.Parameters);
-                    if (hasTags) messageArgs.Tags = (MessageTags)payload.Tags;
+                    var messageArgs = MessageEventArgs.Create(payload);
                     MessageReceived?.Invoke(messageArgs);
                     break;
 

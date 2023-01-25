@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch
 {
-    public static class ActionHelper
+    public static class ActionExtensions
     {
         public static T InvokeReturn<T>(this Action<T> action)
         {
