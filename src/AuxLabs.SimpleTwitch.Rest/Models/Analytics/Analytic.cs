@@ -10,19 +10,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("url")]
-        public string URL { get; }
+        public string URL { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("type")]
         [JsonConverter(typeof(NullableEnumStringConverter<AnalyticType>))]
-        public AnalyticType Type { get; }
+        public AnalyticType Type { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("date_range")]
-        public DateRange DateRange { get; }
+        public DateRange DateRange { get; set; }
     }
 }

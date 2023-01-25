@@ -9,25 +9,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("data")]
-        public IEnumerable<T> Data { get; }
+        public IEnumerable<T> Data { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("total")]
-        public int? Total { get; }
+        public int? Total { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("date_range")]
-        public DateRange? DateRange { get; }
+        public DateRange? DateRange { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("pagination")]
-        public Pagination? Pagination { get; }
+        public Pagination? Pagination { get; set; }
     }
 
     public struct Pagination
@@ -36,6 +36,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// Marks the top of the next page of results following a request.
         /// </summary>
         [JsonPropertyName("cursor")]
-        public string Cursor { get; }
+        public string Cursor { get; set; }
     }
 }

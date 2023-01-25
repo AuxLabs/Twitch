@@ -8,12 +8,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("dark")]
-        public EmoteFormat Dark { get; }
+        public EmoteFormat Dark { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("light")]
-        public EmoteFormat Light { get; }
+        public EmoteFormat Light { get; set; }
     }
 }

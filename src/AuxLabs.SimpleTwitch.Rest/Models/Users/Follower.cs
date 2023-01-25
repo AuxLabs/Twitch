@@ -6,24 +6,24 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class Follower
     {
         [JsonPropertyName("followed_at")]
-        public DateTime FollowedAt { get; }
+        public DateTime FollowedAt { get; set; }
 
         [JsonPropertyName("from_id")]
-        public string FromId { get; }
+        public string FromId { get; set; }
 
-        [JsonPropertyName("from_login")]
-        public string FromLogin { get; }
+        [JsonPropertyName("from_login   ")]
+        public string FromLogin { get; set; }
 
         [JsonPropertyName("from_name")]
-        public string FromName { get; }
+        public string FromName { get; set; }
 
         [JsonPropertyName("to_id")]
-        public string ToId { get; }
+        public string ToId { get; set; }
 
         [JsonPropertyName("to_login")]
-        public string ToLogin { get; }
+        public string ToLogin { get; set; }
 
         [JsonPropertyName("to_name")]
-        public string ToName { get; }
+        public string ToName { get; set; }
     }
 }

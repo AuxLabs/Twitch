@@ -1,9 +1,13 @@
-﻿namespace AuxLabs.SimpleTwitch.Rest
+﻿using System.Runtime.Serialization;
+
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public enum BroadcasterType
     {
         None = 0,
-        Partner, 
+        [EnumMember(Value = "partner")]
+        Partner,
+        [EnumMember(Value = "affiliate")]
         Affiliate
     }
 }

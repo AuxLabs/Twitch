@@ -13,12 +13,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// 
         /// </summary>
         [JsonPropertyName("started_at")]
-        public DateTime StartedAt { get; }
+        public DateTime StartedAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonPropertyName("ended_at")]
-        public DateTime EndedAt { get; }
+        public DateTime EndedAt { get; set; }
     }
 }
