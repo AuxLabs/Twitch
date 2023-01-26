@@ -14,5 +14,13 @@ namespace AuxLabs.SimpleTwitch.Chat
             ChannelName = parameters.ElementAt(0).Trim('#');
             Message = parameters.ElementAtOrDefault(1)?.Trim(':');
         }
+
+        public static UserNoticeEventArgs Create(IrcPayload payload)
+        {
+            var args = new UserNoticeEventArgs(payload.Parameters);
+            if (payload.Tags != null)
+                args.Tags = (UserNoticeTags)payload.Tags;
+            return args;
+        }
     }
 }

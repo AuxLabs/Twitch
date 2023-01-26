@@ -6,114 +6,70 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class MessageTags : BaseTags
     {
-        /// <summary>
-        /// An ID that uniquely identifies the message.
-        /// </summary>
+        /// <summary> An ID that uniquely identifies the message. </summary>
         public string Id { get; set; }
 
-        /// <summary>
-        /// An ID that identifies the channel.
-        /// </summary>
+        /// <summary> An ID that identifies the channel. </summary>
         public string ChannelId { get; set; }
 
-        /// <summary>
-        /// The date and time that the message was sent.
-        /// </summary>
+        /// <summary> The date and time that the message was sent. </summary>
         public DateTimeOffset Timestamp { get; set; }
 
-        /// <summary>
-        /// The ID of the user that sent the message.
-        /// </summary>
+        /// <summary> The ID of the user that sent the message. </summary>
         public string UserId { get; set; }
 
-        /// <summary>
-        /// The type of user.
-        /// </summary>
+        /// <summary>  The type of user. </summary>
         public UserType UserType { get; set; }
 
-        /// <summary>
-        /// The user’s display name.
-        /// </summary>
+        /// <summary> The user’s display name. </summary>
         public string DisplayName { get; set; }
 
-        /// <summary>
-        /// The user’s login name.
-        /// </summary>
+        /// <summary> The user’s login name. </summary>
         public string Login { get; set; }
 
-        /// <summary>
-        /// The color of the user’s name in the chat room.
-        /// </summary>
+        /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; set; }
 
-        /// <summary>
-        /// A collection of badges the user has.
-        /// </summary>
+        /// <summary> A collection of badges the user has. </summary>
         public IReadOnlyCollection<Badge> Badges { get; set; }
 
-        /// <summary>
-        /// Contains metadata related to the chat badges in the badges tag. Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber.
-        /// </summary>
+        /// <summary> Contains metadata related to the chat badges in the badges tag. Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber. </summary>
         public string BadgeInfo { get; set; }
 
-        /// <summary>
-        /// The amount of Bits the user cheered. Only a Bits cheer message includes this tag.
-        /// </summary>
+        /// <summary> The amount of Bits the user cheered. Only a Bits cheer message includes this tag. </summary>
         public int Bits { get; set; }
 
-        /// <summary>
-        /// A collection of emotes and their position in the message.
-        /// </summary>
+        /// <summary> A collection of emotes and their position in the message. </summary>
         public IReadOnlyCollection<EmotePosition> Emotes { get; set; }
 
-        /// <summary>
-        /// The message value when someone uses the /me chat command
-        /// </summary>
+        /// <summary> The message value when someone uses the /me chat command </summary>
         public string Action { get; set; }
 
-        /// <summary>
-        /// Indicates whether the user is a moderator.
-        /// </summary>
+        /// <summary> Indicates whether the user is a moderator. </summary>
         public bool IsMod { get; set; }
 
-        /// <summary>
-        /// Indicates whether the user is a subscriber.
-        /// </summary>
+        /// <summary> Indicates whether the user is a subscriber. </summary>
         public bool IsSubscriber { get; set; }
 
-        /// <summary>
-        /// Indicates whether the user has site-wide commercial free mode enabled.
-        /// </summary>
+        /// <summary> Indicates whether the user has site-wide commercial free mode enabled. </summary>
         public bool IsTurbo { get; set; }
 
-        /// <summary>
-        /// Indicates whether the user is a VIP.
-        /// </summary>
+        /// <summary> Indicates whether the user is a VIP. </summary>
         public bool IsVIP { get; set; }
 
-        /// <summary>
-        /// An ID that uniquely identifies the parent message that this message is replying to.
-        /// </summary>
+        /// <summary> An ID that uniquely identifies the parent message that this message is replying to. </summary>
         public string ReplyParentMessageId { get; set; }
 
-        /// <summary>
-        /// An ID that identifies the sender of the parent message.
-        /// </summary>
+        /// <summary> An ID that identifies the sender of the parent message. </summary>
         public string ReplyParentUserId { get; set; }
 
-        /// <summary>
-        /// The login name of the sender of the parent message.
-        /// </summary>
+        /// <summary> The login name of the sender of the parent message. </summary>
         public string ReplyParentUserLogin { get; set; }
 
-        /// <summary>
-        /// The display name of the sender of the parent message.
-        /// </summary>
+        /// <summary> The display name of the sender of the parent message. </summary>
         public string ReplyParentDisplayName { get; set; }
 
-        /// <summary>
-        /// The text of the parent message.
-        /// </summary>
+        /// <summary> The text of the parent message. </summary>
         public string ReplyParentMessage { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

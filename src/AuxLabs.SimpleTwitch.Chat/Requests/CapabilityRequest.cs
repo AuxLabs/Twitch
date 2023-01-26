@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class CapabilityRequest : IrcPayload
     {
-        public bool IsValid { get; }
+        public bool HasData { get; }
 
         public CapabilityRequest(bool membership, bool commands, bool tags)
         {
@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
             if (capabilities.Count > 0)
             {
-                IsValid = true;
+                HasData = true;
                 capabilities[0] = capabilities[0].Insert(0, ":");
                 Parameters = capabilities.AsReadOnly();
             }

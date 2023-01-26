@@ -16,8 +16,6 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         [EnumMember(Value = "PONG")]        // Pong
         Pong,
-        [EnumMember(Value = "MODE")]        // A moderator is added or removed from a channel
-        Mode,
         [EnumMember(Value = "NAMES")]       // List current chatters in a channel
         Names,
         [EnumMember(Value = "353")]         // Repeating list of names until 366

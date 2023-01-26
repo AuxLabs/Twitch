@@ -48,20 +48,13 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             [IrcCommand.ClearChat] = typeof(ClearChatTags),
             [IrcCommand.ClearMessage] = typeof(ClearMessageTags),
-            [IrcCommand.Message] = typeof(MessageTags),
-
-            //[IrcCommand.Mode] = typeof(BaseTags),
-            //[IrcCommand.Names] = typeof(BaseTags),
-            //[IrcCommand.NamesList] = typeof(BaseTags),
-            //[IrcCommand.NamesEnd] = typeof(BaseTags),
+            [IrcCommand.GlobalUserState] = typeof(GlobalUserStateTags),
             [IrcCommand.Notice] = typeof(NoticeTags),
-            //[IrcCommand.Reconnect] = typeof(BaseTags),
+            [IrcCommand.Message] = typeof(MessageTags),
             [IrcCommand.RoomState] = typeof(RoomStateTags),
             [IrcCommand.UserNotice] = typeof(UserNoticeTags),
-            //[IrcCommand.UserState] = typeof(BaseTags),
-            [IrcCommand.GlobalUserState] = typeof(GlobalUserStateTags),
-            //[IrcCommand.CapabilityAcknowledge] = typeof(BaseTags),
-            //[IrcCommand.CapabilityDenied] = typeof(BaseTags)
+            [IrcCommand.UserState] = typeof(UserStateTags),
+            [IrcCommand.Whisper] = typeof(WhisperTags)
         };
 
         public static Dictionary<UserNoticeType, Type> UserNoticeTypeSelector => new Dictionary<UserNoticeType, Type>()
