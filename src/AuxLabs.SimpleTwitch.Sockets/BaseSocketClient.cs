@@ -30,10 +30,14 @@ namespace AuxLabs.SimpleTwitch.Sockets
         private const int MaxBackoffMillis = 60000; // 1 min
         private const double BackoffMultiplier = 1.75; // 1.75x
         private const double BackoffJitter = 0.25; // 1.5x to 2.0x
+        private const int ConnectionTimeoutMillis = 30000; // 30 sec
+        private const int IdentifyTimeoutMillis = 60000; // 1 min
 
         private readonly SemaphoreSlim _stateLock;
         private readonly MemoryStream _stream;
         private readonly int _heartbeatRate;
+        private readonly bool _waitForHello = false;
+        private readonly Type _helloType = null;
 
         private Task _connectionTask;
         private CancellationTokenSource _runCts;
@@ -51,8 +55,14 @@ namespace AuxLabs.SimpleTwitch.Sockets
             _runCts = new CancellationTokenSource();
             _runCts.Cancel(); // Start canceled
         }
+        public BaseSocketClient(int heartBeatRate, bool waitForHello, Type helloType)
+            : this(heartBeatRate)
+        {
+            _waitForHello = waitForHello;
+            _helloType = helloType;
+        }
 
-        public abstract void SendIdentify(string username, string password);
+        protected virtual void SendIdentify() { }
         protected abstract void SendHeartbeat();
         protected abstract void SendHeartbeatAck();
         protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
@@ -103,6 +113,18 @@ namespace AuxLabs.SimpleTwitch.Sockets
                     var uri = new Uri(_url); // TODO: Enable
                     await client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
 
+                    // Receive HELLO (timeout = ConnectionTimeoutMillis)
+                    if (_waitForHello) 
+                    {
+                        var receiveTask = ReceiveAsync(client, readySignal, cancelToken);
+                        await WhenAny(new Task[] { receiveTask }, ConnectionTimeoutMillis,
+                            "Timed out waiting for initial message").ConfigureAwait(false);
+
+                        var evnt = await receiveTask.ConfigureAwait(false);
+                        if (evnt.GetType() != _helloType)
+                            throw new Exception($"First event was not a {_helloType.Name} event");
+                    }
+
                     // Start tasks here since HELLO must be handled before another thread can send/receive
                     _sendQueue = new BlockingCollection<TPayload>();
                     tasks = new[]
@@ -112,6 +134,12 @@ namespace AuxLabs.SimpleTwitch.Sockets
                     };
                     if (_heartbeatRate > -1)
                         tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
+
+                    SendIdentify();
+                    await WhenAny(tasks.Append(readySignal.Task), IdentifyTimeoutMillis,
+                        "Timed out waiting for ready signal or InvalidSession").ConfigureAwait(false);
+                    if (await readySignal.Task.ConfigureAwait(false) == false)
+                        continue; // Invalid session
 
                     // Success
                     backoffMillis = InitialBackoffMillis;
@@ -313,7 +341,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
             PayloadSent?.Invoke(payload, data.Length);
         }
 
-        private async Task ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
+        private async Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
             _stream.Position = 0;
             _stream.SetLength(0);
@@ -332,17 +360,18 @@ namespace AuxLabs.SimpleTwitch.Sockets
             }
             while (!result.EndOfMessage);
 
-            RecursiveRead(_stream.ToArray(), readySignal);
+            return RecursiveRead(_stream.ToArray(), readySignal);
         }
 
-        private void RecursiveRead(ReadOnlySpan<byte> data, TaskCompletionSource<bool> readySignal)
+        private TPayload RecursiveRead(ReadOnlySpan<byte> data, TaskCompletionSource<bool> readySignal)
         {
             var payload = Serializer.Read(ref data);
 
             HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
             PayloadReceived?.Invoke(payload, _stream.Length);
             if (data.Length != 0)
-                RecursiveRead(data, readySignal);
+                return RecursiveRead(data, readySignal);
+            return default;
         }
     }
 }
