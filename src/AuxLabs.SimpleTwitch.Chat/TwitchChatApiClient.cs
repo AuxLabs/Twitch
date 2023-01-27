@@ -71,6 +71,11 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         public void SetIdentity(string username, string token)
         {
+            if (string.IsNullOrWhiteSpace(username)) 
+                throw new ArgumentException("Required parameter was invalid", nameof(username));
+            if (string.IsNullOrWhiteSpace(token)) 
+                throw new ArgumentException("Required parameter was invalid", nameof(token));
+
             _username = username;
             if (!token.StartsWith("oauth:"))
                 token = token.Insert(0, "oauth:");
@@ -167,12 +172,12 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 case IrcCommand.Join:
-                    var joinArgs = new MembershipEventArgs(payload.Prefix.Value, payload.Parameters);
+                    var joinArgs = MembershipEventArgs.Create(payload);
                     ChannelJoined?.Invoke(joinArgs);
                     break;
 
                 case IrcCommand.Part:
-                    var leftArgs = new MembershipEventArgs(payload.Prefix.Value, payload.Parameters);
+                    var leftArgs = MembershipEventArgs.Create(payload);
                     ChannelLeft?.Invoke(leftArgs);
                     break;
 

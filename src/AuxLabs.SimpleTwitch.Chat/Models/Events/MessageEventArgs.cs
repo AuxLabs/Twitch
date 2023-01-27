@@ -13,7 +13,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public MessageEventArgs(IrcPrefix? prefix, IReadOnlyCollection<string> parameters)
         {
             ChannelName = parameters.ElementAt(0).Trim('#');
-            Message = parameters.LastOrDefault().Trim(':');
+            Message = parameters.LastOrDefault()[1..];
             UserName = prefix?.Username;
         }
 

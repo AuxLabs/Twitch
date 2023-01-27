@@ -13,5 +13,11 @@ namespace AuxLabs.SimpleTwitch.Chat
             ChannelName = parameters.ElementAt(0).Trim('#');
             UserName = prefix.Username;
         }
+
+        public static MembershipEventArgs Create(IrcPayload payload)
+        {
+            var args = new MembershipEventArgs(payload.Prefix.Value, payload.Parameters);
+            return args;
+        }
     }
 }

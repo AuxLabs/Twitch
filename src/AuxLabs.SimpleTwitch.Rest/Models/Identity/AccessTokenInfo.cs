@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class Identity
+    public class AccessTokenInfo
     {
         [JsonPropertyName("client_id")]
         public string ClientId { get; set; }
@@ -13,7 +13,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Login { get; set; }
 
         [JsonPropertyName("scopes")]
-        public IEnumerable<string> Scopes { get; set; }
+        public IReadOnlyCollection<string> Scopes { get; set; }
 
         [JsonPropertyName("user_id")]
         public string UserId { get; set; }

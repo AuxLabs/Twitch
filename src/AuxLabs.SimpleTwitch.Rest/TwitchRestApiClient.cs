@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class TwitchRestApiClient : ITwitchApi, ITwitchIdentityApi, IDisposable
+    public class TwitchRestApiClient : ITwitchApi, IDisposable
     {
         private readonly ITwitchApi _api;
         private bool _disposed = false;
 
         public AuthenticationHeaderValue Authorization { get => _api.Authorization; set => _api.Authorization = value; }
         public string ClientId { get => _api.ClientId; set => _api.ClientId = value; }
-
-        public Identity Identity { get; internal set; }
 
         public TwitchRestApiClient(IRateLimiter rateLimiter = null)
             : this(TwitchConstants.RestApiUrl, rateLimiter) { }
@@ -38,16 +36,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public void Dispose()
         {
             Dispose(true);
-        }
-
-        public async Task<Identity> ValidateAsync()
-        {
-            var idApi = RestClient.For<ITwitchIdentityApi>(TwitchConstants.RestIdentityUrl);
-            idApi.Authorization = Authorization;
-
-            Identity = await idApi.ValidateAsync();
-            idApi.Dispose();
-            return Identity;
         }
 
         /// <summary>
