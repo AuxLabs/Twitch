@@ -1,12 +1,16 @@
-﻿using System;
+﻿using AuxLabs.SimpleTwitch.Sockets;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class IrcPayload
+    public class IrcPayload : IPayload
     {
+        // Irc doesn't have a hello event
+        public bool IsHelloEvent => false;
+
         public BaseTags Tags { get; set; } = null;
         public IrcPrefix? Prefix { get; set; } = null;
         public IrcCommand Command { get; set; }

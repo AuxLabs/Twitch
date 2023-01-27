@@ -1,9 +1,12 @@
-﻿using System.Text.Json.Serialization;
+﻿using AuxLabs.SimpleTwitch.Sockets;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubWebSocketPayload
+    public class EventSubWebSocketPayload : IPayload
     {
+        public bool IsHelloEvent { get; }
+
         /// <summary>
         /// An object that identifies the message.
         /// </summary>

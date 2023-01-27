@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Sockets
 {
-    public abstract class BaseSocketClient<TPayload>
+    public abstract class BaseSocketClient<TPayload> where TPayload : IPayload
     {
         // Status events
         public event Action Connected;
@@ -37,7 +37,6 @@ namespace AuxLabs.SimpleTwitch.Sockets
         private readonly MemoryStream _stream;
         private readonly int _heartbeatRate;
         private readonly bool _waitForHello = false;
-        private readonly Type _helloType = null;
 
         private Task _connectionTask;
         private CancellationTokenSource _runCts;
@@ -46,20 +45,15 @@ namespace AuxLabs.SimpleTwitch.Sockets
         private BlockingCollection<TPayload> _sendQueue;
         protected bool ReceivedData;
 
-        public BaseSocketClient(int heartbeatRate)
+        public BaseSocketClient(int heartbeatRate, bool waitForHello = false)
         {
             _stream = new MemoryStream();
             _heartbeatRate = heartbeatRate;
+            _waitForHello = waitForHello;
             _stateLock = new SemaphoreSlim(1, 1);
             _connectionTask = Task.CompletedTask;
             _runCts = new CancellationTokenSource();
             _runCts.Cancel(); // Start canceled
-        }
-        public BaseSocketClient(int heartBeatRate, bool waitForHello, Type helloType)
-            : this(heartBeatRate)
-        {
-            _waitForHello = waitForHello;
-            _helloType = helloType;
         }
 
         protected virtual void SendIdentify() { }
@@ -121,8 +115,8 @@ namespace AuxLabs.SimpleTwitch.Sockets
                             "Timed out waiting for initial message").ConfigureAwait(false);
 
                         var evnt = await receiveTask.ConfigureAwait(false);
-                        if (evnt.GetType() != _helloType)
-                            throw new Exception($"First event was not a {_helloType.Name} event");
+                        if (!evnt.IsHelloEvent)
+                            throw new Exception($"First event was not a Hello event");
                     }
 
                     // Start tasks here since HELLO must be handled before another thread can send/receive

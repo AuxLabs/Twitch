@@ -13,11 +13,6 @@ namespace AuxLabs.SimpleTwitch.EventSub
             Serializer = config.Serializer ?? new JsonSerializer<EventSubWebSocketPayload>();
         }
 
-        public override void SendIdentify(string username, string password)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override void SendHeartbeat()
         {
             throw new NotImplementedException();
