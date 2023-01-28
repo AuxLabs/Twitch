@@ -5,21 +5,15 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class ChannelEditor
     {
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> An ID that uniquely identifies a user with editor permissions. </summary>
         [JsonPropertyName("user_id")]
         public string UserId { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The user’s display name. </summary>
         [JsonPropertyName("user_name")]
         public string UserName { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The date and time when the user became one of the broadcaster’s editors. </summary>
         [JsonPropertyName("created_at")]
         public DateTime CreatedAt { get; set; }
     }

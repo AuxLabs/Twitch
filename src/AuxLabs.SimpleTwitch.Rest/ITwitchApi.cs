@@ -14,37 +14,79 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Header("Client-ID")]
         string ClientId { get; set; }
 
-        // Ads
+        #region Ads
 
+        /// <summary> Starts a commercial on the specified channel. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:edit:commercial</c> scope. </remarks>
+        /// <returns> A <see cref="Commercial"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Post("channels/commercial")]
-        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostChannelCommercialParams args);
+        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body]PostChannelCommercialParams args);
 
-        // Analytics
+        #endregion
+        #region Analytics
 
+        /// <summary> Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports (CSV files). </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>analytics:read:extensions</c> scope. </remarks>
+        /// <returns> A collection of <see cref="ExtensionAnalytic"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/extensions")]
-        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsParams args);
+        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap]GetExtensionAnalyticsParams args);
+        /// <summary> Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files). </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>analytics:read:games</c> scope. </remarks>
+        /// <returns> A collection of <see cref="GameAnalytic"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/games")]
-        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsParams args);
+        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap]GetGameAnalyticsParams args);
 
-        // Bits
+        #endregion
+        #region Bits
 
+        /// <summary> Gets the Bits leaderboard for the authenticated broadcaster. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>bits:read</c> scope. </remarks>
+        /// <returns> A collection of <see cref="BitsUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("bits/leaderboard")]
-        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardRequest args);
+        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap]GetBitsLeaderboardParams args);
+        /// <summary> Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel. </summary>
+        /// <returns> A collection of <see cref="Cheermote"/> objects. </returns>
         [Get("bits/cheermotes")]
-        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([Query("broadcaster_id")] string broadcasterId);
+        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([Query("broadcaster_id")]string broadcasterId = null);
+        /// <summary> Gets an extension’s list of transactions. </summary>
+        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
+        /// <returns> A collection of <see cref="ExtensionTransaction"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("extensions/transactions")]
-        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap] GetExtensionTransactionsRequest args);
+        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap]GetExtensionTransactionsParams args);
 
-        // Channels
+        #endregion
+        #region Channels
 
+        /// <summary> Gets information about one or more channels. </summary>
+        /// <returns> A collection of <see cref="Channel"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("channels")]
-        Task<TwitchResponse<Channel>> GetChannelsAsync([Query("broadcaster_id")] string[] broadcasterId);
+        Task<TwitchResponse<Channel>> GetChannelsAsync([QueryMap]GetChannelsParams args);
+        /// <summary> Updates a channel’s properties. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:broadcast</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("channels")]
-        Task ModifyChannelAsync([Query("broadcaster_id")] string broadcasterId, [Body]object args);
+        Task ModifyChannelAsync([Query("broadcaster_id")]string broadcasterId, [Body]ModifyChannelParams args);
+        /// <summary> Gets the broadcaster’s list editors. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:editors</c> scope. </remarks>
+        /// <returns> A collection of <see cref="ChannelEditor"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("channels/editors")]
-        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query] object args);
+        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query("broadcaster_id")]string broadcasterId);
 
-        // Channel Points
+        #endregion
+        #region Channel Points
 
         [Post("channel_points/custom_rewards")]
         Task<object> CreateRewardsAsync([Query] object args);
@@ -59,15 +101,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Patch("channel_points/custom_rewards/redemptions")]
         Task<object> ModifyRewardRedemptionAsync([Query] object args);
 
-        // Charity
+        #endregion
+        #region Charity
 
         [Post("charity/campaigns")]
         Task<object> GetCharityCampaignAsync([Query] object args);
         [Post("charity/donations")]
         Task<object> GetCharityCampaignDonationsAsync([Query] object args);
 
-
-        // Chat
+        #endregion
+        #region Chat
 
         [Get("chat/chatters")]
         Task<TwitchResponse<object>> GetChattersAsync([Query] object args);
@@ -92,14 +135,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Put("chat/color")]
         Task<TwitchResponse<object>> ModifyUserChatColor([Query] object args);
 
-        // Clips
+        #endregion
+        #region Clips
 
         [Post("clips")]
         Task<TwitchResponse<object>> CreateClipAsync([Query] object args);
         [Get("clips")]
         Task<TwitchResponse<object>> GetClipsAsync([Query] object args);
 
-        // Entitlements
+        #endregion
+        #region Entitlements
 
         [Get("entitlements/codes")]
         Task<TwitchResponse<object>> GetCodeStatusAsync([Query] object args);
@@ -110,7 +155,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Post("entitlements/codes")]
         Task<TwitchResponse<object>> RedeemCodeAsync([Query] object args);
 
-        // Extensions
+        #endregion
+        #region Extensions
 
         [Get("extensions/configurations")]
         Task<TwitchResponse<object>> GetExtensionConfigurationAsync([Query] object args);
@@ -137,7 +183,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Put("bits/extensions")]
         Task<TwitchResponse<object>> ModifyExtensionBitsProductsAsync([Query] object args);
 
-        // EventSub
+        #endregion
+        #region EventSub
 
         [Post("eventsub/subscriptions")]
         Task<TwitchResponse<object>> PostEventSubSubcriptionAsync([Query] object args);
@@ -146,24 +193,28 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("eventsub/subscriptions")]
         Task<TwitchResponse<object>> GetEventSubSubcriptionAsync([Query] object args);
 
-        // Games
+        #endregion
+        #region Games
 
         [Get("games/top")]
         Task<TwitchResponse<object>> GetTopGamesAsync([Query] object args);
         [Get("games")]
         Task<TwitchResponse<object>> GetGamesAsync([Query] object args);
 
-        // Goals
+        #endregion
+        #region Goals
 
         [Get("goals")]
         Task<TwitchResponse<object>> GetGoalsAsync([Query] object args);
 
-        // Hype Train
+        #endregion
+        #region Hype Train
 
         [Get("hypetrain/events")]
         Task<TwitchResponse<object>> GetHypetrainEventsAsync([Query] object args);
 
-        // Moderation
+        #endregion
+        #region Moderation
 
         [Post("moderation/enforcements/status")]
         Task<TwitchResponse<object>> GetModerationStatusAsync([Query] object args);
@@ -204,7 +255,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("moderation/shield_mode")]
         Task<TwitchResponse<object>> GetShieldModeAsync([Query] object args);
 
-        // Polls
+        #endregion
+        #region Polls
 
         [Get("polls")]
         Task<TwitchResponse<object>> GetPollAsync([Query] object args);
@@ -213,7 +265,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Patch("polls")]
         Task<TwitchResponse<object>> EndPollAsync([Query] object args);
 
-        // Predictions
+        #endregion
+        #region Predictions
 
         [Get("predictions")]
         Task<TwitchResponse<object>> GetPredictionAsync([Query] object args);
@@ -222,14 +275,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Patch("predictions")]
         Task<TwitchResponse<object>> EndPredictionaAsync([Query] object args);
 
-        // Raids
+        #endregion
+        #region Raids
 
         [Post("raids")]
         Task<TwitchResponse<object>> PostRaidAsync([Query] object args);
         [Delete("raids")]
         Task<TwitchResponse<object>> DeleteRaidAsync([Query] object args);
 
-        // Schedule
+        #endregion
+        #region Schedule
 
         [Get("schedule")]
         Task<TwitchResponse<object>> GetScheduleAsync([Query] object args);
@@ -244,14 +299,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Delete("schedule/segment")]
         Task<TwitchResponse<object>> DeleteScheduleSegmentAsync([Query] object args);
 
-        // Search
+        #endregion
+        #region Search
 
         [Get("search/categories")]
         Task<TwitchResponse<object>> SearchCategoriesAsync([Query] object args);
         [Get("search/channels")]
         Task<TwitchResponse<object>> SearchChannelsAsync([Query] object args);
 
-        // Music
+        #endregion
+        #region Music
 
         [Get("soundtrack/current_track")]
         Task<TwitchResponse<object>> GetCurrentTrackAsync([Query] object args);
@@ -260,7 +317,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("soundtrack/playlists")]
         Task<TwitchResponse<object>> GetPlaylistsAsync([Query] object args);
 
-        // Streams
+        #endregion
+        #region Streams
 
         [Get("streams/key")]
         Task<TwitchResponse<object>> GetStreamKeyAsync([Query] object args);
@@ -273,14 +331,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("streams/markers")]
         Task<TwitchResponse<object>> GetStreamMarkersAsync([Query] object args);
 
-        // Subscriptions
+        #endregion
+        #region Subscriptions
 
         [Get("subscriptions")]
         Task<TwitchResponse<object>> GetSubscriptionsAsync([Query] object args);
         [Get("subscriptions/user")]
         Task<TwitchResponse<object>> GetSubscriberAsync([Query] object args);
 
-        // Tags
+        #endregion
+        #region Tags
 
         [Get("tags/streams")]
         Task<TwitchResponse<object>> GetTagsAsync([Query] object args);
@@ -289,14 +349,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Put("streams/tags")]
         Task<TwitchResponse<object>> ModifyTagsAsync([Query] object args);
 
-        // Teams
+        #endregion
+        #region Teams
 
         [Get("teams/channel")]
         Task<TwitchResponse<object>> GetTeamsAsync([Query("broadcaster_id")] string id);
         [Get("teams")]
         Task<TwitchResponse<object>> GetTeamsAsync([Query] object args);
 
-        // Users
+        #endregion
+        #region Users
 
         [Get("users")]
         Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersParams args);
@@ -317,16 +379,20 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Put("users/extesions")]
         Task<TwitchResponse<object>> ModifyExtensionsAsync([Query] object args);
 
-        // Videos
+        #endregion
+        #region Videos
 
         [Get("videos")]
         Task<TwitchResponse<object>> GetVideosAsync([Query] object args);
         [Delete("videos")]
         Task<IEnumerable<string>> DeleteVideoAsync([Query] string id);
 
-        // Whispers
+        #endregion
+        #region Whispers
 
         [Post("whispers")]
         Task PostWhisperAsync([Query("from_user_id")] string fromUserId, [Query("to_user_id")] string toUserId, [Body] string message);
+
+        #endregion
     }
 }

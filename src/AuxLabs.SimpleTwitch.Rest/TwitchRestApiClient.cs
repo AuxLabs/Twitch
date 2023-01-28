@@ -38,86 +38,66 @@ namespace AuxLabs.SimpleTwitch.Rest
             Dispose(true);
         }
 
-        /// <summary>
-        /// Starts a commercial on the specified channel.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
-            => _api.PostCommercialAsync(args);
-        /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialParams)" />
+        #region Ads
+
+        /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialParams)"/>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialParams> action)
             => PostCommercialAsync(action.InvokeReturn());
+        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
+            => _api.PostCommercialAsync(args);
 
-        /// <summary>
-        /// Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports as CSV files.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams args)
-            => _api.GetExtensionAnalyticsAsync(args);
-        /// <inheritdoc cref="GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams)" />
+        #endregion
+        #region Analytics
+
+        /// <inheritdoc cref="GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams)"/>
         public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(Action<GetExtensionAnalyticsParams> action)
             => GetExtensionAnalyticsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams args)
+            => _api.GetExtensionAnalyticsAsync(args);
 
-        /// <summary>
-        /// Gets an analytics report for one or more games. The response contains the URLs used to download the reports as CSV files.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsParams args)
-            => _api.GetGameAnalyticsAsync(args);
-        /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsParams)" />
+        /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsParams)"/>
         public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(Action<GetGameAnalyticsParams> action)
             => GetGameAnalyticsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsParams args)
+            => _api.GetGameAnalyticsAsync(args);
 
-        /// <summary>
-        /// Gets the Bits leaderboard for the authenticated broadcaster.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardRequest args)
-            => _api.GetBitsLeaderboardAsync(args);
-        /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardRequest)" />
-        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardRequest> action)
+        /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardParams)"/>
+        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardParams> action)
             => GetBitsLeaderboardAsync(action.InvokeReturn());
+        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardParams args)
+            => _api.GetBitsLeaderboardAsync(args);
 
-        /// <summary>
-        /// Gets a list of Cheermotes that users can use to cheer Bits in any Bits-enabled channel’s chat room.
-        /// </summary>
-        /// <param name="broadcasterId">The id of the broadcaster to get emotes from</param>
-        /// <returns></returns>
+        #endregion
+        #region Bits
+
         public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
             => _api.GetCheermotesAsync(broadcasterId);
 
-        /// <summary>
-        /// Gets an extension’s list of transactions.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsRequest args)
-            => _api.GetExtensionTransactionAsync(args);
-        /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsRequest)" />
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsRequest> action)
+        /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsParams)"/>
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsParams> action)
             => GetExtensionTransactionAsync(action.InvokeReturn());
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsParams args)
+            => _api.GetExtensionTransactionAsync(args);
 
-        /// <summary>
-        /// Gets information about one or more channels.
-        /// </summary>
-        public Task<TwitchResponse<Channel>> GetChannelsAsync(params string[] broadcasterIds)
-            => _api.GetChannelsAsync(broadcasterIds);
-        /// <summary>
-        /// Updates a channel’s properties.
-        /// </summary>
-        public Task ModifyChannelAsync(string broadcasterId, object args)
+        #endregion
+        #region Channels
+
+        /// <inheritdoc cref="GetChannelsAsync(GetChannelsParams)"/>
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(Action<GetChannelsParams> action)
+            => GetChannelsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsParams args)
+            => _api.GetChannelsAsync(args);
+
+        /// <inheritdoc cref="ModifyChannelAsync(string, ModifyChannelParams)"/>
+        public Task ModifyChannelAsync(string broadcasterId, Action<ModifyChannelParams> action)
+            => _api.ModifyChannelAsync(broadcasterId, action.InvokeReturn());
+        public Task ModifyChannelAsync(string broadcasterId, ModifyChannelParams args)
             => _api.ModifyChannelAsync(broadcasterId, args);
-        /// <summary>
-        /// Gets the broadcaster’s list editors.
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
-        public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(object args)
-            => _api.GetChannelEditorsAsync(args);
+
+        public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(string broadcasterId)
+            => _api.GetChannelEditorsAsync(broadcasterId);
+
+        #endregion
 
         public Task<object> CreateRewardsAsync(object args)
             => _api.CreateRewardsAsync(args);
@@ -330,14 +310,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetTeamsAsync(object args)
             => _api.GetTeamsAsync(args);
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="args">Available arguments for this request</param>
-        /// <returns></returns>
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersParams args)
             => _api.GetUsersAsync(args);
-        /// <inheritdoc cref="GetUsersAsync(GetUsersParams)" />
         public Task<TwitchResponse<User>> GetUsersAsync(Action<GetUsersParams> action)
             => GetUsersAsync(action.InvokeReturn());
         public Task<TwitchResponse<User>> ModifyUserAsync(string description)

@@ -4,7 +4,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public enum BitsPeriod
     {
-        All,
+        [EnumMember(Value = "all")]
+        All = 0,
         [EnumMember(Value = "day")]
         Day,
         [EnumMember(Value = "week")]

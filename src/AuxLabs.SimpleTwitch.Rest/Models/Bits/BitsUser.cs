@@ -2,37 +2,27 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    // helix/bits/leaderboard
+    /// <summary>  </summary>
     public class BitsUser
     {
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> An ID that identifies a user on the leaderboard. </summary>
         [JsonPropertyName("user_id")]
         public string UserId { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The user’s login name. </summary>
         [JsonPropertyName("user_login")]
         public string UserLogin { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The user’s display name. </summary>
         [JsonPropertyName("user_name")]
         public string UserName { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The user’s position on the leaderboard. </summary>
         [JsonPropertyName("rank")]
         public int Rank { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The number of bits the user has cheered. </summary>
         [JsonPropertyName("score")]
-        public int Score { get; set; }
+        public int TotalBits { get; set; }
     }
 }

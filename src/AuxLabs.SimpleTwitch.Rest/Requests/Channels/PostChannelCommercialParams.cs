@@ -4,16 +4,13 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class PostChannelCommercialParams : QueryMap<string>, IScoped
     {
-        public string[] Scopes { get; } = { "channel:edit:commercial" };
+        public static string[] Scopes { get; } = { "channel:edit:commercial" };
 
-        /// <summary>
-        /// Id of the channel requesting a commercial.
-        /// </summary>
+        /// <summary> The ID of the partner or affiliate broadcaster that wants to run the commercial. </summary>
         public string BroadcasterId { get; set; }
 
-        /// <summary>
-        /// Desired length of the commercial in seconds. Optional.
-        /// </summary>
+        /// <summary> The length of the commercial to run, in seconds. </summary>
+        /// <remarks> If specified, the minimum value is 1 and the maximum value is 180. </remarks>
         public int? Length { get; set; }
 
         public PostChannelCommercialParams() { }

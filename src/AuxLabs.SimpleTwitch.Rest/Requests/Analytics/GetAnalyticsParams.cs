@@ -6,29 +6,19 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public abstract class GetAnalyticsParams : QueryMap
     {
-        /// <summary>
-        /// Cursor for forward pagination
-        /// </summary>
+        /// <summary> Cursor for forward pagination </summary>
         public string After { get; set; }
 
-        /// <summary>
-        /// Ending date/time for returned reports
-        /// </summary>
+        /// <summary> Ending date/time for returned reports </summary>
         public DateTime? EndedAt { get; set; }
 
-        /// <summary>
-        /// Maximum number of objects to return
-        /// </summary>
+        /// <summary> Maximum number of objects to return </summary>
         public int? First { get; set; }
 
-        /// <summary>
-        /// Starting date/time for returned reports
-        /// </summary>
+        /// <summary> Starting date/time for returned reports </summary>
         public DateTime? StartedAt { get; set; }
 
-        /// <summary>
-        /// Type of analytics report that is returned
-        /// </summary>
+        /// <summary> Type of analytics report that is returned </summary>
         public AnalyticType? Type { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

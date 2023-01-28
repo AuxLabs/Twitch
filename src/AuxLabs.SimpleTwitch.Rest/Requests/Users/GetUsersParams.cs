@@ -1,31 +1,23 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetUsersParams : QueryMap<string[]>, IScoped
     {
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary>  </summary>
         public IEnumerable<string> UserIds { get; set; } = null;
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary>  </summary>
         public IEnumerable<string> UserNames { get; set; } = null;
 
         public GetUsersParams() { }
         public GetUsersParams(GetUsersMode mode, params string[] users)
         {
-            switch (mode)
-            {
-                case GetUsersMode.Id:
-                    UserIds = new List<string>(users);
-                    break;
-                case GetUsersMode.Name:
-                    UserNames = new List<string>(users);
-                    break;
-            }
+            if (mode == GetUsersMode.Id)
+                UserIds = users.ToList();
+            else
+                UserNames = users.ToList();
         }
 
         public override IDictionary<string, string[]> CreateQueryMap()

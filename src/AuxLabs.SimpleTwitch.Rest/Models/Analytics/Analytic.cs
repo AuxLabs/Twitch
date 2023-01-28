@@ -2,26 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    // helix/analytics/extensions
-    // helix/analytics/games
     public abstract class Analytic
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonPropertyName("url")]
-        public string URL { get; set; }
+        /// <summary> The URL used to download the report. </summary>
+        [JsonPropertyName("URL")]
+        public string Url { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The type of report. </summary>
         [JsonPropertyName("type")]
         [JsonConverter(typeof(NullableEnumStringConverter<AnalyticType>))]
         public AnalyticType Type { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <summary> The reporting window’s start and end dates. </summary>
         [JsonPropertyName("date_range")]
         public DateRange DateRange { get; set; }
     }
