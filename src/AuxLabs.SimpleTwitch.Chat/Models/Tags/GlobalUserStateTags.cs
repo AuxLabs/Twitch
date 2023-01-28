@@ -53,9 +53,9 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["user-type"] = UserType.GetEnumMemberValue(),
                 ["display-name"] = DisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
-                ["badges"] = string.Join(',', Badges),
+                ["badges"] = Badges == null ? null : string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
-                ["emote-sets"] = string.Join(',', EmoteSets),
+                ["emote-sets"] = EmoteSets == null ? null : string.Join(',', EmoteSets),
                 ["turbo"] = IsTurbo ? "1" : "0"
             };
             return map;

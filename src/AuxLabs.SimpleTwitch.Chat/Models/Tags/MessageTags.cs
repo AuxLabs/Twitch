@@ -57,6 +57,15 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> Indicates whether the user is a VIP. </summary>
         public bool IsVIP { get; set; }
 
+        /// <summary> Indicates whether this message contains only emotes </summary>
+        public bool IsEmoteOnly { get; set; }
+
+        /// <summary> Indicates whether this is the user's first message in the channel </summary>
+        public bool IsFirstMessage { get; set; }
+
+        /// <summary> Indicates whether this is a returning chat user  </summary>
+        public bool IsReturningChatter { get; set; }
+
         /// <summary> An ID that uniquely identifies the parent message that this message is replying to. </summary>
         public string ReplyParentMessageId { get; set; }
 
@@ -72,6 +81,12 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> The text of the parent message. </summary>
         public string ReplyParentMessage { get; set; }
 
+        /// <summary> A unique value used to identify requests </summary>
+        public string Nonce { get; set; }
+
+        /// <summary>  </summary>
+        public string Flags { get; set; }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             return new Dictionary<string, string>
@@ -84,19 +99,24 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["display-name"] = DisplayName,
                 ["login"] = Login,
                 ["color"] = ColorTranslator.ToHtml(Color),
-                ["badges"] = string.Join(',', Badges),
+                ["badges"] = Badges == null ? null : string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
                 ["bits"] = Bits.ToString(),
-                ["emotes"] = Emotes != null ? string.Join(',', Emotes) : Action,
+                ["emotes"] = Emotes == null ? Action : string.Join(',', Emotes),
                 ["mod"] = IsMod ? "1" : "0",
                 ["subscriber"] = IsSubscriber ? "1" : "0",
                 ["turbo"] = IsTurbo ? "1" : "0",
                 ["vip"] = IsVIP ? "1" : "0",
+                ["emote-only"] = IsEmoteOnly ? "1" : "0",
+                ["first-msg"] = IsFirstMessage ? "1" : "0",
+                ["returning-chatter"] = IsReturningChatter ? "1" : "0",
                 ["reply-parent-msg-id"] = ReplyParentMessageId,
                 ["reply-parent-user-id"] = ReplyParentUserId,
                 ["reply-parent-user-login"] = ReplyParentUserLogin,
                 ["reply-parent-display-name"] = ReplyParentDisplayName,
-                ["reply-parent-msg-body"] = ReplyParentMessage?.Replace(" ", "\\s")
+                ["reply-parent-msg-body"] = ReplyParentMessage?.Replace(" ", "\\s"),
+                ["client-nonce"] = Nonce,
+                ["flags"] = Flags
             };
         }
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
@@ -146,6 +166,12 @@ namespace AuxLabs.SimpleTwitch.Chat
                 IsTurbo = str == "1";
             if (map.TryGetValue("vip", out str))
                 IsVIP = str == "1";
+            if (map.TryGetValue("emote-only", out str))
+                IsEmoteOnly = str == "1";
+            if (map.TryGetValue("first-msg", out str))
+                IsFirstMessage = str == "1";
+            if (map.TryGetValue("returning-chatter", out str))
+                IsReturningChatter = str == "1";
             if (map.TryGetValue("reply-parent-msg-id", out str))
                 ReplyParentMessageId = str;
             if (map.TryGetValue("reply-parent-user-id", out str))
@@ -156,6 +182,10 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ReplyParentDisplayName = str;
             if (map.TryGetValue("reply-parent-msg-body", out str))
                 ReplyParentMessage = str;
+            if (map.TryGetValue("client-nonce", out str))
+                Nonce = str;
+            if (map.TryGetValue("flags", out str))
+                Flags = str;
         }
     }
 }

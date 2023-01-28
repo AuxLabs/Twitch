@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AuxLabs.SimpleTwitch.Chat.Models.Events
+namespace AuxLabs.SimpleTwitch.Chat
 {
     public class UserStateEventArgs
     {

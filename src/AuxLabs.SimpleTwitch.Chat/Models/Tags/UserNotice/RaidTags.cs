@@ -4,19 +4,16 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class RaidTags : UserNoticeTags
     {
-        /// <summary>
-        /// The display name of the broadcaster raiding this channel.
-        /// </summary>
+        /// <summary> The display name of the broadcaster raiding this channel. </summary>
         public string RaiderDisplayName { get; set; }
 
-        /// <summary>
-        /// The login name of the broadcaster raiding this channel.
-        /// </summary>
+        /// <summary> The login name of the broadcaster raiding this channel. </summary>
         public string RaiderLogin { get; set; }
 
-        /// <summary>
-        /// The number of viewers raiding this channel from the broadcaster’s channel.
-        /// </summary>
+        /// <summary> The profile image of the broadcaster raiding this channel. </summary>
+        public string ProfileImageUrl { get; set; }
+
+        /// <summary> The number of viewers raiding this channel from the broadcaster’s channel. </summary>
         public int RaiderViewerCount { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
@@ -24,6 +21,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             var map = base.CreateQueryMap();
             map["msg-param-displayName"] = RaiderDisplayName;
             map["msg-param-login"] = RaiderLogin;
+            map["msg-param-profileImageURL"] = ProfileImageUrl;
             map["msg-param-viewerCount"] = RaiderViewerCount.ToString();
             return map;
         }
@@ -34,6 +32,8 @@ namespace AuxLabs.SimpleTwitch.Chat
                 RaiderDisplayName = str;
             if (map.TryGetValue("msg-param-login", out str))
                 ReplyParentUserLogin = str;
+            if (map.TryGetValue("msg-param-profileImageURL", out str))
+                ProfileImageUrl = str;
             if (map.TryGetValue("msg-param-viewerCount", out str))
                 RaiderViewerCount = int.Parse(str);
         }
