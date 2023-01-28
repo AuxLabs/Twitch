@@ -24,10 +24,11 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// </summary>
         public bool ShouldHandleEvents { get; set; } = true;
 
-        /// <summary>
-        /// Should an exception be thrown if an unhandled event is received from twitch.
-        /// </summary>
-        public bool ThrowOnUnknownCommand { get; set; } = false;
+        /// <summary> Should an exception be raised if an unhandled event is received from twitch. </summary>
+        public bool ThrowOnUnknownEvent { get; set; } = false;
+
+        /// <summary> Should an exception be raised if an event provides unhandled tags </summary>
+        public bool ThrowOnMismatchedTags { get; set; } = false;
 
         /// <summary>
         /// How many messages to keep in the cache per channel.

@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Chat.Models.Events;
-using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.Sockets;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -47,7 +46,8 @@ namespace AuxLabs.SimpleTwitch.Chat
         public readonly bool MembershipRequested;
         public readonly bool TagsRequested;
         public readonly bool ShouldHandleEvents;
-        public readonly bool ThrowOnUnknownCommand;
+        public readonly bool ThrowOnUnknownEvent;
+        public readonly bool ThrowOnMismatchedTags;
         public readonly int MessageCacheSize;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
@@ -59,18 +59,22 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             config ??= new TwitchChatConfig();
 
-            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer();
+            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnMismatchedTags);
 
             CommandsRequested = config.RequestCommands;
             MembershipRequested = config.RequestMembership;
             TagsRequested = config.RequestTags;
             ShouldHandleEvents = config.ShouldHandleEvents;
-            ThrowOnUnknownCommand = config.ThrowOnUnknownCommand;
+            ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
+            ThrowOnMismatchedTags = config.ThrowOnMismatchedTags;
             MessageCacheSize = config.MessageCacheSize;
         }
 
         public void SetIdentity(string username, string token)
         {
+            if (State == ConnectionState.Connected)
+                throw new InvalidOperationException("Identity can't be changed after connection");
+
             if (string.IsNullOrWhiteSpace(username)) 
                 throw new ArgumentException("Required parameter was invalid", nameof(username));
             if (string.IsNullOrWhiteSpace(token)) 
@@ -116,8 +120,6 @@ namespace AuxLabs.SimpleTwitch.Chat
             }
 
             if (!ShouldHandleEvents) return;
-            bool hasTags = payload.Tags != null;
-
             switch (payload.Command)
             {
                 case IrcCommand.Reconnect:
@@ -199,8 +201,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 
                 default:
                     UnknownCommandReceived?.Invoke(payload);
-                    if (ThrowOnUnknownCommand)
-                        throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}` was received", payload);
+                    if (ThrowOnUnknownEvent)
+                        throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}` was received");
                     break;
             };
         }

@@ -104,7 +104,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
 
                     // Connect
                     State = ConnectionState.Connecting;
-                    var uri = new Uri(_url); // TODO: Enable
+                    var uri = new Uri(_url);
                     await client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
 
                     // Receive HELLO (timeout = ConnectionTimeoutMillis)

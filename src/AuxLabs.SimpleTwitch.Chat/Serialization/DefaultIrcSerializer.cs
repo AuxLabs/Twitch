@@ -1,6 +1,7 @@
 ﻿using AuxLabs.SimpleTwitch.Sockets;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
@@ -8,6 +9,11 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public sealed class DefaultIrcSerializer : ISerializer<IrcPayload>
     {
+        private readonly bool _throwOnMismatchedTags;
+
+        public DefaultIrcSerializer(bool throwOnMismatchedTags = false)
+            => _throwOnMismatchedTags = throwOnMismatchedTags;
+
         public ReadOnlyMemory<byte> Write(IrcPayload msg)
         {
             var bytes = Encoding.UTF8.GetBytes(msg.ToString());
@@ -37,10 +43,18 @@ namespace AuxLabs.SimpleTwitch.Chat
                         payload.Tags = (UserNoticeTags)Activator.CreateInstance(noticeType);
                     else
                         payload.Tags = (UserNoticeTags)Activator.CreateInstance(type);
-
                 }
                 else
+                {
                     payload.Tags = (BaseTags)Activator.CreateInstance(type);
+                }
+
+                if (_throwOnMismatchedTags)
+                {
+                    var expected = payload.Tags.CreateQueryMap();
+                    if (expected.Count < tags.Count || !tags.All(x => expected.ContainsKey(x.Key)))
+                        throw new MismatchedTagsException(payload.Tags.GetType(), expected, tags);
+                }
 
                 payload.Tags.LoadQueryMap(tags);
             }
