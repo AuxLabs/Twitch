@@ -110,7 +110,7 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_DateRange_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct DateRange</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct DateRange</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -119,7 +119,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DateRange__ctor_System_DateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DateRange.%23ctor(System.DateTime%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L7">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L8">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DateRange__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.#ctor*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DateRange__ctor_System_DateTime_System_DateTime_" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.#ctor(System.DateTime,System.DateTime)">DateRange(DateTime, DateTime)</h4>
@@ -127,8 +127,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonConstructor]
-public DateRange(DateTime startedAt, DateTime endedAt)</code></pre>
+    <pre><code class="lang-csharp hljs">public DateRange(DateTime startedAt, DateTime endedAt)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +158,7 @@ public DateRange(DateTime startedAt, DateTime endedAt)</code></pre>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DateRange_EndedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DateRange.EndedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L20">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L15">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DateRange_EndedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.EndedAt*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DateRange_EndedAt" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.EndedAt">EndedAt</h4>
@@ -167,8 +166,7 @@ public DateRange(DateTime startedAt, DateTime endedAt)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;ended_at&quot;)]
-public readonly DateTime EndedAt { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly DateTime EndedAt { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +188,7 @@ public readonly DateTime EndedAt { get; }</code></pre>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DateRange_StartedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DateRange.StartedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L14">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L12">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DateRange_StartedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.StartedAt*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DateRange_StartedAt" data-uid="AuxLabs.SimpleTwitch.Rest.DateRange.StartedAt">StartedAt</h4>
@@ -198,8 +196,7 @@ public readonly DateTime EndedAt { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;started_at&quot;)]
-public readonly DateTime StartedAt { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly DateTime StartedAt { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,7 +224,7 @@ public readonly DateTime StartedAt { get; }</code></pre>
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DateRange.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DateRange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/DateRange.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

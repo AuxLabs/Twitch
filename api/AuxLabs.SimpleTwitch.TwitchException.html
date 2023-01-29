@@ -90,7 +90,9 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Exception</span></div>
     <div class="level2"><span class="xref">TwitchException</span></div>
+      <div class="level3"><a class="xref" href="AuxLabs.SimpleTwitch.MismatchedTagsException.html">MismatchedTagsException</a></div>
       <div class="level3"><a class="xref" href="AuxLabs.SimpleTwitch.MissingScopeException.html">MissingScopeException</a></div>
+      <div class="level3"><a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchRestException.html">TwitchRestException</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -178,43 +180,6 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_TwitchException__ctor_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.TwitchException.%23ctor(System.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Net/Exceptions/TwitchException.cs/#L9">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_TwitchException__ctor_" data-uid="AuxLabs.SimpleTwitch.TwitchException.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_TwitchException__ctor_System_String_System_Object_" data-uid="AuxLabs.SimpleTwitch.TwitchException.#ctor(System.String,System.Object)">TwitchException(String, Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TwitchException(string message, object rawData = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">rawData</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_TwitchException__ctor_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.TwitchException.%23ctor(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -245,38 +210,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_TwitchException_RawData.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.TwitchException.RawData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Net/Exceptions/TwitchException.cs/#L5">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_TwitchException_RawData_" data-uid="AuxLabs.SimpleTwitch.TwitchException.RawData*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_TwitchException_RawData" data-uid="AuxLabs.SimpleTwitch.TwitchException.RawData">RawData</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object RawData { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.Runtime.Serialization.ISerializable</span>
@@ -292,7 +225,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_TwitchException.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.TwitchException%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Net/Exceptions/TwitchException.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Net/Exceptions/TwitchException.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
