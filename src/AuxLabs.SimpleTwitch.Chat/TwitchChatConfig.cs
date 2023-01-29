@@ -33,7 +33,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary>
         /// How many messages to keep in the cache per channel.
         /// </summary>
-        public int MessageCacheSize { get; set; } = 1000;
+        public int MessageCacheSize { get; set; } = 0;
 
         /// <summary>
         /// Specify a custom serializer for chat irc messages.
