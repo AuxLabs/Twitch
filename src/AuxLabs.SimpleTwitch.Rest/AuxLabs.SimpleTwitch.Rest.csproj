@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ChannelPoints\" />
     <Folder Include="Models\Charity\" />
     <Folder Include="Models\Clips\" />
     <Folder Include="Models\Entitlements\" />
@@ -30,7 +29,6 @@
     <Folder Include="Models\Tags\" />
     <Folder Include="Models\Videos\" />
     <Folder Include="Models\Whispers\" />
-    <Folder Include="Requests\ChannelPoints\" />
     <Folder Include="Requests\Charity\" />
     <Folder Include="Requests\Chat\" />
     <Folder Include="Requests\Clips\" />

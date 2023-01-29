@@ -19,10 +19,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Starts a commercial on the specified channel. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>channel:edit:commercial</c> scope. </remarks>
-        /// <returns> A <see cref="Commercial"/> object. </returns>
+        /// <returns> A single <see cref="Commercial"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Post("channels/commercial")]
-        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body]PostChannelCommercialParams args);
+        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostChannelCommercialArgs args);
 
         #endregion
         #region Analytics
@@ -33,14 +33,15 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="ExtensionAnalytic"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/extensions")]
-        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap]GetExtensionAnalyticsParams args);
+        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsArgs args);
+        
         /// <summary> Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files). </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>analytics:read:games</c> scope. </remarks>
         /// <returns> A collection of <see cref="GameAnalytic"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/games")]
-        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap]GetGameAnalyticsParams args);
+        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsArgs args);
 
         #endregion
         #region Bits
@@ -51,17 +52,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="BitsUser"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("bits/leaderboard")]
-        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap]GetBitsLeaderboardParams args);
+        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardArgs args);
+        
         /// <summary> Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel. </summary>
         /// <returns> A collection of <see cref="Cheermote"/> objects. </returns>
         [Get("bits/cheermotes")]
-        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([Query("broadcaster_id")]string broadcasterId = null);
+        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([Query("broadcaster_id")] string broadcasterId = null);
+        
         /// <summary> Gets an extension’s list of transactions. </summary>
         /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
         /// <returns> A collection of <see cref="ExtensionTransaction"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("extensions/transactions")]
-        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap]GetExtensionTransactionsParams args);
+        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap] GetExtensionTransactionsArgs args);
 
         #endregion
         #region Channels
@@ -70,34 +73,55 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Channel"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("channels")]
-        Task<TwitchResponse<Channel>> GetChannelsAsync([QueryMap]GetChannelsParams args);
+        Task<TwitchResponse<Channel>> GetChannelsAsync([QueryMap] GetChannelsArgs args);
+
         /// <summary> Updates a channel’s properties. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>channel:manage:broadcast</c> scope. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("channels")]
-        Task ModifyChannelAsync([Query("broadcaster_id")]string broadcasterId, [Body]ModifyChannelParams args);
+        Task ModifyChannelAsync([Query("broadcaster_id")] string broadcasterId, [Body] ModifyChannelArgs args);
+        
         /// <summary> Gets the broadcaster’s list editors. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>channel:read:editors</c> scope. </remarks>
         /// <returns> A collection of <see cref="ChannelEditor"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("channels/editors")]
-        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query("broadcaster_id")]string broadcasterId);
+        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([Query("broadcaster_id")] string broadcasterId);
 
         #endregion
         #region Channel Points
 
+        /// <summary> Creates a custom reward in the broadcaster’s channel. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:redemptions</c> scope. </remarks>
+        /// <returns> A single <see cref="CustomReward"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("channel_points/custom_rewards")]
-        Task<object> CreateRewardsAsync([Query] object args);
+        Task<TwitchResponse<CustomReward>> CreateRewardsAsync([Query("broadcaster_id")] string broadcasterId, [Body]PostCustomRewardArgs args);
+
+        /// <summary> Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:redemptions</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Delete("channel_points/custom_rewards")]
-        Task DeleteRewardAsync([Query] object args);
+        Task DeleteRewardAsync([Query("broadcaster_id")]string broadcasterId, [Query("id")]string customRewardId);
+
+        /// <summary> Gets a list of custom rewards that the specified broadcaster created. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with either the <c>channel:read:redemptions</c> or <c>channel:manage:redemptions</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="CustomReward"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("channel_points/custom_rewards")]
-        Task<TwitchResponse<object>> GetRewardsAsync([Query] object args);
+        Task<TwitchResponse<CustomReward>> GetRewardsAsync([QueryMap]GetCustomRewardsArgs args);
+
         [Get("channel_points/custom_rewards/redemptions")]
         Task<object> GetRewardRedemptionAsync([Query] object args);
+
         [Patch("channel_points/custom_rewards")]
         Task<object> ModifyRewardAsync([Query] object args);
+
         [Patch("channel_points/custom_rewards/redemptions")]
         Task<object> ModifyRewardRedemptionAsync([Query] object args);
 
@@ -361,11 +385,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Users
 
         [Get("users")]
-        Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersParams args);
+        Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersArgs args);
         [Put("users")]
         Task<TwitchResponse<User>> ModifyUserAsync([Query("description")] string description);
         [Get("users/follows")]
-        Task<TwitchResponse<Follower>> GetFollowsAsync([Query] GetFollowsParams args);
+        Task<TwitchResponse<Follower>> GetFollowsAsync([Query] GetFollowsArgs args);
         [Get("users/blocks")]
         Task<TwitchResponse<object>> GetBlocksAsync([Query] object args);
         [Put("users/blocks")]
