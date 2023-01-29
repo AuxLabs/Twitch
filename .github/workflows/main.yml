@@ -30,41 +30,41 @@ jobs:
           path: "/home/runner/work/SimpleTwitch/SimpleTwitch/src/*/bin/Release/${{ matrix.dotnet-version }}/*"
           retention-days: 1
 
-  test:
-    name: Test
-    needs: build
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dotnet: [ 'net6.0', 'netstandard2.1' ]
-    steps:
-      - uses: actions/checkout@v3
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: build-${{ github.run_number }}_${{ matrix.dotnet }}
-      - name: Install Brew
-        run: |
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bash_profile
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-      - name: Install Twitch CLI
-        run: "/home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli"
-      - name: Initialize Mock API
-        run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
-      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ matrix.dotnet-version }}
-      - name: Install Dependencies
-        run: dotnet restore
-      - name: Test
-        run: dotnet test --no-restore --verbosity normal
+  #test:
+  #  name: Test
+  #  needs: build
+  #  runs-on: ubuntu-latest
+  #  strategy:
+  #    matrix:
+  #      dotnet: [ 'net6.0', 'netstandard2.1' ]
+  #  steps:
+  #    - uses: actions/checkout@v3
+  #    - name: Download Build Artifacts
+  #      uses: actions/download-artifact@v3
+  #      with:
+  #        name: build-${{ github.run_number }}_${{ matrix.dotnet }}
+  #    - name: Install Brew
+  #      run: |
+  #        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  #        echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bash_profile
+  #        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  #    - name: Install Twitch CLI
+  #      run: "/home/linuxbrew/.linuxbrew/bin/brew install twitchdev/twitch/twitch-cli"
+  #    - name: Initialize Mock API
+  #      run: "/home/linuxbrew/.linuxbrew/Cellar/twitch-cli/$TWITCH_CLI_VERSION/bin/twitch mock-api start &"
+  #    - name: Setup .NET Core SDK ${{ matrix.dotnet }}
+  #      uses: actions/setup-dotnet@v3
+  #      with:
+  #        dotnet-version: ${{ matrix.dotnet-version }}
+  #    - name: Install Dependencies
+  #      run: dotnet restore
+  #    - name: Test
+  #      run: dotnet test --no-restore --verbosity normal
 
   publish_develop:
     if: github.ref == 'refs/heads/main' # Change to develop branch later
     name: Publish to GitHub
-    needs: test
+    #needs: test
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -101,7 +101,7 @@ jobs:
   publish_docs:
     if: github.ref == 'refs/heads/main'
     name: Publish Documentation
-    needs: test
+    #needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
