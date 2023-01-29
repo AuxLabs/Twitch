@@ -21,9 +21,9 @@ namespace AuxLabs.SimpleTwitch.Chat
         public string TargetUserId { get; set; }
 
         /// <summary>
-        /// The message includes this tag if the user was put in a timeout. The tag contains the duration of the timeout, in seconds.
+        /// The message includes this tag if the user was put in a timeout.
         /// </summary>
-        public int BanDuration { get; set; }
+        public TimeSpan? BanDuration { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
@@ -45,7 +45,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("target-user-id", out str))
                 TargetUserId = str;
             if (map.TryGetValue("ban-duration", out str))
-                BanDuration = int.Parse(str);
+                BanDuration = TimeSpan.FromSeconds(int.Parse(str));
         }
     }
 }

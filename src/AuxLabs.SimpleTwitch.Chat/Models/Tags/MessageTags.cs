@@ -9,8 +9,14 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> An ID that uniquely identifies the message. </summary>
         public string Id { get; set; }
 
+        /// <summary>  </summary>
+        public string CustomRewardId { get; set; }
+
         /// <summary> An ID that identifies the channel. </summary>
         public string ChannelId { get; set; }
+
+        /// <summary> A value that indicates if a messag has unique properties </summary>
+        public MessageType Type { get; set; }
 
         /// <summary> The date and time that the message was sent. </summary>
         public DateTimeOffset Timestamp { get; set; }
@@ -92,7 +98,9 @@ namespace AuxLabs.SimpleTwitch.Chat
             return new Dictionary<string, string>
             {
                 ["id"] = Id,
+                ["custom-reward-id"] = CustomRewardId,
                 ["room-id"] = ChannelId,
+                ["msg-id"] = Type.GetEnumMemberValue(),
                 ["tmi-sent-ts"] = Timestamp.ToUnixTimeMilliseconds().ToString(),
                 ["user-id"] = UserId,
                 ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
@@ -123,8 +131,12 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             if (map.TryGetValue("id", out string str))
                 Id = str;
+            if (map.TryGetValue("custom-reward-id", out str))
+                CustomRewardId = str;
             if (map.TryGetValue("room-id", out str))
                 ChannelId = str;
+            if (map.TryGetValue("msg-id", out str))
+                Type = EnumHelper.GetValueFromEnumMember<MessageType>(str);
             if (map.TryGetValue("tmi-sent-ts", out str))
                 Timestamp = DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(str));
             if (map.TryGetValue("user-id", out str))
