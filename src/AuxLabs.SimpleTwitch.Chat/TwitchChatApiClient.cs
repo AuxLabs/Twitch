@@ -70,7 +70,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             MessageCacheSize = config.MessageCacheSize;
         }
 
-        public void SetIdentity(string username, string token)
+        public TwitchChatApiClient SetIdentity(string username, string token)
         {
             if (State == ConnectionState.Connected)
                 throw new InvalidOperationException("Identity can't be changed after connection");
@@ -84,6 +84,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (!token.StartsWith("oauth:"))
                 token = token.Insert(0, "oauth:");
             _token = token;
+            return this;
         }
 
         public void Run()
