@@ -122,19 +122,30 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Redemption"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("channel_points/custom_rewards/redemptions")]
-        Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync([QueryMap]GetRewardRedemptionsArgs args);
+        Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync([QueryMap]GetRedemptionsArgs args);
 
+        /// <summary> Updates a custom reward. The app used to create the reward is the only app that may update the reward. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:redemptions</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Reward"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Patch("channel_points/custom_rewards")]
-        Task<object> ModifyRewardAsync([Query] object args);
+        Task<TwitchResponse<Reward>> ModifyRewardAsync([Query("broadcaster_id")]string broadcasterId, [Query("id")]string rewardId, [Body]PostRewardArgs args);
 
+        /// <summary> Updates a redemption’s status. The app used to create the reward is the only app that may update the redemption. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:redemptions</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Reward"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Patch("channel_points/custom_rewards/redemptions")]
-        Task<object> ModifyRewardRedemptionAsync([Query] object args);
+        Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync([Body]RedemptionStatus status, [QueryMap]ModifyRedemptionsArgs args);
 
         #endregion
         #region Charity
 
         [Post("charity/campaigns")]
         Task<object> GetCharityCampaignAsync([Query] object args);
+
         [Post("charity/donations")]
         Task<object> GetCharityCampaignDonationsAsync([Query] object args);
 

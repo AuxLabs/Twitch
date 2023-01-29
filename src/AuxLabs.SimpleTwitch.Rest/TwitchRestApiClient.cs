@@ -118,16 +118,23 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Reward>> GetRewardsAsync(GetRewardArgs args)
             => _api.GetRewardsAsync(args);
 
-        /// <inheritdoc cref="GetRewardRedemptionAsync(GetRewardRedemptionsArgs)"/>
-        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(Action<GetRewardRedemptionsArgs> action)
+        /// <inheritdoc cref="GetRewardRedemptionAsync(GetRedemptionsArgs)"/>
+        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(Action<GetRedemptionsArgs> action)
             => GetRewardRedemptionAsync(action.InvokeReturn());
-        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(GetRewardRedemptionsArgs args)
+        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(GetRedemptionsArgs args)
             => _api.GetRewardRedemptionAsync(args);
 
-        public Task<object> ModifyRewardAsync(object args)
-            => _api.ModifyRewardAsync(args);
-        public Task<object> ModifyRewardRedemptionAsync(object args)
-            => _api.ModifyRewardRedemptionAsync(args);
+        /// <inheritdoc cref="ModifyRewardAsync(string, string, PostRewardArgs)"/>
+        public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, Action<PostRewardArgs> action)
+            => _api.ModifyRewardAsync(broadcasterId, rewardId, action.InvokeReturn());
+        public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)
+            => _api.ModifyRewardAsync(broadcasterId, rewardId, args);
+
+        /// <inheritdoc cref="ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)"/>
+        public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, Action<ModifyRedemptionsArgs> action)
+            => _api.ModifyRewardRedemptionAsync(status, action.InvokeReturn());
+        public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
+            => _api.ModifyRewardRedemptionAsync(status, args);
 
         #endregion
 
