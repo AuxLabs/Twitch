@@ -40,31 +40,31 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         #region Ads
 
-        /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialParams)"/>
-        public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialParams> action)
+        /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialArgs)"/>
+        public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialArgs> action)
             => PostCommercialAsync(action.InvokeReturn());
-        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialParams args)
+        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialArgs args)
             => _api.PostCommercialAsync(args);
 
         #endregion
         #region Analytics
 
-        /// <inheritdoc cref="GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams)"/>
-        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(Action<GetExtensionAnalyticsParams> action)
+        /// <inheritdoc cref="GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs)"/>
+        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(Action<GetExtensionAnalyticsArgs> action)
             => GetExtensionAnalyticsAsync(action.InvokeReturn());
-        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsParams args)
+        public Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs args)
             => _api.GetExtensionAnalyticsAsync(args);
 
-        /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsParams)"/>
-        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(Action<GetGameAnalyticsParams> action)
+        /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsArgs)"/>
+        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(Action<GetGameAnalyticsArgs> action)
             => GetGameAnalyticsAsync(action.InvokeReturn());
-        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsParams args)
+        public Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsArgs args)
             => _api.GetGameAnalyticsAsync(args);
 
-        /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardParams)"/>
-        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardParams> action)
+        /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardArgs)"/>
+        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardArgs> action)
             => GetBitsLeaderboardAsync(action.InvokeReturn());
-        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardParams args)
+        public Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardArgs args)
             => _api.GetBitsLeaderboardAsync(args);
 
         #endregion
@@ -73,44 +73,60 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
             => _api.GetCheermotesAsync(broadcasterId);
 
-        /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsParams)"/>
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsParams> action)
+        /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsArgs)"/>
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsArgs> action)
             => GetExtensionTransactionAsync(action.InvokeReturn());
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsParams args)
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsArgs args)
             => _api.GetExtensionTransactionAsync(args);
 
         #endregion
         #region Channels
 
-        /// <inheritdoc cref="GetChannelsAsync(GetChannelsParams)"/>
-        public Task<TwitchResponse<Channel>> GetChannelsAsync(Action<GetChannelsParams> action)
+        /// <inheritdoc cref="GetChannelsAsync(GetChannelsArgs)"/>
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(params string[] broadcasterIds)
+            => GetChannelsAsync(new GetChannelsArgs(broadcasterIds));
+        /// <inheritdoc cref="GetChannelsAsync(GetChannelsArgs)"/>
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(Action<GetChannelsArgs> action)
             => GetChannelsAsync(action.InvokeReturn());
-        public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsParams args)
+        public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsArgs args)
             => _api.GetChannelsAsync(args);
 
-        /// <inheritdoc cref="ModifyChannelAsync(string, ModifyChannelParams)"/>
-        public Task ModifyChannelAsync(string broadcasterId, Action<ModifyChannelParams> action)
+        /// <inheritdoc cref="ModifyChannelAsync(string, ModifyChannelArgs)"/>
+        public Task ModifyChannelAsync(string broadcasterId, Action<ModifyChannelArgs> action)
             => _api.ModifyChannelAsync(broadcasterId, action.InvokeReturn());
-        public Task ModifyChannelAsync(string broadcasterId, ModifyChannelParams args)
+        public Task ModifyChannelAsync(string broadcasterId, ModifyChannelArgs args)
             => _api.ModifyChannelAsync(broadcasterId, args);
 
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(string broadcasterId)
             => _api.GetChannelEditorsAsync(broadcasterId);
 
         #endregion
+        #region Channel Points
 
-        public Task<object> CreateRewardsAsync(object args)
-            => _api.CreateRewardsAsync(args);
-        public Task DeleteRewardAsync(object args)
-            => _api.DeleteRewardAsync(args);
-        public Task<TwitchResponse<object>> GetRewardsAsync(object args)
+        /// <inheritdoc cref="CreateRewardsAsync(string, PostCustomRewardArgs)"/>
+        public Task<TwitchResponse<CustomReward>> CreateRewardsAsync(string broadcasterId, Action<PostCustomRewardArgs> action)
+            => _api.CreateRewardsAsync(broadcasterId, action.InvokeReturn());
+        public Task<TwitchResponse<CustomReward>> CreateRewardsAsync(string broadcasterId, PostCustomRewardArgs args)
+            => _api.CreateRewardsAsync(broadcasterId, args);
+
+        public Task DeleteRewardAsync(string broadcasterId, string customRewardId)
+            => _api.DeleteRewardAsync(broadcasterId, customRewardId);
+
+        /// <inheritdoc cref="GetRewardsAsync(GetCustomRewardsArgs)"/>
+        public Task<TwitchResponse<CustomReward>> GetRewardsAsync(Action<GetCustomRewardsArgs> action)
+            => _api.GetRewardsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<CustomReward>> GetRewardsAsync(GetCustomRewardsArgs args)
             => _api.GetRewardsAsync(args);
+
+
         public Task<object> GetRewardRedemptionAsync(object args)
             => _api.GetRewardRedemptionAsync(args);
         public Task<object> ModifyRewardAsync(object args)
             => _api.ModifyRewardAsync(args);
         public Task<object> ModifyRewardRedemptionAsync(object args)
             => _api.ModifyRewardRedemptionAsync(args);
+
+        #endregion
 
         public Task<object> GetCharityCampaignAsync(object args)
             => _api.GetCharityCampaignAsync(args);
@@ -310,13 +326,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetTeamsAsync(object args)
             => _api.GetTeamsAsync(args);
 
-        public Task<TwitchResponse<User>> GetUsersAsync(GetUsersParams args)
+        public Task<TwitchResponse<User>> GetUsersAsync(GetUsersArgs args)
             => _api.GetUsersAsync(args);
-        public Task<TwitchResponse<User>> GetUsersAsync(Action<GetUsersParams> action)
+        public Task<TwitchResponse<User>> GetUsersAsync(Action<GetUsersArgs> action)
             => GetUsersAsync(action.InvokeReturn());
         public Task<TwitchResponse<User>> ModifyUserAsync(string description)
             => _api.ModifyUserAsync(description);
-        public Task<TwitchResponse<Follower>> GetFollowsAsync(GetFollowsParams args)
+        public Task<TwitchResponse<Follower>> GetFollowsAsync(GetFollowsArgs args)
             => _api.GetFollowsAsync(args);
         public Task<TwitchResponse<object>> GetBlocksAsync(object args)
             => _api.GetBlocksAsync(args);

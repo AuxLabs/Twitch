@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetExtensionTransactionsParams : QueryMap<string[]>
+    public class GetExtensionTransactionsArgs : QueryMap<string[]>
     {
         /// <summary> The ID of the extension whose list of transactions you want to get. </summary>
         public string ExtensionId { get; set; }

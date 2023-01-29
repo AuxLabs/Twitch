@@ -11,18 +11,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<AccessTokenInfo> GetValidationAsync([Header("Authorization", Format = "Bearer {0}")] string token);
 
         [Get("revoke")]
-        Task PostRevokeTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRevokeTokenParams args);
+        Task PostRevokeTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRevokeTokenArgs args);
 
         [Post("token")]
         [Header("Content-Type", "application/x-www-form-urlencoded")]
-        Task<UserIdentity> PostRefreshTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRefreshTokenParams args);
+        Task<UserIdentity> PostRefreshTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRefreshTokenArgs args);
 
         [Post("token")]
         [Header("Content-Type", "application/x-www-form-urlencoded")]
-        Task<AppIdentity> PostAccessTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostAppAccessTokenParams args);
+        Task<AppIdentity> PostAccessTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostAppAccessTokenArgs args);
 
         [Post("token")]
         [Header("Content-Type", "application/x-www-form-urlencoded")]
-        Task<UserIdentity> PostAccessTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostUserAccessTokenParams args);
+        Task<UserIdentity> PostAccessTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostUserAccessTokenArgs args);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostAppAccessTokenParams : QueryMap
+    public class PostAppAccessTokenArgs : QueryMap
     {
         /// <summary> Your app’s registered client ID. </summary>
         public string ClientId { get; set; }

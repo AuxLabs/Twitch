@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostRevokeTokenParams : QueryMap
+    public class PostRevokeTokenArgs : QueryMap
     {
         /// <summary> Your app’s registered client ID. </summary>
         public string ClientId { get; set; }

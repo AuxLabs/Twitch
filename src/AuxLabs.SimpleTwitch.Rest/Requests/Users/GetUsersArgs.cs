@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetUsersParams : QueryMap<string[]>, IScoped
+    public class GetUsersArgs : QueryMap<string[]>, IScoped
     {
         /// <summary>  </summary>
         public IEnumerable<string> UserIds { get; set; } = null;
@@ -11,8 +11,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary>  </summary>
         public IEnumerable<string> UserNames { get; set; } = null;
 
-        public GetUsersParams() { }
-        public GetUsersParams(GetUsersMode mode, params string[] users)
+        public GetUsersArgs() { }
+        public GetUsersArgs(GetUsersMode mode, params string[] users)
         {
             if (mode == GetUsersMode.Id)
                 UserIds = users.ToList();

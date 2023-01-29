@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBitsLeaderboardParams : QueryMap
+    public class GetBitsLeaderboardArgs : QueryMap
     {
         /// <summary> An ID that identifies a user that cheered bits in the channel. </summary>
         /// <remarks> If <see cref="Count"/> is greater than 1, the response may include users 

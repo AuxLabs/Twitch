@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public abstract class GetAnalyticsParams : QueryMap
+    public abstract class GetAnalyticsArgs : QueryMap
     {
         /// <summary> Cursor for forward pagination </summary>
         public string After { get; set; }

@@ -16,7 +16,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
 
         private async Task StartCommercialAsync()
         {
-            var response = await _fixture.Twitch.PostCommercialAsync(new PostChannelCommercialParams
+            var response = await _fixture.Twitch.PostCommercialAsync(new PostChannelCommercialArgs
             {
                 BroadcasterId = _fixture.AuthorizedUser.Id,
                 Length = 30

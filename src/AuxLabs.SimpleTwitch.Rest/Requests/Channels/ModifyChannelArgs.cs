@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ModifyChannelParams
+    public class ModifyChannelArgs
     {
         /// <summary> The ID of the game that the user plays. </summary>
         [JsonPropertyName("game_id")]

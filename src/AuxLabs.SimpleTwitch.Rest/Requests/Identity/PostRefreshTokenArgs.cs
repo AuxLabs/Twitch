@@ -2,12 +2,12 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostRefreshTokenParams : PostAppAccessTokenParams
+    public class PostRefreshTokenArgs : PostAppAccessTokenArgs
     {
         /// <summary> The refresh token issued to the client. </summary>
         public string RefreshToken { get; set; }
 
-        public PostRefreshTokenParams()
+        public PostRefreshTokenArgs()
         {
             GrantType = "refresh_token";
         }

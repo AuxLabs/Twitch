@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetGameAnalyticsParams : GetAnalyticsParams, IScoped
+    public class GetGameAnalyticsArgs : GetAnalyticsArgs, IScoped
     {
         public static string[] Scopes { get; } = { "analytics:read:games" };
 

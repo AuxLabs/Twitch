@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetFollowsParams : QueryMap
+    public class GetFollowsArgs : QueryMap
     {
         public string FromId { get; set; }
 

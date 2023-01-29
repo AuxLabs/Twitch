@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetChannelsParams : QueryMap<string[]>
+    public class GetChannelsArgs : QueryMap<string[]>
     { 
         public IEnumerable<string> ChannelIds { get; set; }
 
-        public GetChannelsParams() { }
-        public GetChannelsParams(params string[] channels)
+        public GetChannelsArgs() { }
+        public GetChannelsArgs(params string[] channels)
         {
             ChannelIds = channels.ToList();
         }

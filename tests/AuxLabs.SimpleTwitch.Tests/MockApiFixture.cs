@@ -47,7 +47,7 @@ namespace AuxLabs.SimpleTwitch.Tests
         [Fact]
         public async Task ConfirmAuthenticationAsync()
         {
-            var self = await Twitch.GetUsersAsync(new GetUsersParams
+            var self = await Twitch.GetUsersAsync(new GetUsersArgs
             {
                 UserIds = new[] { AuthorizedUser.Id }
             });
