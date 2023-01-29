@@ -64,7 +64,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="ExtensionTransaction"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("extensions/transactions")]
-        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync([QueryMap] GetExtensionTransactionsArgs args);
+        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionsAsync([QueryMap] GetExtensionTransactionsArgs args);
 
         #endregion
         #region Channels
@@ -143,11 +143,21 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Charity
 
+        /// <summary> Gets information about the charity campaign that a broadcaster is running. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:charity</c> scope. </remarks>
+        /// <returns> A <see cref="CharityCampaign"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("charity/campaigns")]
-        Task<object> GetCharityCampaignAsync([Query] object args);
+        Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync([Query("broadcaster_id")]string broadcasterId);
 
+        /// <summary> Gets the list of donations that users have made to the broadcaster’s active charity campaign. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:charity</c> scope. </remarks>
+        /// <returns> A <see cref="CharityDonation"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("charity/donations")]
-        Task<object> GetCharityCampaignDonationsAsync([Query] object args);
+        Task<TwitchResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap]GetCharityDonationsArgs args);
 
         #endregion
         #region Chat

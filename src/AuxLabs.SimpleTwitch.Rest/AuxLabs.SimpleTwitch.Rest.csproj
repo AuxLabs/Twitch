@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Charity\" />
     <Folder Include="Models\Clips\" />
     <Folder Include="Models\Entitlements\" />
     <Folder Include="Models\EventSub\" />
@@ -29,7 +28,6 @@
     <Folder Include="Models\Tags\" />
     <Folder Include="Models\Videos\" />
     <Folder Include="Models\Whispers\" />
-    <Folder Include="Requests\Charity\" />
     <Folder Include="Requests\Chat\" />
     <Folder Include="Requests\Clips\" />
     <Folder Include="Requests\Entitlements\" />

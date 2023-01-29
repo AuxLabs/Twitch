@@ -21,11 +21,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A set of custom images for the reward. </summary>
         [JsonPropertyName("image")]
-        public IReadOnlyCollection<RewardImage> Images { get; set; }
+        public IReadOnlyCollection<TwitchImage> Images { get; set; }
 
         /// <summary> A set of default images for the reward. </summary>
         [JsonPropertyName("default_image")]
-        public IReadOnlyCollection<RewardImage> DefaultImages { get; set; }
+        public IReadOnlyCollection<TwitchImage> DefaultImages { get; set; }
 
         /// <summary> The background color to use for the reward. </summary>
         [JsonPropertyName("background_color")]

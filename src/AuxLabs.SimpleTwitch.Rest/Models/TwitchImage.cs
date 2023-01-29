@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class RewardImage
+    public class TwitchImage
     {
         /// <summary> The URL to a small version of the image. </summary>
         [JsonPropertyName("url_1x")]

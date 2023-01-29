@@ -74,10 +74,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetCheermotesAsync(broadcasterId);
 
         /// <inheritdoc cref="GetExtensionTransactionAsync(GetExtensionTransactionsArgs)"/>
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(Action<GetExtensionTransactionsArgs> action)
-            => GetExtensionTransactionAsync(action.InvokeReturn());
-        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionAsync(GetExtensionTransactionsArgs args)
-            => _api.GetExtensionTransactionAsync(args);
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionsAsync(Action<GetExtensionTransactionsArgs> action)
+            => GetExtensionTransactionsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionsAsync(GetExtensionTransactionsArgs args)
+            => _api.GetExtensionTransactionsAsync(args);
 
         #endregion
         #region Channels
@@ -137,11 +137,21 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.ModifyRewardRedemptionAsync(status, args);
 
         #endregion
+        #region Charity
 
-        public Task<object> GetCharityCampaignAsync(object args)
-            => _api.GetCharityCampaignAsync(args);
-        public Task<object> GetCharityCampaignDonationsAsync(object args)
-            => _api.GetCharityCampaignDonationsAsync(args);
+        public Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync(string broadcasterId)
+            => _api.GetCharityCampaignAsync(broadcasterId);
+
+        /// <inheritdoc cref="GetCharityDonationsAsync(GetCharityDonationsArgs)"/>
+        public Task<TwitchResponse<CharityDonation>> GetCharityDonationsAsync(Action<GetCharityDonationsArgs> action)
+            => _api.GetCharityDonationsAsync(action.InvokeReturn());
+        public Task<TwitchResponse<CharityDonation>> GetCharityDonationsAsync(GetCharityDonationsArgs args)
+            => _api.GetCharityDonationsAsync(args);
+
+        #endregion
+
+
+
 
         public Task<TwitchResponse<object>> GetChattersAsync(object args)
             => _api.GetChattersAsync(args);
