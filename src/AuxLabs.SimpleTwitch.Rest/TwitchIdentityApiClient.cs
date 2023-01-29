@@ -69,7 +69,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Get an access token that identifies you as the specified application </summary>
         public Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args)
             => _api.PostAccessTokenAsync(Fill(args));
-        /// <inheritdoc cref="PostAccessTokenAsync(PostAppAccessTokenParamss)" />
+        /// <inheritdoc cref="PostAccessTokenAsync(PostAppAccessTokenArgs)" />
         public Task<AppIdentity> PostAccessTokenAsync(Action<PostAppAccessTokenArgs> action)
             => PostAccessTokenAsync(action.InvokeReturn());
 
