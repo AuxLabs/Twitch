@@ -103,12 +103,15 @@ jobs:
     name: Publish Documentation
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet: [ 'net6.0', 'netstandard2.1' ]
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: net6.0
+          dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install
         run: dotnet tool install -g docfx
       - name: Build
