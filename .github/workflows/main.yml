@@ -64,7 +64,7 @@ jobs:
   publish_develop:
     if: github.ref == 'refs/heads/main' # Change to develop branch later
     name: Publish to GitHub
-    #needs: test
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -101,11 +101,11 @@ jobs:
   publish_docs:
     if: github.ref == 'refs/heads/main'
     name: Publish Documentation
-    #needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK net6.0
+      - name: Setup .NET Core SDK ${{ matrix.dotnet }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: net6.0
