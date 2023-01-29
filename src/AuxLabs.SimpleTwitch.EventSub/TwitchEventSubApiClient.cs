@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
     {
         protected override ISerializer<EventSubWebSocketPayload> Serializer { get; }
 
-        public TwitchEventSubApiClient(TwitchEventSubConfig config = default) : base(-1)
+        public TwitchEventSubApiClient(TwitchEventSubConfig config = default) : base(-1, true)
         {
             Serializer = config.Serializer ?? new JsonSerializer<EventSubWebSocketPayload>();
         }

@@ -2,15 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubPayload
+    public class EventSubPayload<T>
     {
         [JsonPropertyName("challenge")]
         public string Challenge { get; set; }
+
+        [JsonPropertyName("session")]
+        public Session Session { get; set; }
 
         [JsonPropertyName("subscription")]
         public object Subscription { get; set; }
 
         [JsonPropertyName("event")]
-        public object Event { get; set; }
+        public T Event { get; set; }
     }
 }

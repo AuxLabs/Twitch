@@ -3,20 +3,18 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubWebSocketPayload : IPayload
+    public class EventSubWebSocketPayload : EventSubWebSocketPayload<object> { }
+    public class EventSubWebSocketPayload<T> : IPayload
     {
-        public bool IsHelloEvent { get; }
+        [JsonIgnore]
+        public bool IsHelloEvent => Metadata.Type == MessageType.Welcome;
 
-        /// <summary>
-        /// An object that identifies the message.
-        /// </summary>
+        /// <summary> An object that identifies the message. </summary>
         [JsonPropertyName("metadata")]
         public WebSocketMetadata Metadata { get; set; }
 
-        /// <summary>
-        /// An object that contains the message.
-        /// </summary>
+        /// <summary> An object that contains the message. </summary>
         [JsonPropertyName("payload")]
-        public object Payload { get; set; }
+        public EventSubPayload<T> Payload { get; set; }
     }
 }
