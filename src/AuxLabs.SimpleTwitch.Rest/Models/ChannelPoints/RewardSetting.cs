@@ -2,13 +2,13 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public readonly struct CustomRewardSetting
+    public readonly struct RewardSetting
     {
         public bool IsEnabled { get; }
         public uint Value { get; }
 
         [JsonConstructor]
-        public CustomRewardSetting(bool isEnabled, uint value)
+        public RewardSetting(bool isEnabled, uint value)
             => (IsEnabled, Value) = (isEnabled, value);
     }
 }

@@ -96,10 +96,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Creates a custom reward in the broadcaster’s channel. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>channel:manage:redemptions</c> scope. </remarks>
-        /// <returns> A single <see cref="CustomReward"/> object. </returns>
+        /// <returns> A single <see cref="Reward"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("channel_points/custom_rewards")]
-        Task<TwitchResponse<CustomReward>> CreateRewardsAsync([Query("broadcaster_id")] string broadcasterId, [Body]PostCustomRewardArgs args);
+        Task<TwitchResponse<Reward>> CreateRewardsAsync([Query("broadcaster_id")] string broadcasterId, [Body]PostRewardArgs args);
 
         /// <summary> Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -111,13 +111,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Gets a list of custom rewards that the specified broadcaster created. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with either the <c>channel:read:redemptions</c> or <c>channel:manage:redemptions</c> scopes. </remarks>
-        /// <returns> A collection of <see cref="CustomReward"/> objects. </returns>
+        /// <returns> A collection of <see cref="Reward"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("channel_points/custom_rewards")]
-        Task<TwitchResponse<CustomReward>> GetRewardsAsync([QueryMap]GetCustomRewardsArgs args);
+        Task<TwitchResponse<Reward>> GetRewardsAsync([QueryMap]GetRewardArgs args);
 
+        /// <summary> Gets a list of redemptions for the specified custom reward. Only the app that created a reward is able to see it's redemptions. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with either the <c>channel:read:redemptions</c> or <c>channel:manage:redemptions</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="Redemption"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("channel_points/custom_rewards/redemptions")]
-        Task<object> GetRewardRedemptionAsync([Query] object args);
+        Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync([QueryMap]GetRewardRedemptionsArgs args);
 
         [Patch("channel_points/custom_rewards")]
         Task<object> ModifyRewardAsync([Query] object args);

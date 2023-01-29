@@ -2,6 +2,6 @@
 {
     public interface IScoped
     {
-        public static string[] Scopes { get; set; } = new string[0];
+        string[] Scopes { get; }
     }
 }

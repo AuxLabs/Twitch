@@ -2,9 +2,9 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostChannelCommercialArgs : QueryMap<string>, IScoped
+    public class PostChannelCommercialArgs : QueryMap, IScoped
     {
-        public static string[] Scopes { get; } = { "channel:edit:commercial" };
+        public string[] Scopes { get; } = { "channel:edit:commercial" };
 
         /// <summary> The ID of the partner or affiliate broadcaster that wants to run the commercial. </summary>
         public string BroadcasterId { get; set; }

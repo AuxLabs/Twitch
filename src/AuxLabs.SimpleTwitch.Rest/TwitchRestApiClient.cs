@@ -103,24 +103,27 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Channel Points
 
-        /// <inheritdoc cref="CreateRewardsAsync(string, PostCustomRewardArgs)"/>
-        public Task<TwitchResponse<CustomReward>> CreateRewardsAsync(string broadcasterId, Action<PostCustomRewardArgs> action)
+        /// <inheritdoc cref="CreateRewardsAsync(string, PostRewardArgs)"/>
+        public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, Action<PostRewardArgs> action)
             => _api.CreateRewardsAsync(broadcasterId, action.InvokeReturn());
-        public Task<TwitchResponse<CustomReward>> CreateRewardsAsync(string broadcasterId, PostCustomRewardArgs args)
+        public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, PostRewardArgs args)
             => _api.CreateRewardsAsync(broadcasterId, args);
 
         public Task DeleteRewardAsync(string broadcasterId, string customRewardId)
             => _api.DeleteRewardAsync(broadcasterId, customRewardId);
 
-        /// <inheritdoc cref="GetRewardsAsync(GetCustomRewardsArgs)"/>
-        public Task<TwitchResponse<CustomReward>> GetRewardsAsync(Action<GetCustomRewardsArgs> action)
+        /// <inheritdoc cref="GetRewardsAsync(GetRewardArgs)"/>
+        public Task<TwitchResponse<Reward>> GetRewardsAsync(Action<GetRewardArgs> action)
             => _api.GetRewardsAsync(action.InvokeReturn());
-        public Task<TwitchResponse<CustomReward>> GetRewardsAsync(GetCustomRewardsArgs args)
+        public Task<TwitchResponse<Reward>> GetRewardsAsync(GetRewardArgs args)
             => _api.GetRewardsAsync(args);
 
-
-        public Task<object> GetRewardRedemptionAsync(object args)
+        /// <inheritdoc cref="GetRewardRedemptionAsync(GetRewardRedemptionsArgs)"/>
+        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(Action<GetRewardRedemptionsArgs> action)
+            => GetRewardRedemptionAsync(action.InvokeReturn());
+        public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(GetRewardRedemptionsArgs args)
             => _api.GetRewardRedemptionAsync(args);
+
         public Task<object> ModifyRewardAsync(object args)
             => _api.ModifyRewardAsync(args);
         public Task<object> ModifyRewardRedemptionAsync(object args)

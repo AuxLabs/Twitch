@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetExtensionAnalyticsArgs : GetAnalyticsArgs, IScoped
     {
-        public static string[] Scopes { get; } = { "analytics:read:extensions" };
+        public string[] Scopes { get; } = { "analytics:read:extensions" };
 
         public string ExtensionId { get; set; }
 

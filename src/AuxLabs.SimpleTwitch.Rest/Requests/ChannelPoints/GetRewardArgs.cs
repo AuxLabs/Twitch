@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetCustomRewardsArgs : QueryMap<string[]>
+    public class GetRewardArgs : QueryMap<string[]>
     {
         /// <summary> The ID of the broadcaster whose custom rewards you want to get. </summary>
         public string BroadcasterId { get; set; }
@@ -14,10 +14,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> A list of IDs to filter the rewards by. </summary>
         public IEnumerable<string> CustomRewardIds { get; set; }
 
-        public GetCustomRewardsArgs() { }
-        public GetCustomRewardsArgs(string broadcasterId, params string[] customRewardIds)
+        public GetRewardArgs() { }
+        public GetRewardArgs(string broadcasterId, params string[] customRewardIds)
             : this(broadcasterId, null, customRewardIds) { }
-        public GetCustomRewardsArgs(string broadcasterId, bool? onlyManageble, params string[] customRewardIds)
+        public GetRewardArgs(string broadcasterId, bool? onlyManageble, params string[] customRewardIds)
         {
             BroadcasterId = broadcasterId;
             OnlyManagebleRewards = onlyManageble;

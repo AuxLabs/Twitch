@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetGameAnalyticsArgs : GetAnalyticsArgs, IScoped
     {
-        public static string[] Scopes { get; } = { "analytics:read:games" };
+        public string[] Scopes { get; } = { "analytics:read:games" };
 
         /// <summary> The game’s client ID. </summary>
         [JsonPropertyName("game_id")]

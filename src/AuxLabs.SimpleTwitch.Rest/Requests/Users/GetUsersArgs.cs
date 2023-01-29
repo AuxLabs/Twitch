@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetUsersArgs : QueryMap<string[]>, IScoped
+    public class GetUsersArgs : QueryMap<string[]>
     {
         /// <summary>  </summary>
         public IEnumerable<string> UserIds { get; set; } = null;
