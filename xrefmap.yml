@@ -6864,6 +6864,271 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ChannelEditor.UserName
   nameWithType: ChannelEditor.UserName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount
+  name: CharityAmount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.CharityAmount
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount
+  nameWithType: CharityAmount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency
+  name: Currency
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_Currency
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency
+  nameWithType: CharityAmount.Currency
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency*
+  name: Currency
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_Currency_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.Currency
+  nameWithType: CharityAmount.Currency
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces
+  name: DecimalPlaces
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_DecimalPlaces
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces
+  nameWithType: CharityAmount.DecimalPlaces
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces*
+  name: DecimalPlaces
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_DecimalPlaces_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.DecimalPlaces
+  nameWithType: CharityAmount.DecimalPlaces
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.Value
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_Value
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityAmount.Value
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.Value
+  nameWithType: CharityAmount.Value
+- uid: AuxLabs.SimpleTwitch.Rest.CharityAmount.Value*
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html#AuxLabs_SimpleTwitch_Rest_CharityAmount_Value_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityAmount.Value
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityAmount.Value
+  nameWithType: CharityAmount.Value
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign
+  name: CharityCampaign
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.CharityCampaign
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign
+  nameWithType: CharityCampaign
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId
+  nameWithType: CharityCampaign.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterId
+  nameWithType: CharityCampaign.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterLogin
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin
+  nameWithType: CharityCampaign.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin*
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterLogin_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterLogin
+  nameWithType: CharityCampaign.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName
+  nameWithType: CharityCampaign.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName*
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_BroadcasterName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.BroadcasterName
+  nameWithType: CharityCampaign.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription
+  name: CharityDescription
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityDescription
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription
+  nameWithType: CharityCampaign.CharityDescription
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription*
+  name: CharityDescription
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityDescription_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityDescription
+  nameWithType: CharityCampaign.CharityDescription
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl
+  name: CharityLogoUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityLogoUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl
+  nameWithType: CharityCampaign.CharityLogoUrl
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl*
+  name: CharityLogoUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityLogoUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityLogoUrl
+  nameWithType: CharityCampaign.CharityLogoUrl
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName
+  name: CharityName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName
+  nameWithType: CharityCampaign.CharityName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName*
+  name: CharityName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityName
+  nameWithType: CharityCampaign.CharityName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl
+  name: CharityWebsiteUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityWebsiteUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl
+  nameWithType: CharityCampaign.CharityWebsiteUrl
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl*
+  name: CharityWebsiteUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CharityWebsiteUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CharityWebsiteUrl
+  nameWithType: CharityCampaign.CharityWebsiteUrl
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount
+  name: CurrentAmount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CurrentAmount
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount
+  nameWithType: CharityCampaign.CurrentAmount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount*
+  name: CurrentAmount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_CurrentAmount_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.CurrentAmount
+  nameWithType: CharityCampaign.CurrentAmount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id
+  nameWithType: CharityCampaign.Id
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.Id
+  nameWithType: CharityCampaign.Id
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount
+  name: TargetAmount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_TargetAmount
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount
+  nameWithType: CharityCampaign.TargetAmount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount*
+  name: TargetAmount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityCampaign.html#AuxLabs_SimpleTwitch_Rest_CharityCampaign_TargetAmount_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityCampaign.TargetAmount
+  nameWithType: CharityCampaign.TargetAmount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation
+  name: CharityDonation
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.CharityDonation
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation
+  nameWithType: CharityDonation
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount
+  name: Amount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_Amount
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount
+  nameWithType: CharityDonation.Amount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount*
+  name: Amount
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_Amount_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.Amount
+  nameWithType: CharityDonation.Amount
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId
+  name: CampaignId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_CampaignId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId
+  nameWithType: CharityDonation.CampaignId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId*
+  name: CampaignId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_CampaignId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.CampaignId
+  nameWithType: CharityDonation.CampaignId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.Id
+  nameWithType: CharityDonation.Id
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.Id
+  nameWithType: CharityDonation.Id
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId
+  nameWithType: CharityDonation.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId*
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserId
+  nameWithType: CharityDonation.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin
+  name: UserLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserLogin
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin
+  nameWithType: CharityDonation.UserLogin
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin*
+  name: UserLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserLogin_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserLogin
+  nameWithType: CharityDonation.UserLogin
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName
+  nameWithType: CharityDonation.UserName
+- uid: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName*
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.CharityDonation.html#AuxLabs_SimpleTwitch_Rest_CharityDonation_UserName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.CharityDonation.UserName
+  nameWithType: CharityDonation.UserName
 - uid: AuxLabs.SimpleTwitch.Rest.ChatColor
   name: ChatColor
   href: api/AuxLabs.SimpleTwitch.Rest.ChatColor.html
@@ -7187,362 +7452,6 @@ references:
   commentId: F:AuxLabs.SimpleTwitch.Rest.CostType.None
   fullName: AuxLabs.SimpleTwitch.Rest.CostType.None
   nameWithType: CostType.None
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward
-  name: CustomReward
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.CustomReward
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward
-  nameWithType: CustomReward
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor
-  name: BackgroundColor
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BackgroundColor
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor
-  nameWithType: CustomReward.BackgroundColor
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor*
-  name: BackgroundColor
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BackgroundColor_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BackgroundColor
-  nameWithType: CustomReward.BackgroundColor
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId
-  name: BroadcasterId
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterId
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId
-  nameWithType: CustomReward.BroadcasterId
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId*
-  name: BroadcasterId
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterId_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterId
-  nameWithType: CustomReward.BroadcasterId
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin
-  name: BroadcasterLogin
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterLogin
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin
-  nameWithType: CustomReward.BroadcasterLogin
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin*
-  name: BroadcasterLogin
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterLogin_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterLogin
-  nameWithType: CustomReward.BroadcasterLogin
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName
-  name: BroadcasterName
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterName
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName
-  nameWithType: CustomReward.BroadcasterName
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName*
-  name: BroadcasterName
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_BroadcasterName_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.BroadcasterName
-  nameWithType: CustomReward.BroadcasterName
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt
-  name: CooldownExpiresAt
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_CooldownExpiresAt
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt
-  nameWithType: CustomReward.CooldownExpiresAt
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt*
-  name: CooldownExpiresAt
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_CooldownExpiresAt_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.CooldownExpiresAt
-  nameWithType: CustomReward.CooldownExpiresAt
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Cost
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Cost
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.Cost
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Cost
-  nameWithType: CustomReward.Cost
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Cost*
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Cost_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.Cost
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Cost
-  nameWithType: CustomReward.Cost
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages
-  name: DefaultImages
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_DefaultImages
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages
-  nameWithType: CustomReward.DefaultImages
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages*
-  name: DefaultImages
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_DefaultImages_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.DefaultImages
-  nameWithType: CustomReward.DefaultImages
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting
-  name: GlobalCooldownSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_GlobalCooldownSetting
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting
-  nameWithType: CustomReward.GlobalCooldownSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting*
-  name: GlobalCooldownSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_GlobalCooldownSetting_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.GlobalCooldownSetting
-  nameWithType: CustomReward.GlobalCooldownSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Id
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Id
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.Id
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Id
-  nameWithType: CustomReward.Id
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Id*
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.Id
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Id
-  nameWithType: CustomReward.Id
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Images
-  name: Images
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Images
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.Images
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Images
-  nameWithType: CustomReward.Images
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Images*
-  name: Images
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Images_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.Images
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Images
-  nameWithType: CustomReward.Images
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled
-  nameWithType: CustomReward.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled*
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsEnabled
-  nameWithType: CustomReward.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock
-  name: IsInStock
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsInStock
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock
-  nameWithType: CustomReward.IsInStock
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock*
-  name: IsInStock
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsInStock_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsInStock
-  nameWithType: CustomReward.IsInStock
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused
-  name: IsPaused
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsPaused
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused
-  nameWithType: CustomReward.IsPaused
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused*
-  name: IsPaused
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsPaused_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsPaused
-  nameWithType: CustomReward.IsPaused
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired
-  name: IsUserInputRequired
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsUserInputRequired
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired
-  nameWithType: CustomReward.IsUserInputRequired
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired*
-  name: IsUserInputRequired
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_IsUserInputRequired_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.IsUserInputRequired
-  nameWithType: CustomReward.IsUserInputRequired
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting
-  name: MaxPerStreamSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_MaxPerStreamSetting
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting
-  nameWithType: CustomReward.MaxPerStreamSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting*
-  name: MaxPerStreamSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_MaxPerStreamSetting_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerStreamSetting
-  nameWithType: CustomReward.MaxPerStreamSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting
-  name: MaxPerUserSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_MaxPerUserSetting
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting
-  nameWithType: CustomReward.MaxPerUserSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting*
-  name: MaxPerUserSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_MaxPerUserSetting_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.MaxPerUserSetting
-  nameWithType: CustomReward.MaxPerUserSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt
-  name: Prompt
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Prompt
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt
-  nameWithType: CustomReward.Prompt
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt*
-  name: Prompt
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Prompt_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Prompt
-  nameWithType: CustomReward.Prompt
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue
-  name: ShouldSkipRequestQueue
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_ShouldSkipRequestQueue
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue
-  nameWithType: CustomReward.ShouldSkipRequestQueue
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue*
-  name: ShouldSkipRequestQueue
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_ShouldSkipRequestQueue_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.ShouldSkipRequestQueue
-  nameWithType: CustomReward.ShouldSkipRequestQueue
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Title
-  name: Title
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Title
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.Title
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Title
-  nameWithType: CustomReward.Title
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.Title*
-  name: Title
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_Title_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.Title
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.Title
-  nameWithType: CustomReward.Title
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions
-  name: TotalRedemptions
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_TotalRedemptions
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions
-  nameWithType: CustomReward.TotalRedemptions
-- uid: AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions*
-  name: TotalRedemptions
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomReward.html#AuxLabs_SimpleTwitch_Rest_CustomReward_TotalRedemptions_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomReward.TotalRedemptions
-  nameWithType: CustomReward.TotalRedemptions
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage
-  name: CustomRewardImage
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.CustomRewardImage
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage
-  nameWithType: CustomRewardImage
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl
-  name: LargeUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_LargeUrl
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl
-  nameWithType: CustomRewardImage.LargeUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl*
-  name: LargeUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_LargeUrl_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.LargeUrl
-  nameWithType: CustomRewardImage.LargeUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl
-  name: MediumUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_MediumUrl
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl
-  nameWithType: CustomRewardImage.MediumUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl*
-  name: MediumUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_MediumUrl_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.MediumUrl
-  nameWithType: CustomRewardImage.MediumUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl
-  name: SmallUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_SmallUrl
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl
-  nameWithType: CustomRewardImage.SmallUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl*
-  name: SmallUrl
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardImage.html#AuxLabs_SimpleTwitch_Rest_CustomRewardImage_SmallUrl_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardImage.SmallUrl
-  nameWithType: CustomRewardImage.SmallUrl
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting
-  name: CustomRewardSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting
-  nameWithType: CustomRewardSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.#ctor(System.Boolean,System.UInt32)
-  name: CustomRewardSetting(Boolean, UInt32)
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting__ctor_System_Boolean_System_UInt32_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.#ctor(System.Boolean,System.UInt32)
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.CustomRewardSetting(System.Boolean, System.UInt32)
-  nameWithType: CustomRewardSetting.CustomRewardSetting(Boolean, UInt32)
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.#ctor*
-  name: CustomRewardSetting
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting__ctor_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.#ctor
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.CustomRewardSetting
-  nameWithType: CustomRewardSetting.CustomRewardSetting
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting_IsEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled
-  nameWithType: CustomRewardSetting.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled*
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting_IsEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.IsEnabled
-  nameWithType: CustomRewardSetting.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value
-  name: Value
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting_Value
-  commentId: P:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value
-  nameWithType: CustomRewardSetting.Value
-- uid: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value*
-  name: Value
-  href: api/AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.html#AuxLabs_SimpleTwitch_Rest_CustomRewardSetting_Value_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.CustomRewardSetting.Value
-  nameWithType: CustomRewardSetting.Value
 - uid: AuxLabs.SimpleTwitch.Rest.DateRange
   name: DateRange
   href: api/AuxLabs.SimpleTwitch.Rest.DateRange.html
@@ -8280,95 +8189,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CreateQueryMap
   nameWithType: GetChannelsArgs.CreateQueryMap
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs
-  name: GetCustomRewardsArgs
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs
-  nameWithType: GetCustomRewardsArgs
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor
-  name: GetCustomRewardsArgs()
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__ctor
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs()
-  nameWithType: GetCustomRewardsArgs.GetCustomRewardsArgs()
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor(System.String,System.Nullable{System.Boolean},System.String[])
-  name: GetCustomRewardsArgs(String, Nullable<Boolean>, String[])
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__ctor_System_String_System_Nullable_System_Boolean__System_String___
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor(System.String,System.Nullable{System.Boolean},System.String[])
-  name.vb: GetCustomRewardsArgs(String, Nullable(Of Boolean), String())
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs(System.String, System.Nullable<System.Boolean>, System.String[])
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs(System.String, System.Nullable(Of System.Boolean), System.String())
-  nameWithType: GetCustomRewardsArgs.GetCustomRewardsArgs(String, Nullable<Boolean>, String[])
-  nameWithType.vb: GetCustomRewardsArgs.GetCustomRewardsArgs(String, Nullable(Of Boolean), String())
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor(System.String,System.String[])
-  name: GetCustomRewardsArgs(String, String[])
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__ctor_System_String_System_String___
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor(System.String,System.String[])
-  name.vb: GetCustomRewardsArgs(String, String())
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs(System.String, System.String[])
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs(System.String, System.String())
-  nameWithType: GetCustomRewardsArgs.GetCustomRewardsArgs(String, String[])
-  nameWithType.vb: GetCustomRewardsArgs.GetCustomRewardsArgs(String, String())
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor*
-  name: GetCustomRewardsArgs
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__ctor_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.#ctor
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs
+  name: GetCharityDonationsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs
+  nameWithType: GetCharityDonationsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
+  nameWithType: GetCharityDonationsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.GetCustomRewardsArgs
-  nameWithType: GetCustomRewardsArgs.GetCustomRewardsArgs
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
+  nameWithType: GetCharityDonationsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
   name: BroadcasterId
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_BroadcasterId
-  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId
-  nameWithType: GetCustomRewardsArgs.BroadcasterId
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId*
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
+  nameWithType: GetCharityDonationsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId*
   name: BroadcasterId
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_BroadcasterId_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.BroadcasterId
-  nameWithType: GetCustomRewardsArgs.BroadcasterId
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
+  nameWithType: GetCharityDonationsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap
   name: CreateQueryMap()
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_CreateQueryMap
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap()
-  nameWithType: GetCustomRewardsArgs.CreateQueryMap()
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap*
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap()
+  nameWithType: GetCharityDonationsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap*
   name: CreateQueryMap
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_CreateQueryMap_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CreateQueryMap
-  nameWithType: GetCustomRewardsArgs.CreateQueryMap
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds
-  name: CustomRewardIds
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_CustomRewardIds
-  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds
-  nameWithType: GetCustomRewardsArgs.CustomRewardIds
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds*
-  name: CustomRewardIds
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_CustomRewardIds_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.CreateQueryMap
+  nameWithType: GetCharityDonationsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First
+  nameWithType: GetCharityDonationsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.CustomRewardIds
-  nameWithType: GetCustomRewardsArgs.CustomRewardIds
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards
-  name: OnlyManagebleRewards
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_OnlyManagebleRewards
-  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards
-  nameWithType: GetCustomRewardsArgs.OnlyManagebleRewards
-- uid: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards*
-  name: OnlyManagebleRewards
-  href: api/AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_OnlyManagebleRewards_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.OnlyManagebleRewards
-  nameWithType: GetCustomRewardsArgs.OnlyManagebleRewards
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.First
+  nameWithType: GetCharityDonationsArgs.First
 - uid: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs
   name: GetExtensionAnalyticsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.html
@@ -8601,6 +8479,205 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Scopes
   nameWithType: GetGameAnalyticsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs
+  name: GetRedemptionsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs
+  nameWithType: GetRedemptionsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
+  nameWithType: GetRedemptionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
+  nameWithType: GetRedemptionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
+  nameWithType: GetRedemptionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
+  nameWithType: GetRedemptionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap()
+  nameWithType: GetRedemptionsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.CreateQueryMap
+  nameWithType: GetRedemptionsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
+  nameWithType: GetRedemptionsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
+  nameWithType: GetRedemptionsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+  name: Ids
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Ids
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+  nameWithType: GetRedemptionsArgs.Ids
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids*
+  name: Ids
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Ids_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+  nameWithType: GetRedemptionsArgs.Ids
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
+  name: RewardId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_RewardId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
+  nameWithType: GetRedemptionsArgs.RewardId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId*
+  name: RewardId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_RewardId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
+  nameWithType: GetRedemptionsArgs.RewardId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort
+  name: Sort
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Sort
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort
+  nameWithType: GetRedemptionsArgs.Sort
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort*
+  name: Sort
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Sort_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Sort
+  nameWithType: GetRedemptionsArgs.Sort
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
+  nameWithType: GetRedemptionsArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
+  nameWithType: GetRedemptionsArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs
+  name: GetRewardArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetRewardArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs
+  nameWithType: GetRewardArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor
+  name: GetRewardArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs()
+  nameWithType: GetRewardArgs.GetRewardArgs()
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor(System.String,System.Nullable{System.Boolean},System.String[])
+  name: GetRewardArgs(String, Nullable<Boolean>, String[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs__ctor_System_String_System_Nullable_System_Boolean__System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor(System.String,System.Nullable{System.Boolean},System.String[])
+  name.vb: GetRewardArgs(String, Nullable(Of Boolean), String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs(System.String, System.Nullable<System.Boolean>, System.String[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs(System.String, System.Nullable(Of System.Boolean), System.String())
+  nameWithType: GetRewardArgs.GetRewardArgs(String, Nullable<Boolean>, String[])
+  nameWithType.vb: GetRewardArgs.GetRewardArgs(String, Nullable(Of Boolean), String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor(System.String,System.String[])
+  name: GetRewardArgs(String, String[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs__ctor_System_String_System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor(System.String,System.String[])
+  name.vb: GetRewardArgs(String, String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs(System.String, System.String[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs(System.String, System.String())
+  nameWithType: GetRewardArgs.GetRewardArgs(String, String[])
+  nameWithType.vb: GetRewardArgs.GetRewardArgs(String, String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor*
+  name: GetRewardArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.#ctor
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.GetRewardArgs
+  nameWithType: GetRewardArgs.GetRewardArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId
+  nameWithType: GetRewardArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.BroadcasterId
+  nameWithType: GetRewardArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap()
+  nameWithType: GetRewardArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CreateQueryMap
+  nameWithType: GetRewardArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds
+  name: CustomRewardIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_CustomRewardIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds
+  nameWithType: GetRewardArgs.CustomRewardIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds*
+  name: CustomRewardIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_CustomRewardIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.CustomRewardIds
+  nameWithType: GetRewardArgs.CustomRewardIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards
+  name: OnlyManagebleRewards
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_OnlyManagebleRewards
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards
+  nameWithType: GetRewardArgs.OnlyManagebleRewards
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards*
+  name: OnlyManagebleRewards
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_OnlyManagebleRewards_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.OnlyManagebleRewards
+  nameWithType: GetRewardArgs.OnlyManagebleRewards
 - uid: AuxLabs.SimpleTwitch.Rest.GetUsersArgs
   name: GetUsersArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetUsersArgs.html
@@ -8782,12 +8859,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateClipAsync
   nameWithType: ITwitchApi.CreateClipAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  name: CreateRewardsAsync(String, PostCustomRewardArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String, AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  nameWithType: ITwitchApi.CreateRewardsAsync(String, PostCustomRewardArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  name: CreateRewardsAsync(String, PostRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync(System.String, AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  nameWithType: ITwitchApi.CreateRewardsAsync(String, PostRewardArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.CreateRewardsAsync*
   name: CreateRewardsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_CreateRewardsAsync_
@@ -9120,12 +9197,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelsAsync
   nameWithType: ITwitchApi.GetChannelsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.Object)
-  name: GetCharityCampaignAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityCampaignAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.Object)
-  nameWithType: ITwitchApi.GetCharityCampaignAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.String)
+  name: GetCharityCampaignAsync(String)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityCampaignAsync_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.String)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync(System.String)
+  nameWithType: ITwitchApi.GetCharityCampaignAsync(String)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync*
   name: GetCharityCampaignAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityCampaignAsync_
@@ -9133,19 +9210,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignAsync
   nameWithType: ITwitchApi.GetCharityCampaignAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync(System.Object)
-  name: GetCharityCampaignDonationsAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityCampaignDonationsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync(System.Object)
-  nameWithType: ITwitchApi.GetCharityCampaignDonationsAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync*
-  name: GetCharityCampaignDonationsAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityCampaignDonationsAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  name: GetCharityDonationsAsync(GetCharityDonationsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityDonationsAsync_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  nameWithType: ITwitchApi.GetCharityDonationsAsync(GetCharityDonationsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync*
+  name: GetCharityDonationsAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCharityDonationsAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityCampaignDonationsAsync
-  nameWithType: ITwitchApi.GetCharityCampaignDonationsAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCharityDonationsAsync
+  nameWithType: ITwitchApi.GetCharityDonationsAsync
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChatSettingsAsync(System.Object)
   name: GetChatSettingsAsync(Object)
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetChatSettingsAsync_System_Object_
@@ -9354,19 +9431,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionSecretsAsync
   nameWithType: ITwitchApi.GetExtensionSecretsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  name: GetExtensionTransactionAsync(GetExtensionTransactionsArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetExtensionTransactionAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  nameWithType: ITwitchApi.GetExtensionTransactionAsync(GetExtensionTransactionsArgs)
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync*
-  name: GetExtensionTransactionAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetExtensionTransactionAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  name: GetExtensionTransactionsAsync(GetExtensionTransactionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetExtensionTransactionsAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  nameWithType: ITwitchApi.GetExtensionTransactionsAsync(GetExtensionTransactionsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync*
+  name: GetExtensionTransactionsAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetExtensionTransactionsAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionAsync
-  nameWithType: ITwitchApi.GetExtensionTransactionAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetExtensionTransactionsAsync
+  nameWithType: ITwitchApi.GetExtensionTransactionsAsync
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetFollowedStreamsAsync(System.Object)
   name: GetFollowedStreamsAsync(Object)
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetFollowedStreamsAsync_System_Object_
@@ -9549,12 +9626,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetReleasedExtensionsAsync
   nameWithType: ITwitchApi.GetReleasedExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(System.Object)
-  name: GetRewardRedemptionAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardRedemptionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(System.Object)
-  nameWithType: ITwitchApi.GetRewardRedemptionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  name: GetRewardRedemptionAsync(GetRedemptionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  nameWithType: ITwitchApi.GetRewardRedemptionAsync(GetRedemptionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync*
   name: GetRewardRedemptionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardRedemptionAsync_
@@ -9562,12 +9639,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardRedemptionAsync
   nameWithType: ITwitchApi.GetRewardRedemptionAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  name: GetRewardsAsync(GetCustomRewardsArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  nameWithType: ITwitchApi.GetRewardsAsync(GetCustomRewardsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  name: GetRewardsAsync(GetRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  nameWithType: ITwitchApi.GetRewardsAsync(GetRewardArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetRewardsAsync*
   name: GetRewardsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetRewardsAsync_
@@ -9886,12 +9963,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyExtensionsAsync
   nameWithType: ITwitchApi.ModifyExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.Object)
-  name: ModifyRewardAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.Object)
-  nameWithType: ITwitchApi.ModifyRewardAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.String,System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  name: ModifyRewardAsync(String, String, PostRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardAsync_System_String_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.String,System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync(System.String, System.String, AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  nameWithType: ITwitchApi.ModifyRewardAsync(String, String, PostRewardArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync*
   name: ModifyRewardAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardAsync_
@@ -9899,12 +9976,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardAsync
   nameWithType: ITwitchApi.ModifyRewardAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(System.Object)
-  name: ModifyRewardRedemptionAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardRedemptionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(System.Object)
-  nameWithType: ITwitchApi.ModifyRewardRedemptionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  name: ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus, AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  nameWithType: ITwitchApi.ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.ModifyRewardRedemptionAsync*
   name: ModifyRewardRedemptionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_ModifyRewardRedemptionAsync_
@@ -10385,6 +10462,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Title
   nameWithType: ModifyChannelArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs
+  name: ModifyRedemptionsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs
+  nameWithType: ModifyRedemptionsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId
+  nameWithType: ModifyRedemptionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.BroadcasterId
+  nameWithType: ModifyRedemptionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap()
+  nameWithType: ModifyRedemptionsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.CreateQueryMap
+  nameWithType: ModifyRedemptionsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids
+  name: Ids
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_Ids
+  commentId: P:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids
+  nameWithType: ModifyRedemptionsArgs.Ids
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids*
+  name: Ids
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_Ids_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Ids
+  nameWithType: ModifyRedemptionsArgs.Ids
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId
+  name: RewardId
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_RewardId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId
+  nameWithType: ModifyRedemptionsArgs.RewardId
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId*
+  name: RewardId
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_RewardId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.RewardId
+  nameWithType: ModifyRedemptionsArgs.RewardId
 - uid: AuxLabs.SimpleTwitch.Rest.Pagination
   name: Pagination
   href: api/AuxLabs.SimpleTwitch.Rest.Pagination.html
@@ -10539,181 +10674,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Scopes
   nameWithType: PostChannelCommercialArgs.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs
-  name: PostCustomRewardArgs
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs
-  nameWithType: PostCustomRewardArgs
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor
-  name: BackgroundColor
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_BackgroundColor
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor
-  nameWithType: PostCustomRewardArgs.BackgroundColor
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor*
-  name: BackgroundColor
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_BackgroundColor_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.BackgroundColor
-  nameWithType: PostCustomRewardArgs.BackgroundColor
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Cost
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost
-  nameWithType: PostCustomRewardArgs.Cost
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost*
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Cost_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Cost
-  nameWithType: PostCustomRewardArgs.Cost
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds
-  name: GlobalCooldownSeconds
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_GlobalCooldownSeconds
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds
-  nameWithType: PostCustomRewardArgs.GlobalCooldownSeconds
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds*
-  name: GlobalCooldownSeconds
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_GlobalCooldownSeconds_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.GlobalCooldownSeconds
-  nameWithType: PostCustomRewardArgs.GlobalCooldownSeconds
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled
-  nameWithType: PostCustomRewardArgs.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled*
-  name: IsEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsEnabled
-  nameWithType: PostCustomRewardArgs.IsEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled
-  name: IsGlobalCooldownEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsGlobalCooldownEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled
-  nameWithType: PostCustomRewardArgs.IsGlobalCooldownEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled*
-  name: IsGlobalCooldownEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsGlobalCooldownEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsGlobalCooldownEnabled
-  nameWithType: PostCustomRewardArgs.IsGlobalCooldownEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled
-  name: IsMaxPerStreamEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsMaxPerStreamEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled
-  nameWithType: PostCustomRewardArgs.IsMaxPerStreamEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled*
-  name: IsMaxPerStreamEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsMaxPerStreamEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerStreamEnabled
-  nameWithType: PostCustomRewardArgs.IsMaxPerStreamEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled
-  name: IsMaxPerUserEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsMaxPerUserEnabled
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled
-  nameWithType: PostCustomRewardArgs.IsMaxPerUserEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled*
-  name: IsMaxPerUserEnabled
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsMaxPerUserEnabled_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsMaxPerUserEnabled
-  nameWithType: PostCustomRewardArgs.IsMaxPerUserEnabled
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired
-  name: IsUserInputRequired
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsUserInputRequired
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired
-  nameWithType: PostCustomRewardArgs.IsUserInputRequired
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired*
-  name: IsUserInputRequired
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_IsUserInputRequired_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.IsUserInputRequired
-  nameWithType: PostCustomRewardArgs.IsUserInputRequired
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream
-  name: MaxPerStream
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_MaxPerStream
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream
-  nameWithType: PostCustomRewardArgs.MaxPerStream
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream*
-  name: MaxPerStream
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_MaxPerStream_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerStream
-  nameWithType: PostCustomRewardArgs.MaxPerStream
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser
-  name: MaxPerUser
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_MaxPerUser
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser
-  nameWithType: PostCustomRewardArgs.MaxPerUser
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser*
-  name: MaxPerUser
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_MaxPerUser_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.MaxPerUser
-  nameWithType: PostCustomRewardArgs.MaxPerUser
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt
-  name: Prompt
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Prompt
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt
-  nameWithType: PostCustomRewardArgs.Prompt
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt*
-  name: Prompt
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Prompt_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Prompt
-  nameWithType: PostCustomRewardArgs.Prompt
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue
-  name: ShouldSkipRequestQueue
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_ShouldSkipRequestQueue
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue
-  nameWithType: PostCustomRewardArgs.ShouldSkipRequestQueue
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue*
-  name: ShouldSkipRequestQueue
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_ShouldSkipRequestQueue_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.ShouldSkipRequestQueue
-  nameWithType: PostCustomRewardArgs.ShouldSkipRequestQueue
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title
-  name: Title
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Title
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title
-  nameWithType: PostCustomRewardArgs.Title
-- uid: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title*
-  name: Title
-  href: api/AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_Title_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.Title
-  nameWithType: PostCustomRewardArgs.Title
 - uid: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs
   name: PostRefreshTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.html
@@ -10804,6 +10764,181 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Token
   nameWithType: PostRevokeTokenArgs.Token
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs
+  name: PostRewardArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PostRewardArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs
+  nameWithType: PostRewardArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor
+  name: BackgroundColor
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_BackgroundColor
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor
+  nameWithType: PostRewardArgs.BackgroundColor
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor*
+  name: BackgroundColor
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_BackgroundColor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.BackgroundColor
+  nameWithType: PostRewardArgs.BackgroundColor
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost
+  name: Cost
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Cost
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost
+  nameWithType: PostRewardArgs.Cost
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost*
+  name: Cost
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Cost_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Cost
+  nameWithType: PostRewardArgs.Cost
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds
+  name: GlobalCooldownSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_GlobalCooldownSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds
+  nameWithType: PostRewardArgs.GlobalCooldownSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds*
+  name: GlobalCooldownSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_GlobalCooldownSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.GlobalCooldownSeconds
+  nameWithType: PostRewardArgs.GlobalCooldownSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled
+  nameWithType: PostRewardArgs.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled*
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsEnabled
+  nameWithType: PostRewardArgs.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled
+  name: IsGlobalCooldownEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsGlobalCooldownEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled
+  nameWithType: PostRewardArgs.IsGlobalCooldownEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled*
+  name: IsGlobalCooldownEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsGlobalCooldownEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsGlobalCooldownEnabled
+  nameWithType: PostRewardArgs.IsGlobalCooldownEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled
+  name: IsMaxPerStreamEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsMaxPerStreamEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled
+  nameWithType: PostRewardArgs.IsMaxPerStreamEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled*
+  name: IsMaxPerStreamEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsMaxPerStreamEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerStreamEnabled
+  nameWithType: PostRewardArgs.IsMaxPerStreamEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled
+  name: IsMaxPerUserEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsMaxPerUserEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled
+  nameWithType: PostRewardArgs.IsMaxPerUserEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled*
+  name: IsMaxPerUserEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsMaxPerUserEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsMaxPerUserEnabled
+  nameWithType: PostRewardArgs.IsMaxPerUserEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired
+  name: IsUserInputRequired
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsUserInputRequired
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired
+  nameWithType: PostRewardArgs.IsUserInputRequired
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired*
+  name: IsUserInputRequired
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_IsUserInputRequired_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.IsUserInputRequired
+  nameWithType: PostRewardArgs.IsUserInputRequired
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream
+  name: MaxPerStream
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_MaxPerStream
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream
+  nameWithType: PostRewardArgs.MaxPerStream
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream*
+  name: MaxPerStream
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_MaxPerStream_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerStream
+  nameWithType: PostRewardArgs.MaxPerStream
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser
+  name: MaxPerUser
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_MaxPerUser
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser
+  nameWithType: PostRewardArgs.MaxPerUser
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser*
+  name: MaxPerUser
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_MaxPerUser_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.MaxPerUser
+  nameWithType: PostRewardArgs.MaxPerUser
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt
+  name: Prompt
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Prompt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt
+  nameWithType: PostRewardArgs.Prompt
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt*
+  name: Prompt
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Prompt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Prompt
+  nameWithType: PostRewardArgs.Prompt
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue
+  name: ShouldSkipRequestQueue
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_ShouldSkipRequestQueue
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue
+  nameWithType: PostRewardArgs.ShouldSkipRequestQueue
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue*
+  name: ShouldSkipRequestQueue
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_ShouldSkipRequestQueue_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.ShouldSkipRequestQueue
+  nameWithType: PostRewardArgs.ShouldSkipRequestQueue
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
+  nameWithType: PostRewardArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
+  nameWithType: PostRewardArgs.Title
 - uid: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs
   name: PostUserAccessTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.html
@@ -11048,6 +11183,203 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.RateLimitInfo.Reset
   nameWithType: RateLimitInfo.Reset
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption
+  name: Redemption
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Redemption
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption
+  nameWithType: Redemption
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId
+  nameWithType: Redemption.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterId
+  nameWithType: Redemption.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterLogin
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin
+  nameWithType: Redemption.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin*
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterLogin_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterLogin
+  nameWithType: Redemption.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName
+  nameWithType: Redemption.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName*
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_BroadcasterName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.BroadcasterName
+  nameWithType: Redemption.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Id
+  nameWithType: Redemption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Id
+  nameWithType: Redemption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt
+  name: RedeemedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_RedeemedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt
+  nameWithType: Redemption.RedeemedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt*
+  name: RedeemedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_RedeemedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.RedeemedAt
+  nameWithType: Redemption.RedeemedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Reward
+  name: Reward
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Reward
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.Reward
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Reward
+  nameWithType: Redemption.Reward
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Reward*
+  name: Reward
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Reward_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.Reward
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Reward
+  nameWithType: Redemption.Reward
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Status
+  nameWithType: Redemption.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.Status
+  nameWithType: Redemption.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserId
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.UserId
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserId
+  nameWithType: Redemption.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserId*
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.UserId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserId
+  nameWithType: Redemption.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserInput
+  name: UserInput
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserInput
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.UserInput
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserInput
+  nameWithType: Redemption.UserInput
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserInput*
+  name: UserInput
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserInput_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.UserInput
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserInput
+  nameWithType: Redemption.UserInput
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin
+  name: UserLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserLogin
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin
+  nameWithType: Redemption.UserLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin*
+  name: UserLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserLogin_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserLogin
+  nameWithType: Redemption.UserLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserName
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Redemption.UserName
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserName
+  nameWithType: Redemption.UserName
+- uid: AuxLabs.SimpleTwitch.Rest.Redemption.UserName*
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.Redemption.html#AuxLabs_SimpleTwitch_Rest_Redemption_UserName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Redemption.UserName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Redemption.UserName
+  nameWithType: Redemption.UserName
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionSort
+  name: RedemptionSort
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionSort.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.RedemptionSort
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionSort
+  nameWithType: RedemptionSort
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionSort.Newest
+  name: Newest
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionSort.html#AuxLabs_SimpleTwitch_Rest_RedemptionSort_Newest
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionSort.Newest
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionSort.Newest
+  nameWithType: RedemptionSort.Newest
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionSort.Oldest
+  name: Oldest
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionSort.html#AuxLabs_SimpleTwitch_Rest_RedemptionSort_Oldest
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionSort.Oldest
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionSort.Oldest
+  nameWithType: RedemptionSort.Oldest
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionStatus
+  name: RedemptionStatus
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.RedemptionStatus
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionStatus
+  nameWithType: RedemptionStatus
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Cancelled
+  name: Cancelled
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html#AuxLabs_SimpleTwitch_Rest_RedemptionStatus_Cancelled
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Cancelled
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Cancelled
+  nameWithType: RedemptionStatus.Cancelled
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Fulfilled
+  name: Fulfilled
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html#AuxLabs_SimpleTwitch_Rest_RedemptionStatus_Fulfilled
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Fulfilled
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Fulfilled
+  nameWithType: RedemptionStatus.Fulfilled
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unfulfilled
+  name: Unfulfilled
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html#AuxLabs_SimpleTwitch_Rest_RedemptionStatus_Unfulfilled
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unfulfilled
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unfulfilled
+  nameWithType: RedemptionStatus.Unfulfilled
+- uid: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unknown
+  name: Unknown
+  href: api/AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html#AuxLabs_SimpleTwitch_Rest_RedemptionStatus_Unknown
+  commentId: F:AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unknown
+  fullName: AuxLabs.SimpleTwitch.Rest.RedemptionStatus.Unknown
+  nameWithType: RedemptionStatus.Unknown
 - uid: AuxLabs.SimpleTwitch.Rest.RestError
   name: RestError
   href: api/AuxLabs.SimpleTwitch.Rest.RestError.html
@@ -11093,6 +11425,265 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.RestError.Message
   nameWithType: RestError.Message
+- uid: AuxLabs.SimpleTwitch.Rest.Reward
+  name: Reward
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Reward
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward
+  nameWithType: Reward
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor
+  name: BackgroundColor
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BackgroundColor
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor
+  nameWithType: Reward.BackgroundColor
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor*
+  name: BackgroundColor
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BackgroundColor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BackgroundColor
+  nameWithType: Reward.BackgroundColor
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId
+  nameWithType: Reward.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterId
+  nameWithType: Reward.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterLogin
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin
+  nameWithType: Reward.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin*
+  name: BroadcasterLogin
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterLogin_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterLogin
+  nameWithType: Reward.BroadcasterLogin
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName
+  nameWithType: Reward.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName*
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_BroadcasterName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.BroadcasterName
+  nameWithType: Reward.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt
+  name: CooldownExpiresAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_CooldownExpiresAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt
+  nameWithType: Reward.CooldownExpiresAt
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt*
+  name: CooldownExpiresAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_CooldownExpiresAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.CooldownExpiresAt
+  nameWithType: Reward.CooldownExpiresAt
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages
+  name: DefaultImages
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_DefaultImages
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages
+  nameWithType: Reward.DefaultImages
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages*
+  name: DefaultImages
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_DefaultImages_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.DefaultImages
+  nameWithType: Reward.DefaultImages
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting
+  name: GlobalCooldownSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_GlobalCooldownSetting
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting
+  nameWithType: Reward.GlobalCooldownSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting*
+  name: GlobalCooldownSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_GlobalCooldownSetting_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.GlobalCooldownSetting
+  nameWithType: Reward.GlobalCooldownSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.Images
+  name: Images
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_Images
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.Images
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.Images
+  nameWithType: Reward.Images
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.Images*
+  name: Images
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_Images_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.Images
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.Images
+  nameWithType: Reward.Images
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled
+  nameWithType: Reward.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled*
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsEnabled
+  nameWithType: Reward.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsInStock
+  name: IsInStock
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsInStock
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.IsInStock
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsInStock
+  nameWithType: Reward.IsInStock
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsInStock*
+  name: IsInStock
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsInStock_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.IsInStock
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsInStock
+  nameWithType: Reward.IsInStock
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsPaused
+  name: IsPaused
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsPaused
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.IsPaused
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsPaused
+  nameWithType: Reward.IsPaused
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsPaused*
+  name: IsPaused
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsPaused_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.IsPaused
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsPaused
+  nameWithType: Reward.IsPaused
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired
+  name: IsUserInputRequired
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsUserInputRequired
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired
+  nameWithType: Reward.IsUserInputRequired
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired*
+  name: IsUserInputRequired
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_IsUserInputRequired_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.IsUserInputRequired
+  nameWithType: Reward.IsUserInputRequired
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting
+  name: MaxPerStreamSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_MaxPerStreamSetting
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting
+  nameWithType: Reward.MaxPerStreamSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting*
+  name: MaxPerStreamSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_MaxPerStreamSetting_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerStreamSetting
+  nameWithType: Reward.MaxPerStreamSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting
+  name: MaxPerUserSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_MaxPerUserSetting
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting
+  nameWithType: Reward.MaxPerUserSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting*
+  name: MaxPerUserSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_MaxPerUserSetting_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.MaxPerUserSetting
+  nameWithType: Reward.MaxPerUserSetting
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue
+  name: ShouldSkipRequestQueue
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_ShouldSkipRequestQueue
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue
+  nameWithType: Reward.ShouldSkipRequestQueue
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue*
+  name: ShouldSkipRequestQueue
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_ShouldSkipRequestQueue_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.ShouldSkipRequestQueue
+  nameWithType: Reward.ShouldSkipRequestQueue
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions
+  name: TotalRedemptions
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_TotalRedemptions
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions
+  nameWithType: Reward.TotalRedemptions
+- uid: AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions*
+  name: TotalRedemptions
+  href: api/AuxLabs.SimpleTwitch.Rest.Reward.html#AuxLabs_SimpleTwitch_Rest_Reward_TotalRedemptions_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Reward.TotalRedemptions
+  nameWithType: Reward.TotalRedemptions
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting
+  name: RewardSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.RewardSetting
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting
+  nameWithType: RewardSetting
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.#ctor(System.Boolean,System.UInt32)
+  name: RewardSetting(Boolean, UInt32)
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting__ctor_System_Boolean_System_UInt32_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.RewardSetting.#ctor(System.Boolean,System.UInt32)
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.RewardSetting(System.Boolean, System.UInt32)
+  nameWithType: RewardSetting.RewardSetting(Boolean, UInt32)
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.#ctor*
+  name: RewardSetting
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.RewardSetting.#ctor
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.RewardSetting
+  nameWithType: RewardSetting.RewardSetting
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting_IsEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled
+  nameWithType: RewardSetting.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled*
+  name: IsEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting_IsEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.IsEnabled
+  nameWithType: RewardSetting.IsEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.Value
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting_Value
+  commentId: P:AuxLabs.SimpleTwitch.Rest.RewardSetting.Value
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.Value
+  nameWithType: RewardSetting.Value
+- uid: AuxLabs.SimpleTwitch.Rest.RewardSetting.Value*
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html#AuxLabs_SimpleTwitch_Rest_RewardSetting_Value_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.RewardSetting.Value
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardSetting.Value
+  nameWithType: RewardSetting.Value
 - uid: AuxLabs.SimpleTwitch.Rest.RFCDateTimeConverter
   name: RFCDateTimeConverter
   href: api/AuxLabs.SimpleTwitch.Rest.RFCDateTimeConverter.html
@@ -11128,6 +11719,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.RFCDateTimeConverter.Write
   nameWithType: RFCDateTimeConverter.Write
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward
+  name: SimpleReward
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.SimpleReward
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward
+  nameWithType: SimpleReward
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost
+  name: Cost
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Cost
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost
+  nameWithType: SimpleReward.Cost
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost*
+  name: Cost
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Cost_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Cost
+  nameWithType: SimpleReward.Cost
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleReward.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Id
+  nameWithType: SimpleReward.Id
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleReward.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Id
+  nameWithType: SimpleReward.Id
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt
+  name: Prompt
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Prompt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt
+  nameWithType: SimpleReward.Prompt
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt*
+  name: Prompt
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Prompt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Prompt
+  nameWithType: SimpleReward.Prompt
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleReward.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Title
+  nameWithType: SimpleReward.Title
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleReward.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleReward.html#AuxLabs_SimpleTwitch_Rest_SimpleReward_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleReward.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleReward.Title
+  nameWithType: SimpleReward.Title
 - uid: AuxLabs.SimpleTwitch.Rest.TokenType
   name: TokenType
   href: api/AuxLabs.SimpleTwitch.Rest.TokenType.html
@@ -11322,6 +11971,51 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchIdentityApiClient.PostRevokeTokenAsync
   nameWithType: TwitchIdentityApiClient.PostRevokeTokenAsync
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage
+  name: TwitchImage
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.TwitchImage
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage
+  nameWithType: TwitchImage
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl
+  name: LargeUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_LargeUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl
+  nameWithType: TwitchImage.LargeUrl
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl*
+  name: LargeUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_LargeUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.LargeUrl
+  nameWithType: TwitchImage.LargeUrl
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl
+  name: MediumUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_MediumUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl
+  nameWithType: TwitchImage.MediumUrl
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl*
+  name: MediumUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_MediumUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.MediumUrl
+  nameWithType: TwitchImage.MediumUrl
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl
+  name: SmallUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_SmallUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl
+  nameWithType: TwitchImage.SmallUrl
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl*
+  name: SmallUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchImage.html#AuxLabs_SimpleTwitch_Rest_TwitchImage_SmallUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchImage.SmallUrl
+  nameWithType: TwitchImage.SmallUrl
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchResponse`1
   name: TwitchResponse<T>
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html
@@ -11463,21 +12157,21 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateClipAsync
   nameWithType: TwitchRestApiClient.CreateClipAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  name: CreateRewardsAsync(String, PostCustomRewardArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)
-  nameWithType: TwitchRestApiClient.CreateRewardsAsync(String, PostCustomRewardArgs)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs})
-  name: CreateRewardsAsync(String, Action<PostCustomRewardArgs>)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs__
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs})
-  name.vb: CreateRewardsAsync(String, Action(Of PostCustomRewardArgs))
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, System.Action<AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs>)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, System.Action(Of AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs))
-  nameWithType: TwitchRestApiClient.CreateRewardsAsync(String, Action<PostCustomRewardArgs>)
-  nameWithType.vb: TwitchRestApiClient.CreateRewardsAsync(String, Action(Of PostCustomRewardArgs))
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  name: CreateRewardsAsync(String, PostRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  nameWithType: TwitchRestApiClient.CreateRewardsAsync(String, PostRewardArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})
+  name: CreateRewardsAsync(String, Action<PostRewardArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})
+  name.vb: CreateRewardsAsync(String, Action(Of PostRewardArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, System.Action<AuxLabs.SimpleTwitch.Rest.PostRewardArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String, System.Action(Of AuxLabs.SimpleTwitch.Rest.PostRewardArgs))
+  nameWithType: TwitchRestApiClient.CreateRewardsAsync(String, Action<PostRewardArgs>)
+  nameWithType.vb: TwitchRestApiClient.CreateRewardsAsync(String, Action(Of PostRewardArgs))
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync*
   name: CreateRewardsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_
@@ -11856,12 +12550,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync
   nameWithType: TwitchRestApiClient.GetChannelsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.Object)
-  name: GetCharityCampaignAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.Object)
-  nameWithType: TwitchRestApiClient.GetCharityCampaignAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.String)
+  name: GetCharityCampaignAsync(String)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.String)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.String)
+  nameWithType: TwitchRestApiClient.GetCharityCampaignAsync(String)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync*
   name: GetCharityCampaignAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_
@@ -11869,19 +12563,28 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync
   nameWithType: TwitchRestApiClient.GetCharityCampaignAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync(System.Object)
-  name: GetCharityCampaignDonationsAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignDonationsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync(System.Object)
-  nameWithType: TwitchRestApiClient.GetCharityCampaignDonationsAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync*
-  name: GetCharityCampaignDonationsAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignDonationsAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  name: GetCharityDonationsAsync(GetCharityDonationsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)
+  nameWithType: TwitchRestApiClient.GetCharityDonationsAsync(GetCharityDonationsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs})
+  name: GetCharityDonationsAsync(Action<GetCharityDonationsArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs})
+  name.vb: GetCharityDonationsAsync(Action(Of GetCharityDonationsArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs))
+  nameWithType: TwitchRestApiClient.GetCharityDonationsAsync(Action<GetCharityDonationsArgs>)
+  nameWithType.vb: TwitchRestApiClient.GetCharityDonationsAsync(Action(Of GetCharityDonationsArgs))
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync*
+  name: GetCharityDonationsAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync
-  nameWithType: TwitchRestApiClient.GetCharityCampaignDonationsAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync
+  nameWithType: TwitchRestApiClient.GetCharityDonationsAsync
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChatSettingsAsync(System.Object)
   name: GetChatSettingsAsync(Object)
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChatSettingsAsync_System_Object_
@@ -12099,28 +12802,28 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionSecretsAsync
   nameWithType: TwitchRestApiClient.GetExtensionSecretsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  name: GetExtensionTransactionAsync(GetExtensionTransactionsArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
-  nameWithType: TwitchRestApiClient.GetExtensionTransactionAsync(GetExtensionTransactionsArgs)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})
-  name: GetExtensionTransactionAsync(Action<GetExtensionTransactionsArgs>)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})
-  name.vb: GetExtensionTransactionAsync(Action(Of GetExtensionTransactionsArgs))
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs>)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs))
-  nameWithType: TwitchRestApiClient.GetExtensionTransactionAsync(Action<GetExtensionTransactionsArgs>)
-  nameWithType.vb: TwitchRestApiClient.GetExtensionTransactionAsync(Action(Of GetExtensionTransactionsArgs))
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync*
-  name: GetExtensionTransactionAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  name: GetExtensionTransactionsAsync(GetExtensionTransactionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)
+  nameWithType: TwitchRestApiClient.GetExtensionTransactionsAsync(GetExtensionTransactionsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})
+  name: GetExtensionTransactionsAsync(Action<GetExtensionTransactionsArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})
+  name.vb: GetExtensionTransactionsAsync(Action(Of GetExtensionTransactionsArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs))
+  nameWithType: TwitchRestApiClient.GetExtensionTransactionsAsync(Action<GetExtensionTransactionsArgs>)
+  nameWithType.vb: TwitchRestApiClient.GetExtensionTransactionsAsync(Action(Of GetExtensionTransactionsArgs))
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync*
+  name: GetExtensionTransactionsAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync
-  nameWithType: TwitchRestApiClient.GetExtensionTransactionAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync
+  nameWithType: TwitchRestApiClient.GetExtensionTransactionsAsync
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowedStreamsAsync(System.Object)
   name: GetFollowedStreamsAsync(Object)
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowedStreamsAsync_System_Object_
@@ -12312,12 +13015,21 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetReleasedExtensionsAsync
   nameWithType: TwitchRestApiClient.GetReleasedExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Object)
-  name: GetRewardRedemptionAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Object)
-  nameWithType: TwitchRestApiClient.GetRewardRedemptionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  name: GetRewardRedemptionAsync(GetRedemptionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)
+  nameWithType: TwitchRestApiClient.GetRewardRedemptionAsync(GetRedemptionsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs})
+  name: GetRewardRedemptionAsync(Action<GetRedemptionsArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs})
+  name.vb: GetRewardRedemptionAsync(Action(Of GetRedemptionsArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs))
+  nameWithType: TwitchRestApiClient.GetRewardRedemptionAsync(Action<GetRedemptionsArgs>)
+  nameWithType.vb: TwitchRestApiClient.GetRewardRedemptionAsync(Action(Of GetRedemptionsArgs))
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync*
   name: GetRewardRedemptionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_
@@ -12325,21 +13037,21 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync
   nameWithType: TwitchRestApiClient.GetRewardRedemptionAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  name: GetRewardsAsync(GetCustomRewardsArgs)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)
-  nameWithType: TwitchRestApiClient.GetRewardsAsync(GetCustomRewardsArgs)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs})
-  name: GetRewardsAsync(Action<GetCustomRewardsArgs>)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs})
-  name.vb: GetRewardsAsync(Action(Of GetCustomRewardsArgs))
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs>)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs))
-  nameWithType: TwitchRestApiClient.GetRewardsAsync(Action<GetCustomRewardsArgs>)
-  nameWithType.vb: TwitchRestApiClient.GetRewardsAsync(Action(Of GetCustomRewardsArgs))
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  name: GetRewardsAsync(GetRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)
+  nameWithType: TwitchRestApiClient.GetRewardsAsync(GetRewardArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRewardArgs})
+  name: GetRewardsAsync(Action<GetRewardArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRewardArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRewardArgs})
+  name.vb: GetRewardsAsync(Action(Of GetRewardArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action<AuxLabs.SimpleTwitch.Rest.GetRewardArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action(Of AuxLabs.SimpleTwitch.Rest.GetRewardArgs))
+  nameWithType: TwitchRestApiClient.GetRewardsAsync(Action<GetRewardArgs>)
+  nameWithType.vb: TwitchRestApiClient.GetRewardsAsync(Action(Of GetRewardArgs))
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync*
   name: GetRewardsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_
@@ -12676,12 +13388,21 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionsAsync
   nameWithType: TwitchRestApiClient.ModifyExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.Object)
-  name: ModifyRewardAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.Object)
-  nameWithType: TwitchRestApiClient.ModifyRewardAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  name: ModifyRewardAsync(String, String, PostRewardArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String, System.String, AuxLabs.SimpleTwitch.Rest.PostRewardArgs)
+  nameWithType: TwitchRestApiClient.ModifyRewardAsync(String, String, PostRewardArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})
+  name: ModifyRewardAsync(String, String, Action<PostRewardArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})
+  name.vb: ModifyRewardAsync(String, String, Action(Of PostRewardArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String, System.String, System.Action<AuxLabs.SimpleTwitch.Rest.PostRewardArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String, System.String, System.Action(Of AuxLabs.SimpleTwitch.Rest.PostRewardArgs))
+  nameWithType: TwitchRestApiClient.ModifyRewardAsync(String, String, Action<PostRewardArgs>)
+  nameWithType.vb: TwitchRestApiClient.ModifyRewardAsync(String, String, Action(Of PostRewardArgs))
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync*
   name: ModifyRewardAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_
@@ -12689,12 +13410,21 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync
   nameWithType: TwitchRestApiClient.ModifyRewardAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(System.Object)
-  name: ModifyRewardRedemptionAsync(Object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(System.Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(System.Object)
-  nameWithType: TwitchRestApiClient.ModifyRewardRedemptionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  name: ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus, AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)
+  nameWithType: TwitchRestApiClient.ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,System.Action{AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs})
+  name: ModifyRewardRedemptionAsync(RedemptionStatus, Action<ModifyRedemptionsArgs>)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_System_Action_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,System.Action{AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs})
+  name.vb: ModifyRewardRedemptionAsync(RedemptionStatus, Action(Of ModifyRedemptionsArgs))
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus, System.Action<AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus, System.Action(Of AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs))
+  nameWithType: TwitchRestApiClient.ModifyRewardRedemptionAsync(RedemptionStatus, Action<ModifyRedemptionsArgs>)
+  nameWithType.vb: TwitchRestApiClient.ModifyRewardRedemptionAsync(RedemptionStatus, Action(Of ModifyRedemptionsArgs))
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync*
   name: ModifyRewardRedemptionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_

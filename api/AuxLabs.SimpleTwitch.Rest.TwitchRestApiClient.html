@@ -265,7 +265,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateClipAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateClipAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L159">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L179">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateClipAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateClipAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateClipAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateClipAsync(System.Object)">CreateClipAsync(Object)</h4>
@@ -309,18 +309,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String%2CAuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String%2CAuxLabs.SimpleTwitch.Rest.PostRewardArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L109">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs)">CreateRewardsAsync(String, PostCustomRewardArgs)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)">CreateRewardsAsync(String, PostRewardArgs)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CustomReward&gt;&gt; CreateRewardsAsync(string broadcasterId, PostCustomRewardArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; CreateRewardsAsync(string broadcasterId, PostRewardArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -338,7 +338,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html">PostCustomRewardArgs</a></td>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html">PostRewardArgs</a></td>
         <td><span class="parametername">args</span></td>
         <td></td>
       </tr>
@@ -354,25 +354,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CustomReward.html">CustomReward</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String%2CSystem.Action%7BAuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String%2CSystem.Action%7BAuxLabs.SimpleTwitch.Rest.PostRewardArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L107">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostCustomRewardArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs})">CreateRewardsAsync(String, Action&lt;PostCustomRewardArgs&gt;)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_CreateRewardsAsync_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.CreateRewardsAsync(System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})">CreateRewardsAsync(String, Action&lt;PostRewardArgs&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CustomReward&gt;&gt; CreateRewardsAsync(string broadcasterId, Action&lt;PostCustomRewardArgs&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; CreateRewardsAsync(string broadcasterId, Action&lt;PostRewardArgs&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -390,7 +390,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostCustomRewardArgs.html">PostCustomRewardArgs</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html">PostRewardArgs</a>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td></td>
       </tr>
@@ -406,7 +406,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CustomReward.html">CustomReward</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -416,7 +416,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBanAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBanAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L228">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L248">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBanAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBanAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBanAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBanAsync(System.Object)">DeleteBanAsync(Object)</h4>
@@ -463,7 +463,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L341">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L361">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockAsync(System.Object)">DeleteBlockAsync(Object)</h4>
@@ -510,7 +510,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockedTermAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockedTermAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L234">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L254">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockedTermAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockedTermAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteBlockedTermAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteBlockedTermAsync(System.Object)">DeleteBlockedTermAsync(Object)</h4>
@@ -557,7 +557,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteChatMessagesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteChatMessagesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L236">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L256">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteChatMessagesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteChatMessagesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteChatMessagesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteChatMessagesAsync(System.Object)">DeleteChatMessagesAsync(Object)</h4>
@@ -604,7 +604,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteEventSubSubcrptionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteEventSubSubcrptionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L200">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L220">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteEventSubSubcrptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteEventSubSubcrptionAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteEventSubSubcrptionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteEventSubSubcrptionAsync(System.Object)">DeleteEventSubSubcrptionAsync(Object)</h4>
@@ -651,7 +651,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteModeratorAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteModeratorAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L242">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L262">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteModeratorAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteModeratorAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteModeratorAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteModeratorAsync(System.Object)">DeleteModeratorAsync(Object)</h4>
@@ -698,7 +698,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteRaidAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteRaidAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L271">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L291">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteRaidAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteRaidAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteRaidAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteRaidAsync(System.Object)">DeleteRaidAsync(Object)</h4>
@@ -797,7 +797,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteScheduleSegmentAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteScheduleSegmentAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L285">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L305">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteScheduleSegmentAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteScheduleSegmentAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteScheduleSegmentAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteScheduleSegmentAsync(System.Object)">DeleteScheduleSegmentAsync(Object)</h4>
@@ -844,7 +844,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVideoAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVideoAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L353">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L373">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVideoAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVideoAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVideoAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVideoAsync(System.String)">DeleteVideoAsync(String)</h4>
@@ -891,7 +891,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVipAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVipAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L248">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L268">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVipAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVipAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_DeleteVipAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.DeleteVipAsync(System.Object)">DeleteVipAsync(Object)</h4>
@@ -985,7 +985,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPollAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPollAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L259">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L279">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPollAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPollAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPollAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPollAsync(System.Object)">EndPollAsync(Object)</h4>
@@ -1032,7 +1032,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPredictionaAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPredictionaAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L266">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L286">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPredictionaAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPredictionaAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_EndPredictionaAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.EndPredictionaAsync(System.Object)">EndPredictionaAsync(Object)</h4>
@@ -1079,7 +1079,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetActiveExtensionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetActiveExtensionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L346">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L366">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetActiveExtensionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetActiveExtensionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetActiveExtensionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetActiveExtensionsAsync(System.Object)">GetActiveExtensionsAsync(Object)</h4>
@@ -1126,7 +1126,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodMessagesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodMessagesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L218">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L238">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodMessagesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodMessagesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodMessagesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodMessagesAsync(System.Object)">GetAutomodMessagesAsync(Object)</h4>
@@ -1173,7 +1173,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L220">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L240">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(System.Object)">GetAutomodSettingsAsync(Object)</h4>
@@ -1220,7 +1220,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L224">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L244">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(System.Object)">GetBannedUsersAsync(Object)</h4>
@@ -1361,7 +1361,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlockedTermsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlockedTermsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L230">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L250">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlockedTermsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlockedTermsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlockedTermsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlockedTermsAsync(System.Object)">GetBlockedTermsAsync(Object)</h4>
@@ -1408,7 +1408,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlocksAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlocksAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L337">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L357">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlocksAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlocksAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBlocksAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBlocksAsync(System.Object)">GetBlocksAsync(Object)</h4>
@@ -1455,7 +1455,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCalendarAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCalendarAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L276">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L296">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCalendarAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCalendarAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCalendarAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCalendarAsync(System.Object)">GetCalendarAsync(Object)</h4>
@@ -1502,7 +1502,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelBadgesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelBadgesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L144">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L164">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelBadgesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelBadgesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelBadgesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelBadgesAsync(System.Object)">GetChannelBadgesAsync(Object)</h4>
@@ -1596,7 +1596,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEmotesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEmotesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L138">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L158">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEmotesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEmotesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEmotesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEmotesAsync(System.Object)">GetChannelEmotesAsync(Object)</h4>
@@ -1781,18 +1781,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L131">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L142">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.Object)">GetCharityCampaignAsync(Object)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignAsync(System.String)">GetCharityCampaignAsync(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; GetCharityCampaignAsync(object args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CharityCampaign&gt;&gt; GetCharityCampaignAsync(string broadcasterId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1805,8 +1805,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">args</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">broadcasterId</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1821,25 +1821,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CharityCampaign.html">CharityCampaign</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignDonationsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L133">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L148">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignDonationsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityCampaignDonationsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityCampaignDonationsAsync(System.Object)">GetCharityCampaignDonationsAsync(Object)</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs)">GetCharityDonationsAsync(GetCharityDonationsArgs)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; GetCharityCampaignDonationsAsync(object args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CharityDonation&gt;&gt; GetCharityDonationsAsync(GetCharityDonationsArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1852,7 +1852,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html">GetCharityDonationsArgs</a></td>
         <td><span class="parametername">args</span></td>
         <td></td>
       </tr>
@@ -1868,7 +1868,54 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CharityDonation.html">CharityDonation</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L146">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCharityDonationsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCharityDonationsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs})">GetCharityDonationsAsync(Action&lt;GetCharityDonationsArgs&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CharityDonation&gt;&gt; GetCharityDonationsAsync(Action&lt;GetCharityDonationsArgs&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html">GetCharityDonationsArgs</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CharityDonation.html">CharityDonation</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1878,7 +1925,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChatSettingsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChatSettingsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L148">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L168">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChatSettingsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChatSettingsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChatSettingsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChatSettingsAsync(System.Object)">GetChatSettingsAsync(Object)</h4>
@@ -1925,7 +1972,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChattersAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChattersAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L136">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L156">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChattersAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChattersAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChattersAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChattersAsync(System.Object)">GetChattersAsync(Object)</h4>
@@ -2019,7 +2066,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L161">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L181">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(System.Object)">GetClipsAsync(Object)</h4>
@@ -2066,7 +2113,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCodeStatusAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCodeStatusAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L164">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L184">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCodeStatusAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCodeStatusAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCodeStatusAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCodeStatusAsync(System.Object)">GetCodeStatusAsync(Object)</h4>
@@ -2113,7 +2160,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentPlaylistAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentPlaylistAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L295">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L315">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentPlaylistAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentPlaylistAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentPlaylistAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentPlaylistAsync(System.Object)">GetCurrentPlaylistAsync(Object)</h4>
@@ -2160,7 +2207,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentTrackAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentTrackAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L293">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L313">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentTrackAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentTrackAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCurrentTrackAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCurrentTrackAsync(System.Object)">GetCurrentTrackAsync(Object)</h4>
@@ -2207,7 +2254,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetDropsStatusAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetDropsStatusAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L166">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L186">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetDropsStatusAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetDropsStatusAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetDropsStatusAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetDropsStatusAsync(System.Object)">GetDropsStatusAsync(Object)</h4>
@@ -2254,7 +2301,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEmoteSetsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEmoteSetsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L142">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L162">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEmoteSetsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEmoteSetsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEmoteSetsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEmoteSetsAsync(System.Object)">GetEmoteSetsAsync(Object)</h4>
@@ -2301,7 +2348,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEventSubSubcriptionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEventSubSubcriptionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L202">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L222">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEventSubSubcriptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEventSubSubcriptionAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetEventSubSubcriptionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetEventSubSubcriptionAsync(System.Object)">GetEventSubSubcriptionAsync(Object)</h4>
@@ -2442,7 +2489,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionBitsProductsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionBitsProductsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L193">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L213">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionBitsProductsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionBitsProductsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionBitsProductsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionBitsProductsAsync(System.Object)">GetExtensionBitsProductsAsync(Object)</h4>
@@ -2489,7 +2536,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionConfigurationAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionConfigurationAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L173">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L193">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionConfigurationAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionConfigurationAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionConfigurationAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionConfigurationAsync(System.Object)">GetExtensionConfigurationAsync(Object)</h4>
@@ -2536,7 +2583,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionLiveChannelsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionLiveChannelsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L181">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L201">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionLiveChannelsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionLiveChannelsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionLiveChannelsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionLiveChannelsAsync(System.Object)">GetExtensionLiveChannelsAsync(Object)</h4>
@@ -2583,7 +2630,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L189">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L209">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionsAsync(System.Object)">GetExtensionsAsync(Object)</h4>
@@ -2630,7 +2677,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionSecretsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionSecretsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L183">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L203">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionSecretsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionSecretsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionSecretsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionSecretsAsync(System.Object)">GetExtensionSecretsAsync(Object)</h4>
@@ -2674,18 +2721,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L79">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)">GetExtensionTransactionAsync(GetExtensionTransactionsArgs)</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs)">GetExtensionTransactionsAsync(GetExtensionTransactionsArgs)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;ExtensionTransaction&gt;&gt; GetExtensionTransactionAsync(GetExtensionTransactionsArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;ExtensionTransaction&gt;&gt; GetExtensionTransactionsAsync(GetExtensionTransactionsArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2721,18 +2768,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L77">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})">GetExtensionTransactionAsync(Action&lt;GetExtensionTransactionsArgs&gt;)</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetExtensionTransactionsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetExtensionTransactionsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs})">GetExtensionTransactionsAsync(Action&lt;GetExtensionTransactionsArgs&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;ExtensionTransaction&gt;&gt; GetExtensionTransactionAsync(Action&lt;GetExtensionTransactionsArgs&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;ExtensionTransaction&gt;&gt; GetExtensionTransactionsAsync(Action&lt;GetExtensionTransactionsArgs&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2771,7 +2818,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowedStreamsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowedStreamsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L304">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L324">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowedStreamsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowedStreamsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowedStreamsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowedStreamsAsync(System.Object)">GetFollowedStreamsAsync(Object)</h4>
@@ -2818,7 +2865,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowsAsync_AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowsAsync(AuxLabs.SimpleTwitch.Rest.GetFollowsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L335">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L355">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetFollowsAsync_AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetFollowsAsync(AuxLabs.SimpleTwitch.Rest.GetFollowsArgs)">GetFollowsAsync(GetFollowsArgs)</h4>
@@ -2959,7 +3006,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L207">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L227">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(System.Object)">GetGamesAsync(Object)</h4>
@@ -3006,7 +3053,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalBadgesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalBadgesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L146">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L166">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalBadgesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalBadgesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalBadgesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalBadgesAsync(System.Object)">GetGlobalBadgesAsync(Object)</h4>
@@ -3053,7 +3100,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalEmotesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalEmotesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L140">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L160">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalEmotesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalEmotesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGlobalEmotesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGlobalEmotesAsync(System.Object)">GetGlobalEmotesAsync(Object)</h4>
@@ -3100,7 +3147,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGoalsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGoalsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L210">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L230">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGoalsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGoalsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGoalsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGoalsAsync(System.Object)">GetGoalsAsync(Object)</h4>
@@ -3147,7 +3194,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetHypetrainEventsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetHypetrainEventsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L213">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L233">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetHypetrainEventsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetHypetrainEventsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetHypetrainEventsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetHypetrainEventsAsync(System.Object)">GetHypetrainEventsAsync(Object)</h4>
@@ -3194,7 +3241,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModerationStatusAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModerationStatusAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L216">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L236">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModerationStatusAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModerationStatusAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModerationStatusAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModerationStatusAsync(System.Object)">GetModerationStatusAsync(Object)</h4>
@@ -3241,7 +3288,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModeratorsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModeratorsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L238">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L258">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModeratorsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModeratorsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetModeratorsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetModeratorsAsync(System.Object)">GetModeratorsAsync(Object)</h4>
@@ -3288,7 +3335,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPlaylistsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPlaylistsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L297">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L317">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPlaylistsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPlaylistsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPlaylistsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPlaylistsAsync(System.Object)">GetPlaylistsAsync(Object)</h4>
@@ -3335,7 +3382,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L255">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L275">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(System.Object)">GetPollAsync(Object)</h4>
@@ -3382,7 +3429,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L262">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L282">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(System.Object)">GetPredictionAsync(Object)</h4>
@@ -3429,7 +3476,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetReleasedExtensionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetReleasedExtensionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L191">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L211">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetReleasedExtensionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetReleasedExtensionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetReleasedExtensionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetReleasedExtensionsAsync(System.Object)">GetReleasedExtensionsAsync(Object)</h4>
@@ -3473,18 +3520,65 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L124">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs)">GetRewardRedemptionAsync(GetRedemptionsArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Redemption&gt;&gt; GetRewardRedemptionAsync(GetRedemptionsArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html">GetRedemptionsArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Redemption.html">Redemption</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L122">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Object)">GetRewardRedemptionAsync(Object)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardRedemptionAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardRedemptionAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs})">GetRewardRedemptionAsync(Action&lt;GetRedemptionsArgs&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; GetRewardRedemptionAsync(object args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Redemption&gt;&gt; GetRewardRedemptionAsync(Action&lt;GetRedemptionsArgs&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3497,101 +3591,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">args</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L118">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs)">GetRewardsAsync(GetCustomRewardsArgs)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CustomReward&gt;&gt; GetRewardsAsync(GetCustomRewardsArgs args)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html">GetCustomRewardsArgs</a></td>
-        <td><span class="parametername">args</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CustomReward.html">CustomReward</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L116">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetCustomRewardsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs})">GetRewardsAsync(Action&lt;GetCustomRewardsArgs&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;CustomReward&gt;&gt; GetRewardsAsync(Action&lt;GetCustomRewardsArgs&gt; action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetCustomRewardsArgs.html">GetCustomRewardsArgs</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html">GetRedemptionsArgs</a>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td></td>
       </tr>
@@ -3607,7 +3607,101 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.CustomReward.html">CustomReward</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Redemption.html">Redemption</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetRewardArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L118">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_AuxLabs_SimpleTwitch_Rest_GetRewardArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(AuxLabs.SimpleTwitch.Rest.GetRewardArgs)">GetRewardsAsync(GetRewardArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; GetRewardsAsync(GetRewardArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html">GetRewardArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRewardArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetRewardArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L116">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetRewardsAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetRewardArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetRewardsAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetRewardArgs})">GetRewardsAsync(Action&lt;GetRewardArgs&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; GetRewardsAsync(Action&lt;GetRewardArgs&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html">GetRewardArgs</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -3617,7 +3711,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetScheduleAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetScheduleAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L274">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L294">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetScheduleAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetScheduleAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetScheduleAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetScheduleAsync(System.Object)">GetScheduleAsync(Object)</h4>
@@ -3664,7 +3758,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetShieldModeAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetShieldModeAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L252">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L272">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetShieldModeAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetShieldModeAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetShieldModeAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetShieldModeAsync(System.Object)">GetShieldModeAsync(Object)</h4>
@@ -3711,7 +3805,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L300">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L320">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(System.Object)">GetStreamKeyAsync(Object)</h4>
@@ -3758,7 +3852,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamMarkersAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamMarkersAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L308">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L328">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamMarkersAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamMarkersAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamMarkersAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamMarkersAsync(System.Object)">GetStreamMarkersAsync(Object)</h4>
@@ -3805,7 +3899,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L302">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L322">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamsAsync(System.Object)">GetStreamsAsync(Object)</h4>
@@ -3852,7 +3946,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriberAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriberAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L313">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L333">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriberAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriberAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriberAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriberAsync(System.Object)">GetSubscriberAsync(Object)</h4>
@@ -3899,7 +3993,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriptionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriptionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L311">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L331">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriptionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriptionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetSubscriptionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetSubscriptionsAsync(System.Object)">GetSubscriptionsAsync(Object)</h4>
@@ -3946,7 +4040,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L316">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L336">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync(System.Object)">GetTagsAsync(Object)</h4>
@@ -3993,7 +4087,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L319">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L339">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTagsAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTagsAsync(System.String)">GetTagsAsync(String)</h4>
@@ -4040,7 +4134,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L326">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L346">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync(System.Object)">GetTeamsAsync(Object)</h4>
@@ -4087,7 +4181,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L324">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L344">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTeamsAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync(System.String)">GetTeamsAsync(String)</h4>
@@ -4134,7 +4228,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L205">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L225">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(System.Object)">GetTopGamesAsync(Object)</h4>
@@ -4181,7 +4275,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserChatColorAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserChatColorAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L154">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L174">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserChatColorAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserChatColorAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserChatColorAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserChatColorAsync(System.String)">GetUserChatColorAsync(String)</h4>
@@ -4228,7 +4322,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserExtensionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserExtensionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L344">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L364">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserExtensionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserExtensionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUserExtensionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUserExtensionsAsync(System.Object)">GetUserExtensionsAsync(Object)</h4>
@@ -4275,7 +4369,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_AuxLabs_SimpleTwitch_Rest_GetUsersArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync(AuxLabs.SimpleTwitch.Rest.GetUsersArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L329">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L349">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_AuxLabs_SimpleTwitch_Rest_GetUsersArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync(AuxLabs.SimpleTwitch.Rest.GetUsersArgs)">GetUsersAsync(GetUsersArgs)</h4>
@@ -4322,7 +4416,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetUsersArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync(System.Action%7BAuxLabs.SimpleTwitch.Rest.GetUsersArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L331">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L351">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetUsersAsync_System_Action_AuxLabs_SimpleTwitch_Rest_GetUsersArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetUsersAsync(System.Action{AuxLabs.SimpleTwitch.Rest.GetUsersArgs})">GetUsersAsync(Action&lt;GetUsersArgs&gt;)</h4>
@@ -4369,7 +4463,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVideosAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVideosAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L351">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L371">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVideosAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVideosAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVideosAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVideosAsync(System.Object)">GetVideosAsync(Object)</h4>
@@ -4416,7 +4510,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVipsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVipsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L244">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L264">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVipsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVipsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetVipsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetVipsAsync(System.Object)">GetVipsAsync(Object)</h4>
@@ -4463,7 +4557,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyAutomodSettingsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyAutomodSettingsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L222">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L242">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyAutomodSettingsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyAutomodSettingsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyAutomodSettingsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyAutomodSettingsAsync(System.Object)">ModifyAutomodSettingsAsync(Object)</h4>
@@ -4614,7 +4708,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyChatSettingsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyChatSettingsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L150">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L170">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyChatSettingsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyChatSettingsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyChatSettingsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyChatSettingsAsync(System.Object)">ModifyChatSettingsAsync(Object)</h4>
@@ -4661,7 +4755,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyDropsStatusAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyDropsStatusAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L168">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L188">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyDropsStatusAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyDropsStatusAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyDropsStatusAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyDropsStatusAsync(System.Object)">ModifyDropsStatusAsync(Object)</h4>
@@ -4708,7 +4802,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionBitsProductsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionBitsProductsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L195">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L215">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionBitsProductsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionBitsProductsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionBitsProductsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionBitsProductsAsync(System.Object)">ModifyExtensionBitsProductsAsync(Object)</h4>
@@ -4755,7 +4849,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionConfigurationAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionConfigurationAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L175">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L195">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionConfigurationAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionConfigurationAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionConfigurationAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionConfigurationAsync(System.Object)">ModifyExtensionConfigurationAsync(Object)</h4>
@@ -4802,7 +4896,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionRequiredConfigurationAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionRequiredConfigurationAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L177">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L197">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionRequiredConfigurationAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionRequiredConfigurationAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionRequiredConfigurationAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionRequiredConfigurationAsync(System.Object)">ModifyExtensionRequiredConfigurationAsync(Object)</h4>
@@ -4849,7 +4943,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L348">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L368">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyExtensionsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyExtensionsAsync(System.Object)">ModifyExtensionsAsync(Object)</h4>
@@ -4893,18 +4987,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String%2CSystem.String%2CAuxLabs.SimpleTwitch.Rest.PostRewardArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L124">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L130">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.Object)">ModifyRewardAsync(Object)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_AuxLabs_SimpleTwitch_Rest_PostRewardArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,AuxLabs.SimpleTwitch.Rest.PostRewardArgs)">ModifyRewardAsync(String, String, PostRewardArgs)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; ModifyRewardAsync(object args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; ModifyRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4917,7 +5011,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">broadcasterId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rewardId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html">PostRewardArgs</a></td>
         <td><span class="parametername">args</span></td>
         <td></td>
       </tr>
@@ -4933,25 +5037,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String%2CSystem.String%2CSystem.Action%7BAuxLabs.SimpleTwitch.Rest.PostRewardArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L126">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L128">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(System.Object)">ModifyRewardRedemptionAsync(Object)</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardAsync_System_String_System_String_System_Action_AuxLabs_SimpleTwitch_Rest_PostRewardArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardAsync(System.String,System.String,System.Action{AuxLabs.SimpleTwitch.Rest.PostRewardArgs})">ModifyRewardAsync(String, String, Action&lt;PostRewardArgs&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; ModifyRewardRedemptionAsync(object args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Reward&gt;&gt; ModifyRewardAsync(string broadcasterId, string rewardId, Action&lt;PostRewardArgs&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4964,7 +5068,69 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">broadcasterId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rewardId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html">PostRewardArgs</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Reward.html">Reward</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus%2CAuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L136">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs)">ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Redemption&gt;&gt; ModifyRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html">RedemptionStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html">ModifyRedemptionsArgs</a></td>
         <td><span class="parametername">args</span></td>
         <td></td>
       </tr>
@@ -4980,7 +5146,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Redemption.html">Redemption</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_System_Action_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus%2CSystem.Action%7BAuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L134">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyRewardRedemptionAsync_AuxLabs_SimpleTwitch_Rest_RedemptionStatus_System_Action_AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs__" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyRewardRedemptionAsync(AuxLabs.SimpleTwitch.Rest.RedemptionStatus,System.Action{AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs})">ModifyRewardRedemptionAsync(RedemptionStatus, Action&lt;ModifyRedemptionsArgs&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TwitchResponse&lt;Redemption&gt;&gt; ModifyRewardRedemptionAsync(RedemptionStatus status, Action&lt;ModifyRedemptionsArgs&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.RedemptionStatus.html">RedemptionStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html">ModifyRedemptionsArgs</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html">TwitchResponse</a>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Rest.Redemption.html">Redemption</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -4990,7 +5208,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L279">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L299">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleAsync(System.Object)">ModifyScheduleAsync(Object)</h4>
@@ -5037,7 +5255,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleSegmentAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleSegmentAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L283">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L303">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleSegmentAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleSegmentAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyScheduleSegmentAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyScheduleSegmentAsync(System.Object)">ModifyScheduleSegmentAsync(Object)</h4>
@@ -5084,7 +5302,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyShieldModeAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyShieldModeAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L250">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L270">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyShieldModeAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyShieldModeAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyShieldModeAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyShieldModeAsync(System.Object)">ModifyShieldModeAsync(Object)</h4>
@@ -5131,7 +5349,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyTagsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyTagsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L321">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L341">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyTagsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyTagsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyTagsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyTagsAsync(System.Object)">ModifyTagsAsync(Object)</h4>
@@ -5178,7 +5396,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L333">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L353">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserAsync(System.String)">ModifyUserAsync(String)</h4>
@@ -5225,7 +5443,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserChatColor_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserChatColor(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L156">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L176">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserChatColor_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserChatColor*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_ModifyUserChatColor_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.ModifyUserChatColor(System.Object)">ModifyUserChatColor(Object)</h4>
@@ -5272,7 +5490,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBanAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBanAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L226">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L246">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBanAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBanAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBanAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBanAsync(System.Object)">PostBanAsync(Object)</h4>
@@ -5319,7 +5537,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L339">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L359">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockAsync(System.Object)">PostBlockAsync(Object)</h4>
@@ -5366,7 +5584,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockedTermAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockedTermAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L232">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L252">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockedTermAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockedTermAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBlockedTermAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBlockedTermAsync(System.Object)">PostBlockedTermAsync(Object)</h4>
@@ -5413,7 +5631,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostChatAnnouncementAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostChatAnnouncementAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L152">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L172">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostChatAnnouncementAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostChatAnnouncementAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostChatAnnouncementAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostChatAnnouncementAsync(System.Object)">PostChatAnnouncementAsync(Object)</h4>
@@ -5554,7 +5772,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEventSubSubcriptionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEventSubSubcriptionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L198">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L218">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEventSubSubcriptionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEventSubSubcriptionAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEventSubSubcriptionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEventSubSubcriptionAsync(System.Object)">PostEventSubSubcriptionAsync(Object)</h4>
@@ -5601,7 +5819,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionChatMessageAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionChatMessageAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L187">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L207">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionChatMessageAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionChatMessageAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionChatMessageAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionChatMessageAsync(System.Object)">PostExtensionChatMessageAsync(Object)</h4>
@@ -5648,7 +5866,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionPubsubMessageAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionPubsubMessageAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L179">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L199">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionPubsubMessageAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionPubsubMessageAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionPubsubMessageAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionPubsubMessageAsync(System.Object)">PostExtensionPubsubMessageAsync(Object)</h4>
@@ -5695,7 +5913,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionSecretsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionSecretsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L185">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L205">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionSecretsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionSecretsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostExtensionSecretsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionSecretsAsync(System.Object)">PostExtensionSecretsAsync(Object)</h4>
@@ -5742,7 +5960,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModeratorAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModeratorAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L240">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L260">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModeratorAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModeratorAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModeratorAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModeratorAsync(System.Object)">PostModeratorAsync(Object)</h4>
@@ -5789,7 +6007,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L257">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L277">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(System.Object)">PostPollAsync(Object)</h4>
@@ -5836,7 +6054,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L264">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L284">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(System.Object)">PostPredictionAsync(Object)</h4>
@@ -5883,7 +6101,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostRaidAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostRaidAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L269">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L289">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostRaidAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostRaidAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostRaidAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostRaidAsync(System.Object)">PostRaidAsync(Object)</h4>
@@ -5930,7 +6148,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostScheduleSegmentAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostScheduleSegmentAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L281">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L301">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostScheduleSegmentAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostScheduleSegmentAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostScheduleSegmentAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostScheduleSegmentAsync(System.Object)">PostScheduleSegmentAsync(Object)</h4>
@@ -5977,7 +6195,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostStreamMarkerAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostStreamMarkerAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L306">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L326">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostStreamMarkerAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostStreamMarkerAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostStreamMarkerAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostStreamMarkerAsync(System.Object)">PostStreamMarkerAsync(Object)</h4>
@@ -6024,7 +6242,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostVipAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostVipAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L246">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L266">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostVipAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostVipAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostVipAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostVipAsync(System.Object)">PostVipAsync(Object)</h4>
@@ -6071,7 +6289,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostWhisperAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostWhisperAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L356">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L376">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostWhisperAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostWhisperAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostWhisperAsync_System_String_System_String_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostWhisperAsync(System.String,System.String,System.String)">PostWhisperAsync(String, String, String)</h4>
@@ -6128,7 +6346,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_RedeemCodeAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.RedeemCodeAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L170">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L190">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_RedeemCodeAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.RedeemCodeAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_RedeemCodeAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.RedeemCodeAsync(System.Object)">RedeemCodeAsync(Object)</h4>
@@ -6175,7 +6393,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchCategoriesAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchCategoriesAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L288">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L308">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchCategoriesAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchCategoriesAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchCategoriesAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchCategoriesAsync(System.Object)">SearchCategoriesAsync(Object)</h4>
@@ -6222,7 +6440,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchChannelsAsync_System_Object_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchChannelsAsync(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L290">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/TwitchRestApiClient.cs/#L310">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchChannelsAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchChannelsAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_SearchChannelsAsync_System_Object_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.SearchChannelsAsync(System.Object)">SearchChannelsAsync(Object)</h4>
