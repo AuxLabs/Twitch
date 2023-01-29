@@ -53,7 +53,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 {
                     var expected = payload.Tags.CreateQueryMap();
                     if (expected.Count < tags.Count || !tags.All(x => expected.ContainsKey(x.Key)))
-                        throw new MismatchedTagsException(payload.Tags.GetType(), expected, tags);
+                        throw new MismatchedTagsException(payload.CommandRaw, expected, tags);
                 }
 
                 payload.Tags.LoadQueryMap(tags);

@@ -6,15 +6,15 @@ namespace AuxLabs.SimpleTwitch
 {
     public class MismatchedTagsException : TwitchException
     {
-        public Type ModelType { get; }
+        public string EventName { get; }
         public SortedDictionary<string, string> Expected { get; }
         public SortedDictionary<string, string> Provided { get; }
         public SortedDictionary<string, string> Unique { get; }
 
-        public MismatchedTagsException(Type type, IDictionary<string, string> expected, Dictionary<string, string> provided)
-            : base($"{type.FullName} had a different amount of properties than tags in map") 
+        public MismatchedTagsException(string eventName, IDictionary<string, string> expected, Dictionary<string, string> provided)
+            : base($"{eventName} had a different amount of properties than tags in map") 
         {
-            ModelType = type;
+            EventName = eventName;
             Expected = new SortedDictionary<string, string>(expected);
             Provided = new SortedDictionary<string, string>(provided);
 
