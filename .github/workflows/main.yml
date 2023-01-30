@@ -102,10 +102,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK net6.0
+      - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: net6.0
       - name: Install
         run: dotnet tool install -g docfx
       - name: Build
