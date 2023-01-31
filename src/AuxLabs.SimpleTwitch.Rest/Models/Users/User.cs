@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class User
+    public class User : SimpleUser
     {
         /// <summary>
         /// User’s broadcaster type
@@ -17,24 +17,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// </summary>
         [JsonPropertyName("description")]
         public string Description { get; set; }
-
-        /// <summary>
-        /// User’s display name
-        /// </summary>
-        [JsonPropertyName("display_name")]
-        public string DisplayName { get; set; }
-
-        /// <summary>
-        /// User’s ID
-        /// </summary>
-        [JsonPropertyName("id")]
-        public string Id { get; set; }
-
-        /// <summary>
-        /// User’s login name
-        /// </summary>
-        [JsonPropertyName("login")]
-        public string Login { get; set; }
 
         /// <summary>
         /// URL of the user’s offline image

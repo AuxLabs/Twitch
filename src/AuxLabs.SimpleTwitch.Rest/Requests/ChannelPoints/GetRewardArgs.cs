@@ -26,8 +26,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public override IDictionary<string, string[]> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
-            map["broadcaster_id"] = new[] { BroadcasterId };
+            var map = new Dictionary<string, string[]>
+            {
+                ["broadcaster_id"] = new[] { BroadcasterId }
+            };
+
             if (CustomRewardIds != null)
                 map["id"] = CustomRewardIds.ToArray();
             if (OnlyManagebleRewards != null)

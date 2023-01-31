@@ -23,7 +23,8 @@ namespace AuxLabs.SimpleTwitch.Rest
                 throw new ArgumentException($"Either {nameof(RewardId)} or {nameof(Ids)} must be specified.");
 
             var map = new Dictionary<string, string[]>();
-            map["broadcaster_id"] = new[] { BroadcasterId };
+            if (BroadcasterId != null)
+                map["broadcaster_id"] = new[] { BroadcasterId };
             if (RewardId != null)
                 map["reward_id"] = new[] { RewardId };
             if (Ids != null)

@@ -11,7 +11,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("from_id")]
         public string FromId { get; set; }
 
-        [JsonPropertyName("from_login   ")]
+        [JsonPropertyName("from_login")]
         public string FromLogin { get; set; }
 
         [JsonPropertyName("from_name")]

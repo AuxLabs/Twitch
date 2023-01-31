@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -7,8 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         public string[] Scopes { get; } = { "analytics:read:games" };
 
-        /// <summary> The game’s client ID. </summary>
-        [JsonPropertyName("game_id")]
+        /// <summary> The game's client ID. </summary>
         public string GameId { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

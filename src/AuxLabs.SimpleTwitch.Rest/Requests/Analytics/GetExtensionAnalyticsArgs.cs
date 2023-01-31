@@ -6,6 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         public string[] Scopes { get; } = { "analytics:read:extensions" };
 
+        /// <summary> The extension’s client ID. </summary>
         public string ExtensionId { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
