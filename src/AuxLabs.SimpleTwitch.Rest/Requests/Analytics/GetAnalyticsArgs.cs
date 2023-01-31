@@ -4,22 +4,23 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public abstract class GetAnalyticsArgs : QueryMap
+    public abstract class GetAnalyticsArgs : QueryMap, IPaginated
     {
-        /// <summary> Cursor for forward pagination </summary>
-        public string After { get; set; }
-
         /// <summary> Ending date/time for returned reports </summary>
         public DateTime? EndedAt { get; set; }
-
-        /// <summary> Maximum number of objects to return </summary>
-        public int? First { get; set; }
 
         /// <summary> Starting date/time for returned reports </summary>
         public DateTime? StartedAt { get; set; }
 
         /// <summary> Type of analytics report that is returned </summary>
         public AnalyticType? Type { get; set; }
+
+        /// <inheritdoc />
+        /// <remarks> The minimum value is 1 the maximum is 100, defaults to 20. </remarks>
+        public int? First { get; set; }
+
+        /// <inheritdoc />
+        public string After { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
