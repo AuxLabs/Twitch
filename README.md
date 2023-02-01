@@ -16,38 +16,47 @@ The API reference, starter tutorials, and other documentation will be available 
 
 ### Samples
 
+For more examples look in [this folder](https://github.com/AuxLabs/SimpleTwitch/tree/main/examples).
+
 ##### Rest
 An example of authenticating with the client and requesting the current authorized user.
 ```csharp
+string username = "auxlabs";
+string token = "token";
+string clientId = "client id";
 var twitch = new TwitchRestApiClient()
 {
-    Authorization = new AuthenticationHeaderValue("Bearer", "oauth token"),
-    ClientId = "client id"
+    Authorization = new AuthenticationHeaderValue("Bearer", token),
+    ClientId = clientId
 };
 
-var identity = await twitch.ValidateAsync();
 var response = await twitch.GetUsersAsync(args =>
 {
-    args.UserIds = new[] { identity.UserId };
+    args.UserIds.Add(username);
 });
 
-var user = response.Data.FirstOrDefault();
-Console.WriteLine($"{user?.DisplayName} is a {user?.BroadcasterType}, their account was created on {user?.CreatedAt}.");
+var response = response.Data.FirstOrDefault();
+if (response.Data.FirstOrDefault() is User user)
+    Console.WriteLine($"{user.DisplayName}'s user id is {user.Id}");
+else
+    Console.WriteLine($"The user {username} did not exist");
 ```
 
 ##### Chat
 An example of authenticating with the client and joining the authorized user's channel
 ```csharp
 string username = "auxlabs";
-var twitch = new TwitchChatApiClient();
-twitch.Connected += () =>
+string token = "token";
+var twitch = new TwitchChatApiClient()
+twitch.SetIdentity(username, token);
+
+twitch.Connected += () => 
 {
-    twitch.SendIdentify(username, "oauth token");
     twitch.Send(new JoinChannelRequest(username));
-};
+}
 twitch.MessageReceived += (args) =>
 {
-    Console.WriteLine($"#{args.ChannelName} {name}: {args.Message}");
+    Console.WriteLine($"#{args.ChannelName} {args.Tags.Login}: {args.Message}");
 }
 
 await twitch.RunAsync();
