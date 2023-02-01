@@ -2,8 +2,10 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetCharityDonationsArgs : QueryMap, IPaginated
+    public class GetCharityDonationsArgs : QueryMap, IPaginated, IScoped
     {
+        public string[] Scopes { get; } = new[] { "channel:read:charity" };
+
         /// <summary> The ID of the broadcaster that’s currently running a charity campaign. </summary>
         public string BroadcasterId { get; set; }
 

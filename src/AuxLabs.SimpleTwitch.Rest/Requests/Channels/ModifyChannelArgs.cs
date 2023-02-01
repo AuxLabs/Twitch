@@ -3,8 +3,11 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ModifyChannelArgs
+    public class ModifyChannelArgs : IScoped
     {
+        [JsonIgnore]
+        public string[] Scopes { get; } = new[] { "channel:manage:broadcast" };
+
         /// <summary> The ID of the game that the user plays. </summary>
         [JsonPropertyName("game_id")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

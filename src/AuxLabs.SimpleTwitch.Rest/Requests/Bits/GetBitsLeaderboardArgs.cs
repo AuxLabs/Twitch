@@ -4,8 +4,10 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBitsLeaderboardArgs : QueryMap
+    public class GetBitsLeaderboardArgs : QueryMap, IScoped
     {
+        public string[] Scopes { get; } = new[] { "bits:read" };
+
         /// <summary> An ID that identifies a user that cheered bits in the channel. </summary>
         /// <remarks> If <see cref="Count"/> is greater than 1, the response may include users 
         /// ranked above and below the specified user. To get the leaderboard’s top leaders, 

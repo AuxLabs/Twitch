@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetRedemptionsArgs : QueryMap<string[]>, IPaginated
+    public class GetRedemptionsArgs : QueryMap<string[]>, IPaginated, IScoped
     {
+        public string[] Scopes { get; } = new[] { "channel:read:redemptions" };
+
         /// <summary> The ID of the broadcaster that owns the custom reward. </summary>
         public string BroadcasterId { get; set; }
 
