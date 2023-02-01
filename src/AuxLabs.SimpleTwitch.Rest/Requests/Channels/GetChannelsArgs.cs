@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetChannelsArgs : QueryMap<string[]>
     { 
-        public IEnumerable<string> ChannelIds { get; set; }
+        public List<string> ChannelIds { get; set; } = new List<string>();
 
         public GetChannelsArgs() { }
         public GetChannelsArgs(params string[] channels)

@@ -1,26 +1,26 @@
 ﻿using AuxLabs.SimpleTwitch.Chat;
 
 var user = Environment.GetEnvironmentVariable("TWITCH_USER");
-var pass = Environment.GetEnvironmentVariable("TWITCH_PASS");
+var token = Environment.GetEnvironmentVariable("TWITCH_TOKEN");
 
 Console.WriteLine("> Initializing chat client...");
 if (user == null)
 {
-    Console.WriteLine("Please enter your username: ");
+    Console.WriteLine("> Please enter your username: ");
     user = Console.ReadLine();
 }
-if (pass == null)
+if (token == null)
 {
-    Console.WriteLine("Please enter your oauth token: ");
-    pass = Console.ReadLine();
+    Console.WriteLine("> Please enter your oauth token: ");
+    token = Console.ReadLine();
 }
 
-Console.WriteLine("Please enter the channel name to join: ");
+Console.WriteLine("> Please enter the channel name to join: ");
 var channelName = Console.ReadLine();
 
 Console.WriteLine("> Connecting...");
 var twitch = new TwitchChatApiClient()      // Create an instance of the chat client
-    .SetIdentity(user, pass);               // Set the login information
+    .SetIdentity(user, token);              // Set the login information
 
 twitch.Connected += OnConnectedAsync;
 twitch.MessageReceived += OnMessageReceived;
