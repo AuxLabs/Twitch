@@ -20,7 +20,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task EnterLockAsync(string bucketId, CancellationToken cancelToken)
         {
             await EnterGlobalLockAsync(cancelToken).ConfigureAwait(false);
-            await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
+            //await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
         }
 
         public virtual async Task EnterGlobalLockAsync(CancellationToken cancelToken)
@@ -31,7 +31,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 if (millis <= 0)
                     break;
                 else
-                    await Task.Delay(millis).ConfigureAwait(false);
+                    await Task.Delay(millis, cancelToken).ConfigureAwait(false);
             }
         }
         public virtual async Task EnterBucketLockAsync(string bucketId, CancellationToken cancelToken)
