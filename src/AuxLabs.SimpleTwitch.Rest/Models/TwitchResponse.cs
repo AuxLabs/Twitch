@@ -3,14 +3,18 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    /// <summary> A object that represents data returned by a Twitch request. </summary>
+    /// <summary> An object that represents data returned by a Twitch request. </summary>
     /// <typeparam name="T"> The type of data this request contains. </typeparam>
     public class TwitchResponse<T> where T : class
     {
         /// <summary> A collection of objects returned from a request </summary>
         [JsonPropertyName("data")]
         public IEnumerable<T> Data { get; set; }
+    }
 
+    /// <summary> An object that represents data returned by a Twitch request, but with some metadata. </summary>
+    public class TwitchMetaResponse<T> : TwitchResponse<T> where T : class
+    {
         /// <summary> The total number of objects returned in <see cref="Data"/>. </summary>
         [JsonPropertyName("total")]
         public int? Total { get; set; }
