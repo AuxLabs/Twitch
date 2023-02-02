@@ -6,10 +6,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class GetUsersArgs : QueryMap<string[]>
     {
         /// <summary>  </summary>
-        public IEnumerable<string> UserIds { get; set; } = null;
+        public List<string> UserIds { get; set; } = new List<string>();
 
         /// <summary>  </summary>
-        public IEnumerable<string> UserNames { get; set; } = null;
+        public List<string> UserNames { get; set; } = new List<string>();
 
         public GetUsersArgs() { }
         public GetUsersArgs(GetUsersMode mode, params string[] users)
@@ -23,14 +23,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         public override IDictionary<string, string[]> CreateQueryMap()
         {
             var map = new Dictionary<string, string[]>();
-            if (UserIds != null)
+            if (UserIds.Count > 0)
             {
                 var list = new List<string>();
                 foreach (var id in UserIds)
                     list.Add(id);
                 map["id"] = list.ToArray();
             }
-            if (UserNames != null)
+            if (UserNames.Count > 0)
             {
                 var list = new List<string>();
                 foreach (var id in UserNames)

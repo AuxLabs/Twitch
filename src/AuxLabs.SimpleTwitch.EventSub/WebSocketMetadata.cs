@@ -9,9 +9,13 @@ namespace AuxLabs.SimpleTwitch.EventSub
         [JsonPropertyName("message_id")]
         public string Id { get; set; }
 
-        /// <summary> The type of message. </summary>
+        /// <summary> The type of message, in a raw string format. </summary>
         [JsonPropertyName("message_type")]
-        public MessageType Type { get; set; }
+        public string TypeRaw { get; set; }
+
+        /// <summary> The type of message. </summary>
+        [JsonIgnore]
+        public MessageType Type => EnumHelper.GetValueFromEnumMember<MessageType>(TypeRaw);
 
         /// <summary> The UTC date and time that the message was sent. </summary>
         [JsonPropertyName("message_timestamp")]

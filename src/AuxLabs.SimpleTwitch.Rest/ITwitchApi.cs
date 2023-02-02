@@ -1,4 +1,5 @@
-﻿using RestEase;
+﻿using AuxLabs.SimpleTwitch.EventSub;
+using RestEase;
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -33,7 +34,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="ExtensionAnalytic"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/extensions")]
-        Task<TwitchResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsArgs args);
+        Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsArgs args);
         
         /// <summary> Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files). </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -41,7 +42,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="GameAnalytic"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("analytics/games")]
-        Task<TwitchResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsArgs args);
+        Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsArgs args);
 
         #endregion
         #region Bits
@@ -52,7 +53,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="BitsUser"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("bits/leaderboard")]
-        Task<TwitchResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardArgs args);
+        Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardArgs args);
         
         /// <summary> Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel. </summary>
         /// <returns> A collection of <see cref="Cheermote"/> objects. </returns>
@@ -64,7 +65,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="ExtensionTransaction"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("extensions/transactions")]
-        Task<TwitchResponse<ExtensionTransaction>> GetExtensionTransactionsAsync([QueryMap] GetExtensionTransactionsArgs args);
+        Task<TwitchMetaResponse<ExtensionTransaction>> GetExtensionTransactionsAsync([QueryMap] GetExtensionTransactionsArgs args);
 
         #endregion
         #region Channels
@@ -157,31 +158,46 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A <see cref="CharityDonation"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("charity/donations")]
-        Task<TwitchResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap]GetCharityDonationsArgs args);
+        Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap]GetCharityDonationsArgs args);
 
         #endregion
         #region Chat
 
+        /// <summary> Gets the list of users that are connected to the broadcaster’s chat session. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:read:chatters</c> scope. </remarks>
+        /// <returns> A collection of <see cref="SimpleUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Get("chat/chatters")]
-        Task<TwitchResponse<object>> GetChattersAsync([Query] object args);
+        Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync([QueryMap]GetChattersArgs args);
+
         [Get("chat/emotes")]
-        Task<TwitchResponse<object>> GetChannelEmotesAsync([Query] object args);
+        Task<TwitchResponse<object>> GetEmotesAsync([Query("broadcaster_id")]string broadcasterId);
+
         [Get("chat/emotes/global")]
-        Task<TwitchResponse<object>> GetGlobalEmotesAsync([Query] object args);
+        Task<TwitchResponse<object>> GetEmotesAsync();
+
         [Get("chat/emotes/set")]
         Task<TwitchResponse<object>> GetEmoteSetsAsync([Query] object args);
+
         [Get("chat/badges")]
         Task<TwitchResponse<object>> GetChannelBadgesAsync([Query] object args);
+
         [Get("chat/badges/global")]
         Task<TwitchResponse<object>> GetGlobalBadgesAsync([Query] object args);
+
         [Get("chat/settings")]
         Task<TwitchResponse<object>> GetChatSettingsAsync([Query] object args);
+
         [Patch("chat/settings")]
         Task<TwitchResponse<object>> ModifyChatSettingsAsync([Query] object args);
+
         [Post("chat/announcements")]
         Task<TwitchResponse<object>> PostChatAnnouncementAsync([Query] object args);
+
         [Get("chat/color")]
         Task<TwitchResponse<object>> GetUserChatColorAsync([Query] string userId);
+
         [Put("chat/color")]
         Task<TwitchResponse<object>> ModifyUserChatColor([Query] object args);
 
@@ -236,12 +252,28 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region EventSub
 
+        /// <summary> Creates an EventSub subscription. </summary>
+        /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
+        /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
+        /// <returns> An <see cref="EventSubResponse"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 409 Conflict </exception>
         [Post("eventsub/subscriptions")]
-        Task<TwitchResponse<object>> PostEventSubSubcriptionAsync([Query] object args);
+        Task<EventSubResponse> PostEventSubcriptionAsync([Body]PostEventSubscriptionArgs args);
+
+        /// <summary> Deletes an EventSub subscription. </summary>
+        /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
+        /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Delete("eventsub/subscriptions")]
-        Task<TwitchResponse<object>> DeleteEventSubSubcrptionAsync([Query] object args);
+        Task DeleteEventSubcrptionAsync([Query("id")]string id);
+
+        /// <summary> Gets a collection of EventSub subscriptions that the client in the access token created. </summary>
+        /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
+        /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
+        /// <returns> An <see cref="EventSubResponse"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("eventsub/subscriptions")]
-        Task<TwitchResponse<object>> GetEventSubSubcriptionAsync([Query] object args);
+        Task<EventSubResponse> GetEventSubcriptionsAsync([Query]GetEventSubscriptionsArgs args);
 
         #endregion
         #region Games

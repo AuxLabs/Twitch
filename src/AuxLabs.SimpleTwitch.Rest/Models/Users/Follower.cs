@@ -26,7 +26,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("to_name")]
         public string ToDisplayName { get; set; }
 
-        string IUser.Id { get => FromId; set => FromId = value; }
+        string IEntity<string>.Id { get => FromId; set => FromId = value; }
         string IUser.Name { get => FromName; set => FromName = value; }
         string IUser.DisplayName { get => FromDisplayName; set => FromDisplayName = value; }
         string IUserRelation.RelatedId { get => ToId; set => ToId = value; }
