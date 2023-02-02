@@ -5,44 +5,29 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class GlobalUserStateTags : BaseTags
     {
-        /// <summary>
-        /// The user’s ID.
-        /// </summary>
+        /// <summary> The user’s ID. </summary>
         public string UserId { get; set; }
 
-        /// <summary>
-        /// The type of user.
-        /// </summary>
+        /// <summary> The type of user. </summary>
         public UserType UserType { get; set; }
 
-        /// <summary>
-        /// The user’s display name.
-        /// </summary>
+        /// <summary> The user’s display name. </summary>
         public string DisplayName { get; set; }
 
-        /// <summary>
-        /// The color of the user’s name in the chat room.
-        /// </summary>
+        /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; set; }
 
-        /// <summary>
-        /// A collection of badges the user has.
-        /// </summary>
+        /// <summary> A collection of badges the user has. </summary>
         public IReadOnlyCollection<Badge> Badges { get; set; }
 
-        /// <summary>
-        /// Contains metadata related to the chat badges in the badges tag. Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber.
-        /// </summary>
+        /// <summary> Contains metadata related to the chat badges in the badges tag. </summary>
+        /// <remarks> Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber. </remarks>
         public string BadgeInfo { get; set; }
 
-        /// <summary>
-        /// A collection of IDs that identify the emote sets that the user has access to.
-        /// </summary>
+        /// <summary> A collection of IDs that identify the emote sets that the user has access to. </summary>
         public IReadOnlyCollection<string> EmoteSets { get; set; }
 
-        /// <summary>
-        /// Indicates whether the user has site-wide commercial free mode enabled.
-        /// </summary>
+        /// <summary> Indicates whether the user has site-wide commercial free mode enabled. </summary>
         public bool IsTurbo { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

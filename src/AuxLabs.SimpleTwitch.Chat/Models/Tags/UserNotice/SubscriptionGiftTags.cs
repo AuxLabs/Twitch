@@ -4,39 +4,25 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class SubscriptionGiftTags : UserNoticeTags
     {
-        /// <summary>
-        /// The user ID of the subscription gift recipient.
-        /// </summary>
+        /// <summary> The user ID of the subscription gift recipient. </summary>
         public string RecipientId { get; set; }
 
-        /// <summary>
-        /// The display name of the subscription gift recipient.
-        /// </summary>
+        /// <summary> The display name of the subscription gift recipient. </summary>
         public string RecipientDisplayName { get; set; }
 
-        /// <summary>
-        /// The user name of the subscription gift recipient.
-        /// </summary>
+        /// <summary> The user name of the subscription gift recipient. </summary>
         public string RecipientName { get; set; }
 
-        /// <summary>
-        /// The display name of the subscription plan. This may be a default name or one created by the channel owner
-        /// </summary>
+        /// <summary> The display name of the subscription plan. This may be a default name or one created by the channel owner. </summary>
         public string SubscriptionName { get; set; }
 
-        /// <summary>
-        /// The type of subscription plan being used.
-        /// </summary>
+        /// <summary> The type of subscription plan being used. </summary>
         public SubscriptionType SubscriptionType { get; set; }
 
-        /// <summary>
-        /// The number of months gifted as part of a single, multi-month gift.
-        /// </summary>
+        /// <summary> The number of months gifted as part of a single, multi-month gift. </summary>
         public int GiftedMonths { get; set; }
 
-        /// <summary>
-        /// The total number of months the user has subscribed.
-        /// </summary>
+        /// <summary> The total number of months the user has subscribed. </summary>
         public int TotalMonths { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

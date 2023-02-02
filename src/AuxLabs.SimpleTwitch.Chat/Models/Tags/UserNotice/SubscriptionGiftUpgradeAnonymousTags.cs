@@ -4,14 +4,10 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class SubscriptionGiftUpgradeAnonymousTags : UserNoticeTags
     {
-        /// <summary>
-        /// The number of gifts the gifter has given
-        /// </summary>
+        /// <summary> The number of gifts the gifter has given. </summary>
         public int PromoGiftTotal { get; set; }
 
-        /// <summary>
-        /// The subscriptions promo, if any, that is ongoing
-        /// </summary>
+        /// <summary> The subscriptions promo, if any, that is ongoing. </summary>
         public string PromoGiftName { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

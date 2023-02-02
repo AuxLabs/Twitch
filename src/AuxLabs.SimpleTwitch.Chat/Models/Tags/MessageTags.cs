@@ -24,7 +24,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> The ID of the user that sent the message. </summary>
         public string UserId { get; set; }
 
-        /// <summary>  The type of user. </summary>
+        /// <summary> The type of user. </summary>
         public UserType UserType { get; set; }
 
         /// <summary> The user’s display name. </summary>

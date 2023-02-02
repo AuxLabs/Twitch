@@ -3,15 +3,12 @@ using System.Collections.Generic;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public struct EmotePosition
+    public readonly struct EmotePosition
     {
-        /// <summary>
-        /// An ID that uniquely identifies this emote
-        /// </summary>
+        /// <summary> An ID that uniquely identifies this emote </summary>
         public string Id { get; }
-        /// <summary>
-        /// The position of this emote in a message
-        /// </summary>
+
+        /// <summary> The position of this emote in a message </summary>
         public Range Range { get; }
 
         public EmotePosition(string id, Range range)

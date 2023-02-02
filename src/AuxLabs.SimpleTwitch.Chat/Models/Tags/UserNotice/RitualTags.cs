@@ -4,9 +4,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class RitualTags : UserNoticeTags
     {
-        /// <summary>
-        /// The name of the ritual being celebrated.
-        /// </summary>
+        /// <summary> The name of the ritual being celebrated. </summary>
         public RitualType RitualType { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

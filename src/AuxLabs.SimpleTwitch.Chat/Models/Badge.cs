@@ -2,9 +2,12 @@
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public struct Badge
+    public readonly struct Badge
     {
+        /// <summary> The badge's name. </summary>
         public string Name { get; }
+
+        /// <summary> Information relating to the badge. </summary>
         public string Version { get; }
 
         public Badge(string name, string version = "1") 

@@ -4,14 +4,10 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class SubscriptionGiftUpgradeTags : SubscriptionGiftUpgradeAnonymousTags
     {
-        /// <summary>
-        /// The login name of the user who gifted the subscription.
-        /// </summary>
+        /// <summary> The login name of the user who gifted the subscription. </summary>
         public string SenderLogin { get; set; }
 
-        /// <summary>
-        /// The display name of the user who gifted the subscription.
-        /// </summary>
+        /// <summary> The display name of the user who gifted the subscription. </summary>
         public string SenderDisplayName { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

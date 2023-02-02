@@ -5,27 +5,36 @@ using System.Drawing;
 namespace AuxLabs.SimpleTwitch.Chat
 {
     public class WhisperTags : BaseTags
-    {        
-        /// <summary>  </summary>
+    {
+        /// <summary> An ID that uniquely identifies the message. </summary>
         public string Id { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> An ID that uniquely identifies the whisper thread. </summary>
+        /// <remarks> The ID is in the form, <smaller-value-user-id>_<larger-value-user-id>. </remarks>
         public string ThreadId { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> The ID of the user that sent the message. </summary>
         public string UserId { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> The type of user. </summary>
         public UserType UserType { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> The user’s display name. </summary>
         public string DisplayName { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> A collection of badges the user has. </summary>
         public IReadOnlyCollection<Badge> Badges { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> A collection of emotes and their position in the message. </summary>
         public IReadOnlyCollection<EmotePosition> Emotes { get; set; }
-        /// <summary>  </summary>
+
+        /// <summary> The message value when someone uses the /me chat command </summary>
         public string Action { get; set; }
 
-        /// <summary>  </summary>
+        /// <summary> Indicates whether the user has site-wide commercial free mode enabled. </summary>
         public bool IsTurbo { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
