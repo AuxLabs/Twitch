@@ -87,7 +87,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">BaseSocketClient&lt;TPayload&gt;</span></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.html">TwitchChatApiClient</a></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.html">TwitchEventSubApiClient</a></div>
@@ -95,33 +95,32 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <span class="xref">object.Equals(object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <span class="xref">object.Equals(object, object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <span class="xref">object.GetHashCode()</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <span class="xref">object.GetType()</span>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <span class="xref">object.MemberwiseClone()</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <span class="xref">object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.html">AuxLabs.SimpleTwitch.Sockets</a></h6>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Sockets.html">Sockets</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Sockets.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseSocketClient&lt;TPayload&gt;
-    where TPayload : IPayload</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseSocketClient&lt;TPayload&gt; where TPayload : IPayload</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,7 +147,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L48">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1__ctor_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1__ctor_System_Int32_System_Boolean_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.#ctor(System.Int32,System.Boolean)">BaseSocketClient(Int32, Boolean)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1__ctor_System_Int32_System_Boolean_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.#ctor(System.Int32,System.Boolean)">BaseSocketClient(int, bool)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -166,12 +165,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">int</span></td>
         <td><span class="parametername">heartbeatRate</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">bool</span></td>
         <td><span class="parametername">waitForHello</span></td>
         <td></td>
       </tr>
@@ -203,7 +202,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -295,7 +294,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L62">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.HandleEvent*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent__0_System_Threading_Tasks_TaskCompletionSource_System_Boolean__" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.HandleEvent(`0,System.Threading.Tasks.TaskCompletionSource{System.Boolean})">HandleEvent(TPayload, TaskCompletionSource&lt;Boolean&gt;)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent__0_System_Threading_Tasks_TaskCompletionSource_System_Boolean__" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.HandleEvent(`0,System.Threading.Tasks.TaskCompletionSource{System.Boolean})">HandleEvent(TPayload, TaskCompletionSource&lt;bool&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -318,7 +317,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.TaskCompletionSource</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.TaskCompletionSource&lt;TResult&gt;</span>&lt;<span class="xref">bool</span>&gt;</td>
         <td><span class="parametername">readySignal</span></td>
         <td></td>
       </tr>
@@ -332,7 +331,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L64">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Run*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Run(System.String)">Run(String)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Run(System.String)">Run(string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -350,7 +349,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">url</span></td>
         <td></td>
       </tr>
@@ -364,12 +363,12 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L66">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.RunAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.RunAsync(System.String)">RunAsync(String)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.RunAsync(System.String)">RunAsync(string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task RunAsync(string url)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task RunAsync(string url)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,7 +381,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">url</span></td>
         <td></td>
       </tr>
@@ -508,7 +507,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task StopAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StopAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -580,7 +579,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Runtime.Serialization.SerializationException</span>&gt;</td>
+        <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<span class="xref">SerializationException</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -609,7 +608,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Exception</span>&gt;</td>
+        <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<span class="xref">System.Exception</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -638,7 +637,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;TPayload, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="xref">System.Action&lt;T1, T2&gt;</span>&lt;TPayload, <span class="xref">long</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -667,7 +666,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;TPayload, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Action&lt;T1, T2&gt;</span>&lt;TPayload, <span class="xref">int</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

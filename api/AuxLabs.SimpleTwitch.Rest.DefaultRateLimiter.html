@@ -87,7 +87,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">DefaultRateLimiter</span></div>
   </div>
   <div class="implements">
@@ -97,28 +97,28 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <span class="xref">object.Equals(object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <span class="xref">object.Equals(object, object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <span class="xref">object.GetHashCode()</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <span class="xref">object.GetType()</span>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <span class="xref">object.MemberwiseClone()</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <span class="xref">object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AuxLabs.SimpleTwitch.Rest.html">AuxLabs.SimpleTwitch.Rest</a></h6>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Rest.html">Rest</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_syntax">Syntax</h5>
   <div class="codewrapper">
@@ -151,12 +151,12 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Net/Throttling/DefaultRateLimiter.cs/#L37">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterBucketLockAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterBucketLockAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterBucketLockAsync_System_String_System_Threading_CancellationToken_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken)">EnterBucketLockAsync(String, CancellationToken)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterBucketLockAsync_System_String_System_Threading_CancellationToken_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken)">EnterBucketLockAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task EnterBucketLockAsync(string bucketId, CancellationToken cancelToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task EnterBucketLockAsync(string bucketId, CancellationToken cancelToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +169,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">bucketId</span></td>
         <td></td>
       </tr>
@@ -208,7 +208,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task EnterGlobalLockAsync(CancellationToken cancelToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task EnterGlobalLockAsync(CancellationToken cancelToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,12 +250,12 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Net/Throttling/DefaultRateLimiter.cs/#L20">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterLockAsync_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterLockAsync*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterLockAsync_System_String_System_Threading_CancellationToken_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)">EnterLockAsync(String, CancellationToken)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_EnterLockAsync_System_String_System_Threading_CancellationToken_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)">EnterLockAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task EnterLockAsync(string bucketId, CancellationToken cancelToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task EnterLockAsync(string bucketId, CancellationToken cancelToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,7 +268,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">bucketId</span></td>
         <td></td>
       </tr>
@@ -302,7 +302,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Net/Throttling/DefaultRateLimiter.cs/#L44">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_UpdateLimit_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.UpdateLimit*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_UpdateLimit_System_String_AuxLabs_SimpleTwitch_Rest_RateLimitInfo_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.SimpleTwitch.Rest.RateLimitInfo)">UpdateLimit(String, RateLimitInfo)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DefaultRateLimiter_UpdateLimit_System_String_AuxLabs_SimpleTwitch_Rest_RateLimitInfo_" data-uid="AuxLabs.SimpleTwitch.Rest.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.SimpleTwitch.Rest.RateLimitInfo)">UpdateLimit(string, RateLimitInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -320,7 +320,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">bucketId</span></td>
         <td></td>
       </tr>

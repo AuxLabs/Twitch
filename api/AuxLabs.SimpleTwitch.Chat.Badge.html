@@ -88,26 +88,26 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.ValueType.Equals(System.Object)</span>
+      <span class="xref">System.ValueType.Equals(object)</span>
     </div>
     <div>
       <span class="xref">System.ValueType.GetHashCode()</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <span class="xref">object.Equals(object, object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <span class="xref">object.GetType()</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AuxLabs.SimpleTwitch.Chat.html">AuxLabs.SimpleTwitch.Chat</a></h6>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Chat.html">Chat</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Chat.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Chat_Badge_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Badge</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Badge</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -116,10 +116,10 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L10">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L13">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge__ctor_System_String_System_String_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.#ctor(System.String,System.String)">Badge(String, String)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge__ctor_System_String_System_String_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.#ctor(System.String,System.String)">Badge(string, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -137,12 +137,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">version</span></td>
         <td></td>
       </tr>
@@ -155,15 +155,16 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L7">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L8">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge_Name_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Name*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_Name" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The badge's name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,7 +176,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -185,15 +186,16 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge_Version.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.Version%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L8">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L11">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge_Version_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Version*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_Version" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Information relating to the badge.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string Version { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,7 +207,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,10 +219,10 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge_Parse_System_String_AuxLabs_SimpleTwitch_Chat_Badge__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.Parse(System.String%2CAuxLabs.SimpleTwitch.Chat.Badge%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L16">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L19">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge_Parse_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Parse*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_Parse_System_String_AuxLabs_SimpleTwitch_Chat_Badge__" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Parse(System.String,AuxLabs.SimpleTwitch.Chat.Badge@)">Parse(String, out Badge)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_Parse_System_String_AuxLabs_SimpleTwitch_Chat_Badge__" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.Parse(System.String,AuxLabs.SimpleTwitch.Chat.Badge@)">Parse(string, out Badge)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -238,7 +240,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -254,7 +256,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge_ToString.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L13">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L16">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge_ToString_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.ToString*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_ToString" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.ToString">ToString()</h4>
@@ -274,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -286,10 +288,10 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_Badge_TryParseMany_System_String_System_Collections_Generic_IReadOnlyCollection_AuxLabs_SimpleTwitch_Chat_Badge___.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.Badge.TryParseMany(System.String%2CSystem.Collections.Generic.IReadOnlyCollection%7BAuxLabs.SimpleTwitch.Chat.Badge%7D%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L23">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Badge.cs/#L26">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Chat_Badge_TryParseMany_" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.TryParseMany*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_TryParseMany_System_String_System_Collections_Generic_IReadOnlyCollection_AuxLabs_SimpleTwitch_Chat_Badge___" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.SimpleTwitch.Chat.Badge}@)">TryParseMany(String, out IReadOnlyCollection&lt;Badge&gt;)</h4>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_Badge_TryParseMany_System_String_System_Collections_Generic_IReadOnlyCollection_AuxLabs_SimpleTwitch_Chat_Badge___" data-uid="AuxLabs.SimpleTwitch.Chat.Badge.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.SimpleTwitch.Chat.Badge}@)">TryParseMany(string, out IReadOnlyCollection&lt;Badge&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -307,12 +309,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Badge.html">Badge</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.Badge.html">Badge</a>&gt;</td>
         <td><span class="parametername">badges</span></td>
         <td></td>
       </tr>
@@ -328,7 +330,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
