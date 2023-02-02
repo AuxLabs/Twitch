@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class MessageTags : BaseTags
+    public class MessageTags : BaseTags, IUserRelation
     {
         /// <summary> An ID that uniquely identifies the message. </summary>
         public string Id { get; set; }
@@ -31,7 +31,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public string DisplayName { get; set; }
 
         /// <summary> The user’s login name. </summary>
-        public string Login { get; set; }
+        public string Name { get; set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; set; }
@@ -79,7 +79,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public string ReplyParentUserId { get; set; }
 
         /// <summary> The login name of the sender of the parent message. </summary>
-        public string ReplyParentUserLogin { get; set; }
+        public string ReplyParentUserName { get; set; }
 
         /// <summary> The display name of the sender of the parent message. </summary>
         public string ReplyParentDisplayName { get; set; }
@@ -105,7 +105,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["user-id"] = UserId,
                 ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
                 ["display-name"] = DisplayName,
-                ["login"] = Login,
+                ["login"] = Name,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = Badges == null ? null : string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
@@ -120,7 +120,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["returning-chatter"] = IsReturningChatter ? "1" : "0",
                 ["reply-parent-msg-id"] = ReplyParentMessageId,
                 ["reply-parent-user-id"] = ReplyParentUserId,
-                ["reply-parent-user-login"] = ReplyParentUserLogin,
+                ["reply-parent-user-login"] = ReplyParentUserName,
                 ["reply-parent-display-name"] = ReplyParentDisplayName,
                 ["reply-parent-msg-body"] = ReplyParentMessage?.Replace(" ", "\\s"),
                 ["client-nonce"] = Nonce,
@@ -146,7 +146,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("display-name", out str))
                 DisplayName = str;
             if (map.TryGetValue("login", out str))
-                Login = str;
+                Name = str;
             if (map.TryGetValue("color", out str))
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
@@ -189,7 +189,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("reply-parent-user-id", out str))
                 ReplyParentUserId = str;
             if (map.TryGetValue("reply-parent-user-login", out str))
-                ReplyParentUserLogin = str;
+                ReplyParentUserName = str;
             if (map.TryGetValue("reply-parent-display-name", out str))
                 ReplyParentDisplayName = str;
             if (map.TryGetValue("reply-parent-msg-body", out str))
@@ -199,5 +199,9 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("flags", out str))
                 Flags = str;
         }
+
+        string IUserRelation.RelatedId { get => ReplyParentUserId; set => ReplyParentUserId = value; }
+        string IUserRelation.RelatedName { get => ReplyParentUserName; set => ReplyParentUserName = value; }
+        string IUserRelation.RelatedDisplayName { get => ReplyParentDisplayName; set => ReplyParentUserName = value; }
     }
 }

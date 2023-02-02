@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class SimpleUser
+    public class SimpleUser : IUser
     {
         /// <summary> The ID of the user </summary>
         [JsonPropertyName("id")]
@@ -14,7 +14,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The user’s login name. </summary>
         [JsonPropertyName("login")]
-        public string Login { get; set; }
+        public string Name { get; set; }
 
     }
 }

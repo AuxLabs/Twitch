@@ -31,7 +31,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("msg-param-displayName", out string str))
                 RaiderDisplayName = str;
             if (map.TryGetValue("msg-param-login", out str))
-                ReplyParentUserLogin = str;
+                ReplyParentUserName = str;
             if (map.TryGetValue("msg-param-profileImageURL", out str))
                 ProfileImageUrl = str;
             if (map.TryGetValue("msg-param-viewerCount", out str))

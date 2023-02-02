@@ -12,7 +12,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public string TargetMessageId { get; set; }
 
         /// <summary> The name of the user who sent the message. </summary>
-        public string Login { get; set; }
+        public string UserName { get; set; }
 
         /// <summary> The ID of the channel (chat room) where the message was removed from. </summary>
         public string ChannelId { get; set; }
@@ -23,7 +23,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             {
                 ["tim-sent-ts"] = Timestamp.ToString(),
                 ["target-msg-id"] = TargetMessageId,
-                ["login"] = Login,
+                ["login"] = UserName,
                 ["room-id"] = ChannelId
             };
         }
@@ -34,7 +34,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("target-msg-id", out str))
                 TargetMessageId = str;
             if (map.TryGetValue("login", out str))
-                Login = str;
+                UserName = str;
             if (map.TryGetValue("room-id", out str))
                 ChannelId = str;
         }

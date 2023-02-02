@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class Follower
+    public class Follower : IUserRelation
     {
         [JsonPropertyName("followed_at")]
         public DateTime FollowedAt { get; set; }
@@ -12,18 +12,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string FromId { get; set; }
 
         [JsonPropertyName("from_login")]
-        public string FromLogin { get; set; }
+        public string FromName { get; set; }
 
         [JsonPropertyName("from_name")]
-        public string FromName { get; set; }
+        public string FromDisplayName { get; set; }
 
         [JsonPropertyName("to_id")]
         public string ToId { get; set; }
 
         [JsonPropertyName("to_login")]
-        public string ToLogin { get; set; }
+        public string ToName { get; set; }
 
         [JsonPropertyName("to_name")]
-        public string ToName { get; set; }
+        public string ToDisplayName { get; set; }
+
+        string IUser.Id { get => FromId; set => FromId = value; }
+        string IUser.Name { get => FromName; set => FromName = value; }
+        string IUser.DisplayName { get => FromDisplayName; set => FromDisplayName = value; }
+        string IUserRelation.RelatedId { get => ToId; set => ToId = value; }
+        string IUserRelation.RelatedName { get => ToName; set => ToName = value; }
+        string IUserRelation.RelatedDisplayName { get => ToDisplayName; set => ToDisplayName = value; }
     }
 }
