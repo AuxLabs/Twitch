@@ -2,7 +2,7 @@
   <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
-    <Description>A low level .Net Core implementation of the Twitch EventSub API.</Description>
+    <Description>A low level dotnet implementation of the Twitch EventSub API.</Description>
   </PropertyGroup>
 
   <ItemGroup>
