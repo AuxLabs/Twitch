@@ -1,7 +1,7 @@
 ﻿using AuxLabs.SimpleTwitch.Chat;
 
-var user = Environment.GetEnvironmentVariable("TWITCH_USER");
-var token = Environment.GetEnvironmentVariable("TWITCH_TOKEN");
+var user = Environment.GetEnvironmentVariable("TWITCH_USER", EnvironmentVariableTarget.User);
+var token = Environment.GetEnvironmentVariable("TWITCH_TOKEN", EnvironmentVariableTarget.User);
 
 Console.WriteLine("> Initializing chat client...");
 if (user == null)

@@ -1,8 +1,8 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using System.Net.Http.Headers;
 
-var pass = Environment.GetEnvironmentVariable("TWITCH_PASS");
-var clientId = Environment.GetEnvironmentVariable("TWITCH_CLIENTID");
+var pass = Environment.GetEnvironmentVariable("TWITCH_TOKEN", EnvironmentVariableTarget.User);
+var clientId = Environment.GetEnvironmentVariable("TWITCH_CLIENTID", EnvironmentVariableTarget.User);
 
 Console.WriteLine("> Initializing rest client...");
 if (pass == null)
@@ -41,7 +41,8 @@ while (true)                                            // Just a loop so you ca
 
                                                             // Output their user info
         Console.WriteLine($"{user.DisplayName ?? user.Login} ({user.Id})");
-        Console.WriteLine($"{user.Description}");
+        if (!string.IsNullOrWhiteSpace(user.Description))
+            Console.WriteLine($"{user.Description}");
         Console.WriteLine($"They joined at {user.CreatedAt}");
         if (user.BroadcasterType != BroadcasterType.None)
             Console.WriteLine($"They currently have {user.BroadcasterType} status");
@@ -49,7 +50,8 @@ while (true)                                            // Just a loop so you ca
             Console.WriteLine($"They are a {user.Type}");
 
         var channel = channelResponse.Data.First();             // Output their channel info
-        Console.WriteLine($"They were last playing {channel.GameName} ({channel.GameId})");
+        if (channel.GameId != null)
+            Console.WriteLine($"They were last playing {channel.GameName} ({channel.GameId})");
         if (channel.Tags.Any())
             Console.WriteLine($"With the tags: {string.Join(", ", channel.Tags)}");
 
