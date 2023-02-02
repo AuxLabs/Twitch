@@ -16,7 +16,7 @@ The API reference, starter tutorials, and other documentation will be available 
 
 ### Samples
 
-For more examples look in [this folder](https://github.com/AuxLabs/SimpleTwitch/tree/main/examples).
+For more examples look at [this repository](https://github.com/AuxLabs/SimpleTwitch-Examples).
 
 ##### Rest
 An example of authenticating with the client and requesting the current authorized user.
