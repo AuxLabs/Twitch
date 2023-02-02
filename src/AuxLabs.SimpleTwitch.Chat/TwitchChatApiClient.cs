@@ -126,6 +126,9 @@ namespace AuxLabs.SimpleTwitch.Chat
                 case IrcCommand.Reconnect:
                     Reconnect?.Invoke();
                     break;
+                case IrcCommand.Ping:
+                    SendHeartbeatAck();
+                    break;
                 case IrcCommand.CapabilityAcknowledge:
                     readySignal.TrySetResult(true);
                     CapabilityAcknowledged?.Invoke(payload.Parameters);
