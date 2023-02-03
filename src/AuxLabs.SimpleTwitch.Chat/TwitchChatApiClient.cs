@@ -48,16 +48,15 @@ namespace AuxLabs.SimpleTwitch.Chat
         public readonly bool ShouldHandleEvents;
         public readonly bool ThrowOnUnknownEvent;
         public readonly bool ThrowOnMismatchedTags;
-        public readonly int MessageCacheSize;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
         private string _username = null;
         private string _token = null;
 
-        public TwitchChatApiClient(TwitchChatConfig config = null) : base(-1)
+        public TwitchChatApiClient(TwitchChatApiConfig config = null) : base(-1)
         {
-            config ??= new TwitchChatConfig();
+            config ??= new TwitchChatApiConfig();
 
             Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnMismatchedTags);
 
@@ -67,7 +66,6 @@ namespace AuxLabs.SimpleTwitch.Chat
             ShouldHandleEvents = config.ShouldHandleEvents;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
             ThrowOnMismatchedTags = config.ThrowOnMismatchedTags;
-            MessageCacheSize = config.MessageCacheSize;
         }
 
         public TwitchChatApiClient SetIdentity(string username, string token)

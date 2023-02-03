@@ -1,21 +1,28 @@
 ﻿using RestEase;
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    /// <summary> A clien that implements Twitch's identity api for manging access tokens. </summary>
+    /// <summary> A client that implements Twitch's identity api for manging access tokens. </summary>
     public class TwitchIdentityApiClient : ITwitchIdentityApi
     {
         private readonly ITwitchIdentityApi _api;
         private bool _disposed = false;
+
+        /// <summary> Information about the currently authorized user. </summary>
+        public AppIdentity Identity { get; private set; }
 
         /// <summary> Your app’s registered client ID. </summary>
         public string ClientId { get; set; }
 
         /// <summary> Your app’s registered client secret. </summary>
         public string ClientSecret { get; set; }
+
+        /// <summary>  </summary>
+        public string RefreshToken { get; set; }
 
         public TwitchIdentityApiClient()
             : this(TwitchConstants.RestIdentityApiUrl) { }
@@ -49,15 +56,48 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
 
         /// <summary> Get information relating to a user access token </summary>
-        public Task<AccessTokenInfo> GetValidationAsync(string token)
-            => _api.GetValidationAsync(token);
+        public Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken)
+        {
+            RefreshToken = refreshToken;
+            return ValidateAsync(token);
+        }
+
+        /// <summary> Get information relating to a user access token </summary>
+        public async Task<AccessTokenInfo> ValidateAsync(string token)
+        {
+            var tokenInfo = await _api.ValidateAsync(token);
+
+            if (tokenInfo.UserId == null)   // Token is an app authorization
+            {
+                Identity = new AppIdentity
+                {
+                    AccessToken = token,
+                    ExpiresIn = tokenInfo.ExpiresIn,
+                    TokenType = TokenType.Bearer
+                };
+            }
+            else                          // Token is a user authorization
+            {
+                Identity = new UserIdentity
+                {
+                    AccessToken = token,
+                    ExpiresIn = tokenInfo.ExpiresIn,
+                    UserName = tokenInfo.UserName,
+                    RefreshToken = RefreshToken,
+                    Scopes = tokenInfo.Scopes,
+                    UserId = tokenInfo.UserId,
+                    TokenType = TokenType.Bearer
+                };
+            }
+            return tokenInfo;
+        }
 
         /// <summary> Revoke an access token that is no longer needed </summary>
-        public Task PostRevokeTokenAsync(PostRevokeTokenArgs args)
-            => _api.PostRevokeTokenAsync(Fill(args));
+        public Task RevokeTokenAsync(PostRevokeTokenArgs args)
+            => _api.RevokeTokenAsync(Fill(args));
         /// <inheritdoc cref="PostRevokeTokenAsync(PostRevokeTokenArgs)" />
-        public Task PostRevokeTokenAsync(Action<PostRevokeTokenArgs> action)
-            => PostRevokeTokenAsync(action.InvokeReturn());
+        public Task RevokeTokenAsync(Action<PostRevokeTokenArgs> action)
+            => RevokeTokenAsync(action.InvokeReturn());
 
         /// <summary> Refresh an expired user access token </summary>
         public Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args)

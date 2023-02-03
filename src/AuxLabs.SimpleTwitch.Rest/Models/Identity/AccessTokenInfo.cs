@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string ClientId { get; set; }
 
         [JsonPropertyName("login")]
-        public string Login { get; set; }
+        public string UserName { get; set; }
 
         [JsonPropertyName("scopes")]
         public IReadOnlyCollection<string> Scopes { get; set; }

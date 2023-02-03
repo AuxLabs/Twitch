@@ -6,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class UserIdentity : AppIdentity
     {
         [JsonPropertyName("login")]
-        public string Login { get; set; }
+        public string UserName { get; set; }
 
         [JsonPropertyName("refresh_token")]
         public string RefreshToken { get; set; }

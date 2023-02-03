@@ -6,8 +6,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> Your app’s registered client ID. </summary>
         public string ClientId { get; set; }
+
         /// <summary> Your app’s registered client secret. </summary>
         public string ClientSecret { get; set; }
+
         /// <summary> Constant value, this is set internally. </summary>
         public string GrantType { get; protected set; } = "client_credentials";
 

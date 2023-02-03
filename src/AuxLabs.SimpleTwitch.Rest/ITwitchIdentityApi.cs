@@ -8,10 +8,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     public interface ITwitchIdentityApi : IDisposable
     {
         [Get("validate")]
-        Task<AccessTokenInfo> GetValidationAsync([Header("Authorization", Format = "Bearer {0}")] string token);
+        Task<AccessTokenInfo> ValidateAsync([Header("Authorization", Format = "Bearer {0}")] string token);
 
         [Get("revoke")]
-        Task PostRevokeTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRevokeTokenArgs args);
+        Task RevokeTokenAsync([Body(BodySerializationMethod.UrlEncoded)] PostRevokeTokenArgs args);
 
         [Post("token")]
         [Header("Content-Type", "application/x-www-form-urlencoded")]
