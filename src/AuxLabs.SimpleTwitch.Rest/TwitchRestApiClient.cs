@@ -2,6 +2,7 @@
 using RestEase;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -10,18 +11,23 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class TwitchRestApiClient : ITwitchApi, IDisposable
     {
+        private readonly TwitchIdentityApiClient _identity;
         private readonly ITwitchApi _api;
         private bool _disposed = false;
 
         public AuthenticationHeaderValue Authorization { get => _api.Authorization; set => _api.Authorization = value; }
         public string ClientId { get => _api.ClientId; set => _api.ClientId = value; }
+        public AppIdentity Identity => _identity.Identity;
 
-        public TwitchRestApiClient(IRateLimiter rateLimiter = null)
-            : this(TwitchConstants.RestApiUrl, rateLimiter) { }
-        public TwitchRestApiClient(string url, IRateLimiter rateLimiter = null)
+        public TwitchRestApiClient(TwitchRestApiConfig config = null)
+            : this(TwitchConstants.RestApiUrl, config) { }
+        public TwitchRestApiClient(string url, TwitchRestApiConfig config = null)
         {
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, rateLimiter));
+            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, config.RateLimiter ??= new DefaultRateLimiter()));
+            _identity = new TwitchIdentityApiClient(config.ClientId, config.ClientSecret);
+
+            _api.ClientId = config.ClientId;
         }
 
         protected virtual void Dispose(bool disposing)
@@ -39,14 +45,67 @@ namespace AuxLabs.SimpleTwitch.Rest
             Dispose(true);
         }
 
+        private void CheckScopes(IScoped request)
+        {
+            if (!(Identity is UserIdentity user))       // Identity is an app
+                return;
+            if (!(user.Scopes.Any(x => request.Scopes.Contains(x))))
+                throw new MissingScopeException(request.Scopes);
+        }
+
+        #region Identity
+
+        /// <inheritdoc cref="TwitchIdentityApiClient.ValidateAsync(string)" />
+        public async Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken = null)
+        {
+            var tokenInfo = await _identity.ValidateAsync(token, refreshToken);
+            _api.Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            return tokenInfo;
+        }
+        
+        /// <summary> Revoke the currently authorized user's token. </summary>
+        public Task RevokeTokenAsync()
+        {
+            return _identity.RevokeTokenAsync(args =>
+            {
+                args.ClientId = ClientId;
+                args.Token = Authorization.Parameter;
+            });
+        }
+
+        /// <summary> Refresh the token for the authorized user. </summary>
+        public async Task<AppIdentity> RefreshTokenAsync()
+        {
+            if (Identity is UserIdentity user)      // Identity is a user, can be refreshed
+            {
+                return await _identity.PostRefreshTokenAsync(args =>
+                {
+                    args.ClientId = ClientId;
+                    args.ClientSecret = _identity.ClientSecret;
+                    args.RefreshToken = _identity.RefreshToken;
+                });
+            } else                                  // Identity is an app, must create new
+            {
+                return await _identity.PostAccessTokenAsync(new PostAppAccessTokenArgs
+                {
+                    ClientId = ClientId,
+                    ClientSecret = _identity.ClientSecret
+                });
+            }
+        }
+        
+        #endregion
         #region Ads
 
         /// <inheritdoc cref="PostCommercialAsync(PostChannelCommercialArgs)"/>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(Action<PostChannelCommercialArgs> action)
             => PostCommercialAsync(action.InvokeReturn());
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialArgs args)
-            => _api.PostCommercialAsync(args);
-
+        {
+            CheckScopes(args);
+            return _api.PostCommercialAsync(args);
+        }
+        
         #endregion
         #region Analytics
 
@@ -54,21 +113,30 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(Action<GetExtensionAnalyticsArgs> action)
             => GetExtensionAnalyticsAsync(action.InvokeReturn());
         public Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs args)
-            => _api.GetExtensionAnalyticsAsync(args);
-
+        {
+            CheckScopes(args);
+            return _api.GetExtensionAnalyticsAsync(args);
+        }
+        
         /// <inheritdoc cref="GetGameAnalyticsAsync(GetGameAnalyticsArgs)"/>
         public Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync(Action<GetGameAnalyticsArgs> action)
             => GetGameAnalyticsAsync(action.InvokeReturn());
         public Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsArgs args)
-            => _api.GetGameAnalyticsAsync(args);
-
+        {
+            CheckScopes(args);
+            return _api.GetGameAnalyticsAsync(args);
+        }
+        
         /// <inheritdoc cref="GetBitsLeaderboardAsync(GetBitsLeaderboardArgs)"/>
         public Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync(Action<GetBitsLeaderboardArgs> action)
             => GetBitsLeaderboardAsync(action.InvokeReturn());
         public Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardArgs args)
-            => _api.GetBitsLeaderboardAsync(args);
+        {
+            CheckScopes(args);
+            return _api.GetBitsLeaderboardAsync(args);
+        }
 
-        #endregion
+        #endregion  
         #region Bits
 
         public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
@@ -96,8 +164,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task ModifyChannelAsync(string broadcasterId, Action<ModifyChannelArgs> action)
             => _api.ModifyChannelAsync(broadcasterId, action.InvokeReturn());
         public Task ModifyChannelAsync(string broadcasterId, ModifyChannelArgs args)
-            => _api.ModifyChannelAsync(broadcasterId, args);
-
+        {
+            CheckScopes(args);
+            return _api.ModifyChannelAsync(broadcasterId, args);
+        }
+        
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(string broadcasterId)
             => _api.GetChannelEditorsAsync(broadcasterId);
 
@@ -108,7 +179,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, Action<PostRewardArgs> action)
             => _api.CreateRewardsAsync(broadcasterId, action.InvokeReturn());
         public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, PostRewardArgs args)
-            => _api.CreateRewardsAsync(broadcasterId, args);
+        {
+            CheckScopes(args);
+            return _api.CreateRewardsAsync(broadcasterId, args);
+        }
 
         public Task DeleteRewardAsync(string broadcasterId, string customRewardId)
             => _api.DeleteRewardAsync(broadcasterId, customRewardId);
@@ -117,25 +191,37 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Reward>> GetRewardsAsync(Action<GetRewardArgs> action)
             => _api.GetRewardsAsync(action.InvokeReturn());
         public Task<TwitchResponse<Reward>> GetRewardsAsync(GetRewardArgs args)
-            => _api.GetRewardsAsync(args);
+        {
+            CheckScopes(args);
+            return _api.GetRewardsAsync(args);
+        }
 
         /// <inheritdoc cref="GetRewardRedemptionAsync(GetRedemptionsArgs)"/>
         public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(Action<GetRedemptionsArgs> action)
             => GetRewardRedemptionAsync(action.InvokeReturn());
         public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(GetRedemptionsArgs args)
-            => _api.GetRewardRedemptionAsync(args);
+        {
+            CheckScopes(args);
+            return _api.GetRewardRedemptionAsync(args);
+        }
 
         /// <inheritdoc cref="ModifyRewardAsync(string, string, PostRewardArgs)"/>
         public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, Action<PostRewardArgs> action)
             => _api.ModifyRewardAsync(broadcasterId, rewardId, action.InvokeReturn());
         public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)
-            => _api.ModifyRewardAsync(broadcasterId, rewardId, args);
+        {
+            CheckScopes(args);
+            return _api.ModifyRewardAsync(broadcasterId, rewardId, args);
+        }
 
         /// <inheritdoc cref="ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)"/>
         public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, Action<ModifyRedemptionsArgs> action)
             => _api.ModifyRewardRedemptionAsync(status, action.InvokeReturn());
         public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
-            => _api.ModifyRewardRedemptionAsync(status, args);
+        {
+            CheckScopes(args);
+            return _api.ModifyRewardRedemptionAsync(status, args);
+        }
 
         #endregion
         #region Charity
@@ -147,13 +233,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync(Action<GetCharityDonationsArgs> action)
             => _api.GetCharityDonationsAsync(action.InvokeReturn());
         public Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync(GetCharityDonationsArgs args)
-            => _api.GetCharityDonationsAsync(args);
+        {
+            CheckScopes(args);
+            return _api.GetCharityDonationsAsync(args);
+        }
 
         #endregion
         #region Chat
 
         public Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync(GetChattersArgs args)
-            => _api.GetChattersAsync(args);
+        {
+            CheckScopes(args);
+            return _api.GetChattersAsync(args);
+        }
         public Task<TwitchResponse<object>> GetEmotesAsync(string args)
             => _api.GetEmotesAsync(args);
         public Task<TwitchResponse<object>> GetEmotesAsync()
