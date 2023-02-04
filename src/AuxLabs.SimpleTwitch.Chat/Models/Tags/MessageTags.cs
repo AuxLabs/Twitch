@@ -200,8 +200,8 @@ namespace AuxLabs.SimpleTwitch.Chat
                 Flags = str;
         }
 
-        string IUserRelation.RelatedId { get => ReplyParentUserId; set => ReplyParentUserId = value; }
-        string IUserRelation.RelatedName { get => ReplyParentUserName; set => ReplyParentUserName = value; }
-        string IUserRelation.RelatedDisplayName { get => ReplyParentDisplayName; set => ReplyParentUserName = value; }
+        string IUserRelation.RelatedId { get => ReplyParentUserId; }
+        string IUserRelation.RelatedName { get => ReplyParentUserName; }
+        string IUserRelation.RelatedDisplayName { get => ReplyParentDisplayName; }
     }
 }

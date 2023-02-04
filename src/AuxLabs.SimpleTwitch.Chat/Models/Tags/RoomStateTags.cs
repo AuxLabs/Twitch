@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public int FollowersOnlyMinutes { get; set; }
 
         /// <summary> Indicates whether a user’s messages must be unique. </summary>
-        public bool IsR9k { get; set; }
+        public bool IsUnique { get; set; }
 
         /// <summary>  </summary>
         public bool IsRituals { get; set; }
@@ -38,7 +38,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["room-id"] = ChannelId,
                 ["emote-only"] = IsEmoteOnly ? "1" : "0",
                 ["followers-only"] = FollowersOnlyMinutes.ToString(),
-                ["r9k"] = IsR9k ? "1" : "0",
+                ["r9k"] = IsUnique ? "1" : "0",
                 ["rituals"] = IsRituals ? "1" : "0",
                 ["slow"] = IsSlow ? "1" : "0",
                 ["subs-only"] = IsSubsOnly ? "1" : "0"
@@ -54,7 +54,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("followers-only", out str))
                 FollowersOnlyMinutes = int.Parse(str);
             if (map.TryGetValue("r9k", out str))
-                IsR9k = str == "1";
+                IsUnique = str == "1";
             if (map.TryGetValue("rituals", out str))
                 IsRituals = str == "1";
             if (map.TryGetValue("slow", out str))

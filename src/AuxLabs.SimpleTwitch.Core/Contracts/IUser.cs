@@ -2,7 +2,7 @@
 {
     public interface IUser : IEntity<string>
     {
-        string Name { get; set; }
-        string DisplayName { get; set; }
+        string Name { get; }
+        string DisplayName { get; }
     }
 }

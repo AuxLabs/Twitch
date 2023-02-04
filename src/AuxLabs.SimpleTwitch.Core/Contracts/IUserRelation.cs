@@ -2,8 +2,8 @@
 {
     public interface IUserRelation : IUser
     {
-        string RelatedId { get; set; }
-        string RelatedName { get; set; }
-        string RelatedDisplayName { get; set; }
+        string RelatedId { get; }
+        string RelatedName { get; }
+        string RelatedDisplayName { get; }
     }
 }

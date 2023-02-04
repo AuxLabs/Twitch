@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class GlobalUserStateTags : BaseTags
+    public class GlobalUserStateTags : BaseTags, IChatUser
     {
         /// <summary> The user’s ID. </summary>
         public string UserId { get; set; }
@@ -67,5 +67,9 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("turbo", out str))
                 IsTurbo = str == "1";
         }
+
+        string IEntity<string>.Id { get => UserId; }
+        string IUser.Name { get => null; }
+        Color? IChatUser.Color { get => Color; }
     }
 }

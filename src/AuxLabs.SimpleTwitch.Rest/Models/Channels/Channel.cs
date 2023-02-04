@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class Channel
+    public class Channel : IUser, IChannel
     {
         /// <summary> An ID that uniquely identifies the broadcaster. </summary>
         [JsonPropertyName("broadcaster_id")]
@@ -11,11 +11,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The broadcaster’s login name. </summary>
         [JsonPropertyName("broadcaster_login")]
-        public string BroadcasterLogin { get; set; }
+        public string BroadcasterName { get; set; }
 
         /// <summary> The broadcaster’s display name. </summary>
         [JsonPropertyName("broadcaster_name")]
-        public string BroadcasterName { get; set; }
+        public string BroadcasterDisplayName { get; set; }
 
         /// <summary> The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. </summary>
         [JsonPropertyName("broadcaster_language")]
@@ -40,5 +40,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The tags applied to the channel. </summary>
         [JsonPropertyName("tags")]
         public IEnumerable<string> Tags { get; set; }
+
+        string IUser.Name { get => BroadcasterDisplayName; }
+        string IUser.DisplayName { get => BroadcasterDisplayName; }
+        string IEntity<string>.Id { get => BroadcasterId; }
+        string IChannel.Name { get => BroadcasterName; }
     }
 }
