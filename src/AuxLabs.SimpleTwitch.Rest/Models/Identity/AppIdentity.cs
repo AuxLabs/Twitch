@@ -11,7 +11,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public int? ExpiresInSeconds { get; set; }
 
         [JsonPropertyName("token_type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<TokenType>))]
         public TokenType TokenType { get; set; }
     }
 }

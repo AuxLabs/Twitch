@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EmoteImage
+    public class CheermoteImage
     {
         [JsonPropertyName("1")]
         public string Size1 { get; set; }

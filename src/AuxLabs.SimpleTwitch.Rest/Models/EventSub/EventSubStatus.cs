@@ -1,7 +1,10 @@
-﻿using System.Runtime.Serialization;
+﻿using AuxLabs.SimpleTwitch.Rest;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
+    [JsonConverter(typeof(EnumMemberConverter<EventSubStatus>))]
     public enum EventSubStatus
     {
         Unknown = 0,

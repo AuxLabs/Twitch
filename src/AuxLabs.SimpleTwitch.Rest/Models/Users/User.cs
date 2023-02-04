@@ -9,7 +9,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// User’s broadcaster type
         /// </summary>
         [JsonPropertyName("broadcaster_type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<BroadcasterType>))]
         public BroadcasterType BroadcasterType { get; set; }
 
         /// <summary>
@@ -34,7 +33,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// User’s type
         /// </summary>
         [JsonPropertyName("type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<UserType>))]
         public UserType Type { get; set; }
 
         /// <summary>

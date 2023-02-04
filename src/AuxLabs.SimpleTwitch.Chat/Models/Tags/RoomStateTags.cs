@@ -17,19 +17,19 @@ namespace AuxLabs.SimpleTwitch.Chat
         public int FollowersOnlyMinutes { get; set; }
 
         /// <summary> Indicates whether a user’s messages must be unique. </summary>
-        public bool IsUnique { get; set; }
+        public bool IsUniqueEnabled { get; set; }
 
         /// <summary>  </summary>
         public bool IsRituals { get; set; }
 
         /// <summary> Indicates whether users must wait between sending messages. </summary>
-        public bool IsSlow  => SlowSeconds > 0;
+        public bool IsSlowEnabled => SlowSeconds > 0;
 
         /// <summary> Indicates how long, in seconds, users must wait between sending messages. </summary>
         public int SlowSeconds { get; set; }
 
         /// <summary> Indicates whether only subscribers and moderators can chat in the chat room. </summary>
-        public bool IsSubsOnly { get; set; }
+        public bool IsSubscribersOnly { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
@@ -38,10 +38,10 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["room-id"] = ChannelId,
                 ["emote-only"] = IsEmoteOnly ? "1" : "0",
                 ["followers-only"] = FollowersOnlyMinutes.ToString(),
-                ["r9k"] = IsUnique ? "1" : "0",
+                ["r9k"] = IsUniqueEnabled ? "1" : "0",
                 ["rituals"] = IsRituals ? "1" : "0",
-                ["slow"] = IsSlow ? "1" : "0",
-                ["subs-only"] = IsSubsOnly ? "1" : "0"
+                ["slow"] = IsSlowEnabled ? "1" : "0",
+                ["subs-only"] = IsSubscribersOnly ? "1" : "0"
             };
             return map;
         }
@@ -54,13 +54,13 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("followers-only", out str))
                 FollowersOnlyMinutes = int.Parse(str);
             if (map.TryGetValue("r9k", out str))
-                IsUnique = str == "1";
+                IsUniqueEnabled = str == "1";
             if (map.TryGetValue("rituals", out str))
                 IsRituals = str == "1";
             if (map.TryGetValue("slow", out str))
                 SlowSeconds = int.Parse(str);
             if (map.TryGetValue("subs-only", out str))
-                IsSubsOnly = str == "1";
+                IsSubscribersOnly = str == "1";
         }
     }
 }

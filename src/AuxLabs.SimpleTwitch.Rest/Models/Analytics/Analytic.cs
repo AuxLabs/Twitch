@@ -10,7 +10,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The type of report. </summary>
         [JsonPropertyName("type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<AnalyticType>))]
         public AnalyticType Type { get; set; }
 
         /// <summary> The reporting window’s start and end dates. </summary>

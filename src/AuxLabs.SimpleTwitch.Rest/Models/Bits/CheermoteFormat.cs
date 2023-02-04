@@ -2,12 +2,12 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EmoteFormat
+    public class CheermoteFormat
     {
         [JsonPropertyName("animated")]
-        public EmoteImage AnimatedImage { get; set; }
+        public CheermoteImage AnimatedImage { get; set; }
 
         [JsonPropertyName("static")]
-        public EmoteImage StaticImage { get; set; }
+        public CheermoteImage StaticImage { get; set; }
     }
 }

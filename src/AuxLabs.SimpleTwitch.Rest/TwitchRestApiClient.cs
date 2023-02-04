@@ -1,4 +1,5 @@
 ﻿using AuxLabs.SimpleTwitch.EventSub;
+using AuxLabs.SimpleTwitch.Rest.Requests.Chat;
 using RestEase;
 using System;
 using System.Collections.Generic;
@@ -242,31 +243,69 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Chat
 
+        /// <inheritdoc cref="GetChattersAsync(GetChattersArgs)"/>
+        public Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync(Action<GetChattersArgs> action)
+            => GetChattersAsync(action.InvokeReturn());
         public Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync(GetChattersArgs args)
         {
             CheckScopes(args);
             return _api.GetChattersAsync(args);
         }
-        public Task<TwitchResponse<object>> GetEmotesAsync(string args)
-            => _api.GetEmotesAsync(args);
-        public Task<TwitchResponse<object>> GetEmotesAsync()
+
+        public Task<TwitchResponse<Emote>> GetEmotesAsync(string broadcasterId)
+            => _api.GetEmotesAsync(broadcasterId);
+        public Task<TwitchResponse<GlobalEmote>> GetEmotesAsync()
             => _api.GetEmotesAsync();
-        public Task<TwitchResponse<object>> GetEmoteSetsAsync(object args)
+        public Task<TwitchResponse<Emote>> GetEmoteSetsAsync(GetEmoteSetsArgs args)
             => _api.GetEmoteSetsAsync(args);
-        public Task<TwitchResponse<object>> GetChannelBadgesAsync(object args)
-            => _api.GetChannelBadgesAsync(args);
-        public Task<TwitchResponse<object>> GetGlobalBadgesAsync(object args)
-            => _api.GetGlobalBadgesAsync(args);
-        public Task<TwitchResponse<object>> GetChatSettingsAsync(object args)
-            => _api.GetChatSettingsAsync(args);
-        public Task<TwitchResponse<object>> ModifyChatSettingsAsync(object args)
-            => _api.ModifyChatSettingsAsync(args);
-        public Task<TwitchResponse<object>> PostChatAnnouncementAsync(object args)
-            => _api.PostChatAnnouncementAsync(args);
-        public Task<TwitchResponse<object>> GetUserChatColorAsync(string userId)
-            => _api.GetUserChatColorAsync(userId);
-        public Task<TwitchResponse<object>> ModifyUserChatColor(object args)
-            => _api.ModifyUserChatColor(args);
+        public Task<TwitchResponse<Badge>> GetBadgesAsync(string broadcasterId)
+            => _api.GetBadgesAsync(broadcasterId);
+        public Task<TwitchResponse<Badge>> GetBadgesAsync()
+            => _api.GetBadgesAsync();
+        public Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync(string broadcasterId, string moderatorId = null)
+            => _api.GetChatSettingsAsync(broadcasterId, moderatorId);
+
+        /// <inheritdoc cref="PatchChatSettingsAsync(string, string, PatchChatSettingsArgs)"/>
+        public Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync(string broadcasterId, string moderatorId, Action<PatchChatSettingsArgs> action)
+            => PatchChatSettingsAsync(broadcasterId, moderatorId, action.InvokeReturn());
+        public Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync(string broadcasterId, string moderatorId, PatchChatSettingsArgs args)
+        {
+            CheckScopes(args);
+            return _api.PatchChatSettingsAsync(broadcasterId, moderatorId, args);
+        }
+
+        /// <inheritdoc cref="PostChatAnnouncementAsync(string, string, PostAnnouncementArgs)"/>
+        public Task PostChatAnnouncementAsync(string broadcasterId, string moderatorId, Action<PostAnnouncementArgs> action)
+            => PostChatAnnouncementAsync(broadcasterId, moderatorId, action.InvokeReturn());
+        public Task PostChatAnnouncementAsync(string broadcasterId, string moderatorId, PostAnnouncementArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostChatAnnouncementAsync(broadcasterId, moderatorId, args);
+        }
+
+        /// <inheritdoc cref="PostShoutoutAsync(PostShoutoutArgs)"/>
+        public Task PostShoutoutAsync(Action<PostShoutoutArgs> action)
+            => PostShoutoutAsync(action.InvokeReturn());
+        public Task PostShoutoutAsync(PostShoutoutArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostShoutoutAsync(args);
+        }
+
+        /// <inheritdoc cref="GetUserChatColorAsync(GetUserColorArgs)"/>
+        public Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync(Action<GetUserColorArgs> action)
+            => _api.GetUserChatColorAsync(action.InvokeReturn());
+        public Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync(GetUserColorArgs args)
+            => _api.GetUserChatColorAsync(args);
+
+        /// <inheritdoc cref="PutUserChatColor(PutUserChatColorArgs)"/>
+        public Task PutUserChatColor(Action<PutUserChatColorArgs> action)
+            => PutUserChatColor(action.InvokeReturn());
+        public Task PutUserChatColor(PutUserChatColorArgs args)
+        {
+            CheckScopes(args);
+            return _api.PutUserChatColor(args);
+        }
 
         #endregion
 
@@ -333,9 +372,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetGamesAsync(object args)
             => _api.GetGamesAsync(args);
 
-        public Task<TwitchResponse<object>> GetGoalsAsync(object args)
-            => _api.GetGoalsAsync(args);
+        #region Goals
 
+        public Task<TwitchResponse<Goal>> GetGoalsAsync(string broadcasterId)
+            => _api.GetGoalsAsync(broadcasterId);
+        
+        #endregion
         #region HypeTrain
 
         /// <inheritdoc cref="GetHypetrainEventsAsync(GetHypeTrainsArgs)"/>
@@ -492,5 +534,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public Task PostWhisperAsync(string fromUserId, string toUserId, string message)
             => _api.PostWhisperAsync(fromUserId, toUserId, message);
+
     }
 }

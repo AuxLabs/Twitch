@@ -27,6 +27,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The animated and static image sets for the Cheermote. </summary>
         [JsonPropertyName("images")]
-        public EmoteTheme Images { get; set; }
+        public CheermoteTheme Images { get; set; }
     }
 }

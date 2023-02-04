@@ -11,7 +11,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The type of currency exchanged. </summary>
         [JsonPropertyName("type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<CostType>))]
         public CostType Type { get; set; }
     }
 }

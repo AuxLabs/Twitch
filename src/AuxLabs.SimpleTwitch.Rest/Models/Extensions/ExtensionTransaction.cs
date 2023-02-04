@@ -39,7 +39,6 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The type of transaction. </summary>
         [JsonPropertyName("product_type")]
-        [JsonConverter(typeof(NullableEnumStringConverter<ProductType>))]
         public ProductType ProductType { get; set; }
 
         /// <summary> Contains details about the digital product. </summary>

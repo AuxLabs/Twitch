@@ -1,4 +1,5 @@
 ﻿using AuxLabs.SimpleTwitch.EventSub;
+using AuxLabs.SimpleTwitch.Rest.Requests.Chat;
 using RestEase;
 using System;
 using System.Collections.Generic;
@@ -171,35 +172,76 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("chat/chatters")]
         Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync([QueryMap]GetChattersArgs args);
 
+        /// <summary> Gets the broadcaster’s list of custom emotes. </summary>
+        /// <returns> A collection of <see cref="Emote"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/emotes")]
-        Task<TwitchResponse<object>> GetEmotesAsync([Query("broadcaster_id")]string broadcasterId);
+        Task<TwitchResponse<Emote>> GetEmotesAsync([Query("broadcaster_id")] string broadcasterId);
 
+        /// <summary> Gets the list of global emotes. </summary>
+        /// <returns> A collection of <see cref="GlobalEmote"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("chat/emotes/global")]
-        Task<TwitchResponse<object>> GetEmotesAsync();
+        Task<TwitchResponse<GlobalEmote>> GetEmotesAsync();
 
+        /// <summary> Gets emotes for one or more specified emote sets. </summary>
+        /// <returns> A collection of <see cref="Emote"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/emotes/set")]
-        Task<TwitchResponse<object>> GetEmoteSetsAsync([Query] object args);
+        Task<TwitchResponse<Emote>> GetEmoteSetsAsync([QueryMap]GetEmoteSetsArgs args);
 
+        /// <summary> Gets the broadcaster’s list of custom chat badges. </summary>
+        /// <returns> A collection of <see cref="Badge"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/badges")]
-        Task<TwitchResponse<object>> GetChannelBadgesAsync([Query] object args);
+        Task<TwitchResponse<Badge>> GetBadgesAsync([Query("broadcaster_id")] string broadcasterId);
 
+        /// <summary> Gets Twitch’s list of chat badges, which users may use in any channel’s chat room. </summary>
+        /// <returns> A collection of <see cref="Badge"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("chat/badges/global")]
-        Task<TwitchResponse<object>> GetGlobalBadgesAsync([Query] object args);
+        Task<TwitchResponse<Badge>> GetBadgesAsync();
 
+        /// <summary> Gets the broadcaster’s chat settings. </summary>
+        /// <returns> A single <see cref="ChatSettings"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/settings")]
-        Task<TwitchResponse<object>> GetChatSettingsAsync([Query] object args);
+        Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync([Query("broadcaster_id")] string broadcasterId, [Query("moderator_id")] string moderatorId = null);
 
+        /// <summary> Updates the broadcaster’s chat settings. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:chat_settings</c> scope. </remarks>
+        /// <returns> A single <see cref="ChatSettings"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Patch("chat/settings")]
-        Task<TwitchResponse<object>> ModifyChatSettingsAsync([Query] object args);
+        Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync([Query("broadcaster_id")] string broadcasterId, [Query("moderator_id")] string moderatorId, [Body] PatchChatSettingsArgs args);
 
+        /// <summary> Sends an announcement to the broadcaster’s chat room. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:announcements</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Post("chat/announcements")]
-        Task<TwitchResponse<object>> PostChatAnnouncementAsync([Query] object args);
+        Task PostChatAnnouncementAsync([Query("broadcaster_id")] string broadcasterId, [Query("moderator_id")] string moderatorId, [Body] PostAnnouncementArgs args);
 
+        /// <summary> Sends a shoutout to the specified broadcaster. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:shoutouts</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
+        [Get("chat/shoutouts")]
+        Task PostShoutoutAsync([QueryMap] PostShoutoutArgs args);
+
+        /// <summary> Gets the color used for the user’s name in chat. </summary>
+        /// <returns> A collection of <see cref="SimpleChatUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/color")]
-        Task<TwitchResponse<object>> GetUserChatColorAsync([Query] string userId);
+        Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync([QueryMap] GetUserColorArgs args);
 
+        /// <summary> Updates the color used for the user's name in chat. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:manage:chat_color</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Put("chat/color")]
-        Task<TwitchResponse<object>> ModifyUserChatColor([Query] object args);
+        Task PutUserChatColor([QueryMap] PutUserChatColorArgs args);
 
         #endregion
         #region Clips
@@ -286,8 +328,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Goals
 
+        /// <summary> Gets the broadcaster’s list of active goals. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:goals</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Goal"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("goals")]
-        Task<TwitchResponse<object>> GetGoalsAsync([Query] object args);
+        Task<TwitchResponse<Goal>> GetGoalsAsync([Query("broadcaster_id")]string broadcasterId);
 
         #endregion
         #region Hype Train
@@ -295,8 +342,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Gets information about the broadcaster’s current or most recent Hype Train event. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>channel:read:hype_train</c> scope. </remarks>
-        /// <returns> A <see cref="HypeTrainInfo"/> object. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
+        /// <returns> A collection of <see cref="HypeTrainInfo"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("hypetrain/events")]
         Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync([QueryMap]GetHypeTrainsArgs args);
 

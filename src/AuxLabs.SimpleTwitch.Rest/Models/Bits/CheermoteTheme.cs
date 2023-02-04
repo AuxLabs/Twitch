@@ -2,12 +2,12 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EmoteTheme
+    public class CheermoteTheme
     {
         [JsonPropertyName("dark")]
-        public EmoteFormat Dark { get; set; }
+        public CheermoteFormat Dark { get; set; }
 
         [JsonPropertyName("light")]
-        public EmoteFormat Light { get; set; }
+        public CheermoteFormat Light { get; set; }
     }
 }

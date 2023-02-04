@@ -1,10 +1,13 @@
 ﻿using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
+    [JsonConverter(typeof(EnumMemberConverter<ChatColor>))]
     public enum ChatColor
     {
         None = 0,
+
         [EnumMember(Value = "blue")]
         Blue,
         [EnumMember(Value = "blue_violet")]

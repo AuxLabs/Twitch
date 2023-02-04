@@ -15,6 +15,5 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The user’s login name. </summary>
         [JsonPropertyName("login")]
         public string Name { get; set; }
-
     }
 }

@@ -2,18 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class TwitchImage
+    public struct TwitchImage
     {
-        /// <summary> The URL to a small version of the image. </summary>
+        /// <summary> A URL to the small version (28px x 28px) of the image. </summary>
         [JsonPropertyName("url_1x")]
-        public string SmallUrl { get; set; }
+        public string SmallImageUrl { get; set; }
 
-        /// <summary> The URL to a medium version of the image. </summary>
+        /// <summary> A URL to the medium version (56px x 56px) of the image. </summary>
         [JsonPropertyName("url_2x")]
-        public string MediumUrl { get; set; }
+        public string MediumImageUrl { get; set; }
 
-        /// <summary> The URL to a large version of the image. </summary>
+        /// <summary> A URL to the large version (112px x 112px) of the image. </summary>
         [JsonPropertyName("url_4x")]
-        public string LargeUrl { get; set; }
+        public string LargeImageUrl { get; set; }
     }
 }

@@ -13,7 +13,6 @@
     <Folder Include="Models\Clips\" />
     <Folder Include="Models\Entitlements\" />
     <Folder Include="Models\Games\" />
-    <Folder Include="Models\Goals\" />
     <Folder Include="Models\Moderation\" />
     <Folder Include="Models\Music\" />
     <Folder Include="Models\Polls\" />
