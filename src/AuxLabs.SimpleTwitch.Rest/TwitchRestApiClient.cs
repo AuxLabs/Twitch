@@ -23,8 +23,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             : this(TwitchConstants.RestApiUrl, config) { }
         public TwitchRestApiClient(string url, TwitchRestApiConfig config = null)
         {
+            config ??= new TwitchRestApiConfig();
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, config.RateLimiter ??= new DefaultRateLimiter()));
+            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, config.RateLimiter));
             _identity = new TwitchIdentityApiClient(config.ClientId, config.ClientSecret);
 
             _api.ClientId = config.ClientId;

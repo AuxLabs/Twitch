@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -19,6 +18,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string UserId { get; set; }
 
         [JsonPropertyName("expires_in")]
-        public TimeSpan ExpiresIn { get; set; }
+        public int? ExpiresInSeconds { get; set; }
     }
 }

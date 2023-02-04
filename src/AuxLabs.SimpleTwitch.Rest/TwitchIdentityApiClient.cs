@@ -26,13 +26,18 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public TwitchIdentityApiClient()
             : this(TwitchConstants.RestIdentityApiUrl) { }
+        public TwitchIdentityApiClient(string clientId, string clientSecret)
+            : this(clientId, clientSecret, TwitchConstants.RestIdentityApiUrl) { }
         public TwitchIdentityApiClient(string url)
         {
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchIdentityApi>(url);
+            _api = new RestClient(httpClient)
+            {
+                ResponseDeserializer = new JsonResponseDeserializer(),
+                RequestBodySerializer = new JsonBodySerializer(),
+                RequestQueryParamSerializer = new JsonQueryParamSerializer()
+            }.For<ITwitchIdentityApi>();
         }
-        public TwitchIdentityApiClient(string clientId, string clientSecret)
-            : this(clientId, clientSecret, TwitchConstants.RestIdentityApiUrl) { }
         public TwitchIdentityApiClient(string clientId, string clientSecret, string url)
             : this(url)
         {
@@ -66,13 +71,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task<AccessTokenInfo> ValidateAsync(string token)
         {
             var tokenInfo = await _api.ValidateAsync(token);
+            ClientId = tokenInfo.ClientId;
 
             if (tokenInfo.UserId == null)   // Token is an app authorization
             {
                 Identity = new AppIdentity
                 {
                     AccessToken = token,
-                    ExpiresIn = tokenInfo.ExpiresIn,
+                    ExpiresInSeconds = tokenInfo.ExpiresInSeconds,
                     TokenType = TokenType.Bearer
                 };
             }
@@ -81,7 +87,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 Identity = new UserIdentity
                 {
                     AccessToken = token,
-                    ExpiresIn = tokenInfo.ExpiresIn,
+                    ExpiresInSeconds = tokenInfo.ExpiresInSeconds,
                     UserName = tokenInfo.UserName,
                     RefreshToken = RefreshToken,
                     Scopes = tokenInfo.Scopes,

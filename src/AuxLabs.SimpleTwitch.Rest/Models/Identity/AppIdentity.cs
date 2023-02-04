@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -9,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string AccessToken { get; set; }
 
         [JsonPropertyName("expires_in")]
-        public TimeSpan ExpiresIn { get; set; }
+        public int? ExpiresInSeconds { get; set; }
 
         [JsonPropertyName("token_type")]
         [JsonConverter(typeof(NullableEnumStringConverter<TokenType>))]

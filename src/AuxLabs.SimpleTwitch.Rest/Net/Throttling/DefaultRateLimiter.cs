@@ -44,7 +44,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public virtual void UpdateLimit(string bucketId, RateLimitInfo info)
         {
             if (info.IsGlobal)
-                _globalWaitUntil = info.Reset.Value.AddMilliseconds(info.Lag?.TotalMilliseconds ?? 0.0);
+                _globalWaitUntil = info.Reset?.AddMilliseconds(info.Lag?.TotalMilliseconds ?? 0.0) ?? DateTimeOffset.Now;
             else
             {
                 var bucket = _buckets.GetOrAdd(bucketId, x => new RequestBucket());
