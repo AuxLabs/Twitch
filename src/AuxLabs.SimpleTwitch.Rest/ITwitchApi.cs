@@ -265,7 +265,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Delete("eventsub/subscriptions")]
-        Task DeleteEventSubcrptionAsync([Query("id")]string id);
+        Task DeleteEventSubcrptionAsync([Query("id")]string eventsubId);
 
         /// <summary> Gets a collection of EventSub subscriptions that the client in the access token created. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
@@ -292,8 +292,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Hype Train
 
+        /// <summary> Gets information about the broadcaster’s current or most recent Hype Train event. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:hype_train</c> scope. </remarks>
+        /// <returns> A <see cref="HypeTrainInfo"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("hypetrain/events")]
-        Task<TwitchResponse<object>> GetHypetrainEventsAsync([Query] object args);
+        Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync([QueryMap]GetHypeTrainsArgs args);
 
         #endregion
         #region Moderation

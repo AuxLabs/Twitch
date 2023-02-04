@@ -336,8 +336,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetGoalsAsync(object args)
             => _api.GetGoalsAsync(args);
 
-        public Task<TwitchResponse<object>> GetHypetrainEventsAsync(object args)
-            => _api.GetHypetrainEventsAsync(args);
+        #region HypeTrain
+
+        /// <inheritdoc cref="GetHypetrainEventsAsync(GetHypeTrainsArgs)"/>
+        public Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync(Action<GetHypeTrainsArgs> action)
+            => _api.GetHypetrainEventsAsync(action.InvokeReturn());
+        public Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync(GetHypeTrainsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetHypetrainEventsAsync(args);
+        }
+            
+
+        #endregion
 
         public Task<TwitchResponse<object>> GetModerationStatusAsync(object args)
             => _api.GetModerationStatusAsync(args);
