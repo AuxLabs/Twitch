@@ -1,4 +1,4 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: Questions and Answers
     url: https://github.com/AuxLabs/SimpleTwitch/discussions/categories/q-a
