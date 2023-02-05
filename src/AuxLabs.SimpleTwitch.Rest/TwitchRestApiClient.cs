@@ -37,7 +37,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (!_disposed)
             {
                 if (disposing)
+                {
                     _api.Dispose();
+                    _identity.Dispose();
+                }
                 
                 _disposed = true;
             }
@@ -49,8 +52,9 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         private void CheckScopes(IScoped request)
         {
-            if (!(Identity is UserIdentity user))       // Identity is an app
-                return;
+            var user = Identity as UserIdentity;
+            if (user == null)
+                throw new TwitchException("This request cannot be made using app authorization.");
             if (!(user.Scopes.Any(x => request.Scopes.Contains(x))))
                 throw new MissingScopeException(request.Scopes);
         }
@@ -162,13 +166,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsArgs args)
             => _api.GetChannelsAsync(args);
 
-        /// <inheritdoc cref="ModifyChannelAsync(string, ModifyChannelArgs)"/>
+        /// <inheritdoc cref="PatchChannelAsync(string, ModifyChannelArgs)"/>
         public Task ModifyChannelAsync(string broadcasterId, Action<ModifyChannelArgs> action)
-            => _api.ModifyChannelAsync(broadcasterId, action.InvokeReturn());
-        public Task ModifyChannelAsync(string broadcasterId, ModifyChannelArgs args)
+            => _api.PatchChannelAsync(broadcasterId, action.InvokeReturn());
+        public Task PatchChannelAsync(string broadcasterId, ModifyChannelArgs args)
         {
             CheckScopes(args);
-            return _api.ModifyChannelAsync(broadcasterId, args);
+            return _api.PatchChannelAsync(broadcasterId, args);
         }
         
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(string broadcasterId)
@@ -177,13 +181,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Channel Points
 
-        /// <inheritdoc cref="CreateRewardsAsync(string, PostRewardArgs)"/>
+        /// <inheritdoc cref="PostRewardsAsync(string, PostRewardArgs)"/>
         public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, Action<PostRewardArgs> action)
-            => _api.CreateRewardsAsync(broadcasterId, action.InvokeReturn());
-        public Task<TwitchResponse<Reward>> CreateRewardsAsync(string broadcasterId, PostRewardArgs args)
+            => _api.PostRewardsAsync(broadcasterId, action.InvokeReturn());
+        public Task<TwitchResponse<Reward>> PostRewardsAsync(string broadcasterId, PostRewardArgs args)
         {
             CheckScopes(args);
-            return _api.CreateRewardsAsync(broadcasterId, args);
+            return _api.PostRewardsAsync(broadcasterId, args);
         }
 
         public Task DeleteRewardAsync(string broadcasterId, string customRewardId)
@@ -207,22 +211,22 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetRewardRedemptionAsync(args);
         }
 
-        /// <inheritdoc cref="ModifyRewardAsync(string, string, PostRewardArgs)"/>
+        /// <inheritdoc cref="PatchRewardAsync(string, string, PostRewardArgs)"/>
         public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, Action<PostRewardArgs> action)
-            => _api.ModifyRewardAsync(broadcasterId, rewardId, action.InvokeReturn());
-        public Task<TwitchResponse<Reward>> ModifyRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)
+            => _api.PatchRewardAsync(broadcasterId, rewardId, action.InvokeReturn());
+        public Task<TwitchResponse<Reward>> PatchRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)
         {
             CheckScopes(args);
-            return _api.ModifyRewardAsync(broadcasterId, rewardId, args);
+            return _api.PatchRewardAsync(broadcasterId, rewardId, args);
         }
 
-        /// <inheritdoc cref="ModifyRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)"/>
+        /// <inheritdoc cref="PatchRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs)"/>
         public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, Action<ModifyRedemptionsArgs> action)
-            => _api.ModifyRewardRedemptionAsync(status, action.InvokeReturn());
-        public Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
+            => _api.PatchRewardRedemptionAsync(status, action.InvokeReturn());
+        public Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
         {
             CheckScopes(args);
-            return _api.ModifyRewardRedemptionAsync(status, args);
+            return _api.PatchRewardRedemptionAsync(status, args);
         }
 
         #endregion
@@ -256,8 +260,13 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetEmotesAsync(broadcasterId);
         public Task<TwitchResponse<GlobalEmote>> GetEmotesAsync()
             => _api.GetEmotesAsync();
+
+        /// <inheritdoc cref="GetEmoteSetsAsync(GetEmoteSetsArgs)"/>
+        public Task<TwitchResponse<Emote>> GetEmoteSetsAsync(Action<GetEmoteSetsArgs> action)
+            => GetEmoteSetsAsync(action.InvokeReturn());
         public Task<TwitchResponse<Emote>> GetEmoteSetsAsync(GetEmoteSetsArgs args)
             => _api.GetEmoteSetsAsync(args);
+
         public Task<TwitchResponse<Badge>> GetBadgesAsync(string broadcasterId)
             => _api.GetBadgesAsync(broadcasterId);
         public Task<TwitchResponse<Badge>> GetBadgesAsync()
