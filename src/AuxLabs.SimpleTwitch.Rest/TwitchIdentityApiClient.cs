@@ -2,6 +2,7 @@
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Security.Principal;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -60,6 +61,17 @@ namespace AuxLabs.SimpleTwitch.Rest
             Dispose(true);
         }
 
+        /// <summary> Get an app identity using the provided app credentials. </summary>
+        public async Task<AppIdentity> ValidateAsync()
+        {
+            Identity = await PostAccessTokenAsync(new PostAppAccessTokenArgs
+            {
+                ClientId = ClientId,
+                ClientSecret = ClientSecret
+            });
+            return Identity;
+        }
+
         /// <summary> Get information relating to a user access token </summary>
         public Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken)
         {
@@ -98,33 +110,33 @@ namespace AuxLabs.SimpleTwitch.Rest
             return tokenInfo;
         }
 
-        /// <summary> Revoke an access token that is no longer needed </summary>
-        public Task RevokeTokenAsync(PostRevokeTokenArgs args)
-            => _api.RevokeTokenAsync(Fill(args));
         /// <inheritdoc cref="PostRevokeTokenAsync(PostRevokeTokenArgs)" />
         public Task RevokeTokenAsync(Action<PostRevokeTokenArgs> action)
             => RevokeTokenAsync(action.InvokeReturn());
+        /// <summary> Revoke an access token that is no longer needed </summary>
+        public Task RevokeTokenAsync(PostRevokeTokenArgs args)
+            => _api.RevokeTokenAsync(Fill(args));
 
-        /// <summary> Refresh an expired user access token </summary>
-        public Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args)
-            => _api.PostRefreshTokenAsync((PostRefreshTokenArgs)Fill(args));
         /// <inheritdoc cref="PostRefreshTokenAsync(PostRefreshTokenArgs)" />
         public Task<UserIdentity> PostRefreshTokenAsync(Action<PostRefreshTokenArgs> action)
             => PostRefreshTokenAsync(action.InvokeReturn());
+        /// <summary> Refresh an expired user access token </summary>
+        public Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args)
+            => _api.PostRefreshTokenAsync((PostRefreshTokenArgs)Fill(args));
 
-        /// <summary> Get an access token that identifies you as the specified application </summary>
-        public Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args)
-            => _api.PostAccessTokenAsync(Fill(args));
         /// <inheritdoc cref="PostAccessTokenAsync(PostAppAccessTokenArgs)" />
         public Task<AppIdentity> PostAccessTokenAsync(Action<PostAppAccessTokenArgs> action)
             => PostAccessTokenAsync(action.InvokeReturn());
+        /// <summary> Get an access token that identifies you as the specified application </summary>
+        public Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args)
+            => _api.PostAccessTokenAsync(Fill(args));
 
-        /// <summary> Get an access token that identifies you as the specified user </summary>
-        public Task<UserIdentity> PostAccessTokenAsync(PostUserAccessTokenArgs args)
-            => _api.PostAccessTokenAsync((PostUserAccessTokenArgs)Fill(args));
         /// <inheritdoc cref="PostAccessTokenAsync(PostUserAccessTokenArgs)" />
         public Task<UserIdentity> PostAccessTokenAsync(Action<PostUserAccessTokenArgs> action)
             => PostAccessTokenAsync(action.InvokeReturn());
+        /// <summary> Get an access token that identifies you as the specified user </summary>
+        public Task<UserIdentity> PostAccessTokenAsync(PostUserAccessTokenArgs args)
+            => _api.PostAccessTokenAsync((PostUserAccessTokenArgs)Fill(args));
 
         private PostAppAccessTokenArgs Fill(PostAppAccessTokenArgs args)
         {

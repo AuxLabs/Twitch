@@ -61,6 +61,14 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         #region Identity
 
+        /// <inheritdoc cref="TwitchIdentityApiClient.ValidateAsync()" />
+        public async Task<AppIdentity> ValidateAsync()
+        {
+            await _identity.ValidateAsync();
+            _api.Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            return Identity;
+        }
+
         /// <inheritdoc cref="TwitchIdentityApiClient.ValidateAsync(string)" />
         public async Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken = null)
         {
