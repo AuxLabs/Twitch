@@ -51,9 +51,10 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
-        private string _url = null;
+        private readonly string _url = null;
         private string _username = null;
         private string _token = null;
+        private bool _anonymous = false;
 
         public TwitchChatApiClient(TwitchChatApiConfig config = null)
             : this(TwitchConstants.ChatSecureWebSocketUrl, config) { }
@@ -77,15 +78,19 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (State == ConnectionState.Connected)
                 throw new InvalidOperationException("Identity can't be changed after connection");
 
-            if (string.IsNullOrWhiteSpace(username)) 
-                throw new ArgumentException("Required parameter was invalid", nameof(username));
-            if (string.IsNullOrWhiteSpace(token)) 
-                throw new ArgumentException("Required parameter was invalid", nameof(token));
+            if (string.IsNullOrWhiteSpace(username))
+                throw new ArgumentException("Required parameter was null or empty", nameof(username));
+            if (string.IsNullOrWhiteSpace(token))
+                throw new ArgumentException("Required parameter was null or empty", nameof(token));
+
+            if (username.StartsWith("justinfan") && token.StartsWith("justinfan"))
+                _anonymous = true;
 
             _username = username;
             if (!token.StartsWith("oauth:"))
                 token = token.Insert(0, "oauth:");
             _token = token;
+
             return this;
         }
 
@@ -113,6 +118,9 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override void HandleEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
+            if (State != ConnectionState.Connected && _anonymous)   // Anonymous never gets a globaluserstate
+                readySignal.TrySetResult(true);
+
             if (payload.Command == IrcCommand.GlobalUserState) // This command is used to confirm authentication.
             {
                 readySignal.TrySetResult(true);
