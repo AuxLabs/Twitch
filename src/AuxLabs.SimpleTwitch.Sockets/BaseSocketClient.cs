@@ -61,9 +61,9 @@ namespace AuxLabs.SimpleTwitch.Sockets
         protected abstract void SendHeartbeatAck();
         protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
 
-        public void Run(string url)
+        protected void Run(string url)
             => RunAsync(url).ConfigureAwait(false).GetAwaiter().GetResult();
-        public async Task RunAsync(string url)
+        protected async Task RunAsync(string url)
         {
             Task exceptionSignal;
             await _stateLock.WaitAsync().ConfigureAwait(false);
