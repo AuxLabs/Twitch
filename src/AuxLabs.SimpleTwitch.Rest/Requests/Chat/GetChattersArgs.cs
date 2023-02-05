@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetChattersArgs : QueryMap, IPaginated, IScoped
     {
-        public string[] Scopes { get; } = new[] { "moderator:read:chatters" };
+        public string[] Scopes { get; } = { "moderator:read:chatters" };
 
         /// <summary> The ID of the broadcaster whose list of chatters you want to get. </summary>
         public string BroadcasterId { get; set; }

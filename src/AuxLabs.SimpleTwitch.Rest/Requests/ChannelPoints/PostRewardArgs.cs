@@ -5,8 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class PostRewardArgs : IScoped
     {
-        [JsonIgnore]
-        public string[] Scopes { get; } = new[] { "channel:manage:redemptions" };
+        public string[] Scopes { get; } = { "channel:manage:redemptions" };
 
         /// <summary> The custom reward’s title. </summary>
         /// <remarks> The title may contain a maximum of 45 

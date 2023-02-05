@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class PutUserChatColorArgs : QueryMap, IScoped
     {
-        public string[] Scopes { get; } = new[] { "user:manage:chat_color" };
+        public string[] Scopes { get; } = { "user:manage:chat_color" };
 
         /// <summary> The ID of the user whose chat color you want to update. </summary>
         public string UserId { get; set; }

@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class PostShoutoutArgs : QueryMap, IScoped
     {
-        public string[] Scopes { get; } = new[] { "moderator:manage:shoutouts" };
+        public string[] Scopes { get; } = { "moderator:manage:shoutouts" };
 
         /// <summary> The ID of the broadcaster that’s sending the Shoutout. </summary>
         public string FromBroadcasterId { get; set; }

@@ -5,8 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class ModifyChannelArgs : IScoped
     {
-        [JsonIgnore]
-        public string[] Scopes { get; } = new[] { "channel:manage:broadcast" };
+        public string[] Scopes { get; } = { "channel:manage:broadcast" };
 
         /// <summary> The ID of the game that the user plays. </summary>
         [JsonPropertyName("game_id")]

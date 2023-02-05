@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class ModifyRedemptionsArgs : QueryMap<string[]>, IScoped
     {
-        public string[] Scopes { get; } = new[] { "channel:manage:redemptions" };
+        public string[] Scopes { get; } = { "channel:manage:redemptions" };
 
         /// <summary> The ID of the broadcaster that owns the custom reward. </summary>
         public string BroadcasterId { get; set; }

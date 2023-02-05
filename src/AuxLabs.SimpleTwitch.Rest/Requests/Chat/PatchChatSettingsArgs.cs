@@ -4,8 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class PatchChatSettingsArgs : IScoped
     {
-        [JsonIgnore]
-        public string[] Scopes { get; } = new[] { "moderator:manage:chat_settings" };
+        public string[] Scopes { get; } = { "moderator:manage:chat_settings" };
 
         /// <summary> Determines whether chat messages must contain only emotes. </summary>
         [JsonPropertyName("emote_mode")]

@@ -4,7 +4,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetHypeTrainsArgs : QueryMap, IPaginated, IScoped
     {
-        public string[] Scopes { get; } = new[] { "channel:read:hype_train" };
+        public string[] Scopes { get; } = { "channel:read:hype_train" };
 
         /// <summary> The ID of the broadcaster that’s running the Hype Train. </summary>
         public string BroadcasterId { get; set; }
