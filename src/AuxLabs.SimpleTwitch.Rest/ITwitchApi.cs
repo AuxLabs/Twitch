@@ -82,7 +82,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// with the <c>channel:manage:broadcast</c> scope. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("channels")]
-        Task ModifyChannelAsync([Query("broadcaster_id")] string broadcasterId, [Body] ModifyChannelArgs args);
+        Task PatchChannelAsync([Query("broadcaster_id")] string broadcasterId, [Body] ModifyChannelArgs args);
         
         /// <summary> Gets the broadcaster’s list editors. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -101,7 +101,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A single <see cref="Reward"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("channel_points/custom_rewards")]
-        Task<TwitchResponse<Reward>> CreateRewardsAsync([Query("broadcaster_id")] string broadcasterId, [Body]PostRewardArgs args);
+        Task<TwitchResponse<Reward>> PostRewardsAsync([Query("broadcaster_id")] string broadcasterId, [Body]PostRewardArgs args);
 
         /// <summary> Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -132,7 +132,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Reward"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Patch("channel_points/custom_rewards")]
-        Task<TwitchResponse<Reward>> ModifyRewardAsync([Query("broadcaster_id")]string broadcasterId, [Query("id")]string rewardId, [Body]PostRewardArgs args);
+        Task<TwitchResponse<Reward>> PatchRewardAsync([Query("broadcaster_id")]string broadcasterId, [Query("id")]string rewardId, [Body]PostRewardArgs args);
 
         /// <summary> Updates a redemption’s status. The app used to create the reward is the only app that may update the redemption. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -140,7 +140,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Reward"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Patch("channel_points/custom_rewards/redemptions")]
-        Task<TwitchResponse<Redemption>> ModifyRewardRedemptionAsync([Body]RedemptionStatus status, [QueryMap]ModifyRedemptionsArgs args);
+        Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync([Body]RedemptionStatus status, [QueryMap]ModifyRedemptionsArgs args);
 
         #endregion
         #region Charity
@@ -150,7 +150,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// with the <c>channel:read:charity</c> scope. </remarks>
         /// <returns> A <see cref="CharityCampaign"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
-        [Post("charity/campaigns")]
+        [Get("charity/campaigns")]
         Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync([Query("broadcaster_id")]string broadcasterId);
 
         /// <summary> Gets the list of donations that users have made to the broadcaster’s active charity campaign. </summary>
@@ -158,7 +158,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// with the <c>channel:read:charity</c> scope. </remarks>
         /// <returns> A <see cref="CharityDonation"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
-        [Post("charity/donations")]
+        [Get("charity/donations")]
         Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap]GetCharityDonationsArgs args);
 
         #endregion
