@@ -51,12 +51,16 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
+        private string _url = null;
         private string _username = null;
         private string _token = null;
 
-        public TwitchChatApiClient(TwitchChatApiConfig config = null) : base(-1)
+        public TwitchChatApiClient(TwitchChatApiConfig config = null)
+            : this(TwitchConstants.ChatSecureWebSocketUrl, config) { }
+        public TwitchChatApiClient(string url, TwitchChatApiConfig config = null) : base(-1)
         {
             config ??= new TwitchChatApiConfig();
+            _url = url;
 
             Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnMismatchedTags);
 
@@ -85,10 +89,8 @@ namespace AuxLabs.SimpleTwitch.Chat
             return this;
         }
 
-        public void Run()
-            => Run(TwitchConstants.ChatSecureWebSocketUrl);
-        public Task RunAsync()
-            => RunAsync(TwitchConstants.ChatSecureWebSocketUrl);
+        public void Run() => Run(_url);
+        public Task RunAsync() => RunAsync(_url);
 
         protected override void SendIdentify()
         {
