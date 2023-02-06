@@ -19,10 +19,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
         public async Task GetUsersByNameAsync()
         {
             var randomUsers = await _fixture.Mock.GetRandomUsernamesAsync();
-            var users = await _fixture.Twitch.GetUsersAsync(new GetUsersArgs
-            {
-                UserNames = randomUsers
-            });
+            var users = await _fixture.Twitch.GetUsersAsync(new GetUsersArgs(GetUsersMode.Name, randomUsers.ToArray()));
 
             Assert.NotNull(users);
             Assert.NotEmpty(users?.Data);
@@ -35,10 +32,7 @@ namespace AuxLabs.SimpleTwitch.Tests.Rest
         public async Task GetUsersByIdAsync()
         {
             var randomUsers = await _fixture.Mock.GetRandomUserIdsAsync();
-            var users = await _fixture.Twitch.GetUsersAsync(new GetUsersArgs
-            {
-                UserIds = randomUsers
-            });
+            var users = await _fixture.Twitch.GetUsersAsync(new GetUsersArgs(GetUsersMode.Name, randomUsers.ToArray()));
 
             Assert.NotNull(users);
             Assert.NotEmpty(users?.Data);
