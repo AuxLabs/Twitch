@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch
 {
-    public class MismatchedTagsException : TwitchException
+    public class UnexpectedTagsException : SerializationException
     {
         public string EventName { get; }
         public SortedDictionary<string, string> Expected { get; }
         public SortedDictionary<string, string> Provided { get; }
         public SortedDictionary<string, string> Unique { get; }
 
-        public MismatchedTagsException(string eventName, IDictionary<string, string> expected, Dictionary<string, string> provided)
+        public UnexpectedTagsException(string eventName, IDictionary<string, string> expected, Dictionary<string, string> provided)
             : base($"{eventName} had a different amount of properties than tags in map") 
         {
             EventName = eventName;

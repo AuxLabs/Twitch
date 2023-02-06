@@ -9,8 +9,6 @@ namespace AuxLabs.SimpleTwitch.Chat
     {
         /// <summary> Triggered when the Twitch IRC server needs to terminate the connection. </summary>
         public event Action Reconnect;
-        /// <summary> Triggered when an unhandled irc command is received. </summary>
-        public event Action<IrcPayload> UnknownCommandReceived;
 
         /// <summary> Triggered after successful authentication. </summary>
         public event Action<IReadOnlyCollection<string>> CapabilityAcknowledged;
@@ -212,7 +210,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                     break;
 
                 default:
-                    UnknownCommandReceived?.Invoke(payload);
+                    OnUnknownEventReceived(payload);
                     if (ThrowOnUnknownEvent)
                         throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}` was received");
                     break;

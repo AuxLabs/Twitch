@@ -14,10 +14,10 @@ namespace AuxLabs.SimpleTwitch.Sockets
 {
     public abstract class BaseSocketClient<TPayload> where TPayload : IPayload
     {
-        // Status events
         public event Action Connected;
         public event Action<Exception> Disconnected;
         public event Action<SerializationException> DeserializationError;
+        public event Action<TPayload> UnknownEventReceived;
 
         // Raw events
         public event Action<TPayload, long> PayloadReceived;
@@ -54,6 +54,11 @@ namespace AuxLabs.SimpleTwitch.Sockets
             _connectionTask = Task.CompletedTask;
             _runCts = new CancellationTokenSource();
             _runCts.Cancel(); // Start canceled
+        }
+
+        protected virtual void OnUnknownEventReceived(TPayload payload)
+        {
+            UnknownEventReceived?.Invoke(payload);
         }
 
         protected virtual void SendIdentify() { }
