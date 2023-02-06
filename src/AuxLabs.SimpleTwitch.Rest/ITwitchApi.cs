@@ -247,7 +247,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Clips
 
         [Post("clips")]
-        Task<TwitchResponse<object>> CreateClipAsync([Query] object args);
+        Task<TwitchResponse<object>> PostClipAsync([Query] object args);
         [Get("clips")]
         Task<TwitchResponse<object>> GetClipsAsync([Query] object args);
 
@@ -259,9 +259,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("entitlements/drops")]
         Task<TwitchResponse<object>> GetDropsStatusAsync([Query] object args);
         [Patch("entitlements/drops")]
-        Task<TwitchResponse<object>> ModifyDropsStatusAsync([Query] object args);
+        Task<TwitchResponse<object>> PatchDropsStatusAsync([Query] object args);
         [Post("entitlements/codes")]
-        Task<TwitchResponse<object>> RedeemCodeAsync([Query] object args);
+        Task<TwitchResponse<object>> PostCodeAsync([Query] object args);
 
         #endregion
         #region Extensions
@@ -269,9 +269,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("extensions/configurations")]
         Task<TwitchResponse<object>> GetExtensionConfigurationAsync([Query] object args);
         [Put("extensions/configurations")]
-        Task<TwitchResponse<object>> ModifyExtensionConfigurationAsync([Query] object args);
+        Task<TwitchResponse<object>> PutExtensionConfigurationAsync([Query] object args);
         [Put("extensions/required_configuration")]
-        Task<TwitchResponse<object>> ModifyExtensionRequiredConfigurationAsync([Query] object args);
+        Task<TwitchResponse<object>> PutExtensionRequiredConfigurationAsync([Query] object args);
         [Post("extensions/pubsub")]
         Task<TwitchResponse<object>> PostExtensionPubsubMessageAsync([Query] object args);
         [Get("extensions/live")]
@@ -289,7 +289,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("bits/extensions")]
         Task<TwitchResponse<object>> GetExtensionBitsProductsAsync([Query] object args);
         [Put("bits/extensions")]
-        Task<TwitchResponse<object>> ModifyExtensionBitsProductsAsync([Query] object args);
+        Task<TwitchResponse<object>> PutExtensionBitsProductsAsync([Query] object args);
 
         #endregion
         #region EventSub
@@ -351,13 +351,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Moderation
 
         [Post("moderation/enforcements/status")]
-        Task<TwitchResponse<object>> GetModerationStatusAsync([Query] object args);
+        Task<TwitchResponse<object>> PostModerationStatusAsync([Query] object args);
         [Post("moderation/automod/message")]
-        Task<TwitchResponse<object>> GetAutomodMessagesAsync([Query] object args);
+        Task<TwitchResponse<object>> PostAutomodMessagesAsync([Query] object args);
         [Get("moderation/automod/settings")]
         Task<TwitchResponse<object>> GetAutomodSettingsAsync([Query] object args);
         [Put("moderation/automod/settings")]
-        Task<TwitchResponse<object>> ModifyAutomodSettingsAsync([Query] object args);
+        Task<TwitchResponse<object>> PutAutomodSettingsAsync([Query] object args);
         [Get("moderation/banned")]
         Task<TwitchResponse<object>> GetBannedUsersAsync([Query] object args);
         [Post("moderation/bans")]
@@ -385,7 +385,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Delete("channels/vips")]
         Task<TwitchResponse<object>> DeleteVipAsync([Query] object args);
         [Put("moderation/shield_mode")]
-        Task<TwitchResponse<object>> ModifyShieldModeAsync([Query] object args);
+        Task<TwitchResponse<object>> PutShieldModeAsync([Query] object args);
         [Get("moderation/shield_mode")]
         Task<TwitchResponse<object>> GetShieldModeAsync([Query] object args);
 
@@ -397,7 +397,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Post("polls")]
         Task<TwitchResponse<object>> PostPollAsync([Query] object args);
         [Patch("polls")]
-        Task<TwitchResponse<object>> EndPollAsync([Query] object args);
+        Task<TwitchResponse<object>> PatchPollAsync([Query] object args);
 
         #endregion
         #region Predictions
@@ -407,7 +407,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Post("predictions")]
         Task<TwitchResponse<object>> PostPredictionAsync([Query] object args);
         [Patch("predictions")]
-        Task<TwitchResponse<object>> EndPredictionaAsync([Query] object args);
+        Task<TwitchResponse<object>> PatchPredictionaAsync([Query] object args);
 
         #endregion
         #region Raids
@@ -425,11 +425,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("schedule/icalendar")]
         Task<TwitchResponse<object>> GetCalendarAsync([Query] object args);
         [Patch("schedule/settings")]
-        Task<TwitchResponse<object>> ModifyScheduleAsync([Query] object args);
+        Task<TwitchResponse<object>> PatchScheduleAsync([Query] object args);
         [Post("schedule/segment")]
         Task<TwitchResponse<object>> PostScheduleSegmentAsync([Query] object args);
         [Patch("schedule/segment")]
-        Task<TwitchResponse<object>> ModifyScheduleSegmentAsync([Query] object args);
+        Task<TwitchResponse<object>> PatchScheduleSegmentAsync([Query] object args);
         [Delete("schedule/segment")]
         Task<TwitchResponse<object>> DeleteScheduleSegmentAsync([Query] object args);
 
@@ -437,9 +437,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Search
 
         [Get("search/categories")]
-        Task<TwitchResponse<object>> SearchCategoriesAsync([Query] object args);
+        Task<TwitchResponse<object>> GetCategoriesAsync([Query] object args);
         [Get("search/channels")]
-        Task<TwitchResponse<object>> SearchChannelsAsync([Query] object args);
+        Task<TwitchResponse<object>> GetChannelsAsync(SearchChannelsArgs args);
 
         #endregion
         #region Music
@@ -481,7 +481,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("streams/tags")]
         Task<TwitchResponse<object>> GetTagsAsync([Query("broadcaster_id")] string id);
         [Put("streams/tags")]
-        Task<TwitchResponse<object>> ModifyTagsAsync([Query] object args);
+        Task<TwitchResponse<object>> PutTagsAsync([Query] object args);
 
         #endregion
         #region Teams
@@ -497,13 +497,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("users")]
         Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersArgs args);
         [Put("users")]
-        Task<TwitchResponse<User>> ModifyUserAsync([Query("description")] string description);
+        Task<TwitchResponse<User>> PutUserAsync([Query("description")] string description);
         [Get("users/follows")]
         Task<TwitchResponse<Follower>> GetFollowsAsync([Query] GetFollowsArgs args);
         [Get("users/blocks")]
         Task<TwitchResponse<object>> GetBlocksAsync([Query] object args);
         [Put("users/blocks")]
-        Task<TwitchResponse<object>> PostBlockAsync([Query] object args);
+        Task<TwitchResponse<object>> PutBlockAsync([Query] object args);
         [Delete("users/blocks")]
         Task<TwitchResponse<object>> DeleteBlockAsync([Query] object args);
         [Get("users/extensions/list")]
@@ -511,19 +511,32 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("users/extensions")]
         Task<TwitchResponse<object>> GetActiveExtensionsAsync([Query] object args);
         [Put("users/extesions")]
-        Task<TwitchResponse<object>> ModifyExtensionsAsync([Query] object args);
+        Task<TwitchResponse<object>> PutExtensionsAsync([Query] object args);
 
         #endregion
         #region Videos
 
+        /// <summary> Gets information about one or more published videos. </summary>
+        /// <returns> A collection of <see cref="Video"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("videos")]
-        Task<TwitchResponse<object>> GetVideosAsync([Query] object args);
+        Task<TwitchMetaResponse<Video>> GetVideosAsync([QueryMap] GetVideosArgs args);
+
+        /// <summary> Deletes one or more videos. You may delete past broadcasts, highlights, or uploads. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:videos</c> scope. </remarks>
+        /// <returns> A collection of <see cref="string"/> that represent the deleted videos' ids. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Delete("videos")]
-        Task<IEnumerable<string>> DeleteVideoAsync([Query] string id);
+        Task<TwitchResponse<string>> DeleteVideoAsync([QueryMap] DeleteVideosArgs args);
 
         #endregion
         #region Whispers
 
+        /// <summary> Sends a whisper message to the specified user. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:manage:whispers</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not found </exception>
         [Post("whispers")]
         Task PostWhisperAsync([Query("from_user_id")] string fromUserId, [Query("to_user_id")] string toUserId, [Body] string message);
 
