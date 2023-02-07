@@ -1,8 +1,6 @@
 ﻿using AuxLabs.SimpleTwitch.EventSub;
-using AuxLabs.SimpleTwitch.Rest.Requests.Chat;
 using RestEase;
 using System;
-using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
