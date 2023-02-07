@@ -1,0 +1,27 @@
+﻿using System.Text.Json.Serialization;
+
+namespace AuxLabs.SimpleTwitch.EventSub
+{
+    public class DropEntitlementCondition : ICondition
+    {
+        /// <summary> The organization ID of the organization that owns the game on the developer portal. </summary>
+        [JsonPropertyName("organization_id")]
+        public string OrganizationId { get; set; }
+
+        /// <summary> Optional. The category (or game) ID of the game for which notifications will be received. </summary>
+        [JsonPropertyName("category_id")]
+        public string CategoryId { get; set; }
+
+        /// <summary> Optional. The campaign ID for a specific campaign for which notifications will be received. </summary>
+        [JsonPropertyName("campaign_id")]
+        public string CampaignId { get; set; }
+
+        public DropEntitlementCondition() { }
+        public DropEntitlementCondition(string organizationId, string categoryId = null, string campaignId = null)
+        {
+            OrganizationId = organizationId;
+            CategoryId = categoryId;
+            CampaignId = campaignId;
+        }
+    }
+}
