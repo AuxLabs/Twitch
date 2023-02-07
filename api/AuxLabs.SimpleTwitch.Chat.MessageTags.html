@@ -100,6 +100,9 @@
     <div><span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>&gt;&gt;</div>
     <div><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity</a>&lt;<span class="xref">string</span>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -177,7 +180,7 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Chat.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Chat_MessageTags_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MessageTags : BaseTags, IDictionary&lt;string, string&gt;, ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MessageTags : BaseTags, IDictionary&lt;string, string&gt;, ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable, IUserRelation, IUser, IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -739,19 +742,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_Login.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.Login%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Tags/MessageTags.cs/#L34">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_Login_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.Login*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_Login" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.Login">Login</h4>
+  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_Name_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.Name*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_Name" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.Name">Name</h4>
   <div class="markdown level1 summary"><p>The user’s login name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Login { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -925,19 +928,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserLogin.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserLogin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Tags/MessageTags.cs/#L82">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserLogin_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserLogin*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserLogin" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserLogin">ReplyParentUserLogin</h4>
+  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserName_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_ReplyParentUserName" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.ReplyParentUserName">ReplyParentUserName</h4>
   <div class="markdown level1 summary"><p>The login name of the sender of the parent message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ReplyParentUserLogin { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ReplyParentUserName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1146,6 +1149,98 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="AuxLabs.SimpleTwitch.Chat.BaseTags.html#AuxLabs_SimpleTwitch_Chat_BaseTags_LoadQueryMap_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__">BaseTags.LoadQueryMap(IReadOnlyDictionary&lt;string, string&gt;)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedDisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Tags/MessageTags.cs/#L205">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedDisplayName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedDisplayName">IUserRelation.RelatedDisplayName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedDisplayName { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Tags/MessageTags.cs/#L203">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedId_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedId*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedId" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedId">IUserRelation.RelatedId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedId { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Tags/MessageTags.cs/#L204">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedName_" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Chat_MessageTags_AuxLabs_SimpleTwitch_IUserRelation_RelatedName" data-uid="AuxLabs.SimpleTwitch.Chat.MessageTags.AuxLabs#SimpleTwitch#IUserRelation#RelatedName">IUserRelation.RelatedName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedName { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>
@@ -1158,6 +1253,15 @@
   </div>
   <div>
       <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity&lt;TId&gt;</a>
   </div>
 </article>
           </div>

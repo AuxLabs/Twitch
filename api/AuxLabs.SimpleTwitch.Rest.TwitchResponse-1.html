@@ -83,13 +83,15 @@
 
   <h1 id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1" class="text-break">Class TwitchResponse&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"><p>A object that represents data returned by a Twitch request.</p>
+  <div class="markdown level0 summary"><p>An object that represents data returned by a Twitch request.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">TwitchResponse&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.EventSub.EventSubResponse.html">EventSubResponse</a></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchMetaResponse-1.html">TwitchMetaResponse&lt;T&gt;</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -132,8 +134,7 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type of data this request contains.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -144,7 +145,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Data.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchResponse%601.Data%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L11">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L10">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Data_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Data*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Data" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Data">Data</h4>
@@ -153,7 +154,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;T&gt; Data { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,100 +166,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;T&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_DateRange.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchResponse%601.DateRange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L19">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_DateRange_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.DateRange*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_DateRange" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.DateRange">DateRange</h4>
-  <div class="markdown level1 summary"><p>A range of dates relating to the objects returned in <a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html#AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Data">Data</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateRange? DateRange { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.DateRange.html">DateRange</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Pagination.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchResponse%601.Pagination%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L23">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Pagination_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Pagination*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Pagination" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Pagination">Pagination</h4>
-  <div class="markdown level1 summary"><p>Contains information used to page through the list of results.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Pagination? Pagination { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.Pagination.html">Pagination</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Total.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchResponse%601.Total%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L15">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Total_" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Total*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Total" data-uid="AuxLabs.SimpleTwitch.Rest.TwitchResponse`1.Total">Total</h4>
-  <div class="markdown level1 summary"><p>The total number of objects returned in <a class="xref" href="AuxLabs.SimpleTwitch.Rest.TwitchResponse-1.html#AuxLabs_SimpleTwitch_Rest_TwitchResponse_1_Data">Data</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? Total { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span>?</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -274,7 +182,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_TwitchResponse_1.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.TwitchResponse%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/TwitchResponse.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

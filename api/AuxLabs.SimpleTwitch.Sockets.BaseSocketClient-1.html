@@ -91,6 +91,7 @@
     <div class="level1"><span class="xref">BaseSocketClient&lt;TPayload&gt;</span></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.html">TwitchChatApiClient</a></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.html">TwitchEventSubApiClient</a></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.PubSub.TwitchPubSubApiClient.html">TwitchPubSubApiClient</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -276,7 +277,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Dispose.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L320">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L325">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Dispose_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Dispose*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Dispose" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Dispose">Dispose()</h4>
@@ -291,7 +292,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent__0_System_Threading_Tasks_TaskCompletionSource_System_Boolean__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.HandleEvent(%600%2CSystem.Threading.Tasks.TaskCompletionSource%7BSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L62">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L67">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.HandleEvent*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_HandleEvent__0_System_Threading_Tasks_TaskCompletionSource_System_Boolean__" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.HandleEvent(`0,System.Threading.Tasks.TaskCompletionSource{System.Boolean})">HandleEvent(TPayload, TaskCompletionSource&lt;bool&gt;)</h4>
@@ -325,10 +326,42 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_OnUnknownEventReceived__0_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.OnUnknownEventReceived(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L59">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_OnUnknownEventReceived_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.OnUnknownEventReceived*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_OnUnknownEventReceived__0_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.OnUnknownEventReceived(`0)">OnUnknownEventReceived(TPayload)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUnknownEventReceived(TPayload payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPayload</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Run(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L64">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L69">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Run*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Run_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Run(System.String)">Run(string)</h4>
@@ -336,7 +369,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Run(string url)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Run(string url)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -360,7 +393,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.RunAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L66">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L71">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.RunAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_RunAsync_System_String_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.RunAsync(System.String)">RunAsync(string)</h4>
@@ -368,7 +401,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RunAsync(string url)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task RunAsync(string url)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -407,7 +440,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Send__0_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Send(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L325">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L330">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Send_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Send*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Send__0_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Send(`0)">Send(TPayload)</h4>
@@ -439,7 +472,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeat.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.SendHeartbeat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L60">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L65">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeat_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendHeartbeat*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeat" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendHeartbeat">SendHeartbeat()</h4>
@@ -454,7 +487,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeatAck.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.SendHeartbeatAck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L61">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L66">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeatAck_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendHeartbeatAck*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendHeartbeatAck" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendHeartbeatAck">SendHeartbeatAck()</h4>
@@ -469,7 +502,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendIdentify.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.SendIdentify%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L59">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L64">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendIdentify_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendIdentify*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_SendIdentify" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.SendIdentify">SendIdentify()</h4>
@@ -484,7 +517,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Stop.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Stop%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L294">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L299">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Stop_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Stop*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Stop" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Stop">Stop()</h4>
@@ -499,7 +532,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_StopAsync.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L296">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L301">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_StopAsync_" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.StopAsync*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_StopAsync" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.StopAsync">StopAsync()</h4>
@@ -531,7 +564,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Connected.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Connected%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L18">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L17">View Source</a>
   </span>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Connected" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Connected">Connected</h4>
   <div class="markdown level1 summary"></div>
@@ -560,7 +593,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_DeserializationError.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.DeserializationError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L20">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L19">View Source</a>
   </span>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_DeserializationError" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.DeserializationError">DeserializationError</h4>
   <div class="markdown level1 summary"></div>
@@ -579,7 +612,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<span class="xref">SerializationException</span>&gt;</td>
+        <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<span class="xref">System.Runtime.Serialization.SerializationException</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -589,7 +622,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Disconnected.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.Disconnected%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L19">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L18">View Source</a>
   </span>
   <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_Disconnected" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.Disconnected">Disconnected</h4>
   <div class="markdown level1 summary"></div>
@@ -667,6 +700,35 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Action&lt;T1, T2&gt;</span>&lt;TPayload, <span class="xref">int</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_UnknownEventReceived.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Sockets.BaseSocketClient%601.UnknownEventReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Sockets/BaseSocketClient.cs/#L20">View Source</a>
+  </span>
+  <h4 id="AuxLabs_SimpleTwitch_Sockets_BaseSocketClient_1_UnknownEventReceived" data-uid="AuxLabs.SimpleTwitch.Sockets.BaseSocketClient`1.UnknownEventReceived">UnknownEventReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;TPayload&gt; UnknownEventReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action&lt;T&gt;</span>&lt;TPayload&gt;</td>
         <td></td>
       </tr>
     </tbody>

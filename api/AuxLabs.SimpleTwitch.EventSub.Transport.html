@@ -89,6 +89,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">Transport</span></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.EventSub.AcceptedTransport.html">AcceptedTransport</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,7 +116,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.EventSub.html">EventSub</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.EventSub.dll</h6>
+  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_EventSub_Transport_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Transport</code></pre>
@@ -127,11 +128,12 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_Callback.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.Callback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L17">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/EventSub/Transport.cs/#L12">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_EventSub_Transport_Callback_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Callback*"></a>
   <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_Callback" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Callback">Callback</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The callback URL where the notifications are sent. Only required for webhooks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -154,74 +156,15 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_ConnectedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.ConnectedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L35">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_EventSub_Transport_ConnectedAt_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.ConnectedAt*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_ConnectedAt" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.ConnectedAt">ConnectedAt</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime ConnectedAt { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_DisconnectedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.DisconnectedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L41">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_EventSub_Transport_DisconnectedAt_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.DisconnectedAt*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_DisconnectedAt" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.DisconnectedAt">DisconnectedAt</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime DisconnectedAt { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_Method.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.Method%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L11">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/EventSub/Transport.cs/#L8">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_EventSub_Transport_Method_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Method*"></a>
   <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_Method" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Method">Method</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The transport method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,11 +190,12 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_Secret.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.Secret%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L23">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/EventSub/Transport.cs/#L18">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_EventSub_Transport_Secret_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Secret*"></a>
   <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_Secret" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.Secret">Secret</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The secret used to verify the signature. Only required for webhooks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -272,16 +216,20 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="AuxLabs_SimpleTwitch_EventSub_Transport_Secret_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The secret must be an ASCII string that’s a minimum of 10 characters long and a maximum of 100 characters long.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport_SessionId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport.SessionId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L29">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/EventSub/Transport.cs/#L23">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_EventSub_Transport_SessionId_" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.SessionId*"></a>
   <h4 id="AuxLabs_SimpleTwitch_EventSub_Transport_SessionId" data-uid="AuxLabs.SimpleTwitch.EventSub.Transport.SessionId">SessionId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An ID that identifies the WebSocket to send notifications to. Only required for websockets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -313,7 +261,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_Transport.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.Transport%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Transports/Transport.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/EventSub/Transport.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

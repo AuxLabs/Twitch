@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EmoteFormat
+    <title>Interface IUser
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EmoteFormat
+    <meta name="title" content="Interface IUser
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,64 +78,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.IUser">
 
 
-  <h1 id="AuxLabs_SimpleTwitch_Rest_EmoteFormat" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat" class="text-break">Class EmoteFormat
+  <h1 id="AuxLabs_SimpleTwitch_IUser" data-uid="AuxLabs.SimpleTwitch.IUser" class="text-break">Interface IUser
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">EmoteFormat</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
-    </div>
-    <div>
-      <span class="xref">object.Equals(object, object)</span>
-    </div>
-    <div>
-      <span class="xref">object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
-    </div>
-    <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html#AuxLabs_SimpleTwitch_IEntity_1_Id">IEntity&lt;string&gt;.Id</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Rest.html">Rest</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
-  <h5 id="AuxLabs_SimpleTwitch_Rest_EmoteFormat_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a></h6>
+  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.dll</h6>
+  <h5 id="AuxLabs_SimpleTwitch_IUser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EmoteFormat</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IUser : IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_EmoteFormat_AnimatedImage.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.EmoteFormat.AnimatedImage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_IUser_DisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.IUser.DisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Bits/EmoteFormat.cs/#L7">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Contracts/IUser.cs/#L6">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_EmoteFormat_AnimatedImage_" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat.AnimatedImage*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_EmoteFormat_AnimatedImage" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat.AnimatedImage">AnimatedImage</h4>
+  <a id="AuxLabs_SimpleTwitch_IUser_DisplayName_" data-uid="AuxLabs.SimpleTwitch.IUser.DisplayName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_IUser_DisplayName" data-uid="AuxLabs.SimpleTwitch.IUser.DisplayName">DisplayName</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EmoteImage AnimatedImage { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string DisplayName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,25 +124,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.EmoteImage.html">EmoteImage</a></td>
+        <td><span class="xref">string</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_EmoteFormat_StaticImage.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.EmoteFormat.StaticImage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_IUser_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.IUser.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Bits/EmoteFormat.cs/#L10">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Contracts/IUser.cs/#L5">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_EmoteFormat_StaticImage_" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat.StaticImage*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_EmoteFormat_StaticImage" data-uid="AuxLabs.SimpleTwitch.Rest.EmoteFormat.StaticImage">StaticImage</h4>
+  <a id="AuxLabs_SimpleTwitch_IUser_Name_" data-uid="AuxLabs.SimpleTwitch.IUser.Name*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_IUser_Name" data-uid="AuxLabs.SimpleTwitch.IUser.Name">Name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EmoteImage StaticImage { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +154,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.EmoteImage.html">EmoteImage</a></td>
+        <td><span class="xref">string</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -190,10 +167,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_EmoteFormat.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.EmoteFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_IUser.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.IUser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Bits/EmoteFormat.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Core/Contracts/IUser.cs/#L3" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

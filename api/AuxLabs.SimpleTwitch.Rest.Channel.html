@@ -90,6 +90,12 @@
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">Channel</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IChannel.html">IChannel</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity</a>&lt;<span class="xref">string</span>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -118,10 +124,41 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_Channel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Channel</code></pre>
+    <pre><code class="lang-csharp hljs">public class Channel : IUser, IChannel, IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterDisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterDisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L17">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterDisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterDisplayName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterDisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterDisplayName">BroadcasterDisplayName</h4>
+  <div class="markdown level1 summary"><p>The broadcaster’s display name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BroadcasterDisplayName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -186,45 +223,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterLogin.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterLogin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L13">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterLogin_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterLogin*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterLogin" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterLogin">BroadcasterLogin</h4>
-  <div class="markdown level1 summary"><p>The broadcaster’s login name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string BroadcasterLogin { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L17">View Source</a>
-  </span>
   <a id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterName_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterName*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_BroadcasterName" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.BroadcasterName">BroadcasterName</h4>
-  <div class="markdown level1 summary"><p>The broadcaster’s display name.</p>
+  <div class="markdown level1 summary"><p>The broadcaster’s login name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -401,6 +407,138 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IChannel_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs%23SimpleTwitch%23IChannel%23Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L47">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IChannel_Name_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IChannel#Name*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IChannel_Name" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IChannel#Name">IChannel.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IChannel.Name { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IEntity_System_String__Id.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs%23SimpleTwitch%23IEntity%7BSystem%23String%7D%23Id%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L46">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IEntity_System_String__Id_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IEntity{System#String}#Id*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IEntity_System_String__Id" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IEntity{System#String}#Id">IEntity&lt;string&gt;.Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IEntity&lt;string&gt;.Id { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_DisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs%23SimpleTwitch%23IUser%23DisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L45">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_DisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IUser#DisplayName*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_DisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IUser#DisplayName">IUser.DisplayName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IUser.DisplayName { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs%23SimpleTwitch%23IUser%23Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Channel.cs/#L44">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_Name_" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IUser#Name*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_Channel_AuxLabs_SimpleTwitch_IUser_Name" data-uid="AuxLabs.SimpleTwitch.Rest.Channel.AuxLabs#SimpleTwitch#IUser#Name">IUser.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IUser.Name { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IChannel.html">IChannel</a>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity&lt;TId&gt;</a>
+  </div>
 </article>
           </div>
 

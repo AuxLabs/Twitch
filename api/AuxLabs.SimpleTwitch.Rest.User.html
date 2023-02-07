@@ -91,16 +91,21 @@
     <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html">SimpleUser</a></div>
     <div class="level2"><span class="xref">User</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity</a>&lt;<span class="xref">string</span>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html#AuxLabs_SimpleTwitch_Rest_SimpleUser_Id">SimpleUser.Id</a>
     </div>
     <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html#AuxLabs_SimpleTwitch_Rest_SimpleUser_DisplayName">SimpleUser.DisplayName</a>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html#AuxLabs_SimpleTwitch_Rest_SimpleUser_Name">SimpleUser.Name</a>
     </div>
     <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html#AuxLabs_SimpleTwitch_Rest_SimpleUser_Login">SimpleUser.Login</a>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.SimpleUser.html#AuxLabs_SimpleTwitch_Rest_SimpleUser_DisplayName">SimpleUser.DisplayName</a>
     </div>
     <div>
       <span class="xref">object.Equals(object)</span>
@@ -128,7 +133,7 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_User_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class User : SimpleUser</code></pre>
+    <pre><code class="lang-csharp hljs">public class User : SimpleUser, IUser, IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -137,7 +142,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_BroadcasterType.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.BroadcasterType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L11">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L13">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_BroadcasterType_" data-uid="AuxLabs.SimpleTwitch.Rest.User.BroadcasterType*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_BroadcasterType" data-uid="AuxLabs.SimpleTwitch.Rest.User.BroadcasterType">BroadcasterType</h4>
@@ -168,11 +173,11 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_CreatedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.CreatedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L49">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L37">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_CreatedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.User.CreatedAt*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_CreatedAt" data-uid="AuxLabs.SimpleTwitch.Rest.User.CreatedAt">CreatedAt</h4>
-  <div class="markdown level1 summary"><p>User’s verified email address</p>
+  <div class="markdown level1 summary"><p>Date when the user was created</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -199,7 +204,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_Description.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.Description%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L18">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L17">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_Description_" data-uid="AuxLabs.SimpleTwitch.Rest.User.Description*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_Description" data-uid="AuxLabs.SimpleTwitch.Rest.User.Description">Description</h4>
@@ -230,11 +235,11 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_Email.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.Email%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L55">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L33">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_Email_" data-uid="AuxLabs.SimpleTwitch.Rest.User.Email*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_Email" data-uid="AuxLabs.SimpleTwitch.Rest.User.Email">Email</h4>
-  <div class="markdown level1 summary"><p>Date when the user was created</p>
+  <div class="markdown level1 summary"><p>User’s verified email address</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -261,7 +266,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_OfflineImageUrl.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.OfflineImageUrl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L24">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L25">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_OfflineImageUrl_" data-uid="AuxLabs.SimpleTwitch.Rest.User.OfflineImageUrl*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_OfflineImageUrl" data-uid="AuxLabs.SimpleTwitch.Rest.User.OfflineImageUrl">OfflineImageUrl</h4>
@@ -292,7 +297,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_ProfileImageUrl.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.ProfileImageUrl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L30">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L21">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_ProfileImageUrl_" data-uid="AuxLabs.SimpleTwitch.Rest.User.ProfileImageUrl*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_ProfileImageUrl" data-uid="AuxLabs.SimpleTwitch.Rest.User.ProfileImageUrl">ProfileImageUrl</h4>
@@ -323,7 +328,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_Type.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L36">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L9">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_Type_" data-uid="AuxLabs.SimpleTwitch.Rest.User.Type*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_Type" data-uid="AuxLabs.SimpleTwitch.Rest.User.Type">Type</h4>
@@ -354,7 +359,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_User_ViewCount.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.User.ViewCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L43">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/User.cs/#L29">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_User_ViewCount_" data-uid="AuxLabs.SimpleTwitch.Rest.User.ViewCount*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_User_ViewCount" data-uid="AuxLabs.SimpleTwitch.Rest.User.ViewCount">ViewCount</h4>
@@ -380,6 +385,13 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity&lt;TId&gt;</a>
+  </div>
 </article>
           </div>
 
