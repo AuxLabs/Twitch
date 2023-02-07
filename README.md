@@ -10,7 +10,7 @@ Being a base level implementation of the Twitch APIs, this library will be more 
 
 ### Builds
 
-Development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
+Release builds will be available through Nuget, and development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
 
 ### Documentation
 
@@ -18,54 +18,115 @@ The API reference, starter tutorials, and other documentation will be available 
 
 ### Samples
 
-For more examples look at [this repository](https://github.com/AuxLabs/SimpleTwitch-Examples).
+For examples and sample projects look at [the examples repository](https://github.com/AuxLabs/SimpleTwitch-Examples).
 
-##### Rest
-An example of authenticating with the client and requesting the current authorized user.
-```csharp
-string username = "auxlabs";
-string token = "token";
-string clientId = "client id";
-var twitch = new TwitchRestApiClient()
-{
-    Authorization = new AuthenticationHeaderValue("Bearer", token),
-    ClientId = clientId
-};
+### Features
+<details>
+  <summary>Rest</summary>
+    
+- [x] Global ratelimit handling
+- [ ] Unique endpoint ratelimit handling
+- [ ] Automatic token refresh
+- [x] Provide a custom ratelimiter
+- [x] Connect to a custom rest api url
+- [ ] All endpoint categories progress (51/121)
+  - [x] 5/5 Identity
+  - [x] 1/1 Ads
+  - [x] 2/2 Analytics
+  - [x] 3/3 Bits
+  - [x] 3/3 Channels
+  - [x] 6/6 Channel Points
+  - [x] 2/2 Charity
+  - [x] 12/12 Chat
+  - [ ] 0/2 Clips
+  - [ ] 0/4 Drops
+  - [ ] 0/12 Extensions
+  - [x] 3/3 EventSub
+  - [ ] 0/2 Games
+  - [x] 1/1 Goals
+  - [x] 1/1 Hype Trains
+  - [ ] 0/19 Moderation
+  - [ ] 0/3 Polls
+  - [ ] 0/3 Predictions
+  - [ ] 0/2 Raids
+  - [ ] 0/6 Schedule
+  - [ ] 0/2 Search
+  - [ ] 0/3 Music
+  - [ ] 0/5 Streams
+  - [ ] 0/2 Subscriptions
+  - [ ] 0/3 Tags
+  - [ ] 0/2 Teams
+  - [x] 9/9 Users
+  - [x] 2/2 Videos
+  - [x] 1/1 Whispers
+</details>
 
-var response = await twitch.GetUsersAsync(args =>
-{
-    args.UserIds.Add(username);
-});
+<details>
+  <summary>Chat</summary>
 
-var response = response.Data.FirstOrDefault();
-if (response.Data.FirstOrDefault() is User user)
-    Console.WriteLine($"{user.DisplayName}'s user id is {user.Id}");
-else
-    Console.WriteLine($"The user {username} did not exist");
-```
+- [ ] Ratelimit handling
+- [x] Automatic heartbeat
+- [x] Automatic reconnection
+- [x] Auto-detect unhandled tags
+- [x] Provide a custom irc serializer
+- [x] Connect to a custom websocket chat url
+- [x] Authenticate anonymously
+- [x] Handle all available events
+  - [x] Capability Acknowledged
+  - [x] Capability Denied
+  - [x] Chat Cleared
+  - [x] Message Deleted
+  - [x] Global User State
+  - [x] Notice Received
+  - [x] Message Received
+  - [x] Room State Received
+  - [x] User Notice Received
+  - [x] User State Received
+  - [x] Whisper Received
+  - [x] Channel Joined
+  - [x] Channel Left
+  - [x] Names Received
+    
+</details>
 
-##### Chat
-An example of authenticating with the client and joining the authorized user's channel
-```csharp
-string username = "auxlabs";
-string token = "token";
-var twitch = new TwitchChatApiClient()
-twitch.SetIdentity(username, token);
+<details>
+  <summary>EventSub</summary>
 
-twitch.Connected += () => 
-{
-    twitch.Send(new JoinChannelRequest(username));
-}
-twitch.MessageReceived += (args) =>
-{
-    Console.WriteLine($"#{args.ChannelName} {args.Tags.Login}: {args.Message}");
-}
+- [x] Subscribe/Unsubscribe/View subscriptions through Rest client
+- [x] WebSocket client
+- [ ] WebHook client
+- [ ] Automatic heartbeat
+- [x] Automatic reconnection
+- [ ] Handle all available events
+  - [ ] Followers
+  - [ ] Subscriptions
+  - [ ] Bits Cheered
+  - [ ] Raids
+  - [ ] User Banned
+  - [ ] User Unbanned
+  - [ ] Moderators
+  - [ ] Rewards
+  - [ ] Redemptions
+  - [ ] Polls
+  - [ ] Predictions
+  - [ ] Charity Donations
+  - [ ] Charity Campaigns
+  - [ ] Drops Entitlements
+  - [ ] Extension Bits Transactions
+  - [ ] Goals
+  - [ ] Hype Trains
+  - [ ] Shield Mode
+  - [ ] Shoutouts
+  - [ ] Stream Status
+  - [ ] Authorization Granted/Revoked
+  - [ ] User Updated
+    
+    
+</details>
 
-await twitch.RunAsync();
-```
+<details>
+  <summary>PubSub</summary>
 
-##### PubSub
-Not yet implemented
-
-##### EventSub
-Not yet implemented
+  *Not yet implemented*
+    
+</details>
