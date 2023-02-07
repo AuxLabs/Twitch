@@ -7,12 +7,27 @@ namespace AuxLabs.SimpleTwitch.PubSub
     {
         protected override ISerializer<PubSubPayload> Serializer { get; }
 
+        private string _url;
+
         public TwitchPubSubApiClient(TwitchPubSubApiConfig config = null)
             : this(TwitchConstants.PubSubUrl, config) { }
         public TwitchPubSubApiClient(string url, TwitchPubSubApiConfig config = null) : base(-1) 
         {
-            config ??= new TwitchPubSubApiConfig(); 
+            config ??= new TwitchPubSubApiConfig();
+
+            _url = url;
+
             Serializer = config.Serializer ?? new JsonSerializer<PubSubPayload>();
+        }
+
+        public override void Run()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override Task RunAsync()
+        {
+            throw new System.NotImplementedException();
         }
 
         protected override void SendHeartbeat()

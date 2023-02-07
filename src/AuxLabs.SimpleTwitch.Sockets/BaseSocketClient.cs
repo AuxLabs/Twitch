@@ -61,6 +61,8 @@ namespace AuxLabs.SimpleTwitch.Sockets
             UnknownEventReceived?.Invoke(payload);
         }
 
+        public abstract void Run();
+        public abstract Task RunAsync();
         protected virtual void SendIdentify() { }
         protected abstract void SendHeartbeat();
         protected abstract void SendHeartbeatAck();

@@ -7,6 +7,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class TwitchChatApiClient : BaseSocketClient<IrcPayload>
     {
+        #region Events
+
         /// <summary> Triggered when the Twitch IRC server needs to terminate the connection. </summary>
         public event Action Reconnect;
 
@@ -38,6 +40,8 @@ namespace AuxLabs.SimpleTwitch.Chat
         public event Action<MembershipEventArgs> ChannelLeft;
         /// <summary> Triggered after joining a channel, lists current active chatters. </summary>
         public event Action<NamesEventArgs> NamesReceived;
+
+        #endregion
 
         // config variables
         public readonly bool CommandsRequested;
@@ -92,8 +96,8 @@ namespace AuxLabs.SimpleTwitch.Chat
             return this;
         }
 
-        public void Run() => Run(_url);
-        public Task RunAsync() => RunAsync(_url);
+        public override void Run() => Run(_url);
+        public override Task RunAsync() => RunAsync(_url);
 
         protected override void SendIdentify()
         {
