@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -78,8 +77,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         ChannelPointsRedemptionUpdate,
 
         /// <summary> A poll started on a specified channel. </summary>
-        [EnumMember(Value = "channel.poll.begin")]
-        ChannelPollBegin,
+        [EnumMember(Value = "channel.poll.Start")]
+        ChannelPollStart,
 
         /// <summary> Users respond to a poll on a specified channel. </summary>
         [EnumMember(Value = "channel.poll.progress")]
@@ -90,8 +89,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         ChannelPollEnd,
 
         /// <summary> A Prediction started on a specified channel. </summary>
-        [EnumMember(Value = "channel.prediction.begin")]
-        ChannelPredictionBegin,
+        [EnumMember(Value = "channel.prediction.Start")]
+        ChannelPredictionStart,
 
         /// <summary> Users participated in a Prediction on a specified channel. </summary>
         [EnumMember(Value = "channel.prediction.progress")]
@@ -129,9 +128,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         [EnumMember(Value = "extension.bits_transaction.create")]
         ExtensionBitsTransactionCreate,
 
-        /// <summary> Get notified when a broadcaster begins a goal. </summary>
-        [EnumMember(Value = "channel.goal.begin")]
-        GoalBegin,
+        /// <summary> Get notified when a broadcaster Starts a goal. </summary>
+        [EnumMember(Value = "channel.goal.Start")]
+        GoalStart,
 
         /// <summary> Get notified when progress (either positive or negative) is made towards a broadcaster’s goal. </summary>
         [EnumMember(Value = "channel.goal.progress")]
@@ -141,9 +140,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         [EnumMember(Value = "channel.goal.end")]
         GoalEnd,
 
-        /// <summary> A Hype Train begins on the specified channel. </summary>
-        [EnumMember(Value = "channel.hype_train.begin")]
-        HypeTrainBegin,
+        /// <summary> A Hype Train Starts on the specified channel. </summary>
+        [EnumMember(Value = "channel.hype_train.Start")]
+        HypeTrainStart,
 
         /// <summary> A Hype Train makes progress on the specified channel. </summary>
         [EnumMember(Value = "channel.hype_train.progress")]
@@ -154,8 +153,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         HypeTrainEnd,
 
         /// <summary> Sends a notification when the broadcaster activates Shield Mode. </summary>
-        [EnumMember(Value = "channel.shield_mode.begin")]
-        ShieldModeBegin,
+        [EnumMember(Value = "channel.shield_mode.Start")]
+        ShieldModeStart,
 
         /// <summary> Sends a notification when the broadcaster deactivates Shield Mode. </summary>
         [EnumMember(Value = "channel.shield_mode.end")]

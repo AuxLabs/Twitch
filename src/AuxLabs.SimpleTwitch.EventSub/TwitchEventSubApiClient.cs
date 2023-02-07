@@ -6,18 +6,94 @@ namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class TwitchEventSubApiClient : BaseSocketClient<EventSubWebSocketPayload>
     {
+        #region Events
+
         /// <summary> Triggered when the server provides a login session. </summary>
         public event Action<Session> LoggedIn;
 
+        public event Action<ChannelUpdateEventArgs, EventSubcription> ChannelUpdated;
+        public event Action<FollowEventArgs, EventSubcription> ChannelFollow;
+        public event Action<SubscriptionEventArgs, EventSubcription> Subscription;
+        public event Action<SubscriptionEndedEventArgs, EventSubcription> SubscriptionEnd;
+        public event Action<SubscriptionGiftedEventArgs, EventSubcription> SubscriptionGifted;
+        public event Action<SubscriptionMessageEventArgs, EventSubcription> SubscriptionMessage;
+        public event Action<CheerEventArgs, EventSubcription> BitsCheered;
+        public event Action<RaidEventArgs, EventSubcription> ChannelRaided;
+
+        public event Action<BanEventArgs, EventSubcription> UserBanned;
+        public event Action<UnbanEventArgs, EventSubcription> UserUnbanned;
+        public event Action<ModeratorAddedEventArgs, EventSubcription> ModeratorAdded;
+        public event Action<ModeratorRemovedEventArgs, EventSubcription> ModeratorRemoved;
+
+        public event Action<RewardAddedEventArgs, EventSubcription> RewardAdded;
+        public event Action<RewardUpdatedEvent, EventSubcription> RewardUpdated;
+        public event Action<RewardRemovedEventArgs, EventSubcription> RewardRemoved;
+        public event Action<RedemptionAddedEvent, EventSubcription> RedemptionAdded;
+        public event Action<RedemptionUpdatedEvent, EventSubcription> RedemptionUpdated;
+
+        public event Action<PollStartedEventArgs, EventSubcription> PollStarted;
+        public event Action<PollProgressEventArgs, EventSubcription> PollProgress;
+        public event Action<PollEndedEventArgs, EventSubcription> PollEnded;
+
+        public event Action<PredictionStartedEventArgs, EventSubcription> PredictionStarted;
+        public event Action<PredictionProgressEventArgs, EventSubcription> PredictionProgress;
+        public event Action<PredictionLockedEventArgs, EventSubcription> PredictionLocked;
+        public event Action<PredictionEndedEventArgs, EventSubcription> PredictionEnded;
+
+        public event Action<DonationEventArgs, EventSubcription> CharityDonation;
+        public event Action<CampaignStartedEventArgs, EventSubcription> CharityCampaignStarted;
+        public event Action<CampaignProgressEventArgs, EventSubcription> CharityCampaignProgress;
+        public event Action<CampaignEndedEventArgs, EventSubcription> CharityCampaignStopped;
+
+        public event Action<EntitlementGrantEventArgs, EventSubcription> DropEntitlementGranted;
+        public event Action<BitsTransactionEventArgs, EventSubcription> BitsTransactionCreated;
+
+        public event Action<GoalStartedEventArgs, EventSubcription> GoalStarted;
+        public event Action<GoalProgressEventArgs, EventSubcription> GoalProgress;
+        public event Action<GoalEndedEventArgs, EventSubcription> GoalEnded;
+
+        public event Action<HypeTrainStartedEventArgs, EventSubcription> HypeTrainStarted;
+        public event Action<HypeTrainProgressEventArgs, EventSubcription> HypeTrainProgress;
+        public event Action<HypeTrainEndedEventArgs, EventSubcription> HypeTrainEnded;
+
+        public event Action<ShieldModeStartedEventArgs, EventSubcription> ShieldModeStarted;
+        public event Action<ShieldModeEndedEventArgs, EventSubcription> ShieldModeEnded;
+
+        public event Action<ShoutoutCreatedEventArgs, EventSubcription> ShoutoutCreated;
+        public event Action<ShoutoutReceivedEventArgs, EventSubcription> ShoutoutReceived;
+
+        public event Action<StreamStartedEventArgs, EventSubcription> StreamStarted;
+        public event Action<StreamEndedEventArgs, EventSubcription> StreamEnded;
+
+        public event Action<AuthorizationGrantedEventArgs, EventSubcription> AuthorizationGranted;
+        public event Action<AuthorizationRevokedEventArgs, EventSubcription> AuthorizationRevoked;
+
+        public event Action<UserUpdatedEventArgs, EventSubcription> UserUpdated;
+
+        #endregion
+
+        // config variables
+        public readonly bool ThrowOnUnknownEvent;
+
         protected override ISerializer<EventSubWebSocketPayload> Serializer { get; }
+
+        private string _url;
 
         public Session Session { get; protected set; }
 
-        public TwitchEventSubApiClient(TwitchEventSubConfig config = default) : base(-1, true)
+        public TwitchEventSubApiClient(TwitchEventSubConfig config = null)
+            : this(TwitchConstants.EventSubUrl, config) { }
+        public TwitchEventSubApiClient(string url, TwitchEventSubConfig config = null) : base(-1, true)
         {
             config ??= new TwitchEventSubConfig();
+
+            ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
+
             Serializer = config.Serializer ?? new JsonSerializer<EventSubWebSocketPayload>();
         }
+
+        public override void Run() => Run(_url);
+        public override Task RunAsync() => RunAsync(_url);
 
         protected override void SendHeartbeat()
         {
@@ -48,11 +124,28 @@ namespace AuxLabs.SimpleTwitch.EventSub
                     break;
 
                 case MessageType.Notification:
+
+                    switch (payload.Payload.Event)
+                    {
+                        case ChannelUpdateEventArgs args:
+                            ChannelUpdated?.Invoke(args, payload.Payload.Subscription);
+                            break;
+
+                        // Insert the load of subscription event types here
+
+                        default:
+                            OnUnknownEventReceived(payload);
+                            if (ThrowOnUnknownEvent)
+                                throw new TwitchException($"An unhandled notification event of type `{payload.Payload.Subscription.TypeRaw}` was received");
+                            break;
+                    }
                     break;
 
                 default:
                     OnUnknownEventReceived(payload);
-                    throw new TwitchException($"An unhandled event of type `{payload.Metadata.TypeRaw}` was received");
+                    if (ThrowOnUnknownEvent)
+                        throw new TwitchException($"An unhandled event of type `{payload.Metadata.TypeRaw}` was received");
+                    break;
             }
         }
     }

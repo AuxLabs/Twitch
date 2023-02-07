@@ -11,9 +11,13 @@ namespace AuxLabs.SimpleTwitch.EventSub
         [JsonPropertyName("id")]
         public string Id { get; set; }
 
-        /// <summary> The notification’s subscription type. </summary>
+        /// <summary> The notification’s subscription type in raw string form. </summary>
         [JsonPropertyName("type")]
-        public EventSubType Type { get; set; }
+        public string TypeRaw { get; set; }
+
+        /// <summary> The notification’s subscription type. </summary>
+        [JsonIgnore]
+        public EventSubType Type => EnumHelper.GetValueFromEnumMember<EventSubType>(TypeRaw);
 
         /// <summary> The version of the subscription. </summary>
         [JsonPropertyName("version")]
