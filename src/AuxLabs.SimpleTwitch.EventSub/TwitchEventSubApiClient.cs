@@ -87,6 +87,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         {
             config ??= new TwitchEventSubConfig();
 
+            _url = url;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
 
             Serializer = config.Serializer ?? new JsonSerializer<EventSubWebSocketPayload>();

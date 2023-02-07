@@ -242,11 +242,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
 
         #endregion
+        #region Clips
 
         public Task<TwitchResponse<object>> PostClipAsync(object args)
             => _api.PostClipAsync(args);
         public Task<TwitchResponse<object>> GetClipsAsync(object args)
             => _api.GetClipsAsync(args);
+
+        #endregion
 
         public Task<TwitchResponse<object>> GetCodeStatusAsync(object args)
             => _api.GetCodeStatusAsync(args);

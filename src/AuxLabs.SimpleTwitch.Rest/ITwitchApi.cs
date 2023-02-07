@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.EventSub;
-using RestEase;
+﻿using RestEase;
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -313,7 +312,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> An <see cref="EventSubResponse"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("eventsub/subscriptions")]
-        Task<EventSubResponse> GetEventSubcriptionsAsync([Query]GetEventSubscriptionsArgs args);
+        Task<EventSubResponse> GetEventSubcriptionsAsync([QueryMap]GetEventSubscriptionsArgs args);
 
         #endregion
         #region Games
