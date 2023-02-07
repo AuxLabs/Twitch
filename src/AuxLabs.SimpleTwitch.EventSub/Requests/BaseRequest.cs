@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using AuxLabs.SimpleTwitch.Rest;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
@@ -20,7 +21,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         /// 
         /// </summary>
         [JsonPropertyName("condition")]
-        public Condition Condition { get; set; }
+        public IEventCondition Condition { get; set; }
 
         /// <summary>
         /// 

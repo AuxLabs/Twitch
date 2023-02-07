@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AuxLabs.SimpleTwitch.Rest;
+using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
