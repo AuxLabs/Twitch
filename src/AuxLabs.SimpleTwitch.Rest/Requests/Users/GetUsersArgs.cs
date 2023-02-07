@@ -5,10 +5,10 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetUsersArgs : QueryMap<string[]>
     {
-        /// <summary>  </summary>
+        /// <summary> The ID of the user to get. </summary>
         public List<string> UserIds { get; set; } = new List<string>();
 
-        /// <summary>  </summary>
+        /// <summary> The login name of the user to get. </summary>
         public List<string> UserNames { get; set; } = new List<string>();
 
         public GetUsersArgs() { }
@@ -24,19 +24,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             var map = new Dictionary<string, string[]>();
             if (UserIds.Count > 0)
-            {
-                var list = new List<string>();
-                foreach (var id in UserIds)
-                    list.Add(id);
-                map["id"] = list.ToArray();
-            }
+                map["id"] = UserIds.ToArray();
             if (UserNames.Count > 0)
-            {
-                var list = new List<string>();
-                foreach (var id in UserNames)
-                    list.Add(id);
-                map["login"] = list.ToArray();
-            }
+                map["login"] = UserNames.ToArray();
             return map;
         }
     }

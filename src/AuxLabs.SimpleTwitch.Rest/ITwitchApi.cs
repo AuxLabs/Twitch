@@ -494,24 +494,72 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Users
 
+        /// <summary> Gets information about one or more users. </summary>
+        /// <returns> A collection of <see cref="User"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("users")]
         Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersArgs args);
+
+        /// <summary> Updates the specified user’s information. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:edit</c> scope. </remarks>
+        /// <returns> A single <see cref="User"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Put("users")]
         Task<TwitchResponse<User>> PutUserAsync([Query("description")] string description);
+
+        /// <summary> Gets information about users that are following other users. </summary>
+        /// <returns> A collection of <see cref="Follower"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("users/follows")]
-        Task<TwitchResponse<Follower>> GetFollowsAsync([Query] GetFollowsArgs args);
+        Task<TwitchMetaResponse<Follower>> GetFollowsAsync([QueryMap] GetFollowsArgs args);
+
+        /// <summary> Gets the list of users that the broadcaster has blocked. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:blocked_users</c> scope. </remarks>
+        /// <returns> A collection of <see cref="SimpleUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("users/blocks")]
-        Task<TwitchResponse<object>> GetBlocksAsync([Query] object args);
+        Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync([QueryMap] GetBlocksArgs args);
+
+        /// <summary> Blocks the specified user from interacting with or having contact with the broadcaster. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:manage:blocked_users</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Put("users/blocks")]
-        Task<TwitchResponse<object>> PutBlockAsync([Query] object args);
+        Task PutBlockAsync([QueryMap] PutBlockArgs args);
+
+        /// <summary> Removes the user from the broadcaster’s list of blocked users. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:manage:blocked_users</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Delete("users/blocks")]
-        Task<TwitchResponse<object>> DeleteBlockAsync([Query] object args);
+        Task DeleteBlockAsync([Query("target_user_id")] string targetUserId);
+
+        /// <summary> Gets a list of all extensions (both active and inactive) that the broadcaster has installed. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:broadcast</c> or <c>user:edit:broadcast</c> scope. Inactive extensions are only included with the <c>user:edit:broadcast</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Extension"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("users/extensions/list")]
-        Task<TwitchResponse<object>> GetUserExtensionsAsync([Query] object args);
+        Task<TwitchResponse<Extension>> GetUserExtensionsAsync();
+
+        /// <summary> Gets a list of all extensions (both active and inactive) that the broadcaster has installed. </summary>
+        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> or a
+        /// <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see> with the 
+        /// <c>user:read:broadcast</c> or <c>user:edit:broadcast</c> scope. </remarks>
+        /// <returns> A single <see cref="ExtensionMap"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("users/extensions")]
-        Task<TwitchResponse<object>> GetActiveExtensionsAsync([Query] object args);
-        [Put("users/extesions")]
-        Task<TwitchResponse<object>> PutExtensionsAsync([Query] object args);
+        Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync([Query("user_id")] string userId);
+
+        /// <summary> Updates an installed extension’s information. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:broadcast</c> or <c>user:edit:broadcast</c> scope. </remarks>
+        /// <returns> A single <see cref="ExtensionMap"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
+        [Put("users/extensions")]
+        Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync([Body] ExtensionMap args);
 
         #endregion
         #region Videos

@@ -2,14 +2,15 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetFollowsArgs : QueryMap
+    public class GetFollowsArgs : QueryMap, IPaginated
     {
+        /// <summary> A user ID. Specify this parameter to discover the users that this user is following. </summary>
         public string FromId { get; set; }
 
+        /// <summary> A user ID. Specify this parameter to discover the users who are following this user. </summary>
         public string ToId { get; set; }
 
-        public int First { get; set; }
-
+        public int? First { get; set; }
         public string After { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

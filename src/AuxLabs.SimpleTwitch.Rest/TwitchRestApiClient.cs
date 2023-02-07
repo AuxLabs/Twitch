@@ -80,10 +80,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Revoke the currently authorized user's token. </summary>
         public Task RevokeTokenAsync()
         {
-            return _identity.RevokeTokenAsync(args =>
+            return _identity.RevokeTokenAsync(new PostRevokeTokenArgs
             {
-                args.ClientId = ClientId;
-                args.Token = Authorization.Parameter;
+                ClientId = ClientId,
+                Token = Authorization.Parameter
             });
         }
 
@@ -92,11 +92,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             if (Identity is UserIdentity user)      // Identity is a user, can be refreshed
             {
-                return await _identity.PostRefreshTokenAsync(args =>
+                return await _identity.PostRefreshTokenAsync(new PostRefreshTokenArgs
                 {
-                    args.ClientId = ClientId;
-                    args.ClientSecret = _identity.ClientSecret;
-                    args.RefreshToken = _identity.RefreshToken;
+                    ClientId = ClientId,
+                    ClientSecret = _identity.ClientSecret,
+                    RefreshToken = _identity.RefreshToken
                 });
             } else                                  // Identity is an app, must create new
             {
@@ -430,26 +430,54 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetTeamsAsync(object args)
             => _api.GetTeamsAsync(args);
 
+        #region Users
+
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersArgs args)
             => _api.GetUsersAsync(args);
+
         public Task<TwitchResponse<User>> PutUserAsync(string description)
-            => _api.PutUserAsync(description);
-        public Task<TwitchResponse<Follower>> GetFollowsAsync(GetFollowsArgs args)
+        {
+            //CheckScopes(args);
+            return _api.PutUserAsync(description);
+        }
+
+        public Task<TwitchMetaResponse<Follower>> GetFollowsAsync(GetFollowsArgs args)
             => _api.GetFollowsAsync(args);
-        public Task<TwitchResponse<object>> GetBlocksAsync(object args)
-            => _api.GetBlocksAsync(args);
-        public Task<TwitchResponse<object>> PutBlockAsync(object args)
-            => _api.PutBlockAsync(args);
-        public Task<TwitchResponse<object>> DeleteBlockAsync(object args)
-            => _api.DeleteBlockAsync(args);
 
-        public Task<TwitchResponse<object>> GetUserExtensionsAsync(object args)
-            => _api.GetUserExtensionsAsync(args);
-        public Task<TwitchResponse<object>> GetActiveExtensionsAsync(object args)
-            => _api.GetActiveExtensionsAsync(args);
-        public Task<TwitchResponse<object>> PutExtensionsAsync(object args)
-            => _api.PutExtensionsAsync(args);
+        public Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync(GetBlocksArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetBlocksAsync(args);
+        }
 
+        public Task PutBlockAsync(PutBlockArgs args)
+        {
+            CheckScopes(args);
+            return _api.PutBlockAsync(args);
+        }
+
+        public Task DeleteBlockAsync(string targetUserId)
+        {
+            //CheckScopes(args);
+            return _api.DeleteBlockAsync(targetUserId);
+        }
+
+        public Task<TwitchResponse<Extension>> GetUserExtensionsAsync()
+        {
+            //CheckScopes(args);
+            return GetUserExtensionsAsync();
+        }
+
+        public Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync(string userId)
+            => _api.GetActiveExtensionsAsync(userId);
+
+        public Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync(ExtensionMap args)
+        {
+            //CheckScopes(args);
+            return _api.PutExtensionsAsync(args);
+        }
+
+        #endregion
         #region Videos
 
         public Task<TwitchMetaResponse<Video>> GetVideosAsync(GetVideosArgs args)
