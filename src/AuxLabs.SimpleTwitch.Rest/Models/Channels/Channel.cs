@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -19,7 +20,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. </summary>
         [JsonPropertyName("broadcaster_language")]
-        public string BroadcasterLanguage { get; set; }
+        public CultureInfo BroadcasterLanguage { get; set; }
 
         /// <summary> An ID that uniquely identifies the game that the broadcaster is playing or last played. </summary>
         [JsonPropertyName("game_id")]
