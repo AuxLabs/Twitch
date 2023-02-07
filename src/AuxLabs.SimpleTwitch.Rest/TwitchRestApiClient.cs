@@ -52,7 +52,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             var user = Identity as UserIdentity;
             if (user == null)
                 throw new TwitchException("This request cannot be made using app authorization.");
-            if (!(user.Scopes.Any(x => request.Scopes.Contains(x))))
+            if (!user.Scopes.Any(x => request.Scopes.Contains(x)))
                 throw new MissingScopeException(request.Scopes);
         }
 
