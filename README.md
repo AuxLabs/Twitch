@@ -29,7 +29,7 @@ For examples and sample projects look at [the examples repository](https://githu
 - [ ] Automatic token refresh
 - [x] Provide a custom ratelimiter
 - [x] Connect to a custom rest api url
-- [ ] All endpoint categories progress (51/121)
+- [ ] All endpoint categories progress
   - [x] 5/5 Identity
   - [x] 1/1 Ads
   - [x] 2/2 Analytics
