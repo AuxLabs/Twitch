@@ -7975,6 +7975,173 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.ClientId
   nameWithType: AuthorizationCondition.ClientId
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodAction
+  name: AutomodAction
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.AutomodAction
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodAction
+  nameWithType: AutomodAction
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodAction.Allow
+  name: Allow
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html#AuxLabs_SimpleTwitch_Rest_AutomodAction_Allow
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodAction.Allow
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodAction.Allow
+  nameWithType: AutomodAction.Allow
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodAction.Deny
+  name: Deny
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html#AuxLabs_SimpleTwitch_Rest_AutomodAction_Deny
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodAction.Deny
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodAction.Deny
+  nameWithType: AutomodAction.Deny
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings
+  name: AutomodSettings
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.AutomodSettings
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings
+  nameWithType: AutomodSettings
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression
+  name: Aggression
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Aggression
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression
+  nameWithType: AutomodSettings.Aggression
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression*
+  name: Aggression
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Aggression_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Aggression
+  nameWithType: AutomodSettings.Aggression
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId
+  nameWithType: AutomodSettings.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.BroadcasterId
+  nameWithType: AutomodSettings.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying
+  name: Bullying
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Bullying
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying
+  nameWithType: AutomodSettings.Bullying
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying*
+  name: Bullying
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Bullying_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Bullying
+  nameWithType: AutomodSettings.Bullying
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability
+  name: Disability
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Disability
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability
+  nameWithType: AutomodSettings.Disability
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability*
+  name: Disability
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Disability_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Disability
+  nameWithType: AutomodSettings.Disability
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny
+  name: Misogyny
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Misogyny
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny
+  nameWithType: AutomodSettings.Misogyny
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny*
+  name: Misogyny
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Misogyny_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Misogyny
+  nameWithType: AutomodSettings.Misogyny
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_ModeratorId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId
+  nameWithType: AutomodSettings.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId*
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_ModeratorId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.ModeratorId
+  nameWithType: AutomodSettings.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel
+  name: OverallLevel
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_OverallLevel
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel
+  nameWithType: AutomodSettings.OverallLevel
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel*
+  name: OverallLevel
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_OverallLevel_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.OverallLevel
+  nameWithType: AutomodSettings.OverallLevel
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion
+  name: RaceEthnicityOrReligion
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_RaceEthnicityOrReligion
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion
+  nameWithType: AutomodSettings.RaceEthnicityOrReligion
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion*
+  name: RaceEthnicityOrReligion
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_RaceEthnicityOrReligion_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.RaceEthnicityOrReligion
+  nameWithType: AutomodSettings.RaceEthnicityOrReligion
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms
+  name: SexBasedTerms
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_SexBasedTerms
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms
+  nameWithType: AutomodSettings.SexBasedTerms
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms*
+  name: SexBasedTerms
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_SexBasedTerms_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexBasedTerms
+  nameWithType: AutomodSettings.SexBasedTerms
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender
+  name: SexualitySexOrGender
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_SexualitySexOrGender
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender
+  nameWithType: AutomodSettings.SexualitySexOrGender
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender*
+  name: SexualitySexOrGender
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_SexualitySexOrGender_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.SexualitySexOrGender
+  nameWithType: AutomodSettings.SexualitySexOrGender
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing
+  name: Swearing
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Swearing
+  commentId: P:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing
+  nameWithType: AutomodSettings.Swearing
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing*
+  name: Swearing
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html#AuxLabs_SimpleTwitch_Rest_AutomodSettings_Swearing_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodSettings.Swearing
+  nameWithType: AutomodSettings.Swearing
 - uid: AuxLabs.SimpleTwitch.Rest.Badge
   name: Badge
   href: api/AuxLabs.SimpleTwitch.Rest.Badge.html
@@ -8065,6 +8232,129 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.BadgeVersion.SmallImageUrl
   nameWithType: BadgeVersion.SmallImageUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Ban
+  name: Ban
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Ban
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban
+  nameWithType: Ban
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_CreatedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt
+  nameWithType: Ban.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_CreatedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.CreatedAt
+  nameWithType: Ban.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt
+  name: ExpiresAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ExpiresAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt
+  nameWithType: Ban.ExpiresAt
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt*
+  name: ExpiresAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ExpiresAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ExpiresAt
+  nameWithType: Ban.ExpiresAt
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName
+  name: ModeratorDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName
+  nameWithType: Ban.ModeratorDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName*
+  name: ModeratorDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorDisplayName
+  nameWithType: Ban.ModeratorDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId
+  nameWithType: Ban.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId*
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorId
+  nameWithType: Ban.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName
+  name: ModeratorName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName
+  nameWithType: Ban.ModeratorName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName*
+  name: ModeratorName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_ModeratorName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.ModeratorName
+  nameWithType: Ban.ModeratorName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.Reason
+  name: Reason
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_Reason
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.Reason
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.Reason
+  nameWithType: Ban.Reason
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.Reason*
+  name: Reason
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_Reason_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.Reason
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.Reason
+  nameWithType: Ban.Reason
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName
+  name: UserDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName
+  nameWithType: Ban.UserDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName*
+  name: UserDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserDisplayName
+  nameWithType: Ban.UserDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserId
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.UserId
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserId
+  nameWithType: Ban.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserId*
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.UserId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserId
+  nameWithType: Ban.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserName
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Ban.UserName
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserName
+  nameWithType: Ban.UserName
+- uid: AuxLabs.SimpleTwitch.Rest.Ban.UserName*
+  name: UserName
+  href: api/AuxLabs.SimpleTwitch.Rest.Ban.html#AuxLabs_SimpleTwitch_Rest_Ban_UserName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Ban.UserName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Ban.UserName
+  nameWithType: Ban.UserName
 - uid: AuxLabs.SimpleTwitch.Rest.BitsPeriod
   name: BitsPeriod
   href: api/AuxLabs.SimpleTwitch.Rest.BitsPeriod.html
@@ -11262,6 +11552,161 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Type
   nameWithType: GetAnalyticsArgs.Type
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs
+  name: GetAutomodSettingsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs
+  nameWithType: GetAutomodSettingsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId
+  nameWithType: GetAutomodSettingsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.BroadcasterId
+  nameWithType: GetAutomodSettingsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap()
+  nameWithType: GetAutomodSettingsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.CreateQueryMap
+  nameWithType: GetAutomodSettingsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_ModeratorId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId
+  nameWithType: GetAutomodSettingsArgs.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId*
+  name: ModeratorId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_ModeratorId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.ModeratorId
+  nameWithType: GetAutomodSettingsArgs.ModeratorId
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
+  nameWithType: GetAutomodSettingsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
+  nameWithType: GetAutomodSettingsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs
+  name: GetBannedUsersArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs
+  nameWithType: GetBannedUsersArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After
+  nameWithType: GetBannedUsersArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.After
+  nameWithType: GetBannedUsersArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before
+  nameWithType: GetBannedUsersArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before*
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Before
+  nameWithType: GetBannedUsersArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId
+  nameWithType: GetBannedUsersArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.BroadcasterId
+  nameWithType: GetBannedUsersArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap()
+  nameWithType: GetBannedUsersArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.CreateQueryMap
+  nameWithType: GetBannedUsersArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First
+  nameWithType: GetBannedUsersArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.First
+  nameWithType: GetBannedUsersArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes
+  nameWithType: GetBannedUsersArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Scopes
+  nameWithType: GetBannedUsersArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
+  name: UserIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_UserIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
+  nameWithType: GetBannedUsersArgs.UserIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds*
+  name: UserIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_UserIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
+  nameWithType: GetBannedUsersArgs.UserIds
 - uid: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs
   name: GetBitsLeaderboardArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.html
@@ -13755,15 +14200,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetActiveExtensionsAsync
   nameWithType: ITwitchApi.GetActiveExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(System.Object)
-  name: GetAutomodSettingsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetAutomodSettingsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(System.Object)
-  name.vb: GetAutomodSettingsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(Object)
-  nameWithType: ITwitchApi.GetAutomodSettingsAsync(object)
-  nameWithType.vb: ITwitchApi.GetAutomodSettingsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  name: GetAutomodSettingsAsync(GetAutomodSettingsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetAutomodSettingsAsync_AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  nameWithType: ITwitchApi.GetAutomodSettingsAsync(GetAutomodSettingsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetAutomodSettingsAsync*
   name: GetAutomodSettingsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetAutomodSettingsAsync_
@@ -13793,15 +14235,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBadgesAsync
   nameWithType: ITwitchApi.GetBadgesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(System.Object)
-  name: GetBannedUsersAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetBannedUsersAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(System.Object)
-  name.vb: GetBannedUsersAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(Object)
-  nameWithType: ITwitchApi.GetBannedUsersAsync(object)
-  nameWithType.vb: ITwitchApi.GetBannedUsersAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  name: GetBannedUsersAsync(GetBannedUsersArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetBannedUsersAsync_AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  nameWithType: ITwitchApi.GetBannedUsersAsync(GetBannedUsersArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetBannedUsersAsync*
   name: GetBannedUsersAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetBannedUsersAsync_
@@ -14803,22 +15242,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchScheduleSegmentAsync
   nameWithType: ITwitchApi.PatchScheduleSegmentAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync(System.Object)
-  name: PostAutomodMessagesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostAutomodMessagesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync(System.Object)
-  name.vb: PostAutomodMessagesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync(Object)
-  nameWithType: ITwitchApi.PostAutomodMessagesAsync(object)
-  nameWithType.vb: ITwitchApi.PostAutomodMessagesAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync*
-  name: PostAutomodMessagesAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostAutomodMessagesAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  name: PostAutomodMessageAsync(PostAutomodMessageArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostAutomodMessageAsync_AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  nameWithType: ITwitchApi.PostAutomodMessageAsync(PostAutomodMessageArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync*
+  name: PostAutomodMessageAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostAutomodMessageAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessagesAsync
-  nameWithType: ITwitchApi.PostAutomodMessagesAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostAutomodMessageAsync
+  nameWithType: ITwitchApi.PostAutomodMessageAsync
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostBanAsync(System.Object)
   name: PostBanAsync(object)
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostBanAsync_System_Object_
@@ -14909,6 +15345,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostCommercialAsync
   nameWithType: ITwitchApi.PostCommercialAsync
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  name: PostEnforcementStatusAsync(string, PostEnforcementStatusArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostEnforcementStatusAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  name.vb: PostEnforcementStatusAsync(String, PostEnforcementStatusArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync(string, AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync(String, AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  nameWithType: ITwitchApi.PostEnforcementStatusAsync(string, PostEnforcementStatusArgs)
+  nameWithType.vb: ITwitchApi.PostEnforcementStatusAsync(String, PostEnforcementStatusArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync*
+  name: PostEnforcementStatusAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostEnforcementStatusAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEnforcementStatusAsync
+  nameWithType: ITwitchApi.PostEnforcementStatusAsync
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostEventSubcriptionAsync(AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs)
   name: PostEventSubcriptionAsync(PostEventSubscriptionArgs)
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostEventSubcriptionAsync_AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_
@@ -14970,22 +15422,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostExtensionSecretsAsync
   nameWithType: ITwitchApi.PostExtensionSecretsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync(System.Object)
-  name: PostModerationStatusAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostModerationStatusAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync(System.Object)
-  name.vb: PostModerationStatusAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync(Object)
-  nameWithType: ITwitchApi.PostModerationStatusAsync(object)
-  nameWithType.vb: ITwitchApi.PostModerationStatusAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync*
-  name: PostModerationStatusAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostModerationStatusAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModerationStatusAsync
-  nameWithType: ITwitchApi.PostModerationStatusAsync
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModeratorAsync(System.Object)
   name: PostModeratorAsync(object)
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostModeratorAsync_System_Object_
@@ -15143,15 +15579,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostWhisperAsync
   nameWithType: ITwitchApi.PostWhisperAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(System.Object)
-  name: PutAutomodSettingsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PutAutomodSettingsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(System.Object)
-  name.vb: PutAutomodSettingsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(Object)
-  nameWithType: ITwitchApi.PutAutomodSettingsAsync(object)
-  nameWithType.vb: ITwitchApi.PutAutomodSettingsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs,AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  name: PutAutomodSettingsAsync(GetAutomodSettingsArgs, PutAutomodSettingsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PutAutomodSettingsAsync_AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs,AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs, AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  nameWithType: ITwitchApi.PutAutomodSettingsAsync(GetAutomodSettingsArgs, PutAutomodSettingsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PutAutomodSettingsAsync*
   name: PutAutomodSettingsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PutAutomodSettingsAsync_
@@ -15361,6 +15794,79 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchIdentityApi.ValidateAsync
   nameWithType: ITwitchIdentityApi.ValidateAsync
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage
+  name: MockMessage
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.MockMessage
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage
+  nameWithType: MockMessage
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor
+  name: MockMessage()
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.MockMessage()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.MockMessage.New()
+  nameWithType: MockMessage.MockMessage()
+  nameWithType.vb: MockMessage.New()
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor(System.String,System.String)
+  name: MockMessage(string, string)
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage__ctor_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.MockMessage(string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.MockMessage.New(String, String)
+  nameWithType: MockMessage.MockMessage(string, string)
+  nameWithType.vb: MockMessage.New(String, String)
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor*
+  name: MockMessage
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.MockMessage.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.MockMessage
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.MockMessage.New
+  nameWithType: MockMessage.MockMessage
+  nameWithType.vb: MockMessage.New
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.MockMessage.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.Id
+  nameWithType: MockMessage.Id
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.MockMessage.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.Id
+  nameWithType: MockMessage.Id
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted
+  name: IsPermitted
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_IsPermitted
+  commentId: P:AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted
+  nameWithType: MockMessage.IsPermitted
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted*
+  name: IsPermitted
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_IsPermitted_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.IsPermitted
+  nameWithType: MockMessage.IsPermitted
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.Text
+  name: Text
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_Text
+  commentId: P:AuxLabs.SimpleTwitch.Rest.MockMessage.Text
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.Text
+  nameWithType: MockMessage.Text
+- uid: AuxLabs.SimpleTwitch.Rest.MockMessage.Text*
+  name: Text
+  href: api/AuxLabs.SimpleTwitch.Rest.MockMessage.html#AuxLabs_SimpleTwitch_Rest_MockMessage_Text_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.MockMessage.Text
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.MockMessage.Text
+  nameWithType: MockMessage.Text
 - uid: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs
   name: ModifyChannelArgs
   href: api/AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.html
@@ -15774,6 +16280,77 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.GrantType
   nameWithType: PostAppAccessTokenArgs.GrantType
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs
+  name: PostAutomodMessageArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs
+  nameWithType: PostAutomodMessageArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action
+  name: Action
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Action
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action
+  nameWithType: PostAutomodMessageArgs.Action
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action*
+  name: Action
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Action_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Action
+  nameWithType: PostAutomodMessageArgs.Action
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap()
+  nameWithType: PostAutomodMessageArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.CreateQueryMap
+  nameWithType: PostAutomodMessageArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId
+  name: MessageId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_MessageId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId
+  nameWithType: PostAutomodMessageArgs.MessageId
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId*
+  name: MessageId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_MessageId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.MessageId
+  nameWithType: PostAutomodMessageArgs.MessageId
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes
+  nameWithType: PostAutomodMessageArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Scopes
+  nameWithType: PostAutomodMessageArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_UserId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
+  nameWithType: PostAutomodMessageArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId*
+  name: UserId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_UserId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
+  nameWithType: PostAutomodMessageArgs.UserId
 - uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs
   name: PostChannelCommercialArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html
@@ -15918,6 +16495,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
   nameWithType: PostClipArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs
+  name: PostEnforcementStatusArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs
+  nameWithType: PostEnforcementStatusArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages
+  name: Messages
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Messages
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages
+  nameWithType: PostEnforcementStatusArgs.Messages
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages*
+  name: Messages
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Messages_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Messages
+  nameWithType: PostEnforcementStatusArgs.Messages
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
+  nameWithType: PostEnforcementStatusArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
+  nameWithType: PostEnforcementStatusArgs.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs
   name: PostEventSubscriptionArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html
@@ -16523,6 +17132,142 @@ references:
   commentId: F:AuxLabs.SimpleTwitch.Rest.ProductType.None
   fullName: AuxLabs.SimpleTwitch.Rest.ProductType.None
   nameWithType: ProductType.None
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs
+  name: PutAutomodSettingsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs
+  nameWithType: PutAutomodSettingsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression
+  name: Aggression
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Aggression
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression
+  nameWithType: PutAutomodSettingsArgs.Aggression
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression*
+  name: Aggression
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Aggression_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Aggression
+  nameWithType: PutAutomodSettingsArgs.Aggression
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying
+  name: Bullying
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Bullying
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying
+  nameWithType: PutAutomodSettingsArgs.Bullying
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying*
+  name: Bullying
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Bullying_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Bullying
+  nameWithType: PutAutomodSettingsArgs.Bullying
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability
+  name: Disability
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Disability
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability
+  nameWithType: PutAutomodSettingsArgs.Disability
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability*
+  name: Disability
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Disability_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Disability
+  nameWithType: PutAutomodSettingsArgs.Disability
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny
+  name: Misogyny
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Misogyny
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny
+  nameWithType: PutAutomodSettingsArgs.Misogyny
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny*
+  name: Misogyny
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Misogyny_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Misogyny
+  nameWithType: PutAutomodSettingsArgs.Misogyny
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel
+  name: OverallLevel
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_OverallLevel
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel
+  nameWithType: PutAutomodSettingsArgs.OverallLevel
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel*
+  name: OverallLevel
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_OverallLevel_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.OverallLevel
+  nameWithType: PutAutomodSettingsArgs.OverallLevel
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion
+  name: RaceEthnicityOrReligion
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_RaceEthnicityOrReligion
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion
+  nameWithType: PutAutomodSettingsArgs.RaceEthnicityOrReligion
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion*
+  name: RaceEthnicityOrReligion
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_RaceEthnicityOrReligion_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.RaceEthnicityOrReligion
+  nameWithType: PutAutomodSettingsArgs.RaceEthnicityOrReligion
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes
+  nameWithType: PutAutomodSettingsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Scopes
+  nameWithType: PutAutomodSettingsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms
+  name: SexBasedTerms
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_SexBasedTerms
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms
+  nameWithType: PutAutomodSettingsArgs.SexBasedTerms
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms*
+  name: SexBasedTerms
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_SexBasedTerms_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexBasedTerms
+  nameWithType: PutAutomodSettingsArgs.SexBasedTerms
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender
+  name: SexualitySexOrGender
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_SexualitySexOrGender
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender
+  nameWithType: PutAutomodSettingsArgs.SexualitySexOrGender
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender*
+  name: SexualitySexOrGender
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_SexualitySexOrGender_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.SexualitySexOrGender
+  nameWithType: PutAutomodSettingsArgs.SexualitySexOrGender
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
+  name: Swearing
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Swearing
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
+  nameWithType: PutAutomodSettingsArgs.Swearing
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing*
+  name: Swearing
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Swearing_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
+  nameWithType: PutAutomodSettingsArgs.Swearing
 - uid: AuxLabs.SimpleTwitch.Rest.PutBlockArgs
   name: PutBlockArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PutBlockArgs.html
@@ -18295,15 +19040,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetActiveExtensionsAsync
   nameWithType: TwitchRestApiClient.GetActiveExtensionsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(System.Object)
-  name: GetAutomodSettingsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(System.Object)
-  name.vb: GetAutomodSettingsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(Object)
-  nameWithType: TwitchRestApiClient.GetAutomodSettingsAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetAutomodSettingsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  name: GetAutomodSettingsAsync(GetAutomodSettingsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs)
+  nameWithType: TwitchRestApiClient.GetAutomodSettingsAsync(GetAutomodSettingsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetAutomodSettingsAsync*
   name: GetAutomodSettingsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetAutomodSettingsAsync_
@@ -18333,15 +19075,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBadgesAsync
   nameWithType: TwitchRestApiClient.GetBadgesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(System.Object)
-  name: GetBannedUsersAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(System.Object)
-  name.vb: GetBannedUsersAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(Object)
-  nameWithType: TwitchRestApiClient.GetBannedUsersAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetBannedUsersAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  name: GetBannedUsersAsync(GetBannedUsersArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync(AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs)
+  nameWithType: TwitchRestApiClient.GetBannedUsersAsync(GetBannedUsersArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetBannedUsersAsync*
   name: GetBannedUsersAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetBannedUsersAsync_
@@ -19365,22 +20104,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchScheduleSegmentAsync
   nameWithType: TwitchRestApiClient.PatchScheduleSegmentAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync(System.Object)
-  name: PostAutomodMessagesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostAutomodMessagesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync(System.Object)
-  name.vb: PostAutomodMessagesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync(Object)
-  nameWithType: TwitchRestApiClient.PostAutomodMessagesAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PostAutomodMessagesAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync*
-  name: PostAutomodMessagesAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostAutomodMessagesAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  name: PostAutomodMessageAsync(PostAutomodMessageArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostAutomodMessageAsync_AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync(AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs)
+  nameWithType: TwitchRestApiClient.PostAutomodMessageAsync(PostAutomodMessageArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync*
+  name: PostAutomodMessageAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostAutomodMessageAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessagesAsync
-  nameWithType: TwitchRestApiClient.PostAutomodMessagesAsync
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostAutomodMessageAsync
+  nameWithType: TwitchRestApiClient.PostAutomodMessageAsync
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostBanAsync(System.Object)
   name: PostBanAsync(object)
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostBanAsync_System_Object_
@@ -19471,6 +20207,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostCommercialAsync
   nameWithType: TwitchRestApiClient.PostCommercialAsync
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  name: PostEnforcementStatusAsync(string, PostEnforcementStatusArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEnforcementStatusAsync_System_String_AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync(System.String,AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  name.vb: PostEnforcementStatusAsync(String, PostEnforcementStatusArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync(string, AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync(String, AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs)
+  nameWithType: TwitchRestApiClient.PostEnforcementStatusAsync(string, PostEnforcementStatusArgs)
+  nameWithType.vb: TwitchRestApiClient.PostEnforcementStatusAsync(String, PostEnforcementStatusArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync*
+  name: PostEnforcementStatusAsync
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEnforcementStatusAsync_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEnforcementStatusAsync
+  nameWithType: TwitchRestApiClient.PostEnforcementStatusAsync
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostEventSubcriptionAsync(AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs)
   name: PostEventSubcriptionAsync(PostEventSubscriptionArgs)
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostEventSubcriptionAsync_AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_
@@ -19532,22 +20284,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostExtensionSecretsAsync
   nameWithType: TwitchRestApiClient.PostExtensionSecretsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync(System.Object)
-  name: PostModerationStatusAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModerationStatusAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync(System.Object)
-  name.vb: PostModerationStatusAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync(Object)
-  nameWithType: TwitchRestApiClient.PostModerationStatusAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PostModerationStatusAsync(Object)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync*
-  name: PostModerationStatusAsync
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModerationStatusAsync_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModerationStatusAsync
-  nameWithType: TwitchRestApiClient.PostModerationStatusAsync
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModeratorAsync(System.Object)
   name: PostModeratorAsync(object)
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostModeratorAsync_System_Object_
@@ -19705,15 +20441,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostWhisperAsync
   nameWithType: TwitchRestApiClient.PostWhisperAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(System.Object)
-  name: PutAutomodSettingsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PutAutomodSettingsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(System.Object)
-  name.vb: PutAutomodSettingsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(Object)
-  nameWithType: TwitchRestApiClient.PutAutomodSettingsAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PutAutomodSettingsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs,AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  name: PutAutomodSettingsAsync(GetAutomodSettingsArgs, PutAutomodSettingsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PutAutomodSettingsAsync_AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs,AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync(AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs, AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs)
+  nameWithType: TwitchRestApiClient.PutAutomodSettingsAsync(GetAutomodSettingsArgs, PutAutomodSettingsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PutAutomodSettingsAsync*
   name: PutAutomodSettingsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PutAutomodSettingsAsync_
