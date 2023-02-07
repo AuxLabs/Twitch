@@ -1,4 +1,5 @@
-﻿using RestEase;
+﻿using AuxLabs.SimpleTwitch.Rest.Requests.Clips;
+using RestEase;
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -243,13 +244,22 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Clips
 
+        /// <summary> Creates a clip from the broadcaster’s stream. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>clips:edit</c> scope. </remarks>
+        /// <returns> A single <see cref="SimpleClip"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Post("clips")]
-        Task<TwitchResponse<object>> PostClipAsync([Query] object args);
+        Task<TwitchResponse<SimpleClip>> PostClipAsync([QueryMap] PostClipArgs args);
+
+        /// <summary> Gets one or more video clips that were captured from streams. </summary>
+        /// <returns> A collection of <see cref="Clip"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("clips")]
-        Task<TwitchResponse<object>> GetClipsAsync([Query] object args);
+        Task<TwitchMetaResponse<Clip>> GetClipsAsync([QueryMap] GetClipsArgs args);
 
         #endregion
-        #region Entitlements
+        #region Drops
 
         [Get("entitlements/codes")]
         Task<TwitchResponse<object>> GetCodeStatusAsync([Query] object args);

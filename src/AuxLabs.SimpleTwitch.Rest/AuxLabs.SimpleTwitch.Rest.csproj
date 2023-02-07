@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Clips\" />
     <Folder Include="Models\Entitlements\" />
     <Folder Include="Models\Games\" />
     <Folder Include="Models\Moderation\" />
@@ -23,7 +22,6 @@
     <Folder Include="Models\Streams\" />
     <Folder Include="Models\Subscriptions\" />
     <Folder Include="Models\Tags\" />
-    <Folder Include="Requests\Clips\" />
     <Folder Include="Requests\Entitlements\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Games\" />

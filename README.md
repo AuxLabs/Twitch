@@ -38,7 +38,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 6/6 Channel Points
   - [x] 2/2 Charity
   - [x] 12/12 Chat
-  - [ ] 0/2 Clips
+  - [x] 2/2 Clips
   - [ ] 0/4 Drops
   - [ ] 0/12 Extensions
   - [x] 3/3 EventSub
