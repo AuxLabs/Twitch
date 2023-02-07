@@ -356,42 +356,84 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Moderation
 
+        /// <summary> Checks whether AutoMod would flag the specified message for review. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderation:read</c> scope. </remarks>
+        /// <returns> A collection of <see cref="MockMessage"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
         [Post("moderation/enforcements/status")]
-        Task<TwitchResponse<object>> PostModerationStatusAsync([Query] object args);
+        Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([Query("broadcaster_id")] string broadcasterId, [Body] PostEnforcementStatusArgs args);
+
+        /// <summary> Allow or deny the message that AutoMod flagged for review. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:automod</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden, 404 Not Found </exception>
         [Post("moderation/automod/message")]
-        Task<TwitchResponse<object>> PostAutomodMessagesAsync([Query] object args);
+        Task PostAutomodMessageAsync([QueryMap] PostAutomodMessageArgs args);
+
+        /// <summary> Gets the broadcaster’s AutoMod settings. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:read:automod_settings</c> scope. </remarks>
+        /// <returns> A single <see cref="AutomodSettings"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
         [Get("moderation/automod/settings")]
-        Task<TwitchResponse<object>> GetAutomodSettingsAsync([Query] object args);
+        Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args);
+
+        /// <summary> Updates the broadcaster’s AutoMod settings. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:automod_settings</c> scope. </remarks>
+        /// <returns> A single <see cref="AutomodSettings"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
         [Put("moderation/automod/settings")]
-        Task<TwitchResponse<object>> PutAutomodSettingsAsync([Query] object args);
+        Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args, [Body] PutAutomodSettingsArgs body);
+
+        /// <summary> Gets all users that the broadcaster banned or put in a timeout. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderation:read</c> or <c>moderator:manage:banned_users</c> scopes. </remarks>
+        /// <returns> A single <see cref="Ban"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("moderation/banned")]
-        Task<TwitchResponse<object>> GetBannedUsersAsync([Query] object args);
+        Task<TwitchMetaResponse<Ban>> GetBannedUsersAsync([QueryMap] GetBannedUsersArgs args);
+
         [Post("moderation/bans")]
         Task<TwitchResponse<object>> PostBanAsync([Query] object args);
+
         [Delete("moderation/bans")]
         Task<TwitchResponse<object>> DeleteBanAsync([Query] object args);
+
         [Get("moderation/blocked_terms")]
         Task<TwitchResponse<object>> GetBlockedTermsAsync([Query] object args);
+
         [Post("moderation/blocked_terms")]
         Task<TwitchResponse<object>> PostBlockedTermAsync([Query] object args);
+
         [Delete("moderation/blocked_term")]
         Task<TwitchResponse<object>> DeleteBlockedTermAsync([Query] object args);
+
         [Delete("moderation/chat")]
         Task<TwitchResponse<object>> DeleteChatMessagesAsync([Query] object args);
+
         [Get("moderation/moderators")]
         Task<TwitchResponse<object>> GetModeratorsAsync([Query] object args);
+
         [Post("moderation/moderators")]
         Task<TwitchResponse<object>> PostModeratorAsync([Query] object args);
+
         [Delete("moderation/moderators")]
         Task<TwitchResponse<object>> DeleteModeratorAsync([Query] object args);
+
         [Get("channels/vips")]
         Task<TwitchResponse<object>> GetVipsAsync([Query] object args);
+
         [Post("channels/vips")]
         Task<TwitchResponse<object>> PostVipAsync([Query] object args);
+
         [Delete("channels/vips")]
         Task<TwitchResponse<object>> DeleteVipAsync([Query] object args);
+
         [Put("moderation/shield_mode")]
         Task<TwitchResponse<object>> PutShieldModeAsync([Query] object args);
+
         [Get("moderation/shield_mode")]
         Task<TwitchResponse<object>> GetShieldModeAsync([Query] object args);
 

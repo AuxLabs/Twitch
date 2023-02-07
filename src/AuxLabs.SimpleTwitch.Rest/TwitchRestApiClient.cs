@@ -317,19 +317,35 @@ namespace AuxLabs.SimpleTwitch.Rest
             CheckScopes(args);
             return _api.GetHypetrainEventsAsync(args);
         }
-        
-        #endregion
 
-        public Task<TwitchResponse<object>> PostModerationStatusAsync(object args)
-            => _api.PostModerationStatusAsync(args);
-        public Task<TwitchResponse<object>> PostAutomodMessagesAsync(object args)
-            => _api.PostAutomodMessagesAsync(args);
-        public Task<TwitchResponse<object>> GetAutomodSettingsAsync(object args)
-            => _api.GetAutomodSettingsAsync(args);
-        public Task<TwitchResponse<object>> PutAutomodSettingsAsync(object args)
-            => _api.PutAutomodSettingsAsync(args);
-        public Task<TwitchResponse<object>> GetBannedUsersAsync(object args)
-            => _api.GetBannedUsersAsync(args);
+        #endregion
+        #region Moderation
+
+        public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(string broadcasterId, PostEnforcementStatusArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostEnforcementStatusAsync(broadcasterId, args);
+        }
+        public Task PostAutomodMessageAsync(PostAutomodMessageArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostAutomodMessageAsync(args);
+        }
+        public Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync(GetAutomodSettingsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetAutomodSettingsAsync(args);
+        }
+        public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(GetAutomodSettingsArgs args, PutAutomodSettingsArgs body)
+        {
+            CheckScopes(body);
+            return _api.PutAutomodSettingsAsync(args, body);
+        }
+        public Task<TwitchMetaResponse<Ban>> GetBannedUsersAsync(GetBannedUsersArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetBannedUsersAsync(args);
+        }
         public Task<TwitchResponse<object>> PostBanAsync(object args)
             => _api.PostBanAsync(args);
         public Task<TwitchResponse<object>> DeleteBanAsync(object args)
@@ -359,6 +375,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetShieldModeAsync(object args)
             => _api.GetShieldModeAsync(args);
 
+        #endregion
         public Task<TwitchResponse<object>> GetPollAsync(object args)
             => _api.GetPollAsync(args);
         public Task<TwitchResponse<object>> PostPollAsync(object args)
