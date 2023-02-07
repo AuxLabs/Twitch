@@ -85,7 +85,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (string.IsNullOrWhiteSpace(token))
                 throw new ArgumentException("Required parameter was null or empty", nameof(token));
 
-            if (username.StartsWith("justinfan") && token.StartsWith("justinfan"))
+            if (username.StartsWith(TwitchConstants.AnonymousNamePrefix) && token.StartsWith(TwitchConstants.AnonymousNamePrefix))
                 _anonymous = true;
 
             _username = username;

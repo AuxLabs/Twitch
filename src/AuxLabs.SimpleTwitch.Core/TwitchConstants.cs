@@ -2,6 +2,8 @@
 {
     public static class TwitchConstants
     {
+        public const string AnonymousNamePrefix = "justinfan";
+
         public const string RestApiUrl = "https://api.twitch.tv/helix/";
         public const string RestIdentityApiUrl = "https://id.twitch.tv/oauth2/";
 
