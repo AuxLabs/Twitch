@@ -10,7 +10,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         public string Id { get; set; }
 
         /// <summary> An ID that uniquely identifies the whisper thread. </summary>
-        /// <remarks> The ID is in the form, <smaller-value-user-id>_<larger-value-user-id>. </remarks>
         public string ThreadId { get; set; }
 
         /// <summary> The ID of the user that sent the message. </summary>

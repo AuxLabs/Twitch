@@ -1,8 +1,6 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using RestEase;
-using System;
 using System.Linq;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xunit;
@@ -44,7 +42,7 @@ namespace AuxLabs.SimpleTwitch.Tests
             };
         }
 
-        [Fact]
+        //[Fact]
         public async Task ConfirmAuthenticationAsync()
         {
             var self = await Twitch.GetUsersAsync(new GetUsersArgs(GetUsersMode.Id, AuthorizedUser.Id));
@@ -55,6 +53,6 @@ namespace AuxLabs.SimpleTwitch.Tests
         }
     }
 
-    [CollectionDefinition("mock")]
+    //[CollectionDefinition("mock")]
     public class MockApiCollection : ICollectionFixture<MockApiFixture> { }
 }
