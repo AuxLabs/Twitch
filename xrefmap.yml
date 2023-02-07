@@ -9294,6 +9294,207 @@ references:
   commentId: F:AuxLabs.SimpleTwitch.Rest.CheermoteType.Sponsored
   fullName: AuxLabs.SimpleTwitch.Rest.CheermoteType.Sponsored
   nameWithType: CheermoteType.Sponsored
+- uid: AuxLabs.SimpleTwitch.Rest.Clip
+  name: Clip
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Clip
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip
+  nameWithType: Clip
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_BroadcasterDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName
+  nameWithType: Clip.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName*
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_BroadcasterDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterDisplayName
+  nameWithType: Clip.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId
+  nameWithType: Clip.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.BroadcasterId
+  nameWithType: Clip.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt
+  nameWithType: Clip.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatedAt
+  nameWithType: Clip.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName
+  name: CreatorDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatorDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName
+  nameWithType: Clip.CreatorDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName*
+  name: CreatorDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatorDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatorDisplayName
+  nameWithType: Clip.CreatorDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatorId
+  name: CreatorId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatorId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.CreatorId
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatorId
+  nameWithType: Clip.CreatorId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.CreatorId*
+  name: CreatorId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_CreatorId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.CreatorId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.CreatorId
+  nameWithType: Clip.CreatorId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_DurationSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds
+  nameWithType: Clip.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds*
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_DurationSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.DurationSeconds
+  nameWithType: Clip.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl
+  name: EmbedUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_EmbedUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl
+  nameWithType: Clip.EmbedUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl*
+  name: EmbedUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_EmbedUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.EmbedUrl
+  nameWithType: Clip.EmbedUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.GameId
+  name: GameId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_GameId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.GameId
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.GameId
+  nameWithType: Clip.GameId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.GameId*
+  name: GameId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_GameId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.GameId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.GameId
+  nameWithType: Clip.GameId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Language
+  name: Language
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Language
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.Language
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Language
+  nameWithType: Clip.Language
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Language*
+  name: Language
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Language_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.Language
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Language
+  nameWithType: Clip.Language
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds
+  name: OffsetSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_OffsetSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds
+  nameWithType: Clip.OffsetSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds*
+  name: OffsetSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_OffsetSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.OffsetSeconds
+  nameWithType: Clip.OffsetSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_ThumbnailUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl
+  nameWithType: Clip.ThumbnailUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_ThumbnailUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.ThumbnailUrl
+  nameWithType: Clip.ThumbnailUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Title
+  nameWithType: Clip.Title
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Title
+  nameWithType: Clip.Title
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Url
+  name: Url
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Url
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.Url
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Url
+  nameWithType: Clip.Url
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.Url*
+  name: Url
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_Url_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.Url
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.Url
+  nameWithType: Clip.Url
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.VideoId
+  name: VideoId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_VideoId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.VideoId
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.VideoId
+  nameWithType: Clip.VideoId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.VideoId*
+  name: VideoId
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_VideoId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.VideoId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.VideoId
+  nameWithType: Clip.VideoId
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.ViewCount
+  name: ViewCount
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_ViewCount
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Clip.ViewCount
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.ViewCount
+  nameWithType: Clip.ViewCount
+- uid: AuxLabs.SimpleTwitch.Rest.Clip.ViewCount*
+  name: ViewCount
+  href: api/AuxLabs.SimpleTwitch.Rest.Clip.html#AuxLabs_SimpleTwitch_Rest_Clip_ViewCount_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Clip.ViewCount
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Clip.ViewCount
+  nameWithType: Clip.ViewCount
 - uid: AuxLabs.SimpleTwitch.Rest.Commercial
   name: Commercial
   href: api/AuxLabs.SimpleTwitch.Rest.Commercial.html
@@ -10979,6 +11180,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.After
   nameWithType: GetAnalyticsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAnalyticsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetAnalyticsArgs.IPaginated.Before
+  nameWithType.vb: GetAnalyticsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAnalyticsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetAnalyticsArgs.IPaginated.Before
+  nameWithType.vb: GetAnalyticsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.CreateQueryMap
   name: CreateQueryMap()
   href: api/AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAnalyticsArgs_CreateQueryMap
@@ -11147,6 +11365,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.After
   nameWithType: GetBlocksArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html#AuxLabs_SimpleTwitch_Rest_GetBlocksArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetBlocksArgs.IPaginated.Before
+  nameWithType.vb: GetBlocksArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html#AuxLabs_SimpleTwitch_Rest_GetBlocksArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetBlocksArgs.IPaginated.Before
+  nameWithType.vb: GetBlocksArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html#AuxLabs_SimpleTwitch_Rest_GetBlocksArgs_BroadcasterId
@@ -11278,6 +11513,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.After
   nameWithType: GetCharityDonationsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetCharityDonationsArgs.IPaginated.Before
+  nameWithType.vb: GetCharityDonationsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetCharityDonationsArgs.IPaginated.Before
+  nameWithType.vb: GetCharityDonationsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_BroadcasterId
@@ -11349,6 +11601,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.After
   nameWithType: GetChattersArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html#AuxLabs_SimpleTwitch_Rest_GetChattersArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetChattersArgs.IPaginated.Before
+  nameWithType.vb: GetChattersArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html#AuxLabs_SimpleTwitch_Rest_GetChattersArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetChattersArgs.IPaginated.Before
+  nameWithType.vb: GetChattersArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html#AuxLabs_SimpleTwitch_Rest_GetChattersArgs_BroadcasterId
@@ -11414,6 +11683,129 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Scopes
   nameWithType: GetChattersArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs
+  name: GetClipsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetClipsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs
+  nameWithType: GetClipsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After
+  nameWithType: GetClipsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After
+  nameWithType: GetClipsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before
+  nameWithType: GetClipsArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before*
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before
+  nameWithType: GetClipsArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId
+  nameWithType: GetClipsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId
+  nameWithType: GetClipsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds
+  name: ClipIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_ClipIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds
+  nameWithType: GetClipsArgs.ClipIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds*
+  name: ClipIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_ClipIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds
+  nameWithType: GetClipsArgs.ClipIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap()
+  nameWithType: GetClipsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap
+  nameWithType: GetClipsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_EndedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt
+  nameWithType: GetClipsArgs.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt*
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_EndedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt
+  nameWithType: GetClipsArgs.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First
+  nameWithType: GetClipsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First
+  nameWithType: GetClipsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId
+  name: GameId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_GameId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId
+  nameWithType: GetClipsArgs.GameId
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId*
+  name: GameId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_GameId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId
+  nameWithType: GetClipsArgs.GameId
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
+  name: StartedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_StartedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
+  nameWithType: GetClipsArgs.StartedAt
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt*
+  name: StartedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_StartedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
+  nameWithType: GetClipsArgs.StartedAt
 - uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
   name: GetEmoteSetsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html
@@ -11493,6 +11885,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.After
   nameWithType: GetEventSubscriptionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEventSubscriptionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetEventSubscriptionsArgs.IPaginated.Before
+  nameWithType.vb: GetEventSubscriptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEventSubscriptionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetEventSubscriptionsArgs.IPaginated.Before
+  nameWithType.vb: GetEventSubscriptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#First
   name: IPaginated.First
   href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEventSubscriptionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_First
@@ -11626,6 +12035,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.After
   nameWithType: GetExtensionTransactionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetExtensionTransactionsArgs.IPaginated.Before
+  nameWithType.vb: GetExtensionTransactionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetExtensionTransactionsArgs.IPaginated.Before
+  nameWithType.vb: GetExtensionTransactionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.CreateQueryMap
   name: CreateQueryMap()
   href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_CreateQueryMap
@@ -11697,6 +12123,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.After
   nameWithType: GetFollowsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html#AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetFollowsArgs.IPaginated.Before
+  nameWithType.vb: GetFollowsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html#AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetFollowsArgs.IPaginated.Before
+  nameWithType.vb: GetFollowsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.CreateQueryMap
   name: CreateQueryMap()
   href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html#AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_CreateQueryMap
@@ -11813,6 +12256,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.After
   nameWithType: GetHypeTrainsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html#AuxLabs_SimpleTwitch_Rest_GetHypeTrainsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetHypeTrainsArgs.IPaginated.Before
+  nameWithType.vb: GetHypeTrainsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html#AuxLabs_SimpleTwitch_Rest_GetHypeTrainsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetHypeTrainsArgs.IPaginated.Before
+  nameWithType.vb: GetHypeTrainsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html#AuxLabs_SimpleTwitch_Rest_GetHypeTrainsArgs_BroadcasterId
@@ -11884,6 +12344,23 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.After
   nameWithType: GetRedemptionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetRedemptionsArgs.IPaginated.Before
+  nameWithType.vb: GetRedemptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetRedemptionsArgs.IPaginated.Before
+  nameWithType.vb: GetRedemptionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_BroadcasterId
@@ -12974,6 +13451,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.IPaginated.After
   nameWithType: IPaginated.After
+- uid: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.IPaginated.html#AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.IPaginated.Before*
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.IPaginated.html#AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: IPaginated.Before
 - uid: AuxLabs.SimpleTwitch.Rest.IPaginated.First
   name: First
   href: api/AuxLabs.SimpleTwitch.Rest.IPaginated.html#AuxLabs_SimpleTwitch_Rest_IPaginated_First
@@ -13502,15 +13992,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync
   nameWithType: ITwitchApi.GetCheermotesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(System.Object)
-  name: GetClipsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetClipsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(System.Object)
-  name.vb: GetClipsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(Object)
-  nameWithType: ITwitchApi.GetClipsAsync(object)
-  nameWithType.vb: ITwitchApi.GetClipsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  name: GetClipsAsync(GetClipsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetClipsAsync_AuxLabs_SimpleTwitch_Rest_GetClipsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  nameWithType: ITwitchApi.GetClipsAsync(GetClipsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetClipsAsync*
   name: GetClipsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetClipsAsync_
@@ -14380,15 +14867,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostChatAnnouncementAsync
   nameWithType: ITwitchApi.PostChatAnnouncementAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(System.Object)
-  name: PostClipAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostClipAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(System.Object)
-  name.vb: PostClipAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(Object)
-  nameWithType: ITwitchApi.PostClipAsync(object)
-  nameWithType.vb: ITwitchApi.PostClipAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  name: PostClipAsync(PostClipArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostClipAsync_AuxLabs_SimpleTwitch_Rest_PostClipArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  nameWithType: ITwitchApi.PostClipAsync(PostClipArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostClipAsync*
   name: PostClipAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostClipAsync_
@@ -15376,6 +15860,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Scopes
   nameWithType: PostChannelCommercialArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs
+  name: PostClipArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PostClipArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs
+  nameWithType: PostClipArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
+  nameWithType: PostClipArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
+  nameWithType: PostClipArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap()
+  nameWithType: PostClipArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CreateQueryMap
+  nameWithType: PostClipArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
+  name: HasDelay
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_HasDelay
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
+  nameWithType: PostClipArgs.HasDelay
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay*
+  name: HasDelay
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_HasDelay_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
+  nameWithType: PostClipArgs.HasDelay
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
+  nameWithType: PostClipArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
+  nameWithType: PostClipArgs.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs
   name: PostEventSubscriptionArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html
@@ -16862,6 +17404,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.SimpleChatUser.Color
   nameWithType: SimpleChatUser.Color
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleClip
+  name: SimpleClip
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleClip.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.SimpleClip
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleClip
+  nameWithType: SimpleClip
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl
+  name: EditUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleClip.html#AuxLabs_SimpleTwitch_Rest_SimpleClip_EditUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl
+  nameWithType: SimpleClip.EditUrl
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl*
+  name: EditUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleClip.html#AuxLabs_SimpleTwitch_Rest_SimpleClip_EditUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleClip.EditUrl
+  nameWithType: SimpleClip.EditUrl
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleClip.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleClip.html#AuxLabs_SimpleTwitch_Rest_SimpleClip_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.SimpleClip.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleClip.Id
+  nameWithType: SimpleClip.Id
+- uid: AuxLabs.SimpleTwitch.Rest.SimpleClip.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.SimpleClip.html#AuxLabs_SimpleTwitch_Rest_SimpleClip_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.SimpleClip.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.SimpleClip.Id
+  nameWithType: SimpleClip.Id
 - uid: AuxLabs.SimpleTwitch.Rest.SimpleExtension
   name: SimpleExtension
   href: api/AuxLabs.SimpleTwitch.Rest.SimpleExtension.html
@@ -17967,15 +18541,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync
   nameWithType: TwitchRestApiClient.GetCheermotesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(System.Object)
-  name: GetClipsAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(System.Object)
-  name.vb: GetClipsAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(Object)
-  nameWithType: TwitchRestApiClient.GetClipsAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetClipsAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  name: GetClipsAsync(GetClipsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_AuxLabs_SimpleTwitch_Rest_GetClipsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync(AuxLabs.SimpleTwitch.Rest.GetClipsArgs)
+  nameWithType: TwitchRestApiClient.GetClipsAsync(GetClipsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetClipsAsync*
   name: GetClipsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetClipsAsync_
@@ -18858,15 +19429,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostChatAnnouncementAsync
   nameWithType: TwitchRestApiClient.PostChatAnnouncementAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(System.Object)
-  name: PostClipAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostClipAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(System.Object)
-  name.vb: PostClipAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(Object)
-  nameWithType: TwitchRestApiClient.PostClipAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PostClipAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  name: PostClipAsync(PostClipArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostClipAsync_AuxLabs_SimpleTwitch_Rest_PostClipArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  nameWithType: TwitchRestApiClient.PostClipAsync(PostClipArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostClipAsync*
   name: PostClipAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostClipAsync_
@@ -20620,6 +21188,12 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.TwitchConstants
   fullName: AuxLabs.SimpleTwitch.TwitchConstants
   nameWithType: TwitchConstants
+- uid: AuxLabs.SimpleTwitch.TwitchConstants.AnonymousNamePrefix
+  name: AnonymousNamePrefix
+  href: api/AuxLabs.SimpleTwitch.TwitchConstants.html#AuxLabs_SimpleTwitch_TwitchConstants_AnonymousNamePrefix
+  commentId: F:AuxLabs.SimpleTwitch.TwitchConstants.AnonymousNamePrefix
+  fullName: AuxLabs.SimpleTwitch.TwitchConstants.AnonymousNamePrefix
+  nameWithType: TwitchConstants.AnonymousNamePrefix
 - uid: AuxLabs.SimpleTwitch.TwitchConstants.ChatIrcUrl
   name: ChatIrcUrl
   href: api/AuxLabs.SimpleTwitch.TwitchConstants.html#AuxLabs_SimpleTwitch_TwitchConstants_ChatIrcUrl
