@@ -26,5 +26,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["after"] = After;
             return map;
         }
+
+        string IPaginated.Before { get; set; } = null;
     }
 }

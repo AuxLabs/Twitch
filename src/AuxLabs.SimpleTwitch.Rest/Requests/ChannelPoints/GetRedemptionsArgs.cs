@@ -27,7 +27,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> The minimum is 1 per page and the maximum is 50. Defaults to 20. </remarks>
         public int? First { get; set; }
 
-        /// <inheritdoc/>
         public string After { get; set; }
 
         public override IDictionary<string, string[]> CreateQueryMap()
@@ -56,5 +55,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["first"] = new[] { First.Value.ToString() };
             return map;
         }
+
+        string IPaginated.Before { get; set; } = null;
     }
 }

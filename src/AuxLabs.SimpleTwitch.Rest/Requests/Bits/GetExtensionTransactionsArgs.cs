@@ -14,7 +14,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> If specified, the minimum value is 1 and the maximum value is 100. </remarks>
         public int? First { get; set; }
 
-        /// <inheritdoc/>
         public string After { get; set; }
 
         public override IDictionary<string, string[]> CreateQueryMap()
@@ -37,5 +36,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             }
             return map;
         }
+
+        string IPaginated.Before { get; set; } = null;
     }
 }

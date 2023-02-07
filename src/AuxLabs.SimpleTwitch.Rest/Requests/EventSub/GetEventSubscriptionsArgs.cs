@@ -30,6 +30,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        int? IPaginated.First { get; set; }
+        int? IPaginated.First { get; set; } = null;
+        string IPaginated.Before { get; set; } = null;
     }
 }

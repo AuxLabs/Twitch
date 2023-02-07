@@ -6,6 +6,9 @@
         /// <summary> The maximum number of items to return per page in the response. </summary>
         int? First { get; set; }
 
+        /// <summary> The cursor used to get the previous page of results. </summary>
+        public string Before { get; set; }
+
         /// <summary> The cursor used to get the next page of results. </summary>
         string After { get; set; }
     }
