@@ -6,6 +6,8 @@
 
 Being a base level implementation of the Twitch APIs, this library will be more verbose and unweildy to use for basic apps such as bots or quick scripts. This library is more intended to be the absolute minimum work required to use each API, to be much easier for anyone to take and extend for their specific use cases. For a more complete and user-friendly implementation try [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), which is a library built on top of this one.
 
+![Alt](https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg "Repobeats analytics image")
+
 ### Builds
 
 Development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
