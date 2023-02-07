@@ -11,7 +11,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public Session Session { get; set; }
 
         [JsonPropertyName("subscription")]
-        public object Subscription { get; set; }
+        public EventSubcription Subscription { get; set; }
 
         [JsonPropertyName("event")]
         public T Event { get; set; }
