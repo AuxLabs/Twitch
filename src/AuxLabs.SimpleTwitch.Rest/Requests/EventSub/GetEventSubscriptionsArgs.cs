@@ -1,7 +1,6 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetEventSubscriptionsArgs : QueryMap, IPaginated
     {
@@ -14,7 +13,6 @@ namespace AuxLabs.SimpleTwitch.EventSub
         /// <summary> Filter subscriptions by user ID. </summary>
         public string UserId { get; set; }
 
-        /// <summary> The cursor used to get the next page of results. </summary>
         public string After { get; set; }
 
         public override IDictionary<string, string> CreateQueryMap()

@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.EventSub
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
     public interface IEventCondition
     {

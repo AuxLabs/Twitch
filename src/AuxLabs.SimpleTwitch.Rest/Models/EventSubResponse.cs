@@ -1,7 +1,6 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class EventSubResponse : TwitchResponse<EventSub>
     {

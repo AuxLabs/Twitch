@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub.Models.Conditions
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class RewardCondition : BroadcasterCondition
     {

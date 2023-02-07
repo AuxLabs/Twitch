@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub.Models.Conditions
+namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class RaidCondition : ICondition
+    public class RaidCondition : IEventCondition
     {
         /// <summary> Optional. The broadcaster user ID that created the channel raid you want to get notifications for. </summary>
         [JsonPropertyName("from_broadcaster_user_id")]

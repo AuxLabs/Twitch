@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DropEntitlementCondition : ICondition
+    public class DropEntitlementCondition : IEventCondition
     {
         /// <summary> The organization ID of the organization that owns the game on the developer portal. </summary>
         [JsonPropertyName("organization_id")]

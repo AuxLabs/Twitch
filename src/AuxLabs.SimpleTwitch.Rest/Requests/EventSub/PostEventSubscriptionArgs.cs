@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.EventSub;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {

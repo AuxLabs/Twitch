@@ -19,6 +19,7 @@
     <Folder Include="Models\Predictions\" />
     <Folder Include="Models\Raids\" />
     <Folder Include="Models\Schedule\" />
+    <Folder Include="Models\Search\" />
     <Folder Include="Models\Streams\" />
     <Folder Include="Models\Subscriptions\" />
     <Folder Include="Models\Tags\" />
@@ -32,7 +33,6 @@
     <Folder Include="Requests\Tags\" />
     <Folder Include="Requests\Subscriptions\" />
     <Folder Include="Requests\Streams\" />
-    <Folder Include="Requests\Search\" />
     <Folder Include="Requests\Schedule\" />
     <Folder Include="Requests\Raids\" />
     <Folder Include="Requests\Predictions\" />

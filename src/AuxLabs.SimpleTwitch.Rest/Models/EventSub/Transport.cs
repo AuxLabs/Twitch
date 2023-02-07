@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class Transport
     {

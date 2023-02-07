@@ -28,7 +28,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
         /// <summary> Subscription-specific parameters. </summary>
         [JsonPropertyName("condition")]
-        public IReadOnlyCollection<ICondition> Conditions { get; set; }
+        public IReadOnlyCollection<IEventCondition> Conditions { get; set; }
 
         /// <summary> Information about the transport used for this subscription. </summary>
         [JsonPropertyName("transport")]

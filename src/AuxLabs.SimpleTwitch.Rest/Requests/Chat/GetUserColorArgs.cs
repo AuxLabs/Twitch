@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AuxLabs.SimpleTwitch.Rest.Requests.Chat
+namespace AuxLabs.SimpleTwitch.Rest
 {
     public class GetUserColorArgs : QueryMap<string[]>
     {

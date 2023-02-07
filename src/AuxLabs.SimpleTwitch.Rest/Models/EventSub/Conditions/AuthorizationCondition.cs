@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class AuthorizationCondition : ICondition
+    public class AuthorizationCondition : IEventCondition
     {
         /// <summary> Your application's client id. </summary>
         [JsonPropertyName("client_id")]

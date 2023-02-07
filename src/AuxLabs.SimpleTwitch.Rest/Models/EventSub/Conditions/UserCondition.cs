@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.EventSub
+namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class UserCondition : ICondition
+    public class UserCondition : IEventCondition
     {
         /// <summary> The user ID for the user you want notifications for. </summary>
         [JsonPropertyName("user_id")]
