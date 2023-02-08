@@ -253,6 +253,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetClipsAsync(args);
 
         #endregion
+        #region Drops
 
         public Task<TwitchResponse<object>> GetCodeStatusAsync(object args)
             => _api.GetCodeStatusAsync(args);
@@ -262,6 +263,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.PatchDropsStatusAsync(args);
         public Task<TwitchResponse<object>> PostCodeAsync(object args)
             => _api.PostCodeAsync(args);
+
+        #endregion
+        #region Extensions
 
         public Task<TwitchResponse<object>> GetExtensionConfigurationAsync(object args)
             => _api.GetExtensionConfigurationAsync(args);
@@ -288,6 +292,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> PutExtensionBitsProductsAsync(object args)
             => _api.PutExtensionBitsProductsAsync(args);
 
+        #endregion
         #region EventSub
 
         public Task<EventSubResponse> PostEventSubcriptionAsync(PostEventSubscriptionArgs args)
@@ -298,12 +303,14 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetEventSubcriptionsAsync(args);
 
         #endregion
+        #region Games
 
-        public Task<TwitchResponse<object>> GetTopGamesAsync(object args)
+        public Task<TwitchMetaResponse<Game>> GetTopGamesAsync(GetTopGamesArgs args)
             => _api.GetTopGamesAsync(args);
-        public Task<TwitchResponse<object>> GetGamesAsync(object args)
+        public Task<TwitchMetaResponse<Game>> GetGamesAsync(GetGamesArgs args)
             => _api.GetGamesAsync(args);
 
+        #endregion
         #region Goals
 
         public Task<TwitchResponse<Goal>> GetGoalsAsync(string broadcasterId)
@@ -376,12 +383,17 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetShieldModeAsync(args);
 
         #endregion
+        #region Polls
+
         public Task<TwitchResponse<object>> GetPollAsync(object args)
             => _api.GetPollAsync(args);
         public Task<TwitchResponse<object>> PostPollAsync(object args)
             => _api.PostPollAsync(args);
         public Task<TwitchResponse<object>> PatchPollAsync(object args)
             => _api.PatchPollAsync(args);
+
+        #endregion
+        #region Predictions
 
         public Task<TwitchResponse<object>> GetPredictionAsync(object args)
             => _api.GetPredictionAsync(args);
@@ -390,10 +402,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> PatchPredictionaAsync(object args)
             => _api.PatchPredictionaAsync(args);
 
+        #endregion
+        #region Raids
+
         public Task<TwitchResponse<object>> PostRaidAsync(object args)
             => _api.PostRaidAsync(args);
         public Task<TwitchResponse<object>> DeleteRaidAsync(object args)
             => _api.DeleteRaidAsync(args);
+
+        #endregion
+        #region Schedules
 
         public Task<TwitchResponse<object>> GetScheduleAsync(object args)
             => _api.GetScheduleAsync(args);
@@ -409,10 +427,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> DeleteScheduleSegmentAsync(object args)
             => _api.DeleteScheduleSegmentAsync(args);
 
+        #endregion
+        #region Search
+
         public Task<TwitchResponse<object>> GetCategoriesAsync(object args)
             => _api.GetCategoriesAsync(args);
         public Task<TwitchResponse<object>> GetChannelsAsync(SearchChannelsArgs args)
             => _api.GetChannelsAsync(args);
+
+        #endregion
+        #region Soundtrack
 
         public Task<TwitchResponse<object>> GetCurrentTrackAsync(object args)
             => _api.GetCurrentTrackAsync(args);
@@ -420,6 +444,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetCurrentPlaylistAsync(args);
         public Task<TwitchResponse<object>> GetPlaylistsAsync(object args)
             => _api.GetPlaylistsAsync(args);
+
+        #endregion
+        #region Streams
 
         public Task<TwitchResponse<object>> GetStreamKeyAsync(object args)
             => _api.GetStreamKeyAsync(args);
@@ -432,10 +459,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> GetStreamMarkersAsync(object args)
             => _api.GetStreamMarkersAsync(args);
 
+        #endregion
+        #region Subscriptions
+
         public Task<TwitchResponse<object>> GetSubscriptionsAsync(object args)
             => _api.GetSubscriptionsAsync(args);
         public Task<TwitchResponse<object>> GetSubscriberAsync(object args)
             => _api.GetSubscriberAsync(args);
+
+        #endregion
+        #region Tags
 
         public Task<TwitchResponse<object>> GetTagsAsync(object args)
             => _api.GetTagsAsync(args);
@@ -445,11 +478,15 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<object>> PutTagsAsync(object args)
             => _api.PutTagsAsync(args);
 
+        #endregion
+        #region Teams
+
         public Task<TwitchResponse<object>> GetTeamsAsync(string id)
             => _api.GetTeamsAsync(id);
         public Task<TwitchResponse<object>> GetTeamsAsync(object args)
             => _api.GetTeamsAsync(args);
 
+        #endregion
         #region Users
 
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersArgs args)

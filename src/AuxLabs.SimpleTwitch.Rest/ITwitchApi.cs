@@ -326,10 +326,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Games
 
+        /// <summary> Gets information about all broadcasts on Twitch. </summary>
+        /// <returns> A collection of <see cref="Game"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("games/top")]
-        Task<TwitchResponse<object>> GetTopGamesAsync([Query] object args);
+        Task<TwitchMetaResponse<Game>> GetTopGamesAsync([QueryMap] GetTopGamesArgs args);
+
+        /// <summary> Gets information about specified categories or games. </summary>
+        /// <returns> A collection of <see cref="Game"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("games")]
-        Task<TwitchResponse<object>> GetGamesAsync([Query] object args);
+        Task<TwitchMetaResponse<Game>> GetGamesAsync([QueryMap] GetGamesArgs args);
 
         #endregion
         #region Goals

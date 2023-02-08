@@ -42,7 +42,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] 0/4 Drops
   - [ ] 0/12 Extensions
   - [x] 3/3 EventSub
-  - [ ] 0/2 Games
+  - [x] 2/2 Games
   - [x] 1/1 Goals
   - [x] 1/1 Hype Trains
   - [ ] 5/19 Moderation

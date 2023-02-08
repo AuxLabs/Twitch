@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Models\Entitlements\" />
-    <Folder Include="Models\Games\" />
     <Folder Include="Models\Music\" />
     <Folder Include="Models\Polls\" />
     <Folder Include="Models\Predictions\" />
@@ -23,7 +22,6 @@
     <Folder Include="Models\Tags\" />
     <Folder Include="Requests\Entitlements\" />
     <Folder Include="Requests\Extensions\" />
-    <Folder Include="Requests\Games\" />
     <Folder Include="Requests\Goals\" />
     <Folder Include="Requests\Music\" />
     <Folder Include="Requests\Tags\" />

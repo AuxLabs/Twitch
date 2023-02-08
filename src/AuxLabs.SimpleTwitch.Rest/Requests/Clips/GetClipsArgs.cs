@@ -25,7 +25,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Before { get; set; }
         public string After { get; set; }
 
-
         public override IDictionary<string, string[]> CreateQueryMap()
         {
             var map = new Dictionary<string, string[]>();
