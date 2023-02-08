@@ -14,7 +14,7 @@ Release builds will be available through Nuget, and development builds are avail
 
 ### Documentation
 
-The API reference, starter tutorials, and other documentation will be available at [the documentation site](https://auxlabs.org/SimpleTwitch/).
+The API reference, starter tutorials, and other documentation will be available at [the documentation site](https://docs.auxlabs.org/SimpleTwitch/).
 
 ### Samples
 
