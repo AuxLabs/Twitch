@@ -7675,6 +7675,156 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.RateLimitedException.New
   nameWithType: RateLimitedException.RateLimitedException
   nameWithType.vb: RateLimitedException.New
+- uid: AuxLabs.SimpleTwitch.Require
+  name: Require
+  href: api/AuxLabs.SimpleTwitch.Require.html
+  commentId: T:AuxLabs.SimpleTwitch.Require
+  fullName: AuxLabs.SimpleTwitch.Require
+  nameWithType: Require
+- uid: AuxLabs.SimpleTwitch.Require.AtLeast(System.Int32,System.Int32,System.String,System.String)
+  name: AtLeast(int, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtLeast(System.Int32,System.Int32,System.String,System.String)
+  name.vb: AtLeast(Integer, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtLeast(int, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtLeast(Integer, Integer, String, String)
+  nameWithType: Require.AtLeast(int, int, string, string)
+  nameWithType.vb: Require.AtLeast(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtLeast*
+  name: AtLeast
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.AtLeast
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.AtLeast
+  nameWithType: Require.AtLeast
+- uid: AuxLabs.SimpleTwitch.Require.AtMost(System.Int32,System.Int32,System.String,System.String)
+  name: AtMost(int, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtMost(System.Int32,System.Int32,System.String,System.String)
+  name.vb: AtMost(Integer, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtMost(int, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtMost(Integer, Integer, String, String)
+  nameWithType: Require.AtMost(int, int, string, string)
+  nameWithType.vb: Require.AtMost(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtMost*
+  name: AtMost
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.AtMost
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.AtMost
+  nameWithType: Require.AtMost
+- uid: AuxLabs.SimpleTwitch.Require.GreaterThan(System.Int32,System.Int32,System.String,System.String)
+  name: GreaterThan(int, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.GreaterThan(System.Int32,System.Int32,System.String,System.String)
+  name.vb: GreaterThan(Integer, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.GreaterThan(int, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.GreaterThan(Integer, Integer, String, String)
+  nameWithType: Require.GreaterThan(int, int, string, string)
+  nameWithType.vb: Require.GreaterThan(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.GreaterThan*
+  name: GreaterThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.GreaterThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.GreaterThan
+  nameWithType: Require.GreaterThan
+- uid: AuxLabs.SimpleTwitch.Require.LessThan(System.Int32,System.Int32,System.String,System.String)
+  name: LessThan(int, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LessThan(System.Int32,System.Int32,System.String,System.String)
+  name.vb: LessThan(Integer, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LessThan(int, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LessThan(Integer, Integer, String, String)
+  nameWithType: Require.LessThan(int, int, string, string)
+  nameWithType.vb: Require.LessThan(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LessThan*
+  name: LessThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.LessThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.LessThan
+  nameWithType: Require.LessThan
+- uid: AuxLabs.SimpleTwitch.Require.NotEmpty(System.String,System.String,System.String)
+  name: NotEmpty(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotEmpty_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotEmpty(System.String,System.String,System.String)
+  name.vb: NotEmpty(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotEmpty(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotEmpty(String, String, String)
+  nameWithType: Require.NotEmpty(string, string, string)
+  nameWithType.vb: Require.NotEmpty(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotEmpty*
+  name: NotEmpty
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotEmpty_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotEmpty
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotEmpty
+  nameWithType: Require.NotEmpty
+- uid: AuxLabs.SimpleTwitch.Require.NotNull(System.Object,System.String,System.String)
+  name: NotNull(object, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNull_System_Object_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotNull(System.Object,System.String,System.String)
+  name.vb: NotNull(Object, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotNull(object, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotNull(Object, String, String)
+  nameWithType: Require.NotNull(object, string, string)
+  nameWithType.vb: Require.NotNull(Object, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotNull*
+  name: NotNull
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNull_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotNull
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotNull
+  nameWithType: Require.NotNull
+- uid: AuxLabs.SimpleTwitch.Require.NotNullOrEmpty(System.String,System.String,System.String)
+  name: NotNullOrEmpty(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNullOrEmpty_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotNullOrEmpty(System.String,System.String,System.String)
+  name.vb: NotNullOrEmpty(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotNullOrEmpty(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotNullOrEmpty(String, String, String)
+  nameWithType: Require.NotNullOrEmpty(string, string, string)
+  nameWithType.vb: Require.NotNullOrEmpty(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotNullOrEmpty*
+  name: NotNullOrEmpty
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNullOrEmpty_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotNullOrEmpty
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotNullOrEmpty
+  nameWithType: Require.NotNullOrEmpty
+- uid: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace(System.String,System.String,System.String)
+  name: NotNullOrWhitespace(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNullOrWhitespace_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace(System.String,System.String,System.String)
+  name.vb: NotNullOrWhitespace(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace(String, String, String)
+  nameWithType: Require.NotNullOrWhitespace(string, string, string)
+  nameWithType.vb: Require.NotNullOrWhitespace(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace*
+  name: NotNullOrWhitespace
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNullOrWhitespace_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace
+  nameWithType: Require.NotNullOrWhitespace
+- uid: AuxLabs.SimpleTwitch.Require.Scopes(System.String[],System.String[])
+  name: Scopes(string[], string[])
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Scopes_System_String___System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Require.Scopes(System.String[],System.String[])
+  name.vb: Scopes(String(), String())
+  fullName: AuxLabs.SimpleTwitch.Require.Scopes(string[], string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Require.Scopes(String(), String())
+  nameWithType: Require.Scopes(string[], string[])
+  nameWithType.vb: Require.Scopes(String(), String())
+- uid: AuxLabs.SimpleTwitch.Require.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.Scopes
+  nameWithType: Require.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest
   name: AuxLabs.SimpleTwitch.Rest
   href: api/AuxLabs.SimpleTwitch.Rest.html
@@ -11432,6 +11582,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.Follower.ToName
   nameWithType: Follower.ToName
+- uid: AuxLabs.SimpleTwitch.Rest.Game
+  name: Game
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Game
+  fullName: AuxLabs.SimpleTwitch.Rest.Game
+  nameWithType: Game
+- uid: AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl
+  name: BoxArtUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_BoxArtUrl
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl
+  nameWithType: Game.BoxArtUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl*
+  name: BoxArtUrl
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_BoxArtUrl_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.BoxArtUrl
+  nameWithType: Game.BoxArtUrl
+- uid: AuxLabs.SimpleTwitch.Rest.Game.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Game.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.Id
+  nameWithType: Game.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Game.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Game.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.Id
+  nameWithType: Game.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Game.IgdbId
+  name: IgdbId
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_IgdbId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Game.IgdbId
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.IgdbId
+  nameWithType: Game.IgdbId
+- uid: AuxLabs.SimpleTwitch.Rest.Game.IgdbId*
+  name: IgdbId
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_IgdbId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Game.IgdbId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.IgdbId
+  nameWithType: Game.IgdbId
+- uid: AuxLabs.SimpleTwitch.Rest.Game.Name
+  name: Name
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_Name
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Game.Name
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.Name
+  nameWithType: Game.Name
+- uid: AuxLabs.SimpleTwitch.Rest.Game.Name*
+  name: Name
+  href: api/AuxLabs.SimpleTwitch.Rest.Game.html#AuxLabs_SimpleTwitch_Rest_Game_Name_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Game.Name
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Game.Name
+  nameWithType: Game.Name
 - uid: AuxLabs.SimpleTwitch.Rest.GameAnalytic
   name: GameAnalytic
   href: api/AuxLabs.SimpleTwitch.Rest.GameAnalytic.html
@@ -12682,6 +12890,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Scopes
   nameWithType: GetGameAnalyticsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs
+  name: GetGamesArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetGamesArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs
+  nameWithType: GetGamesArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap()
+  nameWithType: GetGamesArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.CreateQueryMap
+  nameWithType: GetGamesArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds
+  name: GameIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_GameIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds
+  nameWithType: GetGamesArgs.GameIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds*
+  name: GameIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_GameIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameIds
+  nameWithType: GetGamesArgs.GameIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames
+  name: GameNames
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_GameNames
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames
+  nameWithType: GetGamesArgs.GameNames
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames*
+  name: GameNames
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_GameNames_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.GameNames
+  nameWithType: GetGamesArgs.GameNames
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
+  name: IgdbIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_IgdbIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
+  nameWithType: GetGamesArgs.IgdbIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds*
+  name: IgdbIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_IgdbIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
+  nameWithType: GetGamesArgs.IgdbIds
 - uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs
   name: GetHypeTrainsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html
@@ -12770,6 +13036,264 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Scopes
   nameWithType: GetHypeTrainsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs
+  name: GetPollsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetPollsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs
+  nameWithType: GetPollsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor
+  name: GetPollsArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.GetPollsArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.New()
+  nameWithType: GetPollsArgs.GetPollsArgs()
+  nameWithType.vb: GetPollsArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor(System.String,System.String[])
+  name: GetPollsArgs(string, params string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_System_String_System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor(System.String,System.String[])
+  name.vb: New(String, ParamArray String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.GetPollsArgs(string, params string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.New(String, ParamArray String())
+  nameWithType: GetPollsArgs.GetPollsArgs(string, params string[])
+  nameWithType.vb: GetPollsArgs.New(String, ParamArray String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor*
+  name: GetPollsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.GetPollsArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.New
+  nameWithType: GetPollsArgs.GetPollsArgs
+  nameWithType.vb: GetPollsArgs.New
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After
+  nameWithType: GetPollsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After
+  nameWithType: GetPollsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetPollsArgs.IPaginated.Before
+  nameWithType.vb: GetPollsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetPollsArgs.IPaginated.Before
+  nameWithType.vb: GetPollsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId
+  nameWithType: GetPollsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId
+  nameWithType: GetPollsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap()
+  nameWithType: GetPollsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap
+  nameWithType: GetPollsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First
+  nameWithType: GetPollsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First
+  nameWithType: GetPollsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds
+  name: PollIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_PollIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds
+  nameWithType: GetPollsArgs.PollIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds*
+  name: PollIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_PollIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds
+  nameWithType: GetPollsArgs.PollIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
+  nameWithType: GetPollsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
+  nameWithType: GetPollsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs
+  name: GetPredictionsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs
+  nameWithType: GetPredictionsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor
+  name: GetPredictionsArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.GetPredictionsArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.New()
+  nameWithType: GetPredictionsArgs.GetPredictionsArgs()
+  nameWithType.vb: GetPredictionsArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor(System.String,System.String[])
+  name: GetPredictionsArgs(string, params string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs__ctor_System_String_System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor(System.String,System.String[])
+  name.vb: New(String, ParamArray String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.GetPredictionsArgs(string, params string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.New(String, ParamArray String())
+  nameWithType: GetPredictionsArgs.GetPredictionsArgs(string, params string[])
+  nameWithType.vb: GetPredictionsArgs.New(String, ParamArray String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor*
+  name: GetPredictionsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.GetPredictionsArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.New
+  nameWithType: GetPredictionsArgs.GetPredictionsArgs
+  nameWithType.vb: GetPredictionsArgs.New
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After
+  nameWithType: GetPredictionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.After
+  nameWithType: GetPredictionsArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetPredictionsArgs.IPaginated.Before
+  nameWithType.vb: GetPredictionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*
+  name: IPaginated.Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before
+  isSpec: "True"
+  name.vb: AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+  nameWithType: GetPredictionsArgs.IPaginated.Before
+  nameWithType.vb: GetPredictionsArgs.AuxLabs.SimpleTwitch.Rest.IPaginated.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId
+  nameWithType: GetPredictionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.BroadcasterId
+  nameWithType: GetPredictionsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap()
+  nameWithType: GetPredictionsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.CreateQueryMap
+  nameWithType: GetPredictionsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First
+  nameWithType: GetPredictionsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.First
+  nameWithType: GetPredictionsArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds
+  name: PredictionIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_PredictionIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds
+  nameWithType: GetPredictionsArgs.PredictionIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds*
+  name: PredictionIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_PredictionIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.PredictionIds
+  nameWithType: GetPredictionsArgs.PredictionIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
+  nameWithType: GetPredictionsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
+  nameWithType: GetPredictionsArgs.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs
   name: GetRedemptionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html
@@ -13018,6 +13542,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Scopes
   nameWithType: GetRewardArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs
+  name: GetTopGamesArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs
+  nameWithType: GetTopGamesArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_After
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After
+  nameWithType: GetTopGamesArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.After
+  nameWithType: GetTopGamesArgs.After
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_Before
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before
+  nameWithType: GetTopGamesArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before*
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Before
+  nameWithType: GetTopGamesArgs.Before
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap()
+  nameWithType: GetTopGamesArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.CreateQueryMap
+  nameWithType: GetTopGamesArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_First
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
+  nameWithType: GetTopGamesArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First*
+  name: First
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_First_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
+  nameWithType: GetTopGamesArgs.First
 - uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
   name: GetUserColorArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html
@@ -14704,15 +15286,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGameAnalyticsAsync
   nameWithType: ITwitchApi.GetGameAnalyticsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(System.Object)
-  name: GetGamesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetGamesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(System.Object)
-  name.vb: GetGamesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(Object)
-  nameWithType: ITwitchApi.GetGamesAsync(object)
-  nameWithType.vb: ITwitchApi.GetGamesAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  name: GetGamesAsync(GetGamesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetGamesAsync_AuxLabs_SimpleTwitch_Rest_GetGamesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  nameWithType: ITwitchApi.GetGamesAsync(GetGamesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetGamesAsync*
   name: GetGamesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetGamesAsync_
@@ -14781,15 +15360,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPlaylistsAsync
   nameWithType: ITwitchApi.GetPlaylistsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(System.Object)
-  name: GetPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(System.Object)
-  name.vb: GetPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(Object)
-  nameWithType: ITwitchApi.GetPollAsync(object)
-  nameWithType.vb: ITwitchApi.GetPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  name: GetPollAsync(GetPredictionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPollAsync_AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  nameWithType: ITwitchApi.GetPollAsync(GetPredictionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync*
   name: GetPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPollAsync_
@@ -14797,15 +15373,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPollAsync
   nameWithType: ITwitchApi.GetPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(System.Object)
-  name: GetPredictionAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPredictionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(System.Object)
-  name.vb: GetPredictionAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(Object)
-  nameWithType: ITwitchApi.GetPredictionAsync(object)
-  nameWithType.vb: ITwitchApi.GetPredictionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  name: GetPredictionAsync(GetPredictionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPredictionAsync_AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  nameWithType: ITwitchApi.GetPredictionAsync(GetPredictionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetPredictionAsync*
   name: GetPredictionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetPredictionAsync_
@@ -15017,15 +15590,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTeamsAsync
   nameWithType: ITwitchApi.GetTeamsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(System.Object)
-  name: GetTopGamesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetTopGamesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(System.Object)
-  name.vb: GetTopGamesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(Object)
-  nameWithType: ITwitchApi.GetTopGamesAsync(object)
-  nameWithType.vb: ITwitchApi.GetTopGamesAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  name: GetTopGamesAsync(GetTopGamesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetTopGamesAsync_AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  nameWithType: ITwitchApi.GetTopGamesAsync(GetTopGamesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetTopGamesAsync*
   name: GetTopGamesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetTopGamesAsync_
@@ -15149,15 +15719,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchDropsStatusAsync
   nameWithType: ITwitchApi.PatchDropsStatusAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(System.Object)
-  name: PatchPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(System.Object)
-  name.vb: PatchPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(Object)
-  nameWithType: ITwitchApi.PatchPollAsync(object)
-  nameWithType.vb: ITwitchApi.PatchPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  name: PatchPollAsync(PatchPollArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPollAsync_AuxLabs_SimpleTwitch_Rest_PatchPollArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  nameWithType: ITwitchApi.PatchPollAsync(PatchPollArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync*
   name: PatchPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPollAsync_
@@ -15165,15 +15732,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPollAsync
   nameWithType: ITwitchApi.PatchPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(System.Object)
-  name: PatchPredictionaAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPredictionaAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(System.Object)
-  name.vb: PatchPredictionaAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(Object)
-  nameWithType: ITwitchApi.PatchPredictionaAsync(object)
-  nameWithType.vb: ITwitchApi.PatchPredictionaAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  name: PatchPredictionaAsync(PostPredictionArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPredictionaAsync_AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  nameWithType: ITwitchApi.PatchPredictionaAsync(PostPredictionArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PatchPredictionaAsync*
   name: PatchPredictionaAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PatchPredictionaAsync_
@@ -15438,15 +16002,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostModeratorAsync
   nameWithType: ITwitchApi.PostModeratorAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(System.Object)
-  name: PostPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(System.Object)
-  name.vb: PostPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(Object)
-  nameWithType: ITwitchApi.PostPollAsync(object)
-  nameWithType.vb: ITwitchApi.PostPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  name: PostPollAsync(PutPollArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPollAsync_AuxLabs_SimpleTwitch_Rest_PutPollArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  nameWithType: ITwitchApi.PostPollAsync(PutPollArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync*
   name: PostPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPollAsync_
@@ -15454,15 +16015,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPollAsync
   nameWithType: ITwitchApi.PostPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(System.Object)
-  name: PostPredictionAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPredictionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(System.Object)
-  name.vb: PostPredictionAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(Object)
-  nameWithType: ITwitchApi.PostPredictionAsync(object)
-  nameWithType.vb: ITwitchApi.PostPredictionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  name: PostPredictionAsync(PostPredictionArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPredictionAsync_AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  nameWithType: ITwitchApi.PostPredictionAsync(PostPredictionArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.PostPredictionAsync*
   name: PostPredictionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_PostPredictionAsync_
@@ -16177,6 +16735,436 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.SlowSeconds
   nameWithType: PatchChatSettingsArgs.SlowSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs
+  name: PatchPollArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PatchPollArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs
+  nameWithType: PatchPollArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId
+  nameWithType: PatchPollArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.BroadcasterId
+  nameWithType: PatchPollArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId
+  name: PollId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_PollId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId
+  nameWithType: PatchPollArgs.PollId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId*
+  name: PollId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_PollId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.PollId
+  nameWithType: PatchPollArgs.PollId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes
+  nameWithType: PatchPollArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Scopes
+  nameWithType: PatchPollArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
+  nameWithType: PatchPollArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
+  nameWithType: PatchPollArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs
+  name: PatchPredictionArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs
+  nameWithType: PatchPredictionArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
+  nameWithType: PatchPredictionArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
+  nameWithType: PatchPredictionArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+  nameWithType: PatchPredictionArgs.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+  nameWithType: PatchPredictionArgs.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
+  nameWithType: PatchPredictionArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
+  nameWithType: PatchPredictionArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
+  nameWithType: PatchPredictionArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
+  nameWithType: PatchPredictionArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
+  name: WinningId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_WinningId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
+  nameWithType: PatchPredictionArgs.WinningId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId*
+  name: WinningId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_WinningId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
+  nameWithType: PatchPredictionArgs.WinningId
+- uid: AuxLabs.SimpleTwitch.Rest.Poll
+  name: Poll
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Poll
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll
+  nameWithType: Poll
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote
+  name: BitsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BitsPerVote
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote
+  nameWithType: Poll.BitsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote*
+  name: BitsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BitsPerVote_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BitsPerVote
+  nameWithType: Poll.BitsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName
+  nameWithType: Poll.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName*
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterDisplayName
+  nameWithType: Poll.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId
+  nameWithType: Poll.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterId
+  nameWithType: Poll.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName
+  nameWithType: Poll.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName*
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_BroadcasterName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.BroadcasterName
+  nameWithType: Poll.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote
+  name: ChannelPointsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_ChannelPointsPerVote
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote
+  nameWithType: Poll.ChannelPointsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote*
+  name: ChannelPointsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_ChannelPointsPerVote_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.ChannelPointsPerVote
+  nameWithType: Poll.ChannelPointsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Choices
+  name: Choices
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Choices
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.Choices
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Choices
+  nameWithType: Poll.Choices
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Choices*
+  name: Choices
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Choices_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.Choices
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Choices
+  nameWithType: Poll.Choices
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_DurationSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds
+  nameWithType: Poll.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds*
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_DurationSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.DurationSeconds
+  nameWithType: Poll.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.EndedAt
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_EndedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.EndedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.EndedAt
+  nameWithType: Poll.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.EndedAt*
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_EndedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.EndedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.EndedAt
+  nameWithType: Poll.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Id
+  nameWithType: Poll.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Id
+  nameWithType: Poll.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled
+  name: IsBitsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_IsBitsVotingEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled
+  nameWithType: Poll.IsBitsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled*
+  name: IsBitsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_IsBitsVotingEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.IsBitsVotingEnabled
+  nameWithType: Poll.IsBitsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled
+  name: IsChannelPointsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_IsChannelPointsVotingEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled
+  nameWithType: Poll.IsChannelPointsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled*
+  name: IsChannelPointsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_IsChannelPointsVotingEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.IsChannelPointsVotingEnabled
+  nameWithType: Poll.IsChannelPointsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.StartedAt
+  name: StartedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_StartedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.StartedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.StartedAt
+  nameWithType: Poll.StartedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.StartedAt*
+  name: StartedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_StartedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.StartedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.StartedAt
+  nameWithType: Poll.StartedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Status
+  nameWithType: Poll.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Status
+  nameWithType: Poll.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Poll.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Title
+  nameWithType: Poll.Title
+- uid: AuxLabs.SimpleTwitch.Rest.Poll.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Poll.html#AuxLabs_SimpleTwitch_Rest_Poll_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Poll.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Poll.Title
+  nameWithType: Poll.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption
+  name: PollOption
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PollOption
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption
+  nameWithType: PollOption
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes
+  name: BitsVotes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_BitsVotes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes
+  nameWithType: PollOption.BitsVotes
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes*
+  name: BitsVotes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_BitsVotes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.BitsVotes
+  nameWithType: PollOption.BitsVotes
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes
+  name: ChannelPointsVotes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_ChannelPointsVotes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes
+  nameWithType: PollOption.ChannelPointsVotes
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes*
+  name: ChannelPointsVotes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_ChannelPointsVotes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.ChannelPointsVotes
+  nameWithType: PollOption.ChannelPointsVotes
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PollOption.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Id
+  nameWithType: PollOption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PollOption.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Id
+  nameWithType: PollOption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PollOption.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Title
+  nameWithType: PollOption.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PollOption.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Title
+  nameWithType: PollOption.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Votes
+  name: Votes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Votes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PollOption.Votes
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Votes
+  nameWithType: PollOption.Votes
+- uid: AuxLabs.SimpleTwitch.Rest.PollOption.Votes*
+  name: Votes
+  href: api/AuxLabs.SimpleTwitch.Rest.PollOption.html#AuxLabs_SimpleTwitch_Rest_PollOption_Votes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PollOption.Votes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PollOption.Votes
+  nameWithType: PollOption.Votes
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus
+  name: PollStatus
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PollStatus
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus
+  nameWithType: PollStatus
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Active
+  name: Active
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Active
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Active
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Active
+  nameWithType: PollStatus.Active
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Archived
+  name: Archived
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Archived
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Archived
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Archived
+  nameWithType: PollStatus.Archived
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Completed
+  name: Completed
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Completed
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Completed
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Completed
+  nameWithType: PollStatus.Completed
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Invalid
+  name: Invalid
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Invalid
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Invalid
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Invalid
+  nameWithType: PollStatus.Invalid
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Moderated
+  name: Moderated
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Moderated
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Moderated
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Moderated
+  nameWithType: PollStatus.Moderated
+- uid: AuxLabs.SimpleTwitch.Rest.PollStatus.Terminated
+  name: Terminated
+  href: api/AuxLabs.SimpleTwitch.Rest.PollStatus.html#AuxLabs_SimpleTwitch_Rest_PollStatus_Terminated
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PollStatus.Terminated
+  fullName: AuxLabs.SimpleTwitch.Rest.PollStatus.Terminated
+  nameWithType: PollStatus.Terminated
 - uid: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs
   name: PostAnnouncementArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.html
@@ -16598,6 +17586,77 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Version
   nameWithType: PostEventSubscriptionArgs.Version
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs
+  name: PostPredictionArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs
+  nameWithType: PostPredictionArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId
+  nameWithType: PostPredictionArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.BroadcasterId
+  nameWithType: PostPredictionArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes
+  name: Outcomes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Outcomes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes
+  nameWithType: PostPredictionArgs.Outcomes
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes*
+  name: Outcomes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Outcomes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Outcomes
+  nameWithType: PostPredictionArgs.Outcomes
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds
+  name: PredictionDurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_PredictionDurationSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds
+  nameWithType: PostPredictionArgs.PredictionDurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds*
+  name: PredictionDurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_PredictionDurationSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.PredictionDurationSeconds
+  nameWithType: PostPredictionArgs.PredictionDurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes
+  nameWithType: PostPredictionArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Scopes
+  nameWithType: PostPredictionArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
+  nameWithType: PostPredictionArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
+  nameWithType: PostPredictionArgs.Title
 - uid: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs
   name: PostRefreshTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.html
@@ -17017,6 +18076,371 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.RedirectUri
   nameWithType: PostUserAccessTokenArgs.RedirectUri
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction
+  name: Prediction
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Prediction
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction
+  nameWithType: Prediction
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterDisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName
+  nameWithType: Prediction.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName*
+  name: BroadcasterDisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterDisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterDisplayName
+  nameWithType: Prediction.BroadcasterDisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId
+  nameWithType: Prediction.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterId
+  nameWithType: Prediction.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName
+  nameWithType: Prediction.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName*
+  name: BroadcasterName
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_BroadcasterName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.BroadcasterName
+  nameWithType: Prediction.BroadcasterName
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_CreatedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt
+  nameWithType: Prediction.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_CreatedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.CreatedAt
+  nameWithType: Prediction.CreatedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_EndedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt
+  nameWithType: Prediction.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt*
+  name: EndedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_EndedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.EndedAt
+  nameWithType: Prediction.EndedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Id
+  nameWithType: Prediction.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Id
+  nameWithType: Prediction.Id
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt
+  name: LockedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_LockedAt
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt
+  nameWithType: Prediction.LockedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt*
+  name: LockedAt
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_LockedAt_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.LockedAt
+  nameWithType: Prediction.LockedAt
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes
+  name: Outcomes
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Outcomes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes
+  nameWithType: Prediction.Outcomes
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes*
+  name: Outcomes
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Outcomes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Outcomes
+  nameWithType: Prediction.Outcomes
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds
+  name: PredictionDurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_PredictionDurationSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds
+  nameWithType: Prediction.PredictionDurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds*
+  name: PredictionDurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_PredictionDurationSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.PredictionDurationSeconds
+  nameWithType: Prediction.PredictionDurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Status
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Status
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.Status
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Status
+  nameWithType: Prediction.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Status*
+  name: Status
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Status_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.Status
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Status
+  nameWithType: Prediction.Status
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Title
+  nameWithType: Prediction.Title
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.Title
+  nameWithType: Prediction.Title
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId
+  name: WinningOutcomeId
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_WinningOutcomeId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId
+  nameWithType: Prediction.WinningOutcomeId
+- uid: AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId*
+  name: WinningOutcomeId
+  href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html#AuxLabs_SimpleTwitch_Rest_Prediction_WinningOutcomeId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Prediction.WinningOutcomeId
+  nameWithType: Prediction.WinningOutcomeId
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionColor
+  name: PredictionColor
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionColor.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PredictionColor
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionColor
+  nameWithType: PredictionColor
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionColor.Blue
+  name: Blue
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionColor.html#AuxLabs_SimpleTwitch_Rest_PredictionColor_Blue
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionColor.Blue
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionColor.Blue
+  nameWithType: PredictionColor.Blue
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionColor.Pink
+  name: Pink
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionColor.html#AuxLabs_SimpleTwitch_Rest_PredictionColor_Pink
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionColor.Pink
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionColor.Pink
+  nameWithType: PredictionColor.Pink
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption
+  name: PredictionOption
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PredictionOption
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption
+  nameWithType: PredictionOption
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal
+  name: ChannelPointsTotal
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_ChannelPointsTotal
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal
+  nameWithType: PredictionOption.ChannelPointsTotal
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal*
+  name: ChannelPointsTotal
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_ChannelPointsTotal_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.ChannelPointsTotal
+  nameWithType: PredictionOption.ChannelPointsTotal
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Color
+  name: Color
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Color
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.Color
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Color
+  nameWithType: PredictionOption.Color
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Color*
+  name: Color
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Color_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.Color
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Color
+  nameWithType: PredictionOption.Color
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Id
+  nameWithType: PredictionOption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Id
+  nameWithType: PredictionOption.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Title
+  nameWithType: PredictionOption.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Title
+  nameWithType: PredictionOption.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors
+  name: TopPredictors
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_TopPredictors
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors
+  nameWithType: PredictionOption.TopPredictors
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors*
+  name: TopPredictors
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_TopPredictors_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.TopPredictors
+  nameWithType: PredictionOption.TopPredictors
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Users
+  name: Users
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Users
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionOption.Users
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Users
+  nameWithType: PredictionOption.Users
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionOption.Users*
+  name: Users
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html#AuxLabs_SimpleTwitch_Rest_PredictionOption_Users_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionOption.Users
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionOption.Users
+  nameWithType: PredictionOption.Users
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionStatus
+  name: PredictionStatus
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PredictionStatus
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionStatus
+  nameWithType: PredictionStatus
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Active
+  name: Active
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html#AuxLabs_SimpleTwitch_Rest_PredictionStatus_Active
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionStatus.Active
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Active
+  nameWithType: PredictionStatus.Active
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Cancelled
+  name: Cancelled
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html#AuxLabs_SimpleTwitch_Rest_PredictionStatus_Cancelled
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionStatus.Cancelled
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Cancelled
+  nameWithType: PredictionStatus.Cancelled
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Locked
+  name: Locked
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html#AuxLabs_SimpleTwitch_Rest_PredictionStatus_Locked
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionStatus.Locked
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Locked
+  nameWithType: PredictionStatus.Locked
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Resolved
+  name: Resolved
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html#AuxLabs_SimpleTwitch_Rest_PredictionStatus_Resolved
+  commentId: F:AuxLabs.SimpleTwitch.Rest.PredictionStatus.Resolved
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionStatus.Resolved
+  nameWithType: PredictionStatus.Resolved
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser
+  name: PredictionUser
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PredictionUser
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser
+  nameWithType: PredictionUser
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed
+  name: ChannelPointsUsed
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_ChannelPointsUsed
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed
+  nameWithType: PredictionUser.ChannelPointsUsed
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed*
+  name: ChannelPointsUsed
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_ChannelPointsUsed_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsUsed
+  nameWithType: PredictionUser.ChannelPointsUsed
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon
+  name: ChannelPointsWon
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_ChannelPointsWon
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon
+  nameWithType: PredictionUser.ChannelPointsWon
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon*
+  name: ChannelPointsWon
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_ChannelPointsWon_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.ChannelPointsWon
+  nameWithType: PredictionUser.ChannelPointsWon
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName
+  name: DisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_DisplayName
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName
+  nameWithType: PredictionUser.DisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName*
+  name: DisplayName
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_DisplayName_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.DisplayName
+  nameWithType: PredictionUser.DisplayName
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.Id
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_Id
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionUser.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.Id
+  nameWithType: PredictionUser.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.Id*
+  name: Id
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionUser.Id
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.Id
+  nameWithType: PredictionUser.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.Name
+  name: Name
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_Name
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PredictionUser.Name
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.Name
+  nameWithType: PredictionUser.Name
+- uid: AuxLabs.SimpleTwitch.Rest.PredictionUser.Name*
+  name: Name
+  href: api/AuxLabs.SimpleTwitch.Rest.PredictionUser.html#AuxLabs_SimpleTwitch_Rest_PredictionUser_Name_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PredictionUser.Name
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PredictionUser.Name
+  nameWithType: PredictionUser.Name
 - uid: AuxLabs.SimpleTwitch.Rest.ProductData
   name: ProductData
   href: api/AuxLabs.SimpleTwitch.Rest.ProductData.html
@@ -17339,6 +18763,103 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.TargetUserId
   nameWithType: PutBlockArgs.TargetUserId
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs
+  name: PutPollArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.PutPollArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs
+  nameWithType: PutPollArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId
+  nameWithType: PutPollArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.BroadcasterId
+  nameWithType: PutPollArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote
+  name: ChannelPointsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_ChannelPointsPerVote
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote
+  nameWithType: PutPollArgs.ChannelPointsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote*
+  name: ChannelPointsPerVote
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_ChannelPointsPerVote_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.ChannelPointsPerVote
+  nameWithType: PutPollArgs.ChannelPointsPerVote
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices
+  name: Choices
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Choices
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices
+  nameWithType: PutPollArgs.Choices
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices*
+  name: Choices
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Choices_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Choices
+  nameWithType: PutPollArgs.Choices
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_DurationSeconds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds
+  nameWithType: PutPollArgs.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds*
+  name: DurationSeconds
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_DurationSeconds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.DurationSeconds
+  nameWithType: PutPollArgs.DurationSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled
+  name: IsChannelPointsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_IsChannelPointsVotingEnabled
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled
+  nameWithType: PutPollArgs.IsChannelPointsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled*
+  name: IsChannelPointsVotingEnabled
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_IsChannelPointsVotingEnabled_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.IsChannelPointsVotingEnabled
+  nameWithType: PutPollArgs.IsChannelPointsVotingEnabled
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes
+  nameWithType: PutPollArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Scopes
+  nameWithType: PutPollArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Title
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
+  nameWithType: PutPollArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Title_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
+  nameWithType: PutPollArgs.Title
 - uid: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs
   name: PutUserChatColorArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.html
@@ -18342,6 +19863,85 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.SimpleUser.Name
   nameWithType: SimpleUser.Name
+- uid: AuxLabs.SimpleTwitch.Rest.Title
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.Title
+  fullName: AuxLabs.SimpleTwitch.Rest.Title
+  nameWithType: Title
+- uid: AuxLabs.SimpleTwitch.Rest.Title.#ctor(System.String)
+  name: Title(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title__ctor_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.Title.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.Title(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.Title.New(String)
+  nameWithType: Title.Title(string)
+  nameWithType.vb: Title.New(String)
+- uid: AuxLabs.SimpleTwitch.Rest.Title.#ctor*
+  name: Title
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Title.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.Title
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.Title.New
+  nameWithType: Title.Title
+  nameWithType.vb: Title.New
+- uid: AuxLabs.SimpleTwitch.Rest.Title.op_Implicit(AuxLabs.SimpleTwitch.Rest.Title)~System.String
+  name: implicit operator string(Title)
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_op_Implicit_AuxLabs_SimpleTwitch_Rest_Title__System_String
+  commentId: M:AuxLabs.SimpleTwitch.Rest.Title.op_Implicit(AuxLabs.SimpleTwitch.Rest.Title)~System.String
+  name.vb: CType(Title)
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.implicit operator string(AuxLabs.SimpleTwitch.Rest.Title)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.Title.CType(AuxLabs.SimpleTwitch.Rest.Title)
+  nameWithType: Title.implicit operator string(Title)
+  nameWithType.vb: Title.CType(Title)
+- uid: AuxLabs.SimpleTwitch.Rest.Title.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.Title
+  name: implicit operator Title(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_op_Implicit_System_String__AuxLabs_SimpleTwitch_Rest_Title
+  commentId: M:AuxLabs.SimpleTwitch.Rest.Title.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.Title
+  name.vb: CType(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.implicit operator AuxLabs.SimpleTwitch.Rest.Title(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.Title.CType(String)
+  nameWithType: Title.implicit operator Title(string)
+  nameWithType.vb: Title.CType(String)
+- uid: AuxLabs.SimpleTwitch.Rest.Title.op_Implicit*
+  name: implicit operator string
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Title.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.implicit operator string
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.Title.CType
+  nameWithType: Title.implicit operator string
+  nameWithType.vb: Title.CType
+- uid: AuxLabs.SimpleTwitch.Rest.Title.ToString
+  name: ToString()
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_ToString
+  commentId: M:AuxLabs.SimpleTwitch.Rest.Title.ToString
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.ToString()
+  nameWithType: Title.ToString()
+- uid: AuxLabs.SimpleTwitch.Rest.Title.ToString*
+  name: ToString
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_ToString_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Title.ToString
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.ToString
+  nameWithType: Title.ToString
+- uid: AuxLabs.SimpleTwitch.Rest.Title.Value
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_Value
+  commentId: P:AuxLabs.SimpleTwitch.Rest.Title.Value
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.Value
+  nameWithType: Title.Value
+- uid: AuxLabs.SimpleTwitch.Rest.Title.Value*
+  name: Value
+  href: api/AuxLabs.SimpleTwitch.Rest.Title.html#AuxLabs_SimpleTwitch_Rest_Title_Value_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.Title.Value
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.Title.Value
+  nameWithType: Title.Value
 - uid: AuxLabs.SimpleTwitch.Rest.TokenType
   name: TokenType
   href: api/AuxLabs.SimpleTwitch.Rest.TokenType.html
@@ -19553,15 +21153,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGameAnalyticsAsync
   nameWithType: TwitchRestApiClient.GetGameAnalyticsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(System.Object)
-  name: GetGamesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(System.Object)
-  name.vb: GetGamesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(Object)
-  nameWithType: TwitchRestApiClient.GetGamesAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetGamesAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  name: GetGamesAsync(GetGamesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_AuxLabs_SimpleTwitch_Rest_GetGamesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync(AuxLabs.SimpleTwitch.Rest.GetGamesArgs)
+  nameWithType: TwitchRestApiClient.GetGamesAsync(GetGamesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetGamesAsync*
   name: GetGamesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetGamesAsync_
@@ -19630,15 +21227,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPlaylistsAsync
   nameWithType: TwitchRestApiClient.GetPlaylistsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(System.Object)
-  name: GetPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(System.Object)
-  name.vb: GetPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(Object)
-  nameWithType: TwitchRestApiClient.GetPollAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  name: GetPollAsync(GetPredictionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  nameWithType: TwitchRestApiClient.GetPollAsync(GetPredictionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync*
   name: GetPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPollAsync_
@@ -19646,15 +21240,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPollAsync
   nameWithType: TwitchRestApiClient.GetPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(System.Object)
-  name: GetPredictionAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(System.Object)
-  name.vb: GetPredictionAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(Object)
-  nameWithType: TwitchRestApiClient.GetPredictionAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetPredictionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  name: GetPredictionAsync(GetPredictionsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync(AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs)
+  nameWithType: TwitchRestApiClient.GetPredictionAsync(GetPredictionsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetPredictionAsync*
   name: GetPredictionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetPredictionAsync_
@@ -19866,15 +21457,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTeamsAsync
   nameWithType: TwitchRestApiClient.GetTeamsAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(System.Object)
-  name: GetTopGamesAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(System.Object)
-  name.vb: GetTopGamesAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(Object)
-  nameWithType: TwitchRestApiClient.GetTopGamesAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetTopGamesAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  name: GetTopGamesAsync(GetTopGamesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync(AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs)
+  nameWithType: TwitchRestApiClient.GetTopGamesAsync(GetTopGamesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetTopGamesAsync*
   name: GetTopGamesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetTopGamesAsync_
@@ -20011,15 +21599,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchDropsStatusAsync
   nameWithType: TwitchRestApiClient.PatchDropsStatusAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(System.Object)
-  name: PatchPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(System.Object)
-  name.vb: PatchPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(Object)
-  nameWithType: TwitchRestApiClient.PatchPollAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PatchPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  name: PatchPollAsync(PatchPollArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPollAsync_AuxLabs_SimpleTwitch_Rest_PatchPollArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync(AuxLabs.SimpleTwitch.Rest.PatchPollArgs)
+  nameWithType: TwitchRestApiClient.PatchPollAsync(PatchPollArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync*
   name: PatchPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPollAsync_
@@ -20027,15 +21612,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPollAsync
   nameWithType: TwitchRestApiClient.PatchPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(System.Object)
-  name: PatchPredictionaAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPredictionaAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(System.Object)
-  name.vb: PatchPredictionaAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(Object)
-  nameWithType: TwitchRestApiClient.PatchPredictionaAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PatchPredictionaAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  name: PatchPredictionaAsync(PostPredictionArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPredictionaAsync_AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  nameWithType: TwitchRestApiClient.PatchPredictionaAsync(PostPredictionArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PatchPredictionaAsync*
   name: PatchPredictionaAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PatchPredictionaAsync_
@@ -20300,15 +21882,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostModeratorAsync
   nameWithType: TwitchRestApiClient.PostModeratorAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(System.Object)
-  name: PostPollAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(System.Object)
-  name.vb: PostPollAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(Object)
-  nameWithType: TwitchRestApiClient.PostPollAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PostPollAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  name: PostPollAsync(PutPollArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_AuxLabs_SimpleTwitch_Rest_PutPollArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync(AuxLabs.SimpleTwitch.Rest.PutPollArgs)
+  nameWithType: TwitchRestApiClient.PostPollAsync(PutPollArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync*
   name: PostPollAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPollAsync_
@@ -20316,15 +21895,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPollAsync
   nameWithType: TwitchRestApiClient.PostPollAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(System.Object)
-  name: PostPredictionAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(System.Object)
-  name.vb: PostPredictionAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(Object)
-  nameWithType: TwitchRestApiClient.PostPredictionAsync(object)
-  nameWithType.vb: TwitchRestApiClient.PostPredictionAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  name: PostPredictionAsync(PostPredictionArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync(AuxLabs.SimpleTwitch.Rest.PostPredictionArgs)
+  nameWithType: TwitchRestApiClient.PostPredictionAsync(PostPredictionArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.PostPredictionAsync*
   name: PostPredictionAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_PostPredictionAsync_

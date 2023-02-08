@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace AuxLabs.SimpleTwitch
+    <title>Enum PollStatus
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace AuxLabs.SimpleTwitch
+    <meta name="title" content="Enum PollStatus
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,55 +78,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.Rest.PollStatus">
 
-  <h1 id="AuxLabs_SimpleTwitch" data-uid="AuxLabs.SimpleTwitch" class="text-break">Namespace AuxLabs.SimpleTwitch
+
+  <h1 id="AuxLabs_SimpleTwitch_Rest_PollStatus" data-uid="AuxLabs.SimpleTwitch.Rest.PollStatus" class="text-break">Enum PollStatus
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Rest.html">Rest</a></h6>
+  <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
+  <h5 id="AuxLabs_SimpleTwitch_Rest_PollStatus_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PollStatus</code></pre>
+  </div>
+  <h3 id="fields">Fields
 </h3>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.EnumHelper.html">EnumHelper</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.HttpException.html">HttpException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.MissingScopeException.html">MissingScopeException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.QueryMap.html">QueryMap</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.QueryMap-1.html">QueryMap&lt;T&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.RateLimitedException.html">RateLimitedException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.Require.html">Require</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.TwitchConstants.html">TwitchConstants</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.TwitchException.html">TwitchException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.UnexpectedTagsException.html">UnexpectedTagsException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.WebSocketClosedException.html">WebSocketClosedException</a></h4>
-      <section></section>
-    <h3 id="interfaces">Interfaces
-</h3>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IChannel.html">IChannel</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IChannelInfo.html">IChannelInfo</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity&lt;TId&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IUserInfo.html">IUserInfo</a></h4>
-      <section></section>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a></h4>
-      <section></section>
-    <h3 id="enums">Enums
-</h3>
-      <h4><a class="xref" href="AuxLabs.SimpleTwitch.EmoteFormat.html">EmoteFormat</a></h4>
-      <section></section>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Active">Active</td>
+        <td><p>The poll is running.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Archived">Archived</td>
+        <td><p>The poll has been archived and is no longer visible on the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Completed">Completed</td>
+        <td><p>The poll ended on schedule.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Invalid">Invalid</td>
+        <td><p>Something went wrong while determining the state.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Moderated">Moderated</td>
+        <td><p>The poll was deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_PollStatus_Terminated">Terminated</td>
+        <td><p>The poll was terminated before its scheduled end.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EnumHelper.html#AuxLabs_SimpleTwitch_EnumHelper_GetEnumMemberValue__1___0_">EnumHelper.GetEnumMemberValue&lt;PollStatus&gt;(PollStatus)</a>
+  </div>
 </article>
           </div>
 
@@ -134,6 +144,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_PollStatus.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.PollStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Polls/PollStatus.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

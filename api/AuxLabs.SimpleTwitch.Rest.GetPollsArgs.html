@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GetClipsArgs
+    <title>Class GetPollsArgs
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GetClipsArgs
+    <meta name="title" content="Class GetPollsArgs
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs">
 
 
-  <h1 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs" class="text-break">Class GetClipsArgs
+  <h1 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs" class="text-break">Class GetPollsArgs
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -89,7 +89,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.QueryMap-1.html">QueryMap</a>&lt;<span class="xref">string</span>[]&gt;</div>
-    <div class="level2"><span class="xref">GetClipsArgs</span></div>
+    <div class="level2"><span class="xref">GetPollsArgs</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -98,6 +98,7 @@
     <div><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>[]&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
     <div><a class="xref" href="AuxLabs.SimpleTwitch.Rest.IPaginated.html">IPaginated</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.Rest.IScoped.html">IScoped</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -176,21 +177,75 @@
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Rest.html">Rest</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
-  <h5 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_syntax">Syntax</h5>
+  <h5 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GetClipsArgs : QueryMap&lt;string[]&gt;, IDictionary&lt;string, string[]&gt;, ICollection&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable, IPaginated</code></pre>
+    <pre><code class="lang-csharp hljs">public class GetPollsArgs : QueryMap&lt;string[]&gt;, IDictionary&lt;string, string[]&gt;, ICollection&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable, IPaginated, IScoped</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L19">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor">GetPollsArgs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GetPollsArgs()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_System_String_System_String___.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.%23ctor(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L20">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs__ctor_System_String_System_String___" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.#ctor(System.String,System.String[])">GetPollsArgs(string, params string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GetPollsArgs(string broadcasterid, params string[] pollIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">broadcasterid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">pollIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_After.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_After.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L26">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L17">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_After_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_After" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.After">After</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_After_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_After" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.After">After</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -214,44 +269,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Before.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_BroadcasterId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L25">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L11">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Before_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Before" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Before">Before</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Before { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_BroadcasterId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L10">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_BroadcasterId_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_BroadcasterId" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.BroadcasterId">BroadcasterId</h4>
-  <div class="markdown level1 summary"><p>An ID that identifies the broadcaster whose video clips you want to get.</p>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_BroadcasterId_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_BroadcasterId" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.BroadcasterId">BroadcasterId</h4>
+  <div class="markdown level1 summary"><p>The ID of the broadcaster that created the polls.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -275,75 +300,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_ClipIds.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_First.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L16">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L16">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_ClipIds_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_ClipIds" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.ClipIds">ClipIds</h4>
-  <div class="markdown level1 summary"><p>An ID that identifies the clip to get.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt; ClipIds { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_EndedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L22">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_EndedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_EndedAt" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.EndedAt">EndedAt</h4>
-  <div class="markdown level1 summary"><p>The end date used to filter clips.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime EndedAt { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_First.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L24">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_First_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_First" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.First">First</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_First_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_First" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.First">First</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -367,19 +330,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_GameId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_PollIds.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L13">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L14">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_GameId_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_GameId" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.GameId">GameId</h4>
-  <div class="markdown level1 summary"><p>An ID that identifies the game whose clips you want to get.</p>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_PollIds_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_PollIds" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.PollIds">PollIds</h4>
+  <div class="markdown level1 summary"><p>A list of IDs that identify the polls to return.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GameId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; PollIds { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -391,26 +354,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_StartedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Scopes.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L19">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L8">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_StartedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_StartedAt" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt">StartedAt</h4>
-  <div class="markdown level1 summary"><p>The start date used to filter clips.</p>
-</div>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Scopes_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Scopes" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes">Scopes</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime StartedAt { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string[] Scopes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -422,7 +384,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">string</span>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -431,13 +393,13 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs_CreateQueryMap.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_CreateQueryMap.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L28">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L25">View Source</a>
   </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_CreateQueryMap_" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_GetClipsArgs_CreateQueryMap" data-uid="AuxLabs.SimpleTwitch.Rest.GetClipsArgs.CreateQueryMap">CreateQueryMap()</h4>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_CreateQueryMap_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_CreateQueryMap" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.CreateQueryMap">CreateQueryMap()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -461,6 +423,38 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">AuxLabs.SimpleTwitch.QueryMap&lt;string[]&gt;.CreateQueryMap()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs%23SimpleTwitch%23Rest%23IPaginated%23Before%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L42">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetPollsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before" data-uid="AuxLabs.SimpleTwitch.Rest.GetPollsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before">IPaginated.Before</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IPaginated.Before { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>
@@ -477,6 +471,9 @@
   <div>
       <a class="xref" href="AuxLabs.SimpleTwitch.Rest.IPaginated.html">IPaginated</a>
   </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.IScoped.html">IScoped</a>
+  </div>
 </article>
           </div>
 
@@ -485,10 +482,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetClipsArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetClipsArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetPollsArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetPollsArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Clips/GetClipsArgs.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Polls/GetPollsArgs.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
