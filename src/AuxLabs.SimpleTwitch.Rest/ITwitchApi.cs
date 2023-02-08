@@ -447,12 +447,29 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Polls
 
+        /// <summary> Gets a list of polls that the broadcaster created. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:polls</c> or <c>channel:manage:polls</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="Poll"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("polls")]
-        Task<TwitchResponse<object>> GetPollAsync([Query] object args);
+        Task<TwitchMetaResponse<Poll>> GetPollAsync([QueryMap] GetPollsArgs args);
+
+        /// <summary> Creates a poll that viewers in the broadcaster’s channel can vote on. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:polls</c> scope. </remarks>
+        /// <returns> A single <see cref="Poll"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Post("polls")]
-        Task<TwitchResponse<object>> PostPollAsync([Query] object args);
+        Task<TwitchResponse<Poll>> PostPollAsync([Body] PutPollArgs args);
+
+        /// <summary> Ends an active poll. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:polls</c> scope. </remarks>
+        /// <returns> A single <see cref="Poll"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("polls")]
-        Task<TwitchResponse<object>> PatchPollAsync([Query] object args);
+        Task<TwitchResponse<Poll>> PatchPollAsync([Body] PatchPollArgs args);
 
         #endregion
         #region Predictions

@@ -49,11 +49,9 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         private void CheckScopes(IScoped request)
         {
-            var user = Identity as UserIdentity;
-            if (user == null)
+            if (!(Identity is UserIdentity user))
                 throw new TwitchException("This request cannot be made using app authorization.");
-            if (!user.Scopes.Any(x => request.Scopes.Contains(x)))
-                throw new MissingScopeException(request.Scopes);
+            Require.Scopes(user.Scopes.ToArray(), request.Scopes);
         }
 
         #region Identity
@@ -385,11 +383,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Polls
 
-        public Task<TwitchResponse<object>> GetPollAsync(object args)
+        public Task<TwitchMetaResponse<Poll>> GetPollAsync(GetPollsArgs args)
             => _api.GetPollAsync(args);
-        public Task<TwitchResponse<object>> PostPollAsync(object args)
+        public Task<TwitchResponse<Poll>> PostPollAsync(PutPollArgs args)
             => _api.PostPollAsync(args);
-        public Task<TwitchResponse<object>> PatchPollAsync(object args)
+        public Task<TwitchResponse<Poll>> PatchPollAsync(PatchPollArgs args)
             => _api.PatchPollAsync(args);
 
         #endregion
