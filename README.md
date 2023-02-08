@@ -4,7 +4,7 @@
 
 # SimpleTwitch
 
-Being a base level implementation of the Twitch APIs, this library will be more verbose and unweildy to use for basic apps such as bots or quick scripts. This library is more intended to be the absolute minimum work required to use each API, to be much easier for anyone to take and extend for their specific use cases. For a more complete and user-friendly implementation try [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), which is a library built on top of this one.
+SimpleTwitch is a bare minimum implmentation of the Twitch APIs. It's built in a way that should make it easy to extend and implement your own clients as needed, if needed. An example of such an implementation is [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), the main and intended version of the library for general usage.
 
 ![Alt](https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg "Repobeats analytics image")
 
@@ -93,6 +93,7 @@ For examples and sample projects look at [the examples repository](https://githu
   <summary>EventSub</summary>
 
 - [x] Subscribe/Unsubscribe/View subscriptions through Rest client
+- [ ] Ratelimits and Subscription Costs
 - [x] WebSocket client
 - [ ] WebHook client
 - [ ] Automatic heartbeat
@@ -127,6 +128,18 @@ For examples and sample projects look at [the examples repository](https://githu
 <details>
   <summary>PubSub</summary>
 
-  *Not yet implemented*
+- [ ] Ratelimits
+- [ ] Automatic heartbeat
+- [ ] Automatic reconnection
+- [ ] Handle all available events
+  - [ ] Bits
+  - [ ] Bist Badge Unlocks
+  - [ ] Channel Point Redemptions
+  - [ ] Channel Subscriptions
+  - [ ] Automod Queue
+  - [ ] Moderator Actions
+  - [ ] Low Trust User Status
+  - [ ] Mdoerator Notifications
+  - [ ] Whispers
     
 </details>
