@@ -453,7 +453,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Poll"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("polls")]
-        Task<TwitchMetaResponse<Poll>> GetPollAsync([QueryMap] GetPollsArgs args);
+        Task<TwitchMetaResponse<Poll>> GetPollAsync([QueryMap] GetPredictionsArgs args);
 
         /// <summary> Creates a poll that viewers in the broadcaster’s channel can vote on. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -474,12 +474,29 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Predictions
 
+        /// <summary> Gets a list of Channel Points Predictions that the broadcaster created. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:read:predictions</c> or <c>channel:manage:predictions</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="Prediction"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("predictions")]
-        Task<TwitchResponse<object>> GetPredictionAsync([Query] object args);
+        Task<TwitchMetaResponse<Prediction>> GetPredictionAsync([QueryMap] GetPredictionsArgs args);
+
+        /// <summary> Creates a Channel Points Prediction. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:predictions/c> scope. </remarks>
+        /// <returns> A single <see cref="Prediction"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Post("predictions")]
-        Task<TwitchResponse<object>> PostPredictionAsync([Query] object args);
+        Task<TwitchResponse<Prediction>> PostPredictionAsync([Body] PostPredictionArgs args);
+
+        /// <summary> Locks, resolves, or cancels a Channel Points Prediction. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:predictions</c> scope. </remarks>
+        /// <returns> A single <see cref="Prediction"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("predictions")]
-        Task<TwitchResponse<object>> PatchPredictionaAsync([Query] object args);
+        Task<TwitchResponse<Prediction>> PatchPredictionaAsync([Body] PostPredictionArgs args);
 
         #endregion
         #region Raids

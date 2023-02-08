@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of choices that viewers may choose from. </summary>
         [JsonPropertyName("choices")]
-        public List<Choice> Choices { get; set; }
+        public List<Title> Choices { get; set; }
 
         /// <summary> The length of time that the poll will run for. </summary>
         [JsonPropertyName("duration")]
@@ -32,18 +32,5 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("channel_points_per_vote")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public int? ChannelPointsPerVote { get; set; }
-    }
-
-    public readonly struct Choice
-    {
-        [JsonPropertyName("title")]
-        public string Title { get; }
-
-        [JsonConstructor]
-        public Choice(string title) { Title = title; }
-
-        public override string ToString() => Title;
-        public static implicit operator string(Choice value) => value.ToString();
-        public static implicit operator Choice(string v) => new Choice(v);
     }
 }

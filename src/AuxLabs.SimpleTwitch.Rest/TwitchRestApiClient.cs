@@ -383,22 +383,40 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Polls
 
-        public Task<TwitchMetaResponse<Poll>> GetPollAsync(GetPollsArgs args)
-            => _api.GetPollAsync(args);
+        public Task<TwitchMetaResponse<Poll>> GetPollAsync(GetPredictionsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetPollAsync(args);
+        }
         public Task<TwitchResponse<Poll>> PostPollAsync(PutPollArgs args)
-            => _api.PostPollAsync(args);
+        {
+            CheckScopes(args);
+            return _api.PostPollAsync(args);
+        }
         public Task<TwitchResponse<Poll>> PatchPollAsync(PatchPollArgs args)
-            => _api.PatchPollAsync(args);
+        {
+            CheckScopes(args);
+            return _api.PatchPollAsync(args);
+        }
 
         #endregion
         #region Predictions
 
-        public Task<TwitchResponse<object>> GetPredictionAsync(object args)
-            => _api.GetPredictionAsync(args);
-        public Task<TwitchResponse<object>> PostPredictionAsync(object args)
-            => _api.PostPredictionAsync(args);
-        public Task<TwitchResponse<object>> PatchPredictionaAsync(object args)
-            => _api.PatchPredictionaAsync(args);
+        public Task<TwitchMetaResponse<Prediction>> GetPredictionAsync(GetPredictionsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetPredictionAsync(args);
+        }
+        public Task<TwitchResponse<Prediction>> PostPredictionAsync(PostPredictionArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostPredictionAsync(args);
+        }
+        public Task<TwitchResponse<Prediction>> PatchPredictionaAsync(PostPredictionArgs args)
+        {
+            CheckScopes(args);
+            return _api.PatchPredictionaAsync(args);
+        }
 
         #endregion
         #region Raids
