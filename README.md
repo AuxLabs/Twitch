@@ -93,6 +93,7 @@ For examples and sample projects look at [the examples repository](https://githu
   <summary>EventSub</summary>
 
 - [x] Subscribe/Unsubscribe/View subscriptions through Rest client
+- [ ] Ratelimits and Subscription Costs
 - [x] WebSocket client
 - [ ] WebHook client
 - [ ] Automatic heartbeat
@@ -127,6 +128,18 @@ For examples and sample projects look at [the examples repository](https://githu
 <details>
   <summary>PubSub</summary>
 
-  *Not yet implemented*
+- [ ] Ratelimits
+- [ ] Automatic heartbeat
+- [ ] Automatic reconnection
+- [ ] Handle all available events
+  - [ ] Bits
+  - [ ] Bist Badge Unlocks
+  - [ ] Channel Point Redemptions
+  - [ ] Channel Subscriptions
+  - [ ] Automod Queue
+  - [ ] Moderator Actions
+  - [ ] Low Trust User Status
+  - [ ] Mdoerator Notifications
+  - [ ] Whispers
     
 </details>
