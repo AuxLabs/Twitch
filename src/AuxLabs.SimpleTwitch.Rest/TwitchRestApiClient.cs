@@ -69,6 +69,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             var tokenInfo = await _identity.ValidateAsync(token, refreshToken);
             Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            ClientId = tokenInfo.ClientId;
             return tokenInfo;
         }
         
