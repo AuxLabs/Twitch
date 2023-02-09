@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         None = 0,
 
-        [EnumMember(Value = "bearer")]
+        [EnumMember(Value = "Bearer")]
         Bearer
     }
 }

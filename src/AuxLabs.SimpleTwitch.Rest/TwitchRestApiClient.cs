@@ -60,7 +60,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task<AppIdentity> ValidateAsync()
         {
             await _identity.ValidateAsync();
-            _api.Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
             return Identity;
         }
 
@@ -68,7 +68,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken = null)
         {
             var tokenInfo = await _identity.ValidateAsync(token, refreshToken);
-            _api.Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
             return tokenInfo;
         }
         
