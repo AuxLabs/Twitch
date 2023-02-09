@@ -16,10 +16,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         public List<string> ClipIds { get; set; }
 
         /// <summary> The start date used to filter clips. </summary>
-        public DateTime StartedAt { get; set; }
+        public DateTime? StartedAt { get; set; }
 
         /// <summary> The end date used to filter clips. </summary>
-        public DateTime EndedAt { get; set; }
+        public DateTime? EndedAt { get; set; }
 
         public int? First { get; set; }
         public string Before { get; set; }
@@ -36,9 +36,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (ClipIds.Count > 0)
                 map["id"] = ClipIds.ToArray();
             if (StartedAt != null)
-                map["started_at"] = new[] { XmlConvert.ToString(StartedAt, XmlDateTimeSerializationMode.Utc) };
+                map["started_at"] = new[] { XmlConvert.ToString(StartedAt.Value, XmlDateTimeSerializationMode.Utc) };
             if (EndedAt != null)
-                map["ended_at"] = new[] { XmlConvert.ToString(EndedAt, XmlDateTimeSerializationMode.Utc) };
+                map["ended_at"] = new[] { XmlConvert.ToString(EndedAt.Value, XmlDateTimeSerializationMode.Utc) };
             if (First != null)
                 map["first"] = new[] { First.Value.ToString() };
             if (Before != null)
