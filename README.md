@@ -26,8 +26,8 @@ For examples and sample projects look at [the examples repository](https://githu
     
 - [x] Global ratelimit handling
 - [ ] Unique endpoint ratelimit handling
-- [ ] Assertions on request arguments before attempting
-- [ ] Scope confirmation before requests
+- [x] Check arguments for validity before requests
+- [x] Scope confirmation before requests
 - [ ] Automatic token refresh
 - [x] Ability to provide a custom ratelimiter
 - [x] Ability to connect to a custom rest api url
