@@ -21,10 +21,10 @@ namespace AuxLabs.SimpleTwitch.Tests
             return users.Data.OrderBy(x => R.Next()).Take(count).Select(x => x.Id);
         }
 
-        public static async Task<IEnumerable<string>> GetRandomChannelsAsync(this IMockApi mock, int count = 5)
-        {
-            var channels = await mock.GetChannelsAsync();
-            return channels.Data.OrderBy(x => R.Next()).Take(count).Select(x => x.BroadcasterId);
-        }
+        //public static async Task<IEnumerable<string>> GetRandomChannelsAsync(this IMockApi mock, int count = 5)
+        //{
+        //    var channels = await mock.GetChannelsAsync();
+        //    return channels.Data.OrderBy(x => R.Next()).Take(count).Select(x => x.BroadcasterId);
+        //}
     }
 }
