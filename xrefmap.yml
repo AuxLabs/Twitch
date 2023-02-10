@@ -7681,6 +7681,31 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Require
   fullName: AuxLabs.SimpleTwitch.Require
   nameWithType: Require
+- uid: AuxLabs.SimpleTwitch.Require.After(System.DateTime,System.DateTime,System.String,System.String)
+  name: After(DateTime, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_After_System_DateTime_System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.After(System.DateTime,System.DateTime,System.String,System.String)
+  name.vb: After(Date, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.After(System.DateTime, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.After(Date, Date, String, String)
+  nameWithType: Require.After(DateTime, DateTime, string, string)
+  nameWithType.vb: Require.After(Date, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.After(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name: After(DateTime?, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_After_System_Nullable_System_DateTime__System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.After(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name.vb: After(Date?, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.After(System.DateTime?, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.After(Date?, Date, String, String)
+  nameWithType: Require.After(DateTime?, DateTime, string, string)
+  nameWithType.vb: Require.After(Date?, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.After*
+  name: After
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_After_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.After
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.After
+  nameWithType: Require.After
 - uid: AuxLabs.SimpleTwitch.Require.AtLeast(System.Int32,System.Int32,System.String,System.String)
   name: AtLeast(int, int, string, string)
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_System_Int32_System_Int32_System_String_System_String_
@@ -7690,6 +7715,33 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Require.AtLeast(Integer, Integer, String, String)
   nameWithType: Require.AtLeast(int, int, string, string)
   nameWithType.vb: Require.AtLeast(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtLeast(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name: AtLeast(int?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_System_Nullable_System_Int32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtLeast(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name.vb: AtLeast(Integer?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtLeast(int?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtLeast(Integer?, Integer, String, String)
+  nameWithType: Require.AtLeast(int?, int, string, string)
+  nameWithType.vb: Require.AtLeast(Integer?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtLeast(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name: AtLeast(uint?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_System_Nullable_System_UInt32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtLeast(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name.vb: AtLeast(UInteger?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtLeast(uint?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtLeast(UInteger?, Integer, String, String)
+  nameWithType: Require.AtLeast(uint?, int, string, string)
+  nameWithType.vb: Require.AtLeast(UInteger?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtLeast(System.UInt32,System.Int32,System.String,System.String)
+  name: AtLeast(uint, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_System_UInt32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtLeast(System.UInt32,System.Int32,System.String,System.String)
+  name.vb: AtLeast(UInteger, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtLeast(uint, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtLeast(UInteger, Integer, String, String)
+  nameWithType: Require.AtLeast(uint, int, string, string)
+  nameWithType.vb: Require.AtLeast(UInteger, Integer, String, String)
 - uid: AuxLabs.SimpleTwitch.Require.AtLeast*
   name: AtLeast
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtLeast_
@@ -7706,6 +7758,33 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Require.AtMost(Integer, Integer, String, String)
   nameWithType: Require.AtMost(int, int, string, string)
   nameWithType.vb: Require.AtMost(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtMost(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name: AtMost(int?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_System_Nullable_System_Int32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtMost(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name.vb: AtMost(Integer?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtMost(int?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtMost(Integer?, Integer, String, String)
+  nameWithType: Require.AtMost(int?, int, string, string)
+  nameWithType.vb: Require.AtMost(Integer?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtMost(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name: AtMost(uint?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_System_Nullable_System_UInt32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtMost(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name.vb: AtMost(UInteger?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtMost(uint?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtMost(UInteger?, Integer, String, String)
+  nameWithType: Require.AtMost(uint?, int, string, string)
+  nameWithType.vb: Require.AtMost(UInteger?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.AtMost(System.UInt32,System.Int32,System.String,System.String)
+  name: AtMost(uint, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_System_UInt32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.AtMost(System.UInt32,System.Int32,System.String,System.String)
+  name.vb: AtMost(UInteger, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.AtMost(uint, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.AtMost(UInteger, Integer, String, String)
+  nameWithType: Require.AtMost(uint, int, string, string)
+  nameWithType.vb: Require.AtMost(UInteger, Integer, String, String)
 - uid: AuxLabs.SimpleTwitch.Require.AtMost*
   name: AtMost
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_AtMost_
@@ -7713,6 +7792,47 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Require.AtMost
   nameWithType: Require.AtMost
+- uid: AuxLabs.SimpleTwitch.Require.Before(System.DateTime,System.DateTime,System.String,System.String)
+  name: Before(DateTime, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Before_System_DateTime_System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.Before(System.DateTime,System.DateTime,System.String,System.String)
+  name.vb: Before(Date, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.Before(System.DateTime, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.Before(Date, Date, String, String)
+  nameWithType: Require.Before(DateTime, DateTime, string, string)
+  nameWithType.vb: Require.Before(Date, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.Before(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name: Before(DateTime?, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Before_System_Nullable_System_DateTime__System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.Before(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name.vb: Before(Date?, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.Before(System.DateTime?, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.Before(Date?, Date, String, String)
+  nameWithType: Require.Before(DateTime?, DateTime, string, string)
+  nameWithType.vb: Require.Before(Date?, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.Before*
+  name: Before
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Before_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.Before
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.Before
+  nameWithType: Require.Before
+- uid: AuxLabs.SimpleTwitch.Require.Exclusive(System.Object[],System.String[],System.String)
+  name: Exclusive(object[], string[], string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Exclusive_System_Object___System_String___System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.Exclusive(System.Object[],System.String[],System.String)
+  name.vb: Exclusive(Object(), String(), String)
+  fullName: AuxLabs.SimpleTwitch.Require.Exclusive(object[], string[], string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.Exclusive(Object(), String(), String)
+  nameWithType: Require.Exclusive(object[], string[], string)
+  nameWithType.vb: Require.Exclusive(Object(), String(), String)
+- uid: AuxLabs.SimpleTwitch.Require.Exclusive*
+  name: Exclusive
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Exclusive_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.Exclusive
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.Exclusive
+  nameWithType: Require.Exclusive
 - uid: AuxLabs.SimpleTwitch.Require.GreaterThan(System.Int32,System.Int32,System.String,System.String)
   name: GreaterThan(int, int, string, string)
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_System_Int32_System_Int32_System_String_System_String_
@@ -7722,6 +7842,33 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Require.GreaterThan(Integer, Integer, String, String)
   nameWithType: Require.GreaterThan(int, int, string, string)
   nameWithType.vb: Require.GreaterThan(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.GreaterThan(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name: GreaterThan(int?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_System_Nullable_System_Int32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.GreaterThan(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name.vb: GreaterThan(Integer?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.GreaterThan(int?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.GreaterThan(Integer?, Integer, String, String)
+  nameWithType: Require.GreaterThan(int?, int, string, string)
+  nameWithType.vb: Require.GreaterThan(Integer?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.GreaterThan(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name: GreaterThan(uint?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_System_Nullable_System_UInt32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.GreaterThan(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name.vb: GreaterThan(UInteger?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.GreaterThan(uint?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.GreaterThan(UInteger?, Integer, String, String)
+  nameWithType: Require.GreaterThan(uint?, int, string, string)
+  nameWithType.vb: Require.GreaterThan(UInteger?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.GreaterThan(System.UInt32,System.Int32,System.String,System.String)
+  name: GreaterThan(uint, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_System_UInt32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.GreaterThan(System.UInt32,System.Int32,System.String,System.String)
+  name.vb: GreaterThan(UInteger, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.GreaterThan(uint, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.GreaterThan(UInteger, Integer, String, String)
+  nameWithType: Require.GreaterThan(uint, int, string, string)
+  nameWithType.vb: Require.GreaterThan(UInteger, Integer, String, String)
 - uid: AuxLabs.SimpleTwitch.Require.GreaterThan*
   name: GreaterThan
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_GreaterThan_
@@ -7729,6 +7876,134 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Require.GreaterThan
   nameWithType: Require.GreaterThan
+- uid: AuxLabs.SimpleTwitch.Require.HasAtLeast*
+  name: HasAtLeast
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasAtLeast_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.HasAtLeast
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.HasAtLeast
+  nameWithType: Require.HasAtLeast
+- uid: AuxLabs.SimpleTwitch.Require.HasAtLeast``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name: HasAtLeast<T>(IEnumerable<T>, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasAtLeast__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.HasAtLeast``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name.vb: HasAtLeast(Of T)(IEnumerable(Of T), Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.HasAtLeast<T>(System.Collections.Generic.IEnumerable<T>, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.HasAtLeast(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String, String)
+  nameWithType: Require.HasAtLeast<T>(IEnumerable<T>, int, string, string)
+  nameWithType.vb: Require.HasAtLeast(Of T)(IEnumerable(Of T), Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.HasAtMost*
+  name: HasAtMost
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasAtMost_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.HasAtMost
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.HasAtMost
+  nameWithType: Require.HasAtMost
+- uid: AuxLabs.SimpleTwitch.Require.HasAtMost``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name: HasAtMost<T>(IEnumerable<T>, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasAtMost__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.HasAtMost``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name.vb: HasAtMost(Of T)(IEnumerable(Of T), Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.HasAtMost<T>(System.Collections.Generic.IEnumerable<T>, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.HasAtMost(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String, String)
+  nameWithType: Require.HasAtMost<T>(IEnumerable<T>, int, string, string)
+  nameWithType.vb: Require.HasAtMost(Of T)(IEnumerable(Of T), Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.HasGreaterThan*
+  name: HasGreaterThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasGreaterThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.HasGreaterThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.HasGreaterThan
+  nameWithType: Require.HasGreaterThan
+- uid: AuxLabs.SimpleTwitch.Require.HasGreaterThan``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name: HasGreaterThan<T>(IEnumerable<T>, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasGreaterThan__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.HasGreaterThan``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name.vb: HasGreaterThan(Of T)(IEnumerable(Of T), Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.HasGreaterThan<T>(System.Collections.Generic.IEnumerable<T>, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.HasGreaterThan(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String, String)
+  nameWithType: Require.HasGreaterThan<T>(IEnumerable<T>, int, string, string)
+  nameWithType.vb: Require.HasGreaterThan(Of T)(IEnumerable(Of T), Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.HasLessThan*
+  name: HasLessThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasLessThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.HasLessThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.HasLessThan
+  nameWithType: Require.HasLessThan
+- uid: AuxLabs.SimpleTwitch.Require.HasLessThan``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name: HasLessThan<T>(IEnumerable<T>, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_HasLessThan__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.HasLessThan``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.String)
+  name.vb: HasLessThan(Of T)(IEnumerable(Of T), Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.HasLessThan<T>(System.Collections.Generic.IEnumerable<T>, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.HasLessThan(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String, String)
+  nameWithType: Require.HasLessThan<T>(IEnumerable<T>, int, string, string)
+  nameWithType.vb: Require.HasLessThan(Of T)(IEnumerable(Of T), Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LengthAtLeast(System.String,System.Int32,System.String,System.String)
+  name: LengthAtLeast(string, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthAtLeast_System_String_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LengthAtLeast(System.String,System.Int32,System.String,System.String)
+  name.vb: LengthAtLeast(String, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LengthAtLeast(string, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LengthAtLeast(String, Integer, String, String)
+  nameWithType: Require.LengthAtLeast(string, int, string, string)
+  nameWithType.vb: Require.LengthAtLeast(String, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LengthAtLeast*
+  name: LengthAtLeast
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthAtLeast_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.LengthAtLeast
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.LengthAtLeast
+  nameWithType: Require.LengthAtLeast
+- uid: AuxLabs.SimpleTwitch.Require.LengthAtMost(System.String,System.Int32,System.String,System.String)
+  name: LengthAtMost(string, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthAtMost_System_String_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LengthAtMost(System.String,System.Int32,System.String,System.String)
+  name.vb: LengthAtMost(String, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LengthAtMost(string, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LengthAtMost(String, Integer, String, String)
+  nameWithType: Require.LengthAtMost(string, int, string, string)
+  nameWithType.vb: Require.LengthAtMost(String, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LengthAtMost*
+  name: LengthAtMost
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthAtMost_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.LengthAtMost
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.LengthAtMost
+  nameWithType: Require.LengthAtMost
+- uid: AuxLabs.SimpleTwitch.Require.LengthGreaterThan(System.String,System.Int32,System.String,System.String)
+  name: LengthGreaterThan(string, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthGreaterThan_System_String_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LengthGreaterThan(System.String,System.Int32,System.String,System.String)
+  name.vb: LengthGreaterThan(String, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LengthGreaterThan(string, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LengthGreaterThan(String, Integer, String, String)
+  nameWithType: Require.LengthGreaterThan(string, int, string, string)
+  nameWithType.vb: Require.LengthGreaterThan(String, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LengthGreaterThan*
+  name: LengthGreaterThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthGreaterThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.LengthGreaterThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.LengthGreaterThan
+  nameWithType: Require.LengthGreaterThan
+- uid: AuxLabs.SimpleTwitch.Require.LengthLessThan(System.String,System.Int32,System.String,System.String)
+  name: LengthLessThan(string, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthLessThan_System_String_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LengthLessThan(System.String,System.Int32,System.String,System.String)
+  name.vb: LengthLessThan(String, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LengthLessThan(string, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LengthLessThan(String, Integer, String, String)
+  nameWithType: Require.LengthLessThan(string, int, string, string)
+  nameWithType.vb: Require.LengthLessThan(String, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LengthLessThan*
+  name: LengthLessThan
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LengthLessThan_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.LengthLessThan
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.LengthLessThan
+  nameWithType: Require.LengthLessThan
 - uid: AuxLabs.SimpleTwitch.Require.LessThan(System.Int32,System.Int32,System.String,System.String)
   name: LessThan(int, int, string, string)
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_System_Int32_System_Int32_System_String_System_String_
@@ -7738,6 +8013,33 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Require.LessThan(Integer, Integer, String, String)
   nameWithType: Require.LessThan(int, int, string, string)
   nameWithType.vb: Require.LessThan(Integer, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LessThan(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name: LessThan(int?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_System_Nullable_System_Int32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LessThan(System.Nullable{System.Int32},System.Int32,System.String,System.String)
+  name.vb: LessThan(Integer?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LessThan(int?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LessThan(Integer?, Integer, String, String)
+  nameWithType: Require.LessThan(int?, int, string, string)
+  nameWithType.vb: Require.LessThan(Integer?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LessThan(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name: LessThan(uint?, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_System_Nullable_System_UInt32__System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LessThan(System.Nullable{System.UInt32},System.Int32,System.String,System.String)
+  name.vb: LessThan(UInteger?, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LessThan(uint?, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LessThan(UInteger?, Integer, String, String)
+  nameWithType: Require.LessThan(uint?, int, string, string)
+  nameWithType.vb: Require.LessThan(UInteger?, Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.LessThan(System.UInt32,System.Int32,System.String,System.String)
+  name: LessThan(uint, int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_System_UInt32_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.LessThan(System.UInt32,System.Int32,System.String,System.String)
+  name.vb: LessThan(UInteger, Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.LessThan(uint, int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.LessThan(UInteger, Integer, String, String)
+  nameWithType: Require.LessThan(uint, int, string, string)
+  nameWithType.vb: Require.LessThan(UInteger, Integer, String, String)
 - uid: AuxLabs.SimpleTwitch.Require.LessThan*
   name: LessThan
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_LessThan_
@@ -7761,6 +8063,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Require.NotEmpty
   nameWithType: Require.NotEmpty
+- uid: AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace(System.String,System.String,System.String)
+  name: NotEmptyOrWhitespace(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotEmptyOrWhitespace_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace(System.String,System.String,System.String)
+  name.vb: NotEmptyOrWhitespace(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace(String, String, String)
+  nameWithType: Require.NotEmptyOrWhitespace(string, string, string)
+  nameWithType.vb: Require.NotEmptyOrWhitespace(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace*
+  name: NotEmptyOrWhitespace
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotEmptyOrWhitespace_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotEmptyOrWhitespace
+  nameWithType: Require.NotEmptyOrWhitespace
 - uid: AuxLabs.SimpleTwitch.Require.NotNull(System.Object,System.String,System.String)
   name: NotNull(object, string, string)
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotNull_System_Object_System_String_System_String_
@@ -7809,15 +8127,108 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Require.NotNullOrWhitespace
   nameWithType: Require.NotNullOrWhitespace
-- uid: AuxLabs.SimpleTwitch.Require.Scopes(System.String[],System.String[])
-  name: Scopes(string[], string[])
-  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Scopes_System_String___System_String___
-  commentId: M:AuxLabs.SimpleTwitch.Require.Scopes(System.String[],System.String[])
-  name.vb: Scopes(String(), String())
-  fullName: AuxLabs.SimpleTwitch.Require.Scopes(string[], string[])
-  fullName.vb: AuxLabs.SimpleTwitch.Require.Scopes(String(), String())
-  nameWithType: Require.Scopes(string[], string[])
-  nameWithType.vb: Require.Scopes(String(), String())
+- uid: AuxLabs.SimpleTwitch.Require.NotZero(System.Int32,System.String,System.String)
+  name: NotZero(int, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotZero_System_Int32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotZero(System.Int32,System.String,System.String)
+  name.vb: NotZero(Integer, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotZero(int, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotZero(Integer, String, String)
+  nameWithType: Require.NotZero(int, string, string)
+  nameWithType.vb: Require.NotZero(Integer, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotZero(System.Nullable{System.Int32},System.String,System.String)
+  name: NotZero(int?, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotZero_System_Nullable_System_Int32__System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotZero(System.Nullable{System.Int32},System.String,System.String)
+  name.vb: NotZero(Integer?, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotZero(int?, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotZero(Integer?, String, String)
+  nameWithType: Require.NotZero(int?, string, string)
+  nameWithType.vb: Require.NotZero(Integer?, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotZero(System.Nullable{System.UInt32},System.String,System.String)
+  name: NotZero(uint?, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotZero_System_Nullable_System_UInt32__System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotZero(System.Nullable{System.UInt32},System.String,System.String)
+  name.vb: NotZero(UInteger?, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotZero(uint?, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotZero(UInteger?, String, String)
+  nameWithType: Require.NotZero(uint?, string, string)
+  nameWithType.vb: Require.NotZero(UInteger?, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotZero(System.UInt32,System.String,System.String)
+  name: NotZero(uint, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotZero_System_UInt32_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.NotZero(System.UInt32,System.String,System.String)
+  name.vb: NotZero(UInteger, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.NotZero(uint, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.NotZero(UInteger, String, String)
+  nameWithType: Require.NotZero(uint, string, string)
+  nameWithType.vb: Require.NotZero(UInteger, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.NotZero*
+  name: NotZero
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_NotZero_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.NotZero
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.NotZero
+  nameWithType: Require.NotZero
+- uid: AuxLabs.SimpleTwitch.Require.OnOrAfter(System.DateTime,System.DateTime,System.String,System.String)
+  name: OnOrAfter(DateTime, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrAfter_System_DateTime_System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.OnOrAfter(System.DateTime,System.DateTime,System.String,System.String)
+  name.vb: OnOrAfter(Date, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrAfter(System.DateTime, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.OnOrAfter(Date, Date, String, String)
+  nameWithType: Require.OnOrAfter(DateTime, DateTime, string, string)
+  nameWithType.vb: Require.OnOrAfter(Date, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.OnOrAfter(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name: OnOrAfter(DateTime?, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrAfter_System_Nullable_System_DateTime__System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.OnOrAfter(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name.vb: OnOrAfter(Date?, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrAfter(System.DateTime?, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.OnOrAfter(Date?, Date, String, String)
+  nameWithType: Require.OnOrAfter(DateTime?, DateTime, string, string)
+  nameWithType.vb: Require.OnOrAfter(Date?, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.OnOrAfter*
+  name: OnOrAfter
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrAfter_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.OnOrAfter
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrAfter
+  nameWithType: Require.OnOrAfter
+- uid: AuxLabs.SimpleTwitch.Require.OnOrBefore(System.DateTime,System.DateTime,System.String,System.String)
+  name: OnOrBefore(DateTime, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrBefore_System_DateTime_System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.OnOrBefore(System.DateTime,System.DateTime,System.String,System.String)
+  name.vb: OnOrBefore(Date, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrBefore(System.DateTime, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.OnOrBefore(Date, Date, String, String)
+  nameWithType: Require.OnOrBefore(DateTime, DateTime, string, string)
+  nameWithType.vb: Require.OnOrBefore(Date, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.OnOrBefore(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name: OnOrBefore(DateTime?, DateTime, string, string)
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrBefore_System_Nullable_System_DateTime__System_DateTime_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Require.OnOrBefore(System.Nullable{System.DateTime},System.DateTime,System.String,System.String)
+  name.vb: OnOrBefore(Date?, Date, String, String)
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrBefore(System.DateTime?, System.DateTime, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Require.OnOrBefore(Date?, Date, String, String)
+  nameWithType: Require.OnOrBefore(DateTime?, DateTime, string, string)
+  nameWithType.vb: Require.OnOrBefore(Date?, Date, String, String)
+- uid: AuxLabs.SimpleTwitch.Require.OnOrBefore*
+  name: OnOrBefore
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_OnOrBefore_
+  commentId: Overload:AuxLabs.SimpleTwitch.Require.OnOrBefore
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Require.OnOrBefore
+  nameWithType: Require.OnOrBefore
+- uid: AuxLabs.SimpleTwitch.Require.Scopes(System.Collections.Generic.IEnumerable{System.String},System.String[])
+  name: Scopes(IEnumerable<string>, string[])
+  href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Scopes_System_Collections_Generic_IEnumerable_System_String__System_String___
+  commentId: M:AuxLabs.SimpleTwitch.Require.Scopes(System.Collections.Generic.IEnumerable{System.String},System.String[])
+  name.vb: Scopes(IEnumerable(Of String), String())
+  fullName: AuxLabs.SimpleTwitch.Require.Scopes(System.Collections.Generic.IEnumerable<string>, string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Require.Scopes(System.Collections.Generic.IEnumerable(Of String), String())
+  nameWithType: Require.Scopes(IEnumerable<string>, string[])
+  nameWithType.vb: Require.Scopes(IEnumerable(Of String), String())
 - uid: AuxLabs.SimpleTwitch.Require.Scopes*
   name: Scopes
   href: api/AuxLabs.SimpleTwitch.Require.html#AuxLabs_SimpleTwitch_Require_Scopes_
@@ -8143,6 +8554,42 @@ references:
   commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodAction.Deny
   fullName: AuxLabs.SimpleTwitch.Rest.AutomodAction.Deny
   nameWithType: AutomodAction.Deny
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter
+  name: AutomodFilter
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.AutomodFilter
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter
+  nameWithType: AutomodFilter
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Less
+  name: Less
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html#AuxLabs_SimpleTwitch_Rest_AutomodFilter_Less
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodFilter.Less
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Less
+  nameWithType: AutomodFilter.Less
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Maximum
+  name: Maximum
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html#AuxLabs_SimpleTwitch_Rest_AutomodFilter_Maximum
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodFilter.Maximum
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Maximum
+  nameWithType: AutomodFilter.Maximum
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter.More
+  name: More
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html#AuxLabs_SimpleTwitch_Rest_AutomodFilter_More
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodFilter.More
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter.More
+  nameWithType: AutomodFilter.More
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter.None
+  name: None
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html#AuxLabs_SimpleTwitch_Rest_AutomodFilter_None
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodFilter.None
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter.None
+  nameWithType: AutomodFilter.None
+- uid: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Some
+  name: Some
+  href: api/AuxLabs.SimpleTwitch.Rest.AutomodFilter.html#AuxLabs_SimpleTwitch_Rest_AutomodFilter_Some
+  commentId: F:AuxLabs.SimpleTwitch.Rest.AutomodFilter.Some
+  fullName: AuxLabs.SimpleTwitch.Rest.AutomodFilter.Some
+  nameWithType: AutomodFilter.Some
 - uid: AuxLabs.SimpleTwitch.Rest.AutomodSettings
   name: AutomodSettings
   href: api/AuxLabs.SimpleTwitch.Rest.AutomodSettings.html
@@ -10214,6 +10661,15 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.New()
   nameWithType: DeleteVideosArgs.DeleteVideosArgs()
   nameWithType.vb: DeleteVideosArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor(System.Collections.Generic.List{System.String})
+  name: DeleteVideosArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_Collections_Generic_List_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor(System.Collections.Generic.List{System.String})
+  name.vb: New(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.DeleteVideosArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.New(System.Collections.Generic.List(Of String))
+  nameWithType: DeleteVideosArgs.DeleteVideosArgs(List<string>)
+  nameWithType.vb: DeleteVideosArgs.New(List(Of String))
 - uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor(System.String[])
   name: DeleteVideosArgs(params string[])
   href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_String___
@@ -10246,6 +10702,80 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CreateQueryMap
   nameWithType: DeleteVideosArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.Collections.Generic.List{System.String}
+  name: implicit operator List<string>(DeleteVideosArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_Collections_Generic_List_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.Collections.Generic.List{System.String}
+  name.vb: CType(DeleteVideosArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.implicit operator System.Collections.Generic.List<string>(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CType(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)
+  nameWithType: DeleteVideosArgs.implicit operator List<string>(DeleteVideosArgs)
+  nameWithType.vb: DeleteVideosArgs.CType(DeleteVideosArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.String[]
+  name: implicit operator string[](DeleteVideosArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.String[]
+  name.vb: CType(DeleteVideosArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.implicit operator string[](AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CType(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)
+  nameWithType: DeleteVideosArgs.implicit operator string[](DeleteVideosArgs)
+  nameWithType.vb: DeleteVideosArgs.CType(DeleteVideosArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs
+  name: implicit operator DeleteVideosArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs
+  name.vb: CType(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.implicit operator AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CType(System.Collections.Generic.List(Of String))
+  nameWithType: DeleteVideosArgs.implicit operator DeleteVideosArgs(List<string>)
+  nameWithType.vb: DeleteVideosArgs.CType(List(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs
+  name: implicit operator DeleteVideosArgs(string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs
+  name.vb: CType(String())
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.implicit operator AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs(string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CType(String())
+  nameWithType: DeleteVideosArgs.implicit operator DeleteVideosArgs(string[])
+  nameWithType.vb: DeleteVideosArgs.CType(String())
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit*
+  name: implicit operator string[]
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.implicit operator string[]
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CType
+  nameWithType: DeleteVideosArgs.implicit operator string[]
+  nameWithType.vb: DeleteVideosArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes
+  nameWithType: DeleteVideosArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes
+  nameWithType: DeleteVideosArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: DeleteVideosArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: DeleteVideosArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate
+  nameWithType: DeleteVideosArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.VideoIds
   name: VideoIds
   href: api/AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html#AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_VideoIds
@@ -11760,6 +12290,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Type
   nameWithType: GetAnalyticsArgs.Type
+- uid: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAnalyticsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate()
+  nameWithType: GetAnalyticsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAnalyticsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAnalyticsArgs.Validate
+  nameWithType: GetAnalyticsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs
   name: GetAutomodSettingsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html
@@ -11818,6 +12361,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Scopes
   nameWithType: GetAutomodSettingsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetAutomodSettingsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetAutomodSettingsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_GetAutomodSettingsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetAutomodSettingsArgs.Validate
+  nameWithType: GetAutomodSettingsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs
   name: GetBannedUsersArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html
@@ -11915,6 +12474,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.UserIds
   nameWithType: GetBannedUsersArgs.UserIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetBannedUsersArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetBannedUsersArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetBannedUsersArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBannedUsersArgs.Validate
+  nameWithType: GetBannedUsersArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs
   name: GetBitsLeaderboardArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.html
@@ -11999,6 +12574,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.UserId
   nameWithType: GetBitsLeaderboardArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.html#AuxLabs_SimpleTwitch_Rest_GetBitsLeaderboardArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetBitsLeaderboardArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetBitsLeaderboardArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.html#AuxLabs_SimpleTwitch_Rest_GetBitsLeaderboardArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBitsLeaderboardArgs.Validate
+  nameWithType: GetBitsLeaderboardArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs
   name: GetBlocksArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html
@@ -12087,6 +12678,139 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Scopes
   nameWithType: GetBlocksArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html#AuxLabs_SimpleTwitch_Rest_GetBlocksArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetBlocksArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetBlocksArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.html#AuxLabs_SimpleTwitch_Rest_GetBlocksArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetBlocksArgs.Validate
+  nameWithType: GetBlocksArgs.Validate
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs
+  name: GetChannelEditorsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs
+  nameWithType: GetChannelEditorsArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor
+  name: GetChannelEditorsArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.GetChannelEditorsArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.New()
+  nameWithType: GetChannelEditorsArgs.GetChannelEditorsArgs()
+  nameWithType.vb: GetChannelEditorsArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor(System.String)
+  name: GetChannelEditorsArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs__ctor_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.GetChannelEditorsArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.New(String)
+  nameWithType: GetChannelEditorsArgs.GetChannelEditorsArgs(string)
+  nameWithType.vb: GetChannelEditorsArgs.New(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor*
+  name: GetChannelEditorsArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.GetChannelEditorsArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.New
+  nameWithType: GetChannelEditorsArgs.GetChannelEditorsArgs
+  nameWithType.vb: GetChannelEditorsArgs.New
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId
+  nameWithType: GetChannelEditorsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.BroadcasterId
+  nameWithType: GetChannelEditorsArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap()
+  nameWithType: GetChannelEditorsArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CreateQueryMap
+  nameWithType: GetChannelEditorsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)~System.String
+  name: implicit operator string(GetChannelEditorsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs__System_String
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)~System.String
+  name.vb: CType(GetChannelEditorsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.implicit operator string(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CType(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  nameWithType: GetChannelEditorsArgs.implicit operator string(GetChannelEditorsArgs)
+  nameWithType.vb: GetChannelEditorsArgs.CType(GetChannelEditorsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs
+  name: implicit operator GetChannelEditorsArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_op_Implicit_System_String__AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs
+  name.vb: CType(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CType(String)
+  nameWithType: GetChannelEditorsArgs.implicit operator GetChannelEditorsArgs(string)
+  nameWithType.vb: GetChannelEditorsArgs.CType(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit*
+  name: implicit operator string
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.implicit operator string
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.CType
+  nameWithType: GetChannelEditorsArgs.implicit operator string
+  nameWithType.vb: GetChannelEditorsArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes
+  nameWithType: GetChannelEditorsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Scopes
+  nameWithType: GetChannelEditorsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetChannelEditorsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetChannelEditorsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs.Validate
+  nameWithType: GetChannelEditorsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs
   name: GetChannelsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html
@@ -12102,6 +12826,15 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.New()
   nameWithType: GetChannelsArgs.GetChannelsArgs()
   nameWithType.vb: GetChannelsArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.#ctor(System.Collections.Generic.List{System.String})
+  name: GetChannelsArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs__ctor_System_Collections_Generic_List_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.#ctor(System.Collections.Generic.List{System.String})
+  name.vb: New(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.GetChannelsArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.New(System.Collections.Generic.List(Of String))
+  nameWithType: GetChannelsArgs.GetChannelsArgs(List<string>)
+  nameWithType.vb: GetChannelsArgs.New(List(Of String))
 - uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.#ctor(System.String[])
   name: GetChannelsArgs(params string[])
   href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs__ctor_System_String___
@@ -12147,6 +12880,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CreateQueryMap
   nameWithType: GetChannelsArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)~System.Collections.Generic.List{System.String}
+  name: implicit operator List<string>(GetChannelsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetChannelsArgs__System_Collections_Generic_List_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)~System.Collections.Generic.List{System.String}
+  name.vb: CType(GetChannelsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.implicit operator System.Collections.Generic.List<string>(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CType(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)
+  nameWithType: GetChannelsArgs.implicit operator List<string>(GetChannelsArgs)
+  nameWithType.vb: GetChannelsArgs.CType(GetChannelsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)~System.String[]
+  name: implicit operator string[](GetChannelsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetChannelsArgs__System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)~System.String[]
+  name.vb: CType(GetChannelsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.implicit operator string[](AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CType(AuxLabs.SimpleTwitch.Rest.GetChannelsArgs)
+  nameWithType: GetChannelsArgs.implicit operator string[](GetChannelsArgs)
+  nameWithType.vb: GetChannelsArgs.CType(GetChannelsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetChannelsArgs
+  name: implicit operator GetChannelsArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_GetChannelsArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetChannelsArgs
+  name.vb: CType(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetChannelsArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CType(System.Collections.Generic.List(Of String))
+  nameWithType: GetChannelsArgs.implicit operator GetChannelsArgs(List<string>)
+  nameWithType.vb: GetChannelsArgs.CType(List(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetChannelsArgs
+  name: implicit operator GetChannelsArgs(string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_GetChannelsArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetChannelsArgs
+  name.vb: CType(String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetChannelsArgs(string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CType(String())
+  nameWithType: GetChannelsArgs.implicit operator GetChannelsArgs(string[])
+  nameWithType.vb: GetChannelsArgs.CType(String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit*
+  name: implicit operator string[]
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.op_Implicit
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.implicit operator string[]
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.CType
+  nameWithType: GetChannelsArgs.implicit operator string[]
+  nameWithType.vb: GetChannelsArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate()
+  nameWithType: GetChannelsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.html#AuxLabs_SimpleTwitch_Rest_GetChannelsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChannelsArgs.Validate
+  nameWithType: GetChannelsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs
   name: GetCharityDonationsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html
@@ -12235,6 +13026,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Scopes
   nameWithType: GetCharityDonationsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetCharityDonationsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetCharityDonationsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.html#AuxLabs_SimpleTwitch_Rest_GetCharityDonationsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCharityDonationsArgs.Validate
+  nameWithType: GetCharityDonationsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs
   name: GetChattersArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html
@@ -12336,6 +13143,123 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Scopes
   nameWithType: GetChattersArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html#AuxLabs_SimpleTwitch_Rest_GetChattersArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetChattersArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetChattersArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetChattersArgs.html#AuxLabs_SimpleTwitch_Rest_GetChattersArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetChattersArgs.Validate
+  nameWithType: GetChattersArgs.Validate
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs
+  name: GetCheermotesArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs
+  nameWithType: GetCheermotesArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor
+  name: GetCheermotesArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.GetCheermotesArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.New()
+  nameWithType: GetCheermotesArgs.GetCheermotesArgs()
+  nameWithType.vb: GetCheermotesArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor(System.String)
+  name: GetCheermotesArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs__ctor_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.GetCheermotesArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.New(String)
+  nameWithType: GetCheermotesArgs.GetCheermotesArgs(string)
+  nameWithType.vb: GetCheermotesArgs.New(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor*
+  name: GetCheermotesArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.GetCheermotesArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.New
+  nameWithType: GetCheermotesArgs.GetCheermotesArgs
+  nameWithType.vb: GetCheermotesArgs.New
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId
+  nameWithType: GetCheermotesArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.BroadcasterId
+  nameWithType: GetCheermotesArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap()
+  nameWithType: GetCheermotesArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CreateQueryMap
+  nameWithType: GetCheermotesArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)~System.String
+  name: implicit operator string(GetCheermotesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs__System_String
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)~System.String
+  name.vb: CType(GetCheermotesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.implicit operator string(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CType(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  nameWithType: GetCheermotesArgs.implicit operator string(GetCheermotesArgs)
+  nameWithType.vb: GetCheermotesArgs.CType(GetCheermotesArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs
+  name: implicit operator GetCheermotesArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_op_Implicit_System_String__AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs
+  name.vb: CType(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CType(String)
+  nameWithType: GetCheermotesArgs.implicit operator GetCheermotesArgs(string)
+  nameWithType.vb: GetCheermotesArgs.CType(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit*
+  name: implicit operator string
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.implicit operator string
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.CType
+  nameWithType: GetCheermotesArgs.implicit operator string
+  nameWithType.vb: GetCheermotesArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate()
+  nameWithType: GetCheermotesArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.html#AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs.Validate
+  nameWithType: GetCheermotesArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs
   name: GetClipsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html
@@ -12459,6 +13383,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.StartedAt
   nameWithType: GetClipsArgs.StartedAt
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate()
+  nameWithType: GetClipsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetClipsArgs.html#AuxLabs_SimpleTwitch_Rest_GetClipsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetClipsArgs.Validate
+  nameWithType: GetClipsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
   name: GetEmoteSetsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html
@@ -12474,6 +13411,15 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.New()
   nameWithType: GetEmoteSetsArgs.GetEmoteSetsArgs()
   nameWithType.vb: GetEmoteSetsArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.#ctor(System.Collections.Generic.List{System.String})
+  name: GetEmoteSetsArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs__ctor_System_Collections_Generic_List_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.#ctor(System.Collections.Generic.List{System.String})
+  name.vb: New(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.GetEmoteSetsArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.New(System.Collections.Generic.List(Of String))
+  nameWithType: GetEmoteSetsArgs.GetEmoteSetsArgs(List<string>)
+  nameWithType.vb: GetEmoteSetsArgs.New(List(Of String))
 - uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.#ctor(System.String[])
   name: GetEmoteSetsArgs(params string[])
   href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs__ctor_System_String___
@@ -12519,6 +13465,64 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.EmoteSetIds
   nameWithType: GetEmoteSetsArgs.EmoteSetIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)~System.Collections.Generic.List{System.String}
+  name: implicit operator List<string>(GetEmoteSetsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs__System_Collections_Generic_List_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)~System.Collections.Generic.List{System.String}
+  name.vb: CType(GetEmoteSetsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.implicit operator System.Collections.Generic.List<string>(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.CType(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)
+  nameWithType: GetEmoteSetsArgs.implicit operator List<string>(GetEmoteSetsArgs)
+  nameWithType.vb: GetEmoteSetsArgs.CType(GetEmoteSetsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)~System.String[]
+  name: implicit operator string[](GetEmoteSetsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs__System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)~System.String[]
+  name.vb: CType(GetEmoteSetsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.implicit operator string[](AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.CType(AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs)
+  nameWithType: GetEmoteSetsArgs.implicit operator string[](GetEmoteSetsArgs)
+  nameWithType.vb: GetEmoteSetsArgs.CType(GetEmoteSetsArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
+  name: implicit operator GetEmoteSetsArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
+  name.vb: CType(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.CType(System.Collections.Generic.List(Of String))
+  nameWithType: GetEmoteSetsArgs.implicit operator GetEmoteSetsArgs(List<string>)
+  nameWithType.vb: GetEmoteSetsArgs.CType(List(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
+  name: implicit operator GetEmoteSetsArgs(string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs
+  name.vb: CType(String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs(string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.CType(String())
+  nameWithType: GetEmoteSetsArgs.implicit operator GetEmoteSetsArgs(string[])
+  nameWithType.vb: GetEmoteSetsArgs.CType(String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit*
+  name: implicit operator string[]
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.op_Implicit
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.implicit operator string[]
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.CType
+  nameWithType: GetEmoteSetsArgs.implicit operator string[]
+  nameWithType.vb: GetEmoteSetsArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate()
+  nameWithType: GetEmoteSetsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEmoteSetsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEmoteSetsArgs.Validate
+  nameWithType: GetEmoteSetsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs
   name: GetEventSubscriptionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html
@@ -12624,6 +13628,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.UserId
   nameWithType: GetEventSubscriptionsArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEventSubscriptionsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate()
+  nameWithType: GetEventSubscriptionsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetEventSubscriptionsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetEventSubscriptionsArgs.Validate
+  nameWithType: GetEventSubscriptionsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs
   name: GetExtensionAnalyticsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.html
@@ -12669,6 +13686,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Scopes
   nameWithType: GetExtensionAnalyticsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionAnalyticsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetExtensionAnalyticsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetExtensionAnalyticsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionAnalyticsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionAnalyticsArgs.Validate
+  nameWithType: GetExtensionAnalyticsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs
   name: GetExtensionTransactionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html
@@ -12757,6 +13790,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.TransactionIds
   nameWithType: GetExtensionTransactionsArgs.TransactionIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate()
+  nameWithType: GetExtensionTransactionsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate
+  nameWithType: GetExtensionTransactionsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs
   name: GetFollowsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html
@@ -12845,6 +13891,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.ToId
   nameWithType: GetFollowsArgs.ToId
+- uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html#AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate()
+  nameWithType: GetFollowsArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.html#AuxLabs_SimpleTwitch_Rest_GetFollowsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetFollowsArgs.Validate
+  nameWithType: GetFollowsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs
   name: GetGameAnalyticsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.html
@@ -12890,6 +13949,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Scopes
   nameWithType: GetGameAnalyticsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetGameAnalyticsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetGameAnalyticsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetGameAnalyticsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.html#AuxLabs_SimpleTwitch_Rest_GetGameAnalyticsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGameAnalyticsArgs.Validate
+  nameWithType: GetGameAnalyticsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs
   name: GetGamesArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html
@@ -12948,6 +14023,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.IgdbIds
   nameWithType: GetGamesArgs.IgdbIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate()
+  nameWithType: GetGamesArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetGamesArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetGamesArgs.Validate
+  nameWithType: GetGamesArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs
   name: GetHypeTrainsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html
@@ -13036,6 +14124,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Scopes
   nameWithType: GetHypeTrainsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html#AuxLabs_SimpleTwitch_Rest_GetHypeTrainsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetHypeTrainsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetHypeTrainsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.html#AuxLabs_SimpleTwitch_Rest_GetHypeTrainsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetHypeTrainsArgs.Validate
+  nameWithType: GetHypeTrainsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs
   name: GetPollsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html
@@ -13165,6 +14269,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Scopes
   nameWithType: GetPollsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetPollsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetPollsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPollsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPollsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPollsArgs.Validate
+  nameWithType: GetPollsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs
   name: GetPredictionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html
@@ -13294,6 +14414,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Scopes
   nameWithType: GetPredictionsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetPredictionsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetPredictionsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetPredictionsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetPredictionsArgs.Validate
+  nameWithType: GetPredictionsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs
   name: GetRedemptionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html
@@ -13369,19 +14505,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.First
   nameWithType: GetRedemptionsArgs.First
-- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
-  name: Ids
-  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Ids
-  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
-  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
-  nameWithType: GetRedemptionsArgs.Ids
-- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids*
-  name: Ids
-  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Ids_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds
+  name: RedemptionIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_RedemptionIds
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds
+  nameWithType: GetRedemptionsArgs.RedemptionIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds*
+  name: RedemptionIds
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_RedemptionIds_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Ids
-  nameWithType: GetRedemptionsArgs.Ids
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RedemptionIds
+  nameWithType: GetRedemptionsArgs.RedemptionIds
 - uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.RewardId
   name: RewardId
   href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_RewardId
@@ -13434,6 +14570,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Status
   nameWithType: GetRedemptionsArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetRedemptionsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetRedemptionsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_GetRedemptionsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRedemptionsArgs.Validate
+  nameWithType: GetRedemptionsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs
   name: GetRewardArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html
@@ -13542,6 +14694,139 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Scopes
   nameWithType: GetRewardArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetRewardArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetRewardArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetRewardArgs.html#AuxLabs_SimpleTwitch_Rest_GetRewardArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetRewardArgs.Validate
+  nameWithType: GetRewardArgs.Validate
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs
+  name: GetStreamKeyArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs
+  nameWithType: GetStreamKeyArgs
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor
+  name: GetStreamKeyArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.GetStreamKeyArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.New()
+  nameWithType: GetStreamKeyArgs.GetStreamKeyArgs()
+  nameWithType.vb: GetStreamKeyArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor(System.String)
+  name: GetStreamKeyArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs__ctor_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.GetStreamKeyArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.New(String)
+  nameWithType: GetStreamKeyArgs.GetStreamKeyArgs(string)
+  nameWithType.vb: GetStreamKeyArgs.New(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor*
+  name: GetStreamKeyArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.GetStreamKeyArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.New
+  nameWithType: GetStreamKeyArgs.GetStreamKeyArgs
+  nameWithType.vb: GetStreamKeyArgs.New
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_BroadcasterId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId
+  nameWithType: GetStreamKeyArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_BroadcasterId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.BroadcasterId
+  nameWithType: GetStreamKeyArgs.BroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap
+  name: CreateQueryMap()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_CreateQueryMap
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap()
+  nameWithType: GetStreamKeyArgs.CreateQueryMap()
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap*
+  name: CreateQueryMap
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_CreateQueryMap_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CreateQueryMap
+  nameWithType: GetStreamKeyArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)~System.String
+  name: implicit operator string(GetStreamKeyArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs__System_String
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)~System.String
+  name.vb: CType(GetStreamKeyArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.implicit operator string(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CType(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  nameWithType: GetStreamKeyArgs.implicit operator string(GetStreamKeyArgs)
+  nameWithType.vb: GetStreamKeyArgs.CType(GetStreamKeyArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs
+  name: implicit operator GetStreamKeyArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_op_Implicit_System_String__AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs
+  name.vb: CType(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CType(String)
+  nameWithType: GetStreamKeyArgs.implicit operator GetStreamKeyArgs(string)
+  nameWithType.vb: GetStreamKeyArgs.CType(String)
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit*
+  name: implicit operator string
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.implicit operator string
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.CType
+  nameWithType: GetStreamKeyArgs.implicit operator string
+  nameWithType.vb: GetStreamKeyArgs.CType
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes
+  nameWithType: GetStreamKeyArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Scopes
+  nameWithType: GetStreamKeyArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: GetStreamKeyArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: GetStreamKeyArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.html#AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs.Validate
+  nameWithType: GetStreamKeyArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs
   name: GetTopGamesArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html
@@ -13600,6 +14885,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.First
   nameWithType: GetTopGamesArgs.First
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate()
+  nameWithType: GetTopGamesArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.html#AuxLabs_SimpleTwitch_Rest_GetTopGamesArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetTopGamesArgs.Validate
+  nameWithType: GetTopGamesArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
   name: GetUserColorArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html
@@ -13615,6 +14913,15 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.New()
   nameWithType: GetUserColorArgs.GetUserColorArgs()
   nameWithType.vb: GetUserColorArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.#ctor(System.Collections.Generic.List{System.String})
+  name: GetUserColorArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs__ctor_System_Collections_Generic_List_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.#ctor(System.Collections.Generic.List{System.String})
+  name.vb: New(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.GetUserColorArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.New(System.Collections.Generic.List(Of String))
+  nameWithType: GetUserColorArgs.GetUserColorArgs(List<string>)
+  nameWithType.vb: GetUserColorArgs.New(List(Of String))
 - uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.#ctor(System.String[])
   name: GetUserColorArgs(params string[])
   href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs__ctor_System_String___
@@ -13647,6 +14954,51 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CreateQueryMap
   nameWithType: GetUserColorArgs.CreateQueryMap
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)~System.Collections.Generic.List{System.String}
+  name: implicit operator List<string>(GetUserColorArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetUserColorArgs__System_Collections_Generic_List_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)~System.Collections.Generic.List{System.String}
+  name.vb: CType(GetUserColorArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.implicit operator System.Collections.Generic.List<string>(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CType(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)
+  nameWithType: GetUserColorArgs.implicit operator List<string>(GetUserColorArgs)
+  nameWithType.vb: GetUserColorArgs.CType(GetUserColorArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)~System.String[]
+  name: implicit operator string[](GetUserColorArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_GetUserColorArgs__System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)~System.String[]
+  name.vb: CType(GetUserColorArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.implicit operator string[](AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CType(AuxLabs.SimpleTwitch.Rest.GetUserColorArgs)
+  nameWithType: GetUserColorArgs.implicit operator string[](GetUserColorArgs)
+  nameWithType.vb: GetUserColorArgs.CType(GetUserColorArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
+  name: implicit operator GetUserColorArgs(List<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_GetUserColorArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
+  name.vb: CType(List(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetUserColorArgs(System.Collections.Generic.List<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CType(System.Collections.Generic.List(Of String))
+  nameWithType: GetUserColorArgs.implicit operator GetUserColorArgs(List<string>)
+  nameWithType.vb: GetUserColorArgs.CType(List(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
+  name: implicit operator GetUserColorArgs(string[])
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_GetUserColorArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.GetUserColorArgs
+  name.vb: CType(String())
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.implicit operator AuxLabs.SimpleTwitch.Rest.GetUserColorArgs(string[])
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CType(String())
+  nameWithType: GetUserColorArgs.implicit operator GetUserColorArgs(string[])
+  nameWithType.vb: GetUserColorArgs.CType(String())
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit*
+  name: implicit operator string[]
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.op_Implicit
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.implicit operator string[]
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.CType
+  nameWithType: GetUserColorArgs.implicit operator string[]
+  nameWithType.vb: GetUserColorArgs.CType
 - uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.UserIds
   name: UserIds
   href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_UserIds
@@ -13660,6 +15012,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.UserIds
   nameWithType: GetUserColorArgs.UserIds
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate()
+  nameWithType: GetUserColorArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.html#AuxLabs_SimpleTwitch_Rest_GetUserColorArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUserColorArgs.Validate
+  nameWithType: GetUserColorArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetUsersArgs
   name: GetUsersArgs
   href: api/AuxLabs.SimpleTwitch.Rest.GetUsersArgs.html
@@ -13733,6 +15098,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetUsersArgs.UserNames
   nameWithType: GetUsersArgs.UserNames
+- uid: AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetUsersArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate()
+  nameWithType: GetUsersArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetUsersArgs.html#AuxLabs_SimpleTwitch_Rest_GetUsersArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetUsersArgs.Validate
+  nameWithType: GetUsersArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetUsersMode
   name: GetUsersMode
   href: api/AuxLabs.SimpleTwitch.Rest.GetUsersMode.html
@@ -13757,34 +15135,6 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.GetVideosArgs
   fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs
   nameWithType: GetVideosArgs
-- uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor
-  name: GetVideosArgs()
-  href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs__ctor
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor
-  name.vb: New()
-  fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.GetVideosArgs()
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.New()
-  nameWithType: GetVideosArgs.GetVideosArgs()
-  nameWithType.vb: GetVideosArgs.New()
-- uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor(System.String[])
-  name: GetVideosArgs(params string[])
-  href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs__ctor_System_String___
-  commentId: M:AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor(System.String[])
-  name.vb: New(ParamArray String())
-  fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.GetVideosArgs(params string[])
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.New(ParamArray String())
-  nameWithType: GetVideosArgs.GetVideosArgs(params string[])
-  nameWithType.vb: GetVideosArgs.New(ParamArray String())
-- uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor*
-  name: GetVideosArgs
-  href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs__ctor_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetVideosArgs.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.GetVideosArgs
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.New
-  nameWithType: GetVideosArgs.GetVideosArgs
-  nameWithType.vb: GetVideosArgs.New
 - uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.After
   name: After
   href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs_After
@@ -13915,6 +15265,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.UserId
   nameWithType: GetVideosArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate()
+  nameWithType: GetVideosArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.Validate
+  nameWithType: GetVideosArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.GetVideosArgs.VideoIds
   name: VideoIds
   href: api/AuxLabs.SimpleTwitch.Rest.GetVideosArgs.html#AuxLabs_SimpleTwitch_Rest_GetVideosArgs_VideoIds
@@ -14561,6 +15924,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.IScoped.Scopes
   nameWithType: IScoped.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.IScoped.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.IScoped.html#AuxLabs_SimpleTwitch_Rest_IScoped_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.IScoped.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.IScoped.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.IScoped.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: IScoped.Validate(IEnumerable<string>)
+  nameWithType.vb: IScoped.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.IScoped.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.IScoped.html#AuxLabs_SimpleTwitch_Rest_IScoped_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.IScoped.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.IScoped.Validate
+  nameWithType: IScoped.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi
   name: ITwitchApi
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html
@@ -14904,15 +16283,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCategoriesAsync
   nameWithType: ITwitchApi.GetCategoriesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(System.String)
-  name: GetChannelEditorsAsync(string)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetChannelEditorsAsync_System_String_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(System.String)
-  name.vb: GetChannelEditorsAsync(String)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(string)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(String)
-  nameWithType: ITwitchApi.GetChannelEditorsAsync(string)
-  nameWithType.vb: ITwitchApi.GetChannelEditorsAsync(String)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  name: GetChannelEditorsAsync(GetChannelEditorsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetChannelEditorsAsync_AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  nameWithType: ITwitchApi.GetChannelEditorsAsync(GetChannelEditorsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChannelEditorsAsync*
   name: GetChannelEditorsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetChannelEditorsAsync_
@@ -14997,15 +16373,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetChattersAsync
   nameWithType: ITwitchApi.GetChattersAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(System.String)
-  name: GetCheermotesAsync(string)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCheermotesAsync_System_String_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(System.String)
-  name.vb: GetCheermotesAsync(String)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(string)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(String)
-  nameWithType: ITwitchApi.GetCheermotesAsync(string)
-  nameWithType.vb: ITwitchApi.GetCheermotesAsync(String)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  name: GetCheermotesAsync(GetCheermotesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCheermotesAsync_AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  nameWithType: ITwitchApi.GetCheermotesAsync(GetCheermotesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetCheermotesAsync*
   name: GetCheermotesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetCheermotesAsync_
@@ -15460,15 +16833,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetShieldModeAsync
   nameWithType: ITwitchApi.GetShieldModeAsync
-- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(System.Object)
-  name: GetStreamKeyAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetStreamKeyAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(System.Object)
-  name.vb: GetStreamKeyAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(Object)
-  nameWithType: ITwitchApi.GetStreamKeyAsync(object)
-  nameWithType.vb: ITwitchApi.GetStreamKeyAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  name: GetStreamKeyAsync(GetStreamKeyArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetStreamKeyAsync_AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  nameWithType: ITwitchApi.GetStreamKeyAsync(GetStreamKeyArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.ITwitchApi.GetStreamKeyAsync*
   name: GetStreamKeyAsync
   href: api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html#AuxLabs_SimpleTwitch_Rest_ITwitchApi_GetStreamKeyAsync_
@@ -16509,6 +17879,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Title
   nameWithType: ModifyChannelArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyChannelArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ModifyChannelArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: ModifyChannelArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyChannelArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyChannelArgs.Validate
+  nameWithType: ModifyChannelArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs
   name: ModifyRedemptionsArgs
   href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html
@@ -16580,6 +17966,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Scopes
   nameWithType: ModifyRedemptionsArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ModifyRedemptionsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: ModifyRedemptionsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html#AuxLabs_SimpleTwitch_Rest_ModifyRedemptionsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.Validate
+  nameWithType: ModifyRedemptionsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.Pagination
   name: Pagination
   href: api/AuxLabs.SimpleTwitch.Rest.Pagination.html
@@ -16735,6 +18137,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.SlowSeconds
   nameWithType: PatchChatSettingsArgs.SlowSeconds
+- uid: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PatchChatSettingsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PatchChatSettingsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PatchChatSettingsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PatchChatSettingsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchChatSettingsArgs.Validate
+  nameWithType: PatchChatSettingsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs
   name: PatchPollArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html
@@ -16793,6 +18211,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Status
   nameWithType: PatchPollArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PatchPollArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PatchPollArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPollArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPollArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPollArgs.Validate
+  nameWithType: PatchPollArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs
   name: PatchPredictionArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html
@@ -16812,19 +18246,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.BroadcasterId
   nameWithType: PatchPredictionArgs.BroadcasterId
-- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Id
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
-  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
-  nameWithType: PatchPredictionArgs.Id
-- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id*
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId
+  name: PredictionId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_PredictionId
+  commentId: P:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId
+  nameWithType: PatchPredictionArgs.PredictionId
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId*
+  name: PredictionId
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_PredictionId_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId
   isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Id
-  nameWithType: PatchPredictionArgs.Id
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.PredictionId
+  nameWithType: PatchPredictionArgs.PredictionId
 - uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Scopes
   name: Scopes
   href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Scopes
@@ -16851,6 +18285,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Status
   nameWithType: PatchPredictionArgs.Status
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PatchPredictionArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PatchPredictionArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.Validate
+  nameWithType: PatchPredictionArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.WinningId
   name: WinningId
   href: api/AuxLabs.SimpleTwitch.Rest.PatchPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PatchPredictionArgs_WinningId
@@ -17210,6 +18660,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Scopes
   nameWithType: PostAnnouncementArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.html#AuxLabs_SimpleTwitch_Rest_PostAnnouncementArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostAnnouncementArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostAnnouncementArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.html#AuxLabs_SimpleTwitch_Rest_PostAnnouncementArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAnnouncementArgs.Validate
+  nameWithType: PostAnnouncementArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs
   name: PostAppAccessTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.html
@@ -17268,6 +18734,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.GrantType
   nameWithType: PostAppAccessTokenArgs.GrantType
+- uid: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostAppAccessTokenArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate()
+  nameWithType: PostAppAccessTokenArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostAppAccessTokenArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAppAccessTokenArgs.Validate
+  nameWithType: PostAppAccessTokenArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs
   name: PostAutomodMessageArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html
@@ -17339,6 +18818,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.UserId
   nameWithType: PostAutomodMessageArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostAutomodMessageArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostAutomodMessageArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.html#AuxLabs_SimpleTwitch_Rest_PostAutomodMessageArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostAutomodMessageArgs.Validate
+  nameWithType: PostAutomodMessageArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs
   name: PostChannelCommercialArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html
@@ -17354,15 +18849,15 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.New()
   nameWithType: PostChannelCommercialArgs.PostChannelCommercialArgs()
   nameWithType.vb: PostChannelCommercialArgs.New()
-- uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.#ctor(System.String,System.Int32)
-  name: PostChannelCommercialArgs(string, int)
-  href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html#AuxLabs_SimpleTwitch_Rest_PostChannelCommercialArgs__ctor_System_String_System_Int32_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.#ctor(System.String,System.Int32)
-  name.vb: New(String, Integer)
-  fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.PostChannelCommercialArgs(string, int)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.New(String, Integer)
-  nameWithType: PostChannelCommercialArgs.PostChannelCommercialArgs(string, int)
-  nameWithType.vb: PostChannelCommercialArgs.New(String, Integer)
+- uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.#ctor(System.String,System.Nullable{System.Int32})
+  name: PostChannelCommercialArgs(string, int?)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html#AuxLabs_SimpleTwitch_Rest_PostChannelCommercialArgs__ctor_System_String_System_Nullable_System_Int32__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.#ctor(System.String,System.Nullable{System.Int32})
+  name.vb: New(String, Integer?)
+  fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.PostChannelCommercialArgs(string, int?)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.New(String, Integer?)
+  nameWithType: PostChannelCommercialArgs.PostChannelCommercialArgs(string, int?)
+  nameWithType.vb: PostChannelCommercialArgs.New(String, Integer?)
 - uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.#ctor*
   name: PostChannelCommercialArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html#AuxLabs_SimpleTwitch_Rest_PostChannelCommercialArgs__ctor_
@@ -17425,12 +18920,56 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Scopes
   nameWithType: PostChannelCommercialArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html#AuxLabs_SimpleTwitch_Rest_PostChannelCommercialArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostChannelCommercialArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostChannelCommercialArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.html#AuxLabs_SimpleTwitch_Rest_PostChannelCommercialArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostChannelCommercialArgs.Validate
+  nameWithType: PostChannelCommercialArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs
   name: PostClipArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html
   commentId: T:AuxLabs.SimpleTwitch.Rest.PostClipArgs
   fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs
   nameWithType: PostClipArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor
+  name: PostClipArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.PostClipArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.New()
+  nameWithType: PostClipArgs.PostClipArgs()
+  nameWithType.vb: PostClipArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor(System.String,System.Nullable{System.Boolean})
+  name: PostClipArgs(string, bool?)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs__ctor_System_String_System_Nullable_System_Boolean__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor(System.String,System.Nullable{System.Boolean})
+  name.vb: New(String, Boolean?)
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.PostClipArgs(string, bool?)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.New(String, Boolean?)
+  nameWithType: PostClipArgs.PostClipArgs(string, bool?)
+  nameWithType.vb: PostClipArgs.New(String, Boolean?)
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor*
+  name: PostClipArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.PostClipArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.New
+  nameWithType: PostClipArgs.PostClipArgs
+  nameWithType.vb: PostClipArgs.New
 - uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.BroadcasterId
   name: BroadcasterId
   href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_BroadcasterId
@@ -17470,6 +19009,34 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.HasDelay
   nameWithType: PostClipArgs.HasDelay
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.PostClipArgs)~System.String
+  name: implicit operator string(PostClipArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_PostClipArgs__System_String
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.PostClipArgs)~System.String
+  name.vb: CType(PostClipArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.implicit operator string(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CType(AuxLabs.SimpleTwitch.Rest.PostClipArgs)
+  nameWithType: PostClipArgs.implicit operator string(PostClipArgs)
+  nameWithType.vb: PostClipArgs.CType(PostClipArgs)
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.PostClipArgs
+  name: implicit operator PostClipArgs(string)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_op_Implicit_System_String__AuxLabs_SimpleTwitch_Rest_PostClipArgs
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit(System.String)~AuxLabs.SimpleTwitch.Rest.PostClipArgs
+  name.vb: CType(String)
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.implicit operator AuxLabs.SimpleTwitch.Rest.PostClipArgs(string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CType(String)
+  nameWithType: PostClipArgs.implicit operator PostClipArgs(string)
+  nameWithType.vb: PostClipArgs.CType(String)
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit*
+  name: implicit operator string
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_op_Implicit_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.implicit operator string
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.CType
+  nameWithType: PostClipArgs.implicit operator string
+  nameWithType.vb: PostClipArgs.CType
 - uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
   name: Scopes
   href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_Scopes
@@ -17483,6 +19050,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Scopes
   nameWithType: PostClipArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostClipArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostClipArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostClipArgs.html#AuxLabs_SimpleTwitch_Rest_PostClipArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostClipArgs.Validate
+  nameWithType: PostClipArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs
   name: PostEnforcementStatusArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html
@@ -17515,6 +19098,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Scopes
   nameWithType: PostEnforcementStatusArgs.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostEnforcementStatusArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostEnforcementStatusArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.html#AuxLabs_SimpleTwitch_Rest_PostEnforcementStatusArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEnforcementStatusArgs.Validate
+  nameWithType: PostEnforcementStatusArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs
   name: PostEventSubscriptionArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html
@@ -17534,19 +19133,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Condition
   nameWithType: PostEventSubscriptionArgs.Condition
-- uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Cost
-  commentId: P:AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost
-  fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost
-  nameWithType: PostEventSubscriptionArgs.Cost
-- uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost*
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Cost_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Cost
-  nameWithType: PostEventSubscriptionArgs.Cost
 - uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Transport
   name: Transport
   href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Transport
@@ -17573,6 +19159,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Type
   nameWithType: PostEventSubscriptionArgs.Type
+- uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate()
+  nameWithType: PostEventSubscriptionArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Validate
+  nameWithType: PostEventSubscriptionArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.Version
   name: Version
   href: api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionArgs.html#AuxLabs_SimpleTwitch_Rest_PostEventSubscriptionArgs_Version
@@ -17657,6 +19256,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Title
   nameWithType: PostPredictionArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostPredictionArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostPredictionArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.html#AuxLabs_SimpleTwitch_Rest_PostPredictionArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostPredictionArgs.Validate
+  nameWithType: PostPredictionArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs
   name: PostRefreshTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.html
@@ -17708,6 +19323,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.RefreshToken
   nameWithType: PostRefreshTokenArgs.RefreshToken
+- uid: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostRefreshTokenArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate()
+  nameWithType: PostRefreshTokenArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostRefreshTokenArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRefreshTokenArgs.Validate
+  nameWithType: PostRefreshTokenArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs
   name: PostRevokeTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.html
@@ -17753,6 +19381,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Token
   nameWithType: PostRevokeTokenArgs.Token
+- uid: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostRevokeTokenArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate()
+  nameWithType: PostRevokeTokenArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostRevokeTokenArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRevokeTokenArgs.Validate
+  nameWithType: PostRevokeTokenArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs
   name: PostRewardArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html
@@ -17941,12 +19582,56 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Title
   nameWithType: PostRewardArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostRewardArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostRewardArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostRewardArgs.html#AuxLabs_SimpleTwitch_Rest_PostRewardArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostRewardArgs.Validate
+  nameWithType: PostRewardArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs
   name: PostShoutoutArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html
   commentId: T:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs
   fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs
   nameWithType: PostShoutoutArgs
+- uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor
+  name: PostShoutoutArgs()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.PostShoutoutArgs()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.New()
+  nameWithType: PostShoutoutArgs.PostShoutoutArgs()
+  nameWithType.vb: PostShoutoutArgs.New()
+- uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor(System.String,System.String,System.String)
+  name: PostShoutoutArgs(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs__ctor_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.PostShoutoutArgs(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.New(String, String, String)
+  nameWithType: PostShoutoutArgs.PostShoutoutArgs(string, string, string)
+  nameWithType.vb: PostShoutoutArgs.New(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor*
+  name: PostShoutoutArgs
+  href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.PostShoutoutArgs
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.New
+  nameWithType: PostShoutoutArgs.PostShoutoutArgs
+  nameWithType.vb: PostShoutoutArgs.New
 - uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.CreateQueryMap
   name: CreateQueryMap()
   href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs_CreateQueryMap
@@ -18012,6 +19697,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.ToBroadcasterId
   nameWithType: PostShoutoutArgs.ToBroadcasterId
+- uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PostShoutoutArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PostShoutoutArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.html#AuxLabs_SimpleTwitch_Rest_PostShoutoutArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostShoutoutArgs.Validate
+  nameWithType: PostShoutoutArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs
   name: PostUserAccessTokenArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.html
@@ -18076,6 +19777,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.RedirectUri
   nameWithType: PostUserAccessTokenArgs.RedirectUri
+- uid: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate
+  name: Validate()
+  href: api/AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostUserAccessTokenArgs_Validate
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate
+  fullName: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate()
+  nameWithType: PostUserAccessTokenArgs.Validate()
+- uid: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.html#AuxLabs_SimpleTwitch_Rest_PostUserAccessTokenArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PostUserAccessTokenArgs.Validate
+  nameWithType: PostUserAccessTokenArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.Prediction
   name: Prediction
   href: api/AuxLabs.SimpleTwitch.Rest.Prediction.html
@@ -18692,6 +20406,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Swearing
   nameWithType: PutAutomodSettingsArgs.Swearing
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PutAutomodSettingsArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PutAutomodSettingsArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.html#AuxLabs_SimpleTwitch_Rest_PutAutomodSettingsArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutAutomodSettingsArgs.Validate
+  nameWithType: PutAutomodSettingsArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PutBlockArgs
   name: PutBlockArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PutBlockArgs.html
@@ -18763,6 +20493,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.TargetUserId
   nameWithType: PutBlockArgs.TargetUserId
+- uid: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PutBlockArgs.html#AuxLabs_SimpleTwitch_Rest_PutBlockArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PutBlockArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PutBlockArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PutBlockArgs.html#AuxLabs_SimpleTwitch_Rest_PutBlockArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutBlockArgs.Validate
+  nameWithType: PutBlockArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs
   name: PutPollArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html
@@ -18860,6 +20606,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Title
   nameWithType: PutPollArgs.Title
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PutPollArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PutPollArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PutPollArgs.html#AuxLabs_SimpleTwitch_Rest_PutPollArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutPollArgs.Validate
+  nameWithType: PutPollArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs
   name: PutUserChatColorArgs
   href: api/AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.html
@@ -18931,6 +20693,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.UserId
   nameWithType: PutUserChatColorArgs.UserId
+- uid: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name: Validate(IEnumerable<string>)
+  href: api/AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.html#AuxLabs_SimpleTwitch_Rest_PutUserChatColorArgs_Validate_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Validate(IEnumerable(Of String))
+  fullName: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PutUserChatColorArgs.Validate(IEnumerable<string>)
+  nameWithType.vb: PutUserChatColorArgs.Validate(IEnumerable(Of String))
+- uid: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate*
+  name: Validate
+  href: api/AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.html#AuxLabs_SimpleTwitch_Rest_PutUserChatColorArgs_Validate_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.PutUserChatColorArgs.Validate
+  nameWithType: PutUserChatColorArgs.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.RaidCondition
   name: RaidCondition
   href: api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html
@@ -20762,15 +22540,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCategoriesAsync
   nameWithType: TwitchRestApiClient.GetCategoriesAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(System.String)
-  name: GetChannelEditorsAsync(string)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEditorsAsync_System_String_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(System.String)
-  name.vb: GetChannelEditorsAsync(String)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(string)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(String)
-  nameWithType: TwitchRestApiClient.GetChannelEditorsAsync(string)
-  nameWithType.vb: TwitchRestApiClient.GetChannelEditorsAsync(String)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  name: GetChannelEditorsAsync(GetChannelEditorsArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEditorsAsync_AuxLabs_SimpleTwitch_Rest_GetChannelEditorsArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync(AuxLabs.SimpleTwitch.Rest.GetChannelEditorsArgs)
+  nameWithType: TwitchRestApiClient.GetChannelEditorsAsync(GetChannelEditorsArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelEditorsAsync*
   name: GetChannelEditorsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelEditorsAsync_
@@ -20790,15 +22565,6 @@ references:
   commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(AuxLabs.SimpleTwitch.Rest.SearchChannelsArgs)
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(AuxLabs.SimpleTwitch.Rest.SearchChannelsArgs)
   nameWithType: TwitchRestApiClient.GetChannelsAsync(SearchChannelsArgs)
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(System.String[])
-  name: GetChannelsAsync(params string[])
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelsAsync_System_String___
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(System.String[])
-  name.vb: GetChannelsAsync(ParamArray String())
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(params string[])
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync(ParamArray String())
-  nameWithType: TwitchRestApiClient.GetChannelsAsync(params string[])
-  nameWithType.vb: TwitchRestApiClient.GetChannelsAsync(ParamArray String())
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChannelsAsync*
   name: GetChannelsAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetChannelsAsync_
@@ -20864,15 +22630,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetChattersAsync
   nameWithType: TwitchRestApiClient.GetChattersAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(System.String)
-  name: GetCheermotesAsync(string)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCheermotesAsync_System_String_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(System.String)
-  name.vb: GetCheermotesAsync(String)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(string)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(String)
-  nameWithType: TwitchRestApiClient.GetCheermotesAsync(string)
-  nameWithType.vb: TwitchRestApiClient.GetCheermotesAsync(String)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  name: GetCheermotesAsync(GetCheermotesArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCheermotesAsync_AuxLabs_SimpleTwitch_Rest_GetCheermotesArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync(AuxLabs.SimpleTwitch.Rest.GetCheermotesArgs)
+  nameWithType: TwitchRestApiClient.GetCheermotesAsync(GetCheermotesArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetCheermotesAsync*
   name: GetCheermotesAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetCheermotesAsync_
@@ -21327,15 +23090,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetShieldModeAsync
   nameWithType: TwitchRestApiClient.GetShieldModeAsync
-- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(System.Object)
-  name: GetStreamKeyAsync(object)
-  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_System_Object_
-  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(System.Object)
-  name.vb: GetStreamKeyAsync(Object)
-  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(object)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(Object)
-  nameWithType: TwitchRestApiClient.GetStreamKeyAsync(object)
-  nameWithType.vb: TwitchRestApiClient.GetStreamKeyAsync(Object)
+- uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  name: GetStreamKeyAsync(GetStreamKeyArgs)
+  href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_AuxLabs_SimpleTwitch_Rest_GetStreamKeyArgs_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  fullName: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync(AuxLabs.SimpleTwitch.Rest.GetStreamKeyArgs)
+  nameWithType: TwitchRestApiClient.GetStreamKeyAsync(GetStreamKeyArgs)
 - uid: AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.GetStreamKeyAsync*
   name: GetStreamKeyAsync
   href: api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html#AuxLabs_SimpleTwitch_Rest_TwitchRestApiClient_GetStreamKeyAsync_

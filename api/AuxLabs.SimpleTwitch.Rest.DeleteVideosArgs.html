@@ -97,6 +97,7 @@
     <div><span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>[]&gt;&gt;</div>
     <div><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span>&lt;<span class="xref">string</span>, <span class="xref">string</span>[]&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.Rest.IScoped.html">IScoped</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -177,7 +178,7 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DeleteVideosArgs : QueryMap&lt;string[]&gt;, IDictionary&lt;string, string[]&gt;, ICollection&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class DeleteVideosArgs : QueryMap&lt;string[]&gt;, IDictionary&lt;string, string[]&gt;, ICollection&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable, IScoped</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -186,7 +187,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L10">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L13">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor">DeleteVideosArgs()</h4>
@@ -198,10 +199,42 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_Collections_Generic_List_System_String__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.%23ctor(System.Collections.Generic.List%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L18">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_Collections_Generic_List_System_String__" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor(System.Collections.Generic.List{System.String})">DeleteVideosArgs(List&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeleteVideosArgs(List&lt;string&gt; videoIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">videoIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_String___.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.%23ctor(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L11">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L14">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__ctor_System_String___" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.#ctor(System.String[])">DeleteVideosArgs(params string[])</h4>
@@ -232,14 +265,45 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_VideoIds.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.VideoIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Scopes.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L8">View Source</a>
   </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Scopes_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Scopes" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Scopes">Scopes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] Scopes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_VideoIds.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.VideoIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L11">View Source</a>
+  </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_VideoIds_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.VideoIds*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_VideoIds" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.VideoIds">VideoIds</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The collection of video ids to delete.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,7 +331,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_CreateQueryMap.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CreateQueryMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L16">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L31">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_CreateQueryMap_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CreateQueryMap*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_CreateQueryMap" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.CreateQueryMap">CreateQueryMap()</h4>
@@ -294,6 +358,228 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">AuxLabs.SimpleTwitch.QueryMap&lt;string[]&gt;.CreateQueryMap()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Validate_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L23">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Validate_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_Validate_System_Collections_Generic_IEnumerable_System_String__" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})">Validate(IEnumerable&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate(IEnumerable&lt;string&gt; scopes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">scopes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_Collections_Generic_List_System_String_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.Collections.Generic.List%7BSystem.String%7D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L41">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_Collections_Generic_List_System_String_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.Collections.Generic.List{System.String}">implicit operator List&lt;string&gt;(DeleteVideosArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List&lt;string&gt;(DeleteVideosArgs value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html">DeleteVideosArgs</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_String__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.String%5B%5D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L39">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs__System_String__" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs)~System.String[]">implicit operator string[](DeleteVideosArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string[](DeleteVideosArgs value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html">DeleteVideosArgs</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.Collections.Generic.List%7BSystem.String%7D)~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L42">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_Collections_Generic_List_System_String___AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.Collections.Generic.List{System.String})~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs">implicit operator DeleteVideosArgs(List&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator DeleteVideosArgs(List&lt;string&gt; v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html">DeleteVideosArgs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.String%5B%5D)~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Videos/DeleteVideosArgs.cs/#L40">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs_op_Implicit_System_String____AuxLabs_SimpleTwitch_Rest_DeleteVideosArgs" data-uid="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs">implicit operator DeleteVideosArgs(string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator DeleteVideosArgs(string[] v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AuxLabs.SimpleTwitch.Rest.DeleteVideosArgs.html">DeleteVideosArgs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>
@@ -306,6 +592,9 @@
   </div>
   <div>
       <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Rest.IScoped.html">IScoped</a>
   </div>
 </article>
           </div>

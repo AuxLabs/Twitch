@@ -187,7 +187,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_After.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.After%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L17">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L18">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_After_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.After*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_After" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.After">After</h4>
@@ -248,7 +248,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_First.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.First%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L15">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L16">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_First_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.First*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_First" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.First">First</h4>
@@ -275,23 +275,23 @@
     </tbody>
   </table>
   <h5 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_First_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If specified, the minimum value is 1 and the maximum value is 100.</p>
+  <div class="markdown level1 remarks"><p>Optional, the minimum value is 1 the maximum is 100, defaults to 20.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_TransactionIds.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.TransactionIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L11">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L12">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_TransactionIds_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.TransactionIds*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_TransactionIds" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.TransactionIds">TransactionIds</h4>
-  <div class="markdown level1 summary"><p>A collection of transaction ids used to filter the list of transactions.</p>
+  <div class="markdown level1 summary"><p>Optional, a collection of transaction ids used to filter the list of transactions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; TransactionIds { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; TransactionIds { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,11 +303,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_TransactionIds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The minimum amount of items is 1 the maximum is 100.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -315,7 +318,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_CreateQueryMap.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.CreateQueryMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L19">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L30">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_CreateQueryMap_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.CreateQueryMap*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_CreateQueryMap" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.CreateQueryMap">CreateQueryMap()</h4>
@@ -342,6 +345,21 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">AuxLabs.SimpleTwitch.QueryMap&lt;string[]&gt;.CreateQueryMap()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_Validate.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L20">View Source</a>
+  </span>
+  <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_Validate_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate*"></a>
+  <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_Validate" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
+  </div>
   <h3 id="eii">Explicit Interface Implementations
 </h3>
   <span class="small pull-right mobile-hide">
@@ -349,7 +367,7 @@
     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs%23SimpleTwitch%23Rest%23IPaginated%23Before%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L40">View Source</a>
+    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Requests/Bits/GetExtensionTransactionsArgs.cs/#L47">View Source</a>
   </span>
   <a id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before_" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before*"></a>
   <h4 id="AuxLabs_SimpleTwitch_Rest_GetExtensionTransactionsArgs_AuxLabs_SimpleTwitch_Rest_IPaginated_Before" data-uid="AuxLabs.SimpleTwitch.Rest.GetExtensionTransactionsArgs.AuxLabs#SimpleTwitch#Rest#IPaginated#Before">IPaginated.Before</h4>
