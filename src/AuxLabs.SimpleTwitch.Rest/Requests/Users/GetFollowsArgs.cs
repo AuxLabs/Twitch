@@ -13,9 +13,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         public int? First { get; set; }
         public string After { get; set; }
 
+        public void Validate()
+        {
+            Require.NotNullOrWhitespace(FromId, nameof(FromId));
+            Require.NotNullOrWhitespace(ToId, nameof(ToId));
+            Require.AtLeast(First, 1, nameof(First));
+            Require.AtMost(First, 100, nameof(First));
+            Require.NotEmptyOrWhitespace(After, nameof(After));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = new Dictionary<string, string>();
+
             if (After != null)
                 map["from_id"] = FromId;
             if (After != null)
@@ -24,6 +34,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["first"] = First.ToString();
             if (After != null)
                 map["after"] = After;
+
             return map;
         }
 

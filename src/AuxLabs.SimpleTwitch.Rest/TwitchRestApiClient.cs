@@ -51,7 +51,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             if (!(Identity is UserIdentity user))
                 throw new TwitchException("This request cannot be made using app authorization.");
-            Require.Scopes(user.Scopes.ToArray(), request.Scopes);
+            request.Validate(user.Scopes);
         }
 
         #region Identity
@@ -135,25 +135,35 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion  
         #region Bits
 
-        public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(string broadcasterId)
-            => _api.GetCheermotesAsync(broadcasterId);
+        public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(GetCheermotesArgs args)
+        {
+            args.Validate();
+            return _api.GetCheermotesAsync(args);
+        }
         public Task<TwitchMetaResponse<ExtensionTransaction>> GetExtensionTransactionsAsync(GetExtensionTransactionsArgs args)
-            => _api.GetExtensionTransactionsAsync(args);
+        {
+            args.Validate();
+            return _api.GetExtensionTransactionsAsync(args);
+        }
 
         #endregion
         #region Channels
 
-        public Task<TwitchResponse<Channel>> GetChannelsAsync(params string[] channelIds)
-            => GetChannelsAsync(new GetChannelsArgs(channelIds));
         public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsArgs args)
-            => _api.GetChannelsAsync(args);
+        {
+            args.Validate();
+            return _api.GetChannelsAsync(args);
+        }
         public Task PatchChannelAsync(string broadcasterId, ModifyChannelArgs args)
         {
             CheckScopes(args);
             return _api.PatchChannelAsync(broadcasterId, args);
         }
-        public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(string broadcasterId)
-            => _api.GetChannelEditorsAsync(broadcasterId);
+        public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(GetChannelEditorsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetChannelEditorsAsync(args);
+        }
 
         #endregion
         #region Channel Points
@@ -210,7 +220,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<GlobalEmote>> GetEmotesAsync()
             => _api.GetEmotesAsync();
         public Task<TwitchResponse<Emote>> GetEmoteSetsAsync(GetEmoteSetsArgs args)
-            => _api.GetEmoteSetsAsync(args);
+        {
+            args.Validate();
+            return _api.GetEmoteSetsAsync(args);
+        }
         public Task<TwitchResponse<Badge>> GetBadgesAsync(string broadcasterId)
             => _api.GetBadgesAsync(broadcasterId);
         public Task<TwitchResponse<Badge>> GetBadgesAsync()
@@ -233,7 +246,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.PostShoutoutAsync(args);
         }
         public Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync(GetUserColorArgs args)
-            => _api.GetUserChatColorAsync(args);
+        {
+            args.Validate();
+            return _api.GetUserChatColorAsync(args);
+        }
         public Task PutUserChatColor(PutUserChatColorArgs args)
         {
             CheckScopes(args);
@@ -295,19 +311,31 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region EventSub
 
         public Task<EventSubResponse> PostEventSubcriptionAsync(PostEventSubscriptionArgs args)
-            => _api.PostEventSubcriptionAsync(args);
+        {
+            args.Validate();
+            return _api.PostEventSubcriptionAsync(args);
+        }
         public Task DeleteEventSubcrptionAsync(string id)
             => _api.DeleteEventSubcrptionAsync(id);
         public Task<EventSubResponse> GetEventSubcriptionsAsync(GetEventSubscriptionsArgs args)
-            => _api.GetEventSubcriptionsAsync(args);
+        {
+            args.Validate();
+            return _api.GetEventSubcriptionsAsync(args);
+        }
 
         #endregion
         #region Games
 
         public Task<TwitchMetaResponse<Game>> GetTopGamesAsync(GetTopGamesArgs args)
-            => _api.GetTopGamesAsync(args);
+        {
+            args.Validate();
+            return _api.GetTopGamesAsync(args);
+        }
         public Task<TwitchMetaResponse<Game>> GetGamesAsync(GetGamesArgs args)
-            => _api.GetGamesAsync(args);
+        {
+            args.Validate();
+            return _api.GetGamesAsync(args);
+        }
 
         #endregion
         #region Goals
@@ -344,6 +372,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
         public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(GetAutomodSettingsArgs args, PutAutomodSettingsArgs body)
         {
+            CheckScopes(args);
             CheckScopes(body);
             return _api.PutAutomodSettingsAsync(args, body);
         }
@@ -465,7 +494,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Streams
 
-        public Task<TwitchResponse<object>> GetStreamKeyAsync(object args)
+        public Task<TwitchResponse<string>> GetStreamKeyAsync(GetStreamKeyArgs args)
             => _api.GetStreamKeyAsync(args);
         public Task<TwitchResponse<object>> GetStreamsAsync(object args)
             => _api.GetStreamsAsync(args);
@@ -507,44 +536,42 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Users
 
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersArgs args)
-            => _api.GetUsersAsync(args);
-
+        {
+            args.Validate();
+            return _api.GetUsersAsync(args);
+        }
         public Task<TwitchResponse<User>> PutUserAsync(string description)
         {
             //CheckScopes(args);
             return _api.PutUserAsync(description);
         }
-
         public Task<TwitchMetaResponse<Follower>> GetFollowsAsync(GetFollowsArgs args)
-            => _api.GetFollowsAsync(args);
-
+        {
+            args.Validate();
+            return _api.GetFollowsAsync(args);
+        }
         public Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync(GetBlocksArgs args)
         {
             CheckScopes(args);
             return _api.GetBlocksAsync(args);
         }
-
         public Task PutBlockAsync(PutBlockArgs args)
         {
             CheckScopes(args);
             return _api.PutBlockAsync(args);
         }
-
         public Task DeleteBlockAsync(string targetUserId)
         {
             //CheckScopes(args);
             return _api.DeleteBlockAsync(targetUserId);
         }
-
         public Task<TwitchResponse<Extension>> GetUserExtensionsAsync()
         {
             //CheckScopes(args);
             return GetUserExtensionsAsync();
         }
-
         public Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync(string userId)
             => _api.GetActiveExtensionsAsync(userId);
-
         public Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync(ExtensionMap args)
         {
             //CheckScopes(args);
@@ -555,9 +582,15 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Videos
 
         public Task<TwitchMetaResponse<Video>> GetVideosAsync(GetVideosArgs args)
-            => _api.GetVideosAsync(args);
+        {
+            args.Validate();
+            return _api.GetVideosAsync(args);
+        }
         public Task<TwitchResponse<string>> DeleteVideoAsync(DeleteVideosArgs args)
-            => _api.DeleteVideoAsync(args);
+        {
+            CheckScopes(args);
+            return _api.DeleteVideoAsync(args);
+        }
         
         #endregion
         #region Whispers

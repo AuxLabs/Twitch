@@ -22,5 +22,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The length of time (in seconds) that the prediction will run for. </summary>
         [JsonPropertyName("prediction_window")]
         public int PredictionDurationSeconds { get; set; }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(Title, nameof(Title));
+            Require.NotNull(Outcomes, nameof(Outcomes));
+            Require.HasAtLeast(Outcomes, 2, nameof(Outcomes));
+            Require.HasAtMost(Outcomes, 10, nameof(Outcomes));
+            Require.AtLeast(PredictionDurationSeconds, 30, nameof(PredictionDurationSeconds));
+            Require.AtMost(PredictionDurationSeconds, 1800, nameof(PredictionDurationSeconds));
+        }
     }
 }

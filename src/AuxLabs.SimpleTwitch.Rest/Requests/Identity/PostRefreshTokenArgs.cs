@@ -12,11 +12,19 @@ namespace AuxLabs.SimpleTwitch.Rest
             GrantType = "refresh_token";
         }
 
+        public override void Validate()
+        {
+            base.Validate();
+            Require.NotNullOrWhitespace(RefreshToken, nameof(RefreshToken));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = base.CreateQueryMap();
+
             map["refresh_token"] = RefreshToken;
             map["grant_type"] = GrantType;
+
             return map;
         }
     }

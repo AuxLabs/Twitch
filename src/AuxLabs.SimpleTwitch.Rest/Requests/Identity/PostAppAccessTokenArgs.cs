@@ -13,6 +13,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Constant value, this is set internally. </summary>
         public string GrantType { get; protected set; } = "client_credentials";
 
+        public virtual void Validate()
+        {
+            Require.NotNullOrWhitespace(ClientId, nameof(ClientId));
+            Require.NotNullOrWhitespace(ClientSecret, nameof(ClientSecret));
+            Require.NotNullOrWhitespace(GrantType, nameof(GrantType));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             return new Dictionary<string, string>

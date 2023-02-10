@@ -15,15 +15,24 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The reason that the broadcaster is blocking the user. </summary>
         public string Reason { get; set; }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(TargetUserId, nameof(TargetUserId));
+            Require.NotEmptyOrWhitespace(Reason, nameof(Reason));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = new Dictionary<string, string>();
+
             if (TargetUserId != null)
                 map["target_user_id"] = TargetUserId;
             if (Context != null)
                 map["source_context"] = Context.Value.GetEnumMemberValue();
             if (Reason != null)
                 map["reason"] = Reason;
+
             return map;
         }
     }

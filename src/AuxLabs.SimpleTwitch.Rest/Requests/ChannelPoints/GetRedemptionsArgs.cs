@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -18,9 +17,10 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of IDs to filter the redemptions by. </summary>
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
-        public List<string> Ids { get; set; }
+        public List<string> RedemptionIds { get; set; }
 
         /// <summary> The order to sort redemptions by. </summary>
+        /// <remarks> Default sort is OLDEST </remarks>
         public RedemptionSort? Sort { get; set; }
 
         /// <inheritdoc/>
@@ -29,30 +29,41 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(RewardId, nameof(RewardId));
+            if (RedemptionIds != null)
+                Require.NotNull(Status, nameof(Status), $"Argument cannot be null when {nameof(RedemptionIds)} is specified");
+
+            Require.Exclusive(new object[] { RewardId, RedemptionIds }, new[] { nameof(RewardId), nameof(RedemptionIds) });
+
+            Require.HasAtMost(RedemptionIds, 50, nameof(RedemptionIds));
+            Require.AtLeast(First, 1 , nameof(First));
+            Require.AtMost(First, 50, nameof(First));
+            Require.NotEmptyOrWhitespace(After, nameof(After));
+        }
+
         public override IDictionary<string, string[]> CreateQueryMap()
         {
-            if (RewardId != null && Ids != null)
-                throw new ArgumentException($"{nameof(RewardId)} and {nameof(Ids)} cannot be specified on the same request.");
-            if (RewardId == null && Ids == null)
-                throw new ArgumentException($"Either {nameof(RewardId)} or {nameof(Ids)} must be specified.");
-
-            var map = new Dictionary<string, string[]>
-            {
-                ["status"] = new[] { Status.Value.GetEnumMemberValue() }
-            };
+            var map = new Dictionary<string, string[]>();
 
             if (BroadcasterId != null)
                 map["broadcaster_id"] = new[] { BroadcasterId };
             if (RewardId != null)
                 map["reward_id"] = new[] { RewardId };
-            if (Ids != null)
-                map["id"] = Ids.ToArray();
+            if (Status != null)
+                map["status"] = new[] { Status.Value.GetEnumMemberValue() };
+            if (RedemptionIds != null)
+                map["id"] = RedemptionIds.ToArray();
             if (Sort != null)
                 map["sort"] = new[] { Sort.Value.GetEnumMemberValue() };
             if (After != null)
                 map["after"] = new[] { After };
             if (First != null)
                 map["first"] = new[] { First.Value.ToString() };
+
             return map;
         }
 

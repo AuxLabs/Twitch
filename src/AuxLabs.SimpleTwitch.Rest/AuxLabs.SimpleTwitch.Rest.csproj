@@ -24,7 +24,6 @@
     <Folder Include="Requests\Music\" />
     <Folder Include="Requests\Tags\" />
     <Folder Include="Requests\Subscriptions\" />
-    <Folder Include="Requests\Streams\" />
     <Folder Include="Requests\Schedule\" />
     <Folder Include="Requests\Raids\" />
   </ItemGroup>

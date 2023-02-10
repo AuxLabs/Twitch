@@ -32,5 +32,22 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("channel_points_per_vote")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public int? ChannelPointsPerVote { get; set; }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(Title, nameof(Title));
+            Require.NotNull(Choices, nameof(Choices));
+            Require.HasAtLeast(Choices, 2, nameof(Choices));
+            Require.HasAtMost(Choices, 5, nameof(Choices));
+            Require.AtLeast(DurationSeconds, 15, nameof(DurationSeconds));
+            Require.AtMost(DurationSeconds, 1800, nameof(DurationSeconds));
+
+            if (ChannelPointsPerVote != null)
+                IsChannelPointsVotingEnabled = true;
+            Require.AtLeast(ChannelPointsPerVote, 1, nameof(ChannelPointsPerVote));
+            Require.AtMost(ChannelPointsPerVote, 1000000, nameof(ChannelPointsPerVote));
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -17,20 +16,27 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
         public List<string> Ids { get; set; }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(RewardId, nameof(RewardId));
+            Require.NotNull(Ids, nameof(Ids));
+            Require.HasAtLeast(Ids, 1, nameof(Ids));
+            Require.HasAtMost(Ids, 50, nameof(Ids));
+        }
+
         public override IDictionary<string, string[]> CreateQueryMap()
         {
-            if (RewardId != null && Ids != null)
-                throw new ArgumentException($"{nameof(RewardId)} and {nameof(Ids)} cannot be specified on the same request.");
-            if (RewardId == null && Ids == null)
-                throw new ArgumentException($"Either {nameof(RewardId)} or {nameof(Ids)} must be specified.");
-
             var map = new Dictionary<string, string[]>();
+
             if (BroadcasterId != null)
                 map["broadcaster_id"] = new[] { BroadcasterId };
             if (RewardId != null)
                 map["reward_id"] = new[] { RewardId };
             if (Ids != null)
                 map["id"] = Ids.ToArray();
+
             return map;
         }
     }

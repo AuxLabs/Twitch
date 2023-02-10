@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,5 +9,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The scopes required for this request. </summary>
         [JsonIgnore]
         string[] Scopes { get; }
+
+        void Validate(IEnumerable<string> scopes);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -12,7 +13,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The ID of the prediction to update. </summary>
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string PredictionId { get; set; }
 
         /// <summary> The status to set the prediction to. </summary>
         [JsonPropertyName("status")]
@@ -22,5 +23,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("winning_outcome_id")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string WinningId { get; set; } = null;
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(PredictionId, nameof(PredictionId));
+            if (Status == PredictionStatus.Resolved)
+                Require.NotNullOrWhitespace(WinningId, nameof(WinningId));
+        }
     }
 }

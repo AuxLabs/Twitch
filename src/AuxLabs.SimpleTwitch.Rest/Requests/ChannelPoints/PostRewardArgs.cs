@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -72,5 +73,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("should_redemptions_skip_request_queue")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public bool? ShouldSkipRequestQueue { get; set; }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotEmptyOrWhitespace(Title, nameof(Title));
+            Require.LengthAtMost(Title, 45, nameof(Title));
+            Require.NotEmptyOrWhitespace(Prompt, nameof(Prompt));
+            Require.LengthAtMost(Prompt, 45, nameof(Prompt));
+            Require.AtLeast(Cost, 1, nameof(Cost));
+            Require.AtLeast(MaxPerStream, 1, nameof(MaxPerStream));
+            Require.AtLeast(MaxPerUser, 1, nameof(MaxPerUser));
+            Require.AtLeast(GlobalCooldownSeconds, 1, nameof(GlobalCooldownSeconds));
+        }
     }
 }

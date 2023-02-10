@@ -15,15 +15,26 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the broadcaster or a user that is one of the broadcaster’s moderators. </summary>
         public string ModeratorId { get; set; }
 
+        public PostShoutoutArgs() { }
+        public PostShoutoutArgs(string fromBroadcasterId, string toBroadcasterId, string moderatorId)
+            => (FromBroadcasterId, ToBroadcasterId, ModeratorId) = (fromBroadcasterId, toBroadcasterId, moderatorId);
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(FromBroadcasterId, nameof(FromBroadcasterId));
+            Require.NotNullOrWhitespace(ToBroadcasterId, nameof(ToBroadcasterId));
+            Require.NotNullOrWhitespace(ModeratorId, nameof(ModeratorId));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
+            return new Dictionary<string, string>
             {
                 ["from_broadcaster_id"] = FromBroadcasterId,
                 ["to_broadcaster_id"] = ToBroadcasterId,
                 ["moderator_id"] = ModeratorId
             };
-            return map;
         }
     }
 }

@@ -16,17 +16,24 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Turbo and Prime users may specify a custom color. </summary>
         public Color? CustomColor { get; set; }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(UserId, nameof(UserId));
+            Require.Exclusive(new object[] { Color, CustomColor }, new[] { nameof(Color), nameof(CustomColor) });
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
-            {
-                ["user_id"] = UserId
-            };
+            var map = new Dictionary<string, string>();
 
+            if (UserId != null) 
+                map["user_id"] = UserId;
             if (Color != null)
                 map["color"] = Color.Value.GetEnumMemberValue();
             if (CustomColor != null)
                 map["color"] = ColorTranslator.ToHtml(CustomColor.Value);
+
             return map;
         }
     }

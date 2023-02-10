@@ -18,10 +18,22 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The transport details that you want Twitch to use when sending you notifications. </summary>
         [JsonPropertyName("transport")]
-        public AcceptedTransport Transport { get; set; }
+        public Transport Transport { get; set; }
 
-        /// <summary> The amount that the subscription counts against your limit. </summary>
-        [JsonPropertyName("cost")]
-        public int Cost { get; set; }
+        public void Validate()
+        {
+            Require.NotEmptyOrWhitespace(Version, nameof(Version));
+            Require.NotNull(Condition, nameof(Condition));
+            Require.NotNull(Transport, nameof(Transport));
+
+            if (Transport.Method == TransportMethod.WebSocket)
+                Require.NotNullOrWhitespace(Transport.SessionId, nameof(Transport.SessionId), "Argument cannot be blank when using WebSocket Transport");
+
+            if (Transport.Method == TransportMethod.Webhook)
+            {
+                Require.NotNullOrWhitespace(Transport.Callback, nameof(Transport.Callback), "Argument cannot be blank when using Webhook Transport");
+                Require.NotNullOrWhitespace(Transport.Secret, nameof(Transport.Secret), "Argument cannot be blank when using Webhook Transport");
+            }
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public bool? OnlyManagebleRewards { get; set; }
 
         /// <summary> A list of IDs to filter the rewards by. </summary>
+        /// <remarks> You may specify a maximum of 50 IDs. </remarks>
         public IEnumerable<string> CustomRewardIds { get; set; }
 
         public GetRewardArgs() { }
@@ -26,17 +27,24 @@ namespace AuxLabs.SimpleTwitch.Rest
             CustomRewardIds = customRewardIds.ToList();
         }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.HasAtMost(CustomRewardIds, 50, nameof(CustomRewardIds));
+        }
+
         public override IDictionary<string, string[]> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>
-            {
-                ["broadcaster_id"] = new[] { BroadcasterId }
-            };
-
+            var map = new Dictionary<string, string[]>();
+            
+            if (BroadcasterId != null)
+                map["broadcaster_id"] = new[] { BroadcasterId };
             if (CustomRewardIds != null)
                 map["id"] = CustomRewardIds.ToArray();
             if (OnlyManagebleRewards != null)
-                map["only_manageable_rewards"] = new[] { OnlyManagebleRewards.Value ? "1" : "0" };
+                map["only_manageable_rewards"] = new[] { OnlyManagebleRewards.Value.ToString() };
+
             return map;
         }
     }

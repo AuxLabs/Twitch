@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -17,5 +18,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The status to set the poll to. </summary>
         [JsonPropertyName("status")]
         public PollStatus Status { get; set; }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(PollId, nameof(PollId));
+        }
     }
 }

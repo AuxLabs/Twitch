@@ -15,6 +15,12 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public string After { get; set; }
 
+        public void Validate()
+        {
+            Require.NotEmptyOrWhitespace(UserId, nameof(UserId));
+            Require.NotEmptyOrWhitespace(After, nameof(After));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = new Dictionary<string, string>();
@@ -27,6 +33,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["user_id"] = UserId;
             if (After != null)
                 map["after"] = After;
+
             return map;
         }
 

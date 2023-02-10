@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,38 +9,52 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The default AutoMod level for the broadcaster. </summary>
         [JsonPropertyName("overall_level")]
-        public int? OverallLevel { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? OverallLevel { get; set; }
 
         /// <summary> The Automod level for discrimination against disability. </summary>
         [JsonPropertyName("disability")]
-        public int Disability { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? Disability { get; set; }
 
         /// <summary> The Automod level for hostility involving aggression. </summary>
         [JsonPropertyName("aggression")]
-        public int Aggression { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? Aggression { get; set; }
 
         /// <summary> The AutoMod level for discrimination based on sexuality, sex, or gender. </summary>
         [JsonPropertyName("sexuality_sex_or_gender")]
-        public int SexualitySexOrGender { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? SexualitySexOrGender { get; set; }
 
         /// <summary> The Automod level for discrimination against women. </summary>
         [JsonPropertyName("misogyny")]
-        public int Misogyny { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? Misogyny { get; set; }
 
         /// <summary> The Automod level for hostility involving name calling or insults. </summary>
         [JsonPropertyName("bullying")]
-        public int Bullying { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? Bullying { get; set; }
 
         /// <summary> The Automod level for profanity. </summary>
         [JsonPropertyName("swearing")]
-        public int Swearing { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? Swearing { get; set; }
 
         /// <summary> The Automod level for racial discrimination. </summary>
         [JsonPropertyName("race_ethnicity_or_religion")]
-        public int RaceEthnicityOrReligion { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? RaceEthnicityOrReligion { get; set; }
 
         /// <summary> The Automod level for sexual content. </summary>
         [JsonPropertyName("sex_based_terms")]
-        public int SexBasedTerms { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public AutomodFilter? SexBasedTerms { get; set; }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+        }
     }
 }

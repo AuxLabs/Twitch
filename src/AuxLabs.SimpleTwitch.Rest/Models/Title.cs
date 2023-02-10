@@ -8,7 +8,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Value { get; }
 
         [JsonConstructor]
-        public Title(string value) { Value = value; }
+        public Title(string value) 
+        {
+            Require.LengthAtMost(value, 25, nameof(value));
+            Value = value; 
+        }
 
         public override string ToString() => Value;
         public static implicit operator string(Title value) => value.ToString();

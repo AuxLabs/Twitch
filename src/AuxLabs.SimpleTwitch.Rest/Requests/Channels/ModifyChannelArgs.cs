@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -33,5 +34,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("tags")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public List<string> Tags { get; set; } = null;
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotEmptyOrWhitespace(Title, nameof(Title));
+            Require.AtMost(Delay, 900, nameof(Delay));
+            Require.HasAtMost(Tags, 10, nameof(Tags));
+            if (Tags != null)
+            {
+                foreach (var tag in Tags)
+                    Require.LengthAtMost(tag, 25, nameof(Tags));
+            }
+        }
     }
 }

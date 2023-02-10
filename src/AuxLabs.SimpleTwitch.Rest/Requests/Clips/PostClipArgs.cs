@@ -12,16 +12,32 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Determines whether the API captures the clip at the moment the viewer requests it or after a delay. </summary>
         public bool? HasDelay { get; set; }
 
+        public PostClipArgs() { }
+        public PostClipArgs(string broadcasterId, bool? hasDelay = null)
+        {
+            BroadcasterId = broadcasterId;
+            HasDelay = hasDelay;
+        }
+
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
-            {
-                ["broadcaster_id"] = BroadcasterId,
-            };
+            var map = new Dictionary<string, string>();
 
+            if (BroadcasterId != null)
+                map["broadcaster_id"] = BroadcasterId;
             if (HasDelay != null)
                 map["has_delay"] = HasDelay.ToString();
+
             return map;
         }
+
+        public static implicit operator string(PostClipArgs value) => value.BroadcasterId;
+        public static implicit operator PostClipArgs(string v) => new PostClipArgs(v);
     }
 }

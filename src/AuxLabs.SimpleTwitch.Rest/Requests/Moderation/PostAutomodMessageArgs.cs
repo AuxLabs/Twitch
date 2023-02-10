@@ -15,6 +15,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The action to take for the message. </summary>
         public AutomodAction Action { get; set; }
 
+        public void Validate(IEnumerable<string> scopes)
+        {
+            Require.Scopes(scopes, Scopes);
+            Require.NotNullOrWhitespace(UserId, nameof(UserId));
+            Require.NotNullOrWhitespace(MessageId, nameof(MessageId));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             return new Dictionary<string, string>()

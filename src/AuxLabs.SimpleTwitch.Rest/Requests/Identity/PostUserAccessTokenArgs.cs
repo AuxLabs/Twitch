@@ -15,12 +15,20 @@ namespace AuxLabs.SimpleTwitch.Rest
             GrantType = "authorization_code";
         }
 
+        public override void Validate()
+        {
+            base.Validate();
+            Require.NotNullOrWhitespace(AuthorizationCode, nameof(AuthorizationCode));
+            Require.NotNullOrWhitespace(RedirectUri, nameof(RedirectUri));
+        }
+
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = base.CreateQueryMap();
+
             map["code"] = AuthorizationCode;
             map["redirect_uri"] = RedirectUri;
-            map["grant_type"] = GrantType;
+
             return map;
         }
     }
