@@ -26,9 +26,11 @@ For examples and sample projects look at [the examples repository](https://githu
     
 - [x] Global ratelimit handling
 - [ ] Unique endpoint ratelimit handling
+- [x] Check arguments for validity before requests
+- [x] Scope confirmation before requests
 - [ ] Automatic token refresh
-- [x] Provide a custom ratelimiter
-- [x] Connect to a custom rest api url
+- [x] Ability to provide a custom ratelimiter
+- [x] Ability to connect to a custom rest api url
 - [ ] All endpoint categories progress
   - [x] 5/5 Identity
   - [x] 1/1 Ads
@@ -52,7 +54,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] 0/6 Schedule
   - [ ] 0/2 Search
   - [ ] 0/3 Music
-  - [ ] 0/5 Streams
+  - [ ] 1/5 Streams
   - [ ] 0/2 Subscriptions
   - [ ] 0/3 Tags
   - [ ] 0/2 Teams
