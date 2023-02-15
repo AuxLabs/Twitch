@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class ClearChatEventArgs
+    public class ClearChatEventArgs : IChatUserRelation
     {
         /// <summary> The tags for this event, if provided. </summary>
         public ClearChatTags Tags { get; set; }
@@ -27,5 +28,13 @@ namespace AuxLabs.SimpleTwitch.Chat
                 args.Tags = (ClearChatTags)payload.Tags;
             return args;
         }
+
+        Color? IChatUser.Color => null;
+        string IUserRelation.RelatedId => Tags.TargetUserId;
+        string IUserRelation.RelatedName => UserName;
+        string IUserRelation.RelatedDisplayName => null;
+        string IUser.Name => ChannelName;
+        string IUser.DisplayName => null;
+        string IEntity<string>.Id => Tags.ChannelId;
     }
 }

@@ -1,14 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
-    <Description>A low level dotnet implementation of the Twitch EventSub API.</Description>
+    <Description>The core components for implementing Twitch's EventSub API.</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
     <ProjectReference Include="..\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
-    <ProjectReference Include="..\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj" />
   </ItemGroup>
-
 </Project>

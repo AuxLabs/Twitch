@@ -2,13 +2,12 @@
 	<Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
 	<PropertyGroup>
-		<Description>A low level dotnet implementation of the Twitch Chat API.</Description>
+		<Description>A minimal implementation of Twitch's Chat API over WebSocket.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
 		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Rest\AuxLabs.SimpleTwitch.Rest.csproj" />
-		<ProjectReference Include="..\AuxLabs.SimpleTwitch.Sockets\AuxLabs.SimpleTwitch.Sockets.csproj" />
+		<ProjectReference Include="..\AuxLabs.SimpleTwitch.WebSockets\AuxLabs.SimpleTwitch.WebSockets.csproj" />
 	</ItemGroup>
-
 </Project>

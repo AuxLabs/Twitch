@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../../AuxLabs.SimpleTwitch.targets" />
+
+	<PropertyGroup>
+		<Description>A minimal implementation of Twitch's EventSub over WebSocket.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\AuxLabs.SimpleTwitch.EventSub\AuxLabs.SimpleTwitch.EventSub.csproj" />
+	  <ProjectReference Include="..\AuxLabs.SimpleTwitch.WebSockets\AuxLabs.SimpleTwitch.WebSockets.csproj" />
+	</ItemGroup>
+</Project>

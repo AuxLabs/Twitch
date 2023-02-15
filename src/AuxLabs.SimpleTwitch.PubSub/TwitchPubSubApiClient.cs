@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.WebSockets;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.PubSub

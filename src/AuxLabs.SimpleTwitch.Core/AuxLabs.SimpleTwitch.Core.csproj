@@ -4,7 +4,7 @@
   <PropertyGroup>
     <RootNamespace>AuxLabs.SimpleTwitch</RootNamespace>
     <AssemblyName>AuxLabs.SimpleTwitch</AssemblyName>
-    <Description>The core components for the SimpleTwitch library.</Description>
+    <Description>The core components for implementing all of Twitch's APIs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,5 +18,4 @@
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     <PackageReference Include="System.Text.Json" Version="7.0.1" />
   </ItemGroup>
-
 </Project>

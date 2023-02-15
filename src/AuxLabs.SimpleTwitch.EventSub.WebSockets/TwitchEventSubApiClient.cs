@@ -1,18 +1,20 @@
-﻿using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.Rest;
+using AuxLabs.SimpleTwitch.WebSockets;
 using System;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class TwitchEventSubApiClient : BaseSocketClient<EventSubWebSocketPayload>
+    public class TwitchEventSubApiClient : BaseSocketClient<EventSubFrame>
     {
         #region Events
 
-        /// <summary> Triggered when the server provides a login session. </summary>
-        public event Action<Session> LoggedIn;
+        /// <summary> Triggered when a session is created after connection. </summary>
+        public event Action<Session> SessionCreated;
+        public event Action<Session> Reconnect;
 
         public event Action<ChannelUpdateEventArgs, EventSubcription> ChannelUpdated;
-        public event Action<FollowEventArgs, EventSubcription> ChannelFollow;
+        public event Action<Follower, EventSubcription> ChannelFollow;
         public event Action<SubscriptionEventArgs, EventSubcription> Subscription;
         public event Action<SubscriptionEndedEventArgs, EventSubcription> SubscriptionEnd;
         public event Action<SubscriptionGiftedEventArgs, EventSubcription> SubscriptionGifted;
@@ -75,7 +77,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         // config variables
         public readonly bool ThrowOnUnknownEvent;
 
-        protected override ISerializer<EventSubWebSocketPayload> Serializer { get; }
+        protected override ISerializer<EventSubFrame> Serializer { get; }
 
         private string _url;
 
@@ -90,7 +92,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
             _url = url;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
 
-            Serializer = config.Serializer ?? new JsonSerializer<EventSubWebSocketPayload>();
+            Serializer = config.Serializer ?? new JsonSerializer<EventSubFrame>();
         }
 
         public override void Run() => Run(_url);
@@ -106,19 +108,21 @@ namespace AuxLabs.SimpleTwitch.EventSub
             throw new NotImplementedException();
         }
 
-        protected override void HandleEvent(EventSubWebSocketPayload payload, TaskCompletionSource<bool> readySignal)
+        protected override void HandleEvent(EventSubFrame payload, TaskCompletionSource<bool> readySignal)
         {
             switch (payload.Metadata.Type)
             {
                 case MessageType.Welcome:
                     Session = payload.Payload.Session;
-                    LoggedIn?.Invoke(Session);
+                    SessionCreated?.Invoke(Session);
                     break;
 
-                case MessageType.KeepAlive:
+                case MessageType.KeepAlive:     // Send to log event, we don't need to do anything with this event
                     break;
 
                 case MessageType.Reconnect:
+                    Session = payload.Payload.Session;
+                    Reconnect?.Invoke(Session);
                     break;
 
                 case MessageType.Revocation:

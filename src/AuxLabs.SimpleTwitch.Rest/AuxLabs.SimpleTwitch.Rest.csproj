@@ -2,7 +2,7 @@
   <Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
   <PropertyGroup>
-	  <Description>A low level dotnet implementation of the Twitch Rest API.</Description>
+	  <Description>A minimal implementation of Twitch's Rest APIs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,5 +27,4 @@
     <Folder Include="Requests\Schedule\" />
     <Folder Include="Requests\Raids\" />
   </ItemGroup>
-
 </Project>

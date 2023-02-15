@@ -11,9 +11,6 @@ namespace AuxLabs.SimpleTwitch.EventSub
         [JsonPropertyName("challenge")]
         public string Challenge { get; set; }
 
-        [JsonPropertyName("session")]
-        public Session Session { get; set; }
-
         [JsonPropertyName("subscription")]
         public EventSubcription Subscription { get; set; }
 
@@ -24,7 +21,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public static Dictionary<EventSubType, Type> EventTypeSelector => new Dictionary<EventSubType, Type>()
         {
             [EventSubType.ChannelUpdate] = typeof(ChannelUpdateEventArgs),
-            [EventSubType.ChannelFollow] = typeof(FollowEventArgs),
+            [EventSubType.ChannelFollow] = typeof(Follower),
             [EventSubType.ChannelSubscribe] = typeof(SubscriptionEventArgs),
             [EventSubType.ChannelSubscriptionEnd] = typeof(SubscriptionEndedEventArgs),
             [EventSubType.ChannelSubscriptionGift] = typeof(SubscriptionGiftedEventArgs),

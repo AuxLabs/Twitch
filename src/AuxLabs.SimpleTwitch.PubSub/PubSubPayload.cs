@@ -1,4 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Sockets;
+﻿using AuxLabs.SimpleTwitch.WebSockets;
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
