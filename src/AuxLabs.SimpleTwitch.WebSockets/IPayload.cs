@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Sockets
+namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public interface IPayload
     {

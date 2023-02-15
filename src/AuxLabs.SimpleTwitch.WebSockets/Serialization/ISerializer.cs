@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuxLabs.SimpleTwitch.Sockets
+namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public interface ISerializer<TPayload>
     {

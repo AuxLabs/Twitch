@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json;
 
-namespace AuxLabs.SimpleTwitch.Sockets
+namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public class JsonSerializer<TPayload> : ISerializer<TPayload>
     {

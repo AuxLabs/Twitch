@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.WebSockets;
 
-namespace AuxLabs.SimpleTwitch.Sockets
+namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public class WebSocketClosedException : Exception
     {

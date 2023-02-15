@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuxLabs.SimpleTwitch.Sockets
+namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public abstract class BaseSocketClient<TPayload> where TPayload : IPayload
     {
@@ -64,8 +64,8 @@ namespace AuxLabs.SimpleTwitch.Sockets
         public abstract void Run();
         public abstract Task RunAsync();
         protected virtual void SendIdentify() { }
-        protected abstract void SendHeartbeat();
-        protected abstract void SendHeartbeatAck();
+        protected virtual void SendHeartbeat() { }
+        protected virtual void SendHeartbeatAck() { }
         protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
 
         protected void Run(string url)
@@ -133,7 +133,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
                         RunSendAsync(client, cancelToken),
                         RunReceiveAsync(client, readySignal, cancelToken)
                     };
-                    if (_heartbeatRate > -1)
+                    if (_heartbeatRate > -1)    // Heartbeats are only required by PubSub
                         tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
 
                     SendIdentify();
@@ -285,7 +285,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
                             case 4004: // Reconnect grace time expired
                             case 4005: // Network timeout
                             case 4006: // Network error
-                            //case 4007: // Invalid reconnect
+                            case 4007: // Invalid reconnect
                                 return true;
                         }
                     }
@@ -357,7 +357,7 @@ namespace AuxLabs.SimpleTwitch.Sockets
                 ReceivedData = true;
 
                 if (result.CloseStatus != null)
-                    throw new Sockets.WebSocketClosedException(result.CloseStatus.Value, result.CloseStatusDescription);
+                    throw new WebSocketClosedException(result.CloseStatus.Value, result.CloseStatusDescription);
             }
             while (!result.EndOfMessage);
 

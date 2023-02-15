@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.SimpleTwitch.Sockets
+﻿namespace AuxLabs.SimpleTwitch.WebSockets
 {
     public enum ConnectionState
     {
