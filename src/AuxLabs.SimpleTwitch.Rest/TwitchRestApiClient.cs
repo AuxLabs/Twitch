@@ -106,7 +106,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Ads
 
-        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostChannelCommercialArgs args)
+        public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args)
         {
             CheckScopes(args);
             return _api.PostCommercialAsync(args);
@@ -153,10 +153,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             args.Validate();
             return _api.GetChannelsAsync(args);
         }
-        public Task PatchChannelAsync(string broadcasterId, ModifyChannelArgs args)
+        public Task PatchChannelAsync(PatchChannelArgs args, PatchChannelBody body)
         {
             CheckScopes(args);
-            return _api.PatchChannelAsync(broadcasterId, args);
+            body.Validate();
+            return _api.PatchChannelAsync(args, body);
         }
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(GetChannelEditorsArgs args)
         {
@@ -167,13 +168,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Channel Points
 
-        public Task<TwitchResponse<Reward>> PostRewardsAsync(string broadcasterId, PostRewardArgs args)
+        public Task<TwitchResponse<Reward>> PostRewardsAsync(PostRewardArgs args, PostRewardBody body)
         {
             CheckScopes(args);
-            return _api.PostRewardsAsync(broadcasterId, args);
+            body.Validate();
+            return _api.PostRewardsAsync(args, body);
         }
-        public Task DeleteRewardAsync(string broadcasterId, string customRewardId)
-            => _api.DeleteRewardAsync(broadcasterId, customRewardId);
+        public Task DeleteRewardAsync(ManageRewardArgs args)
+        {
+            CheckScopes(args);
+            return _api.DeleteRewardAsync(args);
+        }
         public Task<TwitchResponse<Reward>> GetRewardsAsync(GetRewardArgs args)
         {
             CheckScopes(args);
@@ -184,10 +189,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             CheckScopes(args);
             return _api.GetRewardRedemptionAsync(args);
         }
-        public Task<TwitchResponse<Reward>> PatchRewardAsync(string broadcasterId, string rewardId, PostRewardArgs args)
+        public Task<TwitchResponse<Reward>> PatchRewardAsync(ManageRewardArgs args, PostRewardBody body)
         {
             CheckScopes(args);
-            return _api.PatchRewardAsync(broadcasterId, rewardId, args);
+            body.Validate();
+            return _api.PatchRewardAsync(args, body);
         }
         public Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
         {
@@ -378,13 +384,18 @@ namespace AuxLabs.SimpleTwitch.Rest
             CheckScopes(body);
             return _api.PutAutomodSettingsAsync(args, body);
         }
-        public Task<TwitchMetaResponse<Ban>> GetBannedUsersAsync(GetBannedUsersArgs args)
+        public Task<TwitchMetaResponse<BannedUser>> GetBannedUsersAsync(GetBannedUsersArgs args)
         {
             CheckScopes(args);
             return _api.GetBannedUsersAsync(args);
         }
-        public Task<TwitchResponse<object>> PostBanAsync(object args)
-            => _api.PostBanAsync(args);
+        public Task<TwitchResponse<Ban>> PostBanAsync(PostBanArgs args, PostBanBody body)
+        {
+            CheckScopes(args);
+            body.Validate();
+            return _api.PostBanAsync(args, body);
+        }
+
         public Task<TwitchResponse<object>> DeleteBanAsync(object args)
             => _api.DeleteBanAsync(args);
         public Task<TwitchResponse<object>> GetBlockedTermsAsync(object args)
@@ -453,10 +464,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Raids
 
-        public Task<TwitchResponse<object>> PostRaidAsync(object args)
-            => _api.PostRaidAsync(args);
-        public Task<TwitchResponse<object>> DeleteRaidAsync(object args)
-            => _api.DeleteRaidAsync(args);
+        public Task<TwitchResponse<Raid>> PostRaidAsync(PostRaidArgs args)
+        {
+            CheckScopes(args);
+            return _api.PostRaidAsync(args);
+        }
+        public Task DeleteRaidAsync(DeleteRaidArgs args)
+        {
+            CheckScopes(args);
+            return _api.DeleteRaidAsync(args);
+        }
 
         #endregion
         #region Schedules
