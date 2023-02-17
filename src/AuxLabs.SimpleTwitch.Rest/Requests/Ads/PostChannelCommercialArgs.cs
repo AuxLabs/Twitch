@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostChannelCommercialArgs : QueryMap, IScoped
+    public class PostCommercialBody : QueryMap, IScoped
     {
         public string[] Scopes { get; } = { "channel:edit:commercial" };
 
@@ -13,8 +13,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> If specified, the minimum value is 1 and the maximum value is 180. </remarks>
         public int? Length { get; set; }
 
-        public PostChannelCommercialArgs() { }
-        public PostChannelCommercialArgs(string broadcasterId, int? length = null)
+        public PostCommercialBody() { }
+        public PostCommercialBody(string broadcasterId, int? length = null)
         {
             BroadcasterId = broadcasterId;
             Length = length;

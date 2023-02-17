@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ModifyChannelArgs : IScoped
+    public class PatchChannelBody
     {
-        public string[] Scopes { get; } = { "channel:manage:broadcast" };
-
         /// <summary> The ID of the game that the user plays. </summary>
         [JsonPropertyName("game_id")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -35,9 +32,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public List<string> Tags { get; set; } = null;
 
-        public void Validate(IEnumerable<string> scopes)
-        {
-            Require.Scopes(scopes, Scopes);
+        public void Validate()
+        { 
             Require.NotEmptyOrWhitespace(Title, nameof(Title));
             Require.AtMost(Delay, 900, nameof(Delay));
             Require.HasAtMost(Tags, 10, nameof(Tags));

@@ -2,9 +2,9 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostRewardArgs : QueryMap, IScoped
+    public class PatchChannelArgs : IScoped
     {
-        public string[] Scopes { get; } = { "channel:manage:redemptions" };
+        public string[] Scopes { get; } = { "channel:manage:broadcast" };
 
         /// <summary>  </summary>
         public string BroadcasterId { get; set; }
@@ -13,14 +13,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             Require.Scopes(scopes, Scopes);
             Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
-        }
-
-        public override IDictionary<string, string> CreateQueryMap()
-        {
-            return new Dictionary<string, string>
-            {
-                ["broadcaster_id"] = BroadcasterId
-            };
         }
     }
 }
