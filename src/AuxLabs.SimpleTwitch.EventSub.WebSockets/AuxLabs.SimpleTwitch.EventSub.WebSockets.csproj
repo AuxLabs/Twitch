@@ -2,6 +2,7 @@
 	<Import Project="../../AuxLabs.SimpleTwitch.targets" />
 
 	<PropertyGroup>
+		<RootNamespace>AuxLabs.SimpleTwitch.EventSub</RootNamespace>
 		<Description>A minimal implementation of Twitch's EventSub over WebSocket.</Description>
 	</PropertyGroup>
 
