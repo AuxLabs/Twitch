@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutAutomodSettingsArgs : IScoped
+    public class PutAutomodSettingsBody : IScoped
     {
         public string[] Scopes { get; } = { "moderator:manage:automod_settings" };
 

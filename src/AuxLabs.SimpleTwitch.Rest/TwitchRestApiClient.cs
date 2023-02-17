@@ -233,12 +233,16 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetBadgesAsync(broadcasterId);
         public Task<TwitchResponse<Badge>> GetBadgesAsync()
             => _api.GetBadgesAsync();
-        public Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync(string broadcasterId, string moderatorId = null)
-            => _api.GetChatSettingsAsync(broadcasterId, moderatorId);
-        public Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync(string broadcasterId, string moderatorId, PatchChatSettingsArgs args)
+        public Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync(GetChatSettingsArgs args)
+        {
+            args.Validate();
+            return _api.GetChatSettingsAsync(args);
+        }
+        public Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync(PatchChatSettingsArgs args, PatchChatSettingsBody body)
         {
             CheckScopes(args);
-            return _api.PatchChatSettingsAsync(broadcasterId, moderatorId, args);
+            body.Validate();
+            return _api.PatchChatSettingsAsync(args, body);
         }
         public Task PostChatAnnouncementAsync(string broadcasterId, string moderatorId, PostAnnouncementArgs args)
         {
@@ -363,7 +367,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Moderation
 
-        public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(string broadcasterId, PostEnforcementStatusArgs args)
+        public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(string broadcasterId, PostEnforcementStatusBody args)
         {
             CheckScopes(args);
             return _api.PostEnforcementStatusAsync(broadcasterId, args);
@@ -373,12 +377,12 @@ namespace AuxLabs.SimpleTwitch.Rest
             CheckScopes(args);
             return _api.PostAutomodMessageAsync(args);
         }
-        public Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync(GetAutomodSettingsArgs args)
+        public Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync(AutomodSettingsArgs args)
         {
             CheckScopes(args);
             return _api.GetAutomodSettingsAsync(args);
         }
-        public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(GetAutomodSettingsArgs args, PutAutomodSettingsArgs body)
+        public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(AutomodSettingsArgs args, PutAutomodSettingsBody body)
         {
             CheckScopes(args);
             CheckScopes(body);
@@ -395,9 +399,12 @@ namespace AuxLabs.SimpleTwitch.Rest
             body.Validate();
             return _api.PostBanAsync(args, body);
         }
+        public Task DeleteBanAsync(DeleteBanArgs args)
+        {
+            CheckScopes(args);
+            return _api.DeleteBanAsync(args);
+        }
 
-        public Task<TwitchResponse<object>> DeleteBanAsync(object args)
-            => _api.DeleteBanAsync(args);
         public Task<TwitchResponse<object>> GetBlockedTermsAsync(object args)
             => _api.GetBlockedTermsAsync(args);
         public Task<TwitchResponse<object>> PostBlockedTermAsync(object args)

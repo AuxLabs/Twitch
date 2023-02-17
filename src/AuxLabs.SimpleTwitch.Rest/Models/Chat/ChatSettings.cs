@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ChatSettings : PatchChatSettingsArgs
+    public class ChatSettings : PatchChatSettingsBody
     {
         /// <summary> The ID of the broadcaster specified in the request. </summary>
         [JsonPropertyName("broadcaster_id")]

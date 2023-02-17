@@ -218,7 +218,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A single <see cref="ChatSettings"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/settings")]
-        Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync([Query("broadcaster_id")] string broadcasterId, [Query("moderator_id")] string moderatorId = null);
+        Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync([QueryMap] GetChatSettingsArgs args);
 
         /// <summary> Updates the broadcaster’s chat settings. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -227,7 +227,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("chat/settings")]
-        Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync([Query("broadcaster_id")] string broadcasterId, [Query("moderator_id")] string moderatorId, [Body] PatchChatSettingsArgs args);
+        Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync([QueryMap] PatchChatSettingsArgs args, [Body] PatchChatSettingsBody body);
 
         /// <summary> Sends an announcement to the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -412,7 +412,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/enforcements/status")]
-        Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([Query("broadcaster_id")] string broadcasterId, [Body] PostEnforcementStatusArgs args);
+        Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([Query("broadcaster_id")] string broadcasterId, [Body] PostEnforcementStatusBody body);
 
         /// <summary> Allow or deny the message that AutoMod flagged for review. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -429,7 +429,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/automod/settings")]
-        Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args);
+        Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args);
 
         /// <summary> Updates the broadcaster’s AutoMod settings. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -438,7 +438,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("moderation/automod/settings")]
-        Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args, [Body] PutAutomodSettingsArgs body);
+        Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args, [Body] PutAutomodSettingsBody body);
 
         /// <summary> Gets all users that the broadcaster banned or put in a timeout. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -458,8 +458,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Post("moderation/bans")]
         Task<TwitchResponse<Ban>> PostBanAsync([QueryMap] PostBanArgs args, [Body] PostBanBody body);
 
+        /// <summary> Removes the ban or timeout that was placed on the specified user. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c> moderator:manage:banned_users</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 409 Conflict </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("moderation/bans")]
-        Task<TwitchResponse<object>> DeleteBanAsync([Query] object args);
+        Task DeleteBanAsync([QueryMap] DeleteBanArgs args);
 
         [Get("moderation/blocked_terms")]
         Task<TwitchResponse<object>> GetBlockedTermsAsync([Query] object args);
