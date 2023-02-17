@@ -6,17 +6,19 @@ using System.Net.Http.Headers;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public struct RateLimitInfo
+    public readonly struct RateLimitInfo
     {
         public bool IsGlobal { get; }
+        public string Path { get; }
         public int? Limit { get; }
         public int? Remaining { get; }
         public DateTimeOffset? Reset { get; }
         public TimeSpan? Lag { get; }
 
-        internal RateLimitInfo(HttpResponseHeaders headers, string path)
+        internal RateLimitInfo(HttpHeaders headers, string path)
         {
             IsGlobal = true; // Check if path is one of TwitchRequest.GenerateBucketId
+            Path = path;
             Limit = headers.TryGetValues("RateLimit-Limit", out var values) &&
                 int.TryParse(values.First(), out var limit) ? limit : (int?)null;
             Remaining = headers.TryGetValues("RateLimit-Remaining", out values) &&
