@@ -29,8 +29,8 @@ For examples and sample projects look at [the examples repository](https://githu
 - [x] Check arguments for validity before requests
 - [x] Scope confirmation before requests
 - [ ] Automatic token refresh
-- [x] Ability to provide a custom ratelimiter
-- [x] Ability to connect to a custom rest api url
+- [x] Ability to implement a custom ratelimiter
+- [x] Ability to specify a custom rest api url
 - [ ] All endpoint categories progress
   - [x] 5/5 Identity
   - [x] 1/1 Ads
@@ -41,7 +41,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 2/2 Charity
   - [x] 12/12 Chat
   - [x] 2/2 Clips
-  - [ ] 0/4 Drops
+  - [4] 4/4 Entitlements
   - [ ] 0/12 Extensions
   - [x] 3/3 EventSub
   - [x] 2/2 Games
@@ -55,9 +55,8 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] 0/2 Search
   - [ ] 0/3 Music
   - [ ] 1/5 Streams
-  - [ ] 0/2 Subscriptions
-  - [ ] 0/3 Tags
-  - [ ] 0/2 Teams
+  - [x] 2/2 Subscriptions
+  - [x] 2/2 Teams
   - [x] 9/9 Users
   - [x] 2/2 Videos
   - [x] 1/1 Whispers
