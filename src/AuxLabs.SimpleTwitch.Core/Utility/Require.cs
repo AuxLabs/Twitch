@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch
 
         public static void Scopes(IEnumerable<string> has, string[] value)
         {
-            if (has.Any(x => value.Contains(x))) throw new MissingScopeException(value);
+            if (!has.Any(x => value.Contains(x))) throw new MissingScopeException(value);
         }
 
         #endregion
