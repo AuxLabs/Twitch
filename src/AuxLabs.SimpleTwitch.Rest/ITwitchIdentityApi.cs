@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [Header("User-Agent", "Auxlabs (https://github.com/AuxLabs/SimpleTwitch)")]
+    [Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/SimpleTwitch)")]
     public interface ITwitchIdentityApi : IDisposable
     {
         [Get("validate")]
