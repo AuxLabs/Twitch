@@ -41,7 +41,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 2/2 Charity
   - [x] 12/12 Chat
   - [x] 2/2 Clips
-  - [4] 4/4 Entitlements
+  - [x] 4/4 Entitlements
   - [ ] 0/12 Extensions
   - [x] 3/3 EventSub
   - [x] 2/2 Games
