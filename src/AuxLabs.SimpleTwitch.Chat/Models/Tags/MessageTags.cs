@@ -100,10 +100,10 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["id"] = Id,
                 ["custom-reward-id"] = CustomRewardId,
                 ["room-id"] = ChannelId,
-                ["msg-id"] = Type.GetEnumMemberValue(),
+                ["msg-id"] = Type.GetStringValue(),
                 ["tmi-sent-ts"] = Timestamp.ToUnixTimeMilliseconds().ToString(),
                 ["user-id"] = UserId,
-                ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
+                ["user-type"] = EnumHelper.GetStringValue(UserType),
                 ["display-name"] = DisplayName,
                 ["login"] = Name,
                 ["color"] = ColorTranslator.ToHtml(Color),
@@ -136,13 +136,13 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("room-id", out str))
                 ChannelId = str;
             if (map.TryGetValue("msg-id", out str))
-                Type = EnumHelper.GetValueFromEnumMember<MessageType>(str);
+                Type = EnumHelper.GetEnumValue<MessageType>(str);
             if (map.TryGetValue("tmi-sent-ts", out str))
                 Timestamp = DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(str));
             if (map.TryGetValue("user-id", out str))
                 UserId = str;
             if (map.TryGetValue("user-type", out str))
-                UserType = EnumHelper.GetValueFromEnumMember<UserType>(str);
+                UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
                 DisplayName = str;
             if (map.TryGetValue("login", out str))

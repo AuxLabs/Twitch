@@ -25,7 +25,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             map["msg-param-cumulative-months"] = TotalMonths.ToString();
             map["msg-param-should-share-streak"] = IsStreakShared ? "1" : "0";
             map["msg-param-streak-months"] = StreakMonths.ToString();
-            map["msg-param-sub-plan"] = SubscriptionType.GetEnumMemberValue();
+            map["msg-param-sub-plan"] = SubscriptionType.GetStringValue();
             map["msg-param-sub-plan-name"] = SubscriptionName;
             return map;
         }
@@ -39,7 +39,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("msg-param-streak-months", out str))
                 StreakMonths = int.Parse(str);
             if (map.TryGetValue("msg-param-sub-plan", out str))
-                SubscriptionType = EnumHelper.GetValueFromEnumMember<SubscriptionType>(str);
+                SubscriptionType = EnumHelper.GetEnumValue<SubscriptionType>(str);
             if (map.TryGetValue("msg-param-sub-plan-name", out str))
                 SubscriptionName = str;
         }

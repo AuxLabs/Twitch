@@ -32,7 +32,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             map["msg-param-recipient-display-name"] = RecipientDisplayName;
             map["msg-param-recipient-user-name"] = RecipientName;
             map["msg-param-sub-plan-name"] = SubscriptionName;
-            map["msg-param-sub-plan"] = SubscriptionType.GetEnumMemberValue();
+            map["msg-param-sub-plan"] = SubscriptionType.GetStringValue();
             map["msg-param-gift-months"] = GiftedMonths.ToString();
             map["msg-param-months"] = TotalMonths.ToString();
             return map;
@@ -49,7 +49,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("msg-param-displayName", out str))
                 SubscriptionName = str;
             if (map.TryGetValue("msg-param-displayName", out str))
-                SubscriptionType = EnumHelper.GetValueFromEnumMember<SubscriptionType>(str);
+                SubscriptionType = EnumHelper.GetEnumValue<SubscriptionType>(str);
             if (map.TryGetValue("msg-param-displayName", out str))
                 GiftedMonths = int.Parse(str);
             if (map.TryGetValue("msg-param-displayName", out str))

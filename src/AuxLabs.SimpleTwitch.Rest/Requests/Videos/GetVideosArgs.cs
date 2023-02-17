@@ -54,11 +54,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (Language != null)
                 map["language"] = new[] { Language };
             if (Period != null)
-                map["period"] = new[] { Period.Value.GetEnumMemberValue() };
+                map["period"] = new[] { Period.Value.GetStringValue() };
             if (Sort != null)
-                map["sort"] = new[] { Sort.Value.GetEnumMemberValue() };
+                map["sort"] = new[] { Sort.Value.GetStringValue() };
             if (Type != null)
-                map["type"] = new[] { Type.Value.GetEnumMemberValue() };
+                map["type"] = new[] { Type.Value.GetStringValue() };
             if (First != null)
                 map["first"] = new[] { First.ToString() };
             if (After != null)

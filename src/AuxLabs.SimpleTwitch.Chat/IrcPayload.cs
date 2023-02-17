@@ -41,7 +41,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (Prefix != null)
                 builder.Append($"{Prefix} ");
 
-            var commandRaw = CommandRaw ?? Command.GetEnumMemberValue();
+            var commandRaw = CommandRaw ?? Command.GetStringValue();
             builder.Append(commandRaw);
             if (Parameters.Count > 0)
                 builder.Append($" {string.Join(' ', Parameters)}");

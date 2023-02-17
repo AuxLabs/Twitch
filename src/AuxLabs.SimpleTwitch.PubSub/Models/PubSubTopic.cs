@@ -12,11 +12,11 @@ namespace AuxLabs.SimpleTwitch.PubSub
         public PubSubTopic(string topic)
         {
             var parts = topic.Split('.');
-            Type = EnumHelper.GetValueFromEnumMember<PubSubTopicType>(parts[0]);
+            Type = EnumHelper.GetEnumValue<PubSubTopicType>(parts[0]);
             Ids = parts.Skip(1).ToImmutableArray();
         }
 
         public override string ToString()       // topic.id.id
-            => string.Join('.', EnumHelper.GetEnumMemberValue(Type), Ids);
+            => string.Join('.', EnumHelper.GetStringValue(Type), Ids);
     }
 }

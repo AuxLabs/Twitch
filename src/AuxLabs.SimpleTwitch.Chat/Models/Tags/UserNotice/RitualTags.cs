@@ -10,14 +10,14 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = base.CreateQueryMap();
-            map["msg-param-ritual-name"] = RitualType.GetEnumMemberValue();
+            map["msg-param-ritual-name"] = RitualType.GetStringValue();
             return map;
         }
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             base.LoadQueryMap(map);
             if (map.TryGetValue("msg-param-ritual-name", out string str))
-                RitualType = EnumHelper.GetValueFromEnumMember<RitualType>(str);
+                RitualType = EnumHelper.GetEnumValue<RitualType>(str);
         }
     }
 }

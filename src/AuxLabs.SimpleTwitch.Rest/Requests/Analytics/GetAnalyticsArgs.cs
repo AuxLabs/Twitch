@@ -39,7 +39,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (EndedAt != null)
                 map["ended_at"] = XmlConvert.ToString(EndedAt.Value, XmlDateTimeSerializationMode.Utc);
             if (Type != null)
-                map["type"] = Type.Value.GetEnumMemberValue();
+                map["type"] = Type.Value.GetStringValue();
             if (First != null)
                 map["first"] = First.ToString();
             if (After != null)

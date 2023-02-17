@@ -26,9 +26,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             var map = new Dictionary<string, string>();
 
             if (Status != null)
-                map["status"] = Status.Value.GetEnumMemberValue();
+                map["status"] = Status.Value.GetStringValue();
             if (Type != null)
-                map["type"] = Type.Value.GetEnumMemberValue();
+                map["type"] = Type.Value.GetStringValue();
             if (UserId != null)
                 map["user_id"] = UserId;
             if (After != null)

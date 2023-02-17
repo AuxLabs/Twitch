@@ -43,7 +43,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["message-id"] = Id,
                 ["thread-id"] = ThreadId,
                 ["user-id"] = UserId,
-                ["user-type"] = EnumHelper.GetEnumMemberValue(UserType),
+                ["user-type"] = EnumHelper.GetStringValue(UserType),
                 ["display-name"] = DisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = string.Join(',', Badges),
@@ -61,7 +61,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("user-id", out str))
                 UserId = str;
             if (map.TryGetValue("user-type", out str))
-                UserType = EnumHelper.GetValueFromEnumMember<UserType>(str);
+                UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
                 DisplayName = str;
             if (map.TryGetValue("color", out str))

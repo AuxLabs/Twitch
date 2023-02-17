@@ -13,7 +13,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = base.CreateQueryMap();
-            map["msg-id"] = NoticeType.GetEnumMemberValue();
+            map["msg-id"] = NoticeType.GetStringValue();
             map["system-msg"] = SystemMessage;
             return map;
         }
@@ -21,7 +21,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             base.LoadQueryMap(map);
             if (map.TryGetValue("msg-id", out string str))
-                NoticeType = EnumHelper.GetValueFromEnumMember<UserNoticeType>(str);
+                NoticeType = EnumHelper.GetEnumValue<UserNoticeType>(str);
             if (map.TryGetValue("system-id", out str))
                 SystemMessage = str;
         }

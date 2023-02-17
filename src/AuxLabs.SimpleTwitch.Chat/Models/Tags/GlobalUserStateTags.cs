@@ -35,7 +35,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             var map = new Dictionary<string, string>
             {
                 ["user-id"] = UserId,
-                ["user-type"] = UserType.GetEnumMemberValue(),
+                ["user-type"] = UserType.GetStringValue(),
                 ["display-name"] = DisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = Badges == null ? null : string.Join(',', Badges),
@@ -50,7 +50,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("user-id", out string str))
                 UserId = str;
             if (map.TryGetValue("user-type", out str))
-                UserType = EnumHelper.GetValueFromEnumMember<UserType>(str);
+                UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
                 DisplayName = str;
             if (map.TryGetValue("color", out str))

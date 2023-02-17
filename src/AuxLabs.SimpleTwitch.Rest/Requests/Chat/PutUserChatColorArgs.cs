@@ -30,7 +30,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (UserId != null) 
                 map["user_id"] = UserId;
             if (Color != null)
-                map["color"] = Color.Value.GetEnumMemberValue();
+                map["color"] = Color.Value.GetStringValue();
             if (CustomColor != null)
                 map["color"] = ColorTranslator.ToHtml(CustomColor.Value);
 

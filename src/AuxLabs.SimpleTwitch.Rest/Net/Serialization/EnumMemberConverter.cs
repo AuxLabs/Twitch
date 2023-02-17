@@ -13,12 +13,12 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (string.IsNullOrWhiteSpace(value)) 
                 return default;
 
-            return EnumHelper.GetValueFromEnumMember<T>(value);
+            return EnumHelper.GetEnumValue<T>(value);
         }
 
         public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
         {
-            var result = value.GetEnumMemberValue();
+            var result = value.GetStringValue();
             writer.WriteStringValue(result);
         }
     }

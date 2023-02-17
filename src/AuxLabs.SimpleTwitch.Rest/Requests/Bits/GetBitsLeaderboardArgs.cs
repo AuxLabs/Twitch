@@ -39,7 +39,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (UserId != null)
                 map["user_id"] = UserId;
             if (Period != null)
-                map["period"] = Period.Value.GetEnumMemberValue();
+                map["period"] = Period.Value.GetStringValue();
             if (StartedAt != null)
                 map["started_at"] = XmlConvert.ToString(StartedAt.Value, XmlDateTimeSerializationMode.Utc);
             if (Count != null)

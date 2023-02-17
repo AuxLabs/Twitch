@@ -29,7 +29,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (TargetUserId != null)
                 map["target_user_id"] = TargetUserId;
             if (Context != null)
-                map["source_context"] = Context.Value.GetEnumMemberValue();
+                map["source_context"] = Context.Value.GetStringValue();
             if (Reason != null)
                 map["reason"] = Reason;
 

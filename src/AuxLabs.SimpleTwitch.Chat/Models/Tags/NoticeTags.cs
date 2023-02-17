@@ -14,7 +14,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             var map = new Dictionary<string, string>
             {
-                ["msg-id"] = NoticeType.GetEnumMemberValue(),
+                ["msg-id"] = NoticeType.GetStringValue(),
                 ["target-user-id"] = TargetUserId
             };
             return map;
@@ -22,7 +22,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("msg-id", out string str))
-                NoticeType = EnumHelper.GetValueFromEnumMember<NoticeType>(str);
+                NoticeType = EnumHelper.GetEnumValue<NoticeType>(str);
             if (map.TryGetValue("target-user-id", out str))
                 TargetUserId = str;
         }

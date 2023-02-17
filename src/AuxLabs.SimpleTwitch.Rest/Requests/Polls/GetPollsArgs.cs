@@ -17,8 +17,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string After { get; set; }
 
         public GetPollsArgs() { }
-        public GetPollsArgs(string broadcasterid, params string[] pollIds)
+        public GetPollsArgs(string broadcasterId, params string[] pollIds)
         {
+            BroadcasterId = broadcasterId;
             PollIds = pollIds.ToList();
         }
 

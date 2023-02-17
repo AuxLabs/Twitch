@@ -28,7 +28,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             {
                 ["user_id"] = UserId,
                 ["msg_id"] = MessageId,
-                ["action"] = Action.GetEnumMemberValue()
+                ["action"] = Action.GetStringValue()
             };
         }
     }

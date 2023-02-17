@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Entitlements\" />
     <Folder Include="Models\Music\" />
     <Folder Include="Models\Raids\" />
     <Folder Include="Models\Schedule\" />
@@ -18,7 +17,6 @@
     <Folder Include="Models\Streams\" />
     <Folder Include="Models\Subscriptions\" />
     <Folder Include="Models\Tags\" />
-    <Folder Include="Requests\Entitlements\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Goals\" />
     <Folder Include="Requests\Music\" />

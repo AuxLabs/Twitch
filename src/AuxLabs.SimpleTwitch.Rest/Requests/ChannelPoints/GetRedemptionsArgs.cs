@@ -54,11 +54,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             if (RewardId != null)
                 map["reward_id"] = new[] { RewardId };
             if (Status != null)
-                map["status"] = new[] { Status.Value.GetEnumMemberValue() };
+                map["status"] = new[] { Status.Value.GetStringValue() };
             if (RedemptionIds != null)
                 map["id"] = RedemptionIds.ToArray();
             if (Sort != null)
-                map["sort"] = new[] { Sort.Value.GetEnumMemberValue() };
+                map["sort"] = new[] { Sort.Value.GetStringValue() };
             if (After != null)
                 map["after"] = new[] { After };
             if (First != null)

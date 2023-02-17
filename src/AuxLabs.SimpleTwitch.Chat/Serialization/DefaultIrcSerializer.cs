@@ -30,7 +30,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
             payload.Prefix = new IrcPrefix(ReadPrefix(ref data));
             payload.CommandRaw = ReadCommand(ref data);
-            payload.Command = EnumHelper.GetValueFromEnumMember<IrcCommand>(payload.CommandRaw);
+            payload.Command = EnumHelper.GetEnumValue<IrcCommand>(payload.CommandRaw);
             payload.Parameters = ReadParameters(ref data);
 
             // Convert tags dictionary into compatible type
@@ -38,7 +38,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             {
                 if (type == typeof(UserNoticeTags))
                 {
-                    var notice = EnumHelper.GetValueFromEnumMember<UserNoticeType>(tags["msg-id"]);
+                    var notice = EnumHelper.GetEnumValue<UserNoticeType>(tags["msg-id"]);
                     if (IrcPayload.UserNoticeTypeSelector.TryGetValue(notice, out var noticeType))
                         payload.Tags = (UserNoticeTags)Activator.CreateInstance(noticeType);
                     else

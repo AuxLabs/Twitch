@@ -6,9 +6,9 @@
 
         public static string GetEmoteImageUrl(string emoteId, EmoteFormat format, EmoteTheme theme, EmoteScale scale)
         {
-            var formatValue = format.GetEnumMemberValue();
-            var themeValue = theme.GetEnumMemberValue();
-            var scaleValue = scale.GetEnumMemberValue();
+            var formatValue = format.GetStringValue();
+            var themeValue = theme.GetStringValue();
+            var scaleValue = scale.GetStringValue();
 
             return string.Format(EmoteImageUrl, emoteId, formatValue, themeValue, scaleValue);
         }

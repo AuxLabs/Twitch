@@ -7,7 +7,7 @@ namespace AuxLabs.SimpleTwitch
 {
     public static class EnumHelper
     {
-        public static string GetEnumMemberValue<T>(this T value)
+        public static string GetStringValue<T>(this T value)
             where T : Enum
         {
             return typeof(T)
@@ -18,7 +18,7 @@ namespace AuxLabs.SimpleTwitch
                 ?.Value;
         }
 
-        public static T GetValueFromEnumMember<T>(string value)
+        public static T GetEnumValue<T>(string value)
             where T : Enum
         {
             var type = typeof(T);
