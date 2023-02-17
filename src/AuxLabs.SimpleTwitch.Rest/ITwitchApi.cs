@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [Header("User-Agent", "Auxlabs (https://github.com/AuxLabs/SimpleTwitch)")]
+    [Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/SimpleTwitch)")]
     public interface ITwitchApi : IDisposable
     {
         [Header("Authorization")]
@@ -278,16 +278,33 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchMetaResponse<Clip>> GetClipsAsync([QueryMap] GetClipsArgs args);
 
         #endregion
-        #region Drops
+        #region Entitlements
 
+        /// <summary> Gets the status of one or more redemption codes for a Bits reward. </summary>
+        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
+        /// <returns> A collection of <see cref="EntitlementCode"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Get("entitlements/codes")]
-        Task<TwitchResponse<object>> GetCodeStatusAsync([Query] object args);
+        Task<TwitchResponse<EntitlementCode>> GetCodeStatusAsync([QueryMap] CodeStatusArgs args);
+
+        /// <summary> Gets an organization’s list of entitlements that have been granted to a game, a user, or both. </summary>
+        /// <returns> A collection of <see cref="Entitlement"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Get("entitlements/drops")]
-        Task<TwitchResponse<object>> GetDropsStatusAsync([Query] object args);
+        Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync([QueryMap] GetDropStatusArgs args);
+
+        /// <summary> Updates the Drop entitlement’s fulfillment status. </summary>
+        /// <returns> A collection of <see cref="EntitlementDrop"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("entitlements/drops")]
-        Task<TwitchResponse<object>> PatchDropsStatusAsync([Query] object args);
+        Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync([Body] PatchDropsStatusArgs args);
+
+        /// <summary> Redeems one or more redemption codes. </summary>
+        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
+        /// <returns> A collection of <see cref="EntitlementCode"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Post("entitlements/codes")]
-        Task<TwitchResponse<object>> PostCodeAsync([Query] object args);
+        Task<TwitchResponse<EntitlementCode>> PostCodeStatusAsync([QueryMap] CodeStatusArgs args);
 
         #endregion
         #region Extensions
@@ -325,23 +342,26 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
         /// <returns> An <see cref="EventSubResponse"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 409 Conflict </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("eventsub/subscriptions")]
-        Task<EventSubResponse> PostEventSubcriptionAsync([Body]PostEventSubscriptionArgs args);
+        Task<EventSubResponse> PostEventSubscriptionAsync([Body]PostEventSubscriptionArgs args);
 
         /// <summary> Deletes an EventSub subscription. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
         /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("eventsub/subscriptions")]
-        Task DeleteEventSubcrptionAsync([Query("id")]string eventsubId);
+        Task DeleteEventSubscriptionAsync([Query("id")]string eventsubId);
 
         /// <summary> Gets a collection of EventSub subscriptions that the client in the access token created. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
         /// Websocket transports require a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>. </remarks>
         /// <returns> An <see cref="EventSubResponse"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("eventsub/subscriptions")]
-        Task<EventSubResponse> GetEventSubcriptionsAsync([QueryMap]GetEventSubscriptionsArgs args);
+        Task<EventSubResponse> GetEventSubscriptionsAsync([QueryMap]GetEventSubscriptionsArgs args);
 
         #endregion
         #region Games
@@ -389,7 +409,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>moderation:read</c> scope. </remarks>
         /// <returns> A collection of <see cref="MockMessage"/> objects. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/enforcements/status")]
         Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([Query("broadcaster_id")] string broadcasterId, [Body] PostEnforcementStatusArgs args);
@@ -397,7 +417,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Allow or deny the message that AutoMod flagged for review. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>moderator:manage:automod</c> scope. </remarks>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden, 404 Not Found </exception>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/automod/message")]
         Task PostAutomodMessageAsync([QueryMap] PostAutomodMessageArgs args);
@@ -406,7 +426,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>moderator:read:automod_settings</c> scope. </remarks>
         /// <returns> A single <see cref="AutomodSettings"/> object. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/automod/settings")]
         Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args);
@@ -415,7 +435,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
         /// with the <c>moderator:manage:automod_settings</c> scope. </remarks>
         /// <returns> A single <see cref="AutomodSettings"/> object. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fobidden </exception>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("moderation/automod/settings")]
         Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] GetAutomodSettingsArgs args, [Body] PutAutomodSettingsArgs body);

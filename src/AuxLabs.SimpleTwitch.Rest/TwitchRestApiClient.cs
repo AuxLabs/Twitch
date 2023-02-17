@@ -1,6 +1,5 @@
 ﻿using RestEase;
 using System;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -60,7 +59,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task<AppIdentity> ValidateAsync()
         {
             await _identity.ValidateAsync();
-            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetStringValue(), Identity.AccessToken);
             return Identity;
         }
 
@@ -68,7 +67,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken = null)
         {
             var tokenInfo = await _identity.ValidateAsync(token, refreshToken);
-            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetEnumMemberValue(), Identity.AccessToken);
+            Authorization = new AuthenticationHeaderValue(Identity.TokenType.GetStringValue(), Identity.AccessToken);
             ClientId = tokenInfo.ClientId;
             return tokenInfo;
         }
@@ -86,7 +85,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Refresh the token for the authorized user. </summary>
         public async Task<AppIdentity> RefreshTokenAsync()
         {
-            if (Identity is UserIdentity user)      // Identity is a user, can be refreshed
+            if (Identity is UserIdentity)      // Identity is a user, can be refreshed
             {
                 return await _identity.PostRefreshTokenAsync(new PostRefreshTokenArgs
                 {
@@ -94,7 +93,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                     ClientSecret = _identity.ClientSecret,
                     RefreshToken = _identity.RefreshToken
                 });
-            } else                                  // Identity is an app, must create new
+            } else                             // Identity is an app, must create new
             {
                 return await _identity.PostAccessTokenAsync(new PostAppAccessTokenArgs
                 {
@@ -268,16 +267,16 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetClipsAsync(args);
 
         #endregion
-        #region Drops
+        #region Entitlements
 
-        public Task<TwitchResponse<object>> GetCodeStatusAsync(object args)
+        public Task<TwitchResponse<EntitlementCode>> GetCodeStatusAsync(CodeStatusArgs args)
             => _api.GetCodeStatusAsync(args);
-        public Task<TwitchResponse<object>> GetDropsStatusAsync(object args)
+        public Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync(GetDropStatusArgs args)
             => _api.GetDropsStatusAsync(args);
-        public Task<TwitchResponse<object>> PatchDropsStatusAsync(object args)
+        public Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync(PatchDropsStatusArgs args)
             => _api.PatchDropsStatusAsync(args);
-        public Task<TwitchResponse<object>> PostCodeAsync(object args)
-            => _api.PostCodeAsync(args);
+        public Task<TwitchResponse<EntitlementCode>> PostCodeStatusAsync(CodeStatusArgs args)
+            => _api.PostCodeStatusAsync(args);
 
         #endregion
         #region Extensions
@@ -310,17 +309,20 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region EventSub
 
-        public Task<EventSubResponse> PostEventSubcriptionAsync(PostEventSubscriptionArgs args)
+        public Task<EventSubResponse> PostEventSubscriptionAsync(PostEventSubscriptionArgs args)
         {
             args.Validate();
-            return _api.PostEventSubcriptionAsync(args);
+            return _api.PostEventSubscriptionAsync(args);
         }
-        public Task DeleteEventSubcrptionAsync(string id)
-            => _api.DeleteEventSubcrptionAsync(id);
-        public Task<EventSubResponse> GetEventSubcriptionsAsync(GetEventSubscriptionsArgs args)
+        public Task DeleteEventSubscriptionAsync(string eventsubId)
+        {
+            // Validate
+            return _api.DeleteEventSubscriptionAsync(eventsubId);
+        }
+        public Task<EventSubResponse> GetEventSubscriptionsAsync(GetEventSubscriptionsArgs args)
         {
             args.Validate();
-            return _api.GetEventSubcriptionsAsync(args);
+            return _api.GetEventSubscriptionsAsync(args);
         }
 
         #endregion
