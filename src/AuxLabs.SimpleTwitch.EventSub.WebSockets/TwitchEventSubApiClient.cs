@@ -98,30 +98,20 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public override void Run() => Run(_url);
         public override Task RunAsync() => RunAsync(_url);
 
-        protected override void SendHeartbeat()
+        protected override void HandleEvent(EventSubFrame frame, TaskCompletionSource<bool> readySignal)
         {
-            throw new NotImplementedException();
-        }
-
-        protected override void SendHeartbeatAck()
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override void HandleEvent(EventSubFrame payload, TaskCompletionSource<bool> readySignal)
-        {
-            switch (payload.Metadata.Type)
+            switch (frame.Metadata.Type)
             {
                 case MessageType.Welcome:
-                    Session = payload.Payload.Session;
+                    Session = frame.Payload.Session;
                     SessionCreated?.Invoke(Session);
                     break;
 
-                case MessageType.KeepAlive:     // Send to log event, we don't need to do anything with this event
+                case MessageType.KeepAlive:     // Send to log event, we don't need to do anything else here
                     break;
 
                 case MessageType.Reconnect:
-                    Session = payload.Payload.Session;
+                    Session = frame.Payload.Session;
                     Reconnect?.Invoke(Session);
                     break;
 
@@ -130,26 +120,26 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
                 case MessageType.Notification:
 
-                    switch (payload.Payload.Event)
+                    switch (frame.Payload.Event)
                     {
                         case ChannelUpdateEventArgs args:
-                            ChannelUpdated?.Invoke(args, payload.Payload.Subscription);
+                            ChannelUpdated?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         // Insert the load of subscription event types here
 
                         default:
-                            OnUnknownEventReceived(payload);
+                            OnUnknownEventReceived(frame);
                             if (ThrowOnUnknownEvent)
-                                throw new TwitchException($"An unhandled notification event of type `{payload.Payload.Subscription.TypeRaw}` was received");
+                                throw new TwitchException($"An unhandled notification event of type `{frame.Payload.Subscription.TypeRaw}` was received");
                             break;
                     }
                     break;
 
                 default:
-                    OnUnknownEventReceived(payload);
+                    OnUnknownEventReceived(frame);
                     if (ThrowOnUnknownEvent)
-                        throw new TwitchException($"An unhandled event of type `{payload.Metadata.TypeRaw}` was received");
+                        throw new TwitchException($"An unhandled event of type `{frame.Metadata.TypeRaw}` was received");
                     break;
             }
         }
