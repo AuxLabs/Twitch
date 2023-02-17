@@ -16,11 +16,9 @@
     <Folder Include="Models\Search\" />
     <Folder Include="Models\Streams\" />
     <Folder Include="Models\Subscriptions\" />
-    <Folder Include="Models\Tags\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Goals\" />
     <Folder Include="Requests\Music\" />
-    <Folder Include="Requests\Tags\" />
     <Folder Include="Requests\Subscriptions\" />
     <Folder Include="Requests\Schedule\" />
     <Folder Include="Requests\Raids\" />

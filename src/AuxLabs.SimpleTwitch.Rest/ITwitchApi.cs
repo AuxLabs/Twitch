@@ -626,16 +626,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<object>> GetSubscriberAsync([Query] object args);
 
         #endregion
-        #region Tags
-
-        [Get("tags/streams")]
-        Task<TwitchResponse<object>> GetTagsAsync([Query] object args);
-        [Get("streams/tags")]
-        Task<TwitchResponse<object>> GetTagsAsync([Query("broadcaster_id")] string id);
-        [Put("streams/tags")]
-        Task<TwitchResponse<object>> PutTagsAsync([Query] object args);
-
-        #endregion
         #region Teams
 
         /// <summary> Gets information about one or more users. </summary>

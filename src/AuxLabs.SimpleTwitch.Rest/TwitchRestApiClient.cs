@@ -516,17 +516,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.GetSubscriberAsync(args);
 
         #endregion
-        #region Tags
-
-        public Task<TwitchResponse<object>> GetTagsAsync(object args)
-            => _api.GetTagsAsync(args);
-
-        public Task<TwitchResponse<object>> GetTagsAsync(string id)
-            => _api.GetTagsAsync(id);
-        public Task<TwitchResponse<object>> PutTagsAsync(object args)
-            => _api.PutTagsAsync(args);
-
-        #endregion
         #region Teams
 
         public Task<TwitchResponse<ChannelTeam>> GetTeamsAsync(string broadcasterId)
