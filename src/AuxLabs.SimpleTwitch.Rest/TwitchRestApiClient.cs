@@ -529,10 +529,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Teams
 
-        public Task<TwitchResponse<object>> GetTeamsAsync(string id)
-            => _api.GetTeamsAsync(id);
-        public Task<TwitchResponse<object>> GetTeamsAsync(object args)
-            => _api.GetTeamsAsync(args);
+        public Task<TwitchResponse<ChannelTeam>> GetTeamsAsync(string broadcasterId)
+        {
+            Require.NotNullOrWhitespace(broadcasterId, nameof(broadcasterId));
+            return _api.GetTeamsAsync(broadcasterId);
+        }
+        public Task<TwitchResponse<Team>> GetTeamAsync(GetTeamArgs args)
+        {
+            args.Validate();
+            return _api.GetTeamAsync(args);
+        }
 
         #endregion
         #region Users

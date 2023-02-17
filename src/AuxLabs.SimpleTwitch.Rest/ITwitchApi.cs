@@ -638,10 +638,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Teams
 
+        /// <summary> Gets information about one or more users. </summary>
+        /// <returns> A collection of <see cref="ChannelTeam"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("teams/channel")]
-        Task<TwitchResponse<object>> GetTeamsAsync([Query("broadcaster_id")] string id);
+        Task<TwitchResponse<ChannelTeam>> GetTeamsAsync([Query("broadcaster_id")] string broadcasterId);
+
+        /// <summary> Gets information about the specified Twitch team. </summary>
+        /// <returns> A single <see cref="Team"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("teams")]
-        Task<TwitchResponse<object>> GetTeamsAsync([Query] object args);
+        Task<TwitchResponse<Team>> GetTeamAsync([QueryMap] GetTeamArgs args);
 
         #endregion
         #region Users
