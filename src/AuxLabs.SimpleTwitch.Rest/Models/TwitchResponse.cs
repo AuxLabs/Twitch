@@ -18,6 +18,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("total")]
         public int? Total { get; set; }
 
+        /// <summary> The current number of subscriber points earned by this broadcaster. </summary>
+        /// <remarks> Only returned for <see cref="ITwitchApi.GetSubscriptionsAsync(object)"/> </remarks>
+        [JsonPropertyName("points")]
+        public int? Points { get; set; }
+
         /// <summary> A range of dates relating to the objects returned in <see cref="TwitchResponse.Data"/>. </summary>
         [JsonPropertyName("date_range")]
         public DateRange? DateRange { get; set; }

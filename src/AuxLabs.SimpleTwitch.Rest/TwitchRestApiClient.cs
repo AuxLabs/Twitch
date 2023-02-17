@@ -510,10 +510,16 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Subscriptions
 
-        public Task<TwitchResponse<object>> GetSubscriptionsAsync(object args)
-            => _api.GetSubscriptionsAsync(args);
-        public Task<TwitchResponse<object>> GetSubscriberAsync(object args)
-            => _api.GetSubscriberAsync(args);
+        public Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync(GetSubscriptionsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetSubscriptionsAsync(args);
+        }
+        public Task<TwitchResponse<SimpleSubscription>> GetSubscriberAsync(GetSubscriberArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetSubscriberAsync(args);
+        }
 
         #endregion
         #region Teams

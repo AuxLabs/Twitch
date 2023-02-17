@@ -15,11 +15,9 @@
     <Folder Include="Models\Schedule\" />
     <Folder Include="Models\Search\" />
     <Folder Include="Models\Streams\" />
-    <Folder Include="Models\Subscriptions\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Goals\" />
     <Folder Include="Requests\Music\" />
-    <Folder Include="Requests\Subscriptions\" />
     <Folder Include="Requests\Schedule\" />
     <Folder Include="Requests\Raids\" />
   </ItemGroup>

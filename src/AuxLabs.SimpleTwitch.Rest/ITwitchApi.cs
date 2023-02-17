@@ -620,10 +620,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Subscriptions
 
+        /// <summary> Updates the specified user’s information. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// or <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>
+        /// with the <c>channel:read:subscriptions</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Subscription"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("subscriptions")]
-        Task<TwitchResponse<object>> GetSubscriptionsAsync([Query] object args);
+        Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync([QueryMap] GetSubscriptionsArgs args);
+
+        /// <summary> Checks whether the user subscribes to the broadcaster’s channel. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// or <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>
+        /// with the <c>channel:read:subscriptions</c> scope. </remarks>
+        /// <returns> A single <see cref="SimpleSubscription"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("subscriptions/user")]
-        Task<TwitchResponse<object>> GetSubscriberAsync([Query] object args);
+        Task<TwitchResponse<SimpleSubscription>> GetSubscriberAsync([QueryMap] GetSubscriberArgs args);
 
         #endregion
         #region Teams
