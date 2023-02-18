@@ -90,7 +90,7 @@ jobs:
           dotnet pack "./src/AuxLabs.SimpleTwitch.Chat/AuxLabs.SimpleTwitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.SimpleTwitch.PubSub/AuxLabs.SimpleTwitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub/AuxLabs.SimpleTwitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub.WebSocket/AuxLabs.SimpleTwitch.EventSub.WebSocket.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.SimpleTwitch.EventSub.WebSockets/AuxLabs.SimpleTwitch.EventSub.WebSockets.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
       - name: Publish
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
 
