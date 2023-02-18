@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -28,6 +29,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         public int? First { get; set; }
         public string Before { get; set; }
         public string After { get; set; }
+
+        public GetBroadcastsArgs() { }
+        public GetBroadcastsArgs(params string[] userIds)
+        {
+            UserIds = userIds.ToList();
+        }
 
         public void Validate()
         {
