@@ -102,7 +102,7 @@ namespace AuxLabs.SimpleTwitch
         #endregion
         #region Arrays
 
-        public static void Exclusive(object[] objs, string[] names, string msg = null)
+        public static void Exclusive(object[] objs, string[] names, bool requireOne = false, string msg = null)
         {
             int count = 0;
             for (int i = 0; i < objs.Length; i++)
@@ -112,7 +112,7 @@ namespace AuxLabs.SimpleTwitch
             }
             if (count > 1)
                 throw new ArgumentException(msg ?? $"[{string.Join(", ", names)}] are exclusive parameters and may not be used together");
-            if (count == 0)
+            if (count == 0 && requireOne)
                 throw new ArgumentException(msg ?? $"At least one of [{string.Join(", ", names)}] must be specified");
         }
 
