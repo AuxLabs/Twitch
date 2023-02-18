@@ -617,7 +617,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<object>> GetPlaylistsAsync([Query] object args);
 
         #endregion
-        #region Broadcasts
+        #region Broadcasts / Streams
 
         /// <summary> Gets the channel’s broadcast key. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>

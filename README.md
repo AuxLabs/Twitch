@@ -47,14 +47,14 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 2/2 Games
   - [x] 1/1 Goals
   - [x] 1/1 Hype Trains
-  - [ ] 5/19 Moderation
+  - [ ] 6/19 Moderation
   - [x] 3/3 Polls
   - [x] 3/3 Predictions
   - [ ] 0/2 Raids
   - [ ] 0/6 Schedule
   - [ ] 0/2 Search
   - [ ] 0/3 Music
-  - [ ] 1/5 Streams
+  - [x] 5/5 Streams
   - [x] 2/2 Subscriptions
   - [x] 2/2 Teams
   - [x] 9/9 Users
