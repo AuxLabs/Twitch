@@ -2,15 +2,15 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetStreamKeyArgs : QueryMap, IScoped
+    public class GetBroadcastKeyArgs : QueryMap, IScoped
     {
         public string[] Scopes { get; } = { "channel:read:stream_key" };
 
         /// <summary> The ID of the broadcaster that owns the channel. </summary>
         public string BroadcasterId { get; set; }
 
-        public GetStreamKeyArgs() { }
-        public GetStreamKeyArgs(string broadcasterId)
+        public GetBroadcastKeyArgs() { }
+        public GetBroadcastKeyArgs(string broadcasterId)
         {
             BroadcasterId = broadcasterId;
         }
@@ -29,7 +29,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             };
         }
 
-        public static implicit operator string(GetStreamKeyArgs value) => value.BroadcasterId;
-        public static implicit operator GetStreamKeyArgs(string v) => new GetStreamKeyArgs(v);
+        public static implicit operator string(GetBroadcastKeyArgs value) => value.BroadcasterId;
+        public static implicit operator GetBroadcastKeyArgs(string v) => new GetBroadcastKeyArgs(v);
     }
 }

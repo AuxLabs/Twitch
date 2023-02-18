@@ -13,7 +13,6 @@
     <Folder Include="Models\Music\" />
     <Folder Include="Models\Schedule\" />
     <Folder Include="Models\Search\" />
-    <Folder Include="Models\Streams\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Goals\" />
     <Folder Include="Requests\Music\" />

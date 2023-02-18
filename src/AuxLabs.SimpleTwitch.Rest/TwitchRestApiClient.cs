@@ -520,16 +520,31 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Streams
 
-        public Task<TwitchResponse<string>> GetStreamKeyAsync(GetStreamKeyArgs args)
-            => _api.GetStreamKeyAsync(args);
-        public Task<TwitchResponse<object>> GetStreamsAsync(object args)
-            => _api.GetStreamsAsync(args);
-        public Task<TwitchResponse<object>> GetFollowedStreamsAsync(object args)
-            => _api.GetFollowedStreamsAsync(args);
-        public Task<TwitchResponse<object>> PostStreamMarkerAsync(object args)
-            => _api.PostStreamMarkerAsync(args);
-        public Task<TwitchResponse<object>> GetStreamMarkersAsync(object args)
-            => _api.GetStreamMarkersAsync(args);
+        public Task<TwitchResponse<string>> GetBroadcastKeyAsync(GetBroadcastKeyArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetBroadcastKeyAsync(args);
+        }
+        public Task<TwitchMetaResponse<Broadcast>> GetBroadcastsAsync(GetBroadcastsArgs args)
+        {
+            args.Validate();
+            return _api.GetBroadcastsAsync(args);
+        }
+        public Task<TwitchMetaResponse<Broadcast>> GetFollowedBroadcastsAsync(GetFollowedBroadcastsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetFollowedBroadcastsAsync(args);
+        } 
+        public Task<TwitchResponse<BroadcastMarker>> PostBroadcastMarkerAsync(PostBroadcastMarkerBody body)
+        {
+            CheckScopes(body);
+            return _api.PostBroadcastMarkerAsync(body);
+        }
+        public Task<TwitchMetaResponse<BroadcastMarker>> GetBroadcastMarkersAsync(GetBroadcastMarkersArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetBroadcastMarkersAsync(args);
+        }
 
         #endregion
         #region Subscriptions

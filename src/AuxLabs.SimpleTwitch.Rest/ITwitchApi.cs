@@ -617,28 +617,49 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<object>> GetPlaylistsAsync([Query] object args);
 
         #endregion
-        #region Streams
+        #region Broadcasts
 
-        /// <summary> Gets the channel’s stream key. </summary>
+        /// <summary> Gets the channel’s broadcast key. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
-        /// with the <c>channel:read:stream_key/c> scope. </remarks>
+        /// with the <c>channel:read:stream_key</c> scope. </remarks>
         /// <returns> A single <see cref="string"/> object that represents the broadcaster's stream key. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
-        [Get("streams/key")]
-        Task<TwitchResponse<string>> GetStreamKeyAsync([QueryMap] GetStreamKeyArgs args);
+        [Get("stream/key")]
+        Task<TwitchResponse<string>> GetBroadcastKeyAsync([QueryMap] GetBroadcastKeyArgs args);
 
+        /// <summary> Gets a list of all broadcasts. </summary>
+        /// <returns> A collection of <see cref="Broadcast"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("streams")]
-        Task<TwitchResponse<object>> GetStreamsAsync([Query] object args);
+        Task<TwitchMetaResponse<Broadcast>> GetBroadcastsAsync([QueryMap] GetBroadcastsArgs args);
 
+        /// <summary> Gets the list of broadcasters that the user follows and that are streaming live. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:follows</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Broadcast"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("streams/followed")]
-        Task<TwitchResponse<object>> GetFollowedStreamsAsync([Query] object args);
+        Task<TwitchMetaResponse<Broadcast>> GetFollowedBroadcastsAsync([QueryMap] GetFollowedBroadcastsArgs args);
 
+        /// <summary> Adds a marker to a live stream. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:broadcast</c> scope. </remarks>
+        /// <returns> A single <see cref="BroadcastMarker"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("streams/markers")]
-        Task<TwitchResponse<object>> PostStreamMarkerAsync([Query] object args);
+        Task<TwitchResponse<BroadcastMarker>> PostBroadcastMarkerAsync([Body] PostBroadcastMarkerBody body);
 
+        /// <summary> Gets a list of markers from the user’s most recent stream or from the specified VOD/video. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:broadcast</c> or <c>channel:manage:broadcast</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="BroadcastMarker"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("streams/markers")]
-        Task<TwitchResponse<object>> GetStreamMarkersAsync([Query] object args);
+        Task<TwitchMetaResponse<BroadcastMarker>> GetBroadcastMarkersAsync([QueryMap] GetBroadcastMarkersArgs args);
 
         #endregion
         #region Subscriptions
