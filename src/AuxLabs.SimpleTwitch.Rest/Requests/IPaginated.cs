@@ -7,7 +7,7 @@
         int? First { get; set; }
 
         /// <summary> The cursor used to get the previous page of results. </summary>
-        public string Before { get; set; }
+        string Before { get; set; }
 
         /// <summary> The cursor used to get the next page of results. </summary>
         string After { get; set; }
