@@ -5,6 +5,8 @@
         public JoinChannelRequest() { }
         public JoinChannelRequest(string channelName)
         {
+            Require.NotNullOrWhitespace(channelName, nameof(channelName));
+
             Command = IrcCommand.Join;
             Parameters = new[] { $"#{channelName}" };
         }
