@@ -307,34 +307,34 @@ namespace AuxLabs.SimpleTwitch.Rest
         Task<TwitchResponse<EntitlementCode>> PostCodeStatusAsync([QueryMap] CodeStatusArgs args);
 
         #endregion
-        #region Extensions
+        //#region Extensions
 
-        [Get("extensions/configurations")]
-        Task<TwitchResponse<object>> GetExtensionConfigurationAsync([Query] object args);
-        [Put("extensions/configurations")]
-        Task<TwitchResponse<object>> PutExtensionConfigurationAsync([Query] object args);
-        [Put("extensions/required_configuration")]
-        Task<TwitchResponse<object>> PutExtensionRequiredConfigurationAsync([Query] object args);
-        [Post("extensions/pubsub")]
-        Task<TwitchResponse<object>> PostExtensionPubsubMessageAsync([Query] object args);
-        [Get("extensions/live")]
-        Task<TwitchResponse<object>> GetExtensionLiveChannelsAsync([Query] object args);
-        [Get("extensions/jwt/secrets")]
-        Task<TwitchResponse<object>> GetExtensionSecretsAsync([Query] object args);
-        [Post("extensions/jwt/secrets")]
-        Task<TwitchResponse<object>> PostExtensionSecretsAsync([Query] object args);
-        [Post("extensions/chat")]
-        Task<TwitchResponse<object>> PostExtensionChatMessageAsync([Query] object args);
-        [Get("extensions")]
-        Task<TwitchResponse<object>> GetExtensionsAsync([Query] object args);
-        [Get("extensions/released")]
-        Task<TwitchResponse<object>> GetReleasedExtensionsAsync([Query] object args);
-        [Get("bits/extensions")]
-        Task<TwitchResponse<object>> GetExtensionBitsProductsAsync([Query] object args);
-        [Put("bits/extensions")]
-        Task<TwitchResponse<object>> PutExtensionBitsProductsAsync([Query] object args);
+        //[Get("extensions/configurations")]
+        //Task<TwitchResponse<object>> GetExtensionConfigurationAsync([Query] object args);
+        //[Put("extensions/configurations")]
+        //Task<TwitchResponse<object>> PutExtensionConfigurationAsync([Query] object args);
+        //[Put("extensions/required_configuration")]
+        //Task<TwitchResponse<object>> PutExtensionRequiredConfigurationAsync([Query] object args);
+        //[Post("extensions/pubsub")]
+        //Task<TwitchResponse<object>> PostExtensionPubsubMessageAsync([Query] object args);
+        //[Get("extensions/live")]
+        //Task<TwitchResponse<object>> GetExtensionLiveChannelsAsync([Query] object args);
+        //[Get("extensions/jwt/secrets")]
+        //Task<TwitchResponse<object>> GetExtensionSecretsAsync([Query] object args);
+        //[Post("extensions/jwt/secrets")]
+        //Task<TwitchResponse<object>> PostExtensionSecretsAsync([Query] object args);
+        //[Post("extensions/chat")]
+        //Task<TwitchResponse<object>> PostExtensionChatMessageAsync([Query] object args);
+        //[Get("extensions")]
+        //Task<TwitchResponse<object>> GetExtensionsAsync([Query] object args);
+        //[Get("extensions/released")]
+        //Task<TwitchResponse<object>> GetReleasedExtensionsAsync([Query] object args);
+        //[Get("bits/extensions")]
+        //Task<TwitchResponse<object>> GetExtensionBitsProductsAsync([Query] object args);
+        //[Put("bits/extensions")]
+        //Task<TwitchResponse<object>> PutExtensionBitsProductsAsync([Query] object args);
 
-        #endregion
+        //#endregion
         #region EventSub
 
         /// <summary> Creates an EventSub subscription. </summary>
@@ -344,7 +344,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Post("eventsub/subscriptions")]
-        Task<EventSubResponse> PostEventSubscriptionAsync([Body] PostEventSubscriptionArgs args);
+        Task<EventSubResponse> PostEventSubscriptionAsync([Body] PostEventSubscriptionBody args);
 
         /// <summary> Deletes an EventSub subscription. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 

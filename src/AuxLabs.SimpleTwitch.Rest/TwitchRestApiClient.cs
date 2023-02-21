@@ -324,50 +324,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             => _api.PostCodeStatusAsync(args);
 
         #endregion
-        #region Extensions
-
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetExtensionConfigurationAsync(object args)
-            => _api.GetExtensionConfigurationAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PutExtensionConfigurationAsync(object args)
-            => _api.PutExtensionConfigurationAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PutExtensionRequiredConfigurationAsync(object args)
-            => _api.PutExtensionRequiredConfigurationAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostExtensionPubsubMessageAsync(object args)
-            => _api.PostExtensionPubsubMessageAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetExtensionLiveChannelsAsync(object args)
-            => _api.GetExtensionLiveChannelsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetExtensionSecretsAsync(object args)
-            => _api.GetExtensionSecretsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostExtensionSecretsAsync(object args)
-            => _api.PostExtensionSecretsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostExtensionChatMessageAsync(object args)
-            => _api.PostExtensionChatMessageAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetExtensionsAsync(object args)
-            => _api.GetExtensionsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetReleasedExtensionsAsync(object args)
-            => _api.GetReleasedExtensionsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetExtensionBitsProductsAsync(object args)
-            => _api.GetExtensionBitsProductsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PutExtensionBitsProductsAsync(object args)
-            => _api.PutExtensionBitsProductsAsync(args);
-
-        #endregion
         #region EventSub
 
         /// <inheritdoc/>
-        public Task<EventSubResponse> PostEventSubscriptionAsync(PostEventSubscriptionArgs args)
+        public Task<EventSubResponse> PostEventSubscriptionAsync(PostEventSubscriptionBody args)
         {
             args.Validate();
             return _api.PostEventSubscriptionAsync(args);
