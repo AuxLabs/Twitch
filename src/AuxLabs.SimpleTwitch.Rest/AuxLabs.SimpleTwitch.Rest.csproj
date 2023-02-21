@@ -10,12 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Music\" />
     <Folder Include="Models\Schedule\" />
     <Folder Include="Models\Search\" />
     <Folder Include="Requests\Extensions\" />
     <Folder Include="Requests\Goals\" />
-    <Folder Include="Requests\Music\" />
     <Folder Include="Requests\Schedule\" />
   </ItemGroup>
 </Project>

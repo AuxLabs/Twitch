@@ -609,12 +609,23 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Music
 
+        /// <summary> Gets the Soundtrack track that the broadcaster is playing. </summary>
+        /// <returns> A single <see cref="Soundtrack"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/current_track")]
-        Task<TwitchResponse<object>> GetCurrentTrackAsync([Query] object args);
+        Task<TwitchResponse<Soundtrack>> GetCurrentTrackAsync([QueryMap] GetCurrentTrackArgs args);
+
+        /// <summary> Gets the Soundtrack playlist’s tracks. </summary>
+        /// <returns> A collection of <see cref="Track"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/playlist")]
-        Task<TwitchResponse<object>> GetCurrentPlaylistAsync([Query] object args);
+        Task<TwitchMetaResponse<Track>> GetPlaylistTracksAsync([QueryMap] GetPlaylistTracksArgs args);
+
+        /// <summary> Gets a list of Soundtrack playlists. </summary>
+        /// <returns> A collection of <see cref="Track"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/playlists")]
-        Task<TwitchResponse<object>> GetPlaylistsAsync([Query] object args);
+        Task<TwitchMetaResponse<Playlist>> GetPlaylistsAsync([QueryMap] GetPlaylistsArgs args);
 
         #endregion
         #region Broadcasts / Streams
