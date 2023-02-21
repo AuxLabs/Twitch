@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostEventSubscriptionArgs
+    public class PostEventSubscriptionBody
     {
         /// <summary> The type of subscription to create. </summary>
         [JsonPropertyName("type")]
@@ -19,6 +19,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The transport details that you want Twitch to use when sending you notifications. </summary>
         [JsonPropertyName("transport")]
         public Transport Transport { get; set; }
+
+        public PostEventSubscriptionBody() { }
+        public PostEventSubscriptionBody(string sessionId)
+        {
+            Transport = new Transport
+            {
+                Method = TransportMethod.WebSocket,
+                SessionId = sessionId
+            };
+        }
+        public PostEventSubscriptionBody(string callback, string secret)
+        {
+            Transport = new Transport
+            {
+                Method = TransportMethod.Webhook,
+                Callback = callback,
+                Secret = secret
+            };
+        }
 
         public void Validate()
         {
