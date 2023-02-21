@@ -50,10 +50,10 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] 6/19 Moderation
   - [x] 3/3 Polls
   - [x] 3/3 Predictions
-  - [ ] 0/2 Raids
+  - [x] 2/2 Raids
   - [ ] 0/6 Schedule
-  - [ ] 0/2 Search
-  - [ ] 0/3 Music
+  - [x] 2/2 Search
+  - [x] 3/3 Music
   - [x] 5/5 Streams
   - [x] 2/2 Subscriptions
   - [x] 2/2 Teams
