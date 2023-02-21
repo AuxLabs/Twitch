@@ -2,13 +2,10 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class SearchChannelsArgs : QueryMap, IPaginated
+    public class SearchCategoriesArgs : QueryMap, IPaginated
     {
         /// <summary> The search string. </summary>
         public string Query { get; set; }
-
-        /// <summary> Determines whether the response includes only channels that are currently streaming live. </summary>
-        public bool? LiveOnly { get; set; }
 
         /// <inheritdoc />
         /// <remarks> The minimum value is 1 the maximum is 100, defaults to 1. </remarks>
@@ -30,8 +27,6 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ["query"] = Query
             };
 
-            if (LiveOnly != null)
-                map["live_only"] = LiveOnly.Value.ToString().ToLower();
             if (First != null)
                 map["first"] = First.ToString();
             if (After != null)

@@ -601,10 +601,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Search
 
+        /// <summary> Gets the games or categories that match the specified query. </summary>
+        /// <returns> A collection of <see cref="Category"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("search/categories")]
-        Task<TwitchResponse<object>> GetCategoriesAsync([Query] object args);
+        Task<TwitchMetaResponse<Category>> GetCategoriesAsync([QueryMap] SearchCategoriesArgs args);
+
+        /// <summary> Gets the channels that match the specified query and have streamed content within the past 6 months. </summary>
+        /// <returns> A collection of <see cref="ChannelBroadcast"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("search/channels")]
-        Task<TwitchResponse<object>> GetChannelsAsync(SearchChannelsArgs args);
+        Task<TwitchMetaResponse<ChannelBroadcast>> GetChannelsAsync([QueryMap] SearchChannelsArgs args);
 
         #endregion
         #region Music

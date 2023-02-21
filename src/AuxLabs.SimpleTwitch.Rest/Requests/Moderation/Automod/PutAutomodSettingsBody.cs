@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutAutomodSettingsBody : IScoped
+    public class PutAutomodSettingsBody
     {
-        public string[] Scopes { get; } = { "moderator:manage:automod_settings" };
-
         /// <summary> The default AutoMod level for the broadcaster. </summary>
         [JsonPropertyName("overall_level")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -51,10 +48,5 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("sex_based_terms")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public AutomodFilter? SexBasedTerms { get; set; }
-
-        public void Validate(IEnumerable<string> scopes)
-        {
-            Require.Scopes(scopes, Scopes);
-        }
     }
 }

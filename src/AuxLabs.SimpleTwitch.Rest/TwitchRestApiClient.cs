@@ -446,7 +446,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(AutomodSettingsArgs args, PutAutomodSettingsBody body)
         {
             CheckScopes(args);
-            CheckScopes(body);
+            //body.Validate();
             return _api.PutAutomodSettingsAsync(args, body);
         }
         /// <inheritdoc/>
@@ -595,11 +595,17 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Search
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetCategoriesAsync(object args)
-            => _api.GetCategoriesAsync(args);
+        public Task<TwitchMetaResponse<Category>> GetCategoriesAsync(SearchCategoriesArgs args)
+        {
+            args.Validate();
+            return _api.GetCategoriesAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetChannelsAsync(SearchChannelsArgs args)
-            => _api.GetChannelsAsync(args);
+        public Task<TwitchMetaResponse<ChannelBroadcast>> GetChannelsAsync(SearchChannelsArgs args)
+        {
+            args.Validate();
+            return _api.GetChannelsAsync(args);
+        }
 
         #endregion
         #region Soundtrack

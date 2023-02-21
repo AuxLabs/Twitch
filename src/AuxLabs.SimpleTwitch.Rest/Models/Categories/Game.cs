@@ -1,0 +1,11 @@
+﻿using System.Text.Json.Serialization;
+
+namespace AuxLabs.SimpleTwitch.Rest
+{
+    public class Game : Category
+    {
+        /// <summary> The ID that <see href="https://www.igdb.com/">IGDB</see> uses to identify this game. </summary>
+        [JsonPropertyName("igdb_id")]
+        public string IgdbId { get; set; }
+    }
+}
