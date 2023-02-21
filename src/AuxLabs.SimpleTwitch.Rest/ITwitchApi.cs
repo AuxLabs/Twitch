@@ -388,7 +388,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("goals")]
-        Task<TwitchResponse<Goal>> GetGoalsAsync([Query("broadcaster_id")] string broadcasterId);
+        Task<TwitchResponse<Goal>> GetGoalsAsync([QueryMap] GetGoalsArgs args);
 
         #endregion
         #region Hype Train

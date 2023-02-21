@@ -405,8 +405,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Goals
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<Goal>> GetGoalsAsync(string broadcasterId)
-            => _api.GetGoalsAsync(broadcasterId);
+        public Task<TwitchResponse<Goal>> GetGoalsAsync(GetGoalsArgs args)
+        {
+            CheckScopes(args);
+            return _api.GetGoalsAsync(args);
+        }
 
         #endregion
         #region HypeTrain
