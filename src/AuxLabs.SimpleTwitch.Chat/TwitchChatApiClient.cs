@@ -80,10 +80,8 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (State == ConnectionState.Connected)
                 throw new InvalidOperationException("Identity can't be changed after connection");
 
-            if (string.IsNullOrWhiteSpace(username))
-                throw new ArgumentException("Required parameter was null or empty", nameof(username));
-            if (string.IsNullOrWhiteSpace(token))
-                throw new ArgumentException("Required parameter was null or empty", nameof(token));
+            Require.NotNullOrWhitespace(username, nameof(username));
+            Require.NotNullOrWhitespace(token, nameof(token));
 
             if (username.StartsWith(TwitchConstants.AnonymousNamePrefix) && token.StartsWith(TwitchConstants.AnonymousNamePrefix))
                 _anonymous = true;
