@@ -12,7 +12,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public string Challenge { get; set; }
 
         [JsonPropertyName("subscription")]
-        public EventSubcription Subscription { get; set; }
+        public EventSubscription Subscription { get; set; }
 
         [JsonPropertyName("event")]
         public T Event { get; set; }
@@ -40,7 +40,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.ChannelPointsRedemptionAdd] = typeof(RedemptionAddedEvent),
             [EventSubType.ChannelPointsRedemptionUpdate] = typeof(RedemptionUpdatedEvent),
 
-            [EventSubType.ChannelPollStart] = typeof(PollStartedEventArgs),
+            [EventSubType.ChannelPollStart] = typeof(PollEventArgs),
             [EventSubType.ChannelPollProgress] = typeof(PollProgressEventArgs),
             [EventSubType.ChannelPollEnd] = typeof(PollEndedEventArgs),
 

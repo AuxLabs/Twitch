@@ -1,11 +1,10 @@
 ﻿using AuxLabs.SimpleTwitch.Rest;
 using System;
-using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubcription
+    public class EventSubscription
     {
         /// <summary> Your client ID. </summary>
         [JsonPropertyName("id")]
@@ -33,7 +32,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
         /// <summary> Subscription-specific parameters. </summary>
         [JsonPropertyName("condition")]
-        public IReadOnlyCollection<IEventCondition> Conditions { get; set; }
+        public IEventCondition Condition { get; set; }
 
         /// <summary> Information about the transport used for this subscription. </summary>
         [JsonPropertyName("transport")]
