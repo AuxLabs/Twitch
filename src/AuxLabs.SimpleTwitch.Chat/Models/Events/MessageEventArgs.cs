@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
     public class MessageEventArgs : IChatUserRelation, IChannel
     {
+        /// <summary> If special characters are present, emote indices will be incorrect. </summary>
+        public readonly bool ContainsSpecialCharacters;
+
         public MessageTags Tags { get; set; }
         public string ChannelName { get; set; }
         public string UserName { get; set; }
@@ -16,6 +20,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             ChannelName = parameters.ElementAt(0).Trim('#');
             Message = parameters.LastOrDefault()[1..];
             UserName = prefix?.Username;
+            ContainsSpecialCharacters = new StringInfo(Message).LengthInTextElements < Message.Length;
         }
 
         public static MessageEventArgs Create(IrcPayload payload)
