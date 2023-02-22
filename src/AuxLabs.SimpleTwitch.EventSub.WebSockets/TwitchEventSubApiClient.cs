@@ -11,66 +11,114 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
         /// <summary> Triggered when a session is created after connection. </summary>
         public event Action<Session> SessionCreated;
+        /// <summary> Triggered when the server requests a reconnect. </summary>
         public event Action<Session> Reconnect;
+        /// <summary> Triggered when the user no longer exists or they revoked the authorization token that the subscription relied on. </summary>
+        public event Action<EventSubscription> Revocation;
 
-        public event Action<ChannelUpdateEventArgs, EventSubcription> ChannelUpdated;
-        public event Action<Follower, EventSubcription> ChannelFollow;
-        public event Action<SubscriptionEventArgs, EventSubcription> Subscription;
-        public event Action<SubscriptionEndedEventArgs, EventSubcription> SubscriptionEnd;
-        public event Action<SubscriptionGiftedEventArgs, EventSubcription> SubscriptionGifted;
-        public event Action<SubscriptionMessageEventArgs, EventSubcription> SubscriptionMessage;
-        public event Action<CheerEventArgs, EventSubcription> BitsCheered;
-        public event Action<RaidEventArgs, EventSubcription> ChannelRaided;
+        /// <summary> A broadcaster updates their channel properties e.g., category, title, mature flag, broadcast, or language. </summary>
+        public event Action<ChannelUpdateEventArgs, EventSubscription> ChannelUpdated;
+        /// <summary> A specified channel receives a follow. </summary>
+        public event Action<Follower, EventSubscription> ChannelFollow;
+        /// <summary> A notification when a specified channel receives a subscriber. This does not include resubscribes. </summary>
+        public event Action<SubscriptionEventArgs, EventSubscription> Subscription;
+        /// <summary> A notification when a subscription to the specified channel ends. </summary>
+        public event Action<SubscriptionEndedEventArgs, EventSubscription> SubscriptionEnd;
+        /// <summary> A notification when a viewer gives a gift subscription to one or more users in the specified channel. </summary>
+        public event Action<SubscriptionGiftedEventArgs, EventSubscription> SubscriptionGifted;
+        /// <summary> A notification when a user sends a resubscription chat message in a specific channel. </summary>
+        public event Action<SubscriptionMessageEventArgs, EventSubscription> SubscriptionMessage;
+        /// <summary> A user cheers on the specified channel. </summary>
+        public event Action<CheerEventArgs, EventSubscription> BitsCheered;
+        /// <summary> A broadcaster raids another broadcaster’s channel. </summary>
+        public event Action<RaidEventArgs, EventSubscription> ChannelRaided;
 
-        public event Action<BanEventArgs, EventSubcription> UserBanned;
-        public event Action<UnbanEventArgs, EventSubcription> UserUnbanned;
-        public event Action<ModeratorAddedEventArgs, EventSubcription> ModeratorAdded;
-        public event Action<ModeratorRemovedEventArgs, EventSubcription> ModeratorRemoved;
+        /// <summary> A viewer is banned from the specified channel. </summary>
+        public event Action<BanEventArgs, EventSubscription> UserBanned;
+        /// <summary> A viewer is unbanned from the specified channel. </summary>
+        public event Action<UnbanEventArgs, EventSubscription> UserUnbanned;
+        /// <summary> Moderator privileges were added to a user on a specified channel. </summary>
+        public event Action<ModeratorAddedEventArgs, EventSubscription> ModeratorAdded;
+        /// <summary> Moderator privileges were removed from a user on a specified channel. </summary>
+        public event Action<ModeratorRemovedEventArgs, EventSubscription> ModeratorRemoved;
 
-        public event Action<RewardAddedEventArgs, EventSubcription> RewardAdded;
-        public event Action<RewardUpdatedEvent, EventSubcription> RewardUpdated;
-        public event Action<RewardRemovedEventArgs, EventSubcription> RewardRemoved;
-        public event Action<RedemptionAddedEvent, EventSubcription> RedemptionAdded;
-        public event Action<RedemptionUpdatedEvent, EventSubcription> RedemptionUpdated;
+        /// <summary> A custom channel points reward has been created for the specified channel. </summary>
+        public event Action<RewardAddedEventArgs, EventSubscription> RewardAdded;
+        /// <summary> A custom channel points reward has been updated for the specified channel. </summary>
+        public event Action<RewardUpdatedEvent, EventSubscription> RewardUpdated;
+        /// <summary> A custom channel points reward has been removed from the specified channel. </summary>
+        public event Action<RewardRemovedEventArgs, EventSubscription> RewardRemoved;
+        /// <summary> A viewer has redeemed a custom channel points reward on the specified channel. </summary>
+        public event Action<RedemptionAddedEvent, EventSubscription> RedemptionAdded;
+        /// <summary> A redemption of a channel points custom reward has been updated for the specified channel. </summary>
+        public event Action<RedemptionUpdatedEvent, EventSubscription> RedemptionUpdated;
 
-        public event Action<PollStartedEventArgs, EventSubcription> PollStarted;
-        public event Action<PollProgressEventArgs, EventSubcription> PollProgress;
-        public event Action<PollEndedEventArgs, EventSubcription> PollEnded;
+        /// <summary> A poll started on a specified channel. </summary>
+        public event Action<PollEventArgs, EventSubscription> PollStarted;
+        /// <summary> Users respond to a poll on a specified channel. </summary>
+        public event Action<PollEventArgs, EventSubscription> PollProgress;
+        /// <summary> A poll ended on a specified channel. </summary>
+        public event Action<PollEndedEventArgs, EventSubscription> PollEnded;
 
-        public event Action<PredictionStartedEventArgs, EventSubcription> PredictionStarted;
-        public event Action<PredictionProgressEventArgs, EventSubcription> PredictionProgress;
-        public event Action<PredictionLockedEventArgs, EventSubcription> PredictionLocked;
-        public event Action<PredictionEndedEventArgs, EventSubcription> PredictionEnded;
+        /// <summary> A Prediction started on a specified channel. </summary>
+        public event Action<PredictionStartedEventArgs, EventSubscription> PredictionStarted;
+        /// <summary> Users participated in a Prediction on a specified channel. </summary>
+        public event Action<PredictionProgressEventArgs, EventSubscription> PredictionProgress;
+        /// <summary> A Prediction was locked on a specified channel. </summary>
+        public event Action<PredictionLockedEventArgs, EventSubscription> PredictionLocked;
+        /// <summary> A Prediction ended on a specified channel. </summary>
+        public event Action<PredictionEndedEventArgs, EventSubscription> PredictionEnded;
 
-        public event Action<DonationEventArgs, EventSubcription> CharityDonation;
-        public event Action<CampaignStartedEventArgs, EventSubcription> CharityCampaignStarted;
-        public event Action<CampaignProgressEventArgs, EventSubcription> CharityCampaignProgress;
-        public event Action<CampaignEndedEventArgs, EventSubcription> CharityCampaignStopped;
+        /// <summary> Sends an event notification when a user donates to the broadcaster’s charity campaign. </summary>
+        public event Action<DonationEventArgs, EventSubscription> CharityDonation;
+        /// <summary> Sends an event notification when the broadcaster starts a charity campaign. </summary>
+        public event Action<CampaignStartedEventArgs, EventSubscription> CharityCampaignStarted;
+        /// <summary> Sends an event notification when progress is made towards the campaign’s goal or when the broadcaster changes the fundraising goal. </summary>
+        public event Action<CampaignProgressEventArgs, EventSubscription> CharityCampaignProgress;
+        /// <summary> Sends an event notification when the broadcaster stops a charity campaign. </summary>
+        public event Action<CampaignEndedEventArgs, EventSubscription> CharityCampaignStopped;
 
-        public event Action<EntitlementGrantEventArgs, EventSubcription> DropEntitlementGranted;
-        public event Action<BitsTransactionEventArgs, EventSubcription> BitsTransactionCreated;
+        /// <summary> An entitlement for a Drop is granted to a user. </summary>
+        public event Action<EntitlementGrantEventArgs, EventSubscription> DropEntitlementGranted;
+        /// <summary> A Bits transaction occurred for a specified Twitch Extension. </summary>
+        public event Action<BitsTransactionEventArgs, EventSubscription> BitsTransactionCreated;
 
-        public event Action<GoalStartedEventArgs, EventSubcription> GoalStarted;
-        public event Action<GoalProgressEventArgs, EventSubcription> GoalProgress;
-        public event Action<GoalEndedEventArgs, EventSubcription> GoalEnded;
+        /// <summary> Get notified when a broadcaster begins a goal. </summary>
+        public event Action<GoalStartedEventArgs, EventSubscription> GoalStarted;
+        /// <summary> Get notified when progress (either positive or negative) is made towards a broadcaster’s goal. </summary>
+        public event Action<GoalProgressEventArgs, EventSubscription> GoalProgress;
+        /// <summary> Get notified when a broadcaster ends a goal. </summary>
+        public event Action<GoalEndedEventArgs, EventSubscription> GoalEnded;
 
-        public event Action<HypeTrainStartedEventArgs, EventSubcription> HypeTrainStarted;
-        public event Action<HypeTrainProgressEventArgs, EventSubcription> HypeTrainProgress;
-        public event Action<HypeTrainEndedEventArgs, EventSubcription> HypeTrainEnded;
+        /// <summary> A Hype Train begins on the specified channel. </summary>
+        public event Action<HypeTrainStartedEventArgs, EventSubscription> HypeTrainStarted;
+        /// <summary> A Hype Train makes progress on the specified channel. </summary>
+        public event Action<HypeTrainProgressEventArgs, EventSubscription> HypeTrainProgress;
+        /// <summary> A Hype Train ends on the specified channel. </summary>
+        public event Action<HypeTrainEndedEventArgs, EventSubscription> HypeTrainEnded;
 
-        public event Action<ShieldModeStartedEventArgs, EventSubcription> ShieldModeStarted;
-        public event Action<ShieldModeEndedEventArgs, EventSubcription> ShieldModeEnded;
+        /// <summary> Sends a notification when the broadcaster activates Shield Mode. </summary>
+        public event Action<ShieldModeStartedEventArgs, EventSubscription> ShieldModeStarted;
+        /// <summary> Sends a notification when the broadcaster deactivates Shield Mode. </summary>
+        public event Action<ShieldModeEndedEventArgs, EventSubscription> ShieldModeEnded;
 
-        public event Action<ShoutoutCreatedEventArgs, EventSubcription> ShoutoutCreated;
-        public event Action<ShoutoutReceivedEventArgs, EventSubcription> ShoutoutReceived;
+        /// <summary> Sends a notification when the specified broadcaster sends a Shoutout. </summary>
+        public event Action<ShoutoutCreatedEventArgs, EventSubscription> ShoutoutCreated;
+        /// <summary> Sends a notification when the specified broadcaster receives a Shoutout. </summary>
+        public event Action<ShoutoutReceivedEventArgs, EventSubscription> ShoutoutReceived;
 
-        public event Action<StreamStartedEventArgs, EventSubcription> StreamStarted;
-        public event Action<StreamEndedEventArgs, EventSubcription> StreamEnded;
+        /// <summary> The specified broadcaster starts a stream. </summary>
+        public event Action<StreamStartedEventArgs, EventSubscription> StreamStarted;
+        /// <summary> The specified broadcaster stops a stream. </summary>
+        public event Action<StreamEndedEventArgs, EventSubscription> StreamEnded;
 
-        public event Action<AuthorizationGrantedEventArgs, EventSubcription> AuthorizationGranted;
-        public event Action<AuthorizationRevokedEventArgs, EventSubcription> AuthorizationRevoked;
+        /// <summary> A user’s authorization has been granted to your client id. </summary>
+        public event Action<AuthorizationGrantedEventArgs, EventSubscription> AuthorizationGranted;
+        /// <summary> A user’s authorization has been revoked for your client id. </summary>
+        public event Action<AuthorizationRevokedEventArgs, EventSubscription> AuthorizationRevoked;
 
-        public event Action<UserUpdatedEventArgs, EventSubcription> UserUpdated;
+        /// <summary> A user has updated their account. </summary>
+        public event Action<UserUpdatedEventArgs, EventSubscription> UserUpdated;
 
         #endregion
 
@@ -116,6 +164,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
                     break;
 
                 case MessageType.Revocation:
+                    Revocation?.Invoke(frame.Payload.Subscription);
                     break;
 
                 case MessageType.Notification:
