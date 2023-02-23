@@ -41,7 +41,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.ChannelPointsRedemptionUpdate] = typeof(RedemptionUpdatedEvent),
 
             [EventSubType.ChannelPollStart] = typeof(PollEventArgs),
-            [EventSubType.ChannelPollProgress] = typeof(PollProgressEventArgs),
+            [EventSubType.ChannelPollProgress] = typeof(PollEventArgs),
             [EventSubType.ChannelPollEnd] = typeof(PollEndedEventArgs),
 
             [EventSubType.ChannelPredictionStart] = typeof(PredictionStartedEventArgs),
