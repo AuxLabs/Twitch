@@ -21,7 +21,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public static Dictionary<EventSubType, Type> EventTypeSelector => new Dictionary<EventSubType, Type>()
         {
             [EventSubType.ChannelUpdate] = typeof(ChannelUpdateEventArgs),
-            [EventSubType.ChannelFollow] = typeof(Follower),
+            [EventSubType.ChannelFollow] = typeof(ChannelFollowEventArgs),
             [EventSubType.ChannelSubscribe] = typeof(SubscriptionEventArgs),
             [EventSubType.ChannelSubscriptionEnd] = typeof(SubscriptionEndedEventArgs),
             [EventSubType.ChannelSubscriptionGift] = typeof(SubscriptionGiftedEventArgs),

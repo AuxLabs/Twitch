@@ -177,6 +177,18 @@ namespace AuxLabs.SimpleTwitch.Rest
             CheckPermissions(args);
             return _api.GetChannelEditorsAsync(args);
         }
+        /// <inheritdoc/>
+        public Task<TwitchMetaResponse<FollowedChannel>> GetFollowedChannelsAsync(GetFollowedChannelsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetFollowedChannelsAsync(args);
+        }
+        /// <inheritdoc/>
+        public Task<TwitchMetaResponse<Follower>> GetFollowersAsync(GetFollowersArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetFollowersAsync(args);
+        }
 
         #endregion
         #region Channel Points
@@ -725,12 +737,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             //CheckScopes(args);
             return _api.PutUserAsync(description);
-        }
-        /// <inheritdoc/>
-        public Task<TwitchMetaResponse<Follower>> GetFollowsAsync(GetFollowsArgs args)
-        {
-            args.Validate();
-            return _api.GetFollowsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync(GetBlocksArgs args)

@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using AuxLabs.SimpleTwitch.WebSockets;
+﻿using AuxLabs.SimpleTwitch.WebSockets;
 using System;
 using System.Threading.Tasks;
 
@@ -19,7 +18,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         /// <summary> A broadcaster updates their channel properties e.g., category, title, mature flag, broadcast, or language. </summary>
         public event Action<ChannelUpdateEventArgs, EventSubscription> ChannelUpdated;
         /// <summary> A specified channel receives a follow. </summary>
-        public event Action<Follower, EventSubscription> ChannelFollow;
+        public event Action<ChannelFollowEventArgs, EventSubscription> ChannelFollow;
         /// <summary> A notification when a specified channel receives a subscriber. This does not include resubscribes. </summary>
         public event Action<SubscriptionEventArgs, EventSubscription> Subscription;
         /// <summary> A notification when a subscription to the specified channel ends. </summary>

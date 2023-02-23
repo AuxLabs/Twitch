@@ -95,6 +95,24 @@ namespace AuxLabs.SimpleTwitch.Rest
         [Get("channels/editors")]
         Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([QueryMap] GetChannelEditorsArgs args);
 
+        /// <summary> Gets a list of broadcasters that the specified user follows. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>user:read:follows</c> scope. </remarks>
+        /// <returns> A collection of <see cref="FollowedChannel"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
+        [Get("channels/followed")]
+        Task<TwitchMetaResponse<FollowedChannel>> GetFollowedChannelsAsync([QueryMap] GetFollowedChannelsArgs args);
+
+        /// <summary> Gets a list of users that follow the specified broadcaster. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:read:followers</c> scope. </remarks>
+        /// <returns> A collection of <see cref="Follower"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
+        [Get("channels/followed")]
+        Task<TwitchMetaResponse<Follower>> GetFollowersAsync([QueryMap] GetFollowersArgs args);
+
         #endregion
         #region Channel Points
 
@@ -827,12 +845,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="MissingScopeException" />
         [Put("users")]
         Task<TwitchResponse<User>> PutUserAsync([Query("description")] string description);
-
-        /// <summary> Gets information about users that are following other users. </summary>
-        /// <returns> A collection of <see cref="Follower"/> objects. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
-        [Get("users/follows")]
-        Task<TwitchMetaResponse<Follower>> GetFollowsAsync([QueryMap] GetFollowsArgs args);
 
         /// <summary> Gets the list of users that the broadcaster has blocked. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
