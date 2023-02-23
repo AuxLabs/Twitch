@@ -51,7 +51,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 3/3 Polls
   - [x] 3/3 Predictions
   - [x] 2/2 Raids
-  - [ ] 0/6 Schedule
+  - [x] 6/6 Schedule
   - [x] 2/2 Search
   - [x] 3/3 Music
   - [x] 5/5 Streams

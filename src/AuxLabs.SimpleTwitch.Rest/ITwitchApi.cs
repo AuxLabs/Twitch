@@ -651,18 +651,45 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Schedule
 
+        /// <summary> Gets the broadcaster’s streaming schedule. </summary>
+        /// <returns> A single <see cref="Schedule"/> object with a collection of <see cref="ScheduleSegment"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("schedule")]
-        Task<TwitchResponse<object>> GetScheduleAsync([Query] object args);
-        [Get("schedule/icalendar")]
-        Task<TwitchResponse<object>> GetCalendarAsync([Query] object args);
+        Task<TwitchMetaResponse<Schedule>> GetScheduleAsync([QueryMap] GetScheduleArgs args);
+
+        /// <summary> Updates the broadcaster’s schedule settings, such as scheduling a vacation. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:schedule</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Patch("schedule/settings")]
-        Task<TwitchResponse<object>> PatchScheduleAsync([Query] object args);
+        Task PatchScheduleAsync([QueryMap] PatchScheduleArgs args);
+
+        /// <summary> Adds a single or recurring broadcast to the broadcaster’s streaming schedule. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:schedule</c> scope. </remarks>
+        /// <returns> A single <see cref="Schedule"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("schedule/segment")]
-        Task<TwitchResponse<object>> PostScheduleSegmentAsync([Query] object args);
+        Task<TwitchResponse<Schedule>> PostSegmentAsync([QueryMap] PostSegmentArgs args, [Body] PostSegmentBody body);
+
+        /// <summary> Updates a scheduled broadcast segment. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:schedule</c> scope. </remarks>
+        /// <returns> A single <see cref="Schedule"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Patch("schedule/segment")]
-        Task<TwitchResponse<object>> PatchScheduleSegmentAsync([Query] object args);
+        Task<TwitchResponse<Schedule>> PatchSegmentAsync([QueryMap] ManageSegmentArgs args, [Body] PatchSegmentBody body);
+
+        /// <summary> Updates a scheduled broadcast segment. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:schedule</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("schedule/segment")]
-        Task<TwitchResponse<object>> DeleteScheduleSegmentAsync([Query] object args);
+        Task DeleteSegmentAsync([QueryMap] ManageSegmentArgs args);
 
         #endregion
         #region Search

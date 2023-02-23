@@ -575,24 +575,37 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Schedules
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetScheduleAsync(object args)
-            => _api.GetScheduleAsync(args);
+        public Task<TwitchMetaResponse<Schedule>> GetScheduleAsync(GetScheduleArgs args)
+        {
+            args.Validate();
+            return _api.GetScheduleAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetCalendarAsync(object args)
-            => _api.GetCalendarAsync(args);
-
+        public Task PatchScheduleAsync(PatchScheduleArgs args)
+        {
+            CheckPermissions(args);
+            return _api.PatchScheduleAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PatchScheduleAsync(object args)
-            => _api.PatchScheduleAsync(args);
+        public Task<TwitchResponse<Schedule>> PostSegmentAsync(PostSegmentArgs args, PostSegmentBody body)
+        {
+            CheckPermissions(args);
+            body.Validate();
+            return _api.PostSegmentAsync(args, body);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostScheduleSegmentAsync(object args)
-            => _api.PostScheduleSegmentAsync(args);
+        public Task<TwitchResponse<Schedule>> PatchSegmentAsync(ManageSegmentArgs args, PatchSegmentBody body)
+        {
+            CheckPermissions(args);
+            body.Validate();
+            return _api.PatchSegmentAsync(args, body);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PatchScheduleSegmentAsync(object args)
-            => _api.PatchScheduleSegmentAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> DeleteScheduleSegmentAsync(object args)
-            => _api.DeleteScheduleSegmentAsync(args);
+        public Task DeleteSegmentAsync(ManageSegmentArgs args)
+        {
+            CheckPermissions(args);
+            return _api.DeleteSegmentAsync(args);
+        }
 
         #endregion
         #region Search
