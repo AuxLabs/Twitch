@@ -47,7 +47,7 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 2/2 Games
   - [x] 1/1 Goals
   - [x] 1/1 Hype Trains
-  - [ ] 6/19 Moderation
+  - [x] 19/19 Moderation
   - [x] 3/3 Polls
   - [x] 3/3 Predictions
   - [x] 2/2 Raids

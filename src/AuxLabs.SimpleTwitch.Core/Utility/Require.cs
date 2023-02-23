@@ -16,6 +16,11 @@ namespace AuxLabs.SimpleTwitch
         #endregion
         #region Objects
 
+        public static void Equal(object obj, object value, string name, string msg = null)
+        {
+            if (!obj.Equals(value)) throw new ArgumentException(msg ?? "Arguments must be equal", name);
+        }
+
         public static void NotNull(object obj, string name, string msg = null) 
         { 
             if (obj == null) throw new ArgumentNullException(name, msg ?? "Argument cannot be null");

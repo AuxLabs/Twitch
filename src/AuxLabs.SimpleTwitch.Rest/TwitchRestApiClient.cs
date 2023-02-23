@@ -46,11 +46,15 @@ namespace AuxLabs.SimpleTwitch.Rest
             Dispose(true);
         }
 
-        private void CheckScopes(IScoped request)
+        private void CheckPermissions(IScoped request)
         {
             if (!(Identity is UserIdentity user))
                 throw new TwitchException("This request cannot be made using app authorization.");
-            request.Validate(user.Scopes);
+
+            if (request is IManaged managed)
+                managed.Validate(user.Scopes, user.UserId);
+            else
+                request.Validate(user.Scopes);
         }
 
         #region Identity
@@ -109,7 +113,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostCommercialAsync(args);
         }
 
@@ -119,19 +123,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetExtensionAnalyticsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync(GetGameAnalyticsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetGameAnalyticsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync(GetBitsLeaderboardArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetBitsLeaderboardAsync(args);
         }
 
@@ -163,14 +167,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task PatchChannelAsync(PatchChannelArgs args, PatchChannelBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             body.Validate();
             return _api.PatchChannelAsync(args, body);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync(GetChannelEditorsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetChannelEditorsAsync(args);
         }
 
@@ -180,39 +184,39 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<Reward>> PostRewardsAsync(PostRewardArgs args, PostRewardBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             body.Validate();
             return _api.PostRewardsAsync(args, body);
         }
         /// <inheritdoc/>
         public Task DeleteRewardAsync(ManageRewardArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.DeleteRewardAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Reward>> GetRewardsAsync(GetRewardArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetRewardsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync(GetRedemptionsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetRewardRedemptionAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Reward>> PatchRewardAsync(ManageRewardArgs args, PostRewardBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             body.Validate();
             return _api.PatchRewardAsync(args, body);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync(RedemptionStatus status, ModifyRedemptionsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PatchRewardRedemptionAsync(status, args);
         }
 
@@ -225,7 +229,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync(GetCharityDonationsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetCharityDonationsAsync(args);
         }
 
@@ -235,7 +239,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync(GetChattersArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetChattersAsync(args);
         }
         /// <inheritdoc/>
@@ -265,20 +269,20 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync(PatchChatSettingsArgs args, PatchChatSettingsBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             body.Validate();
             return _api.PatchChatSettingsAsync(args, body);
         }
         /// <inheritdoc/>
         public Task PostChatAnnouncementAsync(string broadcasterId, string moderatorId, PostAnnouncementArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostChatAnnouncementAsync(broadcasterId, moderatorId, args);
         }
         /// <inheritdoc/>
         public Task PostShoutoutAsync(PostShoutoutArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostShoutoutAsync(args);
         }
         /// <inheritdoc/>
@@ -290,7 +294,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task PutUserChatColor(PutUserChatColorArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PutUserChatColor(args);
         }
 
@@ -300,7 +304,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<SimpleClip>> PostClipAsync(PostClipArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostClipAsync(args);
         }
         /// <inheritdoc/>
@@ -367,7 +371,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<Goal>> GetGoalsAsync(GetGoalsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetGoalsAsync(args);
         }
 
@@ -377,7 +381,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync(GetHypeTrainsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetHypetrainEventsAsync(args);
         }
 
@@ -387,86 +391,125 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(string broadcasterId, PostEnforcementStatusBody args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostEnforcementStatusAsync(broadcasterId, args);
         }
         /// <inheritdoc/>
         public Task PostAutomodMessageAsync(PostAutomodMessageArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostAutomodMessageAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync(AutomodSettingsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetAutomodSettingsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync(AutomodSettingsArgs args, PutAutomodSettingsBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             //body.Validate();
             return _api.PutAutomodSettingsAsync(args, body);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<BannedUser>> GetBannedUsersAsync(GetBannedUsersArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetBannedUsersAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Ban>> PostBanAsync(PostBanArgs args, PostBanBody body)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             body.Validate();
             return _api.PostBanAsync(args, body);
         }
         /// <inheritdoc/>
         public Task DeleteBanAsync(DeleteBanArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.DeleteBanAsync(args);
         }
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetBlockedTermsAsync(object args)
-            => _api.GetBlockedTermsAsync(args);
+        public Task<TwitchMetaResponse<BlockedTerm>> GetBlockedTermsAsync(GetBlockedTermsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetBlockedTermsAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostBlockedTermAsync(object args)
-            => _api.PostBlockedTermAsync(args);
+        public Task<TwitchResponse<BlockedTerm>> PostBlockedTermAsync(PostBlockedTermArgs args, PostBlockedTermBody body)
+        {
+            CheckPermissions(args);
+            body.Validate();
+            return _api.PostBlockedTermAsync(args, body);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> DeleteBlockedTermAsync(object args)
-            => _api.DeleteBlockedTermAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> DeleteChatMessagesAsync(object args)
-            => _api.DeleteChatMessagesAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetModeratorsAsync(object args)
-            => _api.GetModeratorsAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostModeratorAsync(object args)
-            => _api.PostModeratorAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<object>> DeleteModeratorAsync(object args)
-            => _api.DeleteModeratorAsync(args);
+        public Task DeleteBlockedTermAsync(DeleteBlockedTermsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.DeleteBlockedTermAsync(args);
+        }
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetVipsAsync(object args)
-            => _api.GetVipsAsync(args);
+        public Task DeleteChatMessagesAsync(DeleteMessageArgs args)
+        {
+            CheckPermissions(args);
+            return _api.DeleteChatMessagesAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PostVipAsync(object args)
-            => _api.PostVipAsync(args);
+        public Task<TwitchMetaResponse<SimpleUser>> GetModeratorsAsync(GetModeratorsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetModeratorsAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> DeleteVipAsync(object args)
-            => _api.DeleteVipAsync(args);
+        public Task PostModeratorAsync(ManageModeratorArgs args)
+        {
+            CheckPermissions(args);
+            return _api.PostModeratorAsync(args);
+        }
+        /// <inheritdoc/>
+        public Task DeleteModeratorAsync(ManageModeratorArgs args)
+        {
+            CheckPermissions(args);
+            return _api.DeleteModeratorAsync(args);
+        }
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> PutShieldModeAsync(object args)
-            => _api.PutShieldModeAsync(args);
+        public Task<TwitchMetaResponse<SimpleUser>> GetVipsAsync(GetVipsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetVipsAsync(args);
+        }
         /// <inheritdoc/>
-        public Task<TwitchResponse<object>> GetShieldModeAsync(object args)
-            => _api.GetShieldModeAsync(args);
+        public Task PostVipAsync(ManageVipArgs args)
+        {
+            CheckPermissions(args);
+            return _api.PostVipAsync(args);
+        }
+        /// <inheritdoc/>
+        public Task DeleteVipAsync(ManageVipArgs args)
+        {
+            CheckPermissions(args);
+            return _api.DeleteVipAsync(args);
+        }
+
+        /// <inheritdoc/>
+        public Task<TwitchResponse<ShieldMode>> PutShieldModeAsync(PutShieldModeArgs args, PutShieldModeBody body)
+        {
+            CheckPermissions(args);
+            // Body doesn't need to be validated, it's just a bool for now
+            return _api.PutShieldModeAsync(args, body);
+        }
+        /// <inheritdoc/>
+        public Task<TwitchResponse<ShieldMode>> GetShieldModeAsync(GetShieldModeArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetShieldModeAsync(args);
+        }
 
         #endregion
         #region Polls
@@ -474,19 +517,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Poll>> GetPollAsync(GetPredictionsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetPollAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Poll>> PostPollAsync(PutPollArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostPollAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Poll>> PatchPollAsync(PatchPollArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PatchPollAsync(args);
         }
 
@@ -496,19 +539,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Prediction>> GetPredictionAsync(GetPredictionsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetPredictionAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Prediction>> PostPredictionAsync(PostPredictionArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostPredictionAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Prediction>> PatchPredictionaAsync(PostPredictionArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PatchPredictionaAsync(args);
         }
 
@@ -518,13 +561,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<Raid>> PostRaidAsync(PostRaidArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PostRaidAsync(args);
         }
         /// <inheritdoc/>
         public Task DeleteRaidAsync(DeleteRaidArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.DeleteRaidAsync(args);
         }
 
@@ -595,7 +638,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<string>> GetBroadcastKeyAsync(GetBroadcastKeyArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetBroadcastKeyAsync(args);
         }
         /// <inheritdoc/>
@@ -607,19 +650,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Broadcast>> GetFollowedBroadcastsAsync(GetFollowedBroadcastsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetFollowedBroadcastsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<BroadcastMarker>> PostBroadcastMarkerAsync(PostBroadcastMarkerBody body)
         {
-            CheckScopes(body);
+            CheckPermissions(body);
             return _api.PostBroadcastMarkerAsync(body);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<BroadcastMarker>> GetBroadcastMarkersAsync(GetBroadcastMarkersArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetBroadcastMarkersAsync(args);
         }
 
@@ -629,13 +672,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync(GetSubscriptionsArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetSubscriptionsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<SimpleSubscription>> GetSubscriberAsync(GetSubscriberArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetSubscriberAsync(args);
         }
 
@@ -679,13 +722,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync(GetBlocksArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.GetBlocksAsync(args);
         }
         /// <inheritdoc/>
         public Task PutBlockAsync(PutBlockArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.PutBlockAsync(args);
         }
         /// <inheritdoc/>
@@ -722,7 +765,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         public Task<TwitchResponse<string>> DeleteVideoAsync(DeleteVideosArgs args)
         {
-            CheckScopes(args);
+            CheckPermissions(args);
             return _api.DeleteVideoAsync(args);
         }
         

@@ -451,7 +451,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> Bans a user from participating in the specified broadcaster’s chat room or puts them in a timeout. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
-        /// with the <c> moderator:manage:banned_users</c> scope. </remarks>
+        /// with the <c>moderator:manage:banned_users</c> scope. </remarks>
         /// <returns> A collection of <see cref="Ban"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
@@ -460,47 +460,113 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> Removes the ban or timeout that was placed on the specified user. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
-        /// with the <c> moderator:manage:banned_users</c> scope. </remarks>
+        /// with the <c>moderator:manage:banned_users</c> scope. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("moderation/bans")]
         Task DeleteBanAsync([QueryMap] DeleteBanArgs args);
 
+        /// <summary> Gets the broadcaster’s list of non-private, blocked words or phrases. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:read:blocked_terms</c> or <c>moderator:manage:blocked_terms</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="BlockedTerm"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("moderation/blocked_terms")]
-        Task<TwitchResponse<object>> GetBlockedTermsAsync([Query] object args);
+        Task<TwitchMetaResponse<BlockedTerm>> GetBlockedTermsAsync([QueryMap] GetBlockedTermsArgs args);
 
+        /// <summary> Gets the broadcaster’s list of non-private, blocked words or phrases. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:blocked_terms</c> scope. </remarks>
+        /// <returns> A single <see cref="BlockedTerm"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("moderation/blocked_terms")]
-        Task<TwitchResponse<object>> PostBlockedTermAsync([Query] object args);
+        Task<TwitchResponse<BlockedTerm>> PostBlockedTermAsync([QueryMap] PostBlockedTermArgs args, [Body] PostBlockedTermBody body);
 
+        /// <summary> Removes the word or phrase from the broadcaster’s list of blocked terms. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:blocked_terms</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("moderation/blocked_term")]
-        Task<TwitchResponse<object>> DeleteBlockedTermAsync([Query] object args);
+        Task DeleteBlockedTermAsync([QueryMap] DeleteBlockedTermsArgs args);
 
+        /// <summary> Removes a single chat message or all chat messages from the broadcaster’s chat room. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:chat_messages</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 404 Not Found </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("moderation/chat")]
-        Task<TwitchResponse<object>> DeleteChatMessagesAsync([Query] object args);
+        Task DeleteChatMessagesAsync([QueryMap] DeleteMessageArgs args);
 
+        /// <summary> Gets all users allowed to moderate the broadcaster’s chat room. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderation:read</c> or <c>channel:manage:moderators</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="SimpleUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("moderation/moderators")]
-        Task<TwitchResponse<object>> GetModeratorsAsync([Query] object args);
+        Task<TwitchMetaResponse<SimpleUser>> GetModeratorsAsync([QueryMap] GetModeratorsArgs args);
 
+        /// <summary> Adds a moderator to the broadcaster’s chat room. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:moderators</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 422 Unprocessable </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("moderation/moderators")]
-        Task<TwitchResponse<object>> PostModeratorAsync([Query] object args);
+        Task PostModeratorAsync([QueryMap] ManageModeratorArgs args);
 
+        /// <summary> Removes a moderator from the broadcaster’s chat room. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:moderators</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 422 Unprocessable </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("moderation/moderators")]
-        Task<TwitchResponse<object>> DeleteModeratorAsync([Query] object args);
+        Task DeleteModeratorAsync([QueryMap] ManageModeratorArgs args);
 
+        /// <summary> Gets a list of the broadcaster’s VIPs. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderation:read</c> or <c>channel:manage:moderators</c> scopes. </remarks>
+        /// <returns> A collection of <see cref="SimpleUser"/> objects. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("channels/vips")]
-        Task<TwitchResponse<object>> GetVipsAsync([Query] object args);
+        Task<TwitchMetaResponse<SimpleUser>> GetVipsAsync([QueryMap] GetVipsArgs args);
 
+        /// <summary> Adds the specified user as a VIP in the broadcaster’s channel. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:vips</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable, 425 Too Early </exception>
+        /// <exception cref="MissingScopeException" />
         [Post("channels/vips")]
-        Task<TwitchResponse<object>> PostVipAsync([Query] object args);
+        Task PostVipAsync([QueryMap] ManageVipArgs args);
 
+        /// <summary> Removes the specified user as a VIP in the broadcaster’s channel. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>channel:manage:vips</c> scope. </remarks>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 422 Unprocessable </exception>
+        /// <exception cref="MissingScopeException" />
         [Delete("channels/vips")]
-        Task<TwitchResponse<object>> DeleteVipAsync([Query] object args);
+        Task DeleteVipAsync([QueryMap] ManageVipArgs args);
 
+        /// <summary> Activates or deactivates the broadcaster’s Shield Mode. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:manage:shield_mode</c> scope. </remarks>
+        /// <returns> A single <see cref="ShieldMode"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Put("moderation/shield_mode")]
-        Task<TwitchResponse<object>> PutShieldModeAsync([Query] object args);
+        Task<TwitchResponse<ShieldMode>> PutShieldModeAsync([QueryMap] PutShieldModeArgs args, [Body] PutShieldModeBody body);
 
+        /// <summary> Activates or deactivates the broadcaster’s Shield Mode. </summary>
+        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        /// with the <c>moderator:read:shield_mode</c> or <c>moderator:manage:shield_mode</c> scopes. </remarks>
+        /// <returns> A single <see cref="ShieldMode"/> object. </returns>
+        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
+        /// <exception cref="MissingScopeException" />
         [Get("moderation/shield_mode")]
-        Task<TwitchResponse<object>> GetShieldModeAsync([Query] object args);
+        Task<TwitchResponse<ShieldMode>> GetShieldModeAsync([QueryMap] GetShieldModeArgs args);
 
         #endregion
         #region Polls
