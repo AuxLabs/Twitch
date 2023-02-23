@@ -1,6 +1,5 @@
 ﻿using RestEase;
 using System;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -76,6 +75,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Get information relating to a user access token </summary>
         public async Task<AccessTokenInfo> ValidateAsync(string token)
         {
+            Require.NotNullOrWhitespace(token, nameof(token));
+
             var tokenInfo = await _api.ValidateAsync(token);
             ClientId = tokenInfo.ClientId;
 
