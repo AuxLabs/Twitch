@@ -3,7 +3,6 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<CodeStatus>))]
     public enum CodeStatus
     {
         /// <summary> The code has already been claimed. All codes are single-use. </summary>

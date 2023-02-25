@@ -1,9 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<EmoteType>))]
     public enum EmoteType
     {
         None = 0,

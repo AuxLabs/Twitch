@@ -1,10 +1,7 @@
-﻿using System;
-using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [Flags, JsonConverter(typeof(EnumMemberConverter<EmoteTheme>))]
     public enum EmoteTheme
     {
         [EnumMember(Value = "dark")]

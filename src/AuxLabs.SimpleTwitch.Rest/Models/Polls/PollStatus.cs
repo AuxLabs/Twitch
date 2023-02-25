@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<PollStatus>))]
     public enum PollStatus
     {
         /// <summary> Something went wrong while determining the state. </summary>

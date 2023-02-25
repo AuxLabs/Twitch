@@ -1,9 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<RedemptionStatus>))]
     public enum RedemptionStatus
     {
         Unknown = 0,

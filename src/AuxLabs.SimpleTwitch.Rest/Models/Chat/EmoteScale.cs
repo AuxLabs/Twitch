@@ -1,10 +1,7 @@
-﻿using System;
-using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [Flags, JsonConverter(typeof(EnumMemberConverter<EmoteScale>))]
     public enum EmoteScale
     {
         /// <summary> A small version (28px x 28px) is available. </summary>

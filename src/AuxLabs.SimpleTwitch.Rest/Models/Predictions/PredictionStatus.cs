@@ -1,9 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<PredictionStatus>))]
     public enum PredictionStatus
     {
         /// <summary> The Prediction is running and viewers can make predictions. </summary>

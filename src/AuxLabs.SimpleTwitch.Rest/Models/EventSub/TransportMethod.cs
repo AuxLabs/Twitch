@@ -1,10 +1,7 @@
-﻿using AuxLabs.SimpleTwitch.Rest;
-using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    [JsonConverter(typeof(EnumMemberConverter<TransportMethod>))]
     public enum TransportMethod
     {
         [EnumMember(Value = "webhook")]

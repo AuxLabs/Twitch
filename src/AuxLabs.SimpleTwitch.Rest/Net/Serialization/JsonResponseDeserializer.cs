@@ -1,6 +1,7 @@
 ﻿using RestEase;
 using System.Net.Http;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -9,12 +10,18 @@ namespace AuxLabs.SimpleTwitch.Rest
         public override T Deserialize<T>(string content, HttpResponseMessage response, ResponseDeserializerInfo info)
         {
             if (string.IsNullOrWhiteSpace(content))
-                return default!;
+                return default;
 
-            return JsonSerializer.Deserialize<T>(content, new JsonSerializerOptions
+            var options = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = new SnakeCaseNamingPolicy()
-            })!;
+            };
+
+            options.Converters.Add(new RFCDateTimeConverter());
+            options.Converters.Add(new CultureInfoConverter());
+            options.Converters.Add(new JsonStringEnumMemberConverter());
+
+            return JsonSerializer.Deserialize<T>(content, options);
         }
     }
 }

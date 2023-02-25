@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -17,9 +18,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("broadcaster_name")]
         public string BroadcasterDisplayName { get; set; }
 
-        /// <summary> The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. </summary>
+        /// <summary> The broadcaster’s preferred language. </summary>
         [JsonPropertyName("broadcaster_language")]
-        public string BroadcasterLanguage { get; set; }
+        public CultureInfo Culture { get; set; }
 
         /// <summary> An ID that uniquely identifies the game that the broadcaster is playing or last played. </summary>
         [JsonPropertyName("game_id")]
@@ -39,7 +40,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The tags applied to the channel. </summary>
         [JsonPropertyName("tags")]
-        public IEnumerable<string> Tags { get; set; }
+        public IReadOnlyCollection<string> Tags { get; set; }
 
         string IUser.Name { get => BroadcasterDisplayName; }
         string IUser.DisplayName { get => BroadcasterDisplayName; }
