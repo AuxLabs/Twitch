@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetDropStatusArgs : QueryMap<string[]>, IPaginated
+    public class GetDropStatusArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> IDs that identify the entitlements to get. </summary>
         /// <remarks> You may specify a maximum of 100 ids. </remarks>
@@ -34,26 +34,29 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
-            if (EntitlementIds != null)
-                map["id"] = EntitlementIds.ToArray();
+            if (EntitlementIds?.Count > 0)
+            {
+                foreach (var item in EntitlementIds)
+                    map["id"] = item;
+            }
             if (UserId != null) 
-                map["user_id"] = new[] { UserId };
+                map["user_id"] = UserId;
             if (GameId != null)
-                map["game_id"] = new[] { GameId };
+                map["game_id"] = GameId;
             if (Status != null)
-                map["fulfillment_status"] = new[] { Status.Value.GetStringValue() };
+                map["fulfillment_status"] = Status.Value.GetStringValue();
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }
 
-        string IPaginated.Before { get; set; }
+        string IPaginatedRequest.Before { get; set; }
     }
 }

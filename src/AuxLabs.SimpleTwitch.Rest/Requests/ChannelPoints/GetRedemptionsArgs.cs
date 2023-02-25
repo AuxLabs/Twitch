@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetRedemptionsArgs : QueryMap<string[]>, IPaginated, IScoped
+    public class GetRedemptionsArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:redemptions" };
 
@@ -45,28 +45,31 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
             if (BroadcasterId != null)
-                map["broadcaster_id"] = new[] { BroadcasterId };
+                map["broadcaster_id"] = BroadcasterId;
             if (RewardId != null)
-                map["reward_id"] = new[] { RewardId };
+                map["reward_id"] = RewardId;
             if (Status != null)
-                map["status"] = new[] { Status.Value.GetStringValue() };
-            if (RedemptionIds != null)
-                map["id"] = RedemptionIds.ToArray();
+                map["status"] = Status.Value.GetStringValue();
+            if (RedemptionIds?.Count > 0)
+            {
+                foreach (var item in RedemptionIds)
+                    map["id"] = item;
+            }
             if (Sort != null)
-                map["sort"] = new[] { Sort.Value.GetStringValue() };
+                map["sort"] = Sort.Value.GetStringValue();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
 
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

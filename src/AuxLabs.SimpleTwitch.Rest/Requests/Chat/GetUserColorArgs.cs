@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetUserColorArgs : QueryMap<string[]>
+    public class GetUserColorArgs : QueryMap
     {
         /// <summary> A collection of IDs of the users whose color you want to get. </summary>
         /// <remarks> You may specify a maximum of 100 IDs. </remarks>
@@ -26,12 +26,14 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtMost(UserIds, 100, nameof(UserIds));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            return new Dictionary<string, string[]>
-            {
-                ["user_id"] = UserIds.ToArray()
-            };
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
+
+            foreach (var item in UserIds)
+                map["user_id"] = item;
+
+            return map;
         }
 
         public static implicit operator string[](GetUserColorArgs value) => value.UserIds.ToArray();

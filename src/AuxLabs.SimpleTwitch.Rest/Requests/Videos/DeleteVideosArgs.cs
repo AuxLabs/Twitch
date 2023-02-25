@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteVideosArgs : QueryMap<string[]>, IScoped
+    public class DeleteVideosArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:videos" };
 
@@ -28,12 +28,14 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtMost(VideoIds, 5, nameof(VideoIds));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            return new Dictionary<string, string[]>
-            {
-                ["id"] = VideoIds.ToArray()
-            };
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
+
+            foreach (var item in VideoIds)
+                map["id"] = item;
+
+            return map;
         }
 
         public static implicit operator string[](DeleteVideosArgs value) => value.VideoIds.ToArray();

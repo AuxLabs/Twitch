@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public abstract class GetRolesArgs : QueryMap<string[]>, IPaginated
+    public abstract class GetRolesArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> The ID of the broadcaster whose list of users you want to get. </summary>
         public string BroadcasterId { get; set; }
@@ -23,23 +23,26 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance)
             {
-                ["broadcaster_id"] = new[] { BroadcasterId }
+                ["broadcaster_id"] = BroadcasterId
             };
 
-            if (UserIds != null)
-                map["user_id"] = UserIds.ToArray();
+            if (UserIds?.Count > 0)
+            {
+                foreach (var item in UserIds)
+                    map["user_id"] = item;
+            }
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }
 
-        string IPaginated.Before { get; set; }
+        string IPaginatedRequest.Before { get; set; }
     }
 }

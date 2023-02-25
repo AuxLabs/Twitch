@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetVideosArgs : QueryMap<string[]>, IPaginated
+    public class GetVideosArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> A collection of IDs that identify the videos you want to get. </summary>
         public List<string> VideoIds { get; set; }
@@ -41,30 +41,33 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
             
-            if (VideoIds != default)
-                map["id"] = VideoIds.ToArray();
+            if (VideoIds != null)
+            {
+                foreach (var item in VideoIds)
+                    map["id"] = item;
+            }
             if (UserId != null)
-                map["user_id"] = new[] { UserId };
+                map["user_id"] = UserId;
             if (GameId != null)
-                map["game_id"] = new[] { GameId };
+                map["game_id"] = GameId;
             if (Language != null)
-                map["language"] = new[] { Language };
+                map["language"] = Language;
             if (Period != null)
-                map["period"] = new[] { Period.Value.GetStringValue() };
+                map["period"] = Period.Value.GetStringValue();
             if (Sort != null)
-                map["sort"] = new[] { Sort.Value.GetStringValue() };
+                map["sort"] = Sort.Value.GetStringValue();
             if (Type != null)
-                map["type"] = new[] { Type.Value.GetStringValue() };
+                map["type"] = Type.Value.GetStringValue();
             if (First != null)
-                map["first"] = new[] { First.ToString() };
+                map["first"] = First.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
             if (Before != null)
-                map["before"] = new[] { Before };
+                map["before"] = Before;
 
             return map;
         }

@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetGamesArgs : QueryMap<string[]>
+    public class GetGamesArgs : QueryMap
     {
         /// <summary> The IDs of the category or game to get. </summary>
         public List<string> GameIds { get; set; }
@@ -22,16 +22,25 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtLeast(IgdbIds, 1, nameof(IgdbIds));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
             if (GameIds?.Count > 0)
-                map["id"] = GameIds.ToArray();
+            {
+                foreach (var item in GameIds)
+                    map["id"] = item;
+            }
             if (GameNames?.Count > 0)
-                map["name"] = GameNames.ToArray();
+            {
+                foreach (var item in GameNames)
+                    map["name"] = item;
+            }
             if (IgdbIds?.Count > 0)
-                map["igdb_id"] = IgdbIds.ToArray();
+            {
+                foreach (var item in IgdbIds)
+                    map["igdb_id"] = item;
+            }
 
             return map;
         }

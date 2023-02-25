@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetScheduleArgs : QueryMap<string[]>, IPaginated
+    public class GetScheduleArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> The ID of the broadcaster that owns the streaming schedule you want to get. </summary>
         public string BroadcasterId { get; set; }
@@ -28,25 +28,28 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance)
             {
-                ["broadcaster_id"] = new[] { BroadcasterId }
+                ["broadcaster_id"] = BroadcasterId
             };
 
-            if (SegmentIds != null)
-                map["id"] = SegmentIds.ToArray();
+            if (SegmentIds?.Count > 0)
+            {
+                foreach (var item in SegmentIds)
+                    map["id"] = item;
+            }
             if (StartAt != null)
-                map["start_time"] = new[] { XmlConvert.ToString(StartAt.Value, XmlDateTimeSerializationMode.Utc) };
+                map["start_time"] = XmlConvert.ToString(StartAt.Value, XmlDateTimeSerializationMode.Utc);
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }
 
-        string IPaginated.Before { get; set; }
+        string IPaginatedRequest.Before { get; set; }
     }
 }

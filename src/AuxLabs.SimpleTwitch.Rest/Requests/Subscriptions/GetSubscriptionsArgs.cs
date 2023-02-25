@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetSubscriptionsArgs : QueryMap<string[]>, IPaginated, IScoped
+    public class GetSubscriptionsArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "user:read:subscriptions" };
 
@@ -33,20 +33,23 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
             if (BroadcasterId != null)
-                map["broadcaster_id"] = new[] { BroadcasterId };
-            if (UserIds != null)
-                map["game_id"] = UserIds.ToArray();
+                map["broadcaster_id"] = BroadcasterId;
+            if (UserIds?.Count > 0)
+            {
+                foreach (var item in UserIds)
+                    map["game_id"] = item;
+            }
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (Before != null)
-                map["before"] = new[] { Before };
+                map["before"] = Before;
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }

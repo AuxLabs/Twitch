@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetPredictionsArgs : QueryMap<string[]>, IPaginated, IScoped
+    public class GetPredictionsArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:predictions", "channel:manage:predictions" };
 
@@ -33,22 +33,25 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
             
             if (BroadcasterId != null)
-                map["broadcaster_id"] = new[] { BroadcasterId };
+                map["broadcaster_id"] = BroadcasterId;
             if (PredictionIds?.Count > 0)
-                map["id"] = PredictionIds.ToArray();
+            {
+                foreach (var item in PredictionIds)
+                    map["id"] = item;
+            }
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }
 
-        string IPaginated.Before { get; set; }
+        string IPaginatedRequest.Before { get; set; }
     }
 }

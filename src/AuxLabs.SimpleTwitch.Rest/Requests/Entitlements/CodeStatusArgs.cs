@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class CodeStatusArgs : QueryMap<string[]>
+    public class CodeStatusArgs : QueryMap
     {
         /// <summary> The redemption codes to check. </summary>
         /// <remarks> You may specify a maximum of 20 codes. </remarks>
@@ -20,13 +20,17 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotNullOrWhitespace(UserId, nameof(UserId));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            return new Dictionary<string, string[]>
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance)
             {
-                ["code"] = Codes.ToArray(),
-                ["user_id"] = new[] { UserId }
+                ["user_id"] = UserId
             };
+
+            foreach (var item in Codes)
+                map["code"] = item;
+
+            return map;
         }
     }
 }

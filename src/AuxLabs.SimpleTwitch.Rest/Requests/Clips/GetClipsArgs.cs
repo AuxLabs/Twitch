@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetClipsArgs : QueryMap<string[]>, IPaginated
+    public class GetClipsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> An ID that identifies the broadcaster whose video clips you want to get. </summary>
         public string BroadcasterId { get; set; }
@@ -43,26 +43,29 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
             if (BroadcasterId != null) 
-                map["broadcaster_id"] = new[] { BroadcasterId };
+                map["broadcaster_id"] = BroadcasterId;
             if (GameId != null)
-                map["game_id"] = new[] { GameId };
-            if (ClipIds.Count > 0)
-                map["id"] = ClipIds.ToArray();
+                map["game_id"] = GameId;
+            if (ClipIds?.Count > 0)
+            {
+                foreach (var item in ClipIds)
+                    map["id"] = item;
+            }
             if (StartedAt != null)
-                map["started_at"] = new[] { XmlConvert.ToString(StartedAt.Value, XmlDateTimeSerializationMode.Utc) };
+                map["started_at"] = XmlConvert.ToString(StartedAt.Value, XmlDateTimeSerializationMode.Utc);
             if (EndedAt != null)
-                map["ended_at"] = new[] { XmlConvert.ToString(EndedAt.Value, XmlDateTimeSerializationMode.Utc) };
+                map["ended_at"] = XmlConvert.ToString(EndedAt.Value, XmlDateTimeSerializationMode.Utc);
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (Before != null)
-                map["before"] = new[] { Before };
+                map["before"] = Before;
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }

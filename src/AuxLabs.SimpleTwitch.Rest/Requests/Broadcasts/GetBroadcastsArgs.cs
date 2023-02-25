@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBroadcastsArgs : QueryMap<string[]>, IPaginated
+    public class GetBroadcastsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> A user ID used to filter the list of streams. </summary>
         /// <remarks> You may specify a maximum of 100 IDs </remarks>
@@ -30,12 +29,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Before { get; set; }
         public string After { get; set; }
 
-        public GetBroadcastsArgs() { }
-        public GetBroadcastsArgs(params string[] userIds)
-        {
-            UserIds = userIds.ToList();
-        }
-
         public void Validate()
         {
             int? userTotal = UserIds?.Count + UserNames?.Count;
@@ -58,24 +51,36 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
-            if (UserIds != null)
-                map["user_id"] = UserIds.ToArray();
-            if (UserNames != null)
-                map["user_login"] = UserNames.ToArray();
-            if (GameIds != null)
-                map["game_id"] = GameIds.ToArray();
-            if (Languages != null)
-                map["language"] = Languages.ToArray();
+            if (UserIds?.Count > 0)
+            {
+                foreach (var item in UserIds)
+                    map["user_id"] = item;
+            }
+            if (UserNames?.Count > 0)
+            {
+                foreach (var item in UserNames)
+                    map["user_login"] = item;
+            }
+            if (GameIds?.Count > 0)
+            {
+                foreach (var item in GameIds)
+                    map["game_id"] = item;
+            }
+            if (Languages?.Count > 0)
+            {
+                foreach (var item in Languages)
+                    map["language"] = item;
+            }
             if (First != null)
-                map["first"] = new[] { First.Value.ToString() };
+                map["first"] = First.Value.ToString();
             if (Before != null)
-                map["before"] = new[] { Before };
+                map["before"] = Before;
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
 
             return map;
         }

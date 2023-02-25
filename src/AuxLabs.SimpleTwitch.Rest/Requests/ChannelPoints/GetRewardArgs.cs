@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetRewardArgs : QueryMap<string[]>, IScoped
+    public class GetRewardArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:redemptions" };
 
@@ -15,7 +15,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of IDs to filter the rewards by. </summary>
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
-        public IEnumerable<string> CustomRewardIds { get; set; }
+        public List<string> CustomRewardIds { get; set; }
 
         public GetRewardArgs() { }
         public GetRewardArgs(string broadcasterId, params string[] customRewardIds)
@@ -34,16 +34,19 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtMost(CustomRewardIds, 50, nameof(CustomRewardIds));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
             
             if (BroadcasterId != null)
-                map["broadcaster_id"] = new[] { BroadcasterId };
-            if (CustomRewardIds != null)
-                map["id"] = CustomRewardIds.ToArray();
+                map["broadcaster_id"] = BroadcasterId;
+            if (CustomRewardIds?.Count > 0)
+            {
+                foreach (var item in CustomRewardIds)
+                    map["id"] = item;
+            }
             if (OnlyManagebleRewards != null)
-                map["only_manageable_rewards"] = new[] { OnlyManagebleRewards.Value.ToString() };
+                map["only_manageable_rewards"] = OnlyManagebleRewards.Value.ToString();
 
             return map;
         }

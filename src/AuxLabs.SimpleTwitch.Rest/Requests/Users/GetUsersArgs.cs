@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetUsersArgs : QueryMap<string[]>
+    public class GetUsersArgs : QueryMap
     {
         /// <summary> The ID of the user to get. </summary>
         public List<string> UserIds { get; set; }
@@ -28,14 +28,20 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtLeast(UserNames, 1, nameof(UserNames));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
-            if (UserIds?.Count > 0)
-                map["id"] = UserIds.ToArray();
-            if (UserNames?.Count > 0)
-                map["login"] = UserNames.ToArray();
+            if (UserIds != null)
+            {
+                foreach (var item in UserIds)
+                    map["id"] = item;
+            }
+            if (UserNames != null)
+            {
+                foreach (var item in UserNames)
+                    map["login"] = item;
+            }
 
             return map;
         }

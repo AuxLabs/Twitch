@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetExtensionTransactionsArgs : QueryMap<string[]>, IPaginated
+    public class GetExtensionTransactionsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> The ID of the extension whose list of transactions you want to get. </summary>
         public string ExtensionId { get; set; }
@@ -14,7 +14,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <inheritdoc/>
         /// <remarks> Optional, the minimum value is 1 the maximum is 100, defaults to 20. </remarks>
         public int? First { get; set; }
-
         public string After { get; set; }
 
         public void Validate()
@@ -27,23 +26,26 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.NotEmptyOrWhitespace(After, nameof(After));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance)
             {
-                ["extension_id"] = new[] { ExtensionId }
+                ["extension_id"] = ExtensionId
             };
-
+            
             if (TransactionIds != null)
-                map["id"] = TransactionIds.ToArray();
+            {
+                foreach (var item in TransactionIds)
+                    map["id"] = item;
+            }
             if (First != null)
-                map["first"] = new[] { First.ToString() };
+                map["first"] = First.ToString();
             if (After != null)
-                map["after"] = new[] { After };
+                map["after"] = After;
             
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

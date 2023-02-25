@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ModifyRedemptionsArgs : QueryMap<string[]>, IScoped
+    public class ModifyRedemptionsArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:redemptions" };
 
@@ -26,16 +26,19 @@ namespace AuxLabs.SimpleTwitch.Rest
             Require.HasAtMost(Ids, 50, nameof(Ids));
         }
 
-        public override IDictionary<string, string[]> CreateQueryMap()
+        public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string[]>();
+            var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
             if (BroadcasterId != null)
-                map["broadcaster_id"] = new[] { BroadcasterId };
+                map["broadcaster_id"] = BroadcasterId;
             if (RewardId != null)
-                map["reward_id"] = new[] { RewardId };
-            if (Ids != null)
-                map["id"] = Ids.ToArray();
+                map["reward_id"] = RewardId;
+            if (Ids?.Count > 0)
+            {
+                foreach (var item in Ids)
+                    map["id"] = item;
+            }
 
             return map;
         }
