@@ -15,9 +15,9 @@ namespace AuxLabs.SimpleTwitch.Rest
         public DateTimeOffset? Reset { get; }
         public TimeSpan? Lag { get; }
 
-        internal RateLimitInfo(HttpHeaders headers, string path)
+        internal RateLimitInfo(HttpHeaders headers, string path, string bucketId)
         {
-            IsGlobal = path == TwitchConstants.GlobalRatelimitBucket;
+            IsGlobal = bucketId == TwitchConstants.GlobalRatelimitBucket;
             Path = path;
             Limit = headers.TryGetValues("RateLimit-Limit", out var values) &&
                 int.TryParse(values.First(), out var limit) ? limit : (int?)null;

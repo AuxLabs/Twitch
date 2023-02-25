@@ -36,7 +36,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ((RequestInfo)request).AllowAnyStatusCode = true;
                 var response = await base.SendRequestAsync(request, readBody).ConfigureAwait(false);
 
-                var info = new RateLimitInfo(response.Headers, request.BasePath);
+                var info = new RateLimitInfo(response.Headers, request.BasePath, bucketId);
                 if (response.IsSuccessStatusCode)
                 {
                     _rateLimiter.UpdateLimit(bucketId, info, false);
