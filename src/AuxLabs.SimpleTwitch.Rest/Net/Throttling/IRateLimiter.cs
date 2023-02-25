@@ -8,6 +8,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     public interface IRateLimiter
     {
         Task EnterLockAsync(string bucketId, CancellationToken cancelToken);
-        void UpdateLimit(string bucketId, RateLimitInfo info);
+        void UpdateLimit(string bucketId, RateLimitInfo info, bool isRatelimited);
     }
 }

@@ -39,14 +39,14 @@ namespace AuxLabs.SimpleTwitch.Rest
                 var info = new RateLimitInfo(response.Headers, request.BasePath);
                 if (response.IsSuccessStatusCode)
                 {
-                    _rateLimiter.UpdateLimit(bucketId, info);
+                    _rateLimiter.UpdateLimit(bucketId, info, false);
                     return response;
                 }
 
                 switch (response.StatusCode)
                 {
                     case (HttpStatusCode)429:
-                        _rateLimiter.UpdateLimit(bucketId, info);
+                        _rateLimiter.UpdateLimit(bucketId, info, true);
                         continue;
                     case HttpStatusCode.BadGateway: //502
                         await Task.Delay(250, request.CancellationToken).ConfigureAwait(false);
@@ -75,20 +75,30 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         private string GenerateBucketId(IRequestInfo request)
         {
-            // Global: By header info
-            // Shoutout: 1 per 2 minutes, broadcaster per 60 minutes
-            // Code Status & Redeem Code: 1 per 1 second per 1 user
-            // Extension Config Segment Get & Set: 20 per 1 minute
-            // Extension PubSub Msg: 100 per minute per client id and broadcaster
-            // Extension Chat Msg: 12 per minute per channel
-            // AutoMod Status:
-            //  Normal: 5 per minute, 50 per hour
-            //  Affiliate: 10 per minute, 100 per hour
-            //  Partner: 30 per minute, 300 per hour
-            // Moderator, VIP, Raid Add & Remove: 10 per 10 seconds
-            // Whisper: 40 users per 24 hours, 3 per second, 100 per minute
-
-            return "GLOBAL";
+            var bucketId = $"{request.Method.Method} {request.Path}";
+            switch (bucketId)       // Some of these need unique buckets based on parameters
+            {
+                case "POST chat/shoutouts":             // 1 per 2 minutes, broadcaster per 60 minutes
+                case "GET entitlements/codes":          // 1 per 1 second per 1 user
+                case "POST entitlements/codes":         // 1 per 1 second per 1 user
+                case "GET extensions/configurations":   // 20 per 1 minute
+                case "PUT extensions/configurations":   // 20 per 1 minute
+                case "POST extensions/pubsub":          // 100 per minute per client id and broadcaster
+                case "POST extensions/chat":            // 12 per minute per channel
+                case "POST moderation/enforcements/status": // Normal: 5 per minute, 50 per hour
+                                                            // Affiliate: 10 per minute, 100 per hour
+                                                            // Partner: 30 per minute, 300 per hour
+                case "POST moderation/moderators":      // 10 per 10 seconds
+                case "DELETE moderation/moderators":    // 10 per 10 seconds
+                case "POST channels/vips":              // 10 per 10 seconds
+                case "DELETE channels/vips":            // 10 per 10 seconds
+                case "POST raids":                      // 10 per 10 seconds
+                case "DELETE raids":                    // 10 per 10 seconds
+                case "POST whispers":                   // 40 users per 24 hours, 3 per second, 100 per minute
+                    return request.Path;
+                default:                                // Global by header values
+                    return TwitchConstants.GlobalRatelimitBucket;
+            }
         }
     }
 }

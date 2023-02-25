@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         internal RateLimitInfo(HttpHeaders headers, string path)
         {
-            IsGlobal = true; // Check if path is one of TwitchRequest.GenerateBucketId
+            IsGlobal = path == TwitchConstants.GlobalRatelimitBucket;
             Path = path;
             Limit = headers.TryGetValues("RateLimit-Limit", out var values) &&
                 int.TryParse(values.First(), out var limit) ? limit : (int?)null;

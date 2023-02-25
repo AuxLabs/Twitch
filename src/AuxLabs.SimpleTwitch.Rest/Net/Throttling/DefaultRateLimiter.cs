@@ -20,7 +20,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task EnterLockAsync(string bucketId, CancellationToken cancelToken)
         {
             await EnterGlobalLockAsync(cancelToken).ConfigureAwait(false);
-            //await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
+            await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
         }
 
         public virtual async Task EnterGlobalLockAsync(CancellationToken cancelToken)
@@ -41,10 +41,12 @@ namespace AuxLabs.SimpleTwitch.Rest
             await bucket.EnterAsync(cancelToken);
         }
 
-        public virtual void UpdateLimit(string bucketId, RateLimitInfo info)
+        public virtual void UpdateLimit(string bucketId, RateLimitInfo info, bool isRatelimited = false)
         {
             if (info.IsGlobal)
-                _globalWaitUntil = info.Reset?.AddMilliseconds(info.Lag?.TotalMilliseconds ?? 0.0) ?? DateTimeOffset.Now;
+                _globalWaitUntil = isRatelimited ? 
+                    info.Reset?.AddMilliseconds(info.Lag?.TotalMilliseconds ?? 0.0) ?? DateTimeOffset.Now 
+                    : DateTimeOffset.Now;
             else
             {
                 var bucket = _buckets.GetOrAdd(bucketId, x => new RequestBucket());
