@@ -46,12 +46,12 @@ namespace AuxLabs.SimpleTwitch.Rest
             Dispose(true);
         }
 
-        private void CheckPermissions(IScoped request)
+        private void CheckPermissions(IScopedRequest request)
         {
             if (!(Identity is UserIdentity user))
                 throw new TwitchException("This request cannot be made using app authorization.");
 
-            if (request is IManaged managed)
+            if (request is IAgentRequest managed)
                 managed.Validate(user.Scopes, user.UserId);
             else
                 request.Validate(user.Scopes);
@@ -658,7 +658,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
 
         #endregion
-        #region Streams
+        #region Streams / Broadcasts
 
         /// <inheritdoc/>
         public Task<TwitchResponse<string>> GetBroadcastKeyAsync(GetBroadcastKeyArgs args)
