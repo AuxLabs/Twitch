@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ManageModeratorArgs : ManageRolesArgs, IManaged
+    public class ManageModeratorArgs : ManageRolesArgs, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:moderators" };
 

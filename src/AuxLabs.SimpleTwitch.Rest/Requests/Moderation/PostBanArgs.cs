@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostBanArgs : QueryMap, IScoped
+    public class PostBanArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:banned_users" };
 

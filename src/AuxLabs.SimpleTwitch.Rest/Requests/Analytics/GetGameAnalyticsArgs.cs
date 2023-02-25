@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetGameAnalyticsArgs : GetAnalyticsArgs, IScoped
+    public class GetGameAnalyticsArgs : GetAnalyticsArgs, IScopedRequest
     {
         public string[] Scopes { get; } = { "analytics:read:games" };
 

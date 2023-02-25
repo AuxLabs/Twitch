@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchChatSettingsArgs : QueryMap, IScoped
+    public class PatchChatSettingsArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:chat_settings" };
 

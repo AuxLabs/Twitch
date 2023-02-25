@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetChannelEditorsArgs : QueryMap, IScoped
+    public class GetChannelEditorsArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:editors" };
 

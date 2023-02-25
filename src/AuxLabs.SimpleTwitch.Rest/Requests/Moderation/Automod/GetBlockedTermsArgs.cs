@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBlockedTermsArgs : QueryMap, IPaginated, IManaged
+    public class GetBlockedTermsArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:read:blocked_terms", "moderator:manage:blocked_terms" };
 
@@ -47,6 +47,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; }
+        string IPaginatedRequest.Before { get; set; }
     }
 }

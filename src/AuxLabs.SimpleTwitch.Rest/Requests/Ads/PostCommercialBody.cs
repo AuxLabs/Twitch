@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostCommercialBody : QueryMap, IScoped
+    public class PostCommercialBody : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:edit:commercial" };
 

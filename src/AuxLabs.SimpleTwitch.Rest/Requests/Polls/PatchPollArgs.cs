@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchPollArgs : IScoped
+    public class PatchPollArgs : IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:polls" };
 

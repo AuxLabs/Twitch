@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class AutomodSettingsArgs : QueryMap, IScoped
+    public class AutomodSettingsArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:read:automod_settings" };
 

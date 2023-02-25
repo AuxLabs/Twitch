@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetHypeTrainsArgs : QueryMap, IPaginated, IScoped
+    public class GetHypeTrainsArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:hype_train" };
 
@@ -37,6 +37,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

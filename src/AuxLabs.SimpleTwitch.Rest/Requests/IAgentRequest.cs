@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public interface IManaged : IScoped
+    public interface IAgentRequest : IScopedRequest
     {
         void Validate(IEnumerable<string> scopes, string authedUserId);
     }

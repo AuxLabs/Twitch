@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteMessageArgs : QueryMap, IManaged
+    public class DeleteMessageArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:chat_messages" };
 

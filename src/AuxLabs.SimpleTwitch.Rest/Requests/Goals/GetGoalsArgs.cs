@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetGoalsArgs : QueryMap, IScoped
+    public class GetGoalsArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:goals" };
 

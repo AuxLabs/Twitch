@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public abstract class GetAnalyticsArgs : QueryMap, IPaginated
+    public abstract class GetAnalyticsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> Optional, ending date/time for returned reports </summary>
         public DateTime? EndedAt { get; set; }
@@ -48,6 +48,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

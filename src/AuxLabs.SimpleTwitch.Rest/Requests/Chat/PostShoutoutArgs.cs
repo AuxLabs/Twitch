@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostShoutoutArgs : QueryMap, IScoped
+    public class PostShoutoutArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:shoutouts" };
 

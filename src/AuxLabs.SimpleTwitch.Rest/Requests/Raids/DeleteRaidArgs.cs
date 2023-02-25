@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteRaidArgs : QueryMap, IScoped
+    public class DeleteRaidArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:raids" };
 

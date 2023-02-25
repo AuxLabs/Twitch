@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetTopGamesArgs : QueryMap, IPaginated
+    public class GetTopGamesArgs : QueryMap, IPaginatedRequest
     {
         /// <inheritdoc/>
         /// <remarks> The minimum page size is 1 and the maximum is 100. Default is 20. </remarks>

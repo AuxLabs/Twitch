@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetFollowedChannelsArgs : GetFollowsArgs, IManaged
+    public class GetFollowedChannelsArgs : GetFollowsArgs, IAgentRequest
     {
         public void Validate(IEnumerable<string> scopes, string authedUserId)
         {

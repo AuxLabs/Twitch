@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetPlaylistsArgs : QueryMap, IPaginated
+    public class GetPlaylistsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> The ID of the playlist to get. </summary>
         public string PlaylistId { get; set; }
@@ -34,6 +34,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

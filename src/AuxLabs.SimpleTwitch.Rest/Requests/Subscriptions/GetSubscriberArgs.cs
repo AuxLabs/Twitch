@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetSubscriberArgs : QueryMap, IScoped
+    public class GetSubscriberArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "user:read:subscriptions" };
 

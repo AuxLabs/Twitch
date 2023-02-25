@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostBlockedTermArgs : QueryMap, IScoped
+    public class PostBlockedTermArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:blocked_terms" };
 

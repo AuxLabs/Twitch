@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBroadcastKeyArgs : QueryMap, IScoped
+    public class GetBroadcastKeyArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:stream_key" };
 

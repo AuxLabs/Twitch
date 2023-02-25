@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostEnforcementStatusBody : IScoped
+    public class PostEnforcementStatusBody : IScopedRequest
     {
         public string[] Scopes { get; } = { "moderation:read" };
 

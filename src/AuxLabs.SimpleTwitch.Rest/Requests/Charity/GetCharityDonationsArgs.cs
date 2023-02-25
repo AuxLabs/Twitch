@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetCharityDonationsArgs : QueryMap, IPaginated, IScoped
+    public class GetCharityDonationsArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:read:charity" };
 
@@ -38,6 +38,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

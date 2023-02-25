@@ -1,7 +1,7 @@
 ﻿namespace AuxLabs.SimpleTwitch.Rest
 {
     /// <summary> Indicates that a request can be paginated. </summary>
-    public interface IPaginated
+    public interface IPaginatedRequest
     {
         /// <summary> The maximum number of items to return per page in the response. </summary>
         int? First { get; set; }

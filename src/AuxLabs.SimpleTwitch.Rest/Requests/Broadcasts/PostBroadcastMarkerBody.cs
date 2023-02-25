@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostBroadcastMarkerBody : IScoped
+    public class PostBroadcastMarkerBody : IScopedRequest
     {
         [JsonIgnore]
         public string[] Scopes { get; } = { "channel:manage:broadcast" };

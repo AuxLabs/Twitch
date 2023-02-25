@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetEventSubscriptionsArgs : QueryMap, IPaginated
+    public class GetEventSubscriptionsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> Filter subscriptions by its status. </summary>
         public EventSubStatus? Status { get; set; }
@@ -37,7 +37,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        int? IPaginated.First { get; set; } = null;
-        string IPaginated.Before { get; set; } = null;
+        int? IPaginatedRequest.First { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

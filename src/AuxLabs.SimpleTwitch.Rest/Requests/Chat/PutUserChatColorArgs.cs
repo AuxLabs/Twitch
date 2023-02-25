@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutUserChatColorArgs : QueryMap, IScoped
+    public class PutUserChatColorArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "user:manage:chat_color" };
 

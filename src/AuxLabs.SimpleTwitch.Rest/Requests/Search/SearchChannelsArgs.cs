@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class SearchChannelsArgs : QueryMap, IPaginated
+    public class SearchChannelsArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> The search string. </summary>
         public string Query { get; set; }
@@ -40,6 +40,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             return map;
         }
 
-        string IPaginated.Before { get; set; } = null;
+        string IPaginatedRequest.Before { get; set; } = null;
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ManageRewardArgs : QueryMap, IScoped
+    public class ManageRewardArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:redemptions" };
 

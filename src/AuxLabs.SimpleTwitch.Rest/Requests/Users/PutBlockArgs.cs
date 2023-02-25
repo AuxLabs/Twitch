@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutBlockArgs : QueryMap, IScoped
+    public class PutBlockArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "user:manage:blocked_users" };
 

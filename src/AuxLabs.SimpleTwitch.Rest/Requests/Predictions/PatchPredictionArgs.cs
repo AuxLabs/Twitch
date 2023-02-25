@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchPredictionArgs : IScoped
+    public class PatchPredictionArgs : IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:predictions" };
 

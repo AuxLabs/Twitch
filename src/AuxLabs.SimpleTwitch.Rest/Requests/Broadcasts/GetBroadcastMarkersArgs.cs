@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBroadcastMarkersArgs : QueryMap<string>, IPaginated, IScoped
+    public class GetBroadcastMarkersArgs : QueryMap, IPaginatedRequest, IScopedRequest
     {
         public string[] Scopes { get; } = { "user:read:broadcast", "channel:manage:broadcast" };
 

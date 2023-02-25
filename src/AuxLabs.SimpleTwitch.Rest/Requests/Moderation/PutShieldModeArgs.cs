@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutShieldModeArgs : QueryMap, IManaged
+    public class PutShieldModeArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:shield_mode" };
 

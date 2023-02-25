@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostAnnouncementArgs : IScoped
+    public class PostAnnouncementArgs : IScopedRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:announcements" };
 

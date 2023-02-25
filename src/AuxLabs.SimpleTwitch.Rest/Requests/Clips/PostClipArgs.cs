@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostClipArgs : QueryMap, IScoped
+    public class PostClipArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "clips:edit" };
 

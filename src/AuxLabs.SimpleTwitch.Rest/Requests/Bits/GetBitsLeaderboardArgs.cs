@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBitsLeaderboardArgs : QueryMap, IScoped
+    public class GetBitsLeaderboardArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "bits:read" };
 

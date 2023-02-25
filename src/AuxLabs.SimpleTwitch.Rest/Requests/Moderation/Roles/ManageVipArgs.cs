@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ManageVipArgs : ManageRolesArgs, IManaged
+    public class ManageVipArgs : ManageRolesArgs, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:vips" };
 

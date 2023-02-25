@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchChannelArgs : QueryMap, IScoped
+    public class PatchChannelArgs : QueryMap, IScopedRequest
     {
         public string[] Scopes { get; } = { "channel:manage:broadcast" };
 

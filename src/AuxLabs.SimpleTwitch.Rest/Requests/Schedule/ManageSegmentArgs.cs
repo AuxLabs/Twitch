@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ManageSegmentArgs : QueryMap, IManaged
+    public class ManageSegmentArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:schedule" };
 

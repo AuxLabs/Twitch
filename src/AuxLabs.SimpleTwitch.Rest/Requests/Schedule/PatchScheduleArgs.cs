@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchScheduleArgs : QueryMap, IManaged
+    public class PatchScheduleArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:schedule" };
 
