@@ -2,13 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchChannelArgs : QueryMap, IScopedRequest
+    public class PatchChannelArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:broadcast" };
 
-        /// <summary>  </summary>
+        /// <summary> The ID of the broadcaster whose channel you want to update. </summary>
         public string BroadcasterId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

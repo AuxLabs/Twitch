@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchPollArgs : IScopedRequest
+    public class PatchPollBody : IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:polls" };
 
@@ -19,6 +19,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("status")]
         public PollStatus Status { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

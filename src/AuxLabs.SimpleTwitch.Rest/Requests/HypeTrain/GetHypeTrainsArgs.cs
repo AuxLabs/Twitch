@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetHypeTrainsArgs : QueryMap, IPaginatedRequest, IScopedRequest
+    public class GetHypeTrainsArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:read:hype_train" };
 
@@ -14,6 +14,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public int? First { get; set; }
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

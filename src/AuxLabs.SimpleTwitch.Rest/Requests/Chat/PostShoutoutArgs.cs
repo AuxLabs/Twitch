@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostShoutoutArgs : QueryMap, IScopedRequest
+    public class PostShoutoutArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:shoutouts" };
 
@@ -15,10 +15,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the broadcaster or a user that is one of the broadcaster’s moderators. </summary>
         public string ModeratorId { get; set; }
 
-        public PostShoutoutArgs() { }
-        public PostShoutoutArgs(string fromBroadcasterId, string toBroadcasterId, string moderatorId)
-            => (FromBroadcasterId, ToBroadcasterId, ModeratorId) = (fromBroadcasterId, toBroadcasterId, moderatorId);
-
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

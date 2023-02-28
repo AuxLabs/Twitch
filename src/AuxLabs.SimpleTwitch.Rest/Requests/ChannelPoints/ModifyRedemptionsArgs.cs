@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class ModifyRedemptionsArgs : QueryMap, IScopedRequest
+    public class ModifyRedemptionsArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:redemptions" };
 
@@ -16,6 +16,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
         public List<string> Ids { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

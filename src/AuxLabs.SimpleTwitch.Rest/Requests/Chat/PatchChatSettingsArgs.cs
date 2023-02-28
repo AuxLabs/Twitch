@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchChatSettingsArgs : QueryMap, IScopedRequest
+    public class PatchChatSettingsArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:chat_settings" };
 
@@ -12,6 +12,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of a user that has permission to moderate the broadcaster’s chat room. </summary>
         public string ModeratorId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

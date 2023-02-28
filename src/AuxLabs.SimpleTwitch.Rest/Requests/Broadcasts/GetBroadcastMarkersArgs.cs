@@ -18,6 +18,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Before { get; set; }
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(UserId, authedUserId, nameof(UserId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetBannedUsersArgs : QueryMap, IScopedRequest, IPaginatedRequest
+    public class GetBannedUsersArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderation:read", "moderator:manage:banned_users" };
 
@@ -16,6 +16,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Before { get; set; }
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

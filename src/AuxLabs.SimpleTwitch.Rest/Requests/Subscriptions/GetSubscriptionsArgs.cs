@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetSubscriptionsArgs : QueryMap, IPaginatedRequest, IScopedRequest
+    public class GetSubscriptionsArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "user:read:subscriptions" };
 
@@ -18,6 +18,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Before { get; set; }
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

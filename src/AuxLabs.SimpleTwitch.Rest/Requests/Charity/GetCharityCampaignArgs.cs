@@ -2,18 +2,12 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteRaidArgs : QueryMap, IAgentRequest
+    public class GetCharityCampaignArgs : QueryMap, IAgentRequest
     {
-        public string[] Scopes { get; } = { "channel:manage:raids" };
+        public string[] Scopes { get; } = { "channel:read:charity" };
 
-        /// <summary> The ID of the broadcaster that initiated the raid. </summary>
+        /// <summary> The ID of the broadcaster that’s currently running a charity campaign. </summary>
         public string BroadcasterId { get; set; }
-
-        public DeleteRaidArgs() { }
-        public DeleteRaidArgs(string broadcasterId)
-        {
-            BroadcasterId = broadcasterId;
-        }
 
         public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
@@ -33,8 +27,5 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ["broadcaster_id"] = BroadcasterId
             };
         }
-
-        public static implicit operator string(DeleteRaidArgs value) => value.BroadcasterId;
-        public static implicit operator DeleteRaidArgs(string v) => new DeleteRaidArgs(v);
     }
 }

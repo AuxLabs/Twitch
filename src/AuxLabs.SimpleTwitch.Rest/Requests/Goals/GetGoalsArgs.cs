@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetGoalsArgs : QueryMap, IScopedRequest
+    public class GetGoalsArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:read:goals" };
 
@@ -16,6 +16,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public override string ToString()
             => BroadcasterId;
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

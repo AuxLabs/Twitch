@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostCommercialBody : QueryMap, IScopedRequest
+    public class PostCommercialBody : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:edit:commercial" };
 
@@ -13,13 +13,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks> If specified, the minimum value is 1 and the maximum value is 180. </remarks>
         public int? Length { get; set; }
 
-        public PostCommercialBody() { }
-        public PostCommercialBody(string broadcasterId, int? length = null)
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
-            BroadcasterId = broadcasterId;
-            Length = length;
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
         }
-
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

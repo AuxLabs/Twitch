@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteBanArgs : QueryMap, IScopedRequest
+    public class DeleteBanArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:banned_users" };
 
@@ -15,6 +15,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the user to remove the ban or timeout from. </summary>
         public string UserId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

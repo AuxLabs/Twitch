@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteBlockedTermsArgs : QueryMap, IScopedRequest
+    public class DeleteBlockedTermsArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:blocked_terms" };
 
@@ -15,6 +15,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the blocked term to remove from the broadcaster’s list of blocked terms. </summary>
         public string TermId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

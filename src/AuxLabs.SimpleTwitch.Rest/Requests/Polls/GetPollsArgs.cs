@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetPollsArgs : QueryMap, IPaginatedRequest, IScopedRequest
+    public class GetPollsArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:read:polls", "channel:manage:polls" };
 
@@ -16,13 +15,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public int? First { get; set; }
         public string After { get; set; }
 
-        public GetPollsArgs() { }
-        public GetPollsArgs(string broadcasterId, params string[] pollIds)
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
-            BroadcasterId = broadcasterId;
-            PollIds = pollIds.ToList();
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
         }
-
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

@@ -27,7 +27,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
             _api.ClientId = config.ClientId;
         }
-
+        
         protected virtual void Dispose(bool disposing)
         {
             if (!_disposed)
@@ -236,8 +236,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Charity
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync(string broadcasterId)
-            => _api.GetCharityCampaignAsync(broadcasterId);
+        public Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync(GetCharityCampaignArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetCharityCampaignAsync(args);
+        }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync(GetCharityDonationsArgs args)
         {
@@ -255,8 +258,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetChattersAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Emote>> GetEmotesAsync(string broadcasterId)
-            => _api.GetEmotesAsync(broadcasterId);
+        public Task<TwitchResponse<Emote>> GetEmotesAsync(GetEmotesArgs args)
+        {
+            args.Validate();
+            return _api.GetEmotesAsync(args);
+        }
         /// <inheritdoc/>
         public Task<TwitchResponse<GlobalEmote>> GetEmotesAsync()
             => _api.GetEmotesAsync();
@@ -267,15 +273,18 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetEmoteSetsAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Badge>> GetBadgesAsync(string broadcasterId)
-            => _api.GetBadgesAsync(broadcasterId);
+        public Task<TwitchResponse<Badge>> GetBadgesAsync(GetBadgesArgs args)
+        {
+            args.Validate();
+            return _api.GetBadgesAsync(args);
+        }
         /// <inheritdoc/>
         public Task<TwitchResponse<Badge>> GetBadgesAsync()
             => _api.GetBadgesAsync();
         /// <inheritdoc/>
         public Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync(GetChatSettingsArgs args)
         {
-            args.Validate();
+            CheckPermissions(args);
             return _api.GetChatSettingsAsync(args);
         }
         /// <inheritdoc/>
@@ -286,10 +295,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.PatchChatSettingsAsync(args, body);
         }
         /// <inheritdoc/>
-        public Task PostChatAnnouncementAsync(string broadcasterId, string moderatorId, PostAnnouncementArgs args)
+        public Task PostChatAnnouncementAsync(PostAnnouncementArgs args, PostAnnouncementBody body)
         {
             CheckPermissions(args);
-            return _api.PostChatAnnouncementAsync(broadcasterId, moderatorId, args);
+            body.Validate();
+            return _api.PostChatAnnouncementAsync(args, body);
         }
         /// <inheritdoc/>
         public Task PostShoutoutAsync(PostShoutoutArgs args)
@@ -401,10 +411,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Moderation
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(string broadcasterId, PostEnforcementStatusBody args)
+        public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(PostEnforcementStatusArgs args, PostEnforcementStatusBody body)
         {
             CheckPermissions(args);
-            return _api.PostEnforcementStatusAsync(broadcasterId, args);
+            body.Validate();
+            return _api.PostEnforcementStatusAsync(args, body);
         }
         /// <inheritdoc/>
         public Task PostAutomodMessageAsync(PostAutomodMessageArgs args)
@@ -533,13 +544,13 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetPollAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Poll>> PostPollAsync(PutPollArgs args)
+        public Task<TwitchResponse<Poll>> PostPollAsync(PutPollBody args)
         {
             CheckPermissions(args);
             return _api.PostPollAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Poll>> PatchPollAsync(PatchPollArgs args)
+        public Task<TwitchResponse<Poll>> PatchPollAsync(PatchPollBody args)
         {
             CheckPermissions(args);
             return _api.PatchPollAsync(args);
@@ -555,13 +566,13 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetPredictionAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Prediction>> PostPredictionAsync(PostPredictionArgs args)
+        public Task<TwitchResponse<Prediction>> PostPredictionAsync(PostPredictionBody args)
         {
             CheckPermissions(args);
             return _api.PostPredictionAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Prediction>> PatchPredictionaAsync(PostPredictionArgs args)
+        public Task<TwitchResponse<Prediction>> PatchPredictionaAsync(PostPredictionBody args)
         {
             CheckPermissions(args);
             return _api.PatchPredictionaAsync(args);
@@ -711,10 +722,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Teams
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<ChannelTeam>> GetTeamsAsync(string broadcasterId)
+        public Task<TwitchResponse<ChannelTeam>> GetTeamsAsync(GetChannelTeamsArgs args)
         {
-            Require.NotNullOrWhitespace(broadcasterId, nameof(broadcasterId));
-            return _api.GetTeamsAsync(broadcasterId);
+            args.Validate();
+            return _api.GetTeamsAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Team>> GetTeamAsync(GetTeamArgs args)
@@ -792,8 +803,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Whispers
 
         /// <inheritdoc/>
-        public Task PostWhisperAsync(string fromUserId, string toUserId, string message)
-            => _api.PostWhisperAsync(fromUserId, toUserId, message);
+        public Task PostWhisperAsync(PostWhisperArgs args, PostWhisperBody body)
+        {
+            CheckPermissions(args);
+            body.Validate();
+            return _api.PostWhisperAsync(args, body);
+        }
 
         #endregion
     }

@@ -11,7 +11,6 @@ namespace AuxLabs.SimpleTwitch.Rest
             Validate(scopes);
             Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
         }
-
         public void Validate(IEnumerable<string> scopes)
         {
             Validate();

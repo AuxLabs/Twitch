@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetSubscriberArgs : QueryMap, IScopedRequest
+    public class GetSubscriberArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "user:read:subscriptions" };
 
@@ -12,6 +12,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the user that you’re checking to see whether they subscribe to <see cref="BroadcasterId"/>. </summary>
         public string UserId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(UserId, authedUserId, nameof(UserId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

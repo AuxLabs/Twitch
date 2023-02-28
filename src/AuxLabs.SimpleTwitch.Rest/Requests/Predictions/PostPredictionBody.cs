@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostPredictionArgs : IScopedRequest
+    public class PostPredictionBody : IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:predictions" };
 
@@ -23,6 +23,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonPropertyName("prediction_window")]
         public int PredictionDurationSeconds { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

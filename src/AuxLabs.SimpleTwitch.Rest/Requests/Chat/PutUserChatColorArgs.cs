@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PutUserChatColorArgs : QueryMap, IScopedRequest
+    public class PutUserChatColorArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "user:manage:chat_color" };
 
@@ -16,6 +16,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> Turbo and Prime users may specify a custom color. </summary>
         public Color? CustomColor { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(UserId, authedUserId, nameof(UserId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

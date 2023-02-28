@@ -1,26 +1,36 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostAnnouncementArgs : IScopedRequest
+    public class PostAnnouncementArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:manage:announcements" };
 
-        /// <summary> The announcement to make in the broadcaster’s chat room. </summary>
-        [JsonPropertyName("message")]
-        public string Message { get; set; }
+        /// <summary> The ID of the broadcaster that owns the chat room to send the announcement to. </summary>
+        public string BroadcasterId { get; set; }
 
-        /// <summary> The color used to highlight the announcement. </summary>
-        [JsonPropertyName("color")]
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public AnnouncementColor? Color { get; set; } = null;
+        /// <summary> The ID of a user who has permission to moderate the broadcaster’s chat room. </summary>
+        public string ModeratorId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);
-            Require.NotEmptyOrWhitespace(Message, nameof(Message));
-            Require.LengthAtMost(Message, 500, nameof(Message));
+            Require.NotNullOrWhitespace(BroadcasterId, nameof(BroadcasterId));
+            Require.NotNullOrWhitespace(ModeratorId, nameof(ModeratorId));
+        }
+
+        public override IDictionary<string, string> CreateQueryMap()
+        {
+            return new Dictionary<string, string>
+            {
+                ["broadcaster_id"] = BroadcasterId,
+                ["moderator_id"] = ModeratorId
+            };
         }
     }
 }

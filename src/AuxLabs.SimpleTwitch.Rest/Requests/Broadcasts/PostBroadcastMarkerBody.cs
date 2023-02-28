@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostBroadcastMarkerBody : IScopedRequest
+    public class PostBroadcastMarkerBody : IAgentRequest
     {
         [JsonIgnore]
         public string[] Scopes { get; } = { "channel:manage:broadcast" };
@@ -18,6 +18,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string Description { get; set; } = null;
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(UserId, authedUserId, nameof(UserId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

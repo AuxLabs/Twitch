@@ -2,15 +2,15 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class DeleteRaidArgs : QueryMap, IAgentRequest
+    public class PostEnforcementStatusArgs : QueryMap, IAgentRequest
     {
-        public string[] Scopes { get; } = { "channel:manage:raids" };
+        public string[] Scopes { get; } = { "moderation:read" };
 
-        /// <summary> The ID of the broadcaster that initiated the raid. </summary>
+        /// <summary> The ID of the broadcaster that owns the channel. </summary>
         public string BroadcasterId { get; set; }
 
-        public DeleteRaidArgs() { }
-        public DeleteRaidArgs(string broadcasterId)
+        public PostEnforcementStatusArgs() { }
+        public PostEnforcementStatusArgs(string broadcasterId)
         {
             BroadcasterId = broadcasterId;
         }
@@ -34,7 +34,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             };
         }
 
-        public static implicit operator string(DeleteRaidArgs value) => value.BroadcasterId;
-        public static implicit operator DeleteRaidArgs(string v) => new DeleteRaidArgs(v);
+        public static implicit operator string(PostEnforcementStatusArgs value) => value.BroadcasterId;
+        public static implicit operator PostEnforcementStatusArgs(string v) => new PostEnforcementStatusArgs(v);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostRaidArgs : QueryMap, IScopedRequest
+    public class PostRaidArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:raids" };
 
@@ -12,10 +12,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the broadcaster to raid. </summary>
         public string ToBroadcasterId { get; set; }
 
-        public PostRaidArgs() { }
-        public PostRaidArgs(string fromBroadcasterId, string toBroadcasterId)
-            => (FromBroadcasterId, ToBroadcasterId) = (fromBroadcasterId, toBroadcasterId);
-
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(FromBroadcasterId, authedUserId, nameof(FromBroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

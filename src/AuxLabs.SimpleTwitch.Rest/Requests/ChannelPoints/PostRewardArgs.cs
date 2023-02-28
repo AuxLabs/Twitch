@@ -2,13 +2,18 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostRewardArgs : QueryMap, IScopedRequest
+    public class PostRewardArgs : QueryMap, IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:redemptions" };
 
-        /// <summary>  </summary>
+        /// <summary> The ID of the broadcaster to add the custom reward to. </summary>
         public string BroadcasterId { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

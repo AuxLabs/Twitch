@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class GetChattersArgs : QueryMap, IPaginatedRequest, IScopedRequest
+    public class GetChattersArgs : QueryMap, IPaginatedRequest, IAgentRequest
     {
         public string[] Scopes { get; } = { "moderator:read:chatters" };
 
@@ -18,6 +18,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public string After { get; set; }
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(ModeratorId, authedUserId, nameof(ModeratorId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);

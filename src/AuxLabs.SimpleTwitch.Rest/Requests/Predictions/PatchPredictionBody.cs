@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PatchPredictionArgs : IScopedRequest
+    public class PatchPredictionBody : IAgentRequest
     {
         public string[] Scopes { get; } = { "channel:manage:predictions" };
 
@@ -24,6 +24,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string WinningId { get; set; } = null;
 
+        public void Validate(IEnumerable<string> scopes, string authedUserId)
+        {
+            Validate(scopes);
+            Require.Equal(BroadcasterId, authedUserId, nameof(BroadcasterId), $"Value must be the authenticated user's id.");
+        }
         public void Validate(IEnumerable<string> scopes)
         {
             Require.Scopes(scopes, Scopes);
