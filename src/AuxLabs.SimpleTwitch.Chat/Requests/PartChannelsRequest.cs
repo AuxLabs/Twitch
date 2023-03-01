@@ -5,8 +5,8 @@
         public PartChannelsRequest() { }
         public PartChannelsRequest(params string[] channelNames)
         {
-            Require.HasAtLeast(channelNames, 1, nameof(channelNames));
-            Require.HasAtMost(channelNames, 20, nameof(channelNames));
+            //Require.HasAtLeast(channelNames, 1, nameof(channelNames));
+            //Require.HasAtMost(channelNames, 20, nameof(channelNames));
 
             for (int i = 0; i < channelNames.Length; i++)
             {
