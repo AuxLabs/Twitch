@@ -45,7 +45,6 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         // config variables
         public readonly bool CommandsRequested;
-        public readonly bool MembershipRequested;
         public readonly bool TagsRequested;
         public readonly bool ShouldHandleEvents;
         public readonly bool ThrowOnUnknownEvent;
@@ -68,12 +67,12 @@ namespace AuxLabs.SimpleTwitch.Chat
             Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnMismatchedTags);
 
             CommandsRequested = config.RequestCommands;
-            MembershipRequested = config.RequestMembership;
             TagsRequested = config.RequestTags;
             ShouldHandleEvents = config.ShouldHandleEvents;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
             ThrowOnMismatchedTags = config.ThrowOnMismatchedTags;
         }
+
 
         public TwitchChatApiClient SetIdentity(string username, string token)
         {
@@ -99,7 +98,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override void SendIdentify()
         {
-            var capReq = new CapabilityRequest(membership: MembershipRequested, tags: TagsRequested, commands: CommandsRequested);
+            var capReq = new CapabilityRequest(tags: TagsRequested, commands: CommandsRequested);
             if (capReq.HasData) Send(capReq);
 
             Send(new IrcPayload(IrcCommand.Password, _token));

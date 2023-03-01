@@ -6,12 +6,11 @@ namespace AuxLabs.SimpleTwitch.Chat
     {
         public bool HasData { get; }
 
-        public CapabilityRequest(bool membership, bool commands, bool tags)
+        public CapabilityRequest(bool commands, bool tags)
         {
             Command = IrcCommand.CapabilityRequest;
 
             var capabilities = new List<string>();
-            if (membership) capabilities.Add("twitch.tv/membership");
             if (commands) capabilities.Add("twitch.tv/commands");
             if (tags) capabilities.Add("twitch.tv/tags");
 

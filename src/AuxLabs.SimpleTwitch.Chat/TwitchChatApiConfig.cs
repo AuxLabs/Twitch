@@ -7,9 +7,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> Lets your bot send messages that include Twitch chat commands and receive Twitch-specific messages. </summary>
         public bool RequestCommands { get; set; } = true;
 
-        /// <summary> Lets your bot receive JOIN and PART events when users join and leave the chat room. </summary>
-        public bool RequestMembership { get; set; } = false;
-
         /// <summary> Adds additional metadata to the command and membership messages. </summary>
         public bool RequestTags { get; set; } = true;
 
