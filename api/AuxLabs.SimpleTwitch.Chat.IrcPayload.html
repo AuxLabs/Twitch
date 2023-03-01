@@ -90,13 +90,13 @@
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">IrcPayload</span></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.CapabilityRequest.html">CapabilityRequest</a></div>
-      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.JoinChannelRequest.html">JoinChannelRequest</a></div>
-      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelRequest.html">PartChannelRequest</a></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.JoinChannelsRequest.html">JoinChannelsRequest</a></div>
+      <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html">PartChannelsRequest</a></div>
       <div class="level2"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.SendMessageRequest.html">SendMessageRequest</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="AuxLabs.SimpleTwitch.Sockets.IPayload.html">IPayload</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.WebSockets.IPayload.html">IPayload</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -127,380 +127,112 @@
   </div>
   <h3 id="constructors">Constructors
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L20">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor">IrcPayload()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IrcPayload()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.%23ctor(AuxLabs.SimpleTwitch.Chat.IrcCommand%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L21">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor(AuxLabs.SimpleTwitch.Chat.IrcCommand,System.String[])">IrcPayload(IrcCommand, params string[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IrcPayload(IrcCommand ircCommand, params string[] parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcCommand.html">IrcCommand</a></td>
-        <td><span class="parametername">ircCommand</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor">IrcPayload()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
-        <td><span class="parametername">parameters</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_System_String_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.%23ctor(System.String%2CAuxLabs.SimpleTwitch.Chat.IrcCommand%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L23">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_System_String_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor(System.String,AuxLabs.SimpleTwitch.Chat.IrcCommand,System.String[])">IrcPayload(string, IrcCommand, params string[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IrcPayload(string prefix, IrcCommand ircCommand, params string[] parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">prefix</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor(AuxLabs.SimpleTwitch.Chat.IrcCommand,System.String[])">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___">IrcPayload(IrcCommand, params string[])</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcCommand.html">IrcCommand</a></td>
-        <td><span class="parametername">ircCommand</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span>[]</td>
-        <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_System_String_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.#ctor(System.String,AuxLabs.SimpleTwitch.Chat.IrcCommand,System.String[])">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload__ctor_System_String_AuxLabs_SimpleTwitch_Chat_IrcCommand_System_String___">IrcPayload(string, IrcCommand, params string[])</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_Command.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.Command%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L16">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Command_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Command*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Command" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Command">Command</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IrcCommand Command { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcCommand.html">IrcCommand</a></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Command" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Command">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Command">Command</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.CommandRaw%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L17">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.CommandRaw*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.CommandRaw">CommandRaw</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CommandRaw { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.CommandRaw">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw">CommandRaw</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.IsHelloEvent">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent">IsHelloEvent</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.IsHelloEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L12">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.IsHelloEvent*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.IsHelloEvent">IsHelloEvent</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsHelloEvent { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Parameters">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters">Parameters</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Prefix">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix">Prefix</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.Parameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L18">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Parameters*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Parameters">Parameters</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;string&gt; Parameters { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Tags">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags">Tags</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.TagsTypeSelector">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector">TagsTypeSelector</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.Prefix%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L15">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Prefix*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Prefix">Prefix</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IrcPrefix? Prefix { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPrefix.html">IrcPrefix</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.Tags%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L14">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Tags*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.Tags">Tags</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseTags Tags { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.BaseTags.html">BaseTags</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.TagsTypeSelector%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L51">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.TagsTypeSelector*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.TagsTypeSelector">TagsTypeSelector</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;IrcCommand, Type&gt; TagsTypeSelector { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcCommand.html">IrcCommand</a>, <span class="xref">System.Type</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.UserNoticeTypeSelector%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L64">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.UserNoticeTypeSelector*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.UserNoticeTypeSelector">UserNoticeTypeSelector</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;UserNoticeType, Type&gt; UserNoticeTypeSelector { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span>&lt;<a class="xref" href="AuxLabs.SimpleTwitch.Chat.UserNoticeType.html">UserNoticeType</a>, <span class="xref">System.Type</span>&gt;</td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.UserNoticeTypeSelector">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector">UserNoticeTypeSelector</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.IrcPayload.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/IrcPayload.cs/#L31">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString_" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.ToString*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString" data-uid="AuxLabs.SimpleTwitch.Chat.IrcPayload.ToString">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString">ToString()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">object.ToString()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Sockets.IPayload.html">IPayload</a>
-  </div>
 </article>
           </div>
 

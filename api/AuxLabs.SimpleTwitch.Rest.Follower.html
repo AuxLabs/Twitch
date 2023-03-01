@@ -90,12 +90,6 @@
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">Follower</span></div>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a></div>
-    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></div>
-    <div><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity</a>&lt;<span class="xref">string</span>&gt;</div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -124,419 +118,48 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Rest.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Rest_Follower_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Follower : IUserRelation, IUser, IEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Follower</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_FollowedAt.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.FollowedAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L33">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_FollowedAt_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FollowedAt*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_FollowedAt" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FollowedAt">FollowedAt</h4>
-  <div class="markdown level1 summary"><p>The UTC date and time of when <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_FromId">FromId</a> began following <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_ToId">ToId</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime FollowedAt { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Rest_Follower_FollowedAt" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FollowedAt">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_FollowedAt">FollowedAt</a>
+        </td>
+        <td class="markdown level1 summary"><p>The UTC timestamp when the user started following the broadcaster.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_Follower_UserDisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.UserDisplayName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_UserDisplayName">UserDisplayName</a>
+        </td>
+        <td class="markdown level1 summary"><p>The user’s display name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_Follower_UserId" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.UserId">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_UserId">UserId</a>
+        </td>
+        <td class="markdown level1 summary"><p>An ID that uniquely identifies the user that’s following the broadcaster.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Rest_Follower_UserName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.UserName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_UserName">UserName</a>
+        </td>
+        <td class="markdown level1 summary"><p>The user’s login name.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_FromDisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.FromDisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L17">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_FromDisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromDisplayName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_FromDisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromDisplayName">FromDisplayName</h4>
-  <div class="markdown level1 summary"><p>The follower’s display name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string FromDisplayName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_FromId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.FromId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L9">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_FromId_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromId*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_FromId" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromId">FromId</h4>
-  <div class="markdown level1 summary"><p>The ID of the user that's following <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_ToId">ToId</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string FromId { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_FromName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.FromName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L13">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_FromName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_FromName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.FromName">FromName</h4>
-  <div class="markdown level1 summary"><p>The follower’s login name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string FromName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_ToDisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.ToDisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L29">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_ToDisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToDisplayName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_ToDisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToDisplayName">ToDisplayName</h4>
-  <div class="markdown level1 summary"><p>The display name of the user that’s being followed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToDisplayName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_ToId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.ToId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L21">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_ToId_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToId*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_ToId" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToId">ToId</h4>
-  <div class="markdown level1 summary"><p>The ID of the user that’s being followed by <a class="xref" href="AuxLabs.SimpleTwitch.Rest.Follower.html#AuxLabs_SimpleTwitch_Rest_Follower_FromId">FromId</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToId { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_ToName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.ToName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L25">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_ToName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_ToName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.ToName">ToName</h4>
-  <div class="markdown level1 summary"><p>The login name of the user that’s being followed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="eii">Explicit Interface Implementations
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IEntity_System_String__Id.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IEntity%7BSystem%23String%7D%23Id%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L36">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IEntity_System_String__Id_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IEntity{System#String}#Id*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IEntity_System_String__Id" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IEntity{System#String}#Id">IEntity&lt;string&gt;.Id</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IEntity&lt;string&gt;.Id { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_DisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IUser%23DisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L38">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_DisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUser#DisplayName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_DisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUser#DisplayName">IUser.DisplayName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IUser.DisplayName { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_Name.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IUser%23Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L37">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_Name_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUser#Name*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUser_Name" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUser#Name">IUser.Name</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IUser.Name { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedDisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L41">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedDisplayName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedDisplayName">IUserRelation.RelatedDisplayName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedDisplayName { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedId.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L39">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedId_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedId*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedId" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedId">IUserRelation.RelatedId</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedId { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs%23SimpleTwitch%23IUserRelation%23RelatedName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L40">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedName_" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Rest_Follower_AuxLabs_SimpleTwitch_IUserRelation_RelatedName" data-uid="AuxLabs.SimpleTwitch.Rest.Follower.AuxLabs#SimpleTwitch#IUserRelation#RelatedName">IUserRelation.RelatedName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string IUserRelation.RelatedName { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a>
-  </div>
-  <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a>
-  </div>
-  <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity&lt;TId&gt;</a>
-  </div>
 </article>
           </div>
 
@@ -548,7 +171,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Rest_Follower.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Rest.Follower%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Users/Follower.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Rest/Models/Channels/Follower.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

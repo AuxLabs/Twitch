@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the HOMEPAGE. | AuxLabs.SimpleTwitch Documentation </title>
+    <title>SimpleTwitch | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="This is the HOMEPAGE. | AuxLabs.SimpleTwitch Documentation ">
+    <meta name="title" content="SimpleTwitch | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="favicon.ico">
@@ -70,13 +70,148 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
-</ol>
+<p><a href="https://discord.gg/yd8x2wM"><img src="https://discordapp.com/api/guilds/257698577894080512/widget.png" alt="Discord"></a>
+<a href="https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml"><img src="https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github" alt="GitHub Workflow Status"></a>
+<a href=""><img src="https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget" alt="Nuget"></a></p>
+<h1 id="simpletwitch">SimpleTwitch</h1>
+<p>SimpleTwitch is a bare minimum implmentation of the Twitch APIs. It's built in a way that should make it easy to extend and implement your own clients as needed, if needed. An example of such an implementation is <a href="https://github.com/AuxLabs/Twitch">AuxLabs.Twitch</a>, the main and intended version of the library for general usage.</p>
+<p><img src="https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg" alt="Alt" title="Repobeats analytics image"></p>
+<h3 id="builds">Builds</h3>
+<p>Release builds will be available through Nuget, and development builds are available publicly through <a href="https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch">Github Packages</a>.</p>
+<h3 id="documentation">Documentation</h3>
+<p>The API reference, starter tutorials, and other documentation will be available at <a href="https://docs.auxlabs.org/SimpleTwitch/">the documentation site</a>.</p>
+<h3 id="samples">Samples</h3>
+<p>For examples and sample projects look at <a href="https://github.com/AuxLabs/SimpleTwitch-Examples">the examples repository</a>.</p>
+<h3 id="features">Features</h3>
+<details>
+  <summary>Rest</summary>
+    
+- [x] Global ratelimit handling
+- [ ] Unique endpoint ratelimit handling
+- [x] Check arguments for validity before requests
+- [x] Scope confirmation before requests
+- [ ] Automatic token refresh
+- [x] Ability to implement a custom ratelimiter
+- [x] Ability to specify a custom rest api url
+- [ ] All endpoint categories progress
+  - [x] 5/5 Identity
+  - [x] 1/1 Ads
+  - [x] 2/2 Analytics
+  - [x] 3/3 Bits
+  - [x] 3/3 Channels
+  - [x] 6/6 Channel Points
+  - [x] 2/2 Charity
+  - [x] 12/12 Chat
+  - [x] 2/2 Clips
+  - [x] 4/4 Entitlements
+  - [ ] 0/12 Extensions
+  - [x] 3/3 EventSub
+  - [x] 2/2 Games
+  - [x] 1/1 Goals
+  - [x] 1/1 Hype Trains
+  - [x] 19/19 Moderation
+  - [x] 3/3 Polls
+  - [x] 3/3 Predictions
+  - [x] 2/2 Raids
+  - [x] 6/6 Schedule
+  - [x] 2/2 Search
+  - [x] 3/3 Music
+  - [x] 5/5 Streams
+  - [x] 2/2 Subscriptions
+  - [x] 2/2 Teams
+  - [x] 9/9 Users
+  - [x] 2/2 Videos
+  - [x] 1/1 Whispers
+</details>
+<details>
+  <summary>Chat</summary>
+<ul>
+<li>[ ] Ratelimit handling</li>
+<li>[x] Automatic heartbeat</li>
+<li>[x] Automatic reconnection</li>
+<li>[x] Auto-detect unhandled tags</li>
+<li>[x] Provide a custom irc serializer</li>
+<li>[x] Connect to a custom websocket chat url</li>
+<li>[x] Authenticate anonymously</li>
+<li>[x] Handle all available events
+<ul>
+<li>[x] Capability Acknowledged</li>
+<li>[x] Capability Denied</li>
+<li>[x] Chat Cleared</li>
+<li>[x] Message Deleted</li>
+<li>[x] Global User State</li>
+<li>[x] Notice Received</li>
+<li>[x] Message Received</li>
+<li>[x] Room State Received</li>
+<li>[x] User Notice Received</li>
+<li>[x] User State Received</li>
+<li>[x] Whisper Received</li>
+<li>[x] Channel Joined</li>
+<li>[x] Channel Left</li>
+<li>[x] Names Received</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+  <summary>EventSub</summary>
+<ul>
+<li>[x] Subscribe/Unsubscribe/View subscriptions through Rest client</li>
+<li>[ ] Ratelimits and Subscription Costs</li>
+<li>[x] WebSocket client</li>
+<li>[ ] WebHook client</li>
+<li>[ ] Automatic heartbeat</li>
+<li>[x] Automatic reconnection</li>
+<li>[ ] Handle all available events
+<ul>
+<li>[ ] Followers</li>
+<li>[ ] Subscriptions</li>
+<li>[ ] Bits Cheered</li>
+<li>[ ] Raids</li>
+<li>[ ] User Banned</li>
+<li>[ ] User Unbanned</li>
+<li>[ ] Moderators</li>
+<li>[ ] Rewards</li>
+<li>[ ] Redemptions</li>
+<li>[ ] Polls</li>
+<li>[ ] Predictions</li>
+<li>[ ] Charity Donations</li>
+<li>[ ] Charity Campaigns</li>
+<li>[ ] Drops Entitlements</li>
+<li>[ ] Extension Bits Transactions</li>
+<li>[ ] Goals</li>
+<li>[ ] Hype Trains</li>
+<li>[ ] Shield Mode</li>
+<li>[ ] Shoutouts</li>
+<li>[ ] Stream Status</li>
+<li>[ ] Authorization Granted/Revoked</li>
+<li>[ ] User Updated</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+  <summary>PubSub</summary>
+<ul>
+<li>[ ] Ratelimits</li>
+<li>[ ] Automatic heartbeat</li>
+<li>[ ] Automatic reconnection</li>
+<li>[ ] Handle all available events
+<ul>
+<li>[ ] Bits</li>
+<li>[ ] Bist Badge Unlocks</li>
+<li>[ ] Channel Point Redemptions</li>
+<li>[ ] Channel Subscriptions</li>
+<li>[ ] Automod Queue</li>
+<li>[ ] Moderator Actions</li>
+<li>[ ] Low Trust User Status</li>
+<li>[ ] Mdoerator Notifications</li>
+<li>[ ] Whispers</li>
+</ul>
+</li>
+</ul>
+</details>
 </article>
           </div>
 

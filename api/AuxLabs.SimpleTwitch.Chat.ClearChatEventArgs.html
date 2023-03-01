@@ -90,6 +90,14 @@
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">ClearChatEventArgs</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IChatUserRelation.html">IChatUserRelation</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IChatUser.html">IChatUser</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUserRelation.html">IUserRelation</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IUser.html">IUser</a></div>
+    <div><a class="xref" href="AuxLabs.SimpleTwitch.IEntity-1.html">IEntity</a>&lt;<span class="xref">string</span>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -118,183 +126,128 @@
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Chat.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClearChatEventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClearChatEventArgs : IChatUserRelation, IChatUser, IUserRelation, IUser, IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_System_String__.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.%23ctor(System.Collections.Generic.IReadOnlyCollection%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L17">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs__ctor_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.#ctor*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_System_String__" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.#ctor(System.Collections.Generic.IReadOnlyCollection{System.String})">ClearChatEventArgs(IReadOnlyCollection&lt;string&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClearChatEventArgs(IReadOnlyCollection&lt;string&gt; parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
-        <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_System_String__" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.#ctor(System.Collections.Generic.IReadOnlyCollection{System.String})">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_System_String__">ClearChatEventArgs(IReadOnlyCollection&lt;string&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
 </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_ChannelName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.ChannelName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L12">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_ChannelName_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.ChannelName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_ChannelName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.ChannelName">ChannelName</h4>
-  <div class="markdown level1 summary"><p>The channel's name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ChannelName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Tags.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Tags%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L9">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Tags_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Tags*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Tags" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Tags">Tags</h4>
-  <div class="markdown level1 summary"><p>The tags for this event, if provided.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClearChatTags Tags { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatTags.html">ClearChatTags</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_UserName.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.UserName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L15">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_UserName_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.UserName*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_UserName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.UserName">UserName</h4>
-  <div class="markdown level1 summary"><p>The user whose messages were cleared from chat.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string UserName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Create_AuxLabs_SimpleTwitch_Chat_IrcPayload_.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Create(AuxLabs.SimpleTwitch.Chat.IrcPayload)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L23">View Source</a>
-  </span>
-  <a id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Create_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Create*"></a>
-  <h4 id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Create_AuxLabs_SimpleTwitch_Chat_IrcPayload_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Create(AuxLabs.SimpleTwitch.Chat.IrcPayload)">Create(IrcPayload)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ClearChatEventArgs Create(IrcPayload payload)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a></td>
-        <td><span class="parametername">payload</span></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_ChannelName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.ChannelName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_ChannelName">ChannelName</a>
+        </td>
+        <td class="markdown level1 summary"><p>The channel's name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Tags" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Tags">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Tags">Tags</a>
+        </td>
+        <td class="markdown level1 summary"><p>The tags for this event, if provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_UserName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.UserName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_UserName">UserName</a>
+        </td>
+        <td class="markdown level1 summary"><p>The user whose messages were cleared from chat.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h3 id="methods">Methods
+</h3>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html">ClearChatEventArgs</a></td>
-        <td></td>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Create_AuxLabs_SimpleTwitch_Chat_IrcPayload_" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.Create(AuxLabs.SimpleTwitch.Chat.IrcPayload)">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_Create_AuxLabs_SimpleTwitch_Chat_IrcPayload_">Create(IrcPayload)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_Chat_IChatUser_Color" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#Chat#IChatUser#Color">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_Chat_IChatUser_Color">IChatUser.Color</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id">IEntity&lt;string&gt;.Id</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUser_DisplayName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IUser#DisplayName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUser_DisplayName">IUser.DisplayName</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUser_Name" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IUser#Name">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUser_Name">IUser.Name</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IUserRelation#RelatedDisplayName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedDisplayName">IUserRelation.RelatedDisplayName</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedId" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IUserRelation#RelatedId">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedId">IUserRelation.RelatedId</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedName" data-uid="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.AuxLabs#SimpleTwitch#IUserRelation#RelatedName">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs.html#AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs_AuxLabs_SimpleTwitch_IUserRelation_RelatedName">IUserRelation.RelatedName</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
@@ -309,7 +262,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_ClearChatEventArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.ClearChatEventArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Models/Events/ClearChatEventArgs.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
