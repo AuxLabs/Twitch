@@ -10,8 +10,5 @@
 
         /// <summary> Should the client attempt to auto refresh tokens. </summary>
         public bool ShouldAutoRefresh { get; set; } = true;
-
-        /// <summary>  </summary>
-        public IRateLimiter RateLimiter { get; set; } = null;
     }
 }

@@ -22,7 +22,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             config ??= new TwitchRestApiConfig();
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, config.RateLimiter));
+            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, new DefaultRateLimiter()));
             _identity = new TwitchIdentityApiClient(config.ClientId, config.ClientSecret);
 
             _api.ClientId = config.ClientId;
@@ -744,10 +744,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.GetUsersAsync(args);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<User>> PutUserAsync(string description)
+        public Task<TwitchResponse<User>> PutUserAsync(PutUserArgs args)
         {
-            //CheckScopes(args);
-            return _api.PutUserAsync(description);
+            CheckPermissions(args);
+            return _api.PutUserAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync(GetBlocksArgs args)
@@ -762,10 +762,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.PutBlockAsync(args);
         }
         /// <inheritdoc/>
-        public Task DeleteBlockAsync(string targetUserId)
+        public Task DeleteBlockAsync(DeleteBlockArgs args)
         {
-            //CheckScopes(args);
-            return _api.DeleteBlockAsync(targetUserId);
+            CheckPermissions(args);
+            return _api.DeleteBlockAsync(args);
         }
         /// <inheritdoc/>
         public Task<TwitchResponse<Extension>> GetUserExtensionsAsync()
@@ -774,8 +774,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             return GetUserExtensionsAsync();
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync(string userId)
-            => _api.GetActiveExtensionsAsync(userId);
+        public Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync(GetActiveExtensionsArgs args)
+        {
+            CheckPermissions(args);
+            return _api.GetActiveExtensionsAsync(args);
+        }
         /// <inheritdoc/>
         public Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync(ExtensionMap args)
         {

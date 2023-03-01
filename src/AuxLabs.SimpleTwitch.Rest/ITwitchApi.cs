@@ -844,7 +844,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Put("users")]
-        Task<TwitchResponse<User>> PutUserAsync([Query("description")] string description);
+        Task<TwitchResponse<User>> PutUserAsync([QueryMap] PutUserArgs args);
 
         /// <summary> Gets the list of users that the broadcaster has blocked. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -869,7 +869,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("users/blocks")]
-        Task DeleteBlockAsync([Query("target_user_id")] string targetUserId);
+        Task DeleteBlockAsync([QueryMap] DeleteBlockArgs args);
 
         /// <summary> Gets a list of all extensions (both active and inactive) that the broadcaster has installed. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -888,7 +888,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("users/extensions")]
-        Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync([Query("user_id")] string userId);
+        Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync([QueryMap] GetActiveExtensionsArgs args);
 
         /// <summary> Updates an installed extension’s information. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
