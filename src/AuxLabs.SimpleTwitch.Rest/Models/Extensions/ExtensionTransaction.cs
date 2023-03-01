@@ -19,11 +19,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The broadcaster’s login name. </summary>
         [JsonPropertyName("broadcaster_login")]
-        public string BroadcasterLogin { get; set; }
+        public string BroadcasterName { get; set; }
 
         /// <summary> The broadcaster’s display name. </summary>
         [JsonPropertyName("broadcaster_name")]
-        public string BroadcasterName { get; set; }
+        public string BroadcasterDisplayName { get; set; }
 
         /// <summary> The ID of the user that purchased the digital product. </summary>
         [JsonPropertyName("user_id")]
@@ -31,11 +31,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The user’s login name. </summary>
         [JsonPropertyName("user_login")]
-        public string UserLogin { get; set; }
+        public string UserName { get; set; }
 
         /// <summary> The user’s display name. </summary>
         [JsonPropertyName("user_name")]
-        public string UserName { get; set; }
+        public string UserDisplayName { get; set; }
 
         /// <summary> The type of transaction. </summary>
         [JsonPropertyName("product_type")]

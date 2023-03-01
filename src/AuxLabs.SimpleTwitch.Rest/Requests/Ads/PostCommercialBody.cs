@@ -11,7 +11,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> Optional, the length of the commercial to run, in seconds. </summary>
         /// <remarks> If specified, the minimum value is 1 and the maximum value is 180. </remarks>
-        public int? Length { get; set; }
+        public int Length { get; set; }
 
         public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
@@ -28,15 +28,11 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public override IDictionary<string, string> CreateQueryMap()
         {
-            var map = new Dictionary<string, string>
+            return new Dictionary<string, string>
             {
-                ["broadcaster_id"] = BroadcasterId
+                ["broadcaster_id"] = BroadcasterId,
+                ["length"] = Length.ToString()
             };
-
-            if (Length != null)
-                map["length"] = Length.ToString();
-            
-            return map;
         }
     }
 }
