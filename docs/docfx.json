@@ -8,7 +8,11 @@
         }
       ],
       "dest": "api",
-      "filter": "filterConfig.yml"
+      "filter": "filter.yml",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "namespaceLayout": "flattened"
     }
   ],
   "build": {
@@ -49,7 +53,8 @@
     "dest": "_site",
     "template": [
       "default",
-      "_templates/material"
+      "_templates/material",
+      "_templates/memberpage"
     ],
     "globalMetadata": {
       "_appTitle": "AuxLabs.SimpleTwitch Documentation",
