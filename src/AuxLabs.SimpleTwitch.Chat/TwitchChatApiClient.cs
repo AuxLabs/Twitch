@@ -73,7 +73,6 @@ namespace AuxLabs.SimpleTwitch.Chat
             ThrowOnMismatchedTags = config.ThrowOnMismatchedTags;
         }
 
-
         public TwitchChatApiClient SetIdentity(string username, string token)
         {
             if (State == ConnectionState.Connected)
@@ -95,6 +94,20 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         public override void Run() => Run(_url);
         public override Task RunAsync() => RunAsync(_url);
+
+        /// <summary> Join a channel by name. </summary>
+        /// <remarks> Max channels per request is 20. </remarks>
+        public void SendJoin(params string[] channelNames)
+            => Send(new JoinChannelsRequest(channelNames));
+
+        /// <summary> Leave a channel by name. </summary>
+        /// <remarks> Max channels per request is 20. </remarks>
+        public void SendPart(params string[] channelNames)
+            => Send(new PartChannelsRequest(channelNames));
+
+        /// <summary> Send a message to a channel. </summary>
+        public void SendChannelMessage(string channelName, string message, string replyMessageId = null)
+            => Send(new SendMessageRequest(channelName, message, replyMessageId));
 
         protected override void SendIdentify()
         {
