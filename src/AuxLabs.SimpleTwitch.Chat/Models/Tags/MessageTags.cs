@@ -7,91 +7,91 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class MessageTags : BaseTags, IUserRelation
     {
         /// <summary> An ID that uniquely identifies the message. </summary>
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary>  </summary>
-        public string CustomRewardId { get; set; }
+        public string CustomRewardId { get; internal set; }
 
         /// <summary> An ID that identifies the channel. </summary>
-        public string ChannelId { get; set; }
+        public string ChannelId { get; internal set; }
 
         /// <summary> A value that indicates if a messag has unique properties </summary>
-        public MessageType Type { get; set; }
+        public MessageType Type { get; internal set; }
 
         /// <summary> The date and time that the message was sent. </summary>
-        public DateTimeOffset Timestamp { get; set; }
+        public DateTimeOffset Timestamp { get; internal set; }
 
         /// <summary> The ID of the user that sent the message. </summary>
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
 
         /// <summary> The type of user. </summary>
-        public UserType UserType { get; set; }
+        public UserType UserType { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string DisplayName { get; set; }
+        public string DisplayName { get; internal set; }
 
         /// <summary> The user’s login name. </summary>
-        public string Name { get; set; }
+        public string Name { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
-        public Color Color { get; set; }
+        public Color Color { get; internal set; }
 
         /// <summary> A collection of badges the user has. </summary>
-        public IReadOnlyCollection<Badge> Badges { get; set; }
+        public IReadOnlyCollection<Badge> Badges { get; internal set; }
 
         /// <summary> Contains metadata related to the chat badges in the badges tag. Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber. </summary>
-        public string BadgeInfo { get; set; }
+        public string BadgeInfo { get; internal set; }
 
         /// <summary> The amount of Bits the user cheered. Only a Bits cheer message includes this tag. </summary>
-        public int Bits { get; set; }
+        public int Bits { get; internal set; }
 
         /// <summary> A collection of emotes and their position in the message. </summary>
-        public IReadOnlyCollection<EmotePosition> Emotes { get; set; }
+        public IReadOnlyCollection<EmotePosition> Emotes { get; internal set; }
 
         /// <summary> The message value when someone uses the /me chat command </summary>
-        public string Action { get; set; }
+        public string Action { get; internal set; }
 
         /// <summary> Indicates whether the user is a moderator. </summary>
-        public bool IsMod { get; set; }
+        public bool IsMod { get; internal set; }
 
         /// <summary> Indicates whether the user is a subscriber. </summary>
-        public bool IsSubscriber { get; set; }
+        public bool IsSubscriber { get; internal set; }
 
         /// <summary> Indicates whether the user has site-wide commercial free mode enabled. </summary>
-        public bool IsTurbo { get; set; }
+        public bool IsTurbo { get; internal set; }
 
         /// <summary> Indicates whether the user is a VIP. </summary>
-        public bool IsVIP { get; set; }
+        public bool IsVIP { get; internal set; }
 
         /// <summary> Indicates whether this message contains only emotes </summary>
-        public bool IsEmoteOnly { get; set; }
+        public bool IsEmoteOnly { get; internal set; }
 
         /// <summary> Indicates whether this is the user's first message in the channel </summary>
-        public bool IsFirstMessage { get; set; }
+        public bool IsFirstMessage { get; internal set; }
 
         /// <summary> Indicates whether this is a returning chat user  </summary>
-        public bool IsReturningChatter { get; set; }
+        public bool IsReturningChatter { get; internal set; }
 
         /// <summary> An ID that uniquely identifies the parent message that this message is replying to. </summary>
-        public string ReplyParentMessageId { get; set; }
+        public string ReplyParentMessageId { get; internal set; }
 
         /// <summary> An ID that identifies the sender of the parent message. </summary>
-        public string ReplyParentUserId { get; set; }
+        public string ReplyParentUserId { get; internal set; }
 
         /// <summary> The login name of the sender of the parent message. </summary>
-        public string ReplyParentUserName { get; set; }
+        public string ReplyParentUserName { get; internal set; }
 
         /// <summary> The display name of the sender of the parent message. </summary>
-        public string ReplyParentDisplayName { get; set; }
+        public string ReplyParentDisplayName { get; internal set; }
 
         /// <summary> The text of the parent message. </summary>
-        public string ReplyParentMessage { get; set; }
+        public string ReplyParentMessage { get; internal set; }
 
         /// <summary> A unique value used to identify requests </summary>
-        public string Nonce { get; set; }
+        public string Nonce { get; internal set; }
 
         /// <summary>  </summary>
-        public string Flags { get; set; }
+        public string Flags { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

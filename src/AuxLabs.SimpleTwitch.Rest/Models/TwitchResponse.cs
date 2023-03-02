@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A collection of objects returned from a request </summary>
         [JsonPropertyName("data")]
-        public IReadOnlyCollection<T> Data { get; set; }
+        public IReadOnlyCollection<T> Data { get; internal set; }
     }
 
     /// <summary> An object that represents data returned by a Twitch request, but with some metadata. </summary>
@@ -16,20 +16,20 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The total number of objects returned in <see cref="TwitchResponse.Data"/>. </summary>
         [JsonPropertyName("total")]
-        public int? Total { get; set; }
+        public int? Total { get; internal set; }
 
         /// <summary> The current number of subscriber points earned by this broadcaster. </summary>
-        /// <remarks> Only returned for <see cref="ITwitchApi.GetSubscriptionsAsync(object)"/> </remarks>
+        /// <remarks> Only returned for <see cref="ITwitchApi.GetSubscriptionsAsync(GetSubscriptionsArgs)"/> </remarks>
         [JsonPropertyName("points")]
-        public int? Points { get; set; }
+        public int? Points { get; internal set; }
 
         /// <summary> A range of dates relating to the objects returned in <see cref="TwitchResponse.Data"/>. </summary>
         [JsonPropertyName("date_range")]
-        public DateRange? DateRange { get; set; }
+        public DateRange? DateRange { get; internal set; }
 
         /// <summary> Contains information used to page through the list of results. </summary>
         [JsonPropertyName("pagination")]
-        public Pagination? Pagination { get; set; }
+        public Pagination? Pagination { get; internal set; }
     }
 
     /// <summary>  </summary>
@@ -37,6 +37,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The cursor used to get the next page of results. </summary>
         [JsonPropertyName("cursor")]
-        public string Cursor { get; set; }
+        public string Cursor { get; internal set; }
     }
 }

@@ -5,31 +5,31 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class RoomStateTags : BaseTags
     {
         /// <summary> An ID that identifies the channel. </summary>
-        public string ChannelId { get; set; }
+        public string ChannelId { get; internal set; }
 
         /// <summary> Indicates whether the chat room allows only messages with emotes. </summary>
-        public bool IsEmoteOnly { get; set; }
+        public bool IsEmoteOnly { get; internal set; }
 
         /// <summary> Indicates whether only followers can post messages in the chat room. </summary>
         public bool IsFollowersOnly => FollowersOnlyMinutes > -1;
 
         /// <summary> Indicates how long, in minutes, the user must have followed the broadcaster before posting chat messages. </summary>
-        public int FollowersOnlyMinutes { get; set; }
+        public int FollowersOnlyMinutes { get; internal set; }
 
         /// <summary> Indicates whether a user’s messages must be unique. </summary>
-        public bool IsUniqueEnabled { get; set; }
+        public bool IsUniqueEnabled { get; internal set; }
 
         /// <summary>  </summary>
-        public bool IsRituals { get; set; }
+        public bool IsRituals { get; internal set; }
 
         /// <summary> Indicates whether users must wait between sending messages. </summary>
         public bool IsSlowEnabled => SlowSeconds > 0;
 
         /// <summary> Indicates how long, in seconds, users must wait between sending messages. </summary>
-        public int SlowSeconds { get; set; }
+        public int SlowSeconds { get; internal set; }
 
         /// <summary> Indicates whether only subscribers and moderators can chat in the chat room. </summary>
-        public bool IsSubscribersOnly { get; set; }
+        public bool IsSubscribersOnly { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

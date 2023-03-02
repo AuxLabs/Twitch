@@ -7,34 +7,34 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class WhisperTags : BaseTags
     {
         /// <summary> An ID that uniquely identifies the message. </summary>
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> An ID that uniquely identifies the whisper thread. </summary>
-        public string ThreadId { get; set; }
+        public string ThreadId { get; internal set; }
 
         /// <summary> The ID of the user that sent the message. </summary>
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
 
         /// <summary> The type of user. </summary>
-        public UserType UserType { get; set; }
+        public UserType UserType { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string DisplayName { get; set; }
+        public string DisplayName { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
-        public Color Color { get; set; }
+        public Color Color { get; internal set; }
 
         /// <summary> A collection of badges the user has. </summary>
-        public IReadOnlyCollection<Badge> Badges { get; set; }
+        public IReadOnlyCollection<Badge> Badges { get; internal set; }
 
         /// <summary> A collection of emotes and their position in the message. </summary>
-        public IReadOnlyCollection<EmotePosition> Emotes { get; set; }
+        public IReadOnlyCollection<EmotePosition> Emotes { get; internal set; }
 
         /// <summary> The message value when someone uses the /me chat command </summary>
-        public string Action { get; set; }
+        public string Action { get; internal set; }
 
         /// <summary> Indicates whether the user has site-wide commercial free mode enabled. </summary>
-        public bool IsTurbo { get; set; }
+        public bool IsTurbo { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

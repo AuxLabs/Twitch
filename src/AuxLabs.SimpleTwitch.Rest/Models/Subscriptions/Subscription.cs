@@ -6,18 +6,18 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The name of the subscription. </summary>
         [JsonPropertyName("plan_name")]
-        public string PlanName { get; set; }
+        public string PlanName { get; internal set; }
 
         /// <summary> An ID that identifies the subscribing user. </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
 
         /// <summary> The user’s login name. </summary>
         [JsonPropertyName("user_login")]
-        public string UserName { get; set; }
+        public string UserName { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
         [JsonPropertyName("user_name")]
-        public string UserDisplayName { get; set; }
+        public string UserDisplayName { get; internal set; }
     }
 }

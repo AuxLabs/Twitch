@@ -5,9 +5,9 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class CheermoteTheme
     {
         [JsonPropertyName("dark")]
-        public CheermoteFormat Dark { get; set; }
+        public CheermoteFormat Dark { get; internal set; }
 
         [JsonPropertyName("light")]
-        public CheermoteFormat Light { get; set; }
+        public CheermoteFormat Light { get; internal set; }
     }
 }

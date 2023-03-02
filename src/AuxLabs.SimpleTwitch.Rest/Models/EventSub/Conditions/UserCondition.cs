@@ -6,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The user ID for the user you want notifications for. </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
 
         public UserCondition() { }
         public UserCondition(string userId)

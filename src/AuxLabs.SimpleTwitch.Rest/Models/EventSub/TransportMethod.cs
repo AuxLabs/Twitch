@@ -6,6 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         [EnumMember(Value = "webhook")]
         Webhook,
+
         [EnumMember(Value = "websocket")]
         WebSocket
     }

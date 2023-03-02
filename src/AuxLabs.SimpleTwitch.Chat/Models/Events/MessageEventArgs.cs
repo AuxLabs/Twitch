@@ -10,10 +10,10 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> If special characters are present, emote indices will be incorrect. </summary>
         public readonly bool ContainsSpecialCharacters;
 
-        public MessageTags Tags { get; set; }
-        public string ChannelName { get; set; }
-        public string UserName { get; set; }
-        public string Message { get; set; }
+        public MessageTags Tags { get; internal set; }
+        public string ChannelName { get; internal set; }
+        public string UserName { get; internal set; }
+        public string Message { get; internal set; }
 
         public MessageEventArgs(IrcPrefix? prefix, IReadOnlyCollection<string> parameters)
         {

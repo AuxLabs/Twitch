@@ -7,22 +7,22 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies a user on the leaderboard. </summary>
         [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
 
         /// <summary> The user’s login name. </summary>
         [JsonPropertyName("user_login")]
-        public string UserLogin { get; set; }
+        public string UserLogin { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
         [JsonPropertyName("user_name")]
-        public string UserName { get; set; }
+        public string UserName { get; internal set; }
 
         /// <summary> The user’s position on the leaderboard. </summary>
         [JsonPropertyName("rank")]
-        public int Rank { get; set; }
+        public int Rank { get; internal set; }
 
         /// <summary> The number of bits the user has cheered. </summary>
         [JsonPropertyName("score")]
-        public int TotalBits { get; set; }
+        public int TotalBits { get; internal set; }
     }
 }

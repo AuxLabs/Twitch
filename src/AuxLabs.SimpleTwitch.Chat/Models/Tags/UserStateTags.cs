@@ -6,13 +6,13 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class UserStateTags : GlobalUserStateTags
     {
         /// <summary> An ID that uniquely identifies a message, if one was sent. </summary>
-        public string MessageId { get; set; }
+        public string MessageId { get; internal set; }
 
         /// <summary> Indicates whether the user is a moderator </summary>
-        public bool IsModerator { get; set; }
+        public bool IsModerator { get; internal set; }
 
         /// <summary> Indicates whether the user is a subscriber. </summary>
-        public bool IsSubscriber { get; set; }
+        public bool IsSubscriber { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

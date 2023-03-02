@@ -7,14 +7,14 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The length of the commercial you requested. </summary>
         [JsonPropertyName("length")]
-        public int Length { get; set; }
+        public int Length { get; internal set; }
 
         /// <summary> A message that indicates whether Twitch was able to serve an ad. </summary>
         [JsonPropertyName("message")]
-        public string Message { get; set; }
+        public string Message { get; internal set; }
 
         /// <summary> The number of seconds you must wait before running another commercial. </summary>
         [JsonPropertyName("retry_after")]
-        public int RetryAfter { get; set; }
+        public int RetryAfter { get; internal set; }
     }
 }

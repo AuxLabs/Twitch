@@ -7,13 +7,13 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class ClearChatEventArgs : IChatUserRelation
     {
         /// <summary> The tags for this event, if provided. </summary>
-        public ClearChatTags Tags { get; set; }
+        public ClearChatTags Tags { get; internal set; }
 
         /// <summary> The channel's name. </summary>
-        public string ChannelName { get; set; }
+        public string ChannelName { get; internal set; }
 
         /// <summary> The user whose messages were cleared from chat.  </summary>
-        public string UserName { get; set; }
+        public string UserName { get; internal set; }
 
         public ClearChatEventArgs(IReadOnlyCollection<string> parameters)
         {

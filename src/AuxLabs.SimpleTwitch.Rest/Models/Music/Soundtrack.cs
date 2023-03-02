@@ -6,10 +6,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> Describes a track. </summary>
         [JsonPropertyName("track")]
-        public Track Track { get; set; }
+        public Track Track { get; internal set; }
 
         /// <summary> The source of the track that’s currently playing. </summary>
         [JsonPropertyName("source")]
-        public TrackSource Source { get; set; }
+        public TrackSource Source { get; internal set; }
     }
 }

@@ -5,18 +5,18 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class CheermoteImage
     {
         [JsonPropertyName("1")]
-        public string Size1 { get; set; }
+        public string Size1 { get; internal set; }
 
         [JsonPropertyName("1.5")]
-        public string Size1AndHalf { get; set; }
+        public string Size1AndHalf { get; internal set; }
 
         [JsonPropertyName("1")]
-        public string Size2 { get; set; }
+        public string Size2 { get; internal set; }
 
         [JsonPropertyName("2")]
-        public string Size3 { get; set; }
+        public string Size3 { get; internal set; }
 
         [JsonPropertyName("4")]
-        public string Size4 { get; set; }
+        public string Size4 { get; internal set; }
     }
 }

@@ -5,9 +5,9 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class UserNoticeEventArgs
     {
-        public UserNoticeTags Tags { get; set; }
-        public string ChannelName { get; set; }
-        public string Message { get; set; }
+        public UserNoticeTags Tags { get; internal set; }
+        public string ChannelName { get; internal set; }
+        public string Message { get; internal set; }
 
         public UserNoticeEventArgs(IReadOnlyCollection<string> parameters)
         {

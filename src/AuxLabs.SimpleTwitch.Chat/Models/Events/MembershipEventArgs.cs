@@ -5,8 +5,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class MembershipEventArgs
     {
-        public string ChannelName { get; set; }
-        public string UserName { get; set; }
+        public string ChannelName { get; internal set; }
+        public string UserName { get; internal set; }
 
         public MembershipEventArgs(IrcPrefix prefix, IReadOnlyCollection<string> parameters)
         {

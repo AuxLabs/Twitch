@@ -5,8 +5,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class RoomStateEventArgs
     {
-        public RoomStateTags Tags { get; set; }
-        public string ChannelName { get; set; }
+        public RoomStateTags Tags { get; internal set; }
+        public string ChannelName { get; internal set; }
 
         public RoomStateEventArgs(IReadOnlyCollection<string> parameters)
         {

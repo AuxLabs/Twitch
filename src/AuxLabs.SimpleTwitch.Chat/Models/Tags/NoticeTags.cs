@@ -5,10 +5,10 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class NoticeTags : BaseTags
     {
         /// <summary> A value to determine the action’s outcome. </summary>
-        public NoticeType NoticeType { get; set; }
+        public NoticeType NoticeType { get; internal set; }
 
         /// <summary> The ID of the user that the action targeted. If specified. </summary>
-        public string TargetUserId { get; set; }
+        public string TargetUserId { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

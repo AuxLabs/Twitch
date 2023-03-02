@@ -6,16 +6,16 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class ClearChatTags : BaseTags
     {
         /// <summary> The date and time this event occurred. </summary>
-        public DateTime Timestamp { get; set; }
+        public DateTime Timestamp { get; internal set; }
 
         /// <summary> The ID of the channel where the messages were removed from. </summary>
-        public string ChannelId { get; set; }
+        public string ChannelId { get; internal set; }
 
         /// <summary> The ID of the user that was banned or put in a timeout. </summary>
-        public string TargetUserId { get; set; }
+        public string TargetUserId { get; internal set; }
 
         /// <summary> The message includes this tag if the user was put in a timeout. </summary>
-        public TimeSpan? BanDuration { get; set; }
+        public TimeSpan? BanDuration { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

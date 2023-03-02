@@ -7,34 +7,34 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> User’s type </summary>
         [JsonPropertyName("type")]
-        public UserType Type { get; set; }
+        public UserType Type { get; internal set; }
 
         /// <summary> User’s broadcaster type </summary>
         [JsonPropertyName("broadcaster_type")]
-        public BroadcasterType BroadcasterType { get; set; }
+        public BroadcasterType BroadcasterType { get; internal set; }
 
         /// <summary> User’s channel description </summary>
         [JsonPropertyName("description")]
-        public string Description { get; set; }
+        public string Description { get; internal set; }
 
         /// <summary> URL of the user’s profile image </summary>
         [JsonPropertyName("profile_image_url")]
-        public string ProfileImageUrl { get; set; }
+        public string ProfileImageUrl { get; internal set; }
 
         /// <summary> URL of the user’s offline image </summary>
         [JsonPropertyName("offline_image_url")]
-        public string OfflineImageUrl { get; set; }
+        public string OfflineImageUrl { get; internal set; }
 
         /// <summary> Total number of views of the user’s channel </summary>
         [JsonPropertyName("view_count")]
-        public int ViewCount { get; set; }
+        public int ViewCount { get; internal set; }
 
         /// <summary> User’s verified email address </summary>
         [JsonPropertyName("email")]
-        public string Email { get; set; }
+        public string Email { get; internal set; }
 
         /// <summary> Date when the user was created </summary>
         [JsonPropertyName("created_at")]
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; internal set; }
     }
 }

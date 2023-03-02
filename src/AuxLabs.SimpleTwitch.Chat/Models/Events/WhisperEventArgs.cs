@@ -5,10 +5,10 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class WhisperEventArgs
     {
-        public WhisperTags Tags { get; set; }
-        public string SenderName { get; set; }
-        public string ReceiverName { get; set; }
-        public string Message { get; set; }
+        public WhisperTags Tags { get; internal set; }
+        public string SenderName { get; internal set; }
+        public string ReceiverName { get; internal set; }
+        public string Message { get; internal set; }
 
         public WhisperEventArgs(IrcPrefix? prefix, IReadOnlyCollection<string> parameters)
         {

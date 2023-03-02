@@ -6,16 +6,16 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A caller-defined ID used to correlate this message with the same message in the response. </summary>
         [JsonPropertyName("msg_id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> The message to check. </summary>
         [JsonPropertyName("msg_text")]
-        public string Text { get; set; }
+        public string Text { get; internal set; }
 
-        /// <summary> indicates whether Twitch would approve the message or hold it for moderator review. </summary>
+        /// <summary> Indicates whether Twitch would approve the message or hold it for moderator review. </summary>
         [JsonPropertyName("is_permitted")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-        public bool? IsPermitted { get; set; }
+        public bool? IsPermitted { get; internal set; }
 
         public MockMessage() { }
         public MockMessage(string id, string text)

@@ -5,9 +5,9 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class ClearMessageEventArgs
     {
-        public ClearMessageTags Tags { get; set; }
-        public string ChannelName { get; set; }
-        public string Message { get; set; }
+        public ClearMessageTags Tags { get; internal set; }
+        public string ChannelName { get; internal set; }
+        public string Message { get; internal set; }
 
         public ClearMessageEventArgs(IReadOnlyCollection<string> parameters)
         {

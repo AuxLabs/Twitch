@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class BitsBadgeTierTags : UserNoticeTags
     {
         /// <summary> The tier of the Bits badge the user just earned. </summary>
-        public int BitsThreshold { get; set; }
+        public int BitsThreshold { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

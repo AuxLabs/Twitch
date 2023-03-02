@@ -6,18 +6,18 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A short description about the music that the playlist includes. </summary>
         [JsonPropertyName("description")]
-        public string Description { get; set; }
+        public string Description { get; internal set; }
 
         /// <summary> The playlist’s Amazon Standard Identification Number. </summary>
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> A URL to the playlist’s image art. </summary>
         [JsonPropertyName("image_url")]
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; internal set; }
 
         /// <summary> The playlist’s title. </summary>
         [JsonPropertyName("title")]
-        public string Title { get; set; }
+        public string Title { get; internal set; }
     }
 }

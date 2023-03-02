@@ -6,22 +6,22 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies the viewer. </summary>
         [JsonPropertyName("user_id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> The viewer’s login name. </summary>
         [JsonPropertyName("user_login")]
-        public string Name { get; set; }
+        public string Name { get; internal set; }
 
         /// <summary> The viewer’s display name. </summary>
         [JsonPropertyName("user_name")]
-        public string DisplayName { get; set; }
+        public string DisplayName { get; internal set; }
 
         /// <summary> The number of Channel Points the viewer spent. </summary>
         [JsonPropertyName("channel_points_used")]
-        public int ChannelPointsUsed { get; set; }
+        public int ChannelPointsUsed { get; internal set; }
 
         /// <summary> The number of Channel Points distributed to the viewer. </summary>
         [JsonPropertyName("channel_points_won")]
-        public int ChannelPointsWon { get; set; }
+        public int ChannelPointsWon { get; internal set; }
     }
 }

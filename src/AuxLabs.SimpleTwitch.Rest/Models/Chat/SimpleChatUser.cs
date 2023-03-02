@@ -7,6 +7,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The color of the user's name in chat. </summary>
         [JsonPropertyName("color")]
-        public Color Color { get; set; }
+        public Color Color { get; internal set; }
     }
 }

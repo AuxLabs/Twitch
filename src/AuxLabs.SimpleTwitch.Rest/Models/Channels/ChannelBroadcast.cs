@@ -7,14 +7,14 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> Determines whether the broadcaster is streaming live. </summary>
         [JsonPropertyName("is_live")]
-        public bool IsLive { get; set; }
+        public bool IsLive { get; internal set; }
 
         /// <summary> A URL to a thumbnail of the broadcaster’s profile image. </summary>
         [JsonPropertyName("thumbnail_url")]
-        public string ThumbnailUrl { get; set; }
+        public string ThumbnailUrl { get; internal set; }
 
         /// <summary> The UTC date and time of when the broadcaster started streaming. </summary>
         [JsonPropertyName("started_at")]
-        public DateTime StartedAt { get; set; }
+        public DateTime StartedAt { get; internal set; }
     }
 }

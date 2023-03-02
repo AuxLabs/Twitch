@@ -5,10 +5,10 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class UserNoticeTags : MessageTags
     {
         /// <summary> The type of notice. </summary>
-        public UserNoticeType NoticeType { get; set; }
+        public UserNoticeType NoticeType { get; internal set; }
 
         /// <summary> The message Twitch shows in the chat room for this notice. </summary>
-        public string SystemMessage { get; set; }
+        public string SystemMessage { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

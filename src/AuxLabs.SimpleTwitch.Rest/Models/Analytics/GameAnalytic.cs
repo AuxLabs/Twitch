@@ -7,6 +7,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies the game that the report was generated for. </summary>
         [JsonPropertyName("game_id")]
-        public string GameId { get; set; }
+        public string GameId { get; internal set; }
     }
 }

@@ -6,10 +6,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The x-coordinate where the extension is placed. </summary>
         [JsonPropertyName("x")]
-        public string X { get; set; }
+        public string X { get; internal set; }
 
         /// <summary> The y-coordinate where the extension is placed. </summary>
         [JsonPropertyName("y")]
-        public string Y { get; set; }
+        public string Y { get; internal set; }
     }
 }

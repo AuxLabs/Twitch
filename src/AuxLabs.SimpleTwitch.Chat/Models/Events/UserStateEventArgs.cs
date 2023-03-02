@@ -6,8 +6,8 @@ namespace AuxLabs.SimpleTwitch.Chat
 {
     public class UserStateEventArgs : IChatUser
     {
-        public UserStateTags Tags { get; set; }
-        public string ChannelName { get; set; }
+        public UserStateTags Tags { get; internal set; }
+        public string ChannelName { get; internal set; }
 
         public UserStateEventArgs(IReadOnlyCollection<string> parameters)
         {

@@ -6,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class SendMessageTags : BaseTags
     {
         /// <summary> The id of the message to reply to </summary>
-        public string ReplyMessageId { get; set; }
+        public string ReplyMessageId { get; internal set; }
 
         public SendMessageTags(string replyMessageId) 
             => ReplyMessageId = replyMessageId;

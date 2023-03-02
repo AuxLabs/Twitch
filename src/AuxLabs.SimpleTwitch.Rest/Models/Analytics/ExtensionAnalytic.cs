@@ -7,6 +7,6 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies the extension that the report was generated for. </summary>
         [JsonPropertyName("extension_id")]
-        public string ExtensionId { get; set; }
+        public string ExtensionId { get; internal set; }
     }
 }

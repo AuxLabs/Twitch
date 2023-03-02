@@ -6,10 +6,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that uniquely identifies the clip. </summary>
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> A URL that you can use to edit the clip’s title, identify the part of the clip to publish, and publish the clip. </summary>
         [JsonPropertyName("edit_url")]
-        public string EditUrl { get; set; }
+        public string EditUrl { get; internal set; }
     }
 }

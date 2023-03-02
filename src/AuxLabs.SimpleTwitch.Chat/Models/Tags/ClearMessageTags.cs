@@ -6,16 +6,16 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class ClearMessageTags : BaseTags
     {
         /// <summary> The date and time this event occurred. </summary>
-        public DateTime Timestamp { get; set; }
+        public DateTime Timestamp { get; internal set; }
 
         /// <summary> A UUID that identifies the message that was removed. </summary>
-        public string TargetMessageId { get; set; }
+        public string TargetMessageId { get; internal set; }
 
         /// <summary> The name of the user who sent the message. </summary>
-        public string UserName { get; set; }
+        public string UserName { get; internal set; }
 
         /// <summary> The ID of the channel (chat room) where the message was removed from. </summary>
-        public string ChannelId { get; set; }
+        public string ChannelId { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {

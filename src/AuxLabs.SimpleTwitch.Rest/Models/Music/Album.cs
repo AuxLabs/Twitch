@@ -6,14 +6,14 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The album’s Amazon Standard Identification Number. </summary>
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> A URL to the album’s cover art. </summary>
         [JsonPropertyName("image_url")]
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; internal set; }
 
         /// <summary> The album’s name. </summary>
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string Name { get; internal set; }
     }
 }

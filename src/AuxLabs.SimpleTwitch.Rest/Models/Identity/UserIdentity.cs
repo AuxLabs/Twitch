@@ -6,15 +6,15 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class UserIdentity : AppIdentity
     {
         [JsonPropertyName("login")]
-        public string UserName { get; set; }
+        public string UserName { get; internal set; }
 
         [JsonPropertyName("refresh_token")]
-        public string RefreshToken { get; set; }
+        public string RefreshToken { get; internal set; }
 
         [JsonPropertyName("scopes")]
-        public IReadOnlyCollection<string> Scopes { get; set; }
+        public IReadOnlyCollection<string> Scopes { get; internal set; }
 
         [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        public string UserId { get; internal set; }
     }
 }

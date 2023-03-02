@@ -6,18 +6,18 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies the extension. </summary>
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string Id { get; internal set; }
 
         /// <summary> The extension’s version. </summary>
         [JsonPropertyName("version")]
-        public string Version { get; set; }
+        public string Version { get; internal set; }
 
         /// <summary> The extension’s name. </summary>
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string Name { get; internal set; }
 
         /// <summary> Determines the extension’s activation state. </summary>
         [JsonPropertyName("active")]
-        public bool? IsActive { get; set; }
+        public bool? IsActive { get; internal set; }
     }
 }

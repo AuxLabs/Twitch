@@ -6,14 +6,14 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The URL used to download the report. </summary>
         [JsonPropertyName("URL")]
-        public string Url { get; set; }
+        public string Url { get; internal set; }
 
         /// <summary> The type of report. </summary>
         [JsonPropertyName("type")]
-        public AnalyticType Type { get; set; }
+        public AnalyticType Type { get; internal set; }
 
         /// <summary> The reporting window’s start and end dates. </summary>
         [JsonPropertyName("date_range")]
-        public DateRange DateRange { get; set; }
+        public DateRange DateRange { get; internal set; }
     }
 }

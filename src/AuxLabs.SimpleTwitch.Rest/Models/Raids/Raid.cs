@@ -7,10 +7,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The UTC date and time of when the raid was requested. </summary>
         [JsonPropertyName("created_at")]
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; internal set; }
 
         /// <summary> Indicates whether the channel being raided contains mature content. </summary>
         [JsonPropertyName("is_mature")]
-        public bool IsMature { get; set; }
+        public bool IsMature { get; internal set; }
     }
 }

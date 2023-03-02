@@ -7,10 +7,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> An ID that identifies this set of chat badges. </summary>
         [JsonPropertyName("set_id")]
-        public string SetId { get; set; }
+        public string SetId { get; internal set; }
 
         /// <summary> A collection of chat badges in this set. </summary>
         [JsonPropertyName("versions")]
-        public IReadOnlyCollection<BadgeVersion> Versions { get; set; }
+        public IReadOnlyCollection<BadgeVersion> Versions { get; internal set; }
     }
 }

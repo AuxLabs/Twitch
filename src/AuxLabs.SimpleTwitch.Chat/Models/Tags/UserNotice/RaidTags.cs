@@ -5,16 +5,16 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class RaidTags : UserNoticeTags
     {
         /// <summary> The display name of the broadcaster raiding this channel. </summary>
-        public string RaiderDisplayName { get; set; }
+        public string RaiderDisplayName { get; internal set; }
 
         /// <summary> The login name of the broadcaster raiding this channel. </summary>
-        public string RaiderLogin { get; set; }
+        public string RaiderLogin { get; internal set; }
 
         /// <summary> The profile image of the broadcaster raiding this channel. </summary>
-        public string ProfileImageUrl { get; set; }
+        public string ProfileImageUrl { get; internal set; }
 
         /// <summary> The number of viewers raiding this channel from the broadcaster’s channel. </summary>
-        public int RaiderViewerCount { get; set; }
+        public int RaiderViewerCount { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
