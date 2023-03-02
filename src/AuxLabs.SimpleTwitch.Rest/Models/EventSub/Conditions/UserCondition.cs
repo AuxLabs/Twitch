@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class UserCondition : IEventCondition
     {
         /// <summary> The user ID for the user you want notifications for. </summary>
-        [JsonPropertyName("user_id")]
+        [JsonInclude, JsonPropertyName("user_id")]
         public string UserId { get; internal set; }
 
         public UserCondition() { }

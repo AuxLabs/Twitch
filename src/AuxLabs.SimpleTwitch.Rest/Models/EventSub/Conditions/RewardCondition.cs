@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class RewardCondition : BroadcasterCondition
     {
         /// <summary> Optional. Specify a reward id to only receive notifications for a specific reward. </summary>
-        [JsonPropertyName("reward_id")]
+        [JsonInclude, JsonPropertyName("reward_id")]
         public string RewardId { get; internal set; }
 
         public RewardCondition() { }

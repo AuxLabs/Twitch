@@ -5,27 +5,27 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class TrackSource
     {
         /// <summary> The type of content that this source maps to. </summary>
-        [JsonPropertyName("content_type")]
+        [JsonInclude, JsonPropertyName("content_type")]
         public TrackSourceType Type { get; internal set; }
 
         /// <summary> The playlist’s or station’s Amazon Standard Identification Number. </summary>
-        [JsonPropertyName("id")]
+        [JsonInclude, JsonPropertyName("id")]
         public string Id { get; internal set; }
 
         /// <summary> A URL to the playlist’s or station’s image art. </summary>
-        [JsonPropertyName("image_url")]
+        [JsonInclude, JsonPropertyName("image_url")]
         public string ImageUrl { get; internal set; }
 
         /// <summary> A URL to the playlist on Soundtrack. </summary>
-        [JsonPropertyName("soundtrack_url")]
+        [JsonInclude, JsonPropertyName("soundtrack_url")]
         public string SoundtrackUrl { get; internal set; }
 
         /// <summary> A URL to the playlist on Spotify. </summary>
-        [JsonPropertyName("spotify_url")]
+        [JsonInclude, JsonPropertyName("spotify_url")]
         public string SpotifyUrl { get; internal set; }
 
         /// <summary> The playlist’s or station’s title. </summary>
-        [JsonPropertyName("title")]
+        [JsonInclude, JsonPropertyName("title")]
         public string Title { get; internal set; }
     }
 }

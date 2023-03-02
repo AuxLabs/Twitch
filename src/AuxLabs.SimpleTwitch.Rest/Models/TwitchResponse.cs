@@ -7,7 +7,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class TwitchResponse<T> where T : class
     {
         /// <summary> A collection of objects returned from a request </summary>
-        [JsonPropertyName("data")]
+        [JsonInclude, JsonPropertyName("data")]
         public IReadOnlyCollection<T> Data { get; internal set; }
     }
 
@@ -15,20 +15,20 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class TwitchMetaResponse<T> : TwitchResponse<T> where T : class
     {
         /// <summary> The total number of objects returned in <see cref="TwitchResponse.Data"/>. </summary>
-        [JsonPropertyName("total")]
+        [JsonInclude, JsonPropertyName("total")]
         public int? Total { get; internal set; }
 
         /// <summary> The current number of subscriber points earned by this broadcaster. </summary>
         /// <remarks> Only returned for <see cref="ITwitchApi.GetSubscriptionsAsync(GetSubscriptionsArgs)"/> </remarks>
-        [JsonPropertyName("points")]
+        [JsonInclude, JsonPropertyName("points")]
         public int? Points { get; internal set; }
 
         /// <summary> A range of dates relating to the objects returned in <see cref="TwitchResponse.Data"/>. </summary>
-        [JsonPropertyName("date_range")]
+        [JsonInclude, JsonPropertyName("date_range")]
         public DateRange? DateRange { get; internal set; }
 
         /// <summary> Contains information used to page through the list of results. </summary>
-        [JsonPropertyName("pagination")]
+        [JsonInclude, JsonPropertyName("pagination")]
         public Pagination? Pagination { get; internal set; }
     }
 
@@ -36,7 +36,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public struct Pagination
     {
         /// <summary> The cursor used to get the next page of results. </summary>
-        [JsonPropertyName("cursor")]
+        [JsonInclude, JsonPropertyName("cursor")]
         public string Cursor { get; internal set; }
     }
 }

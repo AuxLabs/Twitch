@@ -5,15 +5,15 @@ namespace AuxLabs.SimpleTwitch.Rest
     public struct TwitchImage
     {
         /// <summary> A URL to the small version (28px x 28px) of the image. </summary>
-        [JsonPropertyName("url_1x")]
+        [JsonInclude, JsonPropertyName("url_1x")]
         public string SmallImageUrl { get; internal set; }
 
         /// <summary> A URL to the medium version (56px x 56px) of the image. </summary>
-        [JsonPropertyName("url_2x")]
+        [JsonInclude, JsonPropertyName("url_2x")]
         public string MediumImageUrl { get; internal set; }
 
         /// <summary> A URL to the large version (112px x 112px) of the image. </summary>
-        [JsonPropertyName("url_4x")]
+        [JsonInclude, JsonPropertyName("url_4x")]
         public string LargeImageUrl { get; internal set; }
     }
 }

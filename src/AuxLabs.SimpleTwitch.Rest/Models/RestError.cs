@@ -4,13 +4,13 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class RestError
     {
-        [JsonPropertyName("error")]
+        [JsonInclude, JsonPropertyName("error")]
         public string Error { get; internal set; }
 
-        [JsonPropertyName("status")]
+        [JsonInclude, JsonPropertyName("status")]
         public int? Code { get; internal set; }
 
-        [JsonPropertyName("message")]
+        [JsonInclude, JsonPropertyName("message")]
         public string Message { get; internal set; }
     }
 }

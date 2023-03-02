@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class ExtensionTransactionCondition
     {
         /// <summary> The client ID of the extension. </summary>
-        [JsonPropertyName("extension_client_id")]
+        [JsonInclude, JsonPropertyName("extension_client_id")]
         public string ExtensionClientId { get; internal set; }
 
         public ExtensionTransactionCondition() { }

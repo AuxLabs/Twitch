@@ -5,19 +5,19 @@ namespace AuxLabs.SimpleTwitch.Rest
 {
     public class AccessTokenInfo
     {
-        [JsonPropertyName("client_id")]
+        [JsonInclude, JsonPropertyName("client_id")]
         public string ClientId { get; internal set; }
 
-        [JsonPropertyName("login")]
+        [JsonInclude, JsonPropertyName("login")]
         public string UserName { get; internal set; }
 
-        [JsonPropertyName("scopes")]
+        [JsonInclude, JsonPropertyName("scopes")]
         public IReadOnlyCollection<string> Scopes { get; internal set; }
 
-        [JsonPropertyName("user_id")]
+        [JsonInclude, JsonPropertyName("user_id")]
         public string UserId { get; internal set; }
 
-        [JsonPropertyName("expires_in")]
+        [JsonInclude, JsonPropertyName("expires_in")]
         public int? ExpiresInSeconds { get; internal set; }
     }
 }

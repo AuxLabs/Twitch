@@ -6,11 +6,11 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class Cost
     {
         /// <summary> The amount exchanged for the digital product. </summary>
-        [JsonPropertyName("amount")]
+        [JsonInclude, JsonPropertyName("amount")]
         public int Amount { get; internal set; }
 
         /// <summary> The type of currency exchanged. </summary>
-        [JsonPropertyName("type")]
+        [JsonInclude, JsonPropertyName("type")]
         public CostType Type { get; internal set; }
     }
 }

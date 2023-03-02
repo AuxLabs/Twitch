@@ -6,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class Team : SimpleTeam
     {
         /// <summary> The list of team members. </summary>
-        [JsonPropertyName("users")]
+        [JsonInclude, JsonPropertyName("users")]
         public IReadOnlyCollection<TeamUser> Users { get; internal set; }
     }
 }

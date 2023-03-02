@@ -5,15 +5,15 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class MockMessage
     {
         /// <summary> A caller-defined ID used to correlate this message with the same message in the response. </summary>
-        [JsonPropertyName("msg_id")]
+        [JsonInclude, JsonPropertyName("msg_id")]
         public string Id { get; internal set; }
 
         /// <summary> The message to check. </summary>
-        [JsonPropertyName("msg_text")]
+        [JsonInclude, JsonPropertyName("msg_text")]
         public string Text { get; internal set; }
 
         /// <summary> Indicates whether Twitch would approve the message or hold it for moderator review. </summary>
-        [JsonPropertyName("is_permitted")]
+        [JsonInclude, JsonPropertyName("is_permitted")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public bool? IsPermitted { get; internal set; }
 

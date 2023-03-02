@@ -6,11 +6,11 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class EntitlementDrop
     {
         /// <summary> The list of entitlements that the status applies to. </summary>
-        [JsonPropertyName("id")]
+        [JsonInclude, JsonPropertyName("id")]
         public IReadOnlyCollection<string> EntitlementIds { get; internal set; }
 
         /// <summary> Indicates the status of the specified entitlements. </summary>
-        [JsonPropertyName("status")]
+        [JsonInclude, JsonPropertyName("status")]
         public DropStatus Status { get; internal set; }
     }
 }

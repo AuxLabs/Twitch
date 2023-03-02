@@ -6,15 +6,15 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class ExtensionMap
     {
         /// <summary> A dictionary that contains the data for a panel extension. </summary>
-        [JsonPropertyName("panel")]
+        [JsonInclude, JsonPropertyName("panel")]
         public IReadOnlyDictionary<string, SimpleExtension> Panel { get; internal set; }
 
         /// <summary> A dictionary that contains the data for a video-overlay extension. </summary>
-        [JsonPropertyName("overlay")]
+        [JsonInclude, JsonPropertyName("overlay")]
         public IReadOnlyDictionary<string, SimpleExtension> Overlay { get; internal set; }
 
         /// <summary> A dictionary that contains the data for a video-component extension. </summary>
-        [JsonPropertyName("component")]
+        [JsonInclude, JsonPropertyName("component")]
         public IReadOnlyDictionary<string, ComponentExtension> Component { get; internal set; }
     }
 }

@@ -6,39 +6,39 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class BannedUser
     {
         /// <summary> The ID of the banned user. </summary>
-        [JsonPropertyName("user_id")]
+        [JsonInclude, JsonPropertyName("user_id")]
         public string UserId { get; internal set; }
 
         /// <summary> The banned user’s login name. </summary>
-        [JsonPropertyName("user_login")]
+        [JsonInclude, JsonPropertyName("user_login")]
         public string UserName { get; internal set; }
 
         /// <summary> The banned user’s display name. </summary>
-        [JsonPropertyName("user_name")]
+        [JsonInclude, JsonPropertyName("user_name")]
         public string UserDisplayName { get; internal set; }
 
         /// <summary> The UTC date and time of when the timeout expires </summary>
-        [JsonPropertyName("expires_at")]
+        [JsonInclude, JsonPropertyName("expires_at")]
         public DateTime? ExpiresAt { get; internal set; }
 
         /// <summary> The UTC date and time of when the user was banned. </summary>
-        [JsonPropertyName("created_at")]
+        [JsonInclude, JsonPropertyName("created_at")]
         public DateTime CreatedAt { get; internal set; }
 
         /// <summary> The reason the user was banned or put in a timeout if the moderator provided one. </summary>
-        [JsonPropertyName("reason")]
+        [JsonInclude, JsonPropertyName("reason")]
         public string Reason { get; internal set; }
 
         /// <summary> The ID of the moderator that banned the user or put them in a timeout. </summary>
-        [JsonPropertyName("moderator_id")]
+        [JsonInclude, JsonPropertyName("moderator_id")]
         public string ModeratorId { get; internal set; }
 
         /// <summary> The moderator’s login name. </summary>
-        [JsonPropertyName("moderator_login")]
+        [JsonInclude, JsonPropertyName("moderator_login")]
         public string ModeratorName { get; internal set; }
 
         /// <summary> The moderator’s display name. </summary>
-        [JsonPropertyName("moderator_name")]
+        [JsonInclude, JsonPropertyName("moderator_name")]
         public string ModeratorDisplayName { get; internal set; }
     }
 }

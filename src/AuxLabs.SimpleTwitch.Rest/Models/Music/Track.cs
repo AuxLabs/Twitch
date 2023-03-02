@@ -6,27 +6,27 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class Track
     {
         /// <summary> Describes the album that the track is found on. </summary>
-        [JsonPropertyName("album")]
+        [JsonInclude, JsonPropertyName("album")]
         public Album Album { get; internal set; }
 
         /// <summary> The artists included on the track. </summary>
-        [JsonPropertyName("artists")]
+        [JsonInclude, JsonPropertyName("artists")]
         public IReadOnlyCollection<Artist> Artists { get; internal set; }
 
         /// <summary> The duration of the track, in seconds. </summary>
-        [JsonPropertyName("duration")]
+        [JsonInclude, JsonPropertyName("duration")]
         public int DurationSeconds { get; internal set; }
 
         /// <summary> The track’s Amazon Standard Identification Number. </summary>
-        [JsonPropertyName("id")]
+        [JsonInclude, JsonPropertyName("id")]
         public string Id { get; internal set; }
 
         /// <summary> The track’s International Standard Recording Code. </summary>
-        [JsonPropertyName("isrc")]
+        [JsonInclude, JsonPropertyName("isrc")]
         public string Isrc { get; internal set; }
 
         /// <summary> The track’s title. </summary>
-        [JsonPropertyName("title")]
+        [JsonInclude, JsonPropertyName("title")]
         public string Title { get; internal set; }
     }
 }

@@ -6,11 +6,11 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class Vacation
     {
         /// <summary> The UTC date and time of when the broadcaster’s vacation starts. </summary>
-        [JsonPropertyName("start_time")]
+        [JsonInclude, JsonPropertyName("start_time")]
         public DateTime StartsAt { get; internal set; }
 
         /// <summary> The UTC date and time of when the broadcaster’s vacation ends. </summary>
-        [JsonPropertyName("end_time")]
+        [JsonInclude, JsonPropertyName("end_time")]
         public DateTime EndsAt { get; internal set; }
     }
 }
