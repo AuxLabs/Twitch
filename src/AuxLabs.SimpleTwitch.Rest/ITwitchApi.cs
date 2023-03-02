@@ -1,4 +1,5 @@
-﻿using RestEase;
+﻿using AuxLabs.SimpleTwitch.Rest.Requests.EventSub;
+using RestEase;
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -298,13 +299,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         #endregion
         #region Entitlements
 
-        /// <summary> Gets the status of one or more redemption codes for a Bits reward. </summary>
-        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
-        /// <returns> A collection of <see cref="EntitlementCode"/> objects. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
-        [Get("entitlements/codes")]
-        Task<TwitchResponse<EntitlementCode>> GetCodeStatusAsync([QueryMap] CodeStatusArgs args);
-
         /// <summary> Gets an organization’s list of entitlements that have been granted to a game, a user, or both. </summary>
         /// <returns> A collection of <see cref="Entitlement"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
@@ -316,13 +310,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("entitlements/drops")]
         Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync([Body] PatchDropsStatusArgs args);
-
-        /// <summary> Redeems one or more redemption codes. </summary>
-        /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
-        /// <returns> A collection of <see cref="EntitlementCode"/> objects. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
-        [Post("entitlements/codes")]
-        Task<TwitchResponse<EntitlementCode>> PostCodeStatusAsync([QueryMap] CodeStatusArgs args);
 
         #endregion
         //#region Extensions
@@ -370,7 +357,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("eventsub/subscriptions")]
-        Task DeleteEventSubscriptionAsync([Query("id")] string eventsubId);
+        Task DeleteEventSubscriptionAsync([QueryMap] DeleteEventSubscriptionArgs args);
 
         /// <summary> Gets a collection of EventSub subscriptions that the client in the access token created. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 

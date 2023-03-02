@@ -337,17 +337,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region Entitlements
 
         /// <inheritdoc/>
-        public Task<TwitchResponse<EntitlementCode>> GetCodeStatusAsync(CodeStatusArgs args)
-            => _api.GetCodeStatusAsync(args);
-        /// <inheritdoc/>
         public Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync(GetDropStatusArgs args)
             => _api.GetDropsStatusAsync(args);
         /// <inheritdoc/>
         public Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync(PatchDropsStatusArgs args)
             => _api.PatchDropsStatusAsync(args);
-        /// <inheritdoc/>
-        public Task<TwitchResponse<EntitlementCode>> PostCodeStatusAsync(CodeStatusArgs args)
-            => _api.PostCodeStatusAsync(args);
 
         #endregion
         #region EventSub
@@ -359,10 +353,10 @@ namespace AuxLabs.SimpleTwitch.Rest
             return _api.PostEventSubscriptionAsync(args);
         }
         /// <inheritdoc/>
-        public Task DeleteEventSubscriptionAsync(string eventsubId)
+        public Task DeleteEventSubscriptionAsync(DeleteEventSubscriptionArgs args)
         {
-            // Validate
-            return _api.DeleteEventSubscriptionAsync(eventsubId);
+            args.Validate();
+            return _api.DeleteEventSubscriptionAsync(args);
         }
         /// <inheritdoc/>
         public Task<EventSubResponse> GetEventSubscriptionsAsync(GetEventSubscriptionsArgs args)
