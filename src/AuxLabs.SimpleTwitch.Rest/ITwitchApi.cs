@@ -1,5 +1,4 @@
-﻿using AuxLabs.SimpleTwitch.Rest.Requests.EventSub;
-using RestEase;
+﻿using RestEase;
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
