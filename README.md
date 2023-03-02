@@ -1,6 +1,6 @@
 [![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png)](https://discord.gg/yd8x2wM) 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github)](https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml)
-[![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget)]()
+[![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/) [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/)
 
 # SimpleTwitch
 
