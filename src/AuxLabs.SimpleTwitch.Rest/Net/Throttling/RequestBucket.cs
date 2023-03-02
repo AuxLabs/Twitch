@@ -79,7 +79,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
                 if (resetsAt == null)
                 {
-                    WindowCount = 0; //No rate limit info, disable limits on this bucket (should only ever happen with a user token)
+                    WindowCount = 0; //No rate limit info, disable limits on this bucket
                     return;
                 }
 

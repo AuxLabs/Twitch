@@ -79,11 +79,9 @@ namespace AuxLabs.SimpleTwitch.Rest
             switch (bucketId)       // Some of these need unique buckets based on parameters
             {
                 case "POST chat/shoutouts":             // 1 per 2 minutes, broadcaster per 60 minutes
-                case "GET entitlements/codes":          // 1 per 1 second per 1 user
-                case "POST entitlements/codes":         // 1 per 1 second per 1 user
                 case "GET extensions/configurations":   // 20 per 1 minute
                 case "PUT extensions/configurations":   // 20 per 1 minute
-                case "POST extensions/pubsub":          // 100 per minute per client id and broadcaster
+                case "POST extensions/pubsub":          // 100 per minute per client id and broadcaster tuple
                 case "POST extensions/chat":            // 12 per minute per channel
                 case "POST moderation/enforcements/status": // Normal: 5 per minute, 50 per hour
                                                             // Affiliate: 10 per minute, 100 per hour
@@ -95,7 +93,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 case "POST raids":                      // 10 per 10 seconds
                 case "DELETE raids":                    // 10 per 10 seconds
                 case "POST whispers":                   // 40 users per 24 hours, 3 per second, 100 per minute
-                    return request.Path;
+                    return bucketId;
                 default:                                // Global by header values
                     return TwitchConstants.GlobalRatelimitBucket;
             }

@@ -20,7 +20,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         public async Task EnterLockAsync(string bucketId, CancellationToken cancelToken)
         {
             await EnterGlobalLockAsync(cancelToken).ConfigureAwait(false);
-            await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
+            if (bucketId != TwitchConstants.GlobalRatelimitBucket)
+                await EnterBucketLockAsync(bucketId, cancelToken).ConfigureAwait(false);
         }
 
         public virtual async Task EnterGlobalLockAsync(CancellationToken cancelToken)
