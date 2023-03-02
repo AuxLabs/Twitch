@@ -260,7 +260,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// with the <c>moderator:manage:shoutouts</c> scope. </remarks>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
-        [Get("chat/shoutouts")]
+        [Post("chat/shoutouts")]
         Task PostShoutoutAsync([QueryMap] PostShoutoutArgs args);
 
         /// <summary> Gets the color used for the user’s name in chat. </summary>
