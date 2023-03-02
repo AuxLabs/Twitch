@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of IDs to filter the redemptions by. </summary>
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
-        public List<string> RedemptionIds { get; set; }
+        public string[] RedemptionIds { get; set; }
 
         /// <summary> The order to sort redemptions by. </summary>
         /// <remarks> Default sort is OLDEST </remarks>
@@ -60,7 +60,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["reward_id"] = RewardId;
             if (Status != null)
                 map["status"] = Status.Value.GetStringValue();
-            if (RedemptionIds?.Count > 0)
+            if (RedemptionIds?.Length > 0)
             {
                 foreach (var item in RedemptionIds)
                     map["id"] = item;

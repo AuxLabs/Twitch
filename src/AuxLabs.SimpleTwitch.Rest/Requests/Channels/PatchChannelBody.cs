@@ -30,14 +30,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <remarks>  </remarks>
         [JsonPropertyName("tags")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public List<string> Tags { get; set; } = null;
+        public string[] Tags { get; set; } = null;
 
         public void Validate()
         { 
             Require.NotEmptyOrWhitespace(Title, nameof(Title));
             Require.AtMost(Delay, 900, nameof(Delay));
             Require.HasAtMost(Tags, 10, nameof(Tags));
-            if (Tags != null)
+            if (Tags?.Length > 0)
             {
                 foreach (var tag in Tags)
                     Require.LengthAtMost(tag, 25, nameof(Tags));

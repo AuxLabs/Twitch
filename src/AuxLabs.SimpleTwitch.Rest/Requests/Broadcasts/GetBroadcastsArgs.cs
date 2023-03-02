@@ -6,19 +6,19 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A user ID used to filter the list of streams. </summary>
         /// <remarks> You may specify a maximum of 100 IDs </remarks>
-        public List<string> UserIds { get; set; }
+        public string[] UserIds { get; set; }
 
         /// <summary> A user login name used to filter the list of streams. </summary>
         /// <remarks> You may specify a maximum of 100 names </remarks>
-        public List<string> UserNames { get; set; }
+        public string[] UserNames { get; set; }
 
         /// <summary> A game (category) ID used to filter the list of streams. </summary>
         /// <remarks> You may specify a maximum of 100 IDs </remarks>
-        public List<string> GameIds { get; set; }
+        public string[] GameIds { get; set; }
 
         /// <summary> A collection of ISO 639-1 two-letter language codes used to filter the list of streams. </summary>
         /// <remarks> You may specify a maximum of 100 language codes </remarks>
-        public List<string> Languages { get; set; }
+        public string[] Languages { get; set; }
 
         /// <summary> The type of stream to filter the list of streams by. </summary>
         public BroadcastType? Type { get; set; }
@@ -31,7 +31,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public void Validate()
         {
-            int? userTotal = UserIds?.Count + UserNames?.Count;
+            int? userTotal = UserIds?.Length + UserNames?.Length;
             Require.AtMost(userTotal, 100, nameof(userTotal), $"The combined item total of " +
                 $"[{nameof(UserIds)}, {nameof(UserNames)}] must be at most 100");
 
@@ -55,22 +55,22 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
-            if (UserIds?.Count > 0)
+            if (UserIds?.Length > 0)
             {
                 foreach (var item in UserIds)
                     map["user_id"] = item;
             }
-            if (UserNames?.Count > 0)
+            if (UserNames?.Length > 0)
             {
                 foreach (var item in UserNames)
                     map["user_login"] = item;
             }
-            if (GameIds?.Count > 0)
+            if (GameIds?.Length > 0)
             {
                 foreach (var item in GameIds)
                     map["game_id"] = item;
             }
-            if (Languages?.Count > 0)
+            if (Languages?.Length > 0)
             {
                 foreach (var item in Languages)
                     map["language"] = item;

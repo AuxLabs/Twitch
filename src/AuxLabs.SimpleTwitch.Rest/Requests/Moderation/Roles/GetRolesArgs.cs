@@ -8,7 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string BroadcasterId { get; set; }
 
         /// <summary> A list of user IDs used to filter the results. </summary>
-        public List<string> UserIds { get; set; }
+        public string[] UserIds { get; set; }
 
         public int? First { get; set; }
         public string After { get; set; }
@@ -30,7 +30,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ["broadcaster_id"] = BroadcasterId
             };
 
-            if (UserIds?.Count > 0)
+            if (UserIds?.Length > 0)
             {
                 foreach (var item in UserIds)
                     map["user_id"] = item;

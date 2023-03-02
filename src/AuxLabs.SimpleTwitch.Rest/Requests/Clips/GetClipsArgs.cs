@@ -14,7 +14,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> An ID that identifies the clip to get. </summary>
         /// <remarks> You may specify a maximum of 100 IDs. </remarks>
-        public List<string> ClipIds { get; set; }
+        public string[] ClipIds { get; set; }
 
         /// <summary> The start date used to filter clips. </summary>
         public DateTime? StartedAt { get; set; }
@@ -51,7 +51,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["broadcaster_id"] = BroadcasterId;
             if (GameId != null)
                 map["game_id"] = GameId;
-            if (ClipIds?.Count > 0)
+            if (ClipIds?.Length > 0)
             {
                 foreach (var item in ClipIds)
                     map["id"] = item;

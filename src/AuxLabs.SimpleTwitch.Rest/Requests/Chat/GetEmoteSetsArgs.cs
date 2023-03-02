@@ -7,14 +7,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A collection of IDs that identify the emote sets to get. </summary>
         /// <remarks> You may specify a maximum of 25 IDs. </remarks>
-        public List<string> EmoteSetIds { get; set; }
+        public string[] EmoteSetIds { get; set; }
 
         public GetEmoteSetsArgs() { }
         public GetEmoteSetsArgs(params string[] emoteSets)
-        {
-            EmoteSetIds = emoteSets.ToList();
-        }
-        public GetEmoteSetsArgs(List<string> emoteSets)
         {
             EmoteSetIds = emoteSets;
         }
@@ -38,7 +34,5 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public static implicit operator string[](GetEmoteSetsArgs value) => value.EmoteSetIds.ToArray();
         public static implicit operator GetEmoteSetsArgs(string[] v) => new GetEmoteSetsArgs(v);
-        public static implicit operator List<string>(GetEmoteSetsArgs value) => value.EmoteSetIds;
-        public static implicit operator GetEmoteSetsArgs(List<string> v) => new GetEmoteSetsArgs(v);
     }
 }

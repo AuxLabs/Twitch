@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string BroadcasterId { get; set; }
 
         /// <summary> A list of IDs that identify the polls to return. </summary>
-        public List<string> PollIds { get; set; }
+        public string[] PollIds { get; set; }
 
         public int? First { get; set; }
         public string After { get; set; }
@@ -37,7 +37,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             
             if (BroadcasterId != null)
                 map["broadcaster_id"] = BroadcasterId;
-            if (PollIds?.Count > 0)
+            if (PollIds?.Length > 0)
             {
                 foreach (var item in PollIds)
                     map["id"] = item;

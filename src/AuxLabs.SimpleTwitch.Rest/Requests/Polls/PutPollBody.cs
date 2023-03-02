@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of choices that viewers may choose from. </summary>
         [JsonPropertyName("choices")]
-        public List<Title> Choices { get; set; }
+        public Title[] Choices { get; set; }
 
         /// <summary> The length of time that the poll will run for. </summary>
         [JsonPropertyName("duration")]

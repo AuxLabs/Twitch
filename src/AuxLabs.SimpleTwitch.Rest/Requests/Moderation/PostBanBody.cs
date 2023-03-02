@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -7,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> Identifies the user and type of ban. </summary>
         [JsonPropertyName("data")]
-        public List<PostBanUser> Bans { get; set; }
+        public PostBanUser[] Bans { get; set; }
 
         public void Validate()
         {

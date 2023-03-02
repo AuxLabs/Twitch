@@ -17,7 +17,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The list of possible outcomes that the viewers may choose from. </summary>
         [JsonPropertyName("outcomes")]
-        public List<Title> Outcomes { get; set; }
+        public Title[] Outcomes { get; set; }
 
         /// <summary> The length of time (in seconds) that the prediction will run for. </summary>
         [JsonPropertyName("prediction_window")]

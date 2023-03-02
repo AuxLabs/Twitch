@@ -8,14 +8,10 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string[] Scopes { get; } = { "channel:manage:videos" };
 
         /// <summary> The collection of video ids to delete. </summary>
-        public List<string> VideoIds { get; set; }
+        public string[] VideoIds { get; set; }
 
         public DeleteVideosArgs() { }
         public DeleteVideosArgs(params string[] videoIds)
-        {
-            VideoIds = videoIds.ToList();
-        }
-        public DeleteVideosArgs(List<string> videoIds)
         {
             VideoIds = videoIds;
         }
@@ -40,7 +36,5 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public static implicit operator string[](DeleteVideosArgs value) => value.VideoIds.ToArray();
         public static implicit operator DeleteVideosArgs(string[] v) => new DeleteVideosArgs(v);
-        public static implicit operator List<string>(DeleteVideosArgs value) => value.VideoIds;
-        public static implicit operator DeleteVideosArgs(List<string> v) => new DeleteVideosArgs(v);
     }
 }

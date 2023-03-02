@@ -9,7 +9,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> Optional, a collection of transaction ids used to filter the list of transactions. </summary>
         /// <remarks> The minimum amount of items is 1 the maximum is 100. </remarks>
-        public List<string> TransactionIds { get; set; }
+        public string[] TransactionIds { get; set; }
 
         /// <inheritdoc/>
         /// <remarks> Optional, the minimum value is 1 the maximum is 100, defaults to 20. </remarks>

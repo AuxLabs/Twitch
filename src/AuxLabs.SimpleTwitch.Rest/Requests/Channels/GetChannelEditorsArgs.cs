@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,7 +7,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string[] Scopes { get; } = { "channel:read:editors" };
 
         /// <summary> The ID of the broadcaster that owns the channel. </summary>
-        [JsonPropertyName("broadcaster_id")]
         public string BroadcasterId { get; set; }
 
         public GetChannelEditorsArgs() { }

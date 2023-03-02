@@ -12,7 +12,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         public GetGoalsArgs() { }
         public GetGoalsArgs(string broadcasterId)
             => BroadcasterId = broadcasterId;
-
         public override string ToString()
             => BroadcasterId;
 

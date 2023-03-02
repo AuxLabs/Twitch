@@ -9,6 +9,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> The ID of the broadcaster that’s currently running a charity campaign. </summary>
         public string BroadcasterId { get; set; }
 
+        public GetCharityCampaignArgs() { }
+        public GetCharityCampaignArgs(string broadcasterId)
+        {
+            BroadcasterId = broadcasterId;
+        }
+
         public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
             Validate(scopes);
@@ -27,5 +33,8 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ["broadcaster_id"] = BroadcasterId
             };
         }
+
+        public static implicit operator string(GetCharityCampaignArgs value) => value.BroadcasterId;
+        public static implicit operator GetCharityCampaignArgs(string v) => new GetCharityCampaignArgs(v);
     }
 }

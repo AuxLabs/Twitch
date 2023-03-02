@@ -7,12 +7,12 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A collection of IDs of the broadcasters whose channel you want to get. </summary>
         /// <remarks> You may specify a maximum of 100 IDs. </remarks>
-        public List<string> ChannelIds { get; set; }
+        public string[] ChannelIds { get; set; }
 
         public GetChannelsArgs() { }
         public GetChannelsArgs(params string[] channelIds)
         {
-            ChannelIds = channelIds.ToList();
+            ChannelIds = channelIds;
         }
 
         public void Validate()

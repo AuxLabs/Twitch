@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,7 +7,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <summary> A list of IDs that identify the entitlements to update. </summary>
         /// <remarks> You may specify a maximum of 100 IDs. </remarks>
         [JsonPropertyName("status")]
-        public List<string> EntitlementIds { get; set; }
+        public string[] EntitlementIds { get; set; }
 
         /// <summary> The fulfillment status to set the entitlements to. </summary>
         [JsonPropertyName("status")]

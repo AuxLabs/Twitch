@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string BroadcasterId { get; set; }
 
         /// <summary> The IDs of the predictions to get. </summary>
-        public List<string> PredictionIds { get; set; }
+        public string[] PredictionIds { get; set; }
 
         public int? First { get; set; }
         public string After { get; set; }
@@ -37,7 +37,7 @@ namespace AuxLabs.SimpleTwitch.Rest
             
             if (BroadcasterId != null)
                 map["broadcaster_id"] = BroadcasterId;
-            if (PredictionIds?.Count > 0)
+            if (PredictionIds?.Length > 0)
             {
                 foreach (var item in PredictionIds)
                     map["id"] = item;

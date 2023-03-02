@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string BroadcasterId { get; set; }
 
         /// <summary> The IDs of the scheduled segments to return. </summary>
-        public List<string> SegmentIds { get; set; }
+        public string[] SegmentIds { get; set; }
 
         /// <summary> The UTC date and time that identifies when in the broadcaster’s schedule to start returning segments. </summary>
         public DateTime? StartAt { get; set; }
@@ -35,7 +35,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 ["broadcaster_id"] = BroadcasterId
             };
 
-            if (SegmentIds?.Count > 0)
+            if (SegmentIds?.Length > 0)
             {
                 foreach (var item in SegmentIds)
                     map["id"] = item;

@@ -10,7 +10,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string BroadcasterId { get; set; }
 
         /// <summary> Filters the list to include only the specified subscribers. </summary>
-        public List<string> UserIds { get; set; }
+        public string[] UserIds { get; set; }
 
         /// <inheritdoc/>
         /// <remarks> The minimum page size is 1 and the maximum is 100. Default is 20. </remarks>
@@ -44,7 +44,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
             if (BroadcasterId != null)
                 map["broadcaster_id"] = BroadcasterId;
-            if (UserIds?.Count > 0)
+            if (UserIds?.Length > 0)
             {
                 foreach (var item in UserIds)
                     map["game_id"] = item;

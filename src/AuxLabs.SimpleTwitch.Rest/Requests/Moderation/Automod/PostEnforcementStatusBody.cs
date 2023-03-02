@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -7,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The list of messages to check. </summary>
         [JsonPropertyName("data")]
-        public List<MockMessage> Messages { get; set; }
+        public MockMessage[] Messages { get; set; }
 
         public void Validate()
         {

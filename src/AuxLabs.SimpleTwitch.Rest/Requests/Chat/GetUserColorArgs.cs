@@ -7,14 +7,10 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> A collection of IDs of the users whose color you want to get. </summary>
         /// <remarks> You may specify a maximum of 100 IDs. </remarks>
-        public List<string> UserIds { get; set; } = new List<string>();
+        public string[] UserIds { get; set; }
 
         public GetUserColorArgs() { }
         public GetUserColorArgs(params string[] userIds)
-        {
-            UserIds = userIds.ToList();
-        }
-        public GetUserColorArgs(List<string> userIds)
         {
             UserIds = userIds;
         }
@@ -38,7 +34,5 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public static implicit operator string[](GetUserColorArgs value) => value.UserIds.ToArray();
         public static implicit operator GetUserColorArgs(string[] v) => new GetUserColorArgs(v);
-        public static implicit operator List<string>(GetUserColorArgs value) => value.UserIds;
-        public static implicit operator GetUserColorArgs(List<string> v) => new GetUserColorArgs(v);
     }
 }

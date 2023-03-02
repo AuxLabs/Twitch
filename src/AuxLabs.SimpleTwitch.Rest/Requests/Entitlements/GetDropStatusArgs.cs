@@ -6,7 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> IDs that identify the entitlements to get. </summary>
         /// <remarks> You may specify a maximum of 100 ids. </remarks>
-        public List<string> EntitlementIds { get; set; }
+        public string[] EntitlementIds { get; set; }
 
         /// <summary> The ID of the user that owns the redemption code. </summary>
         public string UserId { get; set; }
@@ -38,7 +38,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
 
-            if (EntitlementIds?.Count > 0)
+            if (EntitlementIds?.Length > 0)
             {
                 foreach (var item in EntitlementIds)
                     map["id"] = item;

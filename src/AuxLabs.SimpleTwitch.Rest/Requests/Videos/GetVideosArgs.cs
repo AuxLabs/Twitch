@@ -5,7 +5,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     public class GetVideosArgs : QueryMap, IPaginatedRequest
     {
         /// <summary> A collection of IDs that identify the videos you want to get. </summary>
-        public List<string> VideoIds { get; set; }
+        public string[] VideoIds { get; set; }
 
         /// <summary> The ID of the user whose list of videos you want to get. </summary>
         public string UserId { get; set; }
@@ -45,7 +45,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             var map = new Dictionary<string, string>(NoEqualityComparer.Instance);
             
-            if (VideoIds != null)
+            if (VideoIds?.Length > 0)
             {
                 foreach (var item in VideoIds)
                     map["id"] = item;

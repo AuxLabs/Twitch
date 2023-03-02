@@ -14,7 +14,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> A list of IDs to filter the redemptions by. </summary>
         /// <remarks> You may specify a maximum of 50 IDs. </remarks>
-        public List<string> Ids { get; set; }
+        public string[] Ids { get; set; }
 
         public void Validate(IEnumerable<string> scopes, string authedUserId)
         {
@@ -39,7 +39,7 @@ namespace AuxLabs.SimpleTwitch.Rest
                 map["broadcaster_id"] = BroadcasterId;
             if (RewardId != null)
                 map["reward_id"] = RewardId;
-            if (Ids?.Count > 0)
+            if (Ids?.Length > 0)
             {
                 foreach (var item in Ids)
                     map["id"] = item;
