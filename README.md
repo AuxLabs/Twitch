@@ -1,10 +1,10 @@
-[![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png)](https://discord.gg/yd8x2wM) 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github)](https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml)
-[![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/) [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/)
+[![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png "Discord Support Server")](https://discord.gg/yd8x2wM) 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github "CI Status")](https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml)
+[![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/ "Nuget Release Version") [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget "Nuget Prerelease Version")](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/)
 
 # SimpleTwitch
 
-SimpleTwitch is a bare minimum implmentation of the Twitch APIs. It's built in a way that should make it easy to extend and implement your own clients as needed, if needed. An example of such an implementation is [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), the main and intended version of the library for general usage.
+SimpleTwitch is a bare minimum implementation of the Twitch developer APIs. Data is presented as it is presented through these APIs, and as such, usage will likely be confusing. There is a wrapper library being built on top of this one at [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), which aims to restructure this data into a more understandable and user-friendly format.
 
 ![Alt](https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg "Repobeats analytics image")
 
