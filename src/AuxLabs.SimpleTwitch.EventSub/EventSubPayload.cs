@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 namespace AuxLabs.SimpleTwitch.EventSub
 {
     public class EventSubPayload : EventSubPayload<object> { }
-    public class EventSubPayload<T>
+    public class EventSubPayload<TEvent>
     {
         [JsonPropertyName("challenge")]
         public string Challenge { get; set; }
@@ -15,7 +15,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public EventSubscription Subscription { get; set; }
 
         [JsonPropertyName("event")]
-        public T Event { get; set; }
+        public TEvent Event { get; set; }
 
         [JsonIgnore]
         public static Dictionary<EventSubType, Type> EventTypeSelector => new Dictionary<EventSubType, Type>()
@@ -23,7 +23,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.ChannelUpdate] = typeof(ChannelUpdateEventArgs),
             [EventSubType.ChannelFollow] = typeof(ChannelFollowEventArgs),
             [EventSubType.ChannelSubscribe] = typeof(SubscriptionEventArgs),
-            [EventSubType.ChannelSubscriptionEnd] = typeof(SubscriptionEndedEventArgs),
+            [EventSubType.ChannelSubscriptionEnd] = typeof(SubscriptionEventArgs),
             [EventSubType.ChannelSubscriptionGift] = typeof(SubscriptionGiftedEventArgs),
             [EventSubType.ChannelSubscriptionMessage] = typeof(SubscriptionMessageEventArgs),
             [EventSubType.ChannelCheer] = typeof(CheerEventArgs),
@@ -31,14 +31,14 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
             [EventSubType.ChannelBan] = typeof(BanEventArgs),
             [EventSubType.ChannelUnban] = typeof(UnbanEventArgs),
-            [EventSubType.ChannelModeratorAdd] = typeof(ModeratorAddedEventArgs),
-            [EventSubType.ChannelModeratorRemove] = typeof(ModeratorRemovedEventArgs),
+            [EventSubType.ChannelModeratorAdd] = typeof(ModeratorEventArgs),
+            [EventSubType.ChannelModeratorRemove] = typeof(ModeratorEventArgs),
 
-            [EventSubType.ChannelPointsRewardAdd] = typeof(RewardAddedEventArgs),
-            [EventSubType.ChannelPointsRewardUpdate] = typeof(RewardUpdatedEvent),
-            [EventSubType.ChannelPointsRewardRemove] = typeof(RewardRemovedEventArgs),
-            [EventSubType.ChannelPointsRedemptionAdd] = typeof(RedemptionAddedEvent),
-            [EventSubType.ChannelPointsRedemptionUpdate] = typeof(RedemptionUpdatedEvent),
+            [EventSubType.ChannelPointsRewardAdd] = typeof(RewardEventArgs),
+            [EventSubType.ChannelPointsRewardUpdate] = typeof(RewardEventArgs),
+            [EventSubType.ChannelPointsRewardRemove] = typeof(RewardEventArgs),
+            [EventSubType.ChannelPointsRedemptionAdd] = typeof(RedemptionEventArgs),
+            [EventSubType.ChannelPointsRedemptionUpdate] = typeof(RedemptionEventArgs),
 
             [EventSubType.ChannelPollStart] = typeof(PollEventArgs),
             [EventSubType.ChannelPollProgress] = typeof(PollEventArgs),
@@ -71,8 +71,8 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.ShoutoutCreate] = typeof(ShoutoutCreatedEventArgs),
             [EventSubType.ShoutoutReceived] = typeof(ShoutoutReceivedEventArgs),
 
-            [EventSubType.StreamOnline] = typeof(StreamStartedEventArgs),
-            [EventSubType.StreamOffline] = typeof(StreamEndedEventArgs),
+            [EventSubType.StreamOnline] = typeof(BroadcastStartedEventArgs),
+            [EventSubType.StreamOffline] = typeof(BroadcastEndedEventArgs),
 
             [EventSubType.UserAuthorizationGrant] = typeof(AuthorizationGrantedEventArgs),
             [EventSubType.UserAuthorizationRevoke] = typeof(AuthorizationRevokedEventArgs),

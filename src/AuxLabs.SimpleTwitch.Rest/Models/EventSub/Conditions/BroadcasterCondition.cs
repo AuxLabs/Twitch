@@ -8,10 +8,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("broadcaster_user_id")]
         public string BroadcasterId { get; internal set; }
 
-        public BroadcasterCondition() { }
         public BroadcasterCondition(string broadcasterId)
         {
             BroadcasterId = broadcasterId;
         }
+
+        public static implicit operator string(BroadcasterCondition value) => value.BroadcasterId;
+        public static implicit operator BroadcasterCondition(string v) => new BroadcasterCondition(v);
     }
 }

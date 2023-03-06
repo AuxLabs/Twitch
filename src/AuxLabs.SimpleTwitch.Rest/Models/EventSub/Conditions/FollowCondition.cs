@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -8,11 +9,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("moderator_user_id")]
         public string ModeratorId { get; internal set; }
 
-        public FollowCondition() { }
         public FollowCondition(string broadcasterId, string moderatorId)
             : base(broadcasterId)
         {
             ModeratorId = moderatorId;
         }
+
+        public static implicit operator (string, string)(FollowCondition value) => (value.BroadcasterId, value.ModeratorId);
+        public static implicit operator FollowCondition(ValueTuple<string, string> value) => new FollowCondition(value.Item1, value.Item2);
     }
 }

@@ -2,10 +2,11 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class PostEventSubscriptionBody
+    public class PostEventSubscriptionBody<TCondition> where TCondition : IEventCondition
     {
         /// <summary> The type of subscription to create. </summary>
         [JsonPropertyName("type")]
+        [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public EventSubType Type { get; set; }
 
         /// <summary> The version number that identifies the definition of the subscription type that you want the response to use. </summary>
@@ -13,8 +14,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         public string Version { get; set; }
 
         /// <summary> Parameter values that are specific to the specified subscription type. </summary>
-        [JsonPropertyName("condition")]
-        public IEventCondition Condition { get; set; }
+        [JsonInclude, JsonPropertyName("condition")]
+        public TCondition Condition { get; set; }
 
         /// <summary> The transport details that you want Twitch to use when sending you notifications. </summary>
         [JsonPropertyName("transport")]

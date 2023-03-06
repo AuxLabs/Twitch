@@ -8,7 +8,6 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("reward_id")]
         public string RewardId { get; internal set; }
 
-        public RewardCondition() { }
         public RewardCondition(string broadcasterId, string rewardId)
             : base(broadcasterId)
         {

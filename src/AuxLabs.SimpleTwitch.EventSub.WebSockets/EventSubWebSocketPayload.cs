@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubWebSocketPayload<T> : EventSubPayload<T>
+    public class EventSubWebSocketPayload : EventSubPayload
     {
         [JsonPropertyName("session")]
         public Session Session { get; set; }

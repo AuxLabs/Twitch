@@ -348,7 +348,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Post("eventsub/subscriptions")]
-        Task<EventSubResponse> PostEventSubscriptionAsync([Body] PostEventSubscriptionBody args);
+        Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>([Body] PostEventSubscriptionBody<TCondition> args) where TCondition : IEventCondition;
 
         /// <summary> Deletes an EventSub subscription. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 

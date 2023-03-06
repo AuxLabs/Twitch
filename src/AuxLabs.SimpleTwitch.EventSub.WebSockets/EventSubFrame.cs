@@ -3,8 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class EventSubFrame : EventSubFrame<object> { }
-    public class EventSubFrame<T> : IPayload
+    public class EventSubFrame : IPayload
     {
         [JsonIgnore]
         public bool IsHelloEvent => Metadata.Type == MessageType.Welcome;
@@ -15,6 +14,6 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
         /// <summary> An object that contains the message. </summary>
         [JsonPropertyName("payload")]
-        public EventSubWebSocketPayload<T> Payload { get; set; }
+        public EventSubWebSocketPayload Payload { get; set; }
     }
 }

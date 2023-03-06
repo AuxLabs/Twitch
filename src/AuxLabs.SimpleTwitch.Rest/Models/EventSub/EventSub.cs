@@ -3,7 +3,8 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EventSub
+    public class EventSub : EventSub<IEventCondition> { }
+    public class EventSub<TCondition> where TCondition : IEventCondition
     {
         /// <summary> An ID that identifies the subscription. </summary>
         [JsonInclude, JsonPropertyName("id")]
@@ -23,7 +24,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The subscription’s parameter values. </summary>
         [JsonInclude, JsonPropertyName("condition")]
-        public IEventCondition Condition { get; internal set; }
+        public TCondition Condition { get; internal set; }
 
         /// <summary> The date and time of when the subscription was created. </summary>
         [JsonInclude, JsonPropertyName("created_at")]

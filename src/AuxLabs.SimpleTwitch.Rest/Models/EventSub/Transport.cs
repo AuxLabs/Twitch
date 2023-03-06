@@ -6,6 +6,7 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         /// <summary> The transport method. </summary>
         [JsonInclude, JsonPropertyName("method")]
+        [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public TransportMethod Method { get; internal set; }
 
         /// <summary> The callback URL where the notifications are sent. Only required for webhooks. </summary>
