@@ -37,19 +37,21 @@ namespace AuxLabs.SimpleTwitch.WebSockets
         private readonly MemoryStream _stream;
         private readonly int _heartbeatRate;
         private readonly bool _waitForHello = false;
+        private readonly bool _isRecursive = false;
 
         private Task _connectionTask;
         private CancellationTokenSource _runCts;
 
-        private string _url;
+        protected string _url;
         private BlockingCollection<TPayload> _sendQueue;
         protected bool ReceivedData;
 
-        public BaseSocketClient(int heartbeatRate, bool waitForHello = false)
+        public BaseSocketClient(int heartbeatRate, bool waitForHello = false, bool isRecursive = false)
         {
             _stream = new MemoryStream();
             _heartbeatRate = heartbeatRate;
             _waitForHello = waitForHello;
+            _isRecursive = isRecursive;
             _stateLock = new SemaphoreSlim(1, 1);
             _connectionTask = Task.CompletedTask;
             _runCts = new CancellationTokenSource();
@@ -370,6 +372,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
 
             HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
             PayloadReceived?.Invoke(payload, _stream.Length);
+            if (!_isRecursive) return payload;
             if (data.Length != 0)
                 return RecursiveRead(data, readySignal);
             return default;
