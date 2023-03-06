@@ -97,7 +97,7 @@ For examples and sample projects look at [the examples repository](https://githu
 - [ ] Ratelimits and Subscription Costs
 - [x] WebSocket client
 - [ ] WebHook client
-- [ ] Automatic heartbeat
+- [x] Automatic heartbeat
 - [x] Automatic reconnection
 - [ ] Handle all available events
   - [ ] Followers
@@ -130,8 +130,8 @@ For examples and sample projects look at [the examples repository](https://githu
   <summary>PubSub</summary>
 
 - [ ] Ratelimits
-- [ ] Automatic heartbeat
-- [ ] Automatic reconnection
+- [x] Automatic heartbeat
+- [x] Automatic reconnection
 - [ ] Handle all available events
   - [ ] Bits
   - [ ] Bist Badge Unlocks
