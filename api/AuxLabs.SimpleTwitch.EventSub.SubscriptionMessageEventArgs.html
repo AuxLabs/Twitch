@@ -88,38 +88,82 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">SubscriptionMessageEventArgs</span></div>
+    <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html">SubscriptionEventArgs</a></div>
+    <div class="level2"><span class="xref">SubscriptionMessageEventArgs</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_UserId">SubscriptionEventArgs.UserId</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_UserName">SubscriptionEventArgs.UserName</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_UserDisplayName">SubscriptionEventArgs.UserDisplayName</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_BroadcasterId">SubscriptionEventArgs.BroadcasterId</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_BroadcasterName">SubscriptionEventArgs.BroadcasterName</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_BroadcasterDisplayName">SubscriptionEventArgs.BroadcasterDisplayName</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_Tier">SubscriptionEventArgs.Tier</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionEventArgs_IsGift">SubscriptionEventArgs.IsGift</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.EventSub.html">EventSub</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.EventSub.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SubscriptionMessageEventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class SubscriptionMessageEventArgs : SubscriptionEventArgs</code></pre>
   </div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_CumulativeMonths" data-uid="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.CumulativeMonths">
+          <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_CumulativeMonths">CumulativeMonths</a>
+        </td>
+        <td class="markdown level1 summary"><p>The total number of months the user has been subscribed to the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_DurationMonths" data-uid="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.DurationMonths">
+          <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_DurationMonths">DurationMonths</a>
+        </td>
+        <td class="markdown level1 summary"><p>The month duration of the subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_Message" data-uid="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.Message">
+          <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_Message">Message</a>
+        </td>
+        <td class="markdown level1 summary"><p>An object that contains the resubscription message and emote information needed to recreate the message.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_StreakMonths" data-uid="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.StreakMonths">
+          <a class="xref" href="AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs.html#AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs_StreakMonths">StreakMonths</a>
+        </td>
+        <td class="markdown level1 summary"><p>The number of consecutive months the user’s current subscription has been active.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
 
@@ -131,7 +175,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_EventSub_SubscriptionMessageEventArgs.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.EventSub.SubscriptionMessageEventArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Events/Subscriptions/SubscriptionMessageEventArgs.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.EventSub/Models/Events/Subscriptions/SubscriptionMessageEventArgs.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
