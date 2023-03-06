@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.SimpleTwitch.Rest
+namespace AuxLabs.SimpleTwitch
 {
     public class SimpleReward
     {

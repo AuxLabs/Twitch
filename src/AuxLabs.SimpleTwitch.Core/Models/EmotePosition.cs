@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
-namespace AuxLabs.SimpleTwitch.Chat
+namespace AuxLabs.SimpleTwitch
 {
     public readonly struct EmotePosition
     {
