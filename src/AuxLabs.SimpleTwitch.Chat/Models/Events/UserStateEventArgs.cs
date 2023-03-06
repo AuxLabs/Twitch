@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class UserStateEventArgs : IChatUser
+    public class UserStateEventArgs
     {
         public UserStateTags Tags { get; internal set; }
         public string ChannelName { get; internal set; }
@@ -21,10 +20,5 @@ namespace AuxLabs.SimpleTwitch.Chat
                 args.Tags = (UserStateTags)payload.Tags;
             return args;
         }
-
-        Color? IChatUser.Color { get => Tags.Color; }
-        string IUser.Name { get => null; }
-        string IUser.DisplayName { get => Tags.DisplayName; }
-        string IEntity<string>.Id { get => Tags.UserId; }
     }
 }
