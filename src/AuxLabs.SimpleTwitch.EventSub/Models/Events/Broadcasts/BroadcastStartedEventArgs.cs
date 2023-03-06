@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.EventSub
 {
-    public class StreamEndedEventArgs
+    public class BroadcastStartedEventArgs
     {
     }
 }
