@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Text.Json;
 
-namespace AuxLabs.SimpleTwitch.Rest
+namespace AuxLabs.SimpleTwitch
 {
     internal class SnakeCaseNamingPolicy : JsonNamingPolicy
     {

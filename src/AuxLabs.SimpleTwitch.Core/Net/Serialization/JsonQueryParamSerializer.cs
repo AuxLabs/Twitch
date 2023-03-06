@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json;
 
-namespace AuxLabs.SimpleTwitch.Rest
+namespace AuxLabs.SimpleTwitch
 {
     internal class JsonQueryParamSerializer : RequestQueryParamSerializer
     {

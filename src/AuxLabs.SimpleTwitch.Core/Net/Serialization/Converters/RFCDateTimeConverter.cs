@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml;
 
-namespace AuxLabs.SimpleTwitch.Rest
+namespace AuxLabs.SimpleTwitch
 {
     public class RFCDateTimeConverter : JsonConverter<DateTime>
     {

@@ -1,6 +1,8 @@
 ﻿using RestEase;
 using System;
 using System.Net.Http;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -30,7 +32,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         public TwitchIdentityApiClient(string url)
         {
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchIdentityApi>(new TwitchRequester(httpClient, null));
+
+            _api = RestClient.For<ITwitchIdentityApi>(new TwitchRequester(httpClient, null, TwitchJsonSerializerOptions.Default));
         }
         public TwitchIdentityApiClient(string clientId, string clientSecret, string url)
             : this(url)

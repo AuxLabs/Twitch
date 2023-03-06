@@ -7,8 +7,5 @@
 
         /// <summary>  </summary>
         public string ClientSecret { get; set; }
-
-        /// <summary> Should the client attempt to auto refresh tokens. </summary>
-        public bool ShouldAutoRefresh { get; set; } = true;
     }
 }

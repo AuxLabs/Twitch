@@ -15,13 +15,13 @@ namespace AuxLabs.SimpleTwitch.Rest
     {
         private readonly IRateLimiter _rateLimiter;
 
-        public TwitchRequester(HttpClient httpClient, IRateLimiter rateLimiter)
+        public TwitchRequester(HttpClient httpClient, IRateLimiter rateLimiter, JsonSerializerOptions jsonSerializerOptions)
             : base(httpClient)
         {
             _rateLimiter = rateLimiter ?? new DefaultRateLimiter();
 
-            ResponseDeserializer = new JsonResponseDeserializer();
-            RequestBodySerializer = new JsonBodySerializer();
+            ResponseDeserializer = new JsonResponseDeserializer(jsonSerializerOptions);
+            RequestBodySerializer = new JsonBodySerializer(jsonSerializerOptions);
             RequestQueryParamSerializer = new JsonQueryParamSerializer();
         }
 

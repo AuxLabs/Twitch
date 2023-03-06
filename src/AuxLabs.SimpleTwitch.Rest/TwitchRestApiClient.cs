@@ -22,7 +22,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         {
             config ??= new TwitchRestApiConfig();
             var httpClient = new HttpClient { BaseAddress = new Uri(url) };
-            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, new DefaultRateLimiter()));
+
+            _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, new DefaultRateLimiter(), TwitchJsonSerializerOptions.Default));
             _identity = new TwitchIdentityApiClient(config.ClientId, config.ClientSecret);
 
             _api.ClientId = config.ClientId;
@@ -347,7 +348,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region EventSub
 
         /// <inheritdoc/>
-        public Task<EventSubResponse> PostEventSubscriptionAsync(PostEventSubscriptionBody args)
+        public Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition> args) where TCondition : IEventCondition
         {
             args.Validate();
             return _api.PostEventSubscriptionAsync(args);
