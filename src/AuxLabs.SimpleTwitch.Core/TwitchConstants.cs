@@ -12,7 +12,7 @@
         public const string ChatSecureWebSocketUrl = "wss://irc-ws.chat.twitch.tv:443";
         public const string ChatSecureIrcUrl = "irc://irc.chat.twitch.tv:6697";
 
-        public const string EventSubUrl = "wss://eventsub-beta.wss.twitch.tv/ws:443";
+        public const string EventSubUrl = "wss://eventsub-beta.wss.twitch.tv/ws";
 
         public const string PubSubUrl = "wss://pubsub-edge.twitch.tv";
 
