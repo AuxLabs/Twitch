@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class MessageTags : BaseTags, IUserRelation
+    public class MessageTags : BaseTags
     {
         /// <summary> An ID that uniquely identifies the message. </summary>
         public string Id { get; internal set; }
@@ -28,10 +28,10 @@ namespace AuxLabs.SimpleTwitch.Chat
         public UserType UserType { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string DisplayName { get; internal set; }
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The user’s login name. </summary>
-        public string Name { get; internal set; }
+        public string UserName { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; internal set; }
@@ -104,8 +104,8 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["tmi-sent-ts"] = Timestamp.ToUnixTimeMilliseconds().ToString(),
                 ["user-id"] = UserId,
                 ["user-type"] = EnumHelper.GetStringValue(UserType),
-                ["display-name"] = DisplayName,
-                ["login"] = Name,
+                ["display-name"] = UserDisplayName,
+                ["login"] = UserName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = Badges == null ? null : string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
@@ -144,9 +144,9 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("user-type", out str))
                 UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
-                DisplayName = str;
+                UserDisplayName = str;
             if (map.TryGetValue("login", out str))
-                Name = str;
+                UserName = str;
             if (map.TryGetValue("color", out str))
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
@@ -199,9 +199,5 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("flags", out str))
                 Flags = str;
         }
-
-        string IUserRelation.RelatedId { get => ReplyParentUserId; }
-        string IUserRelation.RelatedName { get => ReplyParentUserName; }
-        string IUserRelation.RelatedDisplayName { get => ReplyParentDisplayName; }
     }
 }

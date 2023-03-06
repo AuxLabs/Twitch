@@ -59,7 +59,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         public TwitchChatApiClient(TwitchChatApiConfig config = null)
             : this(TwitchConstants.ChatSecureWebSocketUrl, config) { }
-        public TwitchChatApiClient(string url, TwitchChatApiConfig config = null) : base(-1)
+        public TwitchChatApiClient(string url, TwitchChatApiConfig config = null) : base(-1, false, true)
         {
             config ??= new TwitchChatApiConfig();
             _url = url;

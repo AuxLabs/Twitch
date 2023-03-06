@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class GlobalUserStateTags : BaseTags, IChatUser
+    public class GlobalUserStateTags : BaseTags
     {
         /// <summary> The user’s ID. </summary>
         public string UserId { get; internal set; }
@@ -12,7 +12,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public UserType UserType { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string DisplayName { get; internal set; }
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; internal set; }
@@ -36,7 +36,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             {
                 ["user-id"] = UserId,
                 ["user-type"] = UserType.GetStringValue(),
-                ["display-name"] = DisplayName,
+                ["display-name"] = UserDisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = Badges == null ? null : string.Join(',', Badges),
                 ["badge-info"] = BadgeInfo,
@@ -52,7 +52,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("user-type", out str))
                 UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
-                DisplayName = str;
+                UserDisplayName = str;
             if (map.TryGetValue("color", out str))
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
@@ -67,9 +67,5 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("turbo", out str))
                 IsTurbo = str == "1";
         }
-
-        string IEntity<string>.Id { get => UserId; }
-        string IUser.Name { get => null; }
-        Color? IChatUser.Color { get => Color; }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System;
 using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
@@ -19,7 +18,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         public UserType UserType { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string DisplayName { get; internal set; }
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
         public Color Color { get; internal set; }
@@ -44,7 +43,7 @@ namespace AuxLabs.SimpleTwitch.Chat
                 ["thread-id"] = ThreadId,
                 ["user-id"] = UserId,
                 ["user-type"] = EnumHelper.GetStringValue(UserType),
-                ["display-name"] = DisplayName,
+                ["display-name"] = UserDisplayName,
                 ["color"] = ColorTranslator.ToHtml(Color),
                 ["badges"] = string.Join(',', Badges),
                 ["emotes"] = Emotes != null ? string.Join(',', Emotes) : Action,
@@ -63,7 +62,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             if (map.TryGetValue("user-type", out str))
                 UserType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
-                DisplayName = str;
+                UserDisplayName = str;
             if (map.TryGetValue("color", out str))
                 Color = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
