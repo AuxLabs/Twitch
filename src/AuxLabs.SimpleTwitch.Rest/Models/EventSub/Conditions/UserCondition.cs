@@ -8,6 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("user_id")]
         public string UserId { get; internal set; }
 
+        public UserCondition() { }
         public UserCondition(string userId)
         {
             Require.NotNullOrWhitespace(userId, nameof(userId));

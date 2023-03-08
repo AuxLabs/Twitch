@@ -15,6 +15,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string ToBroadcasterId { get; internal set; }
 
+        public RaidCondition() { }
         public RaidCondition(RaidConditionType type, string broadcasterId)
         {
             Require.NotNullOrWhitespace(broadcasterId, nameof(broadcasterId));

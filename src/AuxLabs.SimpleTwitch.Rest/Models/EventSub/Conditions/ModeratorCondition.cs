@@ -9,6 +9,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("moderator_user_id")]
         public string ModeratorId { get; internal set; }
 
+        public ModeratorCondition() { }
         public ModeratorCondition(string broadcasterId, string moderatorId)
             : base(broadcasterId)
         {

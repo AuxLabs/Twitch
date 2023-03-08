@@ -8,6 +8,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("client_id")]
         public string ClientId { get; internal set; }
 
+        public AuthorizationCondition() { }
         public AuthorizationCondition(string clientId)
         {
             Require.NotNullOrWhitespace(clientId, nameof(clientId));

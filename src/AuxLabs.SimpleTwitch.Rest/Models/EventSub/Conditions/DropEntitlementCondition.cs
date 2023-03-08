@@ -19,6 +19,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string CampaignId { get; internal set; }
 
+        public DropEntitlementCondition() { }
         public DropEntitlementCondition(string organizationId, string categoryId = null, string campaignId = null)
         {
             Require.NotNullOrWhitespace(organizationId, nameof(organizationId));
