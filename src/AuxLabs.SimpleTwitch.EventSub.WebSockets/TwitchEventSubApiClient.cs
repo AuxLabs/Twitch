@@ -172,7 +172,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
                     var eventType = EventSubPayload.EventTypeSelector.SingleOrDefault(x => x.Key == frame.Payload.Subscription.Type).Value;
                     frame.Payload.Event = JsonSerializer.Deserialize((JsonElement)frame.Payload.Event, eventType);
 
-                    switch (frame.Payload.Event)        // Start building objects again at Prediction Begin Event
+                    switch (frame.Payload.Event)
                     {
                         case ChannelUpdateEventArgs args:
                             ChannelUpdated?.Invoke(args, frame.Payload.Subscription);
