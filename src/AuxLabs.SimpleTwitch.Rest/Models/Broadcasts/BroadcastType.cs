@@ -9,6 +9,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         [EnumMember(Value = "all")]
         All,
         [EnumMember(Value = "live")]
-        Live
+        Live,
+        [EnumMember(Value = "playlist")]
+        Playlist,
+        [EnumMember(Value = "watch_party")]
+        WatchParty,
+        [EnumMember(Value = "premiere")]
+        Premiere,
+        [EnumMember(Value = "rerun")]
+        Rerun,
     }
 }

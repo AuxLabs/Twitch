@@ -6,31 +6,31 @@ namespace AuxLabs.SimpleTwitch.EventSub
     public class ChannelFollowEventArgs
     {
         /// <summary> The user ID for the user now following the specified channel. </summary>
-        [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        [JsonInclude, JsonPropertyName("user_id")]
+        public string UserId { get; internal set; }
 
         /// <summary> The user login for the user now following the specified channel. </summary>
-        [JsonPropertyName("user_login")]
-        public string UserName { get; set; }
+        [JsonInclude, JsonPropertyName("user_login")]
+        public string UserName { get; internal set; }
 
         /// <summary> The user display name for the user now following the specified channel. </summary>
-        [JsonPropertyName("user_name")]
-        public string UserDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("user_name")]
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The requested broadcaster ID. </summary>
-        [JsonPropertyName("broadcaster_user_id")]
-        public string BroadcasterId { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_id")]
+        public string BroadcasterId { get; internal set; }
 
         /// <summary> The requested broadcaster login. </summary>
-        [JsonPropertyName("broadcaster_user_login")]
-        public string BroadcasterName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_login")]
+        public string BroadcasterName { get; internal set; }
 
         /// <summary> The requested broadcaster display name. </summary>
-        [JsonPropertyName("broadcaster_user_name")]
-        public string BroadcasterDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_name")]
+        public string BroadcasterDisplayName { get; internal set; }
 
         /// <summary> Timestamp of when the follow occurred. </summary>
-        [JsonPropertyName("followed_at")]
-        public DateTime FollowedAt { get; set; }
+        [JsonInclude, JsonPropertyName("followed_at")]
+        public DateTime FollowedAt { get; internal set; }
     }
 }

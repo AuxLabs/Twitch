@@ -6,55 +6,55 @@ namespace AuxLabs.SimpleTwitch.EventSub
     public class BanEventArgs
     {
         /// <summary> The user ID for the user who was banned on the specified channel. </summary>
-        [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        [JsonInclude, JsonPropertyName("user_id")]
+        public string UserId { get; internal set; }
 
         /// <summary> The user login for the user who was banned on the specified channel. </summary>
-        [JsonPropertyName("user_login")]
-        public string UserName { get; set; }
+        [JsonInclude, JsonPropertyName("user_login")]
+        public string UserName { get; internal set; }
 
         /// <summary> The user display name for the user who was banned on the specified channel. </summary>
-        [JsonPropertyName("user_name")]
-        public string UserDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("user_name")]
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The requested broadcaster ID. </summary>
-        [JsonPropertyName("broadcaster_user_id")]
-        public string BroadcasterId { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_id")]
+        public string BroadcasterId { get; internal set; }
 
         /// <summary> The requested broadcaster login. </summary>
-        [JsonPropertyName("broadcaster_user_login")]
-        public string BroadcasterName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_login")]
+        public string BroadcasterName { get; internal set; }
 
         /// <summary> The requested broadcaster display name. </summary>
-        [JsonPropertyName("broadcaster_user_name")]
-        public string BroadcasterDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_name")]
+        public string BroadcasterDisplayName { get; internal set; }
 
         /// <summary> The user ID of the issuer of the ban. </summary>
-        [JsonPropertyName("moderator_user_id")]
-        public string ModeratorId { get; set; }
+        [JsonInclude, JsonPropertyName("moderator_user_id")]
+        public string ModeratorId { get; internal set; }
 
         /// <summary> The user login of the issuer of the ban. </summary>
-        [JsonPropertyName("moderator_user_login")]
-        public string ModeratorName { get; set; }
+        [JsonInclude, JsonPropertyName("moderator_user_login")]
+        public string ModeratorName { get; internal set; }
 
         /// <summary> The user name of the issuer of the ban. </summary>
-        [JsonPropertyName("moderator_user_name")]
-        public string ModeratorDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("moderator_user_name")]
+        public string ModeratorDisplayName { get; internal set; }
 
         /// <summary> The reason behind the ban. </summary>
-        [JsonPropertyName("reason")]
-        public string Reason { get; set; }
+        [JsonInclude, JsonPropertyName("reason")]
+        public string Reason { get; internal set; }
 
         /// <summary> The UTC date and time of when the user was banned or put in a timeout. </summary>
-        [JsonPropertyName("banned_at")]
-        public DateTime BannedAt { get; set; }
+        [JsonInclude, JsonPropertyName("banned_at")]
+        public DateTime BannedAt { get; internal set; }
 
         /// <summary> The UTC date and time of when the timeout ends. </summary>
-        [JsonPropertyName("ends_at")]
-        public DateTime? EndsAt { get; set; }
+        [JsonInclude, JsonPropertyName("ends_at")]
+        public DateTime? EndsAt { get; internal set; }
 
         /// <summary> Indicates whether the ban is permanent. </summary>
-        [JsonPropertyName("is_permanent")]
-        public bool IsPermanent { get; set; }
+        [JsonInclude, JsonPropertyName("is_permanent")]
+        public bool IsPermanent { get; internal set; }
     }
 }

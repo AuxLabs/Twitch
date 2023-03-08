@@ -8,14 +8,14 @@ namespace AuxLabs.SimpleTwitch.EventSub
     public class EventSubPayload : EventSubPayload<object> { }
     public class EventSubPayload<TEvent>
     {
-        [JsonPropertyName("challenge")]
-        public string Challenge { get; set; }
+        [JsonInclude, JsonPropertyName("challenge")]
+        public string Challenge { get; internal set; }
 
-        [JsonPropertyName("subscription")]
-        public EventSubscription Subscription { get; set; }
+        [JsonInclude, JsonPropertyName("subscription")]
+        public EventSubscription Subscription { get; internal set; }
 
-        [JsonPropertyName("event")]
-        public TEvent Event { get; set; }
+        [JsonInclude, JsonPropertyName("event")]
+        public TEvent Event { get; internal set; }
 
         [JsonIgnore]
         public static Dictionary<EventSubType, Type> EventTypeSelector => new Dictionary<EventSubType, Type>()
@@ -44,9 +44,9 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.ChannelPollProgress] = typeof(PollEventArgs),
             [EventSubType.ChannelPollEnd] = typeof(PollEndedEventArgs),
 
-            [EventSubType.ChannelPredictionStart] = typeof(PredictionStartedEventArgs),
-            [EventSubType.ChannelPredictionProgress] = typeof(PredictionProgressEventArgs),
-            [EventSubType.ChannelPredictionLock] = typeof(PredictionLockedEventArgs),
+            [EventSubType.ChannelPredictionStart] = typeof(PredictionEventArgs),
+            [EventSubType.ChannelPredictionProgress] = typeof(PredictionEventArgs),
+            [EventSubType.ChannelPredictionLock] = typeof(PredictionEventArgs),
             [EventSubType.ChannelPredictionEnd] = typeof(PredictionEndedEventArgs),
 
             [EventSubType.CharityDonation] = typeof(DonationEventArgs),
@@ -57,16 +57,16 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.DropEntitlementGrant] = typeof(EntitlementGrantEventArgs),
             [EventSubType.ExtensionBitsTransactionCreate] = typeof(BitsTransactionEventArgs),
 
-            [EventSubType.GoalStart] = typeof(GoalStartedEventArgs),
-            [EventSubType.GoalProgress] = typeof(GoalProgressEventArgs),
+            [EventSubType.GoalStart] = typeof(Goal),
+            [EventSubType.GoalProgress] = typeof(Goal),
             [EventSubType.GoalEnd] = typeof(GoalEndedEventArgs),
 
-            [EventSubType.HypeTrainStart] = typeof(HypeTrainStartedEventArgs),
-            [EventSubType.HypeTrainProgress] = typeof(HypeTrainProgressEventArgs),
+            [EventSubType.HypeTrainStart] = typeof(HypeTrainEventArgs),
+            [EventSubType.HypeTrainProgress] = typeof(HypeTrainEventArgs),
             [EventSubType.HypeTrainEnd] = typeof(HypeTrainEndedEventArgs),
 
             [EventSubType.ShieldModeStart] = typeof(ShieldModeStartedEventArgs),
-            [EventSubType.ShieldModeEnd] = typeof(ShieldModeEndedEventArgs),
+            [EventSubType.ShieldModeEnd] = typeof(ShieldModeEventArgs),
 
             [EventSubType.ShoutoutCreate] = typeof(ShoutoutCreatedEventArgs),
             [EventSubType.ShoutoutReceived] = typeof(ShoutoutReceivedEventArgs),
@@ -74,8 +74,8 @@ namespace AuxLabs.SimpleTwitch.EventSub
             [EventSubType.StreamOnline] = typeof(BroadcastStartedEventArgs),
             [EventSubType.StreamOffline] = typeof(BroadcastEndedEventArgs),
 
-            [EventSubType.UserAuthorizationGrant] = typeof(AuthorizationGrantedEventArgs),
-            [EventSubType.UserAuthorizationRevoke] = typeof(AuthorizationRevokedEventArgs),
+            [EventSubType.UserAuthorizationGrant] = typeof(AuthorizationEventArgs),
+            [EventSubType.UserAuthorizationRevoke] = typeof(AuthorizationEventArgs),
 
             [EventSubType.UserUpdate] = typeof(UserUpdatedEventArgs)
         };

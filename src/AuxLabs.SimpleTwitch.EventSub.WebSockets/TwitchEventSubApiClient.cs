@@ -63,11 +63,11 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public event Action<PollEndedEventArgs, EventSubscription> PollEnded;
 
         /// <summary> A Prediction started on a specified channel. </summary>
-        public event Action<PredictionStartedEventArgs, EventSubscription> PredictionStarted;
+        public event Action<PredictionEventArgs, EventSubscription> PredictionStarted;
         /// <summary> Users participated in a Prediction on a specified channel. </summary>
-        public event Action<PredictionProgressEventArgs, EventSubscription> PredictionProgress;
+        public event Action<PredictionEventArgs, EventSubscription> PredictionProgress;
         /// <summary> A Prediction was locked on a specified channel. </summary>
-        public event Action<PredictionLockedEventArgs, EventSubscription> PredictionLocked;
+        public event Action<PredictionEventArgs, EventSubscription> PredictionLocked;
         /// <summary> A Prediction ended on a specified channel. </summary>
         public event Action<PredictionEndedEventArgs, EventSubscription> PredictionEnded;
 
@@ -86,23 +86,23 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public event Action<BitsTransactionEventArgs, EventSubscription> BitsTransactionCreated;
 
         /// <summary> Get notified when a broadcaster begins a goal. </summary>
-        public event Action<GoalStartedEventArgs, EventSubscription> GoalStarted;
+        public event Action<Goal, EventSubscription> GoalStarted;
         /// <summary> Get notified when progress (either positive or negative) is made towards a broadcaster’s goal. </summary>
-        public event Action<GoalProgressEventArgs, EventSubscription> GoalProgress;
+        public event Action<Goal, EventSubscription> GoalProgress;
         /// <summary> Get notified when a broadcaster ends a goal. </summary>
         public event Action<GoalEndedEventArgs, EventSubscription> GoalEnded;
 
         /// <summary> A Hype Train begins on the specified channel. </summary>
-        public event Action<HypeTrainStartedEventArgs, EventSubscription> HypeTrainStarted;
+        public event Action<HypeTrainEventArgs, EventSubscription> HypeTrainStarted;
         /// <summary> A Hype Train makes progress on the specified channel. </summary>
-        public event Action<HypeTrainProgressEventArgs, EventSubscription> HypeTrainProgress;
+        public event Action<HypeTrainEventArgs, EventSubscription> HypeTrainProgress;
         /// <summary> A Hype Train ends on the specified channel. </summary>
         public event Action<HypeTrainEndedEventArgs, EventSubscription> HypeTrainEnded;
 
         /// <summary> Sends a notification when the broadcaster activates Shield Mode. </summary>
         public event Action<ShieldModeStartedEventArgs, EventSubscription> ShieldModeStarted;
         /// <summary> Sends a notification when the broadcaster deactivates Shield Mode. </summary>
-        public event Action<ShieldModeEndedEventArgs, EventSubscription> ShieldModeEnded;
+        public event Action<ShieldModeEventArgs, EventSubscription> ShieldModeEnded;
 
         /// <summary> Sends a notification when the specified broadcaster sends a Shoutout. </summary>
         public event Action<ShoutoutCreatedEventArgs, EventSubscription> ShoutoutCreated;
@@ -115,9 +115,9 @@ namespace AuxLabs.SimpleTwitch.EventSub
         public event Action<BroadcastEndedEventArgs, EventSubscription> BroadcastEnded;
 
         /// <summary> A user’s authorization has been granted to your client id. </summary>
-        public event Action<AuthorizationGrantedEventArgs, EventSubscription> AuthorizationGranted;
+        public event Action<AuthorizationEventArgs, EventSubscription> AuthorizationGranted;
         /// <summary> A user’s authorization has been revoked for your client id. </summary>
-        public event Action<AuthorizationRevokedEventArgs, EventSubscription> AuthorizationRevoked;
+        public event Action<AuthorizationEventArgs, EventSubscription> AuthorizationRevoked;
 
         /// <summary> A user has updated their account. </summary>
         public event Action<UserUpdatedEventArgs, EventSubscription> UserUpdated;
@@ -253,20 +253,19 @@ namespace AuxLabs.SimpleTwitch.EventSub
                                 PollProgress?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case PredictionStartedEventArgs args:
-                            PredictionStarted?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
-                        case PredictionProgressEventArgs args:
-                            PredictionProgress?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
-                        case PredictionLockedEventArgs args:
-                            PredictionLocked?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
                         case PredictionEndedEventArgs args:
                             PredictionEnded?.Invoke(args, frame.Payload.Subscription);
+                            break;
+
+                        case PredictionEventArgs args:
+                            if (frame.Payload.Subscription.Type == EventSubType.ChannelPredictionStart)
+                                PredictionStarted?.Invoke(args, frame.Payload.Subscription);
+                            else
+                            if (frame.Payload.Subscription.Type == EventSubType.ChannelPredictionProgress)
+                                PredictionProgress?.Invoke(args, frame.Payload.Subscription);
+                            else
+                            if (frame.Payload.Subscription.Type == EventSubType.ChannelPredictionLock)
+                                PredictionLocked?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case DonationEventArgs args:
@@ -277,12 +276,12 @@ namespace AuxLabs.SimpleTwitch.EventSub
                             CharityCampaignStarted?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case CampaignProgressEventArgs args:
-                            CharityCampaignProgress?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
                         case CampaignEndedEventArgs args:
                             CharityCampaignEnded?.Invoke(args, frame.Payload.Subscription);
+                            break;
+
+                        case CampaignProgressEventArgs args:
+                            CharityCampaignProgress?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case EntitlementGrantEventArgs args:
@@ -293,24 +292,24 @@ namespace AuxLabs.SimpleTwitch.EventSub
                             BitsTransactionCreated?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case GoalStartedEventArgs args:
-                            GoalStarted?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
-                        case GoalProgressEventArgs args:
-                            GoalProgress?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
                         case GoalEndedEventArgs args:
                             GoalEnded?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case HypeTrainStartedEventArgs args:
-                            HypeTrainStarted?.Invoke(args, frame.Payload.Subscription);
+                        case Goal args:
+                            if (frame.Payload.Subscription.Type == EventSubType.GoalStart)
+                                GoalStarted?.Invoke(args, frame.Payload.Subscription);
+                            else
+                            if (frame.Payload.Subscription.Type == EventSubType.GoalProgress)
+                                GoalProgress?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case HypeTrainProgressEventArgs args:
-                            HypeTrainProgress?.Invoke(args, frame.Payload.Subscription);
+                        case HypeTrainEventArgs args:
+                            if (frame.Payload.Subscription.Type == EventSubType.HypeTrainStart)
+                                HypeTrainStarted?.Invoke(args, frame.Payload.Subscription);
+                            else
+                            if (frame.Payload.Subscription.Type == EventSubType.HypeTrainProgress)
+                                HypeTrainProgress?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case HypeTrainEndedEventArgs args:
@@ -321,7 +320,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
                             ShieldModeStarted?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case ShieldModeEndedEventArgs args:
+                        case ShieldModeEventArgs args:
                             ShieldModeEnded?.Invoke(args, frame.Payload.Subscription);
                             break;
 
@@ -341,12 +340,12 @@ namespace AuxLabs.SimpleTwitch.EventSub
                             BroadcastEnded?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case AuthorizationGrantedEventArgs args:
-                            AuthorizationGranted?.Invoke(args, frame.Payload.Subscription);
-                            break;
-
-                        case AuthorizationRevokedEventArgs args:
-                            AuthorizationRevoked?.Invoke(args, frame.Payload.Subscription);
+                        case AuthorizationEventArgs args:
+                            if (frame.Payload.Subscription.Type == EventSubType.UserAuthorizationGrant)
+                                AuthorizationGranted?.Invoke(args, frame.Payload.Subscription);
+                            else
+                            if (frame.Payload.Subscription.Type == EventSubType.UserAuthorizationRevoke)
+                                AuthorizationRevoked?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case UserUpdatedEventArgs args:

@@ -5,39 +5,39 @@ namespace AuxLabs.SimpleTwitch.EventSub
     public class CheerEventArgs
     {
         /// <summary> Whether the user cheered anonymously or not. </summary>
-        [JsonPropertyName("is_anonymous")]
-        public bool IsAnonymous { get; set; }
+        [JsonInclude, JsonPropertyName("is_anonymous")]
+        public bool IsAnonymous { get; internal set; }
 
         /// <summary> The user ID for the user who cheered on the specified channel. </summary>
-        [JsonPropertyName("user_id")]
-        public string UserId { get; set; }
+        [JsonInclude, JsonPropertyName("user_id")]
+        public string UserId { get; internal set; }
 
         /// <summary> The user login for the user who cheered on the specified channel. </summary>
-        [JsonPropertyName("user_login")]
-        public string UserName { get; set; }
+        [JsonInclude, JsonPropertyName("user_login")]
+        public string UserName { get; internal set; }
 
         /// <summary> The user display name for the user who cheered on the specified channel. </summary>
-        [JsonPropertyName("user_name")]
-        public string UserDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("user_name")]
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The requested broadcaster ID. </summary>
-        [JsonPropertyName("broadcaster_user_id")]
-        public string BroadcasterId { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_id")]
+        public string BroadcasterId { get; internal set; }
 
         /// <summary> The requested broadcaster login. </summary>
-        [JsonPropertyName("broadcaster_user_login")]
-        public string BroadcasterName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_login")]
+        public string BroadcasterName { get; internal set; }
 
         /// <summary> The requested broadcaster display name. </summary>
-        [JsonPropertyName("broadcaster_user_name")]
-        public string BroadcasterDisplayName { get; set; }
+        [JsonInclude, JsonPropertyName("broadcaster_user_name")]
+        public string BroadcasterDisplayName { get; internal set; }
 
         /// <summary> The message sent with the cheer. </summary>
-        [JsonPropertyName("message")]
-        public string Message { get; set; }
+        [JsonInclude, JsonPropertyName("message")]
+        public string Message { get; internal set; }
 
         /// <summary> The number of bits cheered. </summary>
-        [JsonPropertyName("bits")]
-        public int BitsAmount { get; set; }
+        [JsonInclude, JsonPropertyName("bits")]
+        public int BitsAmount { get; internal set; }
     }
 }

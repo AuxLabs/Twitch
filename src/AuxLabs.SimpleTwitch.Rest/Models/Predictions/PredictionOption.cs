@@ -15,7 +15,7 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         /// <summary> The number of unique viewers that chose this outcome. </summary>
         [JsonInclude, JsonPropertyName("users")]
-        public int Users { get; internal set; }
+        public int UserCount { get; internal set; }
 
         /// <summary> The number of Channel Points spent by viewers on this outcome. </summary>
         [JsonInclude, JsonPropertyName("channel_points")]

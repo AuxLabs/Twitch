@@ -7,39 +7,39 @@ namespace AuxLabs.SimpleTwitch.EventSub
     public class EventSubscription
     {
         /// <summary> Your client ID. </summary>
-        [JsonPropertyName("id")]
-        public string Id { get; set; }
+        [JsonInclude, JsonPropertyName("id")]
+        public string Id { get; internal set; }
 
         /// <summary> The notification’s subscription type in raw string form. </summary>
-        [JsonPropertyName("type")]
-        public string TypeRaw { get; set; }
+        [JsonInclude, JsonPropertyName("type")]
+        public string TypeRaw { get; internal set; }
 
         /// <summary> The notification’s subscription type. </summary>
         [JsonIgnore]
         public EventSubType Type => EnumHelper.GetEnumValue<EventSubType>(TypeRaw);
 
         /// <summary> The version of the subscription. </summary>
-        [JsonPropertyName("version")]
-        public string Version { get; set; }
+        [JsonInclude, JsonPropertyName("version")]
+        public string Version { get; internal set; }
 
         /// <summary> The status of the subscription. </summary>
-        [JsonPropertyName("status")]
-        public EventSubStatus Status { get; set; }
+        [JsonInclude, JsonPropertyName("status")]
+        public EventSubStatus Status { get; internal set; }
 
         /// <summary> How much the subscription counts against your limit. </summary>
-        [JsonPropertyName("cost")]
-        public int Cost { get; set; }
+        [JsonInclude, JsonPropertyName("cost")]
+        public int Cost { get; internal set; }
 
         /// <summary> Subscription-specific parameters. </summary>
-        [JsonPropertyName("condition")]
-        public IEventCondition Condition { get; set; }
+        [JsonInclude, JsonPropertyName("condition")]
+        public IEventCondition Condition { get; internal set; }
 
         /// <summary> Information about the transport used for this subscription. </summary>
-        [JsonPropertyName("transport")]
-        public Transport Transport { get; set; }
+        [JsonInclude, JsonPropertyName("transport")]
+        public Transport Transport { get; internal set; }
 
         /// <summary> The time the notification was created. </summary>
-        [JsonPropertyName("created_at")]
-        public DateTime CreatedAt { get; set; }
+        [JsonInclude, JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; internal set; }
     }
 }
