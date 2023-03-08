@@ -7,8 +7,6 @@ namespace AuxLabs.SimpleTwitch.PubSub
     {
         protected override ISerializer<PubSubPayload> Serializer { get; }
 
-        private string _url;
-
         public TwitchPubSubApiClient(TwitchPubSubApiConfig config = null)
             : this(TwitchConstants.PubSubUrl, config) { }
         public TwitchPubSubApiClient(string url, TwitchPubSubApiConfig config = null) : base(-1) 

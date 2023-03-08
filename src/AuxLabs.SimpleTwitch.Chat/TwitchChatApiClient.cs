@@ -52,7 +52,6 @@ namespace AuxLabs.SimpleTwitch.Chat
 
         protected override ISerializer<IrcPayload> Serializer { get; }
 
-        private readonly string _url = null;
         private string _username = null;
         private string _token = null;
         private bool _anonymous = false;
@@ -106,7 +105,7 @@ namespace AuxLabs.SimpleTwitch.Chat
             => Send(new PartChannelsRequest(channelNames));
 
         /// <summary> Send a message to a channel. </summary>
-        public void SendChannelMessage(string channelName, string message, string replyMessageId = null)
+        public void SendMessage(string channelName, string message, string replyMessageId = null)
             => Send(new SendMessageRequest(channelName, message, replyMessageId));
 
         protected override void SendIdentify()
