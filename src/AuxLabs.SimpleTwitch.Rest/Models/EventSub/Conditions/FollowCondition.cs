@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class FollowCondition : BroadcasterCondition
+    public class FollowCondition : BroadcasterCondition, IEventCondition
     {
         /// <summary> The ID of the moderator of the channel you want to get notifications for. </summary>
         [JsonInclude, JsonPropertyName("moderator_user_id")]
@@ -12,6 +12,8 @@ namespace AuxLabs.SimpleTwitch.Rest
         public FollowCondition(string broadcasterId, string moderatorId)
             : base(broadcasterId)
         {
+            Require.NotNullOrWhitespace(moderatorId, nameof(moderatorId));
+
             ModeratorId = moderatorId;
         }
 

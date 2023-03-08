@@ -10,6 +10,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public BroadcasterCondition(string broadcasterId)
         {
+            Require.NotNullOrWhitespace(broadcasterId, nameof(broadcasterId));
+
             BroadcasterId = broadcasterId;
         }
 

@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -11,7 +12,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         public RewardCondition(string broadcasterId, string rewardId)
             : base(broadcasterId)
         {
+            Require.NotNullOrWhitespace(rewardId, nameof(rewardId));
+
             RewardId = rewardId;
         }
+
+        public static implicit operator (string, string)(RewardCondition value) => (value.BroadcasterId, value.RewardId);
+        public static implicit operator RewardCondition(ValueTuple<string, string> value) => new RewardCondition(value.Item1, value.Item2);
     }
 }

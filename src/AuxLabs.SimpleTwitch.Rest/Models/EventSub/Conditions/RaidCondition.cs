@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -14,8 +15,14 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public RaidCondition(string fromBroadcasterId, string toBroadcasterId)
         {
+            Require.NotNullOrWhitespace(fromBroadcasterId, nameof(fromBroadcasterId));
+            Require.NotNullOrWhitespace(toBroadcasterId, nameof(toBroadcasterId));
+
             FromBroadcasterId = fromBroadcasterId;
             ToBroadcasterId = toBroadcasterId;
         }
+
+        public static implicit operator (string, string)(RaidCondition value) => (value.FromBroadcasterId, value.ToBroadcasterId);
+        public static implicit operator RaidCondition(ValueTuple<string, string> value) => new RaidCondition(value.Item1, value.Item2);
     }
 }

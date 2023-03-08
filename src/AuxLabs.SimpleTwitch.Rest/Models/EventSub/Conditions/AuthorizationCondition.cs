@@ -10,6 +10,8 @@ namespace AuxLabs.SimpleTwitch.Rest
 
         public AuthorizationCondition(string clientId)
         {
+            Require.NotNullOrWhitespace(clientId, nameof(clientId));
+
             ClientId = clientId;
         }
 
