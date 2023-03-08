@@ -187,7 +187,7 @@
   "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.html": {
     "href": "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.html",
     "title": "Class TwitchChatApiClient | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class TwitchChatApiClient Inheritance object BaseSocketClient<IrcPayload> TwitchChatApiClient Inherited Members BaseSocketClient<IrcPayload>.Connected BaseSocketClient<IrcPayload>.Disconnected BaseSocketClient<IrcPayload>.DeserializationError BaseSocketClient<IrcPayload>.UnknownEventReceived BaseSocketClient<IrcPayload>.PayloadReceived BaseSocketClient<IrcPayload>.PayloadSent BaseSocketClient<IrcPayload>.State BaseSocketClient<IrcPayload>._url BaseSocketClient<IrcPayload>.ReceivedData BaseSocketClient<IrcPayload>.OnUnknownEventReceived(IrcPayload) BaseSocketClient<IrcPayload>.Run(string) BaseSocketClient<IrcPayload>.RunAsync(string) BaseSocketClient<IrcPayload>.Stop() BaseSocketClient<IrcPayload>.StopAsync() BaseSocketClient<IrcPayload>.Dispose() BaseSocketClient<IrcPayload>.Send(IrcPayload) Namespace: AuxLabs.SimpleTwitch.Chat Assembly: AuxLabs.SimpleTwitch.Chat.dll Syntax public class TwitchChatApiClient : BaseSocketClient<IrcPayload> Constructors Name Description TwitchChatApiClient(TwitchChatApiConfig) TwitchChatApiClient(string, TwitchChatApiConfig) Fields Name Description CommandsRequested ShouldHandleEvents TagsRequested ThrowOnMismatchedTags ThrowOnUnknownEvent Properties Name Description Serializer Methods Name Description HandleEvent(IrcPayload, TaskCompletionSource<bool>) Run() RunAsync() SendChannelMessage(string, string, string) Send a message to a channel. SendHeartbeat() SendHeartbeatAck() SendIdentify() SendJoin(params string[]) Join a channel by name. SendPart(params string[]) Leave a channel by name. SetIdentity(string, string) Events Name Description CapabilityAcknowledged Triggered after successful authentication. CapabilityDenied Triggered when authenticating with invalid capabilities ChannelJoined Triggered when a user joins a channel. ChannelLeft Triggered when a user leaves a channel. ChatCleared Triggered when someone removes all messages from the channel or from a specified user. GlobalUserStateReceived Triggered after authenticated with the server. Indicates the authenticated user's chat settings. MessageCleared Triggered when someone removes a single message from the chat room. MessageReceived Triggered when a message is received in a channel. NamesReceived Triggered after joining a channel, lists current active chatters. NoticeReceived Triggered to indicate the outcome of an action. Reconnect Triggered when the Twitch IRC server needs to terminate the connection. RoomStateReceived Triggered when you join a channel or when the channel’s chat settings change. Indicates the chat's current settings. UserNoticeReceived Triggered when events relating to a user in a channel occur. e.g. subscriptions, gifts, raids... UserStateReceived Triggered when the bot joins a channel. Indicates the authenticated user's state in said channel. WhisperReceived Triggered when a whisper is received."
+    "keywords": "Class TwitchChatApiClient Inheritance object BaseSocketClient<IrcPayload> TwitchChatApiClient Inherited Members BaseSocketClient<IrcPayload>.Connected BaseSocketClient<IrcPayload>.Disconnected BaseSocketClient<IrcPayload>.DeserializationError BaseSocketClient<IrcPayload>.UnknownEventReceived BaseSocketClient<IrcPayload>.PayloadReceived BaseSocketClient<IrcPayload>.PayloadSent BaseSocketClient<IrcPayload>.State BaseSocketClient<IrcPayload>._url BaseSocketClient<IrcPayload>.ReceivedData BaseSocketClient<IrcPayload>.OnUnknownEventReceived(IrcPayload) BaseSocketClient<IrcPayload>.Run(string) BaseSocketClient<IrcPayload>.RunAsync(string) BaseSocketClient<IrcPayload>.Stop() BaseSocketClient<IrcPayload>.StopAsync() BaseSocketClient<IrcPayload>.Dispose() BaseSocketClient<IrcPayload>.Send(IrcPayload) Namespace: AuxLabs.SimpleTwitch.Chat Assembly: AuxLabs.SimpleTwitch.Chat.dll Syntax public class TwitchChatApiClient : BaseSocketClient<IrcPayload> Constructors Name Description TwitchChatApiClient(TwitchChatApiConfig) TwitchChatApiClient(string, TwitchChatApiConfig) Fields Name Description CommandsRequested ShouldHandleEvents TagsRequested ThrowOnMismatchedTags ThrowOnUnknownEvent Properties Name Description Serializer Methods Name Description HandleEvent(IrcPayload, TaskCompletionSource<bool>) Run() RunAsync() SendHeartbeat() SendHeartbeatAck() SendIdentify() SendJoin(params string[]) Join a channel by name. SendMessage(string, string, string) Send a message to a channel. SendPart(params string[]) Leave a channel by name. SetIdentity(string, string) Events Name Description CapabilityAcknowledged Triggered after successful authentication. CapabilityDenied Triggered when authenticating with invalid capabilities ChannelJoined Triggered when a user joins a channel. ChannelLeft Triggered when a user leaves a channel. ChatCleared Triggered when someone removes all messages from the channel or from a specified user. GlobalUserStateReceived Triggered after authenticated with the server. Indicates the authenticated user's chat settings. MessageCleared Triggered when someone removes a single message from the chat room. MessageReceived Triggered when a message is received in a channel. NamesReceived Triggered after joining a channel, lists current active chatters. NoticeReceived Triggered to indicate the outcome of an action. Reconnect Triggered when the Twitch IRC server needs to terminate the connection. RoomStateReceived Triggered when you join a channel or when the channel’s chat settings change. Indicates the chat's current settings. UserNoticeReceived Triggered when events relating to a user in a channel occur. e.g. subscriptions, gifts, raids... UserStateReceived Triggered when the bot joins a channel. Indicates the authenticated user's state in said channel. WhisperReceived Triggered when a whisper is received."
   },
   "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiConfig.html": {
     "href": "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiConfig.html",
@@ -259,50 +259,50 @@
     "title": "Class EnumHelper | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class EnumHelper Inheritance object EnumHelper Namespace: AuxLabs.SimpleTwitch Assembly: AuxLabs.SimpleTwitch.dll Syntax public static class EnumHelper Methods Name Description GetEnumValue<T>(string) GetStringValue<T>(T)"
   },
-  "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationGrantedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationGrantedEventArgs.html",
-    "title": "Class AuthorizationGrantedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class AuthorizationGrantedEventArgs Inheritance object AuthorizationGrantedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class AuthorizationGrantedEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationRevokedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationRevokedEventArgs.html",
-    "title": "Class AuthorizationRevokedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class AuthorizationRevokedEventArgs Inheritance object AuthorizationRevokedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class AuthorizationRevokedEventArgs"
+  "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationEventArgs.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.AuthorizationEventArgs.html",
+    "title": "Class AuthorizationEventArgs | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class AuthorizationEventArgs Inheritance object AuthorizationEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class AuthorizationEventArgs Properties Name Description ClientId The client_id of the application that was granted user access. UserDisplayName The user display name for the user who has granted authorization for your client id. UserId The user id for the user who has granted authorization for your client id. UserName The user login for the user who has granted authorization for your client id."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.BanEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.BanEventArgs.html",
     "title": "Class BanEventArgs | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class BanEventArgs Inheritance object BanEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BanEventArgs Properties Name Description BannedAt The UTC date and time of when the user was banned or put in a timeout. BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login. EndsAt The UTC date and time of when the timeout ends. IsPermanent Indicates whether the ban is permanent. ModeratorDisplayName The user name of the issuer of the ban. ModeratorId The user ID of the issuer of the ban. ModeratorName The user login of the issuer of the ban. Reason The reason behind the ban. UserDisplayName The user display name for the user who was banned on the specified channel. UserId The user ID for the user who was banned on the specified channel. UserName The user login for the user who was banned on the specified channel."
   },
+  "api/AuxLabs.SimpleTwitch.EventSub.BitsProduct.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.BitsProduct.html",
+    "title": "Class BitsProduct | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BitsProduct Inheritance object BitsProduct Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BitsProduct Properties Name Description BitsAmount Bits involved in the transaction. IsDevelopment Flag indicating if the product is in development. Name Product name. Sku Unique identifier for the product acquired."
+  },
   "api/AuxLabs.SimpleTwitch.EventSub.BitsTransactionEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.BitsTransactionEventArgs.html",
     "title": "Class BitsTransactionEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class BitsTransactionEventArgs Inheritance object BitsTransactionEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BitsTransactionEventArgs"
+    "keywords": "Class BitsTransactionEventArgs Inheritance object BitsTransactionEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BitsTransactionEventArgs Properties Name Description BroadcasterDisplayName The transaction’s broadcaster display name. BroadcasterId The transaction’s broadcaster ID. BroadcasterName The transaction’s broadcaster login. ClientId Client ID of the extension. Id Transaction ID. Product Additional extension product information. UserDisplayName The transaction’s user display name. UserId The transaction’s user ID. UserName The transaction’s user login."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.BroadcastEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.BroadcastEndedEventArgs.html",
     "title": "Class BroadcastEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class BroadcastEndedEventArgs Inheritance object BroadcastEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BroadcastEndedEventArgs"
+    "keywords": "Class BroadcastEndedEventArgs Inheritance object BroadcastEndedEventArgs BroadcastStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BroadcastEndedEventArgs Properties Name Description BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.BroadcastStartedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.BroadcastStartedEventArgs.html",
     "title": "Class BroadcastStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class BroadcastStartedEventArgs Inheritance object BroadcastStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BroadcastStartedEventArgs"
+    "keywords": "Class BroadcastStartedEventArgs Inheritance object BroadcastEndedEventArgs BroadcastStartedEventArgs Inherited Members BroadcastEndedEventArgs.BroadcasterId BroadcastEndedEventArgs.BroadcasterName BroadcastEndedEventArgs.BroadcasterDisplayName Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class BroadcastStartedEventArgs : BroadcastEndedEventArgs Properties Name Description Id The id of the stream. StartedAt The timestamp at which the stream went online at. Type The stream type."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.CampaignEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.CampaignEndedEventArgs.html",
     "title": "Class CampaignEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class CampaignEndedEventArgs Inheritance object CampaignEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignEndedEventArgs"
+    "keywords": "Class CampaignEndedEventArgs Inheritance object CampaignProgressEventArgs CampaignEndedEventArgs Inherited Members CampaignProgressEventArgs.Id CampaignProgressEventArgs.BroadcasterId CampaignProgressEventArgs.BroadcasterName CampaignProgressEventArgs.BroadcasterDisplayName CampaignProgressEventArgs.CharityName CampaignProgressEventArgs.CharityDescription CampaignProgressEventArgs.CharityLogoUrl CampaignProgressEventArgs.CharityUrl CampaignProgressEventArgs.CurrentAmount CampaignProgressEventArgs.TargetAmount Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignEndedEventArgs : CampaignProgressEventArgs Properties Name Description StoppedAt The UTC timestamp of when the broadcaster stopped the campaign."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.CampaignProgressEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.CampaignProgressEventArgs.html",
     "title": "Class CampaignProgressEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class CampaignProgressEventArgs Inheritance object CampaignProgressEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignProgressEventArgs"
+    "keywords": "Class CampaignProgressEventArgs Inheritance object CampaignProgressEventArgs CampaignEndedEventArgs CampaignStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignProgressEventArgs Properties Name Description BroadcasterDisplayName The broadcaster’s display name. BroadcasterId An ID that identifies the broadcaster that’s running the campaign. BroadcasterName The broadcaster’s login name. CharityDescription A description of the charity. CharityLogoUrl A URL to an image of the charity’s logo. CharityName The charity’s name. CharityUrl A URL to the charity’s website. CurrentAmount An object that contains the current amount of donations that the campaign has received. Id An ID that identifies the charity campaign. TargetAmount An object that contains the campaign’s target fundraising goal."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.CampaignStartedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.CampaignStartedEventArgs.html",
     "title": "Class CampaignStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class CampaignStartedEventArgs Inheritance object CampaignStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignStartedEventArgs"
+    "keywords": "Class CampaignStartedEventArgs Inheritance object CampaignProgressEventArgs CampaignStartedEventArgs Inherited Members CampaignProgressEventArgs.Id CampaignProgressEventArgs.BroadcasterId CampaignProgressEventArgs.BroadcasterName CampaignProgressEventArgs.BroadcasterDisplayName CampaignProgressEventArgs.CharityName CampaignProgressEventArgs.CharityDescription CampaignProgressEventArgs.CharityLogoUrl CampaignProgressEventArgs.CharityUrl CampaignProgressEventArgs.CurrentAmount CampaignProgressEventArgs.TargetAmount Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class CampaignStartedEventArgs : CampaignProgressEventArgs Properties Name Description StartedAt The UTC timestamp of when the broadcaster started the campaign."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.ChannelFollowEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.ChannelFollowEventArgs.html",
@@ -322,17 +322,27 @@
   "api/AuxLabs.SimpleTwitch.EventSub.DonationEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.DonationEventArgs.html",
     "title": "Class DonationEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class DonationEventArgs Inheritance object DonationEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class DonationEventArgs"
+    "keywords": "Class DonationEventArgs Inheritance object DonationEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class DonationEventArgs Properties Name Description Amount An object that contains the amount of money that the user donated. BroadcasterDisplayName The broadcaster’s display name. BroadcasterId An ID that identifies the broadcaster that’s running the campaign. BroadcasterName The broadcaster’s login name. CampaignId An ID that identifies the charity campaign. CharityDescription A description of the charity. CharityLogoUrl A URL to an image of the charity’s logo. CharityName The charity’s name. CharityUrl A URL to the charity’s website. Id An ID that identifies the donation. The ID is unique across campaigns. UserDisplayName The user’s display name. UserId An ID that identifies the user that donated to the campaign. UserName The user’s login name."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.EntitlementGrantEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.EntitlementGrantEventArgs.html",
     "title": "Class EntitlementGrantEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class EntitlementGrantEventArgs Inheritance object EntitlementGrantEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class EntitlementGrantEventArgs"
+    "keywords": "Class EntitlementGrantEventArgs Inheritance object EntitlementGrantEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class EntitlementGrantEventArgs Properties Name Description Data A collection of entitlement objects. Id Individual event ID, as assigned by EventSub."
+  },
+  "api/AuxLabs.SimpleTwitch.EventSub.EntitlementGrantEventData.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.EntitlementGrantEventData.html",
+    "title": "Class EntitlementGrantEventData | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class EntitlementGrantEventData Inheritance object EntitlementGrantEventData Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class EntitlementGrantEventData Properties Name Description BenefitId Identifier of the Benefit. CampaignId The campaign this entitlement is associated with. CategoryId Twitch category ID of the game that was being played when this benefit was entitled. CategoryName The category name. CreatedAt UTC timestamp when this entitlement was granted on Twitch. EntitlementId Unique identifier of the entitlement. Use this to de-duplicate entitlements. OrganizationId The ID of the organization that owns the game that has Drops enabled. UserDisplayName The user display name of the user who was granted the entitlement. UserId Twitch user ID of the user who was granted the entitlement. UserName The user login of the user who was granted the entitlement."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.EventSubFrame.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.EventSubFrame.html",
     "title": "Class EventSubFrame | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class EventSubFrame Inheritance object EventSubFrame Implements IPayload Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.WebSockets.dll Syntax public class EventSubFrame : IPayload Properties Name Description IsHelloEvent Metadata An object that identifies the message. Payload An object that contains the message."
+  },
+  "api/AuxLabs.SimpleTwitch.EventSub.EventSubHypetrainContribution.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.EventSubHypetrainContribution.html",
+    "title": "Class EventSubHypetrainContribution | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class EventSubHypetrainContribution Inheritance object HypeTrainContribution EventSubHypetrainContribution Inherited Members HypeTrainContribution.Total HypeTrainContribution.Type HypeTrainContribution.UserId Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class EventSubHypetrainContribution : HypeTrainContribution Properties Name Description UserDisplayName The user’s display name. UserName The user’s login name."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.EventSubPayload-1.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.EventSubPayload-1.html",
@@ -362,37 +372,22 @@
   "api/AuxLabs.SimpleTwitch.EventSub.GoalEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.GoalEndedEventArgs.html",
     "title": "Class GoalEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class GoalEndedEventArgs Inheritance object GoalEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class GoalEndedEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.GoalProgressEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.GoalProgressEventArgs.html",
-    "title": "Class GoalProgressEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class GoalProgressEventArgs Inheritance object GoalProgressEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class GoalProgressEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.GoalStartedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.GoalStartedEventArgs.html",
-    "title": "Class GoalStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class GoalStartedEventArgs Inheritance object GoalStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class GoalStartedEventArgs"
+    "keywords": "Class GoalEndedEventArgs Inheritance object Goal GoalEndedEventArgs Inherited Members Goal.Id Goal.BroadcasterId Goal.BroadcasterDisplayName Goal.BroadcasterName Goal.Type Goal.Description Goal.CurrentAmount Goal.TargetAmount Goal.CreatedAt Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class GoalEndedEventArgs : Goal Properties Name Description EndedAt The UTC timestamp which indicates when the broadcaster ended the goal. IsAchieved Indicates whether the broadcaster achieved their goal."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.html",
     "title": "Namespace AuxLabs.SimpleTwitch.EventSub | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Namespace AuxLabs.SimpleTwitch.EventSub Classes AuthorizationGrantedEventArgs AuthorizationRevokedEventArgs BanEventArgs BitsTransactionEventArgs BroadcastEndedEventArgs BroadcastStartedEventArgs CampaignEndedEventArgs CampaignProgressEventArgs CampaignStartedEventArgs ChannelFollowEventArgs ChannelUpdateEventArgs CheerEventArgs DonationEventArgs EntitlementGrantEventArgs EventSubFrame EventSubPayload EventSubPayload<TEvent> EventSubscription EventSubWebSocketPayload GoalEndedEventArgs GoalProgressEventArgs GoalStartedEventArgs HypeTrainEndedEventArgs HypeTrainProgressEventArgs HypeTrainStartedEventArgs ModeratorEventArgs PollEndedEventArgs PollEventArgs PredictionEndedEventArgs PredictionLockedEventArgs PredictionProgressEventArgs PredictionStartedEventArgs RaidEventArgs RedemptionEventArgs RewardEventArgs Session ShieldModeEndedEventArgs ShieldModeStartedEventArgs ShoutoutCreatedEventArgs ShoutoutReceivedEventArgs SubscriptionEventArgs SubscriptionGiftedEventArgs SubscriptionMessage SubscriptionMessageEventArgs TwitchEventSubApiClient TwitchEventSubConfig UnbanEventArgs UserUpdatedEventArgs VotingOption WebSocketMetadata Structs GlobalCooldownSetting RewardSetting Interfaces IBan Enums MessageType"
+    "keywords": "Namespace AuxLabs.SimpleTwitch.EventSub Classes AuthorizationEventArgs BanEventArgs BitsProduct BitsTransactionEventArgs BroadcastEndedEventArgs BroadcastStartedEventArgs CampaignEndedEventArgs CampaignProgressEventArgs CampaignStartedEventArgs ChannelFollowEventArgs ChannelUpdateEventArgs CheerEventArgs DonationEventArgs EntitlementGrantEventArgs EntitlementGrantEventData EventSubFrame EventSubHypetrainContribution EventSubPayload EventSubPayload<TEvent> EventSubscription EventSubWebSocketPayload GoalEndedEventArgs HypeTrainEndedEventArgs HypeTrainEventArgs ModeratorEventArgs PollEndedEventArgs PollEventArgs PredictionEndedEventArgs PredictionEventArgs RaidEventArgs RedemptionEventArgs RewardEventArgs Session ShieldModeEndedEventArgs ShieldModeEventArgs ShieldModeStartedEventArgs ShoutoutCreatedEventArgs ShoutoutReceivedEventArgs SubscriptionEventArgs SubscriptionGiftedEventArgs SubscriptionMessage SubscriptionMessageEventArgs TwitchEventSubApiClient TwitchEventSubConfig UnbanEventArgs UserUpdatedEventArgs VotingOption WebSocketMetadata Structs GlobalCooldownSetting RewardSetting Interfaces IBan Enums MessageType"
   },
   "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainEndedEventArgs.html",
     "title": "Class HypeTrainEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class HypeTrainEndedEventArgs Inheritance object HypeTrainEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class HypeTrainEndedEventArgs"
+    "keywords": "Class HypeTrainEndedEventArgs Inheritance object HypeTrainEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class HypeTrainEndedEventArgs Properties Name Description BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login. CooldownEndsAt The time when the Hype Train cooldown ends so that the next Hype Train can start. EndedAt The time when the Hype Train ended. Id The Hype Train ID. Level The starting level of the Hype Train. StartedAt The time when the Hype Train started. TopContributions The contributors with the most points contributed. Total Total points contributed to the Hype Train."
   },
-  "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainProgressEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainProgressEventArgs.html",
-    "title": "Class HypeTrainProgressEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class HypeTrainProgressEventArgs Inheritance object HypeTrainProgressEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class HypeTrainProgressEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainStartedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainStartedEventArgs.html",
-    "title": "Class HypeTrainStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class HypeTrainStartedEventArgs Inheritance object HypeTrainStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class HypeTrainStartedEventArgs"
+  "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainEventArgs.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.HypeTrainEventArgs.html",
+    "title": "Class HypeTrainEventArgs | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class HypeTrainEventArgs Inheritance object HypeTrainEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class HypeTrainEventArgs Properties Name Description BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login. ExpiresAt The time when the Hype Train expires. Goal The number of points required to reach the next level. Id The Hype Train ID. LatestContribution The most recent contribution. Level The starting level of the Hype Train. Progress The number of points contributed to the Hype Train at the current level. StartedAt The time when the Hype Train started. TopContributions The contributors with the most points contributed. Total Total points contributed to the Hype Train."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.IBan.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.IBan.html",
@@ -422,22 +417,12 @@
   "api/AuxLabs.SimpleTwitch.EventSub.PredictionEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.PredictionEndedEventArgs.html",
     "title": "Class PredictionEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PredictionEndedEventArgs Inheritance object PredictionEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionEndedEventArgs"
+    "keywords": "Class PredictionEndedEventArgs Inheritance object PredictionEventArgs PredictionEndedEventArgs Inherited Members PredictionEventArgs.Id PredictionEventArgs.BroadcasterId PredictionEventArgs.BroadcasterName PredictionEventArgs.BroadcasterDisplayName PredictionEventArgs.Title PredictionEventArgs.Options PredictionEventArgs.StartedAt PredictionEventArgs.LocksAt Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionEndedEventArgs : PredictionEventArgs Properties Name Description Status The status of the Channel Points Prediction. WinningOptionId ID of the winning outcome."
   },
-  "api/AuxLabs.SimpleTwitch.EventSub.PredictionLockedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.PredictionLockedEventArgs.html",
-    "title": "Class PredictionLockedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PredictionLockedEventArgs Inheritance object PredictionLockedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionLockedEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.PredictionProgressEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.PredictionProgressEventArgs.html",
-    "title": "Class PredictionProgressEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PredictionProgressEventArgs Inheritance object PredictionProgressEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionProgressEventArgs"
-  },
-  "api/AuxLabs.SimpleTwitch.EventSub.PredictionStartedEventArgs.html": {
-    "href": "api/AuxLabs.SimpleTwitch.EventSub.PredictionStartedEventArgs.html",
-    "title": "Class PredictionStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PredictionStartedEventArgs Inheritance object PredictionStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionStartedEventArgs"
+  "api/AuxLabs.SimpleTwitch.EventSub.PredictionEventArgs.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.PredictionEventArgs.html",
+    "title": "Class PredictionEventArgs | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PredictionEventArgs Inheritance object PredictionEventArgs PredictionEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class PredictionEventArgs Properties Name Description BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login. Id The prediction identifier. LocksAt The time the Channel Points Prediction will automatically lock. Options A collection of outcomes for the Channel Points Prediction. StartedAt The time the Channel Points Prediction started. Title Title for the Channel Points Prediction."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.RaidEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.RaidEventArgs.html",
@@ -467,22 +452,27 @@
   "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeEndedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeEndedEventArgs.html",
     "title": "Class ShieldModeEndedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ShieldModeEndedEventArgs Inheritance object ShieldModeEndedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShieldModeEndedEventArgs"
+    "keywords": "Class ShieldModeEndedEventArgs Inheritance object ShieldModeEventArgs ShieldModeEndedEventArgs Inherited Members ShieldModeEventArgs.BroadcasterId ShieldModeEventArgs.BroadcasterName ShieldModeEventArgs.BroadcasterDisplayName ShieldModeEventArgs.ModeratorId ShieldModeEventArgs.ModeratorName ShieldModeEventArgs.ModeratorDisplayName Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShieldModeEndedEventArgs : ShieldModeEventArgs Properties Name Description EndedAt The UTC timestamp of when the moderator deactivated Shield Mode."
+  },
+  "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeEventArgs.html": {
+    "href": "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeEventArgs.html",
+    "title": "Class ShieldModeEventArgs | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ShieldModeEventArgs Inheritance object ShieldModeEventArgs ShieldModeEndedEventArgs ShieldModeStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShieldModeEventArgs Properties Name Description BroadcasterDisplayName The requested broadcaster display name. BroadcasterId The requested broadcaster ID. BroadcasterName The requested broadcaster login. ModeratorDisplayName The moderator’s display name. ModeratorId An ID that identifies the moderator that updated the Shield Mode’s status. ModeratorName The moderator’s login name."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeStartedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.ShieldModeStartedEventArgs.html",
     "title": "Class ShieldModeStartedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ShieldModeStartedEventArgs Inheritance object ShieldModeStartedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShieldModeStartedEventArgs"
+    "keywords": "Class ShieldModeStartedEventArgs Inheritance object ShieldModeEventArgs ShieldModeStartedEventArgs Inherited Members ShieldModeEventArgs.BroadcasterId ShieldModeEventArgs.BroadcasterName ShieldModeEventArgs.BroadcasterDisplayName ShieldModeEventArgs.ModeratorId ShieldModeEventArgs.ModeratorName ShieldModeEventArgs.ModeratorDisplayName Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShieldModeStartedEventArgs : ShieldModeEventArgs Properties Name Description StartedAt The UTC timestamp of when the moderator activated Shield Mode."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.ShoutoutCreatedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.ShoutoutCreatedEventArgs.html",
     "title": "Class ShoutoutCreatedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ShoutoutCreatedEventArgs Inheritance object ShoutoutCreatedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShoutoutCreatedEventArgs"
+    "keywords": "Class ShoutoutCreatedEventArgs Inheritance object ShoutoutReceivedEventArgs ShoutoutCreatedEventArgs Inherited Members ShoutoutReceivedEventArgs.BroadcasterId ShoutoutReceivedEventArgs.BroadcasterName ShoutoutReceivedEventArgs.BroadcasterDisplayName ShoutoutReceivedEventArgs.FromBroadcasterId ShoutoutReceivedEventArgs.FromBroadcasterName ShoutoutReceivedEventArgs.FromBroadcasterDisplayName ShoutoutReceivedEventArgs.ViewerCount ShoutoutReceivedEventArgs.StartedAt Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShoutoutCreatedEventArgs : ShoutoutReceivedEventArgs Properties Name Description CooldownEndsAt The UTC timestamp of when the broadcaster may send a Shoutout to a different broadcaster. ModeratorDisplayName The moderator’s display name. ModeratorId An ID that identifies the moderator that sent the Shoutout. ModeratorName The moderator’s login name. TargetCooldownEndsAt The UTC timestamp of when the broadcaster may send another Shoutout to BroadcasterId"
   },
   "api/AuxLabs.SimpleTwitch.EventSub.ShoutoutReceivedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.ShoutoutReceivedEventArgs.html",
     "title": "Class ShoutoutReceivedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ShoutoutReceivedEventArgs Inheritance object ShoutoutReceivedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShoutoutReceivedEventArgs"
+    "keywords": "Class ShoutoutReceivedEventArgs Inheritance object ShoutoutReceivedEventArgs ShoutoutCreatedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class ShoutoutReceivedEventArgs Properties Name Description BroadcasterDisplayName The broadcaster display name. BroadcasterId An ID that identifies the broadcaster that received the Shoutout. BroadcasterName The broadcaster login. FromBroadcasterDisplayName The broadcaster display name. FromBroadcasterId An ID that identifies the broadcaster that sent the Shoutout. FromBroadcasterName The broadcaster login. StartedAt The UTC timestamp of when the moderator sent the Shoutout. ViewerCount The number of users that were watching the from-broadcaster’s stream at the time of the Shoutout."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.SubscriptionEventArgs.html",
@@ -522,7 +512,7 @@
   "api/AuxLabs.SimpleTwitch.EventSub.UserUpdatedEventArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.UserUpdatedEventArgs.html",
     "title": "Class UserUpdatedEventArgs | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class UserUpdatedEventArgs Inheritance object UserUpdatedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class UserUpdatedEventArgs"
+    "keywords": "Class UserUpdatedEventArgs Inheritance object UserUpdatedEventArgs Namespace: AuxLabs.SimpleTwitch.EventSub Assembly: AuxLabs.SimpleTwitch.EventSub.dll Syntax public class UserUpdatedEventArgs Properties Name Description Description The user’s description. IsEmailVerified Determines whether Twitch has verified the user’s email address. UserDisplayName The user’s user display name. UserEmail The user’s email address. UserId The user’s user id. UserName The user’s user login."
   },
   "api/AuxLabs.SimpleTwitch.EventSub.VotingOption.html": {
     "href": "api/AuxLabs.SimpleTwitch.EventSub.VotingOption.html",
@@ -714,6 +704,21 @@
     "title": "Class AuthorizationCondition | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class AuthorizationCondition Inheritance object AuthorizationCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class AuthorizationCondition : IEventCondition Constructors Name Description AuthorizationCondition(string) Properties Name Description ClientId Your application's client id. Operators Name Description implicit operator string(AuthorizationCondition) implicit operator AuthorizationCondition(string)"
   },
+  "api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html",
+    "title": "Class AuthorizationGrantedSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class AuthorizationGrantedSubscription Inheritance object PostEventSubscriptionBody<AuthorizationCondition> AuthorizationSubscriptionBase AuthorizationGrantedSubscription Implements IScopedRequest Inherited Members AuthorizationSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<AuthorizationCondition>.Type PostEventSubscriptionBody<AuthorizationCondition>.Version PostEventSubscriptionBody<AuthorizationCondition>.Condition PostEventSubscriptionBody<AuthorizationCondition>.Transport PostEventSubscriptionBody<AuthorizationCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class AuthorizationGrantedSubscription : AuthorizationSubscriptionBase, IScopedRequest Constructors Name Description AuthorizationGrantedSubscription(string, string, string) AuthorizationGrantedSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.html",
+    "title": "Class AuthorizationRevokedSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class AuthorizationRevokedSubscription Inheritance object PostEventSubscriptionBody<AuthorizationCondition> AuthorizationSubscriptionBase AuthorizationRevokedSubscription Implements IScopedRequest Inherited Members AuthorizationSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<AuthorizationCondition>.Type PostEventSubscriptionBody<AuthorizationCondition>.Version PostEventSubscriptionBody<AuthorizationCondition>.Condition PostEventSubscriptionBody<AuthorizationCondition>.Transport PostEventSubscriptionBody<AuthorizationCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class AuthorizationRevokedSubscription : AuthorizationSubscriptionBase, IScopedRequest Constructors Name Description AuthorizationRevokedSubscription(string, string, string) AuthorizationRevokedSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html",
+    "title": "Class AuthorizationSubscriptionBase | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class AuthorizationSubscriptionBase Inheritance object PostEventSubscriptionBody<AuthorizationCondition> AuthorizationSubscriptionBase AuthorizationGrantedSubscription AuthorizationRevokedSubscription Implements IScopedRequest Inherited Members PostEventSubscriptionBody<AuthorizationCondition>.Type PostEventSubscriptionBody<AuthorizationCondition>.Version PostEventSubscriptionBody<AuthorizationCondition>.Condition PostEventSubscriptionBody<AuthorizationCondition>.Transport PostEventSubscriptionBody<AuthorizationCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public abstract class AuthorizationSubscriptionBase : PostEventSubscriptionBody<AuthorizationCondition>, IScopedRequest Constructors Name Description AuthorizationSubscriptionBase(string, string, string) AuthorizationSubscriptionBase(string, string) Properties Name Description Scopes Methods Name Description Validate(IEnumerable<string>)"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html",
     "title": "Enum AutomodAction | AuxLabs.SimpleTwitch Documentation",
@@ -754,6 +759,11 @@
     "title": "Class BannedUser | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class BannedUser Inheritance object BannedUser Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BannedUser Properties Name Description CreatedAt The UTC date and time of when the user was banned. ExpiresAt The UTC date and time of when the timeout expires ModeratorDisplayName The moderator’s display name. ModeratorId The ID of the moderator that banned the user or put them in a timeout. ModeratorName The moderator’s login name. Reason The reason the user was banned or put in a timeout if the moderator provided one. UserDisplayName The banned user’s display name. UserId The ID of the banned user. UserName The banned user’s login name."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.BanSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.BanSubscription.html",
+    "title": "Class BanSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BanSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase BanSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BanSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description BanSubscription(string, string, string) BanSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.BitsPeriod.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BitsPeriod.html",
     "title": "Enum BitsPeriod | AuxLabs.SimpleTwitch Documentation",
@@ -763,6 +773,11 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.BitsTier.html",
     "title": "Class BitsTier | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class BitsTier Inheritance object BitsTier Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BitsTier Properties Name Description CanCheer Determines whether users can cheer at this tier level. Color The hex code of the color associated with this tier level Images The animated and static image sets for the Cheermote. Level The tier level. MinimumBits The minimum number of Bits that you must cheer at this tier level. ShowInBitsCard Determines whether this tier level is shown in the Bits card."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.BitsTransactionSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.BitsTransactionSubscription.html",
+    "title": "Class BitsTransactionSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BitsTransactionSubscription Inheritance object PostEventSubscriptionBody<ExtensionCondition> BitsTransactionSubscription Inherited Members PostEventSubscriptionBody<ExtensionCondition>.Type PostEventSubscriptionBody<ExtensionCondition>.Version PostEventSubscriptionBody<ExtensionCondition>.Condition PostEventSubscriptionBody<ExtensionCondition>.Transport PostEventSubscriptionBody<ExtensionCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BitsTransactionSubscription : PostEventSubscriptionBody<ExtensionCondition> Constructors Name Description BitsTransactionSubscription(string, string, string) BitsTransactionSubscription(string, string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.BitsUser.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BitsUser.html",
@@ -789,10 +804,20 @@
     "title": "Class Broadcast | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Broadcast Inheritance object Broadcast Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Broadcast Properties Name Description Culture The broadcaster's preferred language. GameId The ID of the category or game being played. GameName The name of the category or game being played. Id An ID that identifies the stream. IsMature Indicates whether the stream is meant for mature audiences. StartedAt The UTC date and time of when the broadcast began. Tags The tags applied to the stream. ThumbnailUrl A URL to an image of a frame from the last 5 minutes of the stream. Title The stream’s title. Type The type of stream. UserDisplayName The user’s display name. UserId The ID of the user that’s broadcasting the stream. UserName The user’s login name. ViewerCount The number of users watching the stream."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.html",
+    "title": "Class BroadcastEndedSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BroadcastEndedSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase BroadcastEndedSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcastEndedSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description BroadcastEndedSubscription(string, string, string) BroadcastEndedSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html",
     "title": "Class BroadcasterCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class BroadcasterCondition Inheritance object BroadcasterCondition FollowCondition RewardCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcasterCondition : IEventCondition Constructors Name Description BroadcasterCondition(string) Properties Name Description BroadcasterId The broadcaster user ID of the channel for which notifications will be received. Operators Name Description implicit operator string(BroadcasterCondition) implicit operator BroadcasterCondition(string)"
+    "keywords": "Class BroadcasterCondition Inheritance object BroadcasterCondition ModeratorCondition RewardCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcasterCondition : IEventCondition Constructors Name Description BroadcasterCondition(string) Properties Name Description BroadcasterId The broadcaster user ID of the channel for which notifications will be received. Operators Name Description implicit operator string(BroadcasterCondition) implicit operator BroadcasterCondition(string)"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.BroadcasterSubscriptionBase.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcasterSubscriptionBase.html",
+    "title": "Class BroadcasterSubscriptionBase | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BroadcasterSubscriptionBase Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase BanSubscription BroadcastEndedSubscription BroadcastStartedSubscription CampaignProgressSubscription CampaignStartSubscription CampaignStopSubscription CheerSubscription DonationSubscription GoalEndSubscription GoalProgressSubscription GoalStartSubscription HypetrainEndSubscription HypetrainProgressSubscription HypetrainStartSubscription ModeratorAddSubscription ModeratorRemoveSubscription PollEndSubscription PollProgressSubscription PollStartSubscription PredictionEndSubscription PredictionLockSubscription PredictionProgressSubscription PredictionStartSubscription RewardAddSubscription SubscribeSubscription SubscriptionEndSubscription SubscriptionGiftSubscription SubscriptionMessageSubscription UnbanSubscription Implements IScopedRequest Inherited Members PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public abstract class BroadcasterSubscriptionBase : PostEventSubscriptionBody<BroadcasterCondition>, IScopedRequest Constructors Name Description BroadcasterSubscriptionBase(string, string, string) BroadcasterSubscriptionBase(string, string) Properties Name Description Scopes Methods Name Description Validate(IEnumerable<string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.BroadcasterType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcasterType.html",
@@ -804,10 +829,30 @@
     "title": "Class BroadcastMarker | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class BroadcastMarker Inheritance object BroadcastMarker Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcastMarker Properties Name Description CreatedAt The UTC date and time of when the user created the marker. Description A description that the user gave the marker to help them remember why they marked the location. Id An ID that identifies this marker. PositionSeconds The relative offset (in seconds) of the marker from the beginning of the stream."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.html",
+    "title": "Class BroadcastStartedSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class BroadcastStartedSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase BroadcastStartedSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcastStartedSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description BroadcastStartedSubscription(string, string, string) BroadcastStartedSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.BroadcastType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcastType.html",
     "title": "Enum BroadcastType | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Enum BroadcastType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum BroadcastType Fields Name Description All Live Unknown"
+    "keywords": "Enum BroadcastType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum BroadcastType Fields Name Description All Live Playlist Premiere Rerun Unknown WatchParty"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.CampaignProgressSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.CampaignProgressSubscription.html",
+    "title": "Class CampaignProgressSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class CampaignProgressSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase CampaignProgressSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class CampaignProgressSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description CampaignProgressSubscription(string, string, string) CampaignProgressSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.CampaignStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.CampaignStartSubscription.html",
+    "title": "Class CampaignStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class CampaignStartSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase CampaignStartSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class CampaignStartSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description CampaignStartSubscription(string, string, string) CampaignStartSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.CampaignStopSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.CampaignStopSubscription.html",
+    "title": "Class CampaignStopSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class CampaignStopSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase CampaignStopSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class CampaignStopSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description CampaignStopSubscription(string, string, string) CampaignStopSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.Category.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Category.html",
@@ -838,6 +883,11 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.ChannelTeam.html",
     "title": "Class ChannelTeam | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class ChannelTeam Inheritance object SimpleTeam ChannelTeam Inherited Members SimpleTeam.Id SimpleTeam.Name SimpleTeam.DisplayName SimpleTeam.BackgroundImageUrl SimpleTeam.BannerUrl SimpleTeam.CreatedAt SimpleTeam.UpdatedAt SimpleTeam.Description SimpleTeam.ThumbnailUrl Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ChannelTeam : SimpleTeam Properties Name Description BroadcasterDisplayName The broadcaster’s display name. BroadcasterId An ID that identifies the broadcaster. BroadcasterName The broadcaster’s login name."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ChannelUpdateSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ChannelUpdateSubscription.html",
+    "title": "Class ChannelUpdateSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ChannelUpdateSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> ChannelUpdateSubscription Inherited Members PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ChannelUpdateSubscription : PostEventSubscriptionBody<BroadcasterCondition> Constructors Name Description ChannelUpdateSubscription(string, string, string) ChannelUpdateSubscription(string, string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.CharityAmount.html",
@@ -888,6 +938,11 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.CheermoteType.html",
     "title": "Enum CheermoteType | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum CheermoteType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum CheermoteType Fields Name Description ChannelCustom DisplayOnly GlobalFirstParty GlobalThirdParty None Sponsored"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.CheerSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.CheerSubscription.html",
+    "title": "Class CheerSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class CheerSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase CheerSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class CheerSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description CheerSubscription(string, string, string) CheerSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.Clip.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Clip.html",
@@ -959,10 +1014,15 @@
     "title": "Class DeleteVideosArgs | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class DeleteVideosArgs Inheritance object QueryMap DeleteVideosArgs Implements IDictionary<, ><string, string> IScopedRequest Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DeleteVideosArgs : QueryMap, IDictionary<string, string>, IScopedRequest Constructors Name Description DeleteVideosArgs() DeleteVideosArgs(params string[]) Properties Name Description Scopes VideoIds The collection of video ids to delete. Methods Name Description CreateQueryMap() Validate(IEnumerable<string>) Operators Name Description implicit operator string[](DeleteVideosArgs) implicit operator DeleteVideosArgs(string[])"
   },
+  "api/AuxLabs.SimpleTwitch.Rest.DonationSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.DonationSubscription.html",
+    "title": "Class DonationSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class DonationSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase DonationSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DonationSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description DonationSubscription(string, string, string) DonationSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html",
     "title": "Class DropEntitlementCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class DropEntitlementCondition Inheritance object DropEntitlementCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DropEntitlementCondition : IEventCondition Constructors Name Description DropEntitlementCondition() DropEntitlementCondition(string, string, string) Properties Name Description CampaignId Optional. The campaign ID for a specific campaign for which notifications will be received. CategoryId Optional. The category (or game) ID of the game for which notifications will be received. OrganizationId The organization ID of the organization that owns the game on the developer portal."
+    "keywords": "Class DropEntitlementCondition Inheritance object DropEntitlementCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DropEntitlementCondition : IEventCondition Constructors Name Description DropEntitlementCondition(string, string, string) Properties Name Description CampaignId Optional. The campaign ID for a specific campaign for which notifications will be received. CategoryId Optional. The category (or game) ID of the game for which notifications will be received. OrganizationId The organization ID of the organization that owns the game on the developer portal. Operators Name Description implicit operator (string, string, string)(DropEntitlementCondition) implicit operator DropEntitlementCondition(ValueTuple<string, string, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.DropStatus.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.DropStatus.html",
@@ -999,6 +1059,11 @@
     "title": "Class EntitlementDrop | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class EntitlementDrop Inheritance object EntitlementDrop Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class EntitlementDrop Properties Name Description EntitlementIds The list of entitlements that the status applies to. Status Indicates the status of the specified entitlements."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.EntitlementGrantSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.EntitlementGrantSubscription.html",
+    "title": "Class EntitlementGrantSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class EntitlementGrantSubscription Inheritance object PostEventSubscriptionBody<DropEntitlementCondition> EntitlementGrantSubscription Inherited Members PostEventSubscriptionBody<DropEntitlementCondition>.Type PostEventSubscriptionBody<DropEntitlementCondition>.Version PostEventSubscriptionBody<DropEntitlementCondition>.Condition PostEventSubscriptionBody<DropEntitlementCondition>.Transport PostEventSubscriptionBody<DropEntitlementCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class EntitlementGrantSubscription : PostEventSubscriptionBody<DropEntitlementCondition> Constructors Name Description EntitlementGrantSubscription(string, string, string, string, string) EntitlementGrantSubscription(string, string, string, string)"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html",
     "title": "Class EventSub<TCondition> | AuxLabs.SimpleTwitch Documentation",
@@ -1034,6 +1099,11 @@
     "title": "Class ExtensionAnalytic | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class ExtensionAnalytic Contains information about an extension's analytic report. Inheritance object Analytic ExtensionAnalytic Inherited Members Analytic.Url Analytic.Type Analytic.DateRange Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionAnalytic : Analytic Properties Name Description ExtensionId An ID that identifies the extension that the report was generated for."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html",
+    "title": "Class ExtensionCondition | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ExtensionCondition Inheritance object ExtensionCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionCondition : IEventCondition Constructors Name Description ExtensionCondition(string) Properties Name Description ClientId The client ID of the extension. Operators Name Description implicit operator string(ExtensionCondition) implicit operator ExtensionCondition(string)"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.ExtensionMap.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionMap.html",
     "title": "Class ExtensionMap | AuxLabs.SimpleTwitch Documentation",
@@ -1044,20 +1114,10 @@
     "title": "Class ExtensionTransaction | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class ExtensionTransaction Inheritance object ExtensionTransaction Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionTransaction Properties Name Description BroadcasterDisplayName The broadcaster’s display name. BroadcasterId The ID of the broadcaster that owns the channel where the transaction occurred. BroadcasterName The broadcaster’s login name. Id An ID that identifies the transaction. ProductData Contains details about the digital product. ProductType The type of transaction. Timestamp The UTC date and time of the transaction. UserDisplayName The user’s display name. UserId The ID of the user that purchased the digital product. UserName The user’s login name."
   },
-  "api/AuxLabs.SimpleTwitch.Rest.ExtensionTransactionCondition.html": {
-    "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionTransactionCondition.html",
-    "title": "Class ExtensionTransactionCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ExtensionTransactionCondition Inheritance object ExtensionTransactionCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionTransactionCondition : IEventCondition Constructors Name Description ExtensionTransactionCondition() ExtensionTransactionCondition(string) Properties Name Description ExtensionClientId The client ID of the extension."
-  },
   "api/AuxLabs.SimpleTwitch.Rest.ExtensionType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionType.html",
     "title": "Enum ExtensionType | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum ExtensionType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum ExtensionType Fields Name Description Component Mobile Overlay Panel Unknown"
-  },
-  "api/AuxLabs.SimpleTwitch.Rest.FollowCondition.html": {
-    "href": "api/AuxLabs.SimpleTwitch.Rest.FollowCondition.html",
-    "title": "Class FollowCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class FollowCondition Inheritance object BroadcasterCondition FollowCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class FollowCondition : BroadcasterCondition, IEventCondition Constructors Name Description FollowCondition(string, string) Properties Name Description ModeratorId The ID of the moderator of the channel you want to get notifications for. Operators Name Description implicit operator (string, string)(FollowCondition) implicit operator FollowCondition(ValueTuple<string, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.FollowedChannel.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.FollowedChannel.html",
@@ -1068,6 +1128,11 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.Follower.html",
     "title": "Class Follower | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Follower Inheritance object Follower Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Follower Properties Name Description FollowedAt The UTC timestamp when the user started following the broadcaster. UserDisplayName The user’s display name. UserId An ID that uniquely identifies the user that’s following the broadcaster. UserName The user’s login name."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.FollowSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.FollowSubscription.html",
+    "title": "Class FollowSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class FollowSubscription Inheritance object PostEventSubscriptionBody<ModeratorCondition> ModeratorSubscriptionBase FollowSubscription Implements IScopedRequest Inherited Members ModeratorSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<ModeratorCondition>.Type PostEventSubscriptionBody<ModeratorCondition>.Version PostEventSubscriptionBody<ModeratorCondition>.Condition PostEventSubscriptionBody<ModeratorCondition>.Transport PostEventSubscriptionBody<ModeratorCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class FollowSubscription : ModeratorSubscriptionBase, IScopedRequest Constructors Name Description FollowSubscription(string, string, string, string) FollowSubscription(string, string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.FulfillmentStatus.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.FulfillmentStatus.html",
@@ -1357,7 +1422,22 @@
   "api/AuxLabs.SimpleTwitch.Rest.Goal.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Goal.html",
     "title": "Class Goal | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class Goal Inheritance object Goal Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Goal Properties Name Description BroadcasterDisplayName The broadcaster’s display name. BroadcasterId An ID that identifies the broadcaster that created the goal. BroadcasterName The broadcaster’s login name. CreatedAt The UTC date and time that the broadcaster created the goal. CurrentAmount The goal’s current value. Description A description of the goal. Id An ID that identifies this goal. TargetAmount The goal’s target value. Type The type of goal."
+    "keywords": "Class Goal Inheritance object Goal GoalEndedEventArgs Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Goal Properties Name Description BroadcasterDisplayName The broadcaster’s display name. BroadcasterId An ID that identifies the broadcaster that created the goal. BroadcasterName The broadcaster’s login name. CreatedAt The UTC date and time that the broadcaster created the goal. CurrentAmount The goal’s current value. Description A description of the goal. Id An ID that identifies this goal. TargetAmount The goal’s target value. Type The type of goal."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.GoalEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.GoalEndSubscription.html",
+    "title": "Class GoalEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class GoalEndSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase GoalEndSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class GoalEndSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description GoalEndSubscription(string, string, string) GoalEndSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.GoalProgressSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.GoalProgressSubscription.html",
+    "title": "Class GoalProgressSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class GoalProgressSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase GoalProgressSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class GoalProgressSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description GoalProgressSubscription(string, string, string) GoalProgressSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.GoalStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.GoalStartSubscription.html",
+    "title": "Class GoalStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class GoalStartSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase GoalStartSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class GoalStartSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description GoalStartSubscription(string, string, string) GoalStartSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.GoalType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.GoalType.html",
@@ -1367,7 +1447,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.html",
     "title": "Namespace AuxLabs.SimpleTwitch.Rest | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Namespace AuxLabs.SimpleTwitch.Rest Classes AcceptedTransport AccessTokenInfo Album Analytic AppIdentity Artist AuthorizationCondition AutomodSettings AutomodSettingsArgs Badge Ban BannedUser BitsTier BitsUser BlockedTerm Broadcast BroadcasterCondition BroadcastMarker Category CDN Channel ChannelBroadcast ChannelEditor ChannelTeam CharityCampaign CharityDonation ChatSettings Cheermote CheermoteFormat CheermoteImage CheermoteTheme Clip Commercial Contains information about the status of a commercial request. ComponentExtension Cost DefaultRateLimiter DeleteBanArgs DeleteBlockArgs DeleteBlockedTermsArgs DeleteEventSubscriptionArgs DeleteMessageArgs DeleteRaidArgs DeleteVideosArgs DropEntitlementCondition Emote Entitlement EntitlementDrop EventSub EventSub<TCondition> EventSubResponse Extension ExtensionAnalytic Contains information about an extension's analytic report. ExtensionMap ExtensionTransaction ExtensionTransactionCondition FollowCondition FollowedChannel Follower Game GameAnalytic Contains information about a game's analytic report. GetActiveExtensionsArgs GetAnalyticsArgs GetBadgesArgs GetBannedUsersArgs GetBitsLeaderboardArgs GetBlockedTermsArgs GetBlocksArgs GetBroadcastKeyArgs GetBroadcastMarkersArgs GetBroadcastsArgs GetChannelEditorsArgs GetChannelsArgs GetChannelTeamsArgs GetCharityCampaignArgs GetCharityDonationsArgs GetChatSettingsArgs GetChattersArgs GetCheermotesArgs GetClipsArgs GetCurrentTrackArgs GetDropStatusArgs GetEmotesArgs GetEmoteSetsArgs GetEventSubscriptionsArgs GetExtensionAnalyticsArgs GetExtensionTransactionsArgs GetFollowedBroadcastsArgs GetFollowedChannelsArgs GetFollowersArgs GetFollowsArgs GetGameAnalyticsArgs GetGamesArgs GetGoalsArgs GetHypeTrainsArgs GetModeratorsArgs GetPlaylistsArgs GetPlaylistTracksArgs GetPollsArgs GetPredictionsArgs GetRedemptionsArgs GetRewardArgs GetRolesArgs GetScheduleArgs GetShieldModeArgs GetSubscriberArgs GetSubscriptionsArgs GetTeamArgs GetTopGamesArgs GetUserColorArgs GetUsersArgs GetVideosArgs GetVipsArgs GlobalEmote Goal HypeTrain HypeTrainContribution HypeTrainInfo ManageModeratorArgs ManageRewardArgs ManageRolesArgs ManageSegmentArgs ManageVipArgs MockMessage ModifyRedemptionsArgs PatchChannelArgs PatchChannelBody PatchChatSettingsArgs PatchChatSettingsBody PatchDropsStatusArgs PatchPollBody PatchPredictionBody PatchScheduleArgs PatchSegmentBody Playlist Poll PollOption PostAnnouncementArgs PostAnnouncementBody PostAppAccessTokenArgs PostAutomodMessageArgs PostBanArgs PostBanBody PostBanUser PostBlockedTermArgs PostBlockedTermBody PostBroadcastMarkerBody PostClipArgs PostCommercialBody PostEnforcementStatusArgs PostEnforcementStatusBody PostEventSubscriptionBody<TCondition> PostPredictionBody PostRaidArgs PostRefreshTokenArgs PostRevokeTokenArgs PostRewardArgs PostRewardBody PostSegmentArgs PostSegmentBody PostShoutoutArgs PostUserAccessTokenArgs PostWhisperArgs PostWhisperBody Prediction PredictionOption PredictionUser ProductData PutAutomodSettingsBody PutBlockArgs PutPollBody PutShieldModeArgs PutShieldModeBody PutUserArgs PutUserChatColorArgs Raid RaidCondition Redemption RestError Reward RewardCondition Schedule ScheduleSegment SearchCategoriesArgs SearchChannelsArgs ShieldMode SimpleChatUser SimpleClip SimpleExtension SimpleSubscription SimpleTeam SimpleUser Soundtrack Subscription Team TeamUser Track TrackSource Transport TwitchIdentityApiClient A client that implements Twitch's identity api for manging access tokens. TwitchJsonSerializerOptions TwitchMetaResponse<T> An object that represents data returned by a Twitch request, but with some metadata. TwitchResponse<T> An object that represents data returned by a Twitch request. TwitchRestApiClient TwitchRestApiConfig TwitchRestException User UserCondition UserIdentity Vacation Video Structs BadgeVersion CharityAmount DateRange Pagination RateLimitInfo RewardSetting Title VideoOffset Interfaces IAgentRequest IEventCondition IPaginatedRequest Indicates that a request can be paginated. IRateLimiter IScopedRequest Indicates that a method requires special authentication to be used. ITwitchApi ITwitchIdentityApi Enums AnalyticType AnnouncementColor AutomodAction AutomodFilter BitsPeriod BlockContext BlockReason BroadcasterType BroadcastType ChatColor CheermoteType CostType DropStatus EmoteScale EmoteTheme EmoteType EventSubStatus EventSubType ExtensionType FulfillmentStatus GetUsersMode GoalType HypeTrainContributionType PollStatus PredictionColor PredictionStatus ProductType RedemptionSort TokenType TrackSourceType TransportMethod UserType VideoPeriod VideoSort VideoType"
+    "keywords": "Namespace AuxLabs.SimpleTwitch.Rest Classes AcceptedTransport AccessTokenInfo Album Analytic AppIdentity Artist AuthorizationCondition AuthorizationGrantedSubscription AuthorizationRevokedSubscription AuthorizationSubscriptionBase AutomodSettings AutomodSettingsArgs Badge Ban BannedUser BanSubscription BitsTier BitsTransactionSubscription BitsUser BlockedTerm Broadcast BroadcastEndedSubscription BroadcasterCondition BroadcasterSubscriptionBase BroadcastMarker BroadcastStartedSubscription CampaignProgressSubscription CampaignStartSubscription CampaignStopSubscription Category CDN Channel ChannelBroadcast ChannelEditor ChannelTeam ChannelUpdateSubscription CharityCampaign CharityDonation ChatSettings Cheermote CheermoteFormat CheermoteImage CheermoteTheme CheerSubscription Clip Commercial Contains information about the status of a commercial request. ComponentExtension Cost DefaultRateLimiter DeleteBanArgs DeleteBlockArgs DeleteBlockedTermsArgs DeleteEventSubscriptionArgs DeleteMessageArgs DeleteRaidArgs DeleteVideosArgs DonationSubscription DropEntitlementCondition Emote Entitlement EntitlementDrop EntitlementGrantSubscription EventSub EventSub<TCondition> EventSubResponse Extension ExtensionAnalytic Contains information about an extension's analytic report. ExtensionCondition ExtensionMap ExtensionTransaction FollowedChannel Follower FollowSubscription Game GameAnalytic Contains information about a game's analytic report. GetActiveExtensionsArgs GetAnalyticsArgs GetBadgesArgs GetBannedUsersArgs GetBitsLeaderboardArgs GetBlockedTermsArgs GetBlocksArgs GetBroadcastKeyArgs GetBroadcastMarkersArgs GetBroadcastsArgs GetChannelEditorsArgs GetChannelsArgs GetChannelTeamsArgs GetCharityCampaignArgs GetCharityDonationsArgs GetChatSettingsArgs GetChattersArgs GetCheermotesArgs GetClipsArgs GetCurrentTrackArgs GetDropStatusArgs GetEmotesArgs GetEmoteSetsArgs GetEventSubscriptionsArgs GetExtensionAnalyticsArgs GetExtensionTransactionsArgs GetFollowedBroadcastsArgs GetFollowedChannelsArgs GetFollowersArgs GetFollowsArgs GetGameAnalyticsArgs GetGamesArgs GetGoalsArgs GetHypeTrainsArgs GetModeratorsArgs GetPlaylistsArgs GetPlaylistTracksArgs GetPollsArgs GetPredictionsArgs GetRedemptionsArgs GetRewardArgs GetRolesArgs GetScheduleArgs GetShieldModeArgs GetSubscriberArgs GetSubscriptionsArgs GetTeamArgs GetTopGamesArgs GetUserColorArgs GetUsersArgs GetVideosArgs GetVipsArgs GlobalEmote Goal GoalEndSubscription GoalProgressSubscription GoalStartSubscription HypeTrain HypeTrainContribution HypetrainEndSubscription HypeTrainInfo HypetrainProgressSubscription HypetrainStartSubscription ManageModeratorArgs ManageRewardArgs ManageRolesArgs ManageSegmentArgs ManageVipArgs MockMessage ModeratorAddSubscription ModeratorCondition ModeratorRemoveSubscription ModeratorSubscriptionBase ModifyRedemptionsArgs PatchChannelArgs PatchChannelBody PatchChatSettingsArgs PatchChatSettingsBody PatchDropsStatusArgs PatchPollBody PatchPredictionBody PatchScheduleArgs PatchSegmentBody Playlist Poll PollEndSubscription PollOption PollProgressSubscription PollStartSubscription PostAnnouncementArgs PostAnnouncementBody PostAppAccessTokenArgs PostAutomodMessageArgs PostBanArgs PostBanBody PostBanUser PostBlockedTermArgs PostBlockedTermBody PostBroadcastMarkerBody PostClipArgs PostCommercialBody PostEnforcementStatusArgs PostEnforcementStatusBody PostEventSubscriptionBody<TCondition> PostPredictionBody PostRaidArgs PostRefreshTokenArgs PostRevokeTokenArgs PostRewardArgs PostRewardBody PostSegmentArgs PostSegmentBody PostShoutoutArgs PostUserAccessTokenArgs PostWhisperArgs PostWhisperBody Prediction PredictionEndSubscription PredictionLockSubscription PredictionOption PredictionProgressSubscription PredictionStartSubscription PredictionUser ProductData PutAutomodSettingsBody PutBlockArgs PutPollBody PutShieldModeArgs PutShieldModeBody PutUserArgs PutUserChatColorArgs Raid RaidCondition RaidSubscription Redemption RedemptionAddSubscription RedemptionUpdateSubscription RestError Reward RewardAddSubscription RewardCondition RewardRemoveSubscription RewardSubscriptionBase RewardUpdateSubscription Schedule ScheduleSegment SearchCategoriesArgs SearchChannelsArgs ShieldMode ShieldModeEndSubscription ShieldModeStartSubscription ShoutoutCreateSubscription SimpleChatUser SimpleClip SimpleExtension SimpleSubscription SimpleTeam SimpleUser Soundtrack SubscribeSubscription Subscription SubscriptionEndSubscription SubscriptionGiftSubscription SubscriptionMessageSubscription Team TeamUser Track TrackSource Transport TwitchIdentityApiClient A client that implements Twitch's identity api for manging access tokens. TwitchJsonSerializerOptions TwitchMetaResponse<T> An object that represents data returned by a Twitch request, but with some metadata. TwitchResponse<T> An object that represents data returned by a Twitch request. TwitchRestApiClient TwitchRestApiConfig TwitchRestException UnbanSubscription User UserCondition UserIdentity UserUpdateSubscription Vacation Video Structs BadgeVersion CharityAmount DateRange Pagination RateLimitInfo RewardSetting Title VideoOffset Interfaces IAgentRequest IEventCondition IPaginatedRequest Indicates that a request can be paginated. IRateLimiter IScopedRequest Indicates that a method requires special authentication to be used. ITwitchApi ITwitchIdentityApi Enums AnalyticType AnnouncementColor AutomodAction AutomodFilter BitsPeriod BlockContext BlockReason BroadcasterType BroadcastType ChatColor CheermoteType CostType DropStatus EmoteScale EmoteTheme EmoteType EventSubStatus EventSubType ExtensionType FulfillmentStatus GetUsersMode GoalType HypeTrainContributionType PollStatus PredictionColor PredictionStatus ProductType RaidConditionType RedemptionSort TokenType TrackSourceType TransportMethod UserType VideoPeriod VideoSort VideoType"
   },
   "api/AuxLabs.SimpleTwitch.Rest.HypeTrain.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.HypeTrain.html",
@@ -1377,17 +1457,32 @@
   "api/AuxLabs.SimpleTwitch.Rest.HypeTrainContribution.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.HypeTrainContribution.html",
     "title": "Class HypeTrainContribution | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class HypeTrainContribution Inheritance object HypeTrainContribution Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypeTrainContribution Properties Name Description Total The total amount contributed. Type The contribution method used. UserId The ID of the user that made the contribution."
+    "keywords": "Class HypeTrainContribution Inheritance object HypeTrainContribution EventSubHypetrainContribution Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypeTrainContribution Properties Name Description Total The total amount contributed. Type The contribution method used. UserId The ID of the user that made the contribution."
   },
   "api/AuxLabs.SimpleTwitch.Rest.HypeTrainContributionType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.HypeTrainContributionType.html",
     "title": "Enum HypeTrainContributionType | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum HypeTrainContributionType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum HypeTrainContributionType Fields Name Description Bits Other Subscriptions"
   },
+  "api/AuxLabs.SimpleTwitch.Rest.HypetrainEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.HypetrainEndSubscription.html",
+    "title": "Class HypetrainEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class HypetrainEndSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase HypetrainEndSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypetrainEndSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description HypetrainEndSubscription(string, string, string) HypetrainEndSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.HypeTrainInfo.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.HypeTrainInfo.html",
     "title": "Class HypeTrainInfo | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class HypeTrainInfo Inheritance object HypeTrainInfo Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypeTrainInfo Properties Name Description Data The event's data. Id An ID that identifies this event. Timestamp The UTC date and time that the event occurred. Type The type of event. Version The version number of the definition of the event’s data."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.HypetrainProgressSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.HypetrainProgressSubscription.html",
+    "title": "Class HypetrainProgressSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class HypetrainProgressSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase HypetrainProgressSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypetrainProgressSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description HypetrainProgressSubscription(string, string, string) HypetrainProgressSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.HypetrainStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.HypetrainStartSubscription.html",
+    "title": "Class HypetrainStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class HypetrainStartSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase HypetrainStartSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class HypetrainStartSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description HypetrainStartSubscription(string, string, string) HypetrainStartSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.IAgentRequest.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.IAgentRequest.html",
@@ -1454,6 +1549,26 @@
     "title": "Class MockMessage | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class MockMessage Inheritance object MockMessage Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class MockMessage Constructors Name Description MockMessage() MockMessage(string, string) Properties Name Description Id A caller-defined ID used to correlate this message with the same message in the response. IsPermitted Indicates whether Twitch would approve the message or hold it for moderator review. Text The message to check."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.ModeratorAddSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorAddSubscription.html",
+    "title": "Class ModeratorAddSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ModeratorAddSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase ModeratorAddSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ModeratorAddSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description ModeratorAddSubscription(string, string, string) ModeratorAddSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html",
+    "title": "Class ModeratorCondition | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ModeratorCondition Inheritance object BroadcasterCondition ModeratorCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ModeratorCondition : BroadcasterCondition, IEventCondition Constructors Name Description ModeratorCondition(string, string) Properties Name Description ModeratorId The ID of the moderator of the channel you want to get notifications for. Operators Name Description implicit operator (string, string)(ModeratorCondition) implicit operator ModeratorCondition(ValueTuple<string, string>)"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ModeratorRemoveSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorRemoveSubscription.html",
+    "title": "Class ModeratorRemoveSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ModeratorRemoveSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase ModeratorRemoveSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ModeratorRemoveSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description ModeratorRemoveSubscription(string, string, string) ModeratorRemoveSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ModeratorSubscriptionBase.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorSubscriptionBase.html",
+    "title": "Class ModeratorSubscriptionBase | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ModeratorSubscriptionBase Inheritance object PostEventSubscriptionBody<ModeratorCondition> ModeratorSubscriptionBase FollowSubscription ShieldModeEndSubscription ShieldModeStartSubscription ShoutoutCreateSubscription Implements IScopedRequest Inherited Members PostEventSubscriptionBody<ModeratorCondition>.Type PostEventSubscriptionBody<ModeratorCondition>.Version PostEventSubscriptionBody<ModeratorCondition>.Condition PostEventSubscriptionBody<ModeratorCondition>.Transport PostEventSubscriptionBody<ModeratorCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public abstract class ModeratorSubscriptionBase : PostEventSubscriptionBody<ModeratorCondition>, IScopedRequest Constructors Name Description ModeratorSubscriptionBase(string, string, string, string) ModeratorSubscriptionBase(string, string, string) Properties Name Description Scopes Methods Name Description Validate(IEnumerable<string>)"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ModifyRedemptionsArgs.html",
     "title": "Class ModifyRedemptionsArgs | AuxLabs.SimpleTwitch Documentation",
@@ -1519,10 +1634,25 @@
     "title": "Class Poll | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Poll Inheritance object Poll Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Poll Properties Name Description BitsPerVote Not used; will be set to 0. BroadcasterDisplayName The broadcaster’s login name. BroadcasterId An ID that identifies the broadcaster that created the poll. BroadcasterName The broadcaster’s display name. ChannelPointsPerVote The number of points the viewer must spend to cast one additional vote. Choices A list of choices that viewers can choose from. DurationSeconds The length of time that the poll will run for. EndedAt The UTC date and time of when the poll ended. Id An ID that identifies the poll. IsBitsVotingEnabled Not used; will be set to false. IsChannelPointsVotingEnabled Indicates whether viewers may cast additional votes using Channel Points. StartedAt The UTC date and time of when the poll began. Status The poll’s status. Title The question that viewers are voting on."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.PollEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PollEndSubscription.html",
+    "title": "Class PollEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PollEndSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PollEndSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PollEndSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PollEndSubscription(string, string, string) PollEndSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.PollOption.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PollOption.html",
     "title": "Class PollOption | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class PollOption Inheritance object PollOption Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PollOption Properties Name Description BitsVotes Not used; will be set to 0. ChannelPointsVotes The number of votes cast using Channel Points. Id An ID that identifies this choice. Title The choice’s title. Votes The total number of votes cast for this choice."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.PollProgressSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PollProgressSubscription.html",
+    "title": "Class PollProgressSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PollProgressSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PollProgressSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PollProgressSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PollProgressSubscription(string, string, string) PollProgressSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.PollStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PollStartSubscription.html",
+    "title": "Class PollStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PollStartSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PollStartSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PollStartSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PollStartSubscription(string, string, string) PollStartSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.PollStatus.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PollStatus.html",
@@ -1602,7 +1732,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionBody-1.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PostEventSubscriptionBody-1.html",
     "title": "Class PostEventSubscriptionBody<TCondition> | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PostEventSubscriptionBody<TCondition> Inheritance object PostEventSubscriptionBody<TCondition> Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PostEventSubscriptionBody<TCondition> where TCondition : IEventCondition Type Parameters Name Description TCondition Constructors Name Description PostEventSubscriptionBody() PostEventSubscriptionBody(string, string) PostEventSubscriptionBody(string) Properties Name Description Condition Parameter values that are specific to the specified subscription type. Transport The transport details that you want Twitch to use when sending you notifications. Type The type of subscription to create. Version The version number that identifies the definition of the subscription type that you want the response to use. Methods Name Description Validate()"
+    "keywords": "Class PostEventSubscriptionBody<TCondition> Inheritance object PostEventSubscriptionBody<TCondition> AuthorizationSubscriptionBase BitsTransactionSubscription BroadcasterSubscriptionBase ChannelUpdateSubscription EntitlementGrantSubscription ModeratorSubscriptionBase RaidSubscription RewardSubscriptionBase UserUpdateSubscription Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PostEventSubscriptionBody<TCondition> where TCondition : IEventCondition Type Parameters Name Description TCondition Constructors Name Description PostEventSubscriptionBody() PostEventSubscriptionBody(string, string) Constructor for webhook based event subscriptions PostEventSubscriptionBody(string) Constructor for websocket based event subscriptions. Properties Name Description Condition Parameter values that are specific to the specified subscription type. Transport The transport details that you want Twitch to use when sending you notifications. Type The type of subscription to create. Version The version number that identifies the definition of the subscription type that you want the response to use. Methods Name Description Validate()"
   },
   "api/AuxLabs.SimpleTwitch.Rest.PostPredictionBody.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PostPredictionBody.html",
@@ -1674,10 +1804,30 @@
     "title": "Enum PredictionColor | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum PredictionColor Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum PredictionColor Fields Name Description Blue Pink"
   },
+  "api/AuxLabs.SimpleTwitch.Rest.PredictionEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionEndSubscription.html",
+    "title": "Class PredictionEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PredictionEndSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PredictionEndSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionEndSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PredictionEndSubscription(string, string, string) PredictionEndSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.PredictionLockSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionLockSubscription.html",
+    "title": "Class PredictionLockSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PredictionLockSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PredictionLockSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionLockSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PredictionLockSubscription(string, string, string) PredictionLockSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionOption.html",
     "title": "Class PredictionOption | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class PredictionOption Inheritance object PredictionOption Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionOption Properties Name Description ChannelPointsTotal The number of Channel Points spent by viewers on this outcome. Color The color that visually identifies this outcome in the UX. Id An ID that identifies this outcome. Title The outcome’s text. TopPredictors A collection of viewers who were the top predictors Users The number of unique viewers that chose this outcome."
+    "keywords": "Class PredictionOption Inheritance object PredictionOption Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionOption Properties Name Description ChannelPointsTotal The number of Channel Points spent by viewers on this outcome. Color The color that visually identifies this outcome in the UX. Id An ID that identifies this outcome. Title The outcome’s text. TopPredictors A collection of viewers who were the top predictors UserCount The number of unique viewers that chose this outcome."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.PredictionProgressSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionProgressSubscription.html",
+    "title": "Class PredictionProgressSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PredictionProgressSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PredictionProgressSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionProgressSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PredictionProgressSubscription(string, string, string) PredictionProgressSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.PredictionStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionStartSubscription.html",
+    "title": "Class PredictionStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class PredictionStartSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase PredictionStartSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class PredictionStartSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description PredictionStartSubscription(string, string, string) PredictionStartSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.PredictionStatus.html",
@@ -1742,7 +1892,17 @@
   "api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html",
     "title": "Class RaidCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class RaidCondition Inheritance object RaidCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RaidCondition : IEventCondition Constructors Name Description RaidCondition(string, string) Properties Name Description FromBroadcasterId Optional. The broadcaster user ID that created the channel raid you want to get notifications for. ToBroadcasterId Optional. The broadcaster user ID that received the channel raid you want to get notifications for."
+    "keywords": "Class RaidCondition Inheritance object RaidCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RaidCondition : IEventCondition Constructors Name Description RaidCondition(RaidConditionType, string) Properties Name Description FromBroadcasterId Optional. The broadcaster user ID that created the channel raid you want to get notifications for. ToBroadcasterId Optional. The broadcaster user ID that received the channel raid you want to get notifications for. Operators Name Description implicit operator (RaidConditionType, string)(RaidCondition) implicit operator RaidCondition(ValueTuple<RaidConditionType, string>)"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RaidConditionType.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RaidConditionType.html",
+    "title": "Enum RaidConditionType | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Enum RaidConditionType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum RaidConditionType Fields Name Description From To"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RaidSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RaidSubscription.html",
+    "title": "Class RaidSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RaidSubscription Inheritance object PostEventSubscriptionBody<RaidCondition> RaidSubscription Inherited Members PostEventSubscriptionBody<RaidCondition>.Type PostEventSubscriptionBody<RaidCondition>.Version PostEventSubscriptionBody<RaidCondition>.Condition PostEventSubscriptionBody<RaidCondition>.Transport PostEventSubscriptionBody<RaidCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RaidSubscription : PostEventSubscriptionBody<RaidCondition> Constructors Name Description RaidSubscription(RaidConditionType, string, string, string) RaidSubscription(RaidConditionType, string, string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.RateLimitInfo.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RateLimitInfo.html",
@@ -1754,10 +1914,20 @@
     "title": "Class Redemption | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Redemption Inheritance object Redemption Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Redemption Properties Name Description BroadcasterId The ID that uniquely identifies the broadcaster. BroadcasterLogin The broadcaster’s login name. BroadcasterName The broadcaster’s display name. Id The ID that uniquely identifies this redemption. RedeemedAt The date and time of when the reward was redeemed Reward The reward that the user redeemed. Status The state of the redemption. UserId The ID that uniquely identifies the user that redeemed the reward. UserInput The text the user entered at the prompt when they redeemed the reward. UserLogin The user’s login name. UserName The user’s display name."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.RedemptionAddSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RedemptionAddSubscription.html",
+    "title": "Class RedemptionAddSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RedemptionAddSubscription Inheritance object PostEventSubscriptionBody<RewardCondition> RewardSubscriptionBase RedemptionAddSubscription Implements IScopedRequest Inherited Members RewardSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<RewardCondition>.Type PostEventSubscriptionBody<RewardCondition>.Version PostEventSubscriptionBody<RewardCondition>.Condition PostEventSubscriptionBody<RewardCondition>.Transport PostEventSubscriptionBody<RewardCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RedemptionAddSubscription : RewardSubscriptionBase, IScopedRequest Constructors Name Description RedemptionAddSubscription(string, string, string, string) RedemptionAddSubscription(string, string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.RedemptionSort.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RedemptionSort.html",
     "title": "Enum RedemptionSort | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum RedemptionSort Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum RedemptionSort Fields Name Description Newest Oldest"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RedemptionUpdateSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RedemptionUpdateSubscription.html",
+    "title": "Class RedemptionUpdateSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RedemptionUpdateSubscription Inheritance object PostEventSubscriptionBody<RewardCondition> RewardSubscriptionBase RedemptionUpdateSubscription Implements IScopedRequest Inherited Members RewardSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<RewardCondition>.Type PostEventSubscriptionBody<RewardCondition>.Version PostEventSubscriptionBody<RewardCondition>.Condition PostEventSubscriptionBody<RewardCondition>.Transport PostEventSubscriptionBody<RewardCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RedemptionUpdateSubscription : RewardSubscriptionBase, IScopedRequest Constructors Name Description RedemptionUpdateSubscription(string, string, string, string) RedemptionUpdateSubscription(string, string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.RestError.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RestError.html",
@@ -1769,15 +1939,35 @@
     "title": "Class Reward | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Reward Inheritance object SimpleReward Reward Inherited Members SimpleReward.Id SimpleReward.Title SimpleReward.Prompt SimpleReward.Cost Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Reward : SimpleReward Properties Name Description BackgroundColor The background color to use for the reward. BroadcasterId The ID that uniquely identifies the broadcaster. BroadcasterLogin The broadcaster’s login name. BroadcasterName The broadcaster’s display name. CooldownExpiresAt The timestamp of when the cooldown period expires. DefaultImages A set of default images for the reward. GlobalCooldownSetting Determines whether to apply a cooldown period between redemptions. Images A set of custom images for the reward. IsEnabled Determines whether the reward is enabled. IsInStock Determines whether the reward is currently in stock. IsPaused Determines whether the reward is currently paused. IsUserInputRequired Determines whether the user must enter information when redeeming the reward. MaxPerStreamSetting Determiness whether to apply a maximum to the number to the redemptions allowed per live stream. MaxPerUserSetting Determines whether to apply a maximum to the number of redemptions allowed per user per live stream. ShouldSkipRequestQueue Determines whether redemptions should be set to fulfilled status immediately when a reward is redeemed. TotalRedemptions The number of redemptions redeemed during the current live stream."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.RewardAddSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RewardAddSubscription.html",
+    "title": "Class RewardAddSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RewardAddSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase RewardAddSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardAddSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description RewardAddSubscription(string, string, string) RewardAddSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html",
     "title": "Class RewardCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class RewardCondition Inheritance object BroadcasterCondition RewardCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardCondition : BroadcasterCondition, IEventCondition Constructors Name Description RewardCondition(string, string) Properties Name Description RewardId Optional. Specify a reward id to only receive notifications for a specific reward."
+    "keywords": "Class RewardCondition Inheritance object BroadcasterCondition RewardCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardCondition : BroadcasterCondition, IEventCondition Constructors Name Description RewardCondition(string, string) Properties Name Description RewardId Optional. Specify a reward id to only receive notifications for a specific reward. Operators Name Description implicit operator (string, string)(RewardCondition) implicit operator RewardCondition(ValueTuple<string, string>)"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RewardRemoveSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RewardRemoveSubscription.html",
+    "title": "Class RewardRemoveSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RewardRemoveSubscription Inheritance object PostEventSubscriptionBody<RewardCondition> RewardSubscriptionBase RewardRemoveSubscription Implements IScopedRequest Inherited Members RewardSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<RewardCondition>.Type PostEventSubscriptionBody<RewardCondition>.Version PostEventSubscriptionBody<RewardCondition>.Condition PostEventSubscriptionBody<RewardCondition>.Transport PostEventSubscriptionBody<RewardCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardRemoveSubscription : RewardSubscriptionBase, IScopedRequest Constructors Name Description RewardRemoveSubscription(string, string, string, string) RewardRemoveSubscription(string, string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RewardSetting.html",
     "title": "Struct RewardSetting | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Struct RewardSetting Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public readonly struct RewardSetting Constructors Name Description RewardSetting(bool, uint) Properties Name Description IsEnabled Value"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RewardSubscriptionBase.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RewardSubscriptionBase.html",
+    "title": "Class RewardSubscriptionBase | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RewardSubscriptionBase Inheritance object PostEventSubscriptionBody<RewardCondition> RewardSubscriptionBase RedemptionAddSubscription RedemptionUpdateSubscription RewardRemoveSubscription RewardUpdateSubscription Implements IScopedRequest Inherited Members PostEventSubscriptionBody<RewardCondition>.Type PostEventSubscriptionBody<RewardCondition>.Version PostEventSubscriptionBody<RewardCondition>.Condition PostEventSubscriptionBody<RewardCondition>.Transport PostEventSubscriptionBody<RewardCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public abstract class RewardSubscriptionBase : PostEventSubscriptionBody<RewardCondition>, IScopedRequest Constructors Name Description RewardSubscriptionBase(string, string, string, string) RewardSubscriptionBase(string, string, string) Properties Name Description Scopes Methods Name Description Validate(IEnumerable<string>)"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.RewardUpdateSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.RewardUpdateSubscription.html",
+    "title": "Class RewardUpdateSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class RewardUpdateSubscription Inheritance object PostEventSubscriptionBody<RewardCondition> RewardSubscriptionBase RewardUpdateSubscription Implements IScopedRequest Inherited Members RewardSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<RewardCondition>.Type PostEventSubscriptionBody<RewardCondition>.Version PostEventSubscriptionBody<RewardCondition>.Condition PostEventSubscriptionBody<RewardCondition>.Transport PostEventSubscriptionBody<RewardCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardUpdateSubscription : RewardSubscriptionBase, IScopedRequest Constructors Name Description RewardUpdateSubscription(string, string, string, string) RewardUpdateSubscription(string, string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.Schedule.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Schedule.html",
@@ -1803,6 +1993,21 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.ShieldMode.html",
     "title": "Class ShieldMode | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class ShieldMode Inheritance object ShieldMode Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ShieldMode Properties Name Description IsActive Determines whether Shield Mode is active. LastActivatedAt The UTC timestamp of when Shield Mode was last activated. ModeratorDisplayName The moderator’s display name. ModeratorId An ID that identifies the moderator that last activated Shield Mode. ModeratorName The moderator’s login name."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ShieldModeEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ShieldModeEndSubscription.html",
+    "title": "Class ShieldModeEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ShieldModeEndSubscription Inheritance object PostEventSubscriptionBody<ModeratorCondition> ModeratorSubscriptionBase ShieldModeEndSubscription Implements IScopedRequest Inherited Members ModeratorSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<ModeratorCondition>.Type PostEventSubscriptionBody<ModeratorCondition>.Version PostEventSubscriptionBody<ModeratorCondition>.Condition PostEventSubscriptionBody<ModeratorCondition>.Transport PostEventSubscriptionBody<ModeratorCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ShieldModeEndSubscription : ModeratorSubscriptionBase, IScopedRequest Constructors Name Description ShieldModeEndSubscription(string, string, string, string) ShieldModeEndSubscription(string, string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ShieldModeStartSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ShieldModeStartSubscription.html",
+    "title": "Class ShieldModeStartSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ShieldModeStartSubscription Inheritance object PostEventSubscriptionBody<ModeratorCondition> ModeratorSubscriptionBase ShieldModeStartSubscription Implements IScopedRequest Inherited Members ModeratorSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<ModeratorCondition>.Type PostEventSubscriptionBody<ModeratorCondition>.Version PostEventSubscriptionBody<ModeratorCondition>.Condition PostEventSubscriptionBody<ModeratorCondition>.Transport PostEventSubscriptionBody<ModeratorCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ShieldModeStartSubscription : ModeratorSubscriptionBase, IScopedRequest Constructors Name Description ShieldModeStartSubscription(string, string, string, string) ShieldModeStartSubscription(string, string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.ShoutoutCreateSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.ShoutoutCreateSubscription.html",
+    "title": "Class ShoutoutCreateSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class ShoutoutCreateSubscription Inheritance object PostEventSubscriptionBody<ModeratorCondition> ModeratorSubscriptionBase ShoutoutCreateSubscription Implements IScopedRequest Inherited Members ModeratorSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<ModeratorCondition>.Type PostEventSubscriptionBody<ModeratorCondition>.Version PostEventSubscriptionBody<ModeratorCondition>.Condition PostEventSubscriptionBody<ModeratorCondition>.Transport PostEventSubscriptionBody<ModeratorCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ShoutoutCreateSubscription : ModeratorSubscriptionBase, IScopedRequest Constructors Name Description ShoutoutCreateSubscription(string, string, string, string) ShoutoutCreateSubscription(string, string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.SimpleChatUser.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.SimpleChatUser.html",
@@ -1839,10 +2044,30 @@
     "title": "Class Soundtrack | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Soundtrack Inheritance object Soundtrack Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Soundtrack Properties Name Description Source The source of the track that’s currently playing. Track Describes a track."
   },
+  "api/AuxLabs.SimpleTwitch.Rest.SubscribeSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.SubscribeSubscription.html",
+    "title": "Class SubscribeSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class SubscribeSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase SubscribeSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class SubscribeSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description SubscribeSubscription(string, string, string) SubscribeSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.Subscription.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Subscription.html",
     "title": "Class Subscription | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class Subscription Inheritance object SimpleSubscription Subscription Inherited Members SimpleSubscription.BroadcasterId SimpleSubscription.BroadcasterName SimpleSubscription.BroadcasterDisplayName SimpleSubscription.GifterId SimpleSubscription.GifterName SimpleSubscription.GifterDisplayName SimpleSubscription.IsGift SimpleSubscription.Tier Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class Subscription : SimpleSubscription Properties Name Description PlanName The name of the subscription. UserDisplayName The user’s display name. UserId An ID that identifies the subscribing user. UserName The user’s login name."
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.SubscriptionEndSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.SubscriptionEndSubscription.html",
+    "title": "Class SubscriptionEndSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class SubscriptionEndSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase SubscriptionEndSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class SubscriptionEndSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description SubscriptionEndSubscription(string, string, string) SubscriptionEndSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.SubscriptionGiftSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.SubscriptionGiftSubscription.html",
+    "title": "Class SubscriptionGiftSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class SubscriptionGiftSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase SubscriptionGiftSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class SubscriptionGiftSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description SubscriptionGiftSubscription(string, string, string) SubscriptionGiftSubscription(string, string) Properties Name Description Scopes"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.SubscriptionMessageSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.SubscriptionMessageSubscription.html",
+    "title": "Class SubscriptionMessageSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class SubscriptionMessageSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase SubscriptionMessageSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class SubscriptionMessageSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description SubscriptionMessageSubscription(string, string, string) SubscriptionMessageSubscription(string, string) Properties Name Description Scopes"
   },
   "api/AuxLabs.SimpleTwitch.Rest.Team.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Team.html",
@@ -1924,6 +2149,11 @@
     "title": "Class TwitchRestException | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Class TwitchRestException Inheritance object TwitchException TwitchRestException Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class TwitchRestException : TwitchException Constructors Name Description TwitchRestException(HttpStatusCode, int?, string) Properties Name Description Code HttpCode Reason"
   },
+  "api/AuxLabs.SimpleTwitch.Rest.UnbanSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.UnbanSubscription.html",
+    "title": "Class UnbanSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class UnbanSubscription Inheritance object PostEventSubscriptionBody<BroadcasterCondition> BroadcasterSubscriptionBase UnbanSubscription Implements IScopedRequest Inherited Members BroadcasterSubscriptionBase.Validate(IEnumerable<string>) PostEventSubscriptionBody<BroadcasterCondition>.Type PostEventSubscriptionBody<BroadcasterCondition>.Version PostEventSubscriptionBody<BroadcasterCondition>.Condition PostEventSubscriptionBody<BroadcasterCondition>.Transport PostEventSubscriptionBody<BroadcasterCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UnbanSubscription : BroadcasterSubscriptionBase, IScopedRequest Constructors Name Description UnbanSubscription(string, string, string) UnbanSubscription(string, string) Properties Name Description Scopes"
+  },
   "api/AuxLabs.SimpleTwitch.Rest.User.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.User.html",
     "title": "Class User | AuxLabs.SimpleTwitch Documentation",
@@ -1932,7 +2162,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.UserCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.UserCondition.html",
     "title": "Class UserCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class UserCondition Inheritance object UserCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UserCondition : IEventCondition Constructors Name Description UserCondition() UserCondition(string) Properties Name Description UserId The user ID for the user you want notifications for."
+    "keywords": "Class UserCondition Inheritance object UserCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UserCondition : IEventCondition Constructors Name Description UserCondition(string) Properties Name Description UserId The user ID for the user you want notifications for. Operators Name Description implicit operator string(UserCondition) implicit operator UserCondition(string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.UserIdentity.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.UserIdentity.html",
@@ -1943,6 +2173,11 @@
     "href": "api/AuxLabs.SimpleTwitch.Rest.UserType.html",
     "title": "Enum UserType | AuxLabs.SimpleTwitch Documentation",
     "keywords": "Enum UserType Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public enum UserType Fields Name Description Admin GlobalModerator None Staff"
+  },
+  "api/AuxLabs.SimpleTwitch.Rest.UserUpdateSubscription.html": {
+    "href": "api/AuxLabs.SimpleTwitch.Rest.UserUpdateSubscription.html",
+    "title": "Class UserUpdateSubscription | AuxLabs.SimpleTwitch Documentation",
+    "keywords": "Class UserUpdateSubscription Inheritance object PostEventSubscriptionBody<UserCondition> UserUpdateSubscription Inherited Members PostEventSubscriptionBody<UserCondition>.Type PostEventSubscriptionBody<UserCondition>.Version PostEventSubscriptionBody<UserCondition>.Condition PostEventSubscriptionBody<UserCondition>.Transport PostEventSubscriptionBody<UserCondition>.Validate() Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UserUpdateSubscription : PostEventSubscriptionBody<UserCondition> Constructors Name Description UserUpdateSubscription(string, string, string) UserUpdateSubscription(string, string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.Vacation.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.Vacation.html",
