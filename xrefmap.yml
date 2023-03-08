@@ -10836,6 +10836,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.AuthorizationCondition
   fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition
   nameWithType: AuthorizationCondition
+- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.#ctor
+  name: AuthorizationCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.html#AuxLabs_SimpleTwitch_Rest_AuthorizationCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.AuthorizationCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.New()
+  nameWithType: AuthorizationCondition.AuthorizationCondition()
+  nameWithType.vb: AuthorizationCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.#ctor(System.String)
   name: AuthorizationCondition(string)
   href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.html#AuxLabs_SimpleTwitch_Rest_AuthorizationCondition__ctor_System_String_
@@ -12207,6 +12216,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.BroadcasterCondition
   fullName: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition
   nameWithType: BroadcasterCondition
+- uid: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.#ctor
+  name: BroadcasterCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html#AuxLabs_SimpleTwitch_Rest_BroadcasterCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.BroadcasterCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.New()
+  nameWithType: BroadcasterCondition.BroadcasterCondition()
+  nameWithType.vb: BroadcasterCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.#ctor(System.String)
   name: BroadcasterCondition(string)
   href: api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html#AuxLabs_SimpleTwitch_Rest_BroadcasterCondition__ctor_System_String_
@@ -14991,6 +15009,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition
   fullName: AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition
   nameWithType: DropEntitlementCondition
+- uid: AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.#ctor
+  name: DropEntitlementCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html#AuxLabs_SimpleTwitch_Rest_DropEntitlementCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.DropEntitlementCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.New()
+  nameWithType: DropEntitlementCondition.DropEntitlementCondition()
+  nameWithType.vb: DropEntitlementCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.#ctor(System.String,System.String,System.String)
   name: DropEntitlementCondition(string, string, string)
   href: api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html#AuxLabs_SimpleTwitch_Rest_DropEntitlementCondition__ctor_System_String_System_String_System_String_
@@ -16055,6 +16082,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.ExtensionCondition
   fullName: AuxLabs.SimpleTwitch.Rest.ExtensionCondition
   nameWithType: ExtensionCondition
+- uid: AuxLabs.SimpleTwitch.Rest.ExtensionCondition.#ctor
+  name: ExtensionCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html#AuxLabs_SimpleTwitch_Rest_ExtensionCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ExtensionCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.ExtensionCondition.ExtensionCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ExtensionCondition.New()
+  nameWithType: ExtensionCondition.ExtensionCondition()
+  nameWithType.vb: ExtensionCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.ExtensionCondition.#ctor(System.String)
   name: ExtensionCondition(string)
   href: api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html#AuxLabs_SimpleTwitch_Rest_ExtensionCondition__ctor_System_String_
@@ -24525,6 +24561,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.ModeratorCondition
   fullName: AuxLabs.SimpleTwitch.Rest.ModeratorCondition
   nameWithType: ModeratorCondition
+- uid: AuxLabs.SimpleTwitch.Rest.ModeratorCondition.#ctor
+  name: ModeratorCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html#AuxLabs_SimpleTwitch_Rest_ModeratorCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ModeratorCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.ModeratorCondition.ModeratorCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ModeratorCondition.New()
+  nameWithType: ModeratorCondition.ModeratorCondition()
+  nameWithType.vb: ModeratorCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.ModeratorCondition.#ctor(System.String,System.String)
   name: ModeratorCondition(string, string)
   href: api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html#AuxLabs_SimpleTwitch_Rest_ModeratorCondition__ctor_System_String_System_String_
@@ -29938,6 +29983,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.RaidCondition
   fullName: AuxLabs.SimpleTwitch.Rest.RaidCondition
   nameWithType: RaidCondition
+- uid: AuxLabs.SimpleTwitch.Rest.RaidCondition.#ctor
+  name: RaidCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html#AuxLabs_SimpleTwitch_Rest_RaidCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.RaidCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.RaidCondition.RaidCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.RaidCondition.New()
+  nameWithType: RaidCondition.RaidCondition()
+  nameWithType.vb: RaidCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.RaidCondition.#ctor(AuxLabs.SimpleTwitch.Rest.RaidConditionType,System.String)
   name: RaidCondition(RaidConditionType, string)
   href: api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html#AuxLabs_SimpleTwitch_Rest_RaidCondition__ctor_AuxLabs_SimpleTwitch_Rest_RaidConditionType_System_String_
@@ -30719,6 +30773,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.RewardCondition
   fullName: AuxLabs.SimpleTwitch.Rest.RewardCondition
   nameWithType: RewardCondition
+- uid: AuxLabs.SimpleTwitch.Rest.RewardCondition.#ctor
+  name: RewardCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html#AuxLabs_SimpleTwitch_Rest_RewardCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.RewardCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.RewardCondition.RewardCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.RewardCondition.New()
+  nameWithType: RewardCondition.RewardCondition()
+  nameWithType.vb: RewardCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.RewardCondition.#ctor(System.String,System.String)
   name: RewardCondition(string, string)
   href: api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html#AuxLabs_SimpleTwitch_Rest_RewardCondition__ctor_System_String_System_String_
@@ -34675,6 +34738,15 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.Rest.UserCondition
   fullName: AuxLabs.SimpleTwitch.Rest.UserCondition
   nameWithType: UserCondition
+- uid: AuxLabs.SimpleTwitch.Rest.UserCondition.#ctor
+  name: UserCondition()
+  href: api/AuxLabs.SimpleTwitch.Rest.UserCondition.html#AuxLabs_SimpleTwitch_Rest_UserCondition__ctor
+  commentId: M:AuxLabs.SimpleTwitch.Rest.UserCondition.#ctor
+  name.vb: New()
+  fullName: AuxLabs.SimpleTwitch.Rest.UserCondition.UserCondition()
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.UserCondition.New()
+  nameWithType: UserCondition.UserCondition()
+  nameWithType.vb: UserCondition.New()
 - uid: AuxLabs.SimpleTwitch.Rest.UserCondition.#ctor(System.String)
   name: UserCondition(string)
   href: api/AuxLabs.SimpleTwitch.Rest.UserCondition.html#AuxLabs_SimpleTwitch_Rest_UserCondition__ctor_System_String_

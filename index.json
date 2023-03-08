@@ -702,7 +702,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.AuthorizationCondition.html",
     "title": "Class AuthorizationCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class AuthorizationCondition Inheritance object AuthorizationCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class AuthorizationCondition : IEventCondition Constructors Name Description AuthorizationCondition(string) Properties Name Description ClientId Your application's client id. Operators Name Description implicit operator string(AuthorizationCondition) implicit operator AuthorizationCondition(string)"
+    "keywords": "Class AuthorizationCondition Inheritance object AuthorizationCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class AuthorizationCondition : IEventCondition Constructors Name Description AuthorizationCondition() AuthorizationCondition(string) Properties Name Description ClientId Your application's client id. Operators Name Description implicit operator string(AuthorizationCondition) implicit operator AuthorizationCondition(string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html",
@@ -812,7 +812,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html",
     "title": "Class BroadcasterCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class BroadcasterCondition Inheritance object BroadcasterCondition ModeratorCondition RewardCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcasterCondition : IEventCondition Constructors Name Description BroadcasterCondition(string) Properties Name Description BroadcasterId The broadcaster user ID of the channel for which notifications will be received. Operators Name Description implicit operator string(BroadcasterCondition) implicit operator BroadcasterCondition(string)"
+    "keywords": "Class BroadcasterCondition Inheritance object BroadcasterCondition ModeratorCondition RewardCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class BroadcasterCondition : IEventCondition Constructors Name Description BroadcasterCondition() BroadcasterCondition(string) Properties Name Description BroadcasterId The broadcaster user ID of the channel for which notifications will be received. Operators Name Description implicit operator string(BroadcasterCondition) implicit operator BroadcasterCondition(string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.BroadcasterSubscriptionBase.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.BroadcasterSubscriptionBase.html",
@@ -1022,7 +1022,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.DropEntitlementCondition.html",
     "title": "Class DropEntitlementCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class DropEntitlementCondition Inheritance object DropEntitlementCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DropEntitlementCondition : IEventCondition Constructors Name Description DropEntitlementCondition(string, string, string) Properties Name Description CampaignId Optional. The campaign ID for a specific campaign for which notifications will be received. CategoryId Optional. The category (or game) ID of the game for which notifications will be received. OrganizationId The organization ID of the organization that owns the game on the developer portal. Operators Name Description implicit operator (string, string, string)(DropEntitlementCondition) implicit operator DropEntitlementCondition(ValueTuple<string, string, string>)"
+    "keywords": "Class DropEntitlementCondition Inheritance object DropEntitlementCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class DropEntitlementCondition : IEventCondition Constructors Name Description DropEntitlementCondition() DropEntitlementCondition(string, string, string) Properties Name Description CampaignId Optional. The campaign ID for a specific campaign for which notifications will be received. CategoryId Optional. The category (or game) ID of the game for which notifications will be received. OrganizationId The organization ID of the organization that owns the game on the developer portal. Operators Name Description implicit operator (string, string, string)(DropEntitlementCondition) implicit operator DropEntitlementCondition(ValueTuple<string, string, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.DropStatus.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.DropStatus.html",
@@ -1102,7 +1102,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionCondition.html",
     "title": "Class ExtensionCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ExtensionCondition Inheritance object ExtensionCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionCondition : IEventCondition Constructors Name Description ExtensionCondition(string) Properties Name Description ClientId The client ID of the extension. Operators Name Description implicit operator string(ExtensionCondition) implicit operator ExtensionCondition(string)"
+    "keywords": "Class ExtensionCondition Inheritance object ExtensionCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ExtensionCondition : IEventCondition Constructors Name Description ExtensionCondition() ExtensionCondition(string) Properties Name Description ClientId The client ID of the extension. Operators Name Description implicit operator string(ExtensionCondition) implicit operator ExtensionCondition(string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.ExtensionMap.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ExtensionMap.html",
@@ -1557,7 +1557,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorCondition.html",
     "title": "Class ModeratorCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class ModeratorCondition Inheritance object BroadcasterCondition ModeratorCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ModeratorCondition : BroadcasterCondition, IEventCondition Constructors Name Description ModeratorCondition(string, string) Properties Name Description ModeratorId The ID of the moderator of the channel you want to get notifications for. Operators Name Description implicit operator (string, string)(ModeratorCondition) implicit operator ModeratorCondition(ValueTuple<string, string>)"
+    "keywords": "Class ModeratorCondition Inheritance object BroadcasterCondition ModeratorCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class ModeratorCondition : BroadcasterCondition, IEventCondition Constructors Name Description ModeratorCondition() ModeratorCondition(string, string) Properties Name Description ModeratorId The ID of the moderator of the channel you want to get notifications for. Operators Name Description implicit operator (string, string)(ModeratorCondition) implicit operator ModeratorCondition(ValueTuple<string, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.ModeratorRemoveSubscription.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.ModeratorRemoveSubscription.html",
@@ -1892,7 +1892,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RaidCondition.html",
     "title": "Class RaidCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class RaidCondition Inheritance object RaidCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RaidCondition : IEventCondition Constructors Name Description RaidCondition(RaidConditionType, string) Properties Name Description FromBroadcasterId Optional. The broadcaster user ID that created the channel raid you want to get notifications for. ToBroadcasterId Optional. The broadcaster user ID that received the channel raid you want to get notifications for. Operators Name Description implicit operator (RaidConditionType, string)(RaidCondition) implicit operator RaidCondition(ValueTuple<RaidConditionType, string>)"
+    "keywords": "Class RaidCondition Inheritance object RaidCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RaidCondition : IEventCondition Constructors Name Description RaidCondition() RaidCondition(RaidConditionType, string) Properties Name Description FromBroadcasterId Optional. The broadcaster user ID that created the channel raid you want to get notifications for. ToBroadcasterId Optional. The broadcaster user ID that received the channel raid you want to get notifications for. Operators Name Description implicit operator (RaidConditionType, string)(RaidCondition) implicit operator RaidCondition(ValueTuple<RaidConditionType, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.RaidConditionType.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RaidConditionType.html",
@@ -1947,7 +1947,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RewardCondition.html",
     "title": "Class RewardCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class RewardCondition Inheritance object BroadcasterCondition RewardCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardCondition : BroadcasterCondition, IEventCondition Constructors Name Description RewardCondition(string, string) Properties Name Description RewardId Optional. Specify a reward id to only receive notifications for a specific reward. Operators Name Description implicit operator (string, string)(RewardCondition) implicit operator RewardCondition(ValueTuple<string, string>)"
+    "keywords": "Class RewardCondition Inheritance object BroadcasterCondition RewardCondition Implements IEventCondition Inherited Members BroadcasterCondition.BroadcasterId Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class RewardCondition : BroadcasterCondition, IEventCondition Constructors Name Description RewardCondition() RewardCondition(string, string) Properties Name Description RewardId Optional. Specify a reward id to only receive notifications for a specific reward. Operators Name Description implicit operator (string, string)(RewardCondition) implicit operator RewardCondition(ValueTuple<string, string>)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.RewardRemoveSubscription.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.RewardRemoveSubscription.html",
@@ -2162,7 +2162,7 @@
   "api/AuxLabs.SimpleTwitch.Rest.UserCondition.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.UserCondition.html",
     "title": "Class UserCondition | AuxLabs.SimpleTwitch Documentation",
-    "keywords": "Class UserCondition Inheritance object UserCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UserCondition : IEventCondition Constructors Name Description UserCondition(string) Properties Name Description UserId The user ID for the user you want notifications for. Operators Name Description implicit operator string(UserCondition) implicit operator UserCondition(string)"
+    "keywords": "Class UserCondition Inheritance object UserCondition Implements IEventCondition Namespace: AuxLabs.SimpleTwitch.Rest Assembly: AuxLabs.SimpleTwitch.Rest.dll Syntax public class UserCondition : IEventCondition Constructors Name Description UserCondition() UserCondition(string) Properties Name Description UserId The user ID for the user you want notifications for. Operators Name Description implicit operator string(UserCondition) implicit operator UserCondition(string)"
   },
   "api/AuxLabs.SimpleTwitch.Rest.UserIdentity.html": {
     "href": "api/AuxLabs.SimpleTwitch.Rest.UserIdentity.html",
