@@ -1,19 +1,17 @@
-﻿using System;
-
-namespace AuxLabs.SimpleTwitch.Rest
+﻿namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class BroadcastStartedSubscription : BroadcasterSubscriptionBase
+    public class BroadcastStartedSubscription : PostEventSubscriptionBody<BroadcasterCondition>
     {
-        public override string[] Scopes { get; } = Array.Empty<string>();
-
         public BroadcastStartedSubscription(string channelId, string sessionId)
-            : base(channelId, sessionId) => SetProperties();
-        public BroadcastStartedSubscription(string channelId, string callback, string secret)
-            : base(channelId, callback, secret) => SetProperties();
+            : base(sessionId) => SetProperties(channelId);
+        public BroadcastStartedSubscription(string channelId, string callbackUrl, string secret)
+            : base(callbackUrl, secret) => SetProperties(channelId);
 
-        private void SetProperties()
+        private void SetProperties(string channelId)
         {
             Type = EventSubType.StreamOnline;
+            Version = "1";
+            Condition = channelId;
         }
     }
 }
