@@ -10930,19 +10930,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.New
   nameWithType: AuthorizationGrantedSubscription.AuthorizationGrantedSubscription
   nameWithType.vb: AuthorizationGrantedSubscription.New
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html#AuxLabs_SimpleTwitch_Rest_AuthorizationGrantedSubscription_Scopes
-  commentId: P:AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes
-  nameWithType: AuthorizationGrantedSubscription.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes*
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.html#AuxLabs_SimpleTwitch_Rest_AuthorizationGrantedSubscription_Scopes_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationGrantedSubscription.Scopes
-  nameWithType: AuthorizationGrantedSubscription.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription
   name: AuthorizationRevokedSubscription
   href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.html
@@ -10977,19 +10964,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.New
   nameWithType: AuthorizationRevokedSubscription.AuthorizationRevokedSubscription
   nameWithType.vb: AuthorizationRevokedSubscription.New
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.html#AuxLabs_SimpleTwitch_Rest_AuthorizationRevokedSubscription_Scopes
-  commentId: P:AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes
-  nameWithType: AuthorizationRevokedSubscription.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes*
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.html#AuxLabs_SimpleTwitch_Rest_AuthorizationRevokedSubscription_Scopes_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationRevokedSubscription.Scopes
-  nameWithType: AuthorizationRevokedSubscription.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase
   name: AuthorizationSubscriptionBase
   href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html
@@ -11024,35 +10998,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.New
   nameWithType: AuthorizationSubscriptionBase.AuthorizationSubscriptionBase
   nameWithType.vb: AuthorizationSubscriptionBase.New
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html#AuxLabs_SimpleTwitch_Rest_AuthorizationSubscriptionBase_Scopes
-  commentId: P:AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes
-  nameWithType: AuthorizationSubscriptionBase.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes*
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html#AuxLabs_SimpleTwitch_Rest_AuthorizationSubscriptionBase_Scopes_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Scopes
-  nameWithType: AuthorizationSubscriptionBase.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate(IEnumerable{System.String})
-  name: Validate(IEnumerable<string>)
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html#AuxLabs_SimpleTwitch_Rest_AuthorizationSubscriptionBase_Validate_IEnumerable_System_String__
-  commentId: M:AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate(IEnumerable{System.String})
-  name.vb: Validate(IEnumerable(Of String))
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate(IEnumerable<string>)
-  fullName.vb: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate(IEnumerable(Of String))
-  nameWithType: AuthorizationSubscriptionBase.Validate(IEnumerable<string>)
-  nameWithType.vb: AuthorizationSubscriptionBase.Validate(IEnumerable(Of String))
-- uid: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate*
-  name: Validate
-  href: api/AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.html#AuxLabs_SimpleTwitch_Rest_AuthorizationSubscriptionBase_Validate_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.AuthorizationSubscriptionBase.Validate
-  nameWithType: AuthorizationSubscriptionBase.Validate
 - uid: AuxLabs.SimpleTwitch.Rest.AutomodAction
   name: AutomodAction
   href: api/AuxLabs.SimpleTwitch.Rest.AutomodAction.html
@@ -12256,19 +12201,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.New
   nameWithType: BroadcastEndedSubscription.BroadcastEndedSubscription
   nameWithType.vb: BroadcastEndedSubscription.New
-- uid: AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.html#AuxLabs_SimpleTwitch_Rest_BroadcastEndedSubscription_Scopes
-  commentId: P:AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes
-  fullName: AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes
-  nameWithType: BroadcastEndedSubscription.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes*
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.html#AuxLabs_SimpleTwitch_Rest_BroadcastEndedSubscription_Scopes_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.BroadcastEndedSubscription.Scopes
-  nameWithType: BroadcastEndedSubscription.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.BroadcasterCondition
   name: BroadcasterCondition
   href: api/AuxLabs.SimpleTwitch.Rest.BroadcasterCondition.html
@@ -12514,19 +12446,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.New
   nameWithType: BroadcastStartedSubscription.BroadcastStartedSubscription
   nameWithType.vb: BroadcastStartedSubscription.New
-- uid: AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.html#AuxLabs_SimpleTwitch_Rest_BroadcastStartedSubscription_Scopes
-  commentId: P:AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes
-  fullName: AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes
-  nameWithType: BroadcastStartedSubscription.Scopes
-- uid: AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes*
-  name: Scopes
-  href: api/AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.html#AuxLabs_SimpleTwitch_Rest_BroadcastStartedSubscription_Scopes_
-  commentId: Overload:AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Rest.BroadcastStartedSubscription.Scopes
-  nameWithType: BroadcastStartedSubscription.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.BroadcastType
   name: BroadcastType
   href: api/AuxLabs.SimpleTwitch.Rest.BroadcastType.html
