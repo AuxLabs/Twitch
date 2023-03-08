@@ -348,9 +348,14 @@ namespace AuxLabs.SimpleTwitch.Rest
         #region EventSub
 
         /// <inheritdoc/>
-        public Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition> args) where TCondition : IEventCondition
+        public Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition> args) 
+            where TCondition : IEventCondition
         {
-            args.Validate();
+            if (args is IScopedRequest scoped)
+                CheckPermissions(scoped);
+            else
+                args.Validate();
+
             return _api.PostEventSubscriptionAsync(args);
         }
         /// <inheritdoc/>

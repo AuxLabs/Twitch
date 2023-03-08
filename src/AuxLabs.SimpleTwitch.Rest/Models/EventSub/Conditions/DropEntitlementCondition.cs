@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
@@ -28,5 +29,11 @@ namespace AuxLabs.SimpleTwitch.Rest
             CategoryId = categoryId;
             CampaignId = campaignId;
         }
+
+
+        public static implicit operator (string, string, string)(DropEntitlementCondition value) 
+            => (value.OrganizationId, value.CategoryId, value.CampaignId);
+        public static implicit operator DropEntitlementCondition(ValueTuple<string, string, string> value) 
+            => new DropEntitlementCondition(value.Item1, value.Item2, value.Item3);
     }
 }

@@ -22,6 +22,11 @@ namespace AuxLabs.SimpleTwitch.Rest
         public Transport Transport { get; set; }
 
         public PostEventSubscriptionBody() { }
+
+        /// <summary>
+        ///     Constructor for websocket based event subscriptions.
+        /// </summary>
+        /// <param name="sessionId"> The session id of the websocket instance. </param>
         public PostEventSubscriptionBody(string sessionId)
         {
             Transport = new Transport
@@ -30,12 +35,18 @@ namespace AuxLabs.SimpleTwitch.Rest
                 SessionId = sessionId
             };
         }
-        public PostEventSubscriptionBody(string callback, string secret)
+
+        /// <summary>
+        ///     Constructor for webhook based event subscriptions
+        /// </summary>
+        /// <param name="callbackUrl"> The callback URL where the notifications are sent. </param>
+        /// <param name="secret"> The secret used to verify the event signature. </param>
+        public PostEventSubscriptionBody(string callbackUrl, string secret)
         {
             Transport = new Transport
             {
                 Method = TransportMethod.Webhook,
-                Callback = callback,
+                Callback = callbackUrl,
                 Secret = secret
             };
         }
