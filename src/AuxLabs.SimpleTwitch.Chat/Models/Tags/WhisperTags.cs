@@ -6,22 +6,22 @@ namespace AuxLabs.SimpleTwitch.Chat
     public class WhisperTags : BaseTags
     {
         /// <summary> An ID that uniquely identifies the message. </summary>
-        public string Id { get; internal set; }
+        public string MessageId { get; internal set; }
 
         /// <summary> An ID that uniquely identifies the whisper thread. </summary>
         public string ThreadId { get; internal set; }
 
         /// <summary> The ID of the user that sent the message. </summary>
-        public string UserId { get; internal set; }
-
-        /// <summary> The type of user. </summary>
-        public UserType UserType { get; internal set; }
+        public string AuthorId { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
-        public string UserDisplayName { get; internal set; }
+        public string AuthorDisplayName { get; internal set; }
 
         /// <summary> The color of the user’s name in the chat room. </summary>
-        public Color Color { get; internal set; }
+        public Color AuthorColor { get; internal set; }
+
+        /// <summary> The type of user. </summary>
+        public UserType AuthorType { get; internal set; }
 
         /// <summary> A collection of badges the user has. </summary>
         public IReadOnlyCollection<Badge> Badges { get; internal set; }
@@ -39,12 +39,12 @@ namespace AuxLabs.SimpleTwitch.Chat
         {
             var map = new Dictionary<string, string>
             {
-                ["message-id"] = Id,
+                ["message-id"] = MessageId,
                 ["thread-id"] = ThreadId,
-                ["user-id"] = UserId,
-                ["user-type"] = EnumHelper.GetStringValue(UserType),
-                ["display-name"] = UserDisplayName,
-                ["color"] = ColorTranslator.ToHtml(Color),
+                ["user-id"] = AuthorId,
+                ["user-type"] = EnumHelper.GetStringValue(AuthorType),
+                ["display-name"] = AuthorDisplayName,
+                ["color"] = ColorTranslator.ToHtml(AuthorColor),
                 ["badges"] = string.Join(',', Badges),
                 ["emotes"] = Emotes != null ? string.Join(',', Emotes) : Action,
                 ["turbo"] = IsTurbo ? "1" : "0"
@@ -54,17 +54,17 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
         {
             if (map.TryGetValue("message-id", out string str))
-                Id = str;
+                MessageId = str;
             if (map.TryGetValue("thread-id", out str))
                 ThreadId = str;
             if (map.TryGetValue("user-id", out str))
-                UserId = str;
+                AuthorId = str;
             if (map.TryGetValue("user-type", out str))
-                UserType = EnumHelper.GetEnumValue<UserType>(str);
+                AuthorType = EnumHelper.GetEnumValue<UserType>(str);
             if (map.TryGetValue("display-name", out str))
-                UserDisplayName = str;
+                AuthorDisplayName = str;
             if (map.TryGetValue("color", out str))
-                Color = ColorTranslator.FromHtml(str);
+                AuthorColor = ColorTranslator.FromHtml(str);
             if (map.TryGetValue("badges", out str))
             {
                 if (Badge.TryParseMany(str, out var badges))

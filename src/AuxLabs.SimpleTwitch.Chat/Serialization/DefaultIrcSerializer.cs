@@ -40,7 +40,10 @@ namespace AuxLabs.SimpleTwitch.Chat
                 {
                     var notice = EnumHelper.GetEnumValue<UserNoticeType>(tags["msg-id"]);
                     if (IrcPayload.UserNoticeTypeSelector.TryGetValue(notice, out var noticeType))
-                        payload.Tags = (UserNoticeTags)Activator.CreateInstance(noticeType);
+                    {
+                        var constructed = type.MakeGenericType(noticeType);
+                        payload.Tags = (UserNoticeTags)Activator.CreateInstance(constructed);
+                    }
                     else
                         payload.Tags = (UserNoticeTags)Activator.CreateInstance(type);
                 }

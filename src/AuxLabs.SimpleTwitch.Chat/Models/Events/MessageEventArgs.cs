@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class MessageEventArgs
+    public class MessageEventArgs : IChatMessage
     {
         /// <summary> If special characters are present, emote indices will be incorrect. </summary>
         public readonly bool ContainsSpecialCharacters;
@@ -29,5 +31,34 @@ namespace AuxLabs.SimpleTwitch.Chat
                 args.Tags = (MessageTags)payload.Tags;
             return args;
         }
+
+        DateTimeOffset IChatMessage.Timestamp => Tags.Timestamp;
+        string IChatMessage.ChannelId => Tags.ChannelId;
+        string IChatMessage.BadgeInfo => Tags.BadgeInfo;
+        string IChatMessage.Nonce => Tags.Nonce;
+        string IChatMessage.CustomRewardId => Tags.CustomRewardId;
+        string IChatMessage.ReplyMessageId => Tags.ReplyMessageId;
+        string IChatMessage.ReplyMessageContent => Tags.ReplyMessageContent;
+        string IChatMessage.ReplyAuthorId => Tags.ReplyAuthorId;
+        string IChatMessage.ReplyAuthorName => Tags.ReplyAuthorName;
+        string IChatMessage.ReplyAuthorDisplayName => Tags.ReplyAuthorDisplayName;
+        int IChatMessage.BitsAmount => Tags.BitsAmount;
+        bool IChatMessage.IsModerator => Tags.IsModerator;
+        bool IChatMessage.IsSubscriber => Tags.IsSubscriber;
+        bool IChatMessage.IsVip => Tags.IsVIP;
+        bool IChatMessage.IsFirstMessage => Tags.IsFirstMessage;
+        bool IChatMessage.IsEmoteOnly => Tags.IsEmoteOnly;
+        MessageType IChatMessage.MessageType => Tags.MessageType;
+        string IMessage.Id => Tags.MessageId;
+        string IMessage.AuthorId => Tags.AuthorId;
+        string IMessage.AuthorName => Tags.AuthorName;
+        string IMessage.AuthorDisplayName => Tags.AuthorDisplayName;
+        string IMessage.Content => Message;
+        string IMessage.Action => Tags.Action;
+        bool IMessage.IsTurbo => Tags.IsTurbo;
+        Color IMessage.AuthorColor => Tags.AuthorColor;
+        UserType IMessage.AuthorType => Tags.AuthorType;
+        IReadOnlyCollection<Badge> IMessage.Badges => Tags.Badges;
+        IReadOnlyCollection<EmotePosition> IMessage.Emotes => Tags.Emotes;
     }
 }

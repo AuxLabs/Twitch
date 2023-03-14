@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class WhisperEventArgs
+    public class WhisperEventArgs : IWhisperMessage
     {
         public WhisperTags Tags { get; internal set; }
         public string SenderName { get; internal set; }
@@ -24,5 +25,18 @@ namespace AuxLabs.SimpleTwitch.Chat
                 args.Tags = (WhisperTags)payload.Tags;
             return args;
         }
+
+        string IWhisperMessage.ThreadId => Tags.ThreadId;
+        string IMessage.Id => Tags.MessageId;
+        string IMessage.AuthorId => Tags.AuthorId;
+        string IMessage.AuthorName => SenderName;
+        string IMessage.AuthorDisplayName => Tags.AuthorDisplayName;
+        UserType IMessage.AuthorType => Tags.AuthorType;
+        Color IMessage.AuthorColor => Tags.AuthorColor;
+        string IMessage.Content => Message;
+        string IMessage.Action => Tags.Action;
+        bool IMessage.IsTurbo => Tags.IsTurbo;
+        IReadOnlyCollection<Badge> IMessage.Badges => Tags.Badges;
+        IReadOnlyCollection<EmotePosition> IMessage.Emotes => Tags.Emotes;
     }
 }
