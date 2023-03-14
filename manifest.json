@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.IChatMessage.html",
-          "hash": "UrNHqBIuP83/mU+BK9n11vL7f27RfE+RIi91yDOR7/Y="
+          "hash": "wBfv9qXRwtY9lBFOrgb/fY6PcXITJRO4v5n+oHpN0Hg="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.IMessage.html",
-          "hash": "0FrfOzbdKOfJ8lcSqBljSMFQfpCvNCoynF8odR1MnrQ="
+          "hash": "rdjliCllcIJkzIMVkWiqQNMO26e+JarrWC3b7mp24S4="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.IUserNoticeMessage.html",
-          "hash": "BF1xR6aHoVWCX3Qm6KHSFiD/ObQYIzPLr4IWVq6xwcs="
+          "hash": "KMcdOHGL4PQFP7u3Vw4I3szBywMzYOpN8CjgKGoCkpU="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.IWhisperMessage.html",
-          "hash": "pk4sUJJiW7x85XMvRUqoIS0Tr/z8n8UirdQ37h/kUcQ="
+          "hash": "3934szF1BGIotsyqRtqOkg2LEXNO5+ovHp/t23zx/Og="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html",
-          "hash": "0GWkubzbkLKOl0xddFWj69DVG6HWRRdva5/7hWT587I="
+          "hash": "FvaSezYjL3ynJH90jiTm3tkkhJj50SOp2oacBhoqWK8="
         }
       },
       "is_incremental": false,
@@ -522,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html",
-          "hash": "E0yXUVuJkbFqP7rYhm3X05ZtLdC3YJammhIaMBJcchg="
+          "hash": "y010TYCRfw08+aJOiSyAn2dCOQjA/Y3PWeti0VRMsEs="
         }
       },
       "is_incremental": false,
@@ -594,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html",
-          "hash": "byGSzdc1Q3IFE4gCpsTrbjvB9NRXM6rIsPD+6ZfIL7E="
+          "hash": "iVYvB8LaEcfRus/4z4j45shHues+pr5KHiNnGGEZKdQ="
         }
       },
       "is_incremental": false,

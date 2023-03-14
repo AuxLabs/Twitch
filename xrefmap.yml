@@ -1120,19 +1120,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
   nameWithType: IMessage.Emotes
-- uid: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Chat.IMessage.html#AuxLabs_SimpleTwitch_Chat_IMessage_Id
-  commentId: P:AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: IMessage.Id
-- uid: AuxLabs.SimpleTwitch.Chat.IMessage.Id*
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.Chat.IMessage.html#AuxLabs_SimpleTwitch_Chat_IMessage_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: IMessage.Id
 - uid: AuxLabs.SimpleTwitch.Chat.IMessage.IsTurbo
   name: IsTurbo
   href: api/AuxLabs.SimpleTwitch.Chat.IMessage.html#AuxLabs_SimpleTwitch_Chat_IMessage_IsTurbo
@@ -2294,23 +2281,6 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
   nameWithType: MessageEventArgs.IMessage.Emotes
   nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
-- uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id
-  commentId: P:AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: MessageEventArgs.IMessage.Id
-  nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-- uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id*
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  isSpec: "True"
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: MessageEventArgs.IMessage.Id
-  nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
 - uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#IsTurbo
   name: IMessage.IsTurbo
   href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_IsTurbo
@@ -2328,6 +2298,24 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.IsTurbo
   nameWithType: MessageEventArgs.IMessage.IsTurbo
   nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.IsTurbo
+- uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id
+  commentId: P:AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: MessageEventArgs.IEntity<string>.Id
+  nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+- uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id*
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: MessageEventArgs.IEntity<string>.Id
+  nameWithType.vb: MessageEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
 - uid: AuxLabs.SimpleTwitch.Chat.MessageEventArgs.ChannelName
   name: ChannelName
   href: api/AuxLabs.SimpleTwitch.Chat.MessageEventArgs.html#AuxLabs_SimpleTwitch_Chat_MessageEventArgs_ChannelName
@@ -4950,23 +4938,6 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
   nameWithType: UserNoticeEventArgs.IMessage.Emotes
   nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
-- uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id
-  commentId: P:AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: UserNoticeEventArgs.IMessage.Id
-  nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-- uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id*
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  isSpec: "True"
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: UserNoticeEventArgs.IMessage.Id
-  nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
 - uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#IsTurbo
   name: IMessage.IsTurbo
   href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_IsTurbo
@@ -5018,6 +4989,24 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IUserNoticeMessage.SystemMessage
   nameWithType: UserNoticeEventArgs.IUserNoticeMessage.SystemMessage
   nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.Chat.IUserNoticeMessage.SystemMessage
+- uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id
+  commentId: P:AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: UserNoticeEventArgs.IEntity<string>.Id
+  nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+- uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id*
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: UserNoticeEventArgs.IEntity<string>.Id
+  nameWithType.vb: UserNoticeEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
 - uid: AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.ChannelName
   name: ChannelName
   href: api/AuxLabs.SimpleTwitch.Chat.UserNoticeEventArgs.html#AuxLabs_SimpleTwitch_Chat_UserNoticeEventArgs_ChannelName
@@ -5561,23 +5550,6 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
   nameWithType: WhisperEventArgs.IMessage.Emotes
   nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Emotes
-- uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id
-  commentId: P:AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: WhisperEventArgs.IMessage.Id
-  nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-- uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id*
-  name: IMessage.Id
-  href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#Id
-  isSpec: "True"
-  name.vb: AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
-  nameWithType: WhisperEventArgs.IMessage.Id
-  nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IMessage.Id
 - uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#Chat#IMessage#IsTurbo
   name: IMessage.IsTurbo
   href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_AuxLabs_SimpleTwitch_Chat_IMessage_IsTurbo
@@ -5612,6 +5584,24 @@ references:
   fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IWhisperMessage.ThreadId
   nameWithType: WhisperEventArgs.IWhisperMessage.ThreadId
   nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.Chat.IWhisperMessage.ThreadId
+- uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id
+  commentId: P:AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: WhisperEventArgs.IEntity<string>.Id
+  nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+- uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id*
+  name: IEntity<string>.Id
+  href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_AuxLabs_SimpleTwitch_IEntity_System_String__Id_
+  commentId: Overload:AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs#SimpleTwitch#IEntity{System#String}#Id
+  name.vb: AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  fullName: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<string>.Id
+  fullName.vb: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
+  nameWithType: WhisperEventArgs.IEntity<string>.Id
+  nameWithType.vb: WhisperEventArgs.AuxLabs.SimpleTwitch.IEntity<System.String>.Id
 - uid: AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.Create(AuxLabs.SimpleTwitch.Chat.IrcPayload)
   name: Create(IrcPayload)
   href: api/AuxLabs.SimpleTwitch.Chat.WhisperEventArgs.html#AuxLabs_SimpleTwitch_Chat_WhisperEventArgs_Create_AuxLabs_SimpleTwitch_Chat_IrcPayload_
