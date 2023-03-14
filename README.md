@@ -99,29 +99,29 @@ For examples and sample projects look at [the examples repository](https://githu
 - [ ] WebHook client
 - [x] Automatic heartbeat
 - [x] Automatic reconnection
-- [ ] Handle all available events
-  - [ ] Followers
-  - [ ] Subscriptions
-  - [ ] Bits Cheered
-  - [ ] Raids
-  - [ ] User Banned
-  - [ ] User Unbanned
-  - [ ] Moderators
-  - [ ] Rewards
-  - [ ] Redemptions
-  - [ ] Polls
-  - [ ] Predictions
-  - [ ] Charity Donations
-  - [ ] Charity Campaigns
-  - [ ] Drops Entitlements
-  - [ ] Extension Bits Transactions
-  - [ ] Goals
-  - [ ] Hype Trains
-  - [ ] Shield Mode
-  - [ ] Shoutouts
-  - [ ] Stream Status
-  - [ ] Authorization Granted/Revoked
-  - [ ] User Updated
+- [x] Handle all available events
+  - [x] Followers
+  - [x] Subscriptions
+  - [x] Bits Cheered
+  - [x] Raids
+  - [x] User Banned
+  - [x] User Unbanned
+  - [x] Moderators
+  - [x] Rewards
+  - [x] Redemptions
+  - [x] Polls
+  - [x] Predictions
+  - [x] Charity Donations
+  - [x] Charity Campaigns
+  - [x] Drops Entitlements
+  - [x] Extension Bits Transactions
+  - [x] Goals
+  - [x] Hype Trains
+  - [x] Shield Mode
+  - [x] Shoutouts
+  - [x] Stream Status
+  - [x] Authorization Granted/Revoked
+  - [x] User Updated
     
     
 </details>
