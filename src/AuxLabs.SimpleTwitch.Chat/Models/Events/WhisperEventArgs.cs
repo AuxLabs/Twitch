@@ -27,7 +27,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         }
 
         string IWhisperMessage.ThreadId => Tags.ThreadId;
-        string IMessage.Id => Tags.MessageId;
         string IMessage.AuthorId => Tags.AuthorId;
         string IMessage.AuthorName => SenderName;
         string IMessage.AuthorDisplayName => Tags.AuthorDisplayName;
@@ -38,5 +37,6 @@ namespace AuxLabs.SimpleTwitch.Chat
         bool IMessage.IsTurbo => Tags.IsTurbo;
         IReadOnlyCollection<Badge> IMessage.Badges => Tags.Badges;
         IReadOnlyCollection<EmotePosition> IMessage.Emotes => Tags.Emotes;
+        string IEntity<string>.Id => Tags.MessageId;
     }
 }

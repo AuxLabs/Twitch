@@ -49,7 +49,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         bool IChatMessage.IsFirstMessage => Tags.IsFirstMessage;
         bool IChatMessage.IsEmoteOnly => Tags.IsEmoteOnly;
         MessageType IChatMessage.MessageType => Tags.MessageType;
-        string IMessage.Id => Tags.MessageId;
+        string IEntity<string>.Id => Tags.MessageId;
         string IMessage.AuthorId => Tags.AuthorId;
         string IMessage.AuthorName => Tags.AuthorName;
         string IMessage.AuthorDisplayName => Tags.AuthorDisplayName;

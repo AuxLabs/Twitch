@@ -3,9 +3,8 @@ using System.Drawing;
 
 namespace AuxLabs.SimpleTwitch.Chat
 {
-    public interface IMessage
+    public interface IMessage : IEntity<string>
     {
-        string Id { get; }
         string AuthorId { get; }
         string AuthorName { get; }
         string AuthorDisplayName { get; }
