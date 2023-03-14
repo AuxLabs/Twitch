@@ -51,7 +51,7 @@ namespace AuxLabs.SimpleTwitch.Chat
         MessageType IChatMessage.MessageType => Tags.MessageType;
         string IEntity<string>.Id => Tags.MessageId;
         string IMessage.AuthorId => Tags.AuthorId;
-        string IMessage.AuthorName => Tags.AuthorName;
+        string IMessage.AuthorName => UserName;
         string IMessage.AuthorDisplayName => Tags.AuthorDisplayName;
         string IMessage.Content => Message;
         string IMessage.Action => Tags.Action;
