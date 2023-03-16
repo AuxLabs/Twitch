@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.SimpleTwitch.Rest
 {
-    internal class ShoutoutReceiveSubscription : ModeratorSubscriptionBase
+    public class ShoutoutReceiveSubscription : ModeratorSubscriptionBase
     {
         public override string[] Scopes { get; } = { "moderator:read:shoutouts", "moderator:manage:shoutouts" };
 
