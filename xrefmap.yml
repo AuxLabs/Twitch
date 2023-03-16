@@ -33225,6 +33225,53 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutCreateSubscription.Scopes
   nameWithType: ShoutoutCreateSubscription.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription
+  name: ShoutoutReceiveSubscription
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription
+  nameWithType: ShoutoutReceiveSubscription
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor(System.String,System.String,System.String,System.String)
+  name: ShoutoutReceiveSubscription(string, string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html#AuxLabs_SimpleTwitch_Rest_ShoutoutReceiveSubscription__ctor_System_String_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor(System.String,System.String,System.String,System.String)
+  name.vb: New(String, String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.ShoutoutReceiveSubscription(string, string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.New(String, String, String, String)
+  nameWithType: ShoutoutReceiveSubscription.ShoutoutReceiveSubscription(string, string, string, string)
+  nameWithType.vb: ShoutoutReceiveSubscription.New(String, String, String, String)
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor(System.String,System.String,System.String)
+  name: ShoutoutReceiveSubscription(string, string, string)
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html#AuxLabs_SimpleTwitch_Rest_ShoutoutReceiveSubscription__ctor_System_String_System_String_System_String_
+  commentId: M:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.ShoutoutReceiveSubscription(string, string, string)
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.New(String, String, String)
+  nameWithType: ShoutoutReceiveSubscription.ShoutoutReceiveSubscription(string, string, string)
+  nameWithType.vb: ShoutoutReceiveSubscription.New(String, String, String)
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor*
+  name: ShoutoutReceiveSubscription
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html#AuxLabs_SimpleTwitch_Rest_ShoutoutReceiveSubscription__ctor_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.ShoutoutReceiveSubscription
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.New
+  nameWithType: ShoutoutReceiveSubscription.ShoutoutReceiveSubscription
+  nameWithType.vb: ShoutoutReceiveSubscription.New
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html#AuxLabs_SimpleTwitch_Rest_ShoutoutReceiveSubscription_Scopes
+  commentId: P:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes
+  nameWithType: ShoutoutReceiveSubscription.Scopes
+- uid: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes*
+  name: Scopes
+  href: api/AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.html#AuxLabs_SimpleTwitch_Rest_ShoutoutReceiveSubscription_Scopes_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.ShoutoutReceiveSubscription.Scopes
+  nameWithType: ShoutoutReceiveSubscription.Scopes
 - uid: AuxLabs.SimpleTwitch.Rest.SimpleChatUser
   name: SimpleChatUser
   href: api/AuxLabs.SimpleTwitch.Rest.SimpleChatUser.html
