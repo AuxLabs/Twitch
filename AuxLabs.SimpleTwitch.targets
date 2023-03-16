@@ -22,8 +22,8 @@
 	</PropertyGroup>
 	
 	<PropertyGroup Condition=" '$(BuildNumber)' != ''">
-		<VersionSuffix Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
-		<VersionSuffix Condition=" '$(VersionSuffix)' == '' ">build-$(BuildNumber)</VersionSuffix>
+		<VersionSuffix Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix).$(BuildNumber)</VersionSuffix>
+		<VersionSuffix Condition=" '$(VersionSuffix)' == '' ">build.$(BuildNumber)</VersionSuffix>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
