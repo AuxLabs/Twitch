@@ -7571,129 +7571,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.EventSub.EventSubPayload(Of TEvent).Subscription
   nameWithType: EventSubPayload<TEvent>.Subscription
   nameWithType.vb: EventSubPayload(Of TEvent).Subscription
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription
-  name: EventSubscription
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html
-  commentId: T:AuxLabs.SimpleTwitch.EventSub.EventSubscription
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription
-  nameWithType: EventSubscription
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition
-  name: Condition
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Condition
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition
-  nameWithType: EventSubscription.Condition
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition*
-  name: Condition
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Condition_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Condition
-  nameWithType: EventSubscription.Condition
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Cost
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost
-  nameWithType: EventSubscription.Cost
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost*
-  name: Cost
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Cost_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Cost
-  nameWithType: EventSubscription.Cost
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt
-  name: CreatedAt
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_CreatedAt
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt
-  nameWithType: EventSubscription.CreatedAt
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt*
-  name: CreatedAt
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_CreatedAt_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.CreatedAt
-  nameWithType: EventSubscription.CreatedAt
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Id
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id
-  nameWithType: EventSubscription.Id
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id*
-  name: Id
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Id_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Id
-  nameWithType: EventSubscription.Id
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status
-  name: Status
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Status
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status
-  nameWithType: EventSubscription.Status
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status*
-  name: Status
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Status_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Status
-  nameWithType: EventSubscription.Status
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport
-  name: Transport
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Transport
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport
-  nameWithType: EventSubscription.Transport
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport*
-  name: Transport
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Transport_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Transport
-  nameWithType: EventSubscription.Transport
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type
-  name: Type
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Type
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type
-  nameWithType: EventSubscription.Type
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type*
-  name: Type
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Type_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Type
-  nameWithType: EventSubscription.Type
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw
-  name: TypeRaw
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_TypeRaw
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw
-  nameWithType: EventSubscription.TypeRaw
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw*
-  name: TypeRaw
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_TypeRaw_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.TypeRaw
-  nameWithType: EventSubscription.TypeRaw
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version
-  name: Version
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Version
-  commentId: P:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version
-  nameWithType: EventSubscription.Version
-- uid: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version*
-  name: Version
-  href: api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html#AuxLabs_SimpleTwitch_EventSub_EventSubscription_Version_
-  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version
-  isSpec: "True"
-  fullName: AuxLabs.SimpleTwitch.EventSub.EventSubscription.Version
-  nameWithType: EventSubscription.Version
 - uid: AuxLabs.SimpleTwitch.EventSub.EventSubWebSocketPayload
   name: EventSubWebSocketPayload
   href: api/AuxLabs.SimpleTwitch.EventSub.EventSubWebSocketPayload.html
@@ -10067,6 +9944,12 @@ references:
   commentId: E:AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShieldModeStarted
   fullName: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShieldModeStarted
   nameWithType: TwitchEventSubApiClient.ShieldModeStarted
+- uid: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShouldHandleNotificationEvents
+  name: ShouldHandleNotificationEvents
+  href: api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.html#AuxLabs_SimpleTwitch_EventSub_TwitchEventSubApiClient_ShouldHandleNotificationEvents
+  commentId: F:AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShouldHandleNotificationEvents
+  fullName: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShouldHandleNotificationEvents
+  nameWithType: TwitchEventSubApiClient.ShouldHandleNotificationEvents
 - uid: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.ShoutoutCreated
   name: ShoutoutCreated
   href: api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.html#AuxLabs_SimpleTwitch_EventSub_TwitchEventSubApiClient_ShoutoutCreated
@@ -10133,6 +10016,19 @@ references:
   commentId: T:AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig
   fullName: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig
   nameWithType: TwitchEventSubConfig
+- uid: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents
+  name: ShouldHandleNotificationEvents
+  href: api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.html#AuxLabs_SimpleTwitch_EventSub_TwitchEventSubConfig_ShouldHandleNotificationEvents
+  commentId: P:AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents
+  fullName: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents
+  nameWithType: TwitchEventSubConfig.ShouldHandleNotificationEvents
+- uid: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents*
+  name: ShouldHandleNotificationEvents
+  href: api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.html#AuxLabs_SimpleTwitch_EventSub_TwitchEventSubConfig_ShouldHandleNotificationEvents_
+  commentId: Overload:AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ShouldHandleNotificationEvents
+  nameWithType: TwitchEventSubConfig.ShouldHandleNotificationEvents
 - uid: AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.ThrowOnUnknownEvent
   name: ThrowOnUnknownEvent
   href: api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.html#AuxLabs_SimpleTwitch_EventSub_TwitchEventSubConfig_ThrowOnUnknownEvent
@@ -17039,12 +16935,6 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.EntitlementGrantSubscription.New
   nameWithType: EntitlementGrantSubscription.EntitlementGrantSubscription
   nameWithType.vb: EntitlementGrantSubscription.New
-- uid: AuxLabs.SimpleTwitch.Rest.EventSub
-  name: EventSub
-  href: api/AuxLabs.SimpleTwitch.Rest.EventSub.html
-  commentId: T:AuxLabs.SimpleTwitch.Rest.EventSub
-  fullName: AuxLabs.SimpleTwitch.Rest.EventSub
-  nameWithType: EventSub
 - uid: AuxLabs.SimpleTwitch.Rest.EventSub`1
   name: EventSub<TCondition>
   href: api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html
@@ -17173,6 +17063,23 @@ references:
   fullName.vb: AuxLabs.SimpleTwitch.Rest.EventSub(Of TCondition).Type
   nameWithType: EventSub<TCondition>.Type
   nameWithType.vb: EventSub(Of TCondition).Type
+- uid: AuxLabs.SimpleTwitch.Rest.EventSub`1.TypeRaw
+  name: TypeRaw
+  href: api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html#AuxLabs_SimpleTwitch_Rest_EventSub_1_TypeRaw
+  commentId: P:AuxLabs.SimpleTwitch.Rest.EventSub`1.TypeRaw
+  fullName: AuxLabs.SimpleTwitch.Rest.EventSub<TCondition>.TypeRaw
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.EventSub(Of TCondition).TypeRaw
+  nameWithType: EventSub<TCondition>.TypeRaw
+  nameWithType.vb: EventSub(Of TCondition).TypeRaw
+- uid: AuxLabs.SimpleTwitch.Rest.EventSub`1.TypeRaw*
+  name: TypeRaw
+  href: api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html#AuxLabs_SimpleTwitch_Rest_EventSub_1_TypeRaw_
+  commentId: Overload:AuxLabs.SimpleTwitch.Rest.EventSub`1.TypeRaw
+  isSpec: "True"
+  fullName: AuxLabs.SimpleTwitch.Rest.EventSub<TCondition>.TypeRaw
+  fullName.vb: AuxLabs.SimpleTwitch.Rest.EventSub(Of TCondition).TypeRaw
+  nameWithType: EventSub<TCondition>.TypeRaw
+  nameWithType.vb: EventSub(Of TCondition).TypeRaw
 - uid: AuxLabs.SimpleTwitch.Rest.EventSub`1.Version
   name: Version
   href: api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html#AuxLabs_SimpleTwitch_Rest_EventSub_1_Version
@@ -17248,6 +17155,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.SimpleTwitch.Rest.EventSubResponse.TotalCost
   nameWithType: EventSubResponse.TotalCost
+- uid: AuxLabs.SimpleTwitch.Rest.EventSubscription
+  name: EventSubscription
+  href: api/AuxLabs.SimpleTwitch.Rest.EventSubscription.html
+  commentId: T:AuxLabs.SimpleTwitch.Rest.EventSubscription
+  fullName: AuxLabs.SimpleTwitch.Rest.EventSubscription
+  nameWithType: EventSubscription
 - uid: AuxLabs.SimpleTwitch.Rest.EventSubStatus
   name: EventSubStatus
   href: api/AuxLabs.SimpleTwitch.Rest.EventSubStatus.html

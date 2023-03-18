@@ -926,18 +926,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.SimpleTwitch.EventSub.EventSubscription.html",
-          "hash": "4rHYzAPnelMIiQ6gtVw+c3wMO2B2xhKK1FecgdqeOFs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.SimpleTwitch.EventSub.GlobalCooldownSetting.yml",
       "output": {
         ".html": {
@@ -1242,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubApiClient.html",
-          "hash": "676WOCNC3A20sblzh77b5v0+aSPQTQCZRC64wzHk6EY="
+          "hash": "b0rozyZkscr1ZZh9ucUEIs1UWlELrDuG4VngcDYGt/8="
         }
       },
       "is_incremental": false,
@@ -1254,7 +1242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.EventSub.TwitchEventSubConfig.html",
-          "hash": "ywg2VgesmXW3s+KjWMFU/7kgoXb25jzr5uPDArfgMgU="
+          "hash": "jf787fNZm5IJuC9mLkgTX62wOKaiHOxnvwVP8xI7aC0="
         }
       },
       "is_incremental": false,
@@ -1314,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.EventSub.html",
-          "hash": "g0sUFPGAjs8FEsoevi8R1E0Bs+3Y1Bz+A/j7LXyRiUs="
+          "hash": "GWdH8xM5HMycjHJUf47aY8pxzUCv125802i+n8JMUZc="
         }
       },
       "is_incremental": false,
@@ -2622,19 +2610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html",
-          "hash": "GQL6slK7HR1Vig9Y9l051BYLSO7pHvHJgWz515dfmBI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSub.html",
-          "hash": "+XDKOoDNsk1zO/Vlq0NKGXmCZ7mn2d206rZJ+in8Bjs="
+          "hash": "qVvzhIAfHYbrmWT3L8Gi6Z8EJN+jiWEAVzAeGqkIAW8="
         }
       },
       "is_incremental": false,
@@ -2646,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubResponse.html",
-          "hash": "wZIVMUh7QlRTdrmQ2PW7UGzNxwA8Ke1jjgmGTo/8lXI="
+          "hash": "GbwuEUABKMIR3/XGwXRey6dW3SqtVugwOZdBSaaeIk8="
         }
       },
       "is_incremental": false,
@@ -2671,6 +2647,18 @@
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubType.html",
           "hash": "nC4GCP56qGjT2PoqgFplTUdFezUtqkv1god5R28v6Oo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription.html",
+          "hash": "R31ePuao47dCLXa3pFM076dXWzyWvyP0UPyEaetvkO0="
         }
       },
       "is_incremental": false,
@@ -5370,7 +5358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.html",
-          "hash": "UUI+YtNtvHBAyOc3ITdhkSoh9qvr9CZlAWP3wzqzTW8="
+          "hash": "bUQBZrMQFV1qz/gOfga90MnBCDeSG++/uI9rWZBiKnM="
         }
       },
       "is_incremental": false,
@@ -5574,7 +5562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qvIypaCWGcUpIM1v2yJElsu07ZiZLW07rC6WtKRiihg="
+          "hash": "UmfLfLKZao5PoCuu6otq2OQlsCGmNs0xzS2DUJ5Hy/U="
         }
       },
       "is_incremental": false,
@@ -5745,7 +5733,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 462,
+          "total_file_count": 461,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
