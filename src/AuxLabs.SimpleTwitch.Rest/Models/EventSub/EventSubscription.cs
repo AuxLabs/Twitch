@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EventSub : EventSub<IEventCondition> { }
+    public class EventSubscription : EventSub<IEventCondition> { }
     public class EventSub<TCondition> where TCondition : IEventCondition
     {
         /// <summary> An ID that identifies the subscription. </summary>
@@ -14,9 +14,12 @@ namespace AuxLabs.SimpleTwitch.Rest
         [JsonInclude, JsonPropertyName("status")]
         public EventSubStatus Status { get; internal set; }
 
-        /// <summary> The subscription’s type. </summary>
+        /// <summary> The notification’s subscription type in raw string form. </summary>
         [JsonInclude, JsonPropertyName("type")]
-        public EventSubType Type { get; internal set; }
+        public string TypeRaw { get; internal set; }
+
+        /// <summary> The subscription’s type. </summary>
+        public EventSubType Type => EnumHelper.GetEnumValue<EventSubType>(TypeRaw);
 
         /// <summary> The version number that identifies this definition of the subscription’s data. </summary>
         [JsonInclude, JsonPropertyName("version")]

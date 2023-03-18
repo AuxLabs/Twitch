@@ -2,7 +2,7 @@
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EventSubResponse : TwitchResponse<EventSub>
+    public class EventSubResponse : TwitchResponse<EventSubscription>
     {
         /// <summary> The total number of subscriptions you’ve created. </summary>
         [JsonInclude, JsonPropertyName("total")]
