@@ -126,6 +126,7 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
         // config variables
         public readonly bool ThrowOnUnknownEvent;
+        public readonly bool ShouldHandleNotificationEvents;
 
         protected override ISerializer<EventSubFrame> Serializer { get; }
 
@@ -139,6 +140,8 @@ namespace AuxLabs.SimpleTwitch.EventSub
 
             _url = url;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
+            ShouldHandleNotificationEvents = config.ShouldHandleNotificationEvents;
+
             Serializer = new JsonSerializer<EventSubFrame>(TwitchJsonSerializerOptions.Default);
         }
 
@@ -169,6 +172,9 @@ namespace AuxLabs.SimpleTwitch.EventSub
                     break;
 
                 case MessageType.Notification:
+                    if (!ShouldHandleNotificationEvents)
+                        return;
+
                     var eventType = EventSubPayload.EventTypeSelector.SingleOrDefault(x => x.Key == frame.Payload.Subscription.Type).Value;
                     frame.Payload.Event = JsonSerializer.Deserialize((JsonElement)frame.Payload.Event, eventType);
 
