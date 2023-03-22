@@ -3,8 +3,8 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.SimpleTwitch.Rest
 {
-    public class EventSubscription : EventSub<IEventCondition> { }
-    public class EventSub<TCondition> where TCondition : IEventCondition
+    public class EventSubscription : EventSubscription<IEventCondition> { }
+    public class EventSubscription<TCondition> where TCondition : IEventCondition
     {
         /// <summary> An ID that identifies the subscription. </summary>
         [JsonInclude, JsonPropertyName("id")]
