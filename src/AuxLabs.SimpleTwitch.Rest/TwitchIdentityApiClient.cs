@@ -1,8 +1,7 @@
 ﻿using RestEase;
 using System;
 using System.Net.Http;
-using System.Text.Json.Serialization;
-using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -58,25 +57,25 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
 
         /// <summary> Get an app identity using the provided app credentials. </summary>
-        public async Task<AppIdentity> ValidateAsync()
+        public async Task<AppIdentity> ValidateAsync(CancellationToken? cancelToken = null)
         {
             Identity = await PostAccessTokenAsync(new PostAppAccessTokenArgs
             {
                 ClientId = ClientId,
                 ClientSecret = ClientSecret
-            });
+            }, cancelToken);
             return Identity;
         }
 
         /// <summary> Get information relating to a user access token </summary>
-        public Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken)
+        public Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken, CancellationToken? cancelToken = null)
         {
             RefreshToken = refreshToken;
-            return ValidateAsync(token);
+            return ValidateAsync(token, cancelToken);
         }
 
         /// <summary> Get information relating to a user access token </summary>
-        public async Task<AccessTokenInfo> ValidateAsync(string token)
+        public async Task<AccessTokenInfo> ValidateAsync(string token, CancellationToken? cancelToken = null)
         {
             Require.NotNullOrWhitespace(token, nameof(token));
 
@@ -109,19 +108,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         }
 
         /// <summary> Revoke an access token that is no longer needed </summary>
-        public Task RevokeTokenAsync(PostRevokeTokenArgs args)
+        public Task RevokeTokenAsync(PostRevokeTokenArgs args, CancellationToken? cancelToken = null)
             => _api.RevokeTokenAsync(Fill(args));
 
         /// <summary> Refresh an expired user access token </summary>
-        public Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args)
+        public Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args, CancellationToken? cancelToken = null)
             => _api.PostRefreshTokenAsync((PostRefreshTokenArgs)Fill(args));
 
         /// <summary> Get an access token that identifies you as the specified application </summary>
-        public Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args)
+        public Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args, CancellationToken? cancelToken = null)
             => _api.PostAccessTokenAsync(Fill(args));
 
         /// <summary> Get an access token that identifies you as the specified user </summary>
-        public Task<UserIdentity> PostAccessTokenAsync(PostUserAccessTokenArgs args)
+        public Task<UserIdentity> PostAccessTokenAsync(PostUserAccessTokenArgs args, CancellationToken? cancelToken = null)
             => _api.PostAccessTokenAsync((PostUserAccessTokenArgs)Fill(args));
 
         private PostAppAccessTokenArgs Fill(PostAppAccessTokenArgs args)

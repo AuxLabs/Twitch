@@ -1,6 +1,7 @@
 ﻿using RestEase;
 using System;
 using System.Net.Http.Headers;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Rest
@@ -22,7 +23,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("channels/commercial")]
-        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostCommercialBody args);
+        Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostCommercialBody args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Analytics
@@ -34,7 +35,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("analytics/extensions")]
-        Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsArgs args);
+        Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync([QueryMap] GetExtensionAnalyticsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files). </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -43,7 +44,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("analytics/games")]
-        Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsArgs args);
+        Task<TwitchMetaResponse<GameAnalytic>> GetGameAnalyticsAsync([QueryMap] GetGameAnalyticsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Bits
@@ -55,19 +56,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("bits/leaderboard")]
-        Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardArgs args);
+        Task<TwitchMetaResponse<BitsUser>> GetBitsLeaderboardAsync([QueryMap] GetBitsLeaderboardArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel. </summary>
         /// <returns> A collection of <see cref="Cheermote"/> objects. </returns>
         [Get("bits/cheermotes")]
-        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([QueryMap] GetCheermotesArgs args = null);
+        Task<TwitchResponse<Cheermote>> GetCheermotesAsync([QueryMap] GetCheermotesArgs args = null, CancellationToken? cancelToken = null);
 
         /// <summary> Gets an extension’s list of transactions. </summary>
         /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see>. </remarks>
         /// <returns> A collection of <see cref="ExtensionTransaction"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("extensions/transactions")]
-        Task<TwitchMetaResponse<ExtensionTransaction>> GetExtensionTransactionsAsync([QueryMap] GetExtensionTransactionsArgs args);
+        Task<TwitchMetaResponse<ExtensionTransaction>> GetExtensionTransactionsAsync([QueryMap] GetExtensionTransactionsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Channels
@@ -76,7 +77,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Channel"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 404 Not Found </exception>
         [Get("channels")]
-        Task<TwitchResponse<Channel>> GetChannelsAsync([QueryMap] GetChannelsArgs args);
+        Task<TwitchResponse<Channel>> GetChannelsAsync([QueryMap] GetChannelsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates a channel’s properties. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -84,7 +85,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("channels")]
-        Task PatchChannelAsync([QueryMap] PatchChannelArgs args, [Body] PatchChannelBody body);
+        Task PatchChannelAsync([QueryMap] PatchChannelArgs args, [Body] PatchChannelBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list editors. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -93,7 +94,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channels/editors")]
-        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([QueryMap] GetChannelEditorsArgs args);
+        Task<TwitchResponse<ChannelEditor>> GetChannelEditorsAsync([QueryMap] GetChannelEditorsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of broadcasters that the specified user follows. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -102,7 +103,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channels/followed")]
-        Task<TwitchMetaResponse<FollowedChannel>> GetFollowedChannelsAsync([QueryMap] GetFollowedChannelsArgs args);
+        Task<TwitchMetaResponse<FollowedChannel>> GetFollowedChannelsAsync([QueryMap] GetFollowedChannelsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of users that follow the specified broadcaster. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -111,7 +112,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channels/followed")]
-        Task<TwitchMetaResponse<Follower>> GetFollowersAsync([QueryMap] GetFollowersArgs args);
+        Task<TwitchMetaResponse<Follower>> GetFollowersAsync([QueryMap] GetFollowersArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Channel Points
@@ -123,7 +124,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("channel_points/custom_rewards")]
-        Task<TwitchResponse<Reward>> PostRewardsAsync([QueryMap] PostRewardArgs args, [Body] PostRewardBody body);
+        Task<TwitchResponse<Reward>> PostRewardsAsync([QueryMap] PostRewardArgs args, [Body] PostRewardBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -131,7 +132,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("channel_points/custom_rewards")]
-        Task DeleteRewardAsync([QueryMap] ManageRewardArgs args);
+        Task DeleteRewardAsync([QueryMap] ManageRewardArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of custom rewards that the specified broadcaster created. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -140,7 +141,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channel_points/custom_rewards")]
-        Task<TwitchResponse<Reward>> GetRewardsAsync([QueryMap] GetRewardArgs args);
+        Task<TwitchResponse<Reward>> GetRewardsAsync([QueryMap] GetRewardArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of redemptions for the specified custom reward. Only the app that created a reward is able to see it's redemptions. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -149,7 +150,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channel_points/custom_rewards/redemptions")]
-        Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync([QueryMap] GetRedemptionsArgs args);
+        Task<TwitchResponse<Redemption>> GetRewardRedemptionAsync([QueryMap] GetRedemptionsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates a custom reward. The app used to create the reward is the only app that may update the reward. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -158,7 +159,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("channel_points/custom_rewards")]
-        Task<TwitchResponse<Reward>> PatchRewardAsync([QueryMap] ManageRewardArgs args, [Body] PostRewardBody body);
+        Task<TwitchResponse<Reward>> PatchRewardAsync([QueryMap] ManageRewardArgs args, [Body] PostRewardBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Updates a redemption’s status. The app used to create the reward is the only app that may update the redemption. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -167,7 +168,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("channel_points/custom_rewards/redemptions")]
-        Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync([Body] RedemptionStatus status, [QueryMap] ModifyRedemptionsArgs args);
+        Task<TwitchResponse<Redemption>> PatchRewardRedemptionAsync([Body] RedemptionStatus status, [QueryMap] ModifyRedemptionsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Charity
@@ -179,7 +180,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("charity/campaigns")]
-        Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync([QueryMap] GetCharityCampaignArgs args);
+        Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync([QueryMap] GetCharityCampaignArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the list of donations that users have made to the broadcaster’s active charity campaign. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -188,7 +189,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("charity/donations")]
-        Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap] GetCharityDonationsArgs args);
+        Task<TwitchMetaResponse<CharityDonation>> GetCharityDonationsAsync([QueryMap] GetCharityDonationsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Chat
@@ -200,43 +201,43 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("chat/chatters")]
-        Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync([QueryMap] GetChattersArgs args);
+        Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync([QueryMap] GetChattersArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list of custom emotes. </summary>
         /// <returns> A collection of <see cref="Emote"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/emotes")]
-        Task<TwitchResponse<Emote>> GetEmotesAsync([QueryMap] GetEmotesArgs args);
+        Task<TwitchResponse<Emote>> GetEmotesAsync([QueryMap] GetEmotesArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the list of global emotes. </summary>
         /// <returns> A collection of <see cref="GlobalEmote"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("chat/emotes/global")]
-        Task<TwitchResponse<GlobalEmote>> GetEmotesAsync();
+        Task<TwitchResponse<GlobalEmote>> GetEmotesAsync(CancellationToken? cancelToken = null);
 
         /// <summary> Gets emotes for one or more specified emote sets. </summary>
         /// <returns> A collection of <see cref="Emote"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/emotes/set")]
-        Task<TwitchResponse<Emote>> GetEmoteSetsAsync([QueryMap] GetEmoteSetsArgs args);
+        Task<TwitchResponse<Emote>> GetEmoteSetsAsync([QueryMap] GetEmoteSetsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list of custom chat badges. </summary>
         /// <returns> A collection of <see cref="Badge"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/badges")]
-        Task<TwitchResponse<Badge>> GetBadgesAsync([QueryMap] GetBadgesArgs args);
+        Task<TwitchResponse<Badge>> GetBadgesAsync([QueryMap] GetBadgesArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets Twitch’s list of chat badges, which users may use in any channel’s chat room. </summary>
         /// <returns> A collection of <see cref="Badge"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("chat/badges/global")]
-        Task<TwitchResponse<Badge>> GetBadgesAsync();
+        Task<TwitchResponse<Badge>> GetBadgesAsync(CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s chat settings. </summary>
         /// <returns> A single <see cref="ChatSettings"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/settings")]
-        Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync([QueryMap] GetChatSettingsArgs args);
+        Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync([QueryMap] GetChatSettingsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the broadcaster’s chat settings. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -245,7 +246,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("chat/settings")]
-        Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync([QueryMap] PatchChatSettingsArgs args, [Body] PatchChatSettingsBody body);
+        Task<TwitchResponse<ChatSettings>> PatchChatSettingsAsync([QueryMap] PatchChatSettingsArgs args, [Body] PatchChatSettingsBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Sends an announcement to the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -253,7 +254,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Post("chat/announcements")]
-        Task PostChatAnnouncementAsync([QueryMap] PostAnnouncementArgs args, [Body] PostAnnouncementBody body);
+        Task PostChatAnnouncementAsync([QueryMap] PostAnnouncementArgs args, [Body] PostAnnouncementBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Sends a shoutout to the specified broadcaster. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -261,13 +262,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("chat/shoutouts")]
-        Task PostShoutoutAsync([QueryMap] PostShoutoutArgs args);
+        Task PostShoutoutAsync([QueryMap] PostShoutoutArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the color used for the user’s name in chat. </summary>
         /// <returns> A collection of <see cref="SimpleChatUser"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/color")]
-        Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync([QueryMap] GetUserColorArgs args);
+        Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync([QueryMap] GetUserColorArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the color used for the user's name in chat. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -275,7 +276,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("chat/color")]
-        Task PutUserChatColor([QueryMap] PutUserChatColorArgs args);
+        Task PutUserChatColor([QueryMap] PutUserChatColorArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Clips
@@ -287,13 +288,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("clips")]
-        Task<TwitchResponse<SimpleClip>> PostClipAsync([QueryMap] PostClipArgs args);
+        Task<TwitchResponse<SimpleClip>> PostClipAsync([QueryMap] PostClipArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets one or more video clips that were captured from streams. </summary>
         /// <returns> A collection of <see cref="Clip"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("clips")]
-        Task<TwitchMetaResponse<Clip>> GetClipsAsync([QueryMap] GetClipsArgs args);
+        Task<TwitchMetaResponse<Clip>> GetClipsAsync([QueryMap] GetClipsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Entitlements
@@ -302,13 +303,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Entitlement"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         [Get("entitlements/drops")]
-        Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync([QueryMap] GetDropStatusArgs args);
+        Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync([QueryMap] GetDropStatusArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the Drop entitlement’s fulfillment status. </summary>
         /// <returns> A collection of <see cref="EntitlementDrop"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Patch("entitlements/drops")]
-        Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync([Body] PatchDropsStatusArgs args);
+        Task<TwitchResponse<EntitlementDrop>> PatchDropsStatusAsync([Body] PatchDropsStatusArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         //#region Extensions
@@ -348,7 +349,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Post("eventsub/subscriptions")]
-        Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>([Body] PostEventSubscriptionBody<TCondition> args) where TCondition : IEventCondition;
+        Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>([Body] PostEventSubscriptionBody<TCondition> args, CancellationToken? cancelToken = null) where TCondition : IEventCondition;
 
         /// <summary> Deletes an EventSub subscription. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
@@ -356,7 +357,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("eventsub/subscriptions")]
-        Task DeleteEventSubscriptionAsync([QueryMap] DeleteEventSubscriptionArgs args);
+        Task DeleteEventSubscriptionAsync([QueryMap] DeleteEventSubscriptionArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a collection of EventSub subscriptions that the client in the access token created. </summary>
         /// <remarks> Webhook transports require a <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> and 
@@ -365,7 +366,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("eventsub/subscriptions")]
-        Task<EventSubResponse> GetEventSubscriptionsAsync([QueryMap] GetEventSubscriptionsArgs args);
+        Task<EventSubResponse> GetEventSubscriptionsAsync([QueryMap] GetEventSubscriptionsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Games
@@ -374,13 +375,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Game"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("games/top")]
-        Task<TwitchMetaResponse<Game>> GetTopGamesAsync([QueryMap] GetTopGamesArgs args);
+        Task<TwitchMetaResponse<Game>> GetTopGamesAsync([QueryMap] GetTopGamesArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets information about specified categories or games. </summary>
         /// <returns> A collection of <see cref="Game"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("games")]
-        Task<TwitchMetaResponse<Game>> GetGamesAsync([QueryMap] GetGamesArgs args);
+        Task<TwitchMetaResponse<Game>> GetGamesAsync([QueryMap] GetGamesArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Goals
@@ -392,7 +393,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("goals")]
-        Task<TwitchResponse<Goal>> GetGoalsAsync([QueryMap] GetGoalsArgs args);
+        Task<TwitchResponse<Goal>> GetGoalsAsync([QueryMap] GetGoalsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Hype Train
@@ -404,7 +405,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("hypetrain/events")]
-        Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync([QueryMap] GetHypeTrainsArgs args);
+        Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync([QueryMap] GetHypeTrainsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Moderation
@@ -416,7 +417,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/enforcements/status")]
-        Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([QueryMap] PostEnforcementStatusArgs args, [Body] PostEnforcementStatusBody body);
+        Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync([QueryMap] PostEnforcementStatusArgs args, [Body] PostEnforcementStatusBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Allow or deny the message that AutoMod flagged for review. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -424,7 +425,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/automod/message")]
-        Task PostAutomodMessageAsync([QueryMap] PostAutomodMessageArgs args);
+        Task PostAutomodMessageAsync([QueryMap] PostAutomodMessageArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s AutoMod settings. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -433,7 +434,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/automod/settings")]
-        Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args);
+        Task<TwitchResponse<AutomodSettings>> GetAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the broadcaster’s AutoMod settings. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -442,7 +443,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("moderation/automod/settings")]
-        Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args, [Body] PutAutomodSettingsBody body);
+        Task<TwitchResponse<AutomodSettings>> PutAutomodSettingsAsync([QueryMap] AutomodSettingsArgs args, [Body] PutAutomodSettingsBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Gets all users that the broadcaster banned or put in a timeout. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -451,7 +452,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/banned")]
-        Task<TwitchMetaResponse<BannedUser>> GetBannedUsersAsync([QueryMap] GetBannedUsersArgs args);
+        Task<TwitchMetaResponse<BannedUser>> GetBannedUsersAsync([QueryMap] GetBannedUsersArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Bans a user from participating in the specified broadcaster’s chat room or puts them in a timeout. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -460,7 +461,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/bans")]
-        Task<TwitchResponse<Ban>> PostBanAsync([QueryMap] PostBanArgs args, [Body] PostBanBody body);
+        Task<TwitchResponse<Ban>> PostBanAsync([QueryMap] PostBanArgs args, [Body] PostBanBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Removes the ban or timeout that was placed on the specified user. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -468,7 +469,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("moderation/bans")]
-        Task DeleteBanAsync([QueryMap] DeleteBanArgs args);
+        Task DeleteBanAsync([QueryMap] DeleteBanArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list of non-private, blocked words or phrases. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -477,7 +478,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/blocked_terms")]
-        Task<TwitchMetaResponse<BlockedTerm>> GetBlockedTermsAsync([QueryMap] GetBlockedTermsArgs args);
+        Task<TwitchMetaResponse<BlockedTerm>> GetBlockedTermsAsync([QueryMap] GetBlockedTermsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list of non-private, blocked words or phrases. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -486,7 +487,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/blocked_terms")]
-        Task<TwitchResponse<BlockedTerm>> PostBlockedTermAsync([QueryMap] PostBlockedTermArgs args, [Body] PostBlockedTermBody body);
+        Task<TwitchResponse<BlockedTerm>> PostBlockedTermAsync([QueryMap] PostBlockedTermArgs args, [Body] PostBlockedTermBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Removes the word or phrase from the broadcaster’s list of blocked terms. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -494,7 +495,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("moderation/blocked_term")]
-        Task DeleteBlockedTermAsync([QueryMap] DeleteBlockedTermsArgs args);
+        Task DeleteBlockedTermAsync([QueryMap] DeleteBlockedTermsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Removes a single chat message or all chat messages from the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -502,7 +503,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("moderation/chat")]
-        Task DeleteChatMessagesAsync([QueryMap] DeleteMessageArgs args);
+        Task DeleteChatMessagesAsync([QueryMap] DeleteMessageArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets all users allowed to moderate the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -511,7 +512,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Fordbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/moderators")]
-        Task<TwitchMetaResponse<SimpleUser>> GetModeratorsAsync([QueryMap] GetModeratorsArgs args);
+        Task<TwitchMetaResponse<SimpleUser>> GetModeratorsAsync([QueryMap] GetModeratorsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Adds a moderator to the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -519,7 +520,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 422 Unprocessable </exception>
         /// <exception cref="MissingScopeException" />
         [Post("moderation/moderators")]
-        Task PostModeratorAsync([QueryMap] ManageModeratorArgs args);
+        Task PostModeratorAsync([QueryMap] ManageModeratorArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Removes a moderator from the broadcaster’s chat room. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -527,7 +528,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 422 Unprocessable </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("moderation/moderators")]
-        Task DeleteModeratorAsync([QueryMap] ManageModeratorArgs args);
+        Task DeleteModeratorAsync([QueryMap] ManageModeratorArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of the broadcaster’s VIPs. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -536,7 +537,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("channels/vips")]
-        Task<TwitchMetaResponse<SimpleUser>> GetVipsAsync([QueryMap] GetVipsArgs args);
+        Task<TwitchMetaResponse<SimpleUser>> GetVipsAsync([QueryMap] GetVipsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Adds the specified user as a VIP in the broadcaster’s channel. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -544,7 +545,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable, 425 Too Early </exception>
         /// <exception cref="MissingScopeException" />
         [Post("channels/vips")]
-        Task PostVipAsync([QueryMap] ManageVipArgs args);
+        Task PostVipAsync([QueryMap] ManageVipArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Removes the specified user as a VIP in the broadcaster’s channel. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -552,7 +553,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 422 Unprocessable </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("channels/vips")]
-        Task DeleteVipAsync([QueryMap] ManageVipArgs args);
+        Task DeleteVipAsync([QueryMap] ManageVipArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Activates or deactivates the broadcaster’s Shield Mode. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -561,7 +562,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("moderation/shield_mode")]
-        Task<TwitchResponse<ShieldMode>> PutShieldModeAsync([QueryMap] PutShieldModeArgs args, [Body] PutShieldModeBody body);
+        Task<TwitchResponse<ShieldMode>> PutShieldModeAsync([QueryMap] PutShieldModeArgs args, [Body] PutShieldModeBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Activates or deactivates the broadcaster’s Shield Mode. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -570,7 +571,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Get("moderation/shield_mode")]
-        Task<TwitchResponse<ShieldMode>> GetShieldModeAsync([QueryMap] GetShieldModeArgs args);
+        Task<TwitchResponse<ShieldMode>> GetShieldModeAsync([QueryMap] GetShieldModeArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Polls
@@ -582,7 +583,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("polls")]
-        Task<TwitchMetaResponse<Poll>> GetPollAsync([QueryMap] GetPredictionsArgs args);
+        Task<TwitchMetaResponse<Poll>> GetPollAsync([QueryMap] GetPredictionsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Creates a poll that viewers in the broadcaster’s channel can vote on. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -591,7 +592,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Post("polls")]
-        Task<TwitchResponse<Poll>> PostPollAsync([Body] PutPollBody args);
+        Task<TwitchResponse<Poll>> PostPollAsync([Body] PutPollBody args, CancellationToken? cancelToken = null);
 
         /// <summary> Ends an active poll. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -600,7 +601,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("polls")]
-        Task<TwitchResponse<Poll>> PatchPollAsync([Body] PatchPollBody args);
+        Task<TwitchResponse<Poll>> PatchPollAsync([Body] PatchPollBody args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Predictions
@@ -612,7 +613,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("predictions")]
-        Task<TwitchMetaResponse<Prediction>> GetPredictionAsync([QueryMap] GetPredictionsArgs args);
+        Task<TwitchMetaResponse<Prediction>> GetPredictionAsync([QueryMap] GetPredictionsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Creates a Channel Points Prediction. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -621,7 +622,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Post("predictions")]
-        Task<TwitchResponse<Prediction>> PostPredictionAsync([Body] PostPredictionBody args);
+        Task<TwitchResponse<Prediction>> PostPredictionAsync([Body] PostPredictionBody args, CancellationToken? cancelToken = null);
 
         /// <summary> Locks, resolves, or cancels a Channel Points Prediction. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -630,7 +631,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("predictions")]
-        Task<TwitchResponse<Prediction>> PatchPredictionaAsync([Body] PostPredictionBody args);
+        Task<TwitchResponse<Prediction>> PatchPredictionaAsync([Body] PostPredictionBody args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Raids
@@ -642,7 +643,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found, 409 Conflict </exception>
         /// <exception cref="MissingScopeException" />
         [Post("raids")]
-        Task<TwitchResponse<Raid>> PostRaidAsync([QueryMap] PostRaidArgs args);
+        Task<TwitchResponse<Raid>> PostRaidAsync([QueryMap] PostRaidArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Cancel a pending raid. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -650,7 +651,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("raids")]
-        Task DeleteRaidAsync([QueryMap] DeleteRaidArgs args);
+        Task DeleteRaidAsync([QueryMap] DeleteRaidArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Schedule
@@ -659,7 +660,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A single <see cref="Schedule"/> object with a collection of <see cref="ScheduleSegment"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         [Get("schedule")]
-        Task<TwitchMetaResponse<Schedule>> GetScheduleAsync([QueryMap] GetScheduleArgs args);
+        Task<TwitchMetaResponse<Schedule>> GetScheduleAsync([QueryMap] GetScheduleArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the broadcaster’s schedule settings, such as scheduling a vacation. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -667,7 +668,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("schedule/settings")]
-        Task PatchScheduleAsync([QueryMap] PatchScheduleArgs args);
+        Task PatchScheduleAsync([QueryMap] PatchScheduleArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Adds a single or recurring broadcast to the broadcaster’s streaming schedule. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -676,7 +677,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Post("schedule/segment")]
-        Task<TwitchResponse<Schedule>> PostSegmentAsync([QueryMap] PostSegmentArgs args, [Body] PostSegmentBody body);
+        Task<TwitchResponse<Schedule>> PostSegmentAsync([QueryMap] PostSegmentArgs args, [Body] PostSegmentBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Updates a scheduled broadcast segment. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -685,7 +686,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Patch("schedule/segment")]
-        Task<TwitchResponse<Schedule>> PatchSegmentAsync([QueryMap] ManageSegmentArgs args, [Body] PatchSegmentBody body);
+        Task<TwitchResponse<Schedule>> PatchSegmentAsync([QueryMap] ManageSegmentArgs args, [Body] PatchSegmentBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Updates a scheduled broadcast segment. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -693,7 +694,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("schedule/segment")]
-        Task DeleteSegmentAsync([QueryMap] ManageSegmentArgs args);
+        Task DeleteSegmentAsync([QueryMap] ManageSegmentArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Search
@@ -702,13 +703,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Category"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("search/categories")]
-        Task<TwitchMetaResponse<Category>> GetCategoriesAsync([QueryMap] SearchCategoriesArgs args);
+        Task<TwitchMetaResponse<Category>> GetCategoriesAsync([QueryMap] SearchCategoriesArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the channels that match the specified query and have streamed content within the past 6 months. </summary>
         /// <returns> A collection of <see cref="ChannelBroadcast"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("search/channels")]
-        Task<TwitchMetaResponse<ChannelBroadcast>> GetChannelsAsync([QueryMap] SearchChannelsArgs args);
+        Task<TwitchMetaResponse<ChannelBroadcast>> GetChannelsAsync([QueryMap] SearchChannelsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Music
@@ -717,19 +718,19 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A single <see cref="Soundtrack"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/current_track")]
-        Task<TwitchResponse<Soundtrack>> GetCurrentTrackAsync([QueryMap] GetCurrentTrackArgs args);
+        Task<TwitchResponse<Soundtrack>> GetCurrentTrackAsync([QueryMap] GetCurrentTrackArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the Soundtrack playlist’s tracks. </summary>
         /// <returns> A collection of <see cref="Track"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/playlist")]
-        Task<TwitchMetaResponse<Track>> GetPlaylistTracksAsync([QueryMap] GetPlaylistTracksArgs args);
+        Task<TwitchMetaResponse<Track>> GetPlaylistTracksAsync([QueryMap] GetPlaylistTracksArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of Soundtrack playlists. </summary>
         /// <returns> A collection of <see cref="Track"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("soundtrack/playlists")]
-        Task<TwitchMetaResponse<Playlist>> GetPlaylistsAsync([QueryMap] GetPlaylistsArgs args);
+        Task<TwitchMetaResponse<Playlist>> GetPlaylistsAsync([QueryMap] GetPlaylistsArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Broadcasts / Streams
@@ -741,13 +742,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("stream/key")]
-        Task<TwitchResponse<string>> GetBroadcastKeyAsync([QueryMap] GetBroadcastKeyArgs args);
+        Task<TwitchResponse<string>> GetBroadcastKeyAsync([QueryMap] GetBroadcastKeyArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of all broadcasts. </summary>
         /// <returns> A collection of <see cref="Broadcast"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("streams")]
-        Task<TwitchMetaResponse<Broadcast>> GetBroadcastsAsync([QueryMap] GetBroadcastsArgs args);
+        Task<TwitchMetaResponse<Broadcast>> GetBroadcastsAsync([QueryMap] GetBroadcastsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the list of broadcasters that the user follows and that are streaming live. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -756,7 +757,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("streams/followed")]
-        Task<TwitchMetaResponse<Broadcast>> GetFollowedBroadcastsAsync([QueryMap] GetFollowedBroadcastsArgs args);
+        Task<TwitchMetaResponse<Broadcast>> GetFollowedBroadcastsAsync([QueryMap] GetFollowedBroadcastsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Adds a marker to a live stream. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -765,7 +766,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("streams/markers")]
-        Task<TwitchResponse<BroadcastMarker>> PostBroadcastMarkerAsync([Body] PostBroadcastMarkerBody body);
+        Task<TwitchResponse<BroadcastMarker>> PostBroadcastMarkerAsync([Body] PostBroadcastMarkerBody body, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of markers from the user’s most recent stream or from the specified VOD/video. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -774,7 +775,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found </exception>
         /// <exception cref="MissingScopeException" />
         [Get("streams/markers")]
-        Task<TwitchMetaResponse<BroadcastMarker>> GetBroadcastMarkersAsync([QueryMap] GetBroadcastMarkersArgs args);
+        Task<TwitchMetaResponse<BroadcastMarker>> GetBroadcastMarkersAsync([QueryMap] GetBroadcastMarkersArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Subscriptions
@@ -787,7 +788,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("subscriptions")]
-        Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync([QueryMap] GetSubscriptionsArgs args);
+        Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync([QueryMap] GetSubscriptionsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Checks whether the user subscribes to the broadcaster’s channel. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -797,7 +798,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("subscriptions/user")]
-        Task<TwitchResponse<SimpleSubscription>> GetSubscriberAsync([QueryMap] GetSubscriberArgs args);
+        Task<TwitchResponse<SimpleSubscription>> GetSubscriberAsync([QueryMap] GetSubscriberArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Teams
@@ -806,13 +807,13 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="ChannelTeam"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("teams/channel")]
-        Task<TwitchResponse<ChannelTeam>> GetTeamsAsync([QueryMap] GetChannelTeamsArgs args);
+        Task<TwitchResponse<ChannelTeam>> GetTeamsAsync([QueryMap] GetChannelTeamsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets information about the specified Twitch team. </summary>
         /// <returns> A single <see cref="Team"/> object. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("teams")]
-        Task<TwitchResponse<Team>> GetTeamAsync([QueryMap] GetTeamArgs args);
+        Task<TwitchResponse<Team>> GetTeamAsync([QueryMap] GetTeamArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Users
@@ -821,7 +822,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="User"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("users")]
-        Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersArgs args);
+        Task<TwitchResponse<User>> GetUsersAsync([QueryMap] GetUsersArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the specified user’s information. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -830,7 +831,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Put("users")]
-        Task<TwitchResponse<User>> PutUserAsync([QueryMap] PutUserArgs args);
+        Task<TwitchResponse<User>> PutUserAsync([QueryMap] PutUserArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the list of users that the broadcaster has blocked. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -839,7 +840,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("users/blocks")]
-        Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync([QueryMap] GetBlocksArgs args);
+        Task<TwitchMetaResponse<SimpleUser>> GetBlocksAsync([QueryMap] GetBlocksArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Blocks the specified user from interacting with or having contact with the broadcaster. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -847,7 +848,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Put("users/blocks")]
-        Task PutBlockAsync([QueryMap] PutBlockArgs args);
+        Task PutBlockAsync([QueryMap] PutBlockArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Removes the user from the broadcaster’s list of blocked users. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -855,7 +856,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("users/blocks")]
-        Task DeleteBlockAsync([QueryMap] DeleteBlockArgs args);
+        Task DeleteBlockAsync([QueryMap] DeleteBlockArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of all extensions (both active and inactive) that the broadcaster has installed. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -864,7 +865,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("users/extensions/list")]
-        Task<TwitchResponse<Extension>> GetUserExtensionsAsync();
+        Task<TwitchResponse<Extension>> GetUserExtensionsAsync(CancellationToken? cancelToken = null);
 
         /// <summary> Gets a list of all extensions (both active and inactive) that the broadcaster has installed. </summary>
         /// <remarks> Requires an <see href="https://dev.twitch.tv/docs/authentication#app-access-tokens">app access token</see> or a
@@ -874,7 +875,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Get("users/extensions")]
-        Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync([QueryMap] GetActiveExtensionsArgs args);
+        Task<TwitchResponse<ExtensionMap>> GetActiveExtensionsAsync([QueryMap] GetActiveExtensionsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates an installed extension’s information. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -883,7 +884,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Put("users/extensions")]
-        Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync([Body] ExtensionMap args);
+        Task<TwitchResponse<ExtensionMap>> PutExtensionsAsync([Body] ExtensionMap args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Videos
@@ -892,7 +893,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <returns> A collection of <see cref="Video"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
         [Get("videos")]
-        Task<TwitchMetaResponse<Video>> GetVideosAsync([QueryMap] GetVideosArgs args);
+        Task<TwitchMetaResponse<Video>> GetVideosAsync([QueryMap] GetVideosArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Deletes one or more videos. You may delete past broadcasts, highlights, or uploads. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -901,7 +902,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("videos")]
-        Task<TwitchResponse<string>> DeleteVideoAsync([QueryMap] DeleteVideosArgs args);
+        Task<TwitchResponse<string>> DeleteVideoAsync([QueryMap] DeleteVideosArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Whispers
@@ -912,7 +913,7 @@ namespace AuxLabs.SimpleTwitch.Rest
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not found </exception>
         /// <exception cref="MissingScopeException" />
         [Post("whispers")]
-        Task PostWhisperAsync([QueryMap] PostWhisperArgs args, [Body] PostWhisperBody body);
+        Task PostWhisperAsync([QueryMap] PostWhisperArgs args, [Body] PostWhisperBody body, CancellationToken? cancelToken = null);
 
         #endregion
     }
