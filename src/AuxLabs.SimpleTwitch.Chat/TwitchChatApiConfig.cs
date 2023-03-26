@@ -16,8 +16,11 @@ namespace AuxLabs.SimpleTwitch.Chat
         /// <summary> Should an exception be raised if an unhandled event is received from twitch. </summary>
         public bool ThrowOnUnknownEvent { get; set; } = false;
 
-        /// <summary> Should an exception be raised if an event provides unhandled tags </summary>
-        public bool ThrowOnMismatchedTags { get; set; } = false;
+        /// <summary> Should an exception be raised if an event provides unhandled tags. </summary>
+        public bool ThrowOnUnhandledTags { get; set; } = false;
+
+        /// <summary> Should the client handle ratelimits as a verified account. </summary>
+        public bool UseVerifiedRateLimits { get; set; } = false;
 
         /// <summary> Specify a custom serializer for chat irc messages. </summary>
         public ISerializer<IrcPayload> IrcSerializer { get; set; } = null;
