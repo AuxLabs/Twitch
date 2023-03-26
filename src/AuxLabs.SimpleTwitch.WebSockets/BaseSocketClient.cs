@@ -331,7 +331,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
             Stop();
         }
 
-        public void Send(TPayload payload)
+        protected void Send(TPayload payload)
         {
             if (!_runCts.IsCancellationRequested)
                 _sendQueue?.Add(payload);

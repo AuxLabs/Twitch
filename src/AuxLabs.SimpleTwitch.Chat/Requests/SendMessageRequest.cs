@@ -1,25 +1,48 @@
-﻿namespace AuxLabs.SimpleTwitch.Chat
+﻿using System.Threading;
+
+namespace AuxLabs.SimpleTwitch.Chat
 {
-    public class SendMessageRequest : IrcPayload
+    public class SendMessageRequest : BaseChatRequest
     {
+        public string ChannelName { get; set; }
+        public string Message { get; set; }
+        public string ReplyMessageId { get; set; } = null;
+
         public SendMessageRequest(string channelName, string message, string replyMessageId = null)
         {
-            Require.NotNullOrWhitespace(channelName, nameof(channelName));
-            Require.NotNullOrWhitespace(message, nameof(message));
-            Require.LengthAtLeast(message, 1, nameof(message));
-            Require.LengthAtMost(message, 500, nameof(message));
-            Require.NotEmptyOrWhitespace(replyMessageId, nameof(replyMessageId));
+            ChannelName = channelName;
+            Message = message;
+            ReplyMessageId = replyMessageId;
+        }
+        public SendMessageRequest(string channelName, string message, string replyMessageId = null, CancellationToken? cancelToken = null)
+            : this(channelName, message, replyMessageId)
+        {
+            CancellationToken = cancelToken ?? CancellationToken.None;
+        }
 
-            if (replyMessageId != null)
-                Tags = new SendMessageTags(replyMessageId);
+        public override void Validate(bool verified)
+        {
+            Require.NotNullOrWhitespace(ChannelName, nameof(ChannelName));
+            Require.NotNullOrWhitespace(Message, nameof(Message));
+            Require.LengthAtLeast(Message, 1, nameof(Message));
+            Require.LengthAtMost(Message, 500, nameof(Message));
+            Require.NotEmptyOrWhitespace(ReplyMessageId, nameof(ReplyMessageId));
+        }
 
-            Command = IrcCommand.Message;
+        public override IrcPayload CreateRequest()
+        {
+            var payload = new IrcPayload();
+            if (ReplyMessageId != null)
+                payload.Tags = new SendMessageTags(ReplyMessageId);
+
+            payload.Command = IrcCommand.Message;
             var parameters = new[]
             {
-                $"#{channelName}",
-                $" :{message}"
+                $"#{ChannelName}",
+                $" :{Message}"
             };
-            Parameters = parameters;
+            payload.Parameters = parameters;
+            return payload;
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using AuxLabs.SimpleTwitch.WebSockets;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.SimpleTwitch.Chat
@@ -48,9 +50,12 @@ namespace AuxLabs.SimpleTwitch.Chat
         public readonly bool TagsRequested;
         public readonly bool ShouldHandleEvents;
         public readonly bool ThrowOnUnknownEvent;
-        public readonly bool ThrowOnMismatchedTags;
+        public readonly bool ThrowOnUnhandledTags;
+        public readonly bool UseVerifiedRateLimits;
 
         protected override ISerializer<IrcPayload> Serializer { get; }
+
+        private readonly ConcurrentDictionary<string, bool> _modMap;
 
         private string _username = null;
         private string _token = null;
@@ -63,16 +68,19 @@ namespace AuxLabs.SimpleTwitch.Chat
             config ??= new TwitchChatApiConfig();
             _url = url;
 
-            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnMismatchedTags);
+            _modMap = new ConcurrentDictionary<string, bool>();
+
+            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnUnhandledTags);
 
             CommandsRequested = config.RequestCommands;
             TagsRequested = config.RequestTags;
             ShouldHandleEvents = config.ShouldHandleEvents;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
-            ThrowOnMismatchedTags = config.ThrowOnMismatchedTags;
+            ThrowOnUnhandledTags = config.ThrowOnUnhandledTags;
+            UseVerifiedRateLimits = config.UseVerifiedRateLimits;
         }
 
-        public TwitchChatApiClient SetIdentity(string username, string token)
+        public TwitchChatApiClient WithIdentity(string username, string token)
         {
             if (State == ConnectionState.Connected)
                 throw new InvalidOperationException("Identity can't be changed after connection");
@@ -80,7 +88,8 @@ namespace AuxLabs.SimpleTwitch.Chat
             Require.NotNullOrWhitespace(username, nameof(username));
             Require.NotNullOrWhitespace(token, nameof(token));
 
-            if (username.StartsWith(TwitchConstants.AnonymousNamePrefix) && token.StartsWith(TwitchConstants.AnonymousNamePrefix))
+            if (username.StartsWith(TwitchConstants.AnonymousNamePrefix) && 
+                token.StartsWith(TwitchConstants.AnonymousNamePrefix))
                 _anonymous = true;
 
             _username = username;
@@ -95,18 +104,70 @@ namespace AuxLabs.SimpleTwitch.Chat
         public override Task RunAsync() => RunAsync(_url);
 
         /// <summary> Join a channel by name. </summary>
-        /// <remarks> Max channels per request is 20. </remarks>
+        /// <remarks> Max channels per request is 20 or 2000 for verified accounts. </remarks>
         public void SendJoin(params string[] channelNames)
-            => Send(new JoinChannelsRequest(channelNames));
+            => SendJoinAsync(channelNames).GetAwaiter().GetResult();
+
+        /// <inheritdoc cref="SendJoin(string[])"/>
+        public Task SendJoinAsync(params string[] channelNames)
+            => SendJoinAsync(channelNames, null);
+
+        /// <inheritdoc cref="SendJoin(string[])"/>
+        public async Task SendJoinAsync(string[] channelNames, CancellationToken? cancelToken = null)
+        {
+            var ct = cancelToken ?? CancellationToken.None;
+
+            var request = new JoinChannelsRequest(channelNames, ct);
+            request.Validate(UseVerifiedRateLimits);
+
+            await Task.Delay(0); // ratelimit lock here
+
+            Send(request.CreateRequest());
+        }
 
         /// <summary> Leave a channel by name. </summary>
-        /// <remarks> Max channels per request is 20. </remarks>
+        /// <remarks> Max channels per request is 20 or 2000 for verified accounts. </remarks>
         public void SendPart(params string[] channelNames)
-            => Send(new PartChannelsRequest(channelNames));
+            => SendPartAsync(channelNames).GetAwaiter().GetResult();
+
+        /// <inheritdoc cref="SendPart(string[])"/>
+        public Task SendPartAsync(params string[] channelNames)
+            => SendPartAsync(channelNames, null);
+
+        /// <inheritdoc cref="SendPart(string[])"/>
+        public async Task SendPartAsync(string[] channelNames, CancellationToken? cancelToken = null)
+        {
+            var ct = cancelToken ?? CancellationToken.None;
+
+            var request = new PartChannelsRequest(channelNames, ct);
+            request.Validate(UseVerifiedRateLimits);
+
+            await Task.Delay(0); // ratelimit lock here
+
+            Send(request.CreateRequest());
+        }
 
         /// <summary> Send a message to a channel. </summary>
         public void SendMessage(string channelName, string message, string replyMessageId = null)
-            => Send(new SendMessageRequest(channelName, message, replyMessageId));
+            => SendMessageAsync(channelName, message, replyMessageId).GetAwaiter().GetResult();
+
+        /// <inheritdoc cref="SendMessage(string, string, string)"/>
+        public Task SendMessageAsync(string channelName, string message, string replyMessageId = null)
+            => SendMessageAsync(channelName, message, replyMessageId, null);
+
+        /// <inheritdoc cref="SendMessage(string, string, string)"/>
+        public async Task SendMessageAsync(string channelName, string message, string replyMessageId = null, CancellationToken? cancelToken = null)
+        {
+            var ct = cancelToken ?? CancellationToken.None;
+            _modMap.TryGetValue(channelName, out bool ismod);   // Moderator status is necessary for handling ratelimits
+
+            var request = new SendMessageRequest(channelName, message, replyMessageId, ct);
+            request.Validate(UseVerifiedRateLimits);
+
+            await Task.Delay(0); // ratelimit lock here
+
+            Send(request.CreateRequest());
+        }
 
         protected override void SendIdentify()
         {
@@ -188,6 +249,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
                 case IrcCommand.UserState:
                     var userStateArgs = UserStateEventArgs.Create(payload);
+                    _modMap[userStateArgs.ChannelName] = userStateArgs.Tags.IsModerator; // Add channel to mod map
                     UserStateReceived?.Invoke(userStateArgs);
                     break;
 
@@ -203,6 +265,7 @@ namespace AuxLabs.SimpleTwitch.Chat
 
                 case IrcCommand.Part:
                     var leftArgs = MembershipEventArgs.Create(payload);
+                    _modMap.TryRemove(leftArgs.ChannelName, out _);     // Remove channel from mod map
                     ChannelLeft?.Invoke(leftArgs);
                     break;
 
