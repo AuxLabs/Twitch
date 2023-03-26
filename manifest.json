@@ -26,6 +26,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.SimpleTwitch.Chat.BaseChatRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.SimpleTwitch.Chat.BaseChatRequest.html",
+          "hash": "relyyuHn4mu3vHRMWE1/y4yGHzy0QKbtIUUvr2MbEos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.SimpleTwitch.Chat.BaseTags.yml",
       "output": {
         ".html": {
@@ -210,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.IrcPayload.html",
-          "hash": "UXGUqKFBYzH/ZSUhIXgJOvTp6F2qntxzHgaujzn/8sU="
+          "hash": "ub1+RQ9eA4KS/Uxcv4EHqPah1VYpWyny5bTLuh0jUIE="
         }
       },
       "is_incremental": false,
@@ -246,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.JoinChannelsRequest.html",
-          "hash": "4jS7qyZO3a2FPZdkhw3nuTJ0un5lPO/04jGEk3jbo7o="
+          "hash": "ZJQDywASR2yOei4PEcBLDi+ar4suchoqKGl8/j28I/g="
         }
       },
       "is_incremental": false,
@@ -354,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html",
-          "hash": "5v4GN2s1CjPhP5++Kk398JBGa3JBIuTk7MYPettFkJI="
+          "hash": "PtyO+dWgzTY4h1j3t3DqlD8S78kO9fmmbrIjnVn9eqg="
         }
       },
       "is_incremental": false,
@@ -426,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.SendMessageRequest.html",
-          "hash": "nXCng028l8mE6igc2HudaPsgrofqNJONC43FzdGVOmI="
+          "hash": "65DYHjfeo8cBYYYOB+loJC9HT1PFYwqWhrH2+sDAxjU="
         }
       },
       "is_incremental": false,
@@ -498,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiClient.html",
-          "hash": "C2LHJsWHnF/yRg+v5JV1jaLUjTvpbusRUf/HibZsyAc="
+          "hash": "MjVCx5ExET1bfldOlT27lZy6MYT+IofUSehxI8yBKM8="
         }
       },
       "is_incremental": false,
@@ -510,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.TwitchChatApiConfig.html",
-          "hash": "k2K6SHY6GoVfhegZj6/lHYjk5hcbk4t8qHNM408nfC0="
+          "hash": "/BGH3olWndcx9hbXS1Ot8p/hWpqCokTEPM1xJ0u/EI8="
         }
       },
       "is_incremental": false,
@@ -618,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Chat.html",
-          "hash": "o3DC6bJeBlxw52QHzqqxofm9MZ4vDyriVj3VkrX58gw="
+          "hash": "M/3IrWnpQbhZGNsdUmtDBA1IpH61fByB6IBbGPi3Zbg="
         }
       },
       "is_incremental": false,
@@ -2606,18 +2618,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSub-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSub-1.html",
-          "hash": "qVvzhIAfHYbrmWT3L8Gi6Z8EJN+jiWEAVzAeGqkIAW8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubResponse.yml",
       "output": {
         ".html": {
@@ -2654,11 +2654,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription-1.html",
+          "hash": "8wGLYu8TDen+oThTAxm3HyFFize1uKjBX7SZnNjlV2s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription.yml",
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.EventSubscription.html",
-          "hash": "R31ePuao47dCLXa3pFM076dXWzyWvyP0UPyEaetvkO0="
+          "hash": "UIdlLI+Jw6lXcXP35iE1SgqV11LsXa2k0pJuDq/eh1k="
         }
       },
       "is_incremental": false,
@@ -3666,7 +3678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.ITwitchApi.html",
-          "hash": "DRLm/ceBZlDVvTH+SA7akUnYuZR+SysMPwiKJKGxdA0="
+          "hash": "io4rGB3g6huXhPjVaD2TktGkVK1m5B6FTvg03+GPtOg="
         }
       },
       "is_incremental": false,
@@ -3678,7 +3690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.ITwitchIdentityApi.html",
-          "hash": "TINnUh5F7AR2Rgb6HYkIdZ63WkZHGOjgSkHGL1tRqw0="
+          "hash": "8vkr0e2Jhe4wgHrCjqkY+asKGW7BqDbXUH5cd+iW0QQ="
         }
       },
       "is_incremental": false,
@@ -5130,7 +5142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.TwitchIdentityApiClient.html",
-          "hash": "aeGh1QJ5kS7vBEN80ge82qu1IuEYFiJKi1tZqIGHyZE="
+          "hash": "SWqojb8mkLpcSl82eeYcHfkqCXI7zxnmKvhRpDq2ISE="
         }
       },
       "is_incremental": false,
@@ -5178,7 +5190,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.TwitchRestApiClient.html",
-          "hash": "emsgLX1CTXPkvKw5LFcCs6k8tnRNI/lgOuN4LOBo4Gs="
+          "hash": "Icoz2faZhQS+vsW96GXIjDVrDutFTyjvM4lGuZYd9XQ="
         }
       },
       "is_incremental": false,
@@ -5358,7 +5370,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.SimpleTwitch.Rest.html",
-          "hash": "bUQBZrMQFV1qz/gOfga90MnBCDeSG++/uI9rWZBiKnM="
+          "hash": "/fJt+rWa+pH2XXERO++Zuqu0TOCQSI+XF2Azlf5FEzU="
         }
       },
       "is_incremental": false,
@@ -5562,7 +5574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UmfLfLKZao5PoCuu6otq2OQlsCGmNs0xzS2DUJ5Hy/U="
+          "hash": "+4ICaZQ1jlWcikPflM5P9M2cn4vqJotb+CVTYzlxNeU="
         }
       },
       "is_incremental": false,
@@ -5733,7 +5745,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 461,
+          "total_file_count": 462,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -88,48 +88,20 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html">IrcPayload</a></div>
+    <div class="level1"><a class="xref" href="AuxLabs.SimpleTwitch.Chat.BaseChatRequest.html">BaseChatRequest</a></div>
     <div class="level2"><span class="xref">PartChannelsRequest</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="AuxLabs.SimpleTwitch.WebSockets.IPayload.html">IPayload</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_IsHelloEvent">IrcPayload.IsHelloEvent</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Tags">IrcPayload.Tags</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Prefix">IrcPayload.Prefix</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Command">IrcPayload.Command</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_CommandRaw">IrcPayload.CommandRaw</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_Parameters">IrcPayload.Parameters</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_ToString">IrcPayload.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_TagsTypeSelector">IrcPayload.TagsTypeSelector</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.IrcPayload.html#AuxLabs_SimpleTwitch_Chat_IrcPayload_UserNoticeTypeSelector">IrcPayload.UserNoticeTypeSelector</a>
+      <a class="xref" href="AuxLabs.SimpleTwitch.Chat.BaseChatRequest.html#AuxLabs_SimpleTwitch_Chat_BaseChatRequest_CancellationToken">BaseChatRequest.CancellationToken</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.SimpleTwitch.html">SimpleTwitch</a>.<a class="xref" href="AuxLabs.SimpleTwitch.Chat.html">Chat</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.SimpleTwitch.Chat.dll</h6>
   <h5 id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PartChannelsRequest : IrcPayload, IPayload</code></pre>
+    <pre><code class="lang-csharp hljs">public class PartChannelsRequest : BaseChatRequest</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -142,14 +114,56 @@
     </thead>
     <tbody>
       <tr>
-        <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.#ctor">
-          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor">PartChannelsRequest()</a>
+        <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor_System_String___System_Nullable_CancellationToken__" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.#ctor(System.String[],System.Nullable{CancellationToken})">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor_System_String___System_Nullable_CancellationToken__">PartChannelsRequest(string[], CancellationToken?)</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
         <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor_System_String___" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.#ctor(System.String[])">
           <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest__ctor_System_String___">PartChannelsRequest(params string[])</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_ChannelNames" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.ChannelNames">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_ChannelNames">ChannelNames</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_CreateRequest" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.CreateRequest">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_CreateRequest">CreateRequest()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_Validate_System_Boolean_" data-uid="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.Validate(System.Boolean)">
+          <a class="xref" href="AuxLabs.SimpleTwitch.Chat.PartChannelsRequest.html#AuxLabs_SimpleTwitch_Chat_PartChannelsRequest_Validate_System_Boolean_">Validate(bool)</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -166,7 +180,7 @@
                     <a href="https://github.com/AuxLabs/SimpleTwitch/new/main/apiSpec/new?filename=AuxLabs_SimpleTwitch_Chat_PartChannelsRequest.md&amp;value=---%0Auid%3A%20AuxLabs.SimpleTwitch.Chat.PartChannelsRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Requests/PartChannelsRequest.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/src/AuxLabs.SimpleTwitch.Chat/Requests/PartChannelsRequest.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
