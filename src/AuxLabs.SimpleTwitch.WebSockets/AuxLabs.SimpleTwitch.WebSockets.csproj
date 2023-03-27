@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AuxLabs.SimpleTwitch.Core\AuxLabs.SimpleTwitch.Core.csproj" />
   </ItemGroup>
 </Project>

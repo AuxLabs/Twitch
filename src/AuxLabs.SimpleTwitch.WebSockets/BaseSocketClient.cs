@@ -9,6 +9,7 @@ using System.Net.WebSockets;
 using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace AuxLabs.SimpleTwitch.WebSockets
 {
@@ -43,7 +44,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
         private CancellationTokenSource _runCts;
 
         protected string _url;
-        private BlockingCollection<TPayload> _sendQueue;
+        private BufferBlock<TPayload> _sendQueue;
         protected bool ReceivedData;
 
         public BaseSocketClient(int heartbeatRate, bool waitForHello = false, bool isRecursive = false)
@@ -129,7 +130,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
                     }
 
                     // Start tasks here since HELLO must be handled before another thread can send/receive
-                    _sendQueue = new BlockingCollection<TPayload>();
+                    _sendQueue = new BufferBlock<TPayload>();
                     tasks = new[]
                     {
                         RunSendAsync(client, cancelToken),
@@ -218,7 +219,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
                 while (true)
                 {
                     cancelToken.ThrowIfCancellationRequested();
-                    var payload = _sendQueue.Take(cancelToken);
+                    var payload = _sendQueue.Receive(cancelToken);
                     await SendAsync(client, payload, cancelToken).ConfigureAwait(false);
                 }
             }, cancelToken);
@@ -334,7 +335,7 @@ namespace AuxLabs.SimpleTwitch.WebSockets
         protected void Send(TPayload payload)
         {
             if (!_runCts.IsCancellationRequested)
-                _sendQueue?.Add(payload);
+                _sendQueue?.Post(payload);
         }
 
         private async Task SendAsync(ClientWebSocket client, TPayload payload, CancellationToken cancelToken)
