@@ -35,9 +35,9 @@ namespace AuxLabs.Twitch.Rest.Entities
 
         public Task<RestFollower> GetFollowerAsync(string userId)
             => Twitch.GetFollowerAsync(userId, Id);
-        public Task<(IReadOnlyList<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
+        public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
             => Twitch.GetFollowersAsync(Id, count);
-        public Task<(IReadOnlyList<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
+        public Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
             => Twitch.GetFollowedChannelsAsync(count);
         public Task<RestFollowedChannel> GetFollowedChannelAsync(string broadcasterId)
             => Twitch.GetFollowedChannelAsync(broadcasterId);

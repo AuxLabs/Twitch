@@ -312,16 +312,16 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PostShoutoutAsync(args, cancelToken);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync(GetUserColorArgs args, CancellationToken? cancelToken = null)
+        public Task<TwitchResponse<SimpleChatUser>> GetUserChatColorsAsync(GetUserColorArgs args, CancellationToken? cancelToken = null)
         {
             args.Validate();
-            return _api.GetUserChatColorAsync(args, cancelToken);
+            return _api.GetUserChatColorsAsync(args, cancelToken);
         }
         /// <inheritdoc/>
-        public Task PutUserChatColor(PutUserChatColorArgs args, CancellationToken? cancelToken = null)
+        public Task PutUserChatColorAsync(PutUserChatColorArgs args, CancellationToken? cancelToken = null)
         {
             CheckPermissions(args);
-            return _api.PutUserChatColor(args, cancelToken);
+            return _api.PutUserChatColorAsync(args, cancelToken);
         }
 
         #endregion

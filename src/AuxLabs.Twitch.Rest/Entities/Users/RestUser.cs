@@ -32,13 +32,13 @@ namespace AuxLabs.Twitch.Rest.Entities
         internal RestUser(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
-        internal new static RestUser Create(TwitchRestClient twitch, User model)
+        internal static RestUser Create(TwitchRestClient twitch, User model)
         {
             var entity = new RestUser(twitch, model.Id);
             entity.Update(model);
             return entity;
         }
-        internal override void Update(User model)
+        internal virtual void Update(User model)
         {
             base.Update(model);
             CreatedAt = model.CreatedAt;

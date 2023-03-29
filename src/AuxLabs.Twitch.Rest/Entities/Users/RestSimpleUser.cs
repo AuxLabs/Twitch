@@ -22,13 +22,13 @@ namespace AuxLabs.Twitch.Rest.Entities
             DisplayName = model.UserDisplayName;
         }
 
-        internal static RestSimpleUser Create(TwitchRestClient twitch, User model)
+        internal static RestSimpleUser Create(TwitchRestClient twitch, SimpleUser model)
         {
             var entity = new RestSimpleUser(twitch, model.Id);
             entity.Update(model);
             return entity;
         }
-        internal virtual void Update(User model)
+        internal virtual void Update(SimpleUser model)
         {
             base.Update(model.Name);
             DisplayName = model.DisplayName;

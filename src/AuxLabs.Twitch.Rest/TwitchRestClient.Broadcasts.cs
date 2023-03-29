@@ -17,11 +17,11 @@ namespace AuxLabs.Twitch.Rest
                 BroadcasterId = authorized.UserId
             });
 
-            return response.Data.FirstOrDefault();
+            return response.Data.SingleOrDefault();
         }
 
         public async Task<RestBroadcast> GetBroadcastByIdAsync(string channelId)
-            => (await GetBroadcastsByIdAsync(channelId))?.FirstOrDefault();
+            => (await GetBroadcastsByIdAsync(channelId))?.SingleOrDefault();
         public async Task<IReadOnlyCollection<RestBroadcast>> GetBroadcastsByIdAsync(params string[] channelIds)
         {
             var response = await API.GetBroadcastsAsync(new GetBroadcastsArgs
@@ -32,7 +32,7 @@ namespace AuxLabs.Twitch.Rest
         }
 
         public async Task<RestBroadcast> GetBroadcastByNameAsync(string channelName)
-            => (await GetBroadcastsByNameAsync(channelName))?.FirstOrDefault();
+            => (await GetBroadcastsByNameAsync(channelName))?.SingleOrDefault();
         public async Task<IReadOnlyCollection<RestBroadcast>> GetBroadcastsByNameAsync(params string[] channelNames)
         {
             var response = await API.GetBroadcastsAsync(new GetBroadcastsArgs
@@ -42,10 +42,15 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray();
         }
 
+        // Paginate
         public async Task<IReadOnlyCollection<RestBroadcast>> GetBroadcastsAsync(GetBroadcastsArgs args)
         {
             var response = await API.GetBroadcastsAsync(args);
             return response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray();
         }
+
+        // GetFollowedBroadcasts
+        // CreateMarker
+        // GetMarkers
     }
 }

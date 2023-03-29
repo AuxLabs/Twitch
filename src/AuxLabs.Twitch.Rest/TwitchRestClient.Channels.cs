@@ -33,8 +33,8 @@ namespace AuxLabs.Twitch.Rest
         }
 
         public async Task<RestChannel> GetChannelAsync(string channelId)
-            => (await GetChannelsAsync(channelId)).FirstOrDefault();
-        public async Task<IReadOnlyList<RestChannel>> GetChannelsAsync(params string[] channelIds)
+            => (await GetChannelsAsync(channelId))?.SingleOrDefault();
+        public async Task<IReadOnlyCollection<RestChannel>> GetChannelsAsync(params string[] channelIds)
         {
             var response = await API.GetChannelsAsync(channelIds);
             return response.Data.Select(x => RestChannel.Create(this, x)).ToImmutableArray();

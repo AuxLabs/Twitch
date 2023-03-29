@@ -1,5 +1,7 @@
-﻿using AuxLabs.Twitch.Rest;
-using AuxLabs.Twitch.Rest.Entities;
+﻿using AuxLabs.Twitch.Rest.Entities;
+using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,6 +89,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             => _messages?.Get(id);
         public IReadOnlyCollection<ChatMessage> GetMessages(int count)
             => _messages?.GetMany(count);
+
         internal void AddMessage(ChatMessage msg)
             => _messages?.Add(msg);
         internal ChatMessage RemoveMessage(string id)
@@ -95,8 +98,20 @@ namespace AuxLabs.Twitch.Chat.Entities
             => _messages.RemoveAll();
 
         // Chat Methods
-        public Task SendMessageAsync(string text)
-            => Twitch.SendMessageAsync(Name, text);
+        public Task SendMessageAsync(string message)
+            => Twitch.SendMessageAsync(Name, message);
+        public Task SendAnnouncementAsync(string message, AnnouncementColor? color = null)
+            => Twitch.Rest.SendAnnouncementAsync(Id, message, color);
+        public Task SendShoutoutAsync(string channelId)
+            => Twitch.Rest.SendShoutoutAsync(Id, channelId);
+        public Task<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(int count = 20)
+            => Twitch.Rest.GetChattersAsync(Id, count);
+        public Task<IReadOnlyCollection<RestEmote>> GetEmotesAsync()
+            => Twitch.Rest.GetEmotesAsync(Id);
+        public Task<ChatSettings> GetChatSettingsAsync()
+            => Twitch.Rest.GetChatSettingsAsync(Id);
+        public Task<ChatSettings> ModifyChatSettingsAsync(Action<PatchChatSettingsBody> func)
+            => Twitch.Rest.ModifyChatSettingsAsync(Id, func);
 
         // Rest Methods
 
@@ -110,7 +125,7 @@ namespace AuxLabs.Twitch.Chat.Entities
 
         public Task<RestFollower> GetFollowerAsync(string userId)
             => Twitch.Rest.GetFollowerAsync(userId, Id);
-        public Task<(IReadOnlyList<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
+        public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
             => Twitch.Rest.GetFollowersAsync(Id, count);
     }
 }

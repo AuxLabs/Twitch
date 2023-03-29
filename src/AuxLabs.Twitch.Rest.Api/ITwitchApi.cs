@@ -270,7 +270,7 @@ namespace AuxLabs.Twitch.Rest.Api
         /// <returns> A collection of <see cref="SimpleChatUser"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/color")]
-        Task<TwitchResponse<SimpleChatUser>> GetUserChatColorAsync([QueryMap] GetUserColorArgs args, CancellationToken? cancelToken = null);
+        Task<TwitchResponse<SimpleChatUser>> GetUserChatColorsAsync([QueryMap] GetUserColorArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Updates the color used for the user's name in chat. </summary>
         /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
@@ -278,7 +278,7 @@ namespace AuxLabs.Twitch.Rest.Api
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 403 Forbidden </exception>
         /// <exception cref="MissingScopeException" />
         [Put("chat/color")]
-        Task PutUserChatColor([QueryMap] PutUserChatColorArgs args, CancellationToken? cancelToken = null);
+        Task PutUserChatColorAsync([QueryMap] PutUserChatColorArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Clips

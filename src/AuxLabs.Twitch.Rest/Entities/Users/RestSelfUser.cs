@@ -1,7 +1,7 @@
-﻿using AuxLabs.Twitch.Rest.Requests;
+﻿using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
 using System.Linq;
 using System.Threading.Tasks;
-using Model = AuxLabs.Twitch.Rest.Models.User;
 
 namespace AuxLabs.Twitch.Rest.Entities
 {
@@ -13,16 +13,16 @@ namespace AuxLabs.Twitch.Rest.Entities
         internal RestSelfUser(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
-        internal new static RestSelfUser Create(TwitchRestClient twitch, Model model)
+        internal new static RestSelfUser Create(TwitchRestClient twitch, User model)
         {
             var entity = new RestSelfUser(twitch, model.Id);
             entity.Update(model);
             return entity;
         }
-        internal override void Update(Model model)
+        internal override void Update(User model)
         {
             base.Update(model);
-            this.Email = model.Email!.ToString();
+            Email = model.Email;
         }
 
         public override async Task UpdateAsync()

@@ -23,8 +23,8 @@ namespace AuxLabs.Twitch.Rest
         }
 
         public async Task<RestUser> GetUserByNameAsync(string username)
-            => (await GetUsersByNameAsync(username))?.FirstOrDefault();
-        public async Task<IReadOnlyList<RestUser>> GetUsersByNameAsync(params string[] userNames)
+            => (await GetUsersByNameAsync(username))?.SingleOrDefault();
+        public async Task<IReadOnlyCollection<RestUser>> GetUsersByNameAsync(params string[] userNames)
         {
             var args = new GetUsersArgs(GetUsersMode.Name, userNames);
             var response = await API.GetUsersAsync(args);
@@ -32,8 +32,8 @@ namespace AuxLabs.Twitch.Rest
         }
 
         public async Task<RestUser> GetUserByIdAsync(string id)
-            => (await GetUsersByIdAsync(id))?.FirstOrDefault();
-        public async Task<IReadOnlyList<RestUser>> GetUsersByIdAsync(params string[] userIds)
+            => (await GetUsersByIdAsync(id))?.SingleOrDefault();
+        public async Task<IReadOnlyCollection<RestUser>> GetUsersByIdAsync(params string[] userIds)
         {
             var response = await API.GetUsersAsync(new GetUsersArgs
             {
@@ -43,7 +43,7 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestUser.Create(this, x)).ToImmutableArray();
         }
 
-        public async Task<(IReadOnlyList<RestFollower> Followers, int Total)> GetFollowersAsync(string broadcasterId, int count = 20)
+        public async Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(string broadcasterId, int count = 20)
         {
             var response = await API.GetFollowersAsync(new GetFollowersArgs
             {
@@ -61,16 +61,17 @@ namespace AuxLabs.Twitch.Rest
                 BroadcasterId = broadcasterId,
                 UserId = userId
             });
-            return response?.Data == null || response.Data.Count() == 0
+            return response?.Data == null || response.Data.Count == 0
                 ? null 
-                : RestFollower.Create(this, response.Data.SingleOrDefault());
+                : RestFollower.Create(this, response.Data.First());
         }
 
-        public async Task<(IReadOnlyList<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
+        public async Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
         {
             var response = await API.GetFollowedChannelsAsync(new GetFollowedChannelsArgs
             {
-                UserId = MyUser.Id
+                UserId = MyUser.Id,
+                First = count
             });
             var data = response.Data.Select(x => RestFollowedChannel.Create(this, x)).ToImmutableArray();
             return (data, response.Total.Value);
@@ -83,7 +84,7 @@ namespace AuxLabs.Twitch.Rest
                 UserId = MyUser.Id,
                 BroadcasterId = broadcasterId
             });
-            return response?.Data == null || response.Data.Count() == 0
+            return response?.Data == null || response.Data.Count == 0
                 ? null
                 : RestFollowedChannel.Create(this, response.Data.First());
         }
