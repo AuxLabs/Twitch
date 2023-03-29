@@ -84,18 +84,18 @@ jobs:
         run: dotnet restore
       - name: Create Packages
         run: |
-          dotnet pack "./src/AuxLabs.Twitch.Core/AuxLabs.Twitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.Twitch.WebSockets/AuxLabs.Twitch.WebSockets.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/abstractions/AuxLabs.Twitch.Core/AuxLabs.Twitch.Core.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/abstractions/AuxLabs.Twitch.WebSockets/AuxLabs.Twitch.WebSockets.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
 
           dotnet pack "./src/AuxLabs.Twitch.Rest.Api/AuxLabs.Twitch.Rest.Api.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.Chat.Api/AuxLabs.Twitch.Chat.Api.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.PubSub.Api/AuxLabs.Twitch.PubSub.Api.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.EventSub.Api/AuxLabs.Twitch.EventSub.Api.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           
-          #dotnet pack "./src/AuxLabs.Twitch.Rest/AuxLabs.Twitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          #dotnet pack "./src/AuxLabs.Twitch.Chat/AuxLabs.Twitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          #dotnet pack "./src/AuxLabs.Twitch.PubSub/AuxLabs.Twitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          #dotnet pack "./src/AuxLabs.Twitch.EventSub/AuxLabs.Twitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.Twitch.Rest/AuxLabs.Twitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.Twitch.Chat/AuxLabs.Twitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.Twitch.PubSub/AuxLabs.Twitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
+          dotnet pack "./src/AuxLabs.Twitch.EventSub/AuxLabs.Twitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
       - name: Publish
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
 
