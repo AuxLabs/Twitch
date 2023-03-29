@@ -1,5 +1,6 @@
 ﻿using AuxLabs.Twitch.Chat;
 using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Entities;
 using System.Drawing;
 using System.Threading.Tasks;
 using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;

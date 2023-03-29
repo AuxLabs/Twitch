@@ -1,5 +1,7 @@
-﻿using AuxLabs.Twitch;
-using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Api;
+using AuxLabs.Twitch.Rest.Entities;
+using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -137,6 +139,14 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestEventSubscription.Create(this, x)).ToImmutableArray();
         }
 
+        public Task<RestEventSubscription> CreateEventSubscriptionAsync<TCondition>(Action<PostEventSubscriptionBody<TCondition>> func)
+            where TCondition : IEventCondition
+        {
+            var args = new PostEventSubscriptionBody<TCondition>();
+            func(args);
+
+            return CreateEventSubscriptionAsync(args);
+        }
         public async Task<RestEventSubscription> CreateEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition> args)
             where TCondition : IEventCondition
         {

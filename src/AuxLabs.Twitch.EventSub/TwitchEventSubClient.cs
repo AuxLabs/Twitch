@@ -1,6 +1,9 @@
 ﻿using AuxLabs.Twitch.EventSub.Api;
 using AuxLabs.Twitch.EventSub.Models;
 using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Entities;
+using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;

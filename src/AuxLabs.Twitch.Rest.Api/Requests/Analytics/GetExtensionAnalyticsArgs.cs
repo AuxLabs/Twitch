@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Requests
 {
     public class GetExtensionAnalyticsArgs : GetAnalyticsArgs, IScopedRequest
     {

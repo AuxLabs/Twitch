@@ -1,7 +1,7 @@
 ﻿using System;
-using Model = AuxLabs.Twitch.Rest.Follower;
+using Model = AuxLabs.Twitch.Rest.Models.Follower;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Entities
 {
     public class RestFollower : RestSimpleUser
     {

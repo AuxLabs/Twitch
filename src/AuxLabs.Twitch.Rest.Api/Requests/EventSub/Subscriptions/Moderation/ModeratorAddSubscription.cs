@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.Twitch.Rest
+﻿namespace AuxLabs.Twitch.Rest.Requests
 {
     public class ModeratorAddSubscription : BroadcasterSubscriptionBase
     {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Models
 {
     public readonly struct VideoOffset
     {

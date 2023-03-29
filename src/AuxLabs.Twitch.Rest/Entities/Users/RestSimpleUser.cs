@@ -1,6 +1,6 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Models;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Entities
 {
     public class RestSimpleUser : RestPartialUser
     {

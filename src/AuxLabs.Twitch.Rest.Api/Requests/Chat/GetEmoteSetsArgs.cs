@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Requests
 {
     public class GetEmoteSetsArgs : QueryMap
     {

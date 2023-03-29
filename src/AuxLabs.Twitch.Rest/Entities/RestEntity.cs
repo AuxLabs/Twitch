@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Entities
 {
     public abstract class RestEntity<T>
         where T : IEquatable<T>

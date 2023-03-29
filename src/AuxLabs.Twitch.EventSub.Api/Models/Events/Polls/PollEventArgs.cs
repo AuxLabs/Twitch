@@ -1,4 +1,4 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Models;
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;

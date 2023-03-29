@@ -1,4 +1,6 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Entities;
+using AuxLabs.Twitch.Rest.Requests;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -15,8 +17,11 @@ namespace AuxLabs.Twitch.Rest
             return MyChannel;
         }
 
-        public async Task<RestChannel> UpdateMyChannelAsync(PatchChannelBody args)
+        public async Task<RestChannel> UpdateMyChannelAsync(Action<PatchChannelBody> func)
         {
+            var args = new PatchChannelBody();
+            func(args);
+
             IsUserAuthorized(out var identity);
             await API.PatchChannelAsync(new PatchChannelArgs
             {

@@ -1,11 +1,13 @@
-﻿using RestEase;
+﻿using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
+using RestEase;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Api
 {
-    [Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/SimpleTwitch)")]
+    [Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/Twitch)")]
     public interface ITwitchIdentityApi : IDisposable
     {
         [Get("validate")]

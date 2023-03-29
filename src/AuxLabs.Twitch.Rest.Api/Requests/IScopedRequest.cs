@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Requests
 {
     /// <summary> Indicates that a method requires special authentication to be used. </summary>
     public interface IScopedRequest

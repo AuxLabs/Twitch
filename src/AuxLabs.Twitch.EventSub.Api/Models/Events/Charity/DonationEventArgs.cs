@@ -1,4 +1,4 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Models;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.Twitch.EventSub.Models

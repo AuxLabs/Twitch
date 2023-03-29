@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Requests
 {
     public abstract class GetAnalyticsArgs : QueryMap, IPaginatedRequest
     {

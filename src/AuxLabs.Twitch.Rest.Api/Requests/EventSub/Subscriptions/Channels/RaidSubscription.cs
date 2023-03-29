@@ -1,4 +1,6 @@
-﻿namespace AuxLabs.Twitch.Rest
+﻿using AuxLabs.Twitch.Rest.Models;
+
+namespace AuxLabs.Twitch.Rest.Requests
 {
     public class RaidSubscription : PostEventSubscriptionBody<RaidCondition>
     {

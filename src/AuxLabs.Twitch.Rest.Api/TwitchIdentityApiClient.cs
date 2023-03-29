@@ -1,10 +1,12 @@
-﻿using RestEase;
+﻿using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
+using RestEase;
 using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Api
 {
     /// <summary> A client that implements Twitch's identity api for manging access tokens. </summary>
     public class TwitchIdentityApiClient : ITwitchIdentityApi

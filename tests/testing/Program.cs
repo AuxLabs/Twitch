@@ -1,5 +1,5 @@
 ﻿using AuxLabs.Twitch.Chat.Api;
-using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Api;
 
 var rest = new TwitchRestApiClient();
 
@@ -21,5 +21,5 @@ await chat.RunAsync();
 void OnConnected()
 {
     Console.WriteLine("> Connected");
-    chat.SendJoinAsync("canadian_dragon");
+    chat.SendJoinAsync("spaceyeen");
 }

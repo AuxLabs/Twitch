@@ -1,11 +1,10 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Entities
 {
     public class RestBroadcast : RestEntity<string>, IUpdatable
     {

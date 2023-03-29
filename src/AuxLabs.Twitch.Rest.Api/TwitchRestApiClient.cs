@@ -1,11 +1,13 @@
-﻿using RestEase;
+﻿using AuxLabs.Twitch.Rest.Models;
+using AuxLabs.Twitch.Rest.Requests;
+using RestEase;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Api
 {
     public class TwitchRestApiClient : ITwitchApi, IDisposable
     {

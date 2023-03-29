@@ -1,6 +1,7 @@
-﻿using System.Text.Json.Serialization;
+﻿using AuxLabs.Twitch.Rest.Models;
+using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Requests
 {
     public class PostEnforcementStatusBody
     {

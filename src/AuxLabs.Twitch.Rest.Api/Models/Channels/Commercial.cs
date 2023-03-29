@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Models
 {
     /// <summary> Contains information about the status of a commercial request. </summary>
     public class Commercial

@@ -1,4 +1,5 @@
 ﻿using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Api;
 
 namespace AuxLabs.Twitch.Rest
 {

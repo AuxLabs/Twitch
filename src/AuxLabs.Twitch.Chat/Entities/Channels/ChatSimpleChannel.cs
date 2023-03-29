@@ -1,4 +1,5 @@
 ﻿using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Entities;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;

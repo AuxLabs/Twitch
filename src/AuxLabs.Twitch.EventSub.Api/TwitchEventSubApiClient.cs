@@ -1,5 +1,6 @@
 ﻿using AuxLabs.Twitch.EventSub.Models;
-using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Api;
+using AuxLabs.Twitch.Rest.Models;
 using AuxLabs.Twitch.WebSockets;
 using System;
 using System.Linq;

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Models
 {
     /// <summary> Contains information about an extension's analytic report. </summary>
     public class ExtensionAnalytic : Analytic

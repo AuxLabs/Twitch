@@ -1,9 +1,9 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Requests;
 using System.Linq;
 using System.Threading.Tasks;
-using Model = AuxLabs.Twitch.Rest.User;
+using Model = AuxLabs.Twitch.Rest.Models.User;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Entities
 {
     public class RestSelfUser : RestUser
     {

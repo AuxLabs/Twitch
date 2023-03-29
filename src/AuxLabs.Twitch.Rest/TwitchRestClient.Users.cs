@@ -1,4 +1,5 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest.Entities;
+using AuxLabs.Twitch.Rest.Requests;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;

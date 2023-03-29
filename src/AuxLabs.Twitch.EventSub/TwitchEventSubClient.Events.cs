@@ -1,5 +1,6 @@
 ﻿using AuxLabs.Twitch.EventSub.Models;
 using AuxLabs.Twitch.Rest;
+using AuxLabs.Twitch.Rest.Entities;
 using System;
 using System.Threading.Tasks;
 

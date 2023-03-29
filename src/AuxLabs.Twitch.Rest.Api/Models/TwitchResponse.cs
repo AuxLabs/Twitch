@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Models
 {
     /// <summary> An object that represents data returned by a Twitch request. </summary>
     public class TwitchResponse<T> where T : class

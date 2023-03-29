@@ -1,7 +1,8 @@
-﻿using System.Text.Json;
+﻿using AuxLabs.Twitch.Rest.Models;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch.Rest.Api
 {
     public static class TwitchJsonSerializerOptions
     {
