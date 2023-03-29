@@ -1902,6 +1902,48 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync
   nameWithType: ChatSimpleChannel.GetChannelAsync
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
+  name: GetChatSettingsAsync()
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChatSettingsAsync
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync()
+  nameWithType: ChatSimpleChannel.GetChatSettingsAsync()
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync*
+  name: GetChatSettingsAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChatSettingsAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
+  nameWithType: ChatSimpleChannel.GetChatSettingsAsync
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(System.Int32)
+  name: GetChattersAsync(int)
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChattersAsync_System_Int32_
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(System.Int32)
+  name.vb: GetChattersAsync(Integer)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(int)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(Integer)
+  nameWithType: ChatSimpleChannel.GetChattersAsync(int)
+  nameWithType.vb: ChatSimpleChannel.GetChattersAsync(Integer)
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync*
+  name: GetChattersAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChattersAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync
+  nameWithType: ChatSimpleChannel.GetChattersAsync
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
+  name: GetEmotesAsync()
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetEmotesAsync
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync()
+  nameWithType: ChatSimpleChannel.GetEmotesAsync()
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync*
+  name: GetEmotesAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetEmotesAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
+  nameWithType: ChatSimpleChannel.GetEmotesAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync(System.String)
   name: GetFollowerAsync(string)
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetFollowerAsync_System_String_
@@ -2011,6 +2053,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName
   nameWithType: ChatSimpleChannel.GetUserByName
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(Action{PatchChatSettingsBody})
+  name: ModifyChatSettingsAsync(Action<PatchChatSettingsBody>)
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_ModifyChatSettingsAsync_Action_PatchChatSettingsBody__
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(Action{PatchChatSettingsBody})
+  name.vb: ModifyChatSettingsAsync(Action(Of PatchChatSettingsBody))
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(Action<PatchChatSettingsBody>)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(Action(Of PatchChatSettingsBody))
+  nameWithType: ChatSimpleChannel.ModifyChatSettingsAsync(Action<PatchChatSettingsBody>)
+  nameWithType.vb: ChatSimpleChannel.ModifyChatSettingsAsync(Action(Of PatchChatSettingsBody))
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync*
+  name: ModifyChatSettingsAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_ModifyChatSettingsAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync
+  nameWithType: ChatSimpleChannel.ModifyChatSettingsAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Name
   name: Name
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_Name
@@ -2024,6 +2082,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Name
   nameWithType: ChatSimpleChannel.Name
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(System.String,System.Nullable{AnnouncementColor})
+  name: SendAnnouncementAsync(string, AnnouncementColor?)
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendAnnouncementAsync_System_String_System_Nullable_AnnouncementColor__
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(System.String,System.Nullable{AnnouncementColor})
+  name.vb: SendAnnouncementAsync(String, AnnouncementColor?)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(string, AnnouncementColor?)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(String, AnnouncementColor?)
+  nameWithType: ChatSimpleChannel.SendAnnouncementAsync(string, AnnouncementColor?)
+  nameWithType.vb: ChatSimpleChannel.SendAnnouncementAsync(String, AnnouncementColor?)
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync*
+  name: SendAnnouncementAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendAnnouncementAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync
+  nameWithType: ChatSimpleChannel.SendAnnouncementAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync(System.String)
   name: SendMessageAsync(string)
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendMessageAsync_System_String_
@@ -2040,6 +2114,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync
   nameWithType: ChatSimpleChannel.SendMessageAsync
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(System.String)
+  name: SendShoutoutAsync(string)
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendShoutoutAsync_System_String_
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(System.String)
+  name.vb: SendShoutoutAsync(String)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(string)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(String)
+  nameWithType: ChatSimpleChannel.SendShoutoutAsync(string)
+  nameWithType.vb: ChatSimpleChannel.SendShoutoutAsync(String)
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync*
+  name: SendShoutoutAsync
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendShoutoutAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync
+  nameWithType: ChatSimpleChannel.SendShoutoutAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString
   name: ToString()
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_ToString
@@ -16663,19 +16753,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetTopGamesAsync
   nameWithType: ITwitchApi.GetTopGamesAsync
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
-  name: GetUserChatColorAsync(GetUserColorArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_GetUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs, CancellationToken?)
-  nameWithType: ITwitchApi.GetUserChatColorAsync(GetUserColorArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync*
-  name: GetUserChatColorAsync
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_GetUserChatColorAsync_
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
+  name: GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_GetUserChatColorsAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs, CancellationToken?)
+  nameWithType: ITwitchApi.GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync*
+  name: GetUserChatColorsAsync
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_GetUserChatColorsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorAsync
-  nameWithType: ITwitchApi.GetUserChatColorAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserChatColorsAsync
+  nameWithType: ITwitchApi.GetUserChatColorsAsync
 - uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.GetUserExtensionsAsync(System.Nullable{CancellationToken})
   name: GetUserExtensionsAsync(CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_GetUserExtensionsAsync_System_Nullable_CancellationToken__
@@ -17147,19 +17237,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserAsync
   nameWithType: ITwitchApi.PutUserAsync
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
-  name: PutUserChatColor(PutUserChatColorArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_PutUserChatColor_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs, CancellationToken?)
-  nameWithType: ITwitchApi.PutUserChatColor(PutUserChatColorArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor*
-  name: PutUserChatColor
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_PutUserChatColor_
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
+  name: PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_PutUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs, CancellationToken?)
+  nameWithType: ITwitchApi.PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync*
+  name: PutUserChatColorAsync
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_PutUserChatColorAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColor
-  nameWithType: ITwitchApi.PutUserChatColor
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.PutUserChatColorAsync
+  nameWithType: ITwitchApi.PutUserChatColorAsync
 - uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
   name: ITwitchIdentityApi
   href: api/AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.html
@@ -18347,19 +18437,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTopGamesAsync
   nameWithType: TwitchRestApiClient.GetTopGamesAsync
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
-  name: GetUserChatColorAsync(GetUserColorArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs, CancellationToken?)
-  nameWithType: TwitchRestApiClient.GetUserChatColorAsync(GetUserColorArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync*
-  name: GetUserChatColorAsync
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorAsync_
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
+  name: GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorsAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs, CancellationToken?)
+  nameWithType: TwitchRestApiClient.GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync*
+  name: GetUserChatColorsAsync
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorAsync
-  nameWithType: TwitchRestApiClient.GetUserChatColorAsync
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync
+  nameWithType: TwitchRestApiClient.GetUserChatColorsAsync
 - uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserExtensionsAsync(System.Nullable{CancellationToken})
   name: GetUserExtensionsAsync(CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserExtensionsAsync_System_Nullable_CancellationToken__
@@ -18844,19 +18934,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserAsync
   nameWithType: TwitchRestApiClient.PutUserAsync
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
-  name: PutUserChatColor(PutUserChatColorArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColor_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs, CancellationToken?)
-  nameWithType: TwitchRestApiClient.PutUserChatColor(PutUserChatColorArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor*
-  name: PutUserChatColor
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColor_
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
+  name: PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs, CancellationToken?)
+  nameWithType: TwitchRestApiClient.PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync*
+  name: PutUserChatColorAsync
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColorAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColor
-  nameWithType: TwitchRestApiClient.PutUserChatColor
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync
+  nameWithType: TwitchRestApiClient.PutUserChatColorAsync
 - uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.RefreshTokenAsync(System.Nullable{CancellationToken})
   name: RefreshTokenAsync(CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RefreshTokenAsync_System_Nullable_CancellationToken__
@@ -19282,6 +19372,83 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
   nameWithType: RestEditorUser.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote
+  name: RestEmote
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEmote
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote
+  nameWithType: RestEmote
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestEmote(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestEmote.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.RestEmote(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEmote.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestEmote.RestEmote(TwitchRestClient, string)
+  nameWithType.vb: RestEmote.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.#ctor*
+  name: RestEmote
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEmote.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.RestEmote
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEmote.New
+  nameWithType: RestEmote.RestEmote
+  nameWithType.vb: RestEmote.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId
+  name: BroadcasterId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId
+  nameWithType: RestEmote.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId*
+  name: BroadcasterId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_BroadcasterId_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.BroadcasterId
+  nameWithType: RestEmote.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId
+  name: EmoteSetId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_EmoteSetId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId
+  nameWithType: RestEmote.EmoteSetId
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId*
+  name: EmoteSetId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_EmoteSetId_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.EmoteSetId
+  nameWithType: RestEmote.EmoteSetId
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.Tier
+  name: Tier
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_Tier
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEmote.Tier
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.Tier
+  nameWithType: RestEmote.Tier
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.Tier*
+  name: Tier
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_Tier_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEmote.Tier
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.Tier
+  nameWithType: RestEmote.Tier
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.Type
+  name: Type
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_Type
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEmote.Type
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.Type
+  nameWithType: RestEmote.Type
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote.Type*
+  name: Type
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html#AuxLabs_Twitch_Rest_Entities_RestEmote_Type_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEmote.Type
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote.Type
+  nameWithType: RestEmote.Type
 - uid: AuxLabs.Twitch.Rest.Entities.RestEntity`1
   name: RestEntity<T>
   href: api/AuxLabs.Twitch.Rest.Entities.RestEntity-1.html
@@ -19559,6 +19726,96 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
   nameWithType: RestFollower.FollowedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  name: RestGlobalEmote
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  nameWithType: RestGlobalEmote
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestGlobalEmote(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.RestGlobalEmote(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestGlobalEmote.RestGlobalEmote(TwitchRestClient, string)
+  nameWithType.vb: RestGlobalEmote.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.#ctor*
+  name: RestGlobalEmote
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.RestGlobalEmote
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.New
+  nameWithType: RestGlobalEmote.RestGlobalEmote
+  nameWithType.vb: RestGlobalEmote.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats
+  name: Formats
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Formats
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats
+  nameWithType: RestGlobalEmote.Formats
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats*
+  name: Formats
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Formats_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Formats
+  nameWithType: RestGlobalEmote.Formats
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images
+  name: Images
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Images
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images
+  nameWithType: RestGlobalEmote.Images
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images*
+  name: Images
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Images_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images
+  nameWithType: RestGlobalEmote.Images
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Name
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name
+  nameWithType: RestGlobalEmote.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Name_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name
+  nameWithType: RestGlobalEmote.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales
+  name: Scales
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Scales
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales
+  nameWithType: RestGlobalEmote.Scales
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales*
+  name: Scales
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Scales_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Scales
+  nameWithType: RestGlobalEmote.Scales
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
+  name: Themes
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Themes
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
+  nameWithType: RestGlobalEmote.Themes
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes*
+  name: Themes
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html#AuxLabs_Twitch_Rest_Entities_RestGlobalEmote_Themes_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
+  nameWithType: RestGlobalEmote.Themes
 - uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser
   name: RestPartialUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html
@@ -19793,6 +20050,44 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
   nameWithType: RestSimpleChannel.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
+  name: RestSimpleChatUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
+  nameWithType: RestSimpleChatUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestSimpleChatUser(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.RestSimpleChatUser(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestSimpleChatUser.RestSimpleChatUser(TwitchRestClient, string)
+  nameWithType.vb: RestSimpleChatUser.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor*
+  name: RestSimpleChatUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.RestSimpleChatUser
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.New
+  nameWithType: RestSimpleChatUser.RestSimpleChatUser
+  nameWithType.vb: RestSimpleChatUser.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
+  name: Color
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser_Color
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
+  nameWithType: RestSimpleChatUser.Color
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color*
+  name: Color
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser_Color_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
+  nameWithType: RestSimpleChatUser.Color
 - uid: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
   name: RestSimpleUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html
@@ -40272,6 +40567,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelsAsync
   nameWithType: TwitchRestClient.GetChannelsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync(System.String,System.Nullable{CancellationToken})
+  name: GetChatSettingsAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChatSettingsAsync_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync(System.String,System.Nullable{CancellationToken})
+  name.vb: GetChatSettingsAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync(string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync(String, CancellationToken?)
+  nameWithType: TwitchRestClient.GetChatSettingsAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetChatSettingsAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync*
+  name: GetChatSettingsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChatSettingsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChatSettingsAsync
+  nameWithType: TwitchRestClient.GetChatSettingsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync(System.String,System.Int32,System.Nullable{CancellationToken})
+  name: GetChattersAsync(string, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChattersAsync_System_String_System_Int32_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync(System.String,System.Int32,System.Nullable{CancellationToken})
+  name.vb: GetChattersAsync(String, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync(string, int, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync(String, Integer, CancellationToken?)
+  nameWithType: TwitchRestClient.GetChattersAsync(string, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetChattersAsync(String, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync*
+  name: GetChattersAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChattersAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChattersAsync
+  nameWithType: TwitchRestClient.GetChattersAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetCheermotesAsync(System.String)
   name: GetCheermotesAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetCheermotesAsync_System_String_
@@ -40288,6 +40615,69 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetCheermotesAsync
   nameWithType: TwitchRestClient.GetCheermotesAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(System.Nullable{CancellationToken})
+  name: GetEmotesAsync(CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmotesAsync_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(CancellationToken?)
+  nameWithType: TwitchRestClient.GetEmotesAsync(CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(System.String,System.Nullable{CancellationToken})
+  name: GetEmotesAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmotesAsync_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(System.String,System.Nullable{CancellationToken})
+  name.vb: GetEmotesAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(String, CancellationToken?)
+  nameWithType: TwitchRestClient.GetEmotesAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetEmotesAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync*
+  name: GetEmotesAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmotesAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync
+  nameWithType: TwitchRestClient.GetEmotesAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync(System.String,System.Nullable{CancellationToken})
+  name: GetEmoteSetAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmoteSetAsync_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync(System.String,System.Nullable{CancellationToken})
+  name.vb: GetEmoteSetAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync(string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync(String, CancellationToken?)
+  nameWithType: TwitchRestClient.GetEmoteSetAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetEmoteSetAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync*
+  name: GetEmoteSetAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmoteSetAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetAsync
+  nameWithType: TwitchRestClient.GetEmoteSetAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(System.String[],System.Nullable{CancellationToken})
+  name: GetEmoteSetsAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmoteSetsAsync_System_String___System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(System.String[],System.Nullable{CancellationToken})
+  name.vb: GetEmoteSetsAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(string[], CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(String(), CancellationToken?)
+  nameWithType: TwitchRestClient.GetEmoteSetsAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetEmoteSetsAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(System.String[])
+  name: GetEmoteSetsAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmoteSetsAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(System.String[])
+  name.vb: GetEmoteSetsAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetEmoteSetsAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetEmoteSetsAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync*
+  name: GetEmoteSetsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmoteSetsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmoteSetsAsync
+  nameWithType: TwitchRestClient.GetEmoteSetsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEventSubscriptionsAsync(System.String,System.Nullable{EventSubStatus},System.Nullable{EventSubType})
   name: GetEventSubscriptionsAsync(string, EventSubStatus?, EventSubType?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEventSubscriptionsAsync_System_String_System_Nullable_EventSubStatus__System_Nullable_EventSubType__
@@ -40464,6 +40854,47 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserByNameAsync
   nameWithType: TwitchRestClient.GetUserByNameAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync(System.String,System.Nullable{CancellationToken})
+  name: GetUserChatColorAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserChatColorAsync_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync(System.String,System.Nullable{CancellationToken})
+  name.vb: GetUserChatColorAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync(string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync(String, CancellationToken?)
+  nameWithType: TwitchRestClient.GetUserChatColorAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetUserChatColorAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync*
+  name: GetUserChatColorAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserChatColorAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorAsync
+  nameWithType: TwitchRestClient.GetUserChatColorAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(System.String[],System.Nullable{CancellationToken})
+  name: GetUserChatColorsAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserChatColorsAsync_System_String___System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(System.String[],System.Nullable{CancellationToken})
+  name.vb: GetUserChatColorsAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(string[], CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(String(), CancellationToken?)
+  nameWithType: TwitchRestClient.GetUserChatColorsAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetUserChatColorsAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(System.String[])
+  name: GetUserChatColorsAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserChatColorsAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(System.String[])
+  name.vb: GetUserChatColorsAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetUserChatColorsAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetUserChatColorsAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync*
+  name: GetUserChatColorsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserChatColorsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserChatColorsAsync
+  nameWithType: TwitchRestClient.GetUserChatColorsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUsersByIdAsync(System.String[])
   name: GetUsersByIdAsync(params string[])
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUsersByIdAsync_System_String___
@@ -40509,6 +40940,41 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.Identity
   nameWithType: TwitchRestClient.Identity
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync(System.String,Action{AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody},System.Nullable{CancellationToken})
+  name: ModifyChatSettingsAsync(string, Action<PatchChatSettingsBody>, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyChatSettingsAsync_System_String_Action_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsBody__System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync(System.String,Action{AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody},System.Nullable{CancellationToken})
+  name.vb: ModifyChatSettingsAsync(String, Action(Of PatchChatSettingsBody), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync(string, Action<AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody>, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync(String, Action(Of AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody), CancellationToken?)
+  nameWithType: TwitchRestClient.ModifyChatSettingsAsync(string, Action<PatchChatSettingsBody>, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.ModifyChatSettingsAsync(String, Action(Of PatchChatSettingsBody), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync*
+  name: ModifyChatSettingsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyChatSettingsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync
+  nameWithType: TwitchRestClient.ModifyChatSettingsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(ChatColor,System.Nullable{CancellationToken})
+  name: ModifyMyColorAsync(ChatColor, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyColorAsync_ChatColor_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(ChatColor,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(ChatColor, CancellationToken?)
+  nameWithType: TwitchRestClient.ModifyMyColorAsync(ChatColor, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(Color,System.Nullable{CancellationToken})
+  name: ModifyMyColorAsync(Color, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyColorAsync_Color_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(Color,System.Nullable{CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(Color, CancellationToken?)
+  nameWithType: TwitchRestClient.ModifyMyColorAsync(Color, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync*
+  name: ModifyMyColorAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyColorAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync
+  nameWithType: TwitchRestClient.ModifyMyColorAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyUserAsync(System.String)
   name: ModifyMyUserAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyUserAsync_System_String_
@@ -40551,6 +41017,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.MyUser
   nameWithType: TwitchRestClient.MyUser
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync(System.String,System.String,System.Nullable{AnnouncementColor},System.Nullable{CancellationToken})
+  name: SendAnnouncementAsync(string, string, AnnouncementColor?, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_SendAnnouncementAsync_System_String_System_String_System_Nullable_AnnouncementColor__System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync(System.String,System.String,System.Nullable{AnnouncementColor},System.Nullable{CancellationToken})
+  name.vb: SendAnnouncementAsync(String, String, AnnouncementColor?, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync(string, string, AnnouncementColor?, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync(String, String, AnnouncementColor?, CancellationToken?)
+  nameWithType: TwitchRestClient.SendAnnouncementAsync(string, string, AnnouncementColor?, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.SendAnnouncementAsync(String, String, AnnouncementColor?, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync*
+  name: SendAnnouncementAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_SendAnnouncementAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.SendAnnouncementAsync
+  nameWithType: TwitchRestClient.SendAnnouncementAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync(System.String,System.String,System.Nullable{CancellationToken})
+  name: SendShoutoutAsync(string, string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_SendShoutoutAsync_System_String_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync(System.String,System.String,System.Nullable{CancellationToken})
+  name.vb: SendShoutoutAsync(String, String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync(string, string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync(String, String, CancellationToken?)
+  nameWithType: TwitchRestClient.SendShoutoutAsync(string, string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.SendShoutoutAsync(String, String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync*
+  name: SendShoutoutAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_SendShoutoutAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync
+  nameWithType: TwitchRestClient.SendShoutoutAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(System.Int32)
   name: StartCommercialAsync(int)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_StartCommercialAsync_System_Int32_
