@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.Twitch.Rest
+namespace AuxLabs.Twitch
 {
     public enum EmoteTheme
     {
