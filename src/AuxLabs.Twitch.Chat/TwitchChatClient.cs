@@ -1,4 +1,7 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Chat.Api;
+using AuxLabs.Twitch.Chat.Entities;
+using AuxLabs.Twitch.Chat.Models;
+using AuxLabs.Twitch.Rest;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

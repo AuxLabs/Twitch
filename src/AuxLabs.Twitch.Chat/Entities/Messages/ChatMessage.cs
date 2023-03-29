@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Message = AuxLabs.Twitch.Chat.MessageEventArgs;
+using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatMessage : ChatSimpleMessage
     {

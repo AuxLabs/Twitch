@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Api
 {
     public enum IrcCommand
     {

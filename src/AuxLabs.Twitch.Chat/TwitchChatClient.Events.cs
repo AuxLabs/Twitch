@@ -1,4 +1,5 @@
-﻿using AuxLabs.Twitch.Chat;
+﻿using AuxLabs.Twitch.Chat.Api;
+using AuxLabs.Twitch.Chat.Entities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

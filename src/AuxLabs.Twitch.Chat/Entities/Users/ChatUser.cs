@@ -1,10 +1,9 @@
-﻿using AuxLabs.Twitch.Chat;
-using System.Collections.Generic;
-using GlobalState = AuxLabs.Twitch.Chat.GlobalUserStateTags;
-using UserState = AuxLabs.Twitch.Chat.UserStateEventArgs;
-using Message = AuxLabs.Twitch.Chat.MessageEventArgs;
+﻿using System.Collections.Generic;
+using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
+using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
+using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     /// <summary>  </summary>
     public class ChatUser : ChatSimpleUser

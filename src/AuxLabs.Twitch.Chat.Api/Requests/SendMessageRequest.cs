@@ -1,6 +1,8 @@
-﻿using System.Threading;
+﻿using AuxLabs.Twitch.Chat.Api;
+using AuxLabs.Twitch.Chat.Models;
+using System.Threading;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Requests
 {
     public class SendMessageRequest : BaseChatRequest
     {

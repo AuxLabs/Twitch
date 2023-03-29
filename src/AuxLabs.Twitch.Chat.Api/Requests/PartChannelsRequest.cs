@@ -1,6 +1,7 @@
-﻿using System.Threading;
+﻿using AuxLabs.Twitch.Chat.Api;
+using System.Threading;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Requests
 {
     public class PartChannelsRequest : BaseChatRequest
     {

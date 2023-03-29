@@ -3,10 +3,10 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Message = AuxLabs.Twitch.Chat.MessageEventArgs;
-using RoomState = AuxLabs.Twitch.Chat.RoomStateEventArgs;
+using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
+using RoomState = AuxLabs.Twitch.Chat.Models.RoomStateEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatSimpleChannel : ChatEntity<string>
     {

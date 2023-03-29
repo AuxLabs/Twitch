@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Model = AuxLabs.Twitch.Chat.UserStateEventArgs;
+using Model = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     /// <summary> Data for the currently authenticated user in a specific channel </summary>
     public class ChatChannelSelfUser : ChatChannelUser

@@ -1,7 +1,7 @@
-﻿using Message = AuxLabs.Twitch.Chat.MessageEventArgs;
-using UserState = AuxLabs.Twitch.Chat.UserStateEventArgs;
+﻿using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
+using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     /// <summary> Data for a user specific to certain channels </summary>
     public class ChatChannelUser : ChatUser

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Models
 {
     public abstract class BaseTags : QueryMap
     {

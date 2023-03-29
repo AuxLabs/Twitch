@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
+﻿using AuxLabs.Twitch.Chat.Api;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Models
 {
     public class ClearChatEventArgs
     {

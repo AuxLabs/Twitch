@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using AuxLabs.Twitch.Chat.Api;
+using System.Collections.Generic;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Requests
 {
     public class CapabilityRequest : IrcPayload
     {

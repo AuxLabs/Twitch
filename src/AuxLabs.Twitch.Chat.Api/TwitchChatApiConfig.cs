@@ -1,6 +1,6 @@
 ﻿using AuxLabs.Twitch.WebSockets;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Api
 {
     public class TwitchChatApiConfig
     {

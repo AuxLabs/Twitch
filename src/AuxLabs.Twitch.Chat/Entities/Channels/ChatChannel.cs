@@ -1,7 +1,7 @@
 ﻿using System;
-using Model = AuxLabs.Twitch.Chat.RoomStateEventArgs;
+using Model = AuxLabs.Twitch.Chat.Models.RoomStateEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatChannel : ChatSimpleChannel
     {

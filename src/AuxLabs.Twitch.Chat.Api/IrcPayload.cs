@@ -1,10 +1,11 @@
-﻿using AuxLabs.Twitch.WebSockets;
+﻿using AuxLabs.Twitch.Chat.Models;
+using AuxLabs.Twitch.WebSockets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Api
 {
     public class IrcPayload : IPayload
     {

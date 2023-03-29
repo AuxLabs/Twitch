@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using AuxLabs.Twitch.Chat.Api;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Models
 {
     public class WhisperEventArgs : IWhisperMessage
     {

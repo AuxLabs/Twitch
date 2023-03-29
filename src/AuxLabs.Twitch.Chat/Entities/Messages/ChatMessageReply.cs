@@ -1,6 +1,6 @@
-﻿using Model = AuxLabs.Twitch.Chat.MessageEventArgs;
+﻿using Model = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatMessageReply : ChatEntity<string>
     {

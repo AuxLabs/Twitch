@@ -1,4 +1,4 @@
-﻿using AuxLabs.Twitch.Chat;
+﻿using AuxLabs.Twitch.Chat.Api;
 using AuxLabs.Twitch.Rest;
 
 var rest = new TwitchRestApiClient();

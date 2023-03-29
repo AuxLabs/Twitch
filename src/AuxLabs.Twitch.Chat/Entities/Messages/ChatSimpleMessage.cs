@@ -1,8 +1,8 @@
 ﻿using System;
-using Message = AuxLabs.Twitch.Chat.MessageEventArgs;
-using ClearMsg = AuxLabs.Twitch.Chat.ClearMessageEventArgs;
+using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
+using ClearMsg = AuxLabs.Twitch.Chat.Models.ClearMessageEventArgs;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatSimpleMessage : ChatEntity<string>
     {

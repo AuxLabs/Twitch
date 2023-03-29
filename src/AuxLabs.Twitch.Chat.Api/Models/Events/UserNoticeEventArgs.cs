@@ -1,9 +1,10 @@
-﻿using System;
+﻿using AuxLabs.Twitch.Chat.Api;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Models
 {
     public class UserNoticeEventArgs : IUserNoticeMessage
     {

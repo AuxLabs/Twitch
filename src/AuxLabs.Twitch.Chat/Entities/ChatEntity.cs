@@ -1,7 +1,7 @@
 ﻿using AuxLabs.Twitch;
 using System;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     public abstract class ChatEntity<T> : IEquatable<ChatEntity<T>>, IEntity<T>
     {

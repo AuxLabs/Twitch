@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Model = AuxLabs.Twitch.Chat.GlobalUserStateTags;
+using Model = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Entities
 {
     /// <summary> Global data for the currently authenticated user </summary>
     public class ChatSelfUser : ChatUser

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Api
 {
     public struct IrcPrefix
     {

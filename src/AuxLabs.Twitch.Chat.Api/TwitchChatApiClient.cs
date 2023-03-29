@@ -1,11 +1,13 @@
-﻿using AuxLabs.Twitch.WebSockets;
+﻿using AuxLabs.Twitch.Chat.Models;
+using AuxLabs.Twitch.Chat.Requests;
+using AuxLabs.Twitch.WebSockets;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch.Chat.Api
 {
     public class TwitchChatApiClient : BaseSocketClient<IrcPayload>
     {
