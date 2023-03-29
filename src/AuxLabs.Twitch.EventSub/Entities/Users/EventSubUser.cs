@@ -1,6 +1,6 @@
-﻿using BanArgs = AuxLabs.Twitch.EventSub.BanEventArgs;
+﻿using BanArgs = AuxLabs.Twitch.EventSub.Models.BanEventArgs;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Entities
 {
     internal enum BanUserType
     {

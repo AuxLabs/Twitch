@@ -1,9 +1,10 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.EventSub.Models;
+using AuxLabs.Twitch.Rest;
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Api
 {
     public class EventSubPayload : EventSubPayload<object> { }
     public class EventSubPayload<TEvent>

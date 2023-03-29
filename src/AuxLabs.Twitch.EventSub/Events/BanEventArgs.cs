@@ -1,9 +1,10 @@
-﻿using System;
-using Model = AuxLabs.Twitch.EventSub.BanEventArgs;
+﻿using AuxLabs.Twitch.EventSub.Entities;
+using System;
+using Model = AuxLabs.Twitch.EventSub.Models.BanEventArgs;
 
 namespace AuxLabs.Twitch.EventSub
 {
-    public class BanEventArgs2
+    public class BanEventArgs
     {
         /// <summary>  </summary>
         public EventSubUser User { get; private set; }
@@ -26,9 +27,9 @@ namespace AuxLabs.Twitch.EventSub
         /// <summary>  </summary>
         public bool IsPermanent { get; private set; }
 
-        public static BanEventArgs2 Create(TwitchEventSubClient twitch, Model model)
+        public static BanEventArgs Create(TwitchEventSubClient twitch, Model model)
         {
-            return new BanEventArgs2
+            return new BanEventArgs
             {
                 User = EventSubUser.Create(twitch, model, BanUserType.User),
                 Moderator = EventSubUser.Create(twitch, model, BanUserType.Moderator),

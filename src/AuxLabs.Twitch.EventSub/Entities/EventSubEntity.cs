@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Entities
 {
     public abstract class EventSubEntity<T>
         where T : IEquatable<T>

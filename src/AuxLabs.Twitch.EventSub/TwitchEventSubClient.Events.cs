@@ -1,4 +1,5 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.EventSub.Models;
+using AuxLabs.Twitch.Rest;
 using System;
 using System.Threading.Tasks;
 
@@ -55,12 +56,12 @@ namespace AuxLabs.Twitch.EventSub
         #region Moderation
 
         /// <summary>  </summary>
-        public event Func<BanEventArgs2, Task> UserBanned
+        public event Func<BanEventArgs, Task> UserBanned
         {
             add { _userBannedEvent.Add(value); }
             remove { _userBannedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<BanEventArgs2, Task>> _userBannedEvent = new AsyncEvent<Func<BanEventArgs2, Task>>();
+        internal readonly AsyncEvent<Func<BanEventArgs, Task>> _userBannedEvent = new AsyncEvent<Func<BanEventArgs, Task>>();
 
 
         #endregion

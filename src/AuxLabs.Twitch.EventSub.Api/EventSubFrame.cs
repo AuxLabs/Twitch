@@ -1,7 +1,8 @@
-﻿using AuxLabs.Twitch.WebSockets;
+﻿using AuxLabs.Twitch.EventSub.Models;
+using AuxLabs.Twitch.WebSockets;
 using System.Text.Json.Serialization;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Api
 {
     public class EventSubFrame : IPayload
     {

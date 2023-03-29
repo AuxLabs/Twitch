@@ -1,11 +1,12 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.EventSub.Models;
+using AuxLabs.Twitch.Rest;
 using AuxLabs.Twitch.WebSockets;
 using System;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Api
 {
     public class TwitchEventSubApiClient : BaseSocketClient<EventSubFrame>
     {

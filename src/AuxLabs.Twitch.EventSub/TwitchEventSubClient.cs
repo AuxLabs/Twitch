@@ -1,4 +1,6 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.EventSub.Api;
+using AuxLabs.Twitch.EventSub.Models;
+using AuxLabs.Twitch.Rest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -215,8 +217,8 @@ namespace AuxLabs.Twitch.EventSub
 
             switch (eventData)
             {
-                case BanEventArgs args:
-                    await _userBannedEvent.InvokeAsync(BanEventArgs2.Create(this, args));
+                case Models.BanEventArgs args:
+                    await _userBannedEvent.InvokeAsync(BanEventArgs.Create(this, args));
                     break;
 
                 default:

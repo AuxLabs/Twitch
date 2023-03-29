@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AuxLabs.Twitch.EventSub
+namespace AuxLabs.Twitch.EventSub.Models
 {
     public enum MessageType
     {

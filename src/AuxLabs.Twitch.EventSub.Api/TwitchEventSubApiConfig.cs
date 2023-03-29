@@ -1,4 +1,4 @@
-﻿namespace AuxLabs.Twitch.EventSub
+﻿namespace AuxLabs.Twitch.EventSub.Api
 {
     public class TwitchEventSubApiConfig
     {

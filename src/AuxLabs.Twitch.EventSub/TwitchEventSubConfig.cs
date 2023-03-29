@@ -1,4 +1,5 @@
-﻿using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.EventSub.Api;
+using AuxLabs.Twitch.Rest;
 
 namespace AuxLabs.Twitch.EventSub
 {
