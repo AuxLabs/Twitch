@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>SimpleTwitch | AuxLabs.SimpleTwitch Documentation </title>
+    <title>Twitch | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="SimpleTwitch | AuxLabs.SimpleTwitch Documentation ">
+    <meta name="title" content="Twitch | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="favicon.ico">
@@ -71,27 +71,25 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
-<p><a href="https://discord.gg/yd8x2wM"><img src="https://discordapp.com/api/guilds/257698577894080512/widget.png" alt="Discord"></a>
-<a href="https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml"><img src="https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github" alt="GitHub Workflow Status"></a>
-<a href=""><img src="https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget" alt="Nuget"></a></p>
-<h1 id="simpletwitch">SimpleTwitch</h1>
-<p>SimpleTwitch is a bare minimum implmentation of the Twitch APIs. It's built in a way that should make it easy to extend and implement your own clients as needed, if needed. An example of such an implementation is <a href="https://github.com/AuxLabs/Twitch">AuxLabs.Twitch</a>, the main and intended version of the library for general usage.</p>
+<p><a href="https://discord.gg/yd8x2wM"><img src="https://discordapp.com/api/guilds/257698577894080512/widget.png" alt="Discord" title="Discord Support Server"></a>
+<a href="https://github.com/AuxLabs/Twitch/actions/workflows/main.yml"><img src="https://img.shields.io/github/actions/workflow/status/AuxLabs/Twitch/main.yml?logo=github" alt="GitHub Workflow Status" title="CI Status"></a>
+<a href="https://www.nuget.org/packages/AuxLabs.Twitch/" title="Nuget Release Version"><img src="https://img.shields.io/nuget/v/AuxLabs.Twitch?logo=nuget" alt="Nuget"></a> <a href="https://www.nuget.org/packages/AuxLabs.Twitch/"><img src="https://img.shields.io/nuget/vpre/AuxLabs.Twitch?logo=nuget" alt="Nuget (with prereleases)" title="Nuget Prerelease Version"></a></p>
+<h1 id="twitch">Twitch</h1>
+<p>Twitch is an implementation of the <a href="https://dev.twitch.tv/">Twitch Developer API</a> that aims to reformat the data provided by these APIs into a more standardized structure where possible, present itself in a way that isn't overly complicated for a beginner to understand, and cover compatibility for modern platforms. Currently, only the base-level implementation is available via the <code>*.Api</code> libraries.</p>
 <p><img src="https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg" alt="Alt" title="Repobeats analytics image"></p>
 <h3 id="builds">Builds</h3>
-<p>Release builds will be available through Nuget, and development builds are available publicly through <a href="https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch">Github Packages</a>.</p>
+<p>Release builds will be available through <a href="https://www.nuget.org/packages/AuxLabs.Twitch/">Nuget</a>, and development builds are available publicly through <a href="https://github.com/orgs/AuxLabs/packages?repo_name=Twitch">Github Packages</a>.</p>
 <h3 id="documentation">Documentation</h3>
-<p>The API reference, starter tutorials, and other documentation will be available at <a href="https://docs.auxlabs.org/SimpleTwitch/">the documentation site</a>.</p>
+<p>The API reference, starter tutorials, and other documentation will be available at <a href="https://docs.auxlabs.org/Twitch/">the documentation site</a>.</p>
 <h3 id="samples">Samples</h3>
-<p>For examples and sample projects look at <a href="https://github.com/AuxLabs/SimpleTwitch-Examples">the examples repository</a>.</p>
+<p>For examples and sample projects look at <a href="https://github.com/AuxLabs/Twitch-Examples">the examples repository</a>.</p>
 <h3 id="features">Features</h3>
 <details>
-  <summary>Rest</summary>
-    
+  <summary>Rest Implementation</summary>
 - [x] Global ratelimit handling
 - [ ] Unique endpoint ratelimit handling
 - [x] Check arguments for validity before requests
 - [x] Scope confirmation before requests
-- [ ] Automatic token refresh
 - [x] Ability to implement a custom ratelimiter
 - [x] Ability to specify a custom rest api url
 - [ ] All endpoint categories progress
@@ -125,92 +123,77 @@
   - [x] 1/1 Whispers
 </details>
 <details>
-  <summary>Chat</summary>
-<ul>
-<li>[ ] Ratelimit handling</li>
-<li>[x] Automatic heartbeat</li>
-<li>[x] Automatic reconnection</li>
-<li>[x] Auto-detect unhandled tags</li>
-<li>[x] Provide a custom irc serializer</li>
-<li>[x] Connect to a custom websocket chat url</li>
-<li>[x] Authenticate anonymously</li>
-<li>[x] Handle all available events
-<ul>
-<li>[x] Capability Acknowledged</li>
-<li>[x] Capability Denied</li>
-<li>[x] Chat Cleared</li>
-<li>[x] Message Deleted</li>
-<li>[x] Global User State</li>
-<li>[x] Notice Received</li>
-<li>[x] Message Received</li>
-<li>[x] Room State Received</li>
-<li>[x] User Notice Received</li>
-<li>[x] User State Received</li>
-<li>[x] Whisper Received</li>
-<li>[x] Channel Joined</li>
-<li>[x] Channel Left</li>
-<li>[x] Names Received</li>
-</ul>
-</li>
-</ul>
+  <summary>Chat Implementation</summary>
+- [ ] Ratelimit handling
+- [x] Automatic heartbeat
+- [x] Automatic reconnection
+- [x] Auto-detect unhandled tags
+- [x] Provide a custom irc serializer
+- [x] Connect to a custom websocket chat url
+- [x] Authenticate anonymously
+- [x] Handle all available events
+  - [x] Capability Acknowledged
+  - [x] Capability Denied
+  - [x] Chat Cleared
+  - [x] Message Deleted
+  - [x] Global User State
+  - [x] Notice Received
+  - [x] Message Received
+  - [x] Room State Received
+  - [x] User Notice Received
+  - [x] User State Received
+  - [x] Whisper Received
+  - [x] Channel Joined
+  - [x] Channel Left
+  - [x] Names Received
 </details>
 <details>
-  <summary>EventSub</summary>
-<ul>
-<li>[x] Subscribe/Unsubscribe/View subscriptions through Rest client</li>
-<li>[ ] Ratelimits and Subscription Costs</li>
-<li>[x] WebSocket client</li>
-<li>[ ] WebHook client</li>
-<li>[ ] Automatic heartbeat</li>
-<li>[x] Automatic reconnection</li>
-<li>[ ] Handle all available events
-<ul>
-<li>[ ] Followers</li>
-<li>[ ] Subscriptions</li>
-<li>[ ] Bits Cheered</li>
-<li>[ ] Raids</li>
-<li>[ ] User Banned</li>
-<li>[ ] User Unbanned</li>
-<li>[ ] Moderators</li>
-<li>[ ] Rewards</li>
-<li>[ ] Redemptions</li>
-<li>[ ] Polls</li>
-<li>[ ] Predictions</li>
-<li>[ ] Charity Donations</li>
-<li>[ ] Charity Campaigns</li>
-<li>[ ] Drops Entitlements</li>
-<li>[ ] Extension Bits Transactions</li>
-<li>[ ] Goals</li>
-<li>[ ] Hype Trains</li>
-<li>[ ] Shield Mode</li>
-<li>[ ] Shoutouts</li>
-<li>[ ] Stream Status</li>
-<li>[ ] Authorization Granted/Revoked</li>
-<li>[ ] User Updated</li>
-</ul>
-</li>
-</ul>
+  <summary>EventSub Implementation</summary>
+- [x] Subscribe/Unsubscribe/View subscriptions through Rest client
+- [ ] Ratelimits and Subscription Costs
+- [x] WebSocket client
+- [ ] WebHook client
+- [x] Automatic heartbeat
+- [x] Automatic reconnection
+- [x] Handle all available events
+  - [x] Followers
+  - [x] Subscriptions
+  - [x] Bits Cheered
+  - [x] Raids
+  - [x] User Banned
+  - [x] User Unbanned
+  - [x] Moderators
+  - [x] Rewards
+  - [x] Redemptions
+  - [x] Polls
+  - [x] Predictions
+  - [x] Charity Donations
+  - [x] Charity Campaigns
+  - [x] Drops Entitlements
+  - [x] Extension Bits Transactions
+  - [x] Goals
+  - [x] Hype Trains
+  - [x] Shield Mode
+  - [x] Shoutouts
+  - [x] Stream Status
+  - [x] Authorization Granted/Revoked
+  - [x] User Updated
 </details>
 <details>
-  <summary>PubSub</summary>
-<ul>
-<li>[ ] Ratelimits</li>
-<li>[ ] Automatic heartbeat</li>
-<li>[ ] Automatic reconnection</li>
-<li>[ ] Handle all available events
-<ul>
-<li>[ ] Bits</li>
-<li>[ ] Bist Badge Unlocks</li>
-<li>[ ] Channel Point Redemptions</li>
-<li>[ ] Channel Subscriptions</li>
-<li>[ ] Automod Queue</li>
-<li>[ ] Moderator Actions</li>
-<li>[ ] Low Trust User Status</li>
-<li>[ ] Mdoerator Notifications</li>
-<li>[ ] Whispers</li>
-</ul>
-</li>
-</ul>
+  <summary>PubSub Implementation</summary>
+- [ ] Ratelimits
+- [x] Automatic heartbeat
+- [x] Automatic reconnection
+- [ ] Handle all available events
+  - [ ] Bits
+  - [ ] Bist Badge Unlocks
+  - [ ] Channel Point Redemptions
+  - [ ] Channel Subscriptions
+  - [ ] Automod Queue
+  - [ ] Moderator Actions
+  - [ ] Low Trust User Status
+  - [ ] Mdoerator Notifications
+  - [ ] Whispers
 </details>
 </article>
           </div>
@@ -220,7 +203,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/SimpleTwitch/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/Twitch/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
