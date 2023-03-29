@@ -1,34 +1,32 @@
 [![Discord](https://discordapp.com/api/guilds/257698577894080512/widget.png "Discord Support Server")](https://discord.gg/yd8x2wM) 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/SimpleTwitch/main.yml?logo=github "CI Status")](https://github.com/AuxLabs/SimpleTwitch/actions/workflows/main.yml)
-[![Nuget](https://img.shields.io/nuget/v/AuxLabs.SimpleTwitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/ "Nuget Release Version") [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.SimpleTwitch?logo=nuget "Nuget Prerelease Version")](https://www.nuget.org/packages/AuxLabs.SimpleTwitch/)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AuxLabs/Twitch/main.yml?logo=github "CI Status")](https://github.com/AuxLabs/Twitch/actions/workflows/main.yml)
+[![Nuget](https://img.shields.io/nuget/v/AuxLabs.Twitch?logo=nuget)](https://www.nuget.org/packages/AuxLabs.Twitch/ "Nuget Release Version") [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/AuxLabs.Twitch?logo=nuget "Nuget Prerelease Version")](https://www.nuget.org/packages/AuxLabs.Twitch/)
 
-# SimpleTwitch
+# Twitch
 
-SimpleTwitch is a bare minimum implementation of the Twitch developer APIs. Data is presented as it is presented through these APIs, and as such, usage will likely be confusing. There is a wrapper library being built on top of this one at [AuxLabs.Twitch](https://github.com/AuxLabs/Twitch), which aims to restructure this data into a more understandable and user-friendly format.
+Twitch is an implementation of the [Twitch Developer API](https://dev.twitch.tv/) that aims to reformat the data provided by these APIs into a more standardized structure where possible, present itself in a way that isn't overly complicated for a beginner to understand, and cover compatibility for modern platforms. Currently, only the base-level implementation is available via the `*.Api` libraries.
 
 ![Alt](https://repobeats.axiom.co/api/embed/acf35d86a762b5cebeda64f3907597676d78a84c.svg "Repobeats analytics image")
 
 ### Builds
 
-Release builds will be available through Nuget, and development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=SimpleTwitch).
+Release builds will be available through [Nuget](https://www.nuget.org/packages/AuxLabs.Twitch/), and development builds are available publicly through [Github Packages](https://github.com/orgs/AuxLabs/packages?repo_name=Twitch).
 
 ### Documentation
 
-The API reference, starter tutorials, and other documentation will be available at [the documentation site](https://docs.auxlabs.org/SimpleTwitch/).
+The API reference, starter tutorials, and other documentation will be available at [the documentation site](https://docs.auxlabs.org/Twitch/).
 
 ### Samples
 
-For examples and sample projects look at [the examples repository](https://github.com/AuxLabs/SimpleTwitch-Examples).
+For examples and sample projects look at [the examples repository](https://github.com/AuxLabs/Twitch-Examples).
 
 ### Features
 <details>
-  <summary>Rest</summary>
-    
+  <summary>Rest Implementation</summary>
 - [x] Global ratelimit handling
 - [ ] Unique endpoint ratelimit handling
 - [x] Check arguments for validity before requests
 - [x] Scope confirmation before requests
-- [ ] Automatic token refresh
 - [x] Ability to implement a custom ratelimiter
 - [x] Ability to specify a custom rest api url
 - [ ] All endpoint categories progress
@@ -63,8 +61,7 @@ For examples and sample projects look at [the examples repository](https://githu
 </details>
 
 <details>
-  <summary>Chat</summary>
-
+  <summary>Chat Implementation</summary>
 - [ ] Ratelimit handling
 - [x] Automatic heartbeat
 - [x] Automatic reconnection
@@ -87,12 +84,10 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] Channel Joined
   - [x] Channel Left
   - [x] Names Received
-    
 </details>
 
 <details>
-  <summary>EventSub</summary>
-
+  <summary>EventSub Implementation</summary>
 - [x] Subscribe/Unsubscribe/View subscriptions through Rest client
 - [ ] Ratelimits and Subscription Costs
 - [x] WebSocket client
@@ -122,13 +117,10 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] Stream Status
   - [x] Authorization Granted/Revoked
   - [x] User Updated
-    
-    
 </details>
 
 <details>
-  <summary>PubSub</summary>
-
+  <summary>PubSub Implementation</summary>
 - [ ] Ratelimits
 - [x] Automatic heartbeat
 - [x] Automatic reconnection
@@ -142,5 +134,4 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] Low Trust User Status
   - [ ] Mdoerator Notifications
   - [ ] Whispers
-    
 </details>

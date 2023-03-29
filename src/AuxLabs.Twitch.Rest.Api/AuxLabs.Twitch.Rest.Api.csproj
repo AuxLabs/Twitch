@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../AuxLabs.Twitch.targets" />
+
+  <PropertyGroup>
+	  <Description>A minimal implementation of Twitch's Rest APIs.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\abstractions\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Requests\Extensions\" />
+  </ItemGroup>
+</Project>

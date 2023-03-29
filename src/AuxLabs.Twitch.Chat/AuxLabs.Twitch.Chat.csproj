@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../../AuxLabs.Twitch.targets" />
+	<ItemGroup>
+	  <ProjectReference Include="..\AuxLabs.Twitch.Chat.Api\AuxLabs.Twitch.Chat.Api.csproj" />
+	  <ProjectReference Include="..\AuxLabs.Twitch.Rest\AuxLabs.Twitch.Rest.csproj" />
+	</ItemGroup>
+</Project>

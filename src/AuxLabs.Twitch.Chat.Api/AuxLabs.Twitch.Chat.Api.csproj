@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../../AuxLabs.Twitch.targets" />
+
+	<PropertyGroup>
+		<Description>A minimal implementation of Twitch's Chat API over WebSocket.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\abstractions\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+		<ProjectReference Include="..\abstractions\AuxLabs.Twitch.WebSockets\AuxLabs.Twitch.WebSockets.csproj" />
+		<ProjectReference Include="..\AuxLabs.Twitch.Rest.Api\AuxLabs.Twitch.Rest.Api.csproj" />
+	</ItemGroup>
+</Project>

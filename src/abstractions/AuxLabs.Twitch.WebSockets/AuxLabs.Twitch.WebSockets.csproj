@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../../AuxLabs.Twitch.targets" />
+
+  <PropertyGroup>
+    <Description>The core components for implementing any of Twitch's APIs that require WebSockets.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+  </ItemGroup>
+</Project>
