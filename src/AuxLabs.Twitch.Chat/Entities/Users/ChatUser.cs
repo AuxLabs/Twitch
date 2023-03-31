@@ -2,6 +2,7 @@
 using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
 using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
 using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
+using Whisper = AuxLabs.Twitch.Chat.Models.WhisperEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -36,6 +37,21 @@ namespace AuxLabs.Twitch.Chat.Entities
             Color = model.Tags.AuthorColor;
             Badges = model.Tags.Badges;
             BadgeInfo = model.Tags.BadgeInfo;
+            IsTurbo = model.Tags.IsTurbo;
+        }
+
+        internal static ChatUser Create(TwitchChatClient twitch, Whisper model)
+        {
+            var entity = new ChatUser(twitch, model.Tags.AuthorId);
+            entity.Update(model);
+            return entity;
+        }
+        internal override void Update(Whisper model)
+        {
+            base.Update(model);
+            UserType = model.Tags.AuthorType;
+            Color = model.Tags.AuthorColor;
+            Badges = model.Tags.Badges;
             IsTurbo = model.Tags.IsTurbo;
         }
 

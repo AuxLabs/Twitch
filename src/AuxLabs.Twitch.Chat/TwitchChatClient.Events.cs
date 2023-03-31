@@ -112,12 +112,12 @@ namespace AuxLabs.Twitch.Chat
         internal readonly AsyncEvent<Func<ChatSimpleChannel, string, Task>> _userLeftChannelEvent = new AsyncEvent<Func<ChatSimpleChannel, string, Task>>();
 
         /// <summary>  </summary>
-        public event Func<Task> WhisperReceived
+        public event Func<ChatWhisperMessage, Task> WhisperReceived
         {
             add { _whisperReceivedEvent.Add(value); }
             remove { _whisperReceivedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<Task>> _whisperReceivedEvent = new AsyncEvent<Func<Task>>();
+        internal readonly AsyncEvent<Func<ChatWhisperMessage, Task>> _whisperReceivedEvent = new AsyncEvent<Func<ChatWhisperMessage, Task>>();
 
         /// <summary> Triggered when a message is received in a channel </summary>
         /// <remarks> Provides an object that represents the message. </remarks>

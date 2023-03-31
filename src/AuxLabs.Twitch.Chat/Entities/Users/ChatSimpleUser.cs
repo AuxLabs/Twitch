@@ -1,11 +1,10 @@
-﻿using AuxLabs.Twitch.Chat;
-using AuxLabs.Twitch.Rest;
-using AuxLabs.Twitch.Rest.Entities;
+﻿using AuxLabs.Twitch.Rest.Entities;
 using System.Drawing;
 using System.Threading.Tasks;
 using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
-using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
+using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
+using Whisper = AuxLabs.Twitch.Chat.Models.WhisperEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -44,6 +43,19 @@ namespace AuxLabs.Twitch.Chat.Entities
                 Name = model.AuthorName;
                 Color = model.AuthorColor;
             }
+        }
+
+        internal static ChatUser Create(TwitchChatClient twitch, Whisper model)
+        {
+            var entity = new ChatUser(twitch, model.Tags.AuthorId);
+            entity.Update(model);
+            return entity;
+        }
+        internal virtual void Update(Whisper model)
+        {
+            DisplayName = model.Tags.AuthorDisplayName;
+            Name = model.SenderName;
+            Color = model.Tags.AuthorColor;
         }
 
         internal static ChatUser Create(TwitchChatClient twitch, GlobalState model)

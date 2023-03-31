@@ -31,7 +31,7 @@ namespace AuxLabs.Twitch.Chat
 
         public bool UseBufferedResponses { get; }
         public int MessageCacheSize { get; }
-        public bool CanSendMessages { get; private set; } = false;   
+        public bool IsReadOnly { get; private set; } = true;   
 
         public ChatSelfUser MyUser { get; internal set; }
         public IReadOnlyCollection<ChatSimpleChannel> Channels => _channels.ToReadOnlyCollection();
@@ -80,9 +80,9 @@ namespace AuxLabs.Twitch.Chat
             if (Identity != null)       // Rest is authorized as a user
             {
                 if (!Identity.Scopes.Contains("chat:read")) throw new MissingScopeException("chat:read");
-                if (Identity.Scopes.Contains("chat:edit")) CanSendMessages = true;
+                if (Identity.Scopes.Contains("chat:edit")) IsReadOnly = false;
                 IRC.WithIdentity(Identity.UserName, Identity.AccessToken);
-            } else                      // Apps will authorize as anonymous
+            } else                      // Apps and anonymous authorization
             {
                 _anonymousName = TwitchConstants.AnonymousNamePrefix + RandomNumberGenerator.GetInt32(9999);
                 IRC.WithIdentity(_anonymousName, _anonymousName);
@@ -132,7 +132,7 @@ namespace AuxLabs.Twitch.Chat
 
         public async Task SendMessageAsync(string channelName, string text, string replyMessageId = null)
         {
-            if (!CanSendMessages) throw new MissingScopeException("chat:edit");
+            if (IsReadOnly) throw new MissingScopeException("chat:edit");
 
             await IRC.SendMessageAsync(channelName, text, replyMessageId);
         }
@@ -194,114 +194,137 @@ namespace AuxLabs.Twitch.Chat
                     break;
 
                 case IrcCommand.ClearChat:
-                    var clearChatArgs = ClearChatEventArgs.Create(payload);
-
-                    var channel = GetChannel(clearChatArgs.Tags.ChannelId);
-                    var user = channel.GetUser(clearChatArgs.Tags.TargetUserId);
-
-                    if (user == null) // If no user is provided, all of chat was cleared
                     {
-                        var oldCache = channel.ClearMessages();
-                        await _chatClearedEvent.InvokeAsync((ChatChannel)channel, oldCache);
-                    } else
-                    {
-                        if (clearChatArgs.Tags.BanDuration == null)
-                            channel.RemoveUser(user.Id);
-                        await _userBannedEvent.InvokeAsync((ChatChannel)channel, user, clearChatArgs.Tags.BanDuration);
+                        var args = ClearChatEventArgs.Create(payload);
+
+                        var channel = GetChannel(args.Tags.ChannelId);
+                        var user = channel.GetUser(args.Tags.TargetUserId);
+
+                        if (user == null) // If no user is provided, all of chat was cleared
+                        {
+                            var oldCache = channel.ClearMessages();
+                            await _chatClearedEvent.InvokeAsync((ChatChannel)channel, oldCache);
+                        }
+                        else
+                        {
+                            if (args.Tags.BanDuration == null)
+                                channel.RemoveUser(user.Id);
+                            await _userBannedEvent.InvokeAsync((ChatChannel)channel, user, args.Tags.BanDuration);
+                        }
                     }
                     break;
 
                 case IrcCommand.ClearMessage:
-                    var clearMsgArgs = ClearMessageEventArgs.Create(payload);
-
-                    channel = GetChannelByName(clearMsgArgs.ChannelName);
-                    ChatSimpleMessage msg = channel.RemoveMessage(clearMsgArgs.Tags.TargetMessageId);
-                    if (msg == null)
                     {
-                        user = channel.GetUserByName(clearMsgArgs.Tags.UserName);
-                        msg = ChatSimpleMessage.Create(this, clearMsgArgs, channel, user);
-                        channel.RemoveMessage(msg.Id);
-                    }
+                        var args = ClearMessageEventArgs.Create(payload);
 
-                    await _messageDeletedEvent.InvokeAsync(msg);
+                        var channel = GetChannelByName(args.ChannelName);
+                        ChatSimpleMessage msg = channel.RemoveMessage(args.Tags.TargetMessageId);
+                        if (msg == null)
+                        {
+                            var user = channel.GetUserByName(args.Tags.UserName);
+                            msg = ChatSimpleMessage.Create(this, args, channel, user);
+                            channel.RemoveMessage(msg.Id);
+                        }
+
+                        await _messageDeletedEvent.InvokeAsync(msg);
+                    }
                     break;
 
                 case IrcCommand.Join:
-                    var membershipArgs = MembershipEventArgs.Create(payload);
-                    if (membershipArgs.UserName == CurrentName)
                     {
-                        await _channelJoinedEvent.InvokeAsync(membershipArgs.ChannelName);
-                    } else
-                    {
-                        channel = GetChannelByName(membershipArgs.ChannelName);
-                        await _userJoinedChannelEvent.InvokeAsync(channel, membershipArgs.UserName);
+                        var args = MembershipEventArgs.Create(payload);
+                        if (args.UserName == CurrentName)
+                        {
+                            await _channelJoinedEvent.InvokeAsync(args.ChannelName);
+                        }
+                        else
+                        {
+                            var channel = GetChannelByName(args.ChannelName);
+                            await _userJoinedChannelEvent.InvokeAsync(channel, args.UserName);
+                        }
                     }
-
                     break;
 
                 case IrcCommand.Part:
-                    membershipArgs = MembershipEventArgs.Create(payload);
-                    if (membershipArgs.UserName == CurrentName)
                     {
-                        channel = RemoveChannelByName(membershipArgs.ChannelName);
-                        await _channelLeftEvent.InvokeAsync(channel);
-                    } else
-                    {
-                        channel = GetChannelByName(membershipArgs.ChannelName);
-                        await _userLeftChannelEvent.InvokeAsync(channel, membershipArgs.UserName);
+                        var args = MembershipEventArgs.Create(payload);
+                        if (args.UserName == CurrentName)
+                        {
+                            var channel = RemoveChannelByName(args.ChannelName);
+                            await _channelLeftEvent.InvokeAsync(channel);
+                        }
+                        else
+                        {
+                            var channel = GetChannelByName(args.ChannelName);
+                            await _userLeftChannelEvent.InvokeAsync(channel, args.UserName);
+                        }
                     }
                     break;
 
                 case IrcCommand.Whisper:
+                    {
+                        var args = WhisperEventArgs.Create(payload);
+
+                        var author = ChatUser.Create(this, args);
+                        var message = ChatWhisperMessage.Create(this, args, author);
+
+                        await _whisperReceivedEvent.InvokeAsync(message);
+                    }
                     break;
 
                 case IrcCommand.Message:
-                    var messageArgs = MessageEventArgs.Create(payload);
-
-                    channel = GetChannel(messageArgs.Tags.ChannelId);
-                    if (channel == null)
                     {
-                        channel = ChatSimpleChannel.Create(this, messageArgs);
-                        AddChannel(channel);
+                        var args = MessageEventArgs.Create(payload);
+
+                        var channel = GetChannel(args.Tags.ChannelId);
+                        if (channel == null)
+                        {
+                            channel = ChatSimpleChannel.Create(this, args);
+                            AddChannel(channel);
+                        }
+
+                        var author = (ChatChannelUser)channel.GetUser(args.Tags.AuthorId);
+                        author ??= ChatChannelUser.Create(this, args);
+
+                        var replyAuthor = channel.GetUser(args.Tags.ReplyAuthorId);
+                        replyAuthor ??= ChatSimpleUser.Create(this, args, true);
+
+                        var message = ChatMessage.Create(this, args, channel, author, replyAuthor);
+
+                        channel.AddUser(author);
+                        channel.AddMessage(message);
+                        await _messageReceivedEvent.InvokeAsync(message);
                     }
-
-                    var author = (ChatChannelUser)channel.GetUser(messageArgs.Tags.AuthorId);
-                    author ??= ChatChannelUser.Create(this, messageArgs);
-
-                    var replyAuthor = channel.GetUser(messageArgs.Tags.ReplyAuthorId);
-                    replyAuthor ??= ChatSimpleUser.Create(this, messageArgs, true);
-
-                    var message = ChatMessage.Create(this, messageArgs, channel, author, replyAuthor);
-
-                    channel.AddUser(author);
-                    channel.AddMessage(message);
-                    await _messageReceivedEvent.InvokeAsync(message);
                     break;
 
                 case IrcCommand.RoomState:
-                    var roomStateArgs = RoomStateEventArgs.Create(payload);
+                    {
+                        var args = RoomStateEventArgs.Create(payload);
 
-                    var beforeChannel = GetChannel(roomStateArgs.Tags.ChannelId);
-                    channel = ChatChannel.Create(this, roomStateArgs);
+                        var beforeChannel = GetChannel(args.Tags.ChannelId);
+                        var channel = ChatChannel.Create(this, args);
 
-                    AddChannel(channel);
-                    await _channelStateUpdated.InvokeAsync(beforeChannel as ChatChannel, (ChatChannel)channel);
+                        AddChannel(channel);
+                        await _channelStateUpdated.InvokeAsync(beforeChannel as ChatChannel, channel);
+                    }
                     break;
 
                 case IrcCommand.UserState:
-                    var userStateArgs = UserStateEventArgs.Create(payload);
+                    {
+                        var args = UserStateEventArgs.Create(payload);
+                        var channel = GetChannelByName(args.ChannelName);
 
-                    channel = GetChannelByName(userStateArgs.ChannelName);
+                        ChatSimpleUser beforeUser = null;
+                        if (channel != null)
+                            beforeUser = channel.GetUser(args.Tags.UserId);
 
-                    ChatSimpleUser beforeUser = null;
-                    if (channel != null)
-                        beforeUser = channel.GetUser(userStateArgs.Tags.UserId);
+                        var user = ChatChannelSelfUser.Create(this, args);
+                        user.Channel = channel;
 
-                    user = ChatChannelSelfUser.Create(this, userStateArgs);
-                    ((ChatChannelSelfUser)user).Channel = channel;
-
-                    channel?.AddUser(user);
-                    await _userStateUpdatedEvent.InvokeAsync(beforeUser as ChatChannelSelfUser, (ChatChannelSelfUser)user, userStateArgs.Tags.MessageId);
+                        channel?.AddUser(user);
+                        await _userStateUpdatedEvent.InvokeAsync(beforeUser as ChatChannelSelfUser, user, args.Tags.MessageId);
+                    }
                     break;
 
                 case IrcCommand.UserNotice:
@@ -317,24 +340,30 @@ namespace AuxLabs.Twitch.Chat
                         case RitualTags ritualTags:
                             break;
 
-                        case SubscriptionGiftTags subscriptionGiftTags:
+                        case SubscriptionGiftTags subGiftTags:
                             break;
 
-                        case SubscriptionGiftUpgradeTags subscriptionGiftUpgradeTags:
+                        case SubscriptionGiftUpgradeTags subGiftUpgradeTags:
                             break;
 
-                        case SubscriptionGiftUpgradeAnonymousTags subscriptionGiftAnonUpgradeTags:
+                        case SubscriptionGiftUpgradeAnonymousTags subGiftAnonUpgradeTags:
                             break;
 
-                        case SubscriptionTags subscriptionTags:
+                        case SubscriptionTags subTags:
                             break;
 
                         default:
+                            await _unhandledCommandEvent.InvokeAsync(payload);
+                            if (ThrowOnUnknownEvent)
+                                throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}:{userNoticeArgs.Tags.MessageId}` was received");
                             break;
                     }
                     break;
 
                 case IrcCommand.Notice:
+                    {
+
+                    }
                     break;
 
                 case IrcCommand.Ping:
