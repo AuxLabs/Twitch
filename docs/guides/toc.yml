@@ -3,24 +3,24 @@
 - name: Rest
   items:
   - name: Initialization
-    href: rest/init.md
+    href: en/rest/init.md
   - name: Ratelimits
-    href: rest/ratelimits.md
+    href: en/rest/ratelimits.md
 - name: Chat
   items:
   - name: Initialization
-    href: chat/init.md
+    href: en/chat/init.md
   - name: Ratelimits
-    href: chat/ratelimits.md
+    href: en/chat/ratelimits.md
 - name: EventSub
   items:
   - name: Initialization
-    href: eventsub/init.md
+    href: en/eventsub/init.md
   - name: Ratelimits
-    href: eventsub/ratelimits.md
+    href: en/eventsub/ratelimits.md
 - name: PubSub
   items:
   - name: Initialization
-    href: pubsub/init.md
+    href: en/pubsub/init.md
   - name: Ratelimits
-    href: pubsub/ratelimits.md
+    href: en/pubsub/ratelimits.md
