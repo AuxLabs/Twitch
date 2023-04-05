@@ -53,9 +53,12 @@ namespace AuxLabs.Twitch.Rest.Api
                 _disposed = true;
             }
         }
+
         public void Dispose()
         {
-            Dispose(true);
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary> Get an app identity using the provided app credentials. </summary>

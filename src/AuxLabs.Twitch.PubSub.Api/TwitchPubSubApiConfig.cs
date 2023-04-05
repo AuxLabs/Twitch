@@ -4,6 +4,7 @@ namespace AuxLabs.Twitch.PubSub
 {
     public class TwitchPubSubApiConfig
     {
-        public ISerializer<PubSubPayload> Serializer { get; set; } = null;
+        /// <summary> Should an exception be raised if an unhandled event is received from twitch. </summary>
+        public bool ThrowOnUnknownEvent { get; set; } = false;
     }
 }

@@ -1,31 +1,30 @@
-﻿// Code modified from Wumpus.Net's GatewaySocketClient
-
-using System;
-using System.Collections.Concurrent;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.WebSockets;
-using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Threading.Tasks.Dataflow;
 
 namespace AuxLabs.Twitch.WebSockets
 {
-    public abstract class BaseSocketClient<TPayload> where TPayload : IPayload
+    internal class DefaultSocketClientConfig
+    {
+        public int HeartbeatRate { get; set; } = -1;
+        public bool WaitForHello { get; set; } = false;
+        public bool IsRecursive { get; set; } = false;
+    }
+
+    internal class DefaultSocketClient<TPayload> : ISocketClient<TPayload>
+        where TPayload : IPayload
     {
         public event Action Connected;
         public event Action<Exception> Disconnected;
-        public event Action<SerializationException> DeserializationError;
-        public event Action<TPayload> UnknownEventReceived;
-
-        // Raw events
-        public event Action<TPayload, long> PayloadReceived;
-        public event Action<TPayload, int> PayloadSent;
+        public event Action<TPayload, TaskCompletionSource<bool>> PayloadReceived;
+        public event Action Heartbeat;
+        public event Action Identify;
 
         public ConnectionState State { get; private set; }
-        protected abstract ISerializer<TPayload> Serializer { get; }
 
         private const int InitialBackoffMillis = 1000; // 1 second
         private const int MaxBackoffMillis = 60000; // 1 min
@@ -34,46 +33,36 @@ namespace AuxLabs.Twitch.WebSockets
         private const int ConnectionTimeoutMillis = 30000; // 30 sec
         private const int IdentifyTimeoutMillis = 60000; // 1 min
 
+        private readonly ISerializer<TPayload> _serializer;
         private readonly SemaphoreSlim _stateLock;
         private readonly MemoryStream _stream;
         private readonly int _heartbeatRate;
         private readonly bool _waitForHello = false;
         private readonly bool _isRecursive = false;
 
+        private ClientWebSocket _client;
         private Task _connectionTask;
         private CancellationTokenSource _runCts;
 
-        protected string _url;
-        private BufferBlock<TPayload> _sendQueue;
-        protected bool ReceivedData;
+        private string _url;
+        private bool ReceivedData;
 
-        public BaseSocketClient(int heartbeatRate, bool waitForHello = false, bool isRecursive = false)
+        public DefaultSocketClient(ISerializer<TPayload> serializer, DefaultSocketClientConfig config)
         {
+            _serializer = serializer;
+            _heartbeatRate = config.HeartbeatRate;
+            _waitForHello = config.WaitForHello;
+            _isRecursive = config.IsRecursive;
             _stream = new MemoryStream();
-            _heartbeatRate = heartbeatRate;
-            _waitForHello = waitForHello;
-            _isRecursive = isRecursive;
             _stateLock = new SemaphoreSlim(1, 1);
             _connectionTask = Task.CompletedTask;
             _runCts = new CancellationTokenSource();
             _runCts.Cancel(); // Start canceled
         }
 
-        protected virtual void OnUnknownEventReceived(TPayload payload)
-        {
-            UnknownEventReceived?.Invoke(payload);
-        }
-
-        public abstract void Run();
-        public abstract Task RunAsync();
-        protected virtual void SendIdentify() { }
-        protected virtual void SendHeartbeat() { }
-        protected virtual void SendHeartbeatAck() { }
-        protected abstract void HandleEvent(TPayload payload, TaskCompletionSource<bool> readySignal);
-
-        protected void Run(string url)
+        public void Run(string url)
             => RunAsync(url).ConfigureAwait(false).GetAwaiter().GetResult();
-        protected async Task RunAsync(string url)
+        public async Task RunAsync(string url)
         {
             Task exceptionSignal;
             await _stateLock.WaitAsync().ConfigureAwait(false);
@@ -105,84 +94,82 @@ namespace AuxLabs.Twitch.WebSockets
                 Exception disconnectEx = null;
                 var connectionCts = new CancellationTokenSource();
                 var cancelToken = CancellationTokenSource.CreateLinkedTokenSource(runCancelToken, connectionCts.Token).Token;
-                using var client = new ClientWebSocket();
-                try
+
+                _client = new ClientWebSocket();
+                using (_client)
                 {
-                    cancelToken.ThrowIfCancellationRequested();
-                    var readySignal = new TaskCompletionSource<bool>();
-                    ReceivedData = true;
-
-                    // Connect
-                    State = ConnectionState.Connecting;
-                    var uri = new Uri(_url);
-                    await client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
-
-                    // Receive HELLO (timeout = ConnectionTimeoutMillis)
-                    if (_waitForHello) 
+                    try
                     {
-                        var receiveTask = ReceiveAsync(client, readySignal, cancelToken);
-                        await WhenAny(new Task[] { receiveTask }, ConnectionTimeoutMillis,
-                            "Timed out waiting for initial message").ConfigureAwait(false);
+                        cancelToken.ThrowIfCancellationRequested();
+                        var readySignal = new TaskCompletionSource<bool>();
+                        ReceivedData = true;
 
-                        var evnt = await receiveTask.ConfigureAwait(false);
-                        if (!evnt.IsHelloEvent)
-                            throw new Exception($"First event was not a Hello event");
+                        // Connect
+                        State = ConnectionState.Connecting;
+                        var uri = new Uri(_url);
+                        await _client.ConnectAsync(uri, cancelToken).ConfigureAwait(false);
+
+                        // Receive HELLO (timeout = ConnectionTimeoutMillis)
+                        if (_waitForHello)
+                        {
+                            var receiveTask = ReceiveAsync(_client, readySignal, cancelToken);
+                            await WhenAny(new Task[] { receiveTask }, ConnectionTimeoutMillis,
+                                "Timed out waiting for initial message").ConfigureAwait(false);
+
+                            var evnt = await receiveTask.ConfigureAwait(false);
+                            if (!evnt.IsHelloEvent)
+                                throw new Exception($"First event was not a Hello event");
+                        }
+
+                        tasks = new[] { RunReceiveAsync(_client, readySignal, cancelToken) };
+                        if (_heartbeatRate > -1)    // Heartbeats are only required by PubSub
+                            tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
+
+                        Identify?.Invoke();
+                        await WhenAny(tasks.Append(readySignal.Task), IdentifyTimeoutMillis,
+                            "Timed out waiting for ready signal or InvalidSession").ConfigureAwait(false);
+                        if (await readySignal.Task.ConfigureAwait(false) == false)
+                            continue; // Invalid session
+
+                        // Success
+                        backoffMillis = InitialBackoffMillis;
+                        State = ConnectionState.Connected;
+                        Connected?.Invoke();
+
+                        // Wait until an exception occurs (due to cancellation or failure)
+                        await WhenAny(tasks).ConfigureAwait(false);
                     }
-
-                    // Start tasks here since HELLO must be handled before another thread can send/receive
-                    _sendQueue = new BufferBlock<TPayload>();
-                    tasks = new[]
+                    catch (Exception ex)
                     {
-                        RunSendAsync(client, cancelToken),
-                        RunReceiveAsync(client, readySignal, cancelToken)
-                    };
-                    if (_heartbeatRate > -1)    // Heartbeats are only required by PubSub
-                        tasks.Append(RunHeartbeatAsync(_heartbeatRate, cancelToken));
-
-                    SendIdentify();
-                    await WhenAny(tasks.Append(readySignal.Task), IdentifyTimeoutMillis,
-                        "Timed out waiting for ready signal or InvalidSession").ConfigureAwait(false);
-                    if (await readySignal.Task.ConfigureAwait(false) == false)
-                        continue; // Invalid session
-
-                    // Success
-                    backoffMillis = InitialBackoffMillis;
-                    State = ConnectionState.Connected;
-                    Connected?.Invoke();
-
-                    // Wait until an exception occurs (due to cancellation or failure)
-                    await WhenAny(tasks).ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    disconnectEx = ex;
-                    isRecoverable = IsRecoverable(ex);
-                    if (!isRecoverable)
-                        throw;
-                }
-                finally
-                {
-                    var oldState = State;
-                    State = ConnectionState.Disconnecting;
-
-                    // Wait for the other tasks to complete
-                    connectionCts.Cancel();
-                    if (tasks != null)
-                    {
-                        try { await Task.WhenAll(tasks).ConfigureAwait(false); }
-                        catch { } // We already captured the root exception
+                        disconnectEx = ex;
+                        isRecoverable = IsRecoverable(ex);
+                        if (!isRecoverable)
+                            throw;
                     }
-
-                    // receiveTask and sendTask must have completed before we can send/receive from a different thread
-                    if (client.State == WebSocketState.Open)
+                    finally
                     {
-                        try { await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None).ConfigureAwait(false); }
-                        catch { } // We don't actually care if sending a close msg fails
-                    }
+                        var oldState = State;
+                        State = ConnectionState.Disconnecting;
 
-                    State = ConnectionState.Disconnected;
-                    if (oldState == ConnectionState.Connected)
-                        Disconnected?.Invoke(disconnectEx);
+                        // Wait for the other tasks to complete
+                        connectionCts.Cancel();
+                        if (tasks != null)
+                        {
+                            try { await Task.WhenAll(tasks).ConfigureAwait(false); }
+                            catch { } // We already captured the root exception
+                        }
+
+                        // receiveTask and sendTask must have completed before we can send/receive from a different thread
+                        if (_client.State == WebSocketState.Open)
+                        {
+                            try { await _client.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None).ConfigureAwait(false); }
+                            catch { } // We don't actually care if sending a close msg fails
+                        }
+
+                        State = ConnectionState.Disconnected;
+                        if (oldState == ConnectionState.Connected)
+                            Disconnected?.Invoke(disconnectEx);
+                    }
                 }
                 if (isRecoverable)
                 {
@@ -194,6 +181,7 @@ namespace AuxLabs.Twitch.WebSockets
             }
             _runCts.Cancel(); // Reset to initial canceled state
         }
+
         private Task RunReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
             return Task.Run(async () =>
@@ -201,26 +189,7 @@ namespace AuxLabs.Twitch.WebSockets
                 while (true)
                 {
                     cancelToken.ThrowIfCancellationRequested();
-                    try
-                    {
-                        await ReceiveAsync(client, readySignal, cancelToken).ConfigureAwait(false);
-                    }
-                    catch (SerializationException ex)
-                    {
-                        DeserializationError?.Invoke(ex);
-                    }
-                }
-            }, cancelToken);
-        }
-        private Task RunSendAsync(ClientWebSocket client, CancellationToken cancelToken)
-        {
-            return Task.Run(async () =>
-            {
-                while (true)
-                {
-                    cancelToken.ThrowIfCancellationRequested();
-                    var payload = _sendQueue.Receive(cancelToken);
-                    await SendAsync(client, payload, cancelToken).ConfigureAwait(false);
+                    await ReceiveAsync(client, readySignal, cancelToken).ConfigureAwait(false);
                 }
             }, cancelToken);
         }
@@ -234,10 +203,49 @@ namespace AuxLabs.Twitch.WebSockets
                     if (!ReceivedData)
                         throw new TimeoutException("No data was received since the last heartbeat");
                     ReceivedData = false;
-                    SendHeartbeat();
+                    Heartbeat.Invoke();
                     await Task.Delay(rate, cancelToken).ConfigureAwait(false);
                 }
             }, cancelToken);
+        }
+
+        public void Send(TPayload payload)
+            => SendAsync(payload, CancellationToken.None).GetAwaiter().GetResult();
+        public async Task SendAsync(TPayload payload, CancellationToken cancelToken)
+        {
+            var data = _serializer.Write(payload);
+            await _client.SendAsync(data, WebSocketMessageType.Text, true, cancelToken);
+        }
+
+        public void Stop()
+            => StopAsync().ConfigureAwait(false).GetAwaiter().GetResult();
+        public async Task StopAsync()
+        {
+            await _stateLock.WaitAsync().ConfigureAwait(false);
+            try
+            {
+                await StopAsyncInternal().ConfigureAwait(false);
+            }
+            finally
+            {
+                _stateLock.Release();
+            }
+        }
+        private async Task StopAsyncInternal()
+        {
+            _runCts?.Cancel(); // Cancel any connection attempts or active connections
+
+            try { await _connectionTask.ConfigureAwait(false); } catch { } // Wait for current connection to complete
+            _connectionTask = Task.CompletedTask;
+
+            // Double check that the connection task terminated successfully
+            var state = State;
+            if (state != ConnectionState.Disconnected)
+                throw new InvalidOperationException($"Client did not successfully disconnect (State = {state}).");
+        }
+        public void Dispose()
+        {
+            Stop();
         }
 
         private static async Task WhenAny(IEnumerable<Task> tasks)
@@ -255,7 +263,6 @@ namespace AuxLabs.Twitch.WebSockets
             //else if (task.IsFaulted)
             await task.ConfigureAwait(false); // Return or rethrow
         }
-
         private bool IsRecoverable(Exception ex)
         {
             switch (ex)
@@ -301,50 +308,6 @@ namespace AuxLabs.Twitch.WebSockets
             return false;
         }
 
-        public void Stop()
-            => StopAsync().ConfigureAwait(false).GetAwaiter().GetResult();
-        public async Task StopAsync()
-        {
-            await _stateLock.WaitAsync().ConfigureAwait(false);
-            try
-            {
-                await StopAsyncInternal().ConfigureAwait(false);
-            }
-            finally
-            {
-                _stateLock.Release();
-            }
-        }
-        private async Task StopAsyncInternal()
-        {
-            _runCts?.Cancel(); // Cancel any connection attempts or active connections
-
-            try { await _connectionTask.ConfigureAwait(false); } catch { } // Wait for current connection to complete
-            _connectionTask = Task.CompletedTask;
-
-            // Double check that the connection task terminated successfully
-            var state = State;
-            if (state != ConnectionState.Disconnected)
-                throw new InvalidOperationException($"Client did not successfully disconnect (State = {state}).");
-        }
-        public void Dispose()
-        {
-            Stop();
-        }
-
-        protected void Send(TPayload payload)
-        {
-            if (!_runCts.IsCancellationRequested)
-                _sendQueue?.Post(payload);
-        }
-
-        private async Task SendAsync(ClientWebSocket client, TPayload payload, CancellationToken cancelToken)
-        {
-            var data = Serializer.Write(payload);
-            await client.SendAsync(data, WebSocketMessageType.Text, true, cancelToken);
-            PayloadSent?.Invoke(payload, data.Length);
-        }
-
         private async Task<TPayload> ReceiveAsync(ClientWebSocket client, TaskCompletionSource<bool> readySignal, CancellationToken cancelToken)
         {
             _stream.Position = 0;
@@ -369,10 +332,9 @@ namespace AuxLabs.Twitch.WebSockets
 
         private TPayload RecursiveRead(ReadOnlySpan<byte> data, TaskCompletionSource<bool> readySignal)
         {
-            var payload = Serializer.Read(ref data);
+            var payload = _serializer.Read(ref data);
 
-            HandleEvent(payload, readySignal); // Must be before event so slow user handling can't trigger timeouts
-            PayloadReceived?.Invoke(payload, _stream.Length);
+            PayloadReceived?.Invoke(payload, readySignal);
             if (!_isRecursive) return payload;
             if (data.Length != 0)
                 return RecursiveRead(data, readySignal);

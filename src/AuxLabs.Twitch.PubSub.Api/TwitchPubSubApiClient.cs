@@ -1,44 +1,72 @@
 ﻿using AuxLabs.Twitch.WebSockets;
+using System;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.PubSub
 {
-    public class TwitchPubSubApiClient : BaseSocketClient<PubSubPayload>
+    public class TwitchPubSubApiClient : IDisposable
     {
-        protected override ISerializer<PubSubPayload> Serializer { get; }
+        /// <summary> The client has successfully made a connection to the server. </summary>
+        public event Action Connected;
+        /// <summary> The client was forcibly disconnected from the server. </summary>
+        public event Action<Exception> Disconnected;
+        /// <summary> An unhandled irc command was received. </summary>
+        public event Action<PubSubPayload> UnknownEventReceived;
+
+        // config variables
+        public readonly bool ThrowOnUnknownEvent;
+
+        public ConnectionState State => _client.State;
+
+        private readonly ISocketClient<PubSubPayload> _client;
+        private string _url = null;
+        private bool _disposed = false;
 
         public TwitchPubSubApiClient(TwitchPubSubApiConfig config = null)
             : this(TwitchConstants.PubSubUrl, config) { }
-        public TwitchPubSubApiClient(string url, TwitchPubSubApiConfig config = null) : base(-1) 
+        public TwitchPubSubApiClient(string url, TwitchPubSubApiConfig config = null)
         {
             config ??= new TwitchPubSubApiConfig();
-
             _url = url;
 
-            Serializer = config.Serializer ?? new JsonSerializer<PubSubPayload>();
+            _client = new DefaultSocketClient<PubSubPayload>(
+                new TwitchJsonSerializer<PubSubPayload>(), // Serializer options needed
+                new DefaultSocketClientConfig
+                {
+                    WaitForHello = true
+                });
+
+            _client.Connected += () => Connected?.Invoke();
+            _client.Disconnected += ex => Disconnected?.Invoke(ex);
+            _client.PayloadReceived += OnPayloadReceived;
+
+            ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
         }
 
-        public override void Run()
+        protected virtual void Dispose(bool disposing)
         {
-            throw new System.NotImplementedException();
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _client.Dispose();
+                }
+
+                _disposed = true;
+            }
         }
 
-        public override Task RunAsync()
+        public void Dispose()
         {
-            throw new System.NotImplementedException();
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
 
-        protected override void SendHeartbeat()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void Run() => _client.Run(_url);
+        public Task RunAsync() => _client.RunAsync(_url);
 
-        protected override void SendHeartbeatAck()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        protected override void HandleEvent(PubSubPayload payload, TaskCompletionSource<bool> readySignal)
+        private void OnPayloadReceived(PubSubPayload payload, TaskCompletionSource<bool> readySignal)
         {
             throw new System.NotImplementedException();
         }

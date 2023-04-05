@@ -9,14 +9,21 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.EventSub.Api
 {
-    public class TwitchEventSubApiClient : BaseSocketClient<EventSubFrame>
+    public class TwitchEventSubApiClient : IDisposable
     {
         #region Events
 
+        /// <summary> The client has successfully made a connection to the server. </summary>
+        public event Action Connected;
+        /// <summary> The client was forcibly disconnected from the server. </summary>
+        public event Action<Exception> Disconnected;
+        /// <summary> An unhandled irc command was received. </summary>
+        public event Action<EventSubFrame> UnknownEventReceived;
+        /// <summary> Triggered when the server needs to terminate the connection. </summary>
+        public event Action<Session> Reconnect;
+
         /// <summary> Triggered when a session is created after connection. </summary>
         public event Action<Session> SessionCreated;
-        /// <summary> Triggered when the server requests a reconnect. </summary>
-        public event Action<Session> Reconnect;
         /// <summary> Triggered when the user no longer exists or they revoked the authorization token that the subscription relied on. </summary>
         public event Action<EventSubscription> Revocation;
 
@@ -128,29 +135,59 @@ namespace AuxLabs.Twitch.EventSub.Api
 
         // config variables
         public readonly bool ThrowOnUnknownEvent;
-        public readonly bool ShouldHandleNotificationEvents;
 
-        protected override ISerializer<EventSubFrame> Serializer { get; }
-
+        public ConnectionState State => _client.State;
         public Session Session { get; protected set; }
+
+        private readonly ISocketClient<EventSubFrame> _client;
+        private string _url = null;
+        private bool _disposed = false;
 
         public TwitchEventSubApiClient(TwitchEventSubApiConfig config = null)
             : this(TwitchConstants.EventSubUrl, config) { }
-        public TwitchEventSubApiClient(string url, TwitchEventSubApiConfig config = null) : base(-1, true)
+        public TwitchEventSubApiClient(string url, TwitchEventSubApiConfig config = null)
         {
             config ??= new TwitchEventSubApiConfig();
-
             _url = url;
-            ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
-            ShouldHandleNotificationEvents = config.ShouldHandleNotificationEvents;
 
-            Serializer = new JsonSerializer<EventSubFrame>(TwitchJsonSerializerOptions.Default);
+            _client = new DefaultSocketClient<EventSubFrame>(
+                new TwitchJsonSerializer<EventSubFrame>(TwitchJsonSerializerOptions.Default), 
+                new DefaultSocketClientConfig
+            {
+                WaitForHello = true
+            });
+
+            _client.Connected += () => Connected?.Invoke();
+            _client.Disconnected += ex => Disconnected?.Invoke(ex);
+            _client.PayloadReceived += OnPayloadReceived;
+
+            ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
         }
 
-        public override void Run() => Run(_url);
-        public override Task RunAsync() => RunAsync(_url);
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _client.Dispose();
+                }
 
-        protected override void HandleEvent(EventSubFrame frame, TaskCompletionSource<bool> readySignal)
+                _disposed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
+
+        public void Run() => _client.Run(_url);
+        public Task RunAsync() => _client.RunAsync(_url);
+
+        private void OnPayloadReceived(EventSubFrame frame, TaskCompletionSource<bool> readySignal)
         {
             switch (frame.Metadata.Type)
             {
@@ -174,9 +211,6 @@ namespace AuxLabs.Twitch.EventSub.Api
                     break;
 
                 case MessageType.Notification:
-                    if (!ShouldHandleNotificationEvents)
-                        return;
-
                     var eventType = EventSubPayload.EventTypeSelector.SingleOrDefault(x => x.Key == frame.Payload.Subscription.Type).Value;
                     frame.Payload.Event = JsonSerializer.Deserialize((JsonElement)frame.Payload.Event, eventType);
 
@@ -363,7 +397,7 @@ namespace AuxLabs.Twitch.EventSub.Api
                         // Insert the load of subscription event types here
 
                         default:
-                            OnUnknownEventReceived(frame);
+                            UnknownEventReceived?.Invoke(frame);
                             if (ThrowOnUnknownEvent)
                                 throw new TwitchException($"An unhandled notification event of type `{frame.Payload.Subscription.TypeRaw}` was received");
                             break;
@@ -371,7 +405,7 @@ namespace AuxLabs.Twitch.EventSub.Api
                     break;
 
                 default:
-                    OnUnknownEventReceived(frame);
+                    UnknownEventReceived?.Invoke(frame);
                     if (ThrowOnUnknownEvent)
                         throw new TwitchException($"An unhandled event of type `{frame.Metadata.TypeRaw}` was received");
                     break;

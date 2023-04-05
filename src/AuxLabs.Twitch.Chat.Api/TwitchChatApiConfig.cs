@@ -10,9 +10,6 @@ namespace AuxLabs.Twitch.Chat.Api
         /// <summary> Adds additional metadata to the command and membership messages. </summary>
         public bool RequestTags { get; set; } = true;
 
-        /// <summary> Should the client forward event types to their respective events. </summary>
-        public bool ShouldHandleEvents { get; set; } = true;
-
         /// <summary> Should an exception be raised if an unhandled event is received from twitch. </summary>
         public bool ThrowOnUnknownEvent { get; set; } = false;
 

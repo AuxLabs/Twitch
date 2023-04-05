@@ -8,6 +8,8 @@ namespace AuxLabs.Twitch.Chat
 {
     public partial class TwitchChatClient
     {
+        #region Connection
+
         /// <summary> Triggered when the socket connection is established </summary>
         public event Func<Task> Connected
         {
@@ -15,14 +17,6 @@ namespace AuxLabs.Twitch.Chat
             remove { _connectedEvent.Remove(value); }
         }
         internal readonly AsyncEvent<Func<Task>> _connectedEvent = new AsyncEvent<Func<Task>>();
-
-        /// <summary> Triggered when the socket connection is established </summary>
-        public event Func<ChatSelfUser, Task> LoggedIn
-        {
-            add { _loggedInEvent.Add(value); }
-            remove { _loggedInEvent.Remove(value); }
-        }
-        internal readonly AsyncEvent<Func<ChatSelfUser, Task>> _loggedInEvent = new AsyncEvent<Func<ChatSelfUser, Task>>();
 
         /// <summary> Triggered when the socket connection is closed </summary>
         public event Func<Exception, Task> Disconnected
@@ -41,13 +35,35 @@ namespace AuxLabs.Twitch.Chat
         internal readonly AsyncEvent<Func<Task>> _reconnectEvent = new AsyncEvent<Func<Task>>();
 
         /// <summary> Triggered when an unknown event is received </summary>
-        public event Func<IrcPayload, Task> UnhandledCommand
+        public event Func<IrcPayload, Task> UnknownEventReceived
         {
-            add { _unhandledCommandEvent.Add(value); }
-            remove { _unhandledCommandEvent.Remove(value); }
+            add { _unknownEventReceivedEvent.Add(value); }
+            remove { _unknownEventReceivedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<IrcPayload, Task>> _unhandledCommandEvent = new AsyncEvent<Func<IrcPayload, Task>>();
-        
+        internal readonly AsyncEvent<Func<IrcPayload, Task>> _unknownEventReceivedEvent = new AsyncEvent<Func<IrcPayload, Task>>();
+
+        #endregion
+        #region Global
+
+        /// <summary> Triggered when the socket connection is established </summary>
+        public event Func<ChatSelfUser, Task> LoggedIn
+        {
+            add { _loggedInEvent.Add(value); }
+            remove { _loggedInEvent.Remove(value); }
+        }
+        internal readonly AsyncEvent<Func<ChatSelfUser, Task>> _loggedInEvent = new AsyncEvent<Func<ChatSelfUser, Task>>();
+
+        /// <summary>  </summary>
+        public event Func<ChatWhisperMessage, Task> WhisperReceived
+        {
+            add { _whisperReceivedEvent.Add(value); }
+            remove { _whisperReceivedEvent.Remove(value); }
+        }
+        internal readonly AsyncEvent<Func<ChatWhisperMessage, Task>> _whisperReceivedEvent = new AsyncEvent<Func<ChatWhisperMessage, Task>>();
+
+        #endregion
+        #region Channel
+
         /// <summary> Triggered when the entire chat is cleared in a channel. </summary>
         /// <remarks> Provides an object that represents the channel and a collection of messages that were deleted, if cached. </remarks>
         public event Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task> ChatCleared
@@ -111,14 +127,6 @@ namespace AuxLabs.Twitch.Chat
         }
         internal readonly AsyncEvent<Func<ChatSimpleChannel, string, Task>> _userLeftChannelEvent = new AsyncEvent<Func<ChatSimpleChannel, string, Task>>();
 
-        /// <summary>  </summary>
-        public event Func<ChatWhisperMessage, Task> WhisperReceived
-        {
-            add { _whisperReceivedEvent.Add(value); }
-            remove { _whisperReceivedEvent.Remove(value); }
-        }
-        internal readonly AsyncEvent<Func<ChatWhisperMessage, Task>> _whisperReceivedEvent = new AsyncEvent<Func<ChatWhisperMessage, Task>>();
-
         /// <summary> Triggered when a message is received in a channel </summary>
         /// <remarks> Provides an object that represents the message. </remarks>
         public event Func<ChatMessage, Task> MessageReceived
@@ -138,7 +146,7 @@ namespace AuxLabs.Twitch.Chat
         internal readonly AsyncEvent<Func<ChatChannel, ChatChannel, Task>> _channelStateUpdated = new AsyncEvent<Func<ChatChannel, ChatChannel, Task>>();
 
         /// <summary> Triggered when the current user's state is updated. </summary>
-        /// <remarks> Provides the user's state before the change, if cached, and the state after. </remarks>
+        /// <remarks> Provides the user's state before the change, if cached, the state after, and a message Id if one was sent. </remarks>
         public event Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task> UserStateUpdated
         {
             add { _userStateUpdatedEvent.Add(value); }
@@ -146,11 +154,11 @@ namespace AuxLabs.Twitch.Chat
         }
         internal readonly AsyncEvent<Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task>> _userStateUpdatedEvent = new AsyncEvent<Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task>>();
 
+        #endregion
+        #region User Notice
 
-        // User Notice Events
-
-
-        /// <summary>  </summary>
+        /// <summary> Triggered when a user shares that they just unlocked a new bits tier. </summary>
+        /// <remarks>  </remarks>
         public event Func<Task> ChannelBitsTierUnlocked
         {
             add { _bitsTierUnlockedEvent.Add(value); }
@@ -158,21 +166,14 @@ namespace AuxLabs.Twitch.Chat
         }
         internal readonly AsyncEvent<Func<Task>> _bitsTierUnlockedEvent = new AsyncEvent<Func<Task>>();
 
-        /// <summary>  </summary>
-        public event Func<Task> ChannelRaided
+        /// <summary> Triggered when a user raids the specified channel. </summary>
+        /// <remarks> Provides an object that represents the raider, the channel that was raided, and the number of viewers. </remarks>
+        public event Func<ChatRaidUser, ChatSimpleChannel, int, Task> ChannelRaided
         {
             add { _channelRaidedEvent.Add(value); }
             remove { _channelRaidedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<Task>> _channelRaidedEvent = new AsyncEvent<Func<Task>>();
-
-        /// <summary>  </summary>
-        public event Func<Task> ChannelRaidEnded
-        {
-            add { _channelRaidEndedEvent.Add(value); }
-            remove { _channelRaidEndedEvent.Remove(value); }
-        }
-        internal readonly AsyncEvent<Func<Task>> _channelRaidEndedEvent = new AsyncEvent<Func<Task>>();
+        internal readonly AsyncEvent<Func<ChatRaidUser, ChatSimpleChannel, int, Task>> _channelRaidedEvent = new AsyncEvent<Func<ChatRaidUser, ChatSimpleChannel, int, Task>>();
 
         /// <summary>  </summary>
         public event Func<Task> ChannelRitual
@@ -205,5 +206,7 @@ namespace AuxLabs.Twitch.Chat
             remove { _subscriptionEvent.Remove(value); }
         }
         internal readonly AsyncEvent<Func<Task>> _subscriptionEvent = new AsyncEvent<Func<Task>>();
+
+        #endregion
     }
 }

@@ -3,11 +3,11 @@ using System.Text.Json;
 
 namespace AuxLabs.Twitch.WebSockets
 {
-    public class JsonSerializer<TPayload> : ISerializer<TPayload>
+    public class TwitchJsonSerializer<TPayload> : ISerializer<TPayload>
     {
         private readonly JsonSerializerOptions _options;
 
-        public JsonSerializer(JsonSerializerOptions jsonSerializerOptions = null)
+        public TwitchJsonSerializer(JsonSerializerOptions jsonSerializerOptions = null)
         {
             _options = jsonSerializerOptions ?? JsonSerializerOptions.Default;
         }

@@ -32,7 +32,7 @@ namespace AuxLabs.Twitch.EventSub
             EventSub.Connected += () => _connectedEvent.InvokeAsync().ConfigureAwait(false);
             EventSub.Reconnect += (s) => _reconnectEvent.InvokeAsync(s).ConfigureAwait(false);
             EventSub.Disconnected += (ex) => _disconnectedEvent.InvokeAsync(ex).ConfigureAwait(false);
-            EventSub.PayloadReceived += (p, e) => HandleEventAsync(p).ConfigureAwait(false);
+            //EventSub.PayloadReceived += (p, e) => HandleEventAsync(p).ConfigureAwait(false);
             EventSub.SessionCreated += (s) => _sessionCreatedEvent.InvokeAsync(s).ConfigureAwait(false);
             EventSub.Revocation += (s) => _revocationEvent.InvokeAsync(RestEventSubscription.Create(Rest, s)).ConfigureAwait(false);
         }

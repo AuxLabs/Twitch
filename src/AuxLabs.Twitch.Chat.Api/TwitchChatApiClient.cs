@@ -2,18 +2,22 @@
 using AuxLabs.Twitch.Chat.Requests;
 using AuxLabs.Twitch.WebSockets;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Chat.Api
 {
-    public class TwitchChatApiClient : BaseSocketClient<IrcPayload>
+    public class TwitchChatApiClient : IDisposable
     {
         #region Events
 
-        /// <summary> Triggered when the Twitch IRC server needs to terminate the connection. </summary>
+        /// <summary> The client has successfully made a connection to the server. </summary>
+        public event Action Connected;
+        /// <summary> The client was forcibly disconnected from the server. </summary>
+        public event Action<Exception> Disconnected;
+        /// <summary> An unhandled irc command was received. </summary>
+        public event Action<IrcPayload> UnknownEventReceived;
+        /// <summary> Triggered when the server needs to terminate the connection. </summary>
         public event Action Reconnect;
 
         /// <summary> Triggered after successful authentication. </summary>
@@ -50,36 +54,63 @@ namespace AuxLabs.Twitch.Chat.Api
         // config variables
         public readonly bool CommandsRequested;
         public readonly bool TagsRequested;
-        public readonly bool ShouldHandleEvents;
         public readonly bool ThrowOnUnknownEvent;
         public readonly bool ThrowOnUnhandledTags;
         public readonly bool UseVerifiedRateLimits;
 
-        protected override ISerializer<IrcPayload> Serializer { get; }
+        public ConnectionState State => _client.State;
+        public bool IsAnonymous { get; private set; } = false;
 
-        private readonly ConcurrentDictionary<string, bool> _modMap;
+        private readonly ISocketClient<IrcPayload> _client;
+        private readonly string _url = null;
 
+        private bool _disposed = false;
         private string _username = null;
         private string _token = null;
-        private bool _anonymous = false;
 
         public TwitchChatApiClient(TwitchChatApiConfig config = null)
             : this(TwitchConstants.ChatSecureWebSocketUrl, config) { }
-        public TwitchChatApiClient(string url, TwitchChatApiConfig config = null) : base(-1, false, true)
+        public TwitchChatApiClient(string url, TwitchChatApiConfig config = null)
         {
             config ??= new TwitchChatApiConfig();
             _url = url;
 
-            _modMap = new ConcurrentDictionary<string, bool>();
+            var serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnUnhandledTags);
+            _client = new DefaultSocketClient<IrcPayload>(serializer, new DefaultSocketClientConfig
+            {
+                IsRecursive = true
+            });
 
-            Serializer = config.IrcSerializer ?? new DefaultIrcSerializer(config.ThrowOnUnhandledTags);
+            _client.Connected += () => Connected?.Invoke();
+            _client.Disconnected += ex => Disconnected?.Invoke(ex);
+            _client.PayloadReceived += OnPayloadReceived;
+            _client.Identify += OnIdentify;
 
             CommandsRequested = config.RequestCommands;
             TagsRequested = config.RequestTags;
-            ShouldHandleEvents = config.ShouldHandleEvents;
             ThrowOnUnknownEvent = config.ThrowOnUnknownEvent;
             ThrowOnUnhandledTags = config.ThrowOnUnhandledTags;
             UseVerifiedRateLimits = config.UseVerifiedRateLimits;
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _client.Dispose();
+                }
+
+                _disposed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
 
         public TwitchChatApiClient WithIdentity(string username, string token)
@@ -92,7 +123,7 @@ namespace AuxLabs.Twitch.Chat.Api
 
             if (username.StartsWith(TwitchConstants.AnonymousNamePrefix) && 
                 token.StartsWith(TwitchConstants.AnonymousNamePrefix))
-                _anonymous = true;
+                IsAnonymous = true;
 
             _username = username;
             if (!token.StartsWith("oauth:"))
@@ -102,114 +133,59 @@ namespace AuxLabs.Twitch.Chat.Api
             return this;
         }
 
-        public override void Run() => Run(_url);
-        public override Task RunAsync() => RunAsync(_url);
+        public void Run() => _client.Run(_url);
+        public Task RunAsync() => _client.RunAsync(_url);
 
         /// <summary> Join a channel by name. </summary>
         /// <remarks> Max channels per request is 20 or 2000 for verified accounts. </remarks>
         public void SendJoin(params string[] channelNames)
-            => SendJoinAsync(channelNames).GetAwaiter().GetResult();
-
-        /// <inheritdoc cref="SendJoin(string[])"/>
-        public Task SendJoinAsync(params string[] channelNames)
-            => SendJoinAsync(channelNames, null);
-
-        /// <inheritdoc cref="SendJoin(string[])"/>
-        public async Task SendJoinAsync(string[] channelNames, CancellationToken? cancelToken = null)
         {
-            var ct = cancelToken ?? CancellationToken.None;
-
-            var request = new JoinChannelsRequest(channelNames, ct);
+            var request = new JoinChannelsRequest(channelNames);
             request.Validate(UseVerifiedRateLimits);
 
-            await Task.Delay(0); // ratelimit lock here
-
-            Send(request.CreateRequest());
+            _client.Send(request.CreateRequest());
         }
 
         /// <summary> Leave a channel by name. </summary>
         /// <remarks> Max channels per request is 20 or 2000 for verified accounts. </remarks>
         public void SendPart(params string[] channelNames)
-            => SendPartAsync(channelNames).GetAwaiter().GetResult();
-
-        /// <inheritdoc cref="SendPart(string[])"/>
-        public Task SendPartAsync(params string[] channelNames)
-            => SendPartAsync(channelNames, null);
-
-        /// <inheritdoc cref="SendPart(string[])"/>
-        public async Task SendPartAsync(string[] channelNames, CancellationToken? cancelToken = null)
         {
-            var ct = cancelToken ?? CancellationToken.None;
-
-            var request = new PartChannelsRequest(channelNames, ct);
+            var request = new PartChannelsRequest(channelNames);
             request.Validate(UseVerifiedRateLimits);
 
-            await Task.Delay(0); // ratelimit lock here
-
-            Send(request.CreateRequest());
+            _client.Send(request.CreateRequest());
         }
 
         /// <summary> Send a message to a channel. </summary>
         public void SendMessage(string channelName, string message, string replyMessageId = null)
-            => SendMessageAsync(channelName, message, replyMessageId).GetAwaiter().GetResult();
-
-        /// <inheritdoc cref="SendMessage(string, string, string)"/>
-        public Task SendMessageAsync(string channelName, string message, string replyMessageId = null)
-            => SendMessageAsync(channelName, message, replyMessageId, null);
-
-        /// <inheritdoc cref="SendMessage(string, string, string)"/>
-        public async Task SendMessageAsync(string channelName, string message, string replyMessageId = null, CancellationToken? cancelToken = null)
         {
-            var ct = cancelToken ?? CancellationToken.None;
-            _modMap.TryGetValue(channelName, out bool ismod);   // Moderator status is necessary for handling ratelimits
-
-            var request = new SendMessageRequest(channelName, message, replyMessageId, ct);
+            var request = new SendMessageRequest(channelName, message, replyMessageId);
             request.Validate(UseVerifiedRateLimits);
 
-            await Task.Delay(0); // ratelimit lock here
-
-            Send(request.CreateRequest());
+            _client.Send(request.CreateRequest());
         }
 
-        protected override void SendIdentify()
+        private void OnIdentify()
         {
             var capReq = new CapabilityRequest(tags: TagsRequested, commands: CommandsRequested);
-            if (capReq.HasData) Send(capReq);
+            if (capReq.HasData) _client.Send(capReq);
 
-            Send(new IrcPayload(IrcCommand.Password, _token));
-            Send(new IrcPayload(IrcCommand.Nickname, _username));
+            _client.Send(new IrcPayload(IrcCommand.Password, _token));
+            _client.Send(new IrcPayload(IrcCommand.Nickname, _username));
         }
 
-        protected override void SendHeartbeat() => Send(new IrcPayload
+        private void OnPayloadReceived(IrcPayload payload, TaskCompletionSource<bool> readySignal)
         {
-            Command = IrcCommand.Ping
-        });
-
-        protected override void SendHeartbeatAck() => Send(new IrcPayload
-        {
-            Command = IrcCommand.Pong
-        });
-
-        protected override void HandleEvent(IrcPayload payload, TaskCompletionSource<bool> readySignal)
-        {
-            if (State != ConnectionState.Connected && _anonymous)   // Anonymous never gets a globaluserstate
-                readySignal.TrySetResult(true);
-
-            if (payload.Command == IrcCommand.GlobalUserState) // This command is used to confirm authentication.
-            {
-                readySignal.TrySetResult(true);
-                GlobalUserStateReceived?.Invoke((GlobalUserStateTags)payload.Tags);
-                return;
-            }
-
-            if (!ShouldHandleEvents) return;
             switch (payload.Command)
             {
                 case IrcCommand.Reconnect:
                     Reconnect?.Invoke();
                     break;
                 case IrcCommand.Ping:
-                    SendHeartbeatAck();
+                    _client.Send(new IrcPayload
+                    {
+                        Command = IrcCommand.Pong
+                    });
                     break;
                 case IrcCommand.CapabilityAcknowledge:
                     readySignal.TrySetResult(true);
@@ -217,6 +193,11 @@ namespace AuxLabs.Twitch.Chat.Api
                     break;
                 case IrcCommand.CapabilityDenied:
                     CapabilityDenied?.Invoke(payload.Parameters);
+                    break;
+
+                case IrcCommand.GlobalUserState:
+                    readySignal.TrySetResult(true);
+                    GlobalUserStateReceived?.Invoke((GlobalUserStateTags)payload.Tags);
                     break;
 
                 case IrcCommand.ClearChat:
@@ -227,11 +208,6 @@ namespace AuxLabs.Twitch.Chat.Api
                 case IrcCommand.ClearMessage:
                     var clearMsgArgs = ClearMessageEventArgs.Create(payload);
                     MessageCleared?.Invoke(clearMsgArgs);
-                    break;
-
-                case IrcCommand.Notice:
-                    var noticeArgs = NoticeEventArgs.Create(payload);
-                    NoticeReceived?.Invoke(noticeArgs);
                     break;
 
                 case IrcCommand.Message:
@@ -251,7 +227,6 @@ namespace AuxLabs.Twitch.Chat.Api
 
                 case IrcCommand.UserState:
                     var userStateArgs = UserStateEventArgs.Create(payload);
-                    _modMap[userStateArgs.ChannelName] = userStateArgs.Tags.IsModerator; // Add channel to mod map
                     UserStateReceived?.Invoke(userStateArgs);
                     break;
 
@@ -267,7 +242,6 @@ namespace AuxLabs.Twitch.Chat.Api
 
                 case IrcCommand.Part:
                     var leftArgs = MembershipEventArgs.Create(payload);
-                    _modMap.TryRemove(leftArgs.ChannelName, out _);     // Remove channel from mod map
                     ChannelLeft?.Invoke(leftArgs);
                     break;
 
@@ -276,6 +250,11 @@ namespace AuxLabs.Twitch.Chat.Api
                     NamesReceived?.Invoke(namesArgs);
                     break;
                 case IrcCommand.NamesEnd:
+                    break;
+
+                case IrcCommand.Notice:
+                    var noticeArgs = NoticeEventArgs.Create(payload);
+                    NoticeReceived?.Invoke(noticeArgs);
                     break;
 
                 case IrcCommand.RPL_Welcome:        // Ignorable messages sent after authentication
@@ -288,9 +267,9 @@ namespace AuxLabs.Twitch.Chat.Api
                     break;
 
                 default:
-                    OnUnknownEventReceived(payload);
+                    UnknownEventReceived?.Invoke(payload);
                     if (ThrowOnUnknownEvent)
-                        throw new TwitchException($"An unhandled event of type `{payload.CommandRaw}` was received");
+                        throw new TwitchChatException($"An unhandled event of type `{payload.CommandRaw}` was received");
                     break;
             };
         }
