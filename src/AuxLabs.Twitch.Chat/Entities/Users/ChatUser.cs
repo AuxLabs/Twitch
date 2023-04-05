@@ -40,7 +40,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             IsTurbo = model.Tags.IsTurbo;
         }
 
-        internal static ChatUser Create(TwitchChatClient twitch, Whisper model)
+        internal new static ChatUser Create(TwitchChatClient twitch, Whisper model)
         {
             var entity = new ChatUser(twitch, model.Tags.AuthorId);
             entity.Update(model);

@@ -1,5 +1,4 @@
 ﻿using System;
-using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 using ClearMsg = AuxLabs.Twitch.Chat.Models.ClearMessageEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
@@ -24,9 +23,9 @@ namespace AuxLabs.Twitch.Chat.Entities
             entity.Update(model);
             return entity;
         }
-        internal static ChatSimpleMessage Create(TwitchChatClient twitch, Message model, ChatSimpleChannel channel, ChatSimpleUser author)
+        internal static ChatSimpleMessage Create(TwitchChatClient twitch, IChatMessage model, ChatSimpleChannel channel, ChatSimpleUser author)
         {
-            var entity = new ChatSimpleMessage(twitch, model.Tags.MessageId, channel, author);
+            var entity = new ChatSimpleMessage(twitch, model.Id, channel, author);
             entity.Update(model);
             return entity;
         }
@@ -35,10 +34,10 @@ namespace AuxLabs.Twitch.Chat.Entities
             Timestamp = model.Tags.Timestamp;
             Content = model.Message;
         }
-        internal virtual void Update(Message model)
+        internal virtual void Update(IChatMessage model)
         {
-            Timestamp = model.Tags.Timestamp;
-            Content = model.Message;
+            Timestamp = model.Timestamp;
+            Content = model.Content;
         }
 
         public override string ToString() => Content;

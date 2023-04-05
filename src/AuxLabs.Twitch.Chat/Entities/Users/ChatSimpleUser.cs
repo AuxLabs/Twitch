@@ -5,6 +5,7 @@ using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
 using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
 using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 using Whisper = AuxLabs.Twitch.Chat.Models.WhisperEventArgs;
+using Raid = AuxLabs.Twitch.Chat.Models.RaidTags;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -17,6 +18,8 @@ namespace AuxLabs.Twitch.Chat.Entities
 
         internal ChatSimpleUser(TwitchChatClient twitch, string id)
             : base(twitch, id) { }
+
+        #region Create
 
         internal static ChatSimpleUser Create(TwitchChatClient twitch, IChatMessage model, bool isReply = false)
         {
@@ -83,6 +86,21 @@ namespace AuxLabs.Twitch.Chat.Entities
             Name = model.Tags.UserDisplayName;
             Color = model.Tags.Color;
         }
+
+        internal static ChatUser Create(TwitchChatClient twitch, Raid model)
+        {
+            var entity = new ChatUser(twitch, model.AuthorId);
+            entity.Update(model);
+            return entity;
+        }
+        internal virtual void Update(Raid model)
+        {
+            DisplayName = model.RaiderDisplayName;
+            Name = model.RaiderLogin;
+            Color = model.AuthorColor;
+        }
+
+        #endregion
 
         public override string ToString()
             => $"{DisplayName ?? Name} ({Id})";

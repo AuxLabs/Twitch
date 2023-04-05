@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -13,19 +12,19 @@ namespace AuxLabs.Twitch.Chat.Entities
         internal ChatMessage(TwitchChatClient twitch, string id, ChatSimpleChannel channel, ChatChannelUser author)
             : base(twitch, id, channel, author) { }
 
-        internal static ChatMessage Create(TwitchChatClient twitch, Message model, ChatSimpleChannel channel, ChatChannelUser author, ChatSimpleUser replyAuthor)
+        internal static ChatMessage Create(TwitchChatClient twitch, IChatMessage model, ChatSimpleChannel channel, ChatChannelUser author, ChatSimpleUser replyAuthor)
         {
-            var entity = new ChatMessage(twitch, model.Tags.MessageId, channel, author);
+            var entity = new ChatMessage(twitch, model.Id, channel, author);
             entity.Update(model, replyAuthor);
             return entity;
         }
-        internal virtual void Update(Message model, ChatSimpleUser replyAuthor)
+        internal virtual void Update(IChatMessage model, ChatSimpleUser replyAuthor)
         {
             base.Update(model);
             Reply = replyAuthor == null ? null : ChatMessageReply.Create(Twitch, model, replyAuthor);
-            Type = model.Tags.MessageType;
-            BitsAmount = model.Tags.BitsAmount;
-            Emotes = model.Tags.Emotes;
+            Type = model.MessageType;
+            BitsAmount = model.BitsAmount;
+            Emotes = model.Emotes;
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using Model = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
-
-namespace AuxLabs.Twitch.Chat.Entities
+﻿namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatMessageReply : ChatEntity<string>
     {
@@ -13,15 +11,15 @@ namespace AuxLabs.Twitch.Chat.Entities
             Author = author;
         }
 
-        internal static ChatMessageReply Create(TwitchChatClient twitch, Model model, ChatSimpleUser author)
+        internal static ChatMessageReply Create(TwitchChatClient twitch, IChatMessage model, ChatSimpleUser author)
         {
-            var entity = new ChatMessageReply(twitch, model.Tags.ReplyMessageId, author);
+            var entity = new ChatMessageReply(twitch, model.ReplyMessageId, author);
             entity.Update(model);
             return entity;
         }
-        internal virtual void Update(Model model)
+        internal virtual void Update(IChatMessage model)
         {
-            Content = model.Tags.ReplyMessageContent;
+            Content = model.ReplyMessageContent;
         }
     }
 }

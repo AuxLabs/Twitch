@@ -56,6 +56,6 @@ namespace AuxLabs.Twitch.Chat.Models
         UserType IMessage.AuthorType => Tags.AuthorType;
         IReadOnlyCollection<Badge> IMessage.Badges => Tags.Badges;
         IReadOnlyCollection<EmotePosition> IMessage.Emotes => Tags.Emotes;
-        string IEntity<string>.Id => Tags.NoticeType.GetStringValue();
+        string IEntity<string>.Id => Tags.MessageId;
     }
 }
