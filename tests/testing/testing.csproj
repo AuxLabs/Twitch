@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AuxLabs.Twitch.Chat.Api\AuxLabs.Twitch.Chat.Api.csproj" />
-    <ProjectReference Include="..\..\src\AuxLabs.Twitch.PubSub.Api\AuxLabs.Twitch.PubSub.Api.csproj" />
-    <ProjectReference Include="..\..\src\AuxLabs.Twitch.Rest.Api\AuxLabs.Twitch.Rest.Api.csproj" />
+    <ProjectReference Include="..\..\src\AuxLabs.Twitch.Chat\AuxLabs.Twitch.Chat.csproj" />
+    <ProjectReference Include="..\..\src\AuxLabs.Twitch.EventSub\AuxLabs.Twitch.EventSub.csproj" />
+    <ProjectReference Include="..\..\src\AuxLabs.Twitch.Rest\AuxLabs.Twitch.Rest.csproj" />
   </ItemGroup>
 
 </Project>
