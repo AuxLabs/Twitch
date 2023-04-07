@@ -8,40 +8,40 @@ namespace AuxLabs.Twitch.Chat.Models
         public string ChannelId { get; internal set; }
 
         /// <summary> Indicates whether the chat room allows only messages with emotes. </summary>
-        public bool IsEmoteOnly { get; internal set; }
+        public bool? IsEmoteOnly { get; internal set; }
 
         /// <summary> Indicates whether only followers can post messages in the chat room. </summary>
-        public bool IsFollowersOnly => FollowersOnlyMinutes > -1;
+        public bool? IsFollowersOnly => FollowersOnlyMinutes > -1;
 
         /// <summary> Indicates how long, in minutes, the user must have followed the broadcaster before posting chat messages. </summary>
-        public int FollowersOnlyMinutes { get; internal set; }
+        public int? FollowersOnlyMinutes { get; internal set; }
 
         /// <summary> Indicates whether a user’s messages must be unique. </summary>
-        public bool IsUniqueEnabled { get; internal set; }
+        public bool? IsUniqueEnabled { get; internal set; }
 
         /// <summary>  </summary>
-        public bool IsRituals { get; internal set; }
+        public bool? IsRituals { get; internal set; }
 
         /// <summary> Indicates whether users must wait between sending messages. </summary>
-        public bool IsSlowEnabled => SlowSeconds > 0;
+        public bool? IsSlowEnabled => SlowSeconds > 0;
 
         /// <summary> Indicates how long, in seconds, users must wait between sending messages. </summary>
-        public int SlowSeconds { get; internal set; }
+        public int? SlowSeconds { get; internal set; }
 
         /// <summary> Indicates whether only subscribers and moderators can chat in the chat room. </summary>
-        public bool IsSubscribersOnly { get; internal set; }
+        public bool? IsSubscribersOnly { get; internal set; }
 
         public override IDictionary<string, string> CreateQueryMap()
         {
             var map = new Dictionary<string, string>
             {
                 ["room-id"] = ChannelId,
-                ["emote-only"] = IsEmoteOnly ? "1" : "0",
-                ["followers-only"] = FollowersOnlyMinutes.ToString(),
-                ["r9k"] = IsUniqueEnabled ? "1" : "0",
-                ["rituals"] = IsRituals ? "1" : "0",
-                ["slow"] = IsSlowEnabled ? "1" : "0",
-                ["subs-only"] = IsSubscribersOnly ? "1" : "0"
+                ["emote-only"] = IsEmoteOnly.Value ? "1" : "0",
+                ["followers-only"] = FollowersOnlyMinutes?.ToString(),
+                ["r9k"] = IsUniqueEnabled.Value ? "1" : "0",
+                ["rituals"] = IsRituals.Value ? "1" : "0",
+                ["slow"] = IsSlowEnabled.Value ? "1" : "0",
+                ["subs-only"] = IsSubscribersOnly.Value ? "1" : "0"
             };
             return map;
         }
