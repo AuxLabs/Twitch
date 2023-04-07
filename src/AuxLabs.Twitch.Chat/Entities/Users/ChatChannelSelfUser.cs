@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Model = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
+using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -11,13 +11,13 @@ namespace AuxLabs.Twitch.Chat.Entities
         internal ChatChannelSelfUser(TwitchChatClient twitch, string id)
             : base(twitch, id) { }
 
-        internal new static ChatChannelSelfUser Create(TwitchChatClient twitch, Model model)
+        internal static ChatChannelSelfUser Create(TwitchChatClient twitch, string userId, UserState model)
         {
-            var entity = new ChatChannelSelfUser(twitch, model.Tags.UserId);
+            var entity = new ChatChannelSelfUser(twitch, userId);
             entity.Update(model);
             return entity;
         }
-        internal override void Update(Model model)
+        internal override void Update(UserState model)
         {
             base.Update(model);
             EmoteSets = model.Tags.EmoteSets;

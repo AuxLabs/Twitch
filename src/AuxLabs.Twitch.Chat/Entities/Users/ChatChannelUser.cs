@@ -1,5 +1,6 @@
 ﻿using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
+using UserNotice = AuxLabs.Twitch.Chat.Models.UserNoticeEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -24,18 +25,19 @@ namespace AuxLabs.Twitch.Chat.Entities
             entity.Update(model);
             return entity;
         }
+        internal static ChatChannelUser Create(TwitchChatClient twitch, UserNotice model)
+        {
+            var entity = new ChatChannelUser(twitch, model.Tags.AuthorId);
+            entity.Update(model, false);
+            return entity;
+        }
+
         internal override void Update(Message model, bool isReply = false)
         {
             base.Update(model, isReply);
             IsModerator = model.Tags.IsModerator;
             IsSubscriber = model.Tags.IsSubscriber;
             IsVIP = model.Tags.IsVIP;
-        }
-        internal new static ChatChannelUser Create(TwitchChatClient twitch, UserState model)
-        {
-            var entity = new ChatChannelUser(twitch, model.Tags.UserId);
-            entity.Update(model);
-            return entity;
         }
         internal override void Update(UserState model)
         {

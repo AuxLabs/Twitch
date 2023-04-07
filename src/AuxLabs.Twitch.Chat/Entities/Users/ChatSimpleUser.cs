@@ -2,19 +2,18 @@
 using System.Drawing;
 using System.Threading.Tasks;
 using GlobalState = AuxLabs.Twitch.Chat.Models.GlobalUserStateTags;
-using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
-using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
-using Whisper = AuxLabs.Twitch.Chat.Models.WhisperEventArgs;
 using Raid = AuxLabs.Twitch.Chat.Models.RaidTags;
+using UserState = AuxLabs.Twitch.Chat.Models.UserStateEventArgs;
+using Whisper = AuxLabs.Twitch.Chat.Models.WhisperEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
     /// <summary>  </summary>
     public class ChatSimpleUser : ChatEntity<string>, IChatUser
     {
-        public string DisplayName { get; internal set; }
-        public string Name { get; internal set; }
-        public Color? Color { get; internal set; }
+        public string DisplayName { get; private set; }
+        public string Name { get; private set; }
+        public Color? Color { get; private set; }
 
         internal ChatSimpleUser(TwitchChatClient twitch, string id)
             : base(twitch, id) { }
@@ -48,48 +47,9 @@ namespace AuxLabs.Twitch.Chat.Entities
             }
         }
 
-        internal static ChatUser Create(TwitchChatClient twitch, Whisper model)
+        internal static ChatSimpleUser Create(TwitchChatClient twitch, Raid model)
         {
-            var entity = new ChatUser(twitch, model.Tags.AuthorId);
-            entity.Update(model);
-            return entity;
-        }
-        internal virtual void Update(Whisper model)
-        {
-            DisplayName = model.Tags.AuthorDisplayName;
-            Name = model.SenderName;
-            Color = model.Tags.AuthorColor;
-        }
-
-        internal static ChatUser Create(TwitchChatClient twitch, GlobalState model)
-        {
-            var entity = new ChatUser(twitch, model.UserId);
-            entity.Update(model);
-            return entity;
-        }
-        internal virtual void Update(GlobalState model)
-        {
-            DisplayName = model.UserDisplayName;
-            Name = model.UserDisplayName;
-            Color = model.Color;
-        }
-
-        internal static ChatChannelUser Create(TwitchChatClient twitch, UserState model)
-        {
-            var entity = new ChatChannelUser(twitch, model.Tags.UserId);
-            entity.Update(model);
-            return entity;
-        }
-        internal virtual void Update(UserState model)
-        {
-            DisplayName = model.Tags.UserDisplayName;
-            Name = model.Tags.UserDisplayName;
-            Color = model.Tags.Color;
-        }
-
-        internal static ChatUser Create(TwitchChatClient twitch, Raid model)
-        {
-            var entity = new ChatUser(twitch, model.AuthorId);
+            var entity = new ChatSimpleUser(twitch, model.AuthorId);
             entity.Update(model);
             return entity;
         }
@@ -98,6 +58,24 @@ namespace AuxLabs.Twitch.Chat.Entities
             DisplayName = model.RaiderDisplayName;
             Name = model.RaiderLogin;
             Color = model.AuthorColor;
+        }
+        internal virtual void Update(Whisper model)
+        {
+            DisplayName = model.Tags.AuthorDisplayName;
+            Name = model.SenderName;
+            Color = model.Tags.AuthorColor;
+        }
+        internal virtual void Update(GlobalState model)
+        {
+            DisplayName = model.UserDisplayName;
+            Name = model.UserDisplayName;
+            Color = model.Color;
+        }
+        internal virtual void Update(UserState model)
+        {
+            DisplayName = model.Tags.UserDisplayName;
+            Name = model.Tags.UserDisplayName;
+            Color = model.Tags.Color;
         }
 
         #endregion

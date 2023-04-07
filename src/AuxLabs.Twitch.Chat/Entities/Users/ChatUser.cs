@@ -34,7 +34,6 @@ namespace AuxLabs.Twitch.Chat.Entities
         {
             base.Update(model, isReply);
             UserType = model.Tags.AuthorType;
-            Color = model.Tags.AuthorColor;
             Badges = model.Tags.Badges;
             BadgeInfo = model.Tags.BadgeInfo;
             IsTurbo = model.Tags.IsTurbo;
@@ -50,7 +49,6 @@ namespace AuxLabs.Twitch.Chat.Entities
         {
             base.Update(model);
             UserType = model.Tags.AuthorType;
-            Color = model.Tags.AuthorColor;
             Badges = model.Tags.Badges;
             IsTurbo = model.Tags.IsTurbo;
         }
@@ -65,7 +63,6 @@ namespace AuxLabs.Twitch.Chat.Entities
         {
             base.Update(model);
             UserType = model.UserType;
-            Color = model.Color;
             Badges = model.Badges;
             BadgeInfo = model.BadgeInfo;
             IsTurbo = model.IsTurbo;
@@ -81,7 +78,6 @@ namespace AuxLabs.Twitch.Chat.Entities
         {
             base.Update(model);
             UserType = model.Tags.UserType;
-            Color = model.Tags.Color;
             Badges = model.Tags.Badges;
             BadgeInfo = model.Tags.BadgeInfo;
             IsTurbo = model.Tags.IsTurbo;

@@ -1,4 +1,5 @@
 ﻿using AuxLabs.Twitch.Chat.Models;
+using UserNotice = AuxLabs.Twitch.Chat.Models.UserNoticeEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -22,13 +23,13 @@ namespace AuxLabs.Twitch.Chat.Entities
         internal ChatSubscriptionMessage(TwitchChatClient twitch, string id, ChatSimpleChannel channel, ChatChannelUser author)
             : base(twitch, id, channel, author) { }
 
-        internal static ChatSubscriptionMessage Create(TwitchChatClient twitch, IChatMessage model, ChatSimpleChannel channel, ChatChannelUser author, bool _)
+        internal static ChatSubscriptionMessage Create(TwitchChatClient twitch, UserNotice model, ChatSimpleChannel channel, ChatChannelUser author)
         {
-            var entity = new ChatSubscriptionMessage(twitch, model.Id, channel, author);
-            entity.Update((UserNoticeEventArgs)model);
+            var entity = new ChatSubscriptionMessage(twitch, model.Tags.MessageId, channel, author);
+            entity.Update(model);
             return entity;
         }
-        internal virtual void Update(UserNoticeEventArgs model)
+        internal virtual void Update(UserNotice model)
         {
             var tags = (SubscriptionTags)model.Tags;
             base.Update(model, null);

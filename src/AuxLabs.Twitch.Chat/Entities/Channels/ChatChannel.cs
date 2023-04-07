@@ -1,5 +1,5 @@
 ﻿using System;
-using Model = AuxLabs.Twitch.Chat.Models.RoomStateEventArgs;
+using RoomState = AuxLabs.Twitch.Chat.Models.RoomStateEventArgs;
 
 namespace AuxLabs.Twitch.Chat.Entities
 {
@@ -32,21 +32,27 @@ namespace AuxLabs.Twitch.Chat.Entities
         internal ChatChannel(TwitchChatClient twitch, string id)
             : base(twitch, id) { }
 
-        internal new static ChatChannel Create(TwitchChatClient twitch, Model model)
+        internal new static ChatChannel Create(TwitchChatClient twitch, RoomState model)
         {
             var entity = new ChatChannel(twitch, model.Tags.ChannelId);
             entity.Update(model);
             return entity;
         }
-        internal override void Update(Model model)
+        internal override void Update(RoomState model)
         {
             base.Update(model);
-            IsEmoteOnly = model.Tags.IsEmoteOnly;
-            RequiredFollowTime = model.Tags.FollowersOnlyMinutes == -1 ? default : TimeSpan.FromMinutes(model.Tags.FollowersOnlyMinutes);
-            IsUniqueEnabled = model.Tags.IsUniqueEnabled;
-            IsRitualsEnabled = model.Tags.IsRituals;
-            SlowModeDelay = TimeSpan.FromSeconds(model.Tags.SlowSeconds);
-            IsSubscribersOnly = model.Tags.IsSubscribersOnly;
+            if (model.Tags.IsEmoteOnly.HasValue)
+                IsEmoteOnly = model.Tags.IsEmoteOnly.Value;
+            if (model.Tags.FollowersOnlyMinutes.HasValue)
+                RequiredFollowTime = model.Tags.FollowersOnlyMinutes == -1 ? default : TimeSpan.FromMinutes(model.Tags.FollowersOnlyMinutes.Value);
+            if (model.Tags.IsUniqueEnabled.HasValue)
+                IsUniqueEnabled = model.Tags.IsUniqueEnabled.Value;
+            if (model.Tags.IsRituals.HasValue)
+                IsRitualsEnabled = model.Tags.IsRituals.Value;
+            if (model.Tags.SlowSeconds.HasValue)
+                SlowModeDelay = TimeSpan.FromSeconds(model.Tags.SlowSeconds.Value);
+            if (model.Tags.IsSubscribersOnly.HasValue)
+                IsSubscribersOnly = model.Tags.IsSubscribersOnly.Value;
         }
     }
 }
