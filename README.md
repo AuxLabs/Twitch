@@ -23,11 +23,11 @@ For examples and sample projects look at [the examples repository](https://githu
 ### Features
 <details>
   <summary>Rest Implementation</summary>
+  
 - [x] Global ratelimit handling
 - [ ] Unique endpoint ratelimit handling
 - [x] Check arguments for validity before requests
 - [x] Scope confirmation before requests
-- [x] Ability to implement a custom ratelimiter
 - [x] Ability to specify a custom rest api url
 - [ ] All endpoint categories progress
   - [x] 5/5 Identity
@@ -58,15 +58,16 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] 9/9 Users
   - [x] 2/2 Videos
   - [x] 1/1 Whispers
+  
 </details>
 
 <details>
   <summary>Chat Implementation</summary>
+  
 - [ ] Ratelimit handling
 - [x] Automatic heartbeat
 - [x] Automatic reconnection
 - [x] Auto-detect unhandled tags
-- [x] Provide a custom irc serializer
 - [x] Connect to a custom websocket chat url
 - [x] Authenticate anonymously
 - [x] Handle all available events
@@ -84,10 +85,12 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] Channel Joined
   - [x] Channel Left
   - [x] Names Received
+  
 </details>
 
 <details>
   <summary>EventSub Implementation</summary>
+  
 - [x] Subscribe/Unsubscribe/View subscriptions through Rest client
 - [ ] Ratelimits and Subscription Costs
 - [x] WebSocket client
@@ -117,10 +120,12 @@ For examples and sample projects look at [the examples repository](https://githu
   - [x] Stream Status
   - [x] Authorization Granted/Revoked
   - [x] User Updated
+  
 </details>
 
 <details>
   <summary>PubSub Implementation</summary>
+  
 - [ ] Ratelimits
 - [x] Automatic heartbeat
 - [x] Automatic reconnection
@@ -134,4 +139,5 @@ For examples and sample projects look at [the examples repository](https://githu
   - [ ] Low Trust User Status
   - [ ] Mdoerator Notifications
   - [ ] Whispers
+  
 </details>
