@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../../AuxLabs.Twitch.targets" />
+	<PropertyGroup>
+		<RootNamespace>AuxLabs.Twitch.PubSub</RootNamespace>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuxLabs.Twitch.PubSub.Api\AuxLabs.Twitch.PubSub.Api.csproj" />
+    <ProjectReference Include="..\AuxLabs.Twitch.Rest\AuxLabs.Twitch.Rest.csproj" />
+  </ItemGroup>
+
+</Project>

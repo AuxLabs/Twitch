@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
@@ -39,6 +38,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "abstractions", "abstractions", "{264C82FC-4A07-4116-ACC6-740C9457DEC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unstable", "unstable", "{E6D2E1C3-C7BC-483B-BCE2-73CB59859993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuxLabs.Twitch.PubSub", "src\AuxLabs.Twitch.PubSub\AuxLabs.Twitch.PubSub.csproj", "{C77B25FB-831D-4C59-A391-7C4246457B6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +87,10 @@ Global
 		{F8BB2C47-DE7A-4E67-982C-A9F43F9AB489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8BB2C47-DE7A-4E67-982C-A9F43F9AB489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8BB2C47-DE7A-4E67-982C-A9F43F9AB489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77B25FB-831D-4C59-A391-7C4246457B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77B25FB-831D-4C59-A391-7C4246457B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77B25FB-831D-4C59-A391-7C4246457B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77B25FB-831D-4C59-A391-7C4246457B6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +108,7 @@ Global
 		{F8BB2C47-DE7A-4E67-982C-A9F43F9AB489} = {A662A963-C964-49FC-B1F1-C274712248BE}
 		{264C82FC-4A07-4116-ACC6-740C9457DEC8} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
 		{E6D2E1C3-C7BC-483B-BCE2-73CB59859993} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
+		{C77B25FB-831D-4C59-A391-7C4246457B6F} = {23B59A5B-4157-4BB6-89CF-A56A07211BE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {361079B4-1C89-4323-AA00-5C8EB0EBE16A}
