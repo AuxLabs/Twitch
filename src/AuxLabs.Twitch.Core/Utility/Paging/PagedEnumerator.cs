@@ -15,7 +15,7 @@ namespace AuxLabs.Twitch
         private readonly Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T> Data, string Cursor)>> _getPage;
         private readonly Func<PageInfo, int, string, bool> _nextPage;
 
-        public PagedAsyncEnumerable(int pageSize, Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T>, string)>> getPage, Func<PageInfo, int, string, bool> nextPage = null,
+        public PagedAsyncEnumerable(int pageSize, Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T> Data, string Cursor)>> getPage, Func<PageInfo, int, string, bool> nextPage = null,
             int? count = null)
         {
             PageSize = pageSize;
@@ -31,7 +31,6 @@ namespace AuxLabs.Twitch
             private readonly PagedAsyncEnumerable<T> _source;
             private readonly CancellationToken _token;
             private readonly PageInfo _info;
-            private string _cursor = null;
 
             public IReadOnlyCollection<T> Current { get; private set; }
 
@@ -47,8 +46,8 @@ namespace AuxLabs.Twitch
                 if (_info.Remaining == 0)
                     return false;
 
-                var response = await _source._getPage(_info, _token).ConfigureAwait(false);
-                Current = new Page<T>(_info, response.Data);
+                var (Data, Cursor) = await _source._getPage(_info, _token).ConfigureAwait(false);
+                Current = new Page<T>(_info, Data);
 
                 _info.Page++;
                 if (_info.Remaining != null)
@@ -67,7 +66,7 @@ namespace AuxLabs.Twitch
 
                 if (_info.Remaining != 0)
                 {
-                    if (!_source._nextPage(_info, response.Data.Count, response.Cursor))
+                    if (!_source._nextPage(_info, Data.Count, Cursor))
                         _info.Remaining = 0;
                 }
 
