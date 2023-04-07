@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IChatUser
+    <title>Class AsyncEnumerableExtensions
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IChatUser
+    <meta name="title" content="Class AsyncEnumerableExtensions
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,32 +78,31 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.IChatUser">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.AsyncEnumerableExtensions">
 
 
-  <h1 id="AuxLabs_Twitch_Chat_IChatUser" data-uid="AuxLabs.Twitch.Chat.IChatUser" class="text-break">Interface IChatUser
+  <h1 id="AuxLabs_Twitch_AsyncEnumerableExtensions" data-uid="AuxLabs.Twitch.AsyncEnumerableExtensions" class="text-break">Class AsyncEnumerableExtensions
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An extension class for squashing <see cref="!:IAsyncEnumerable&lt;T>"></see>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_Name">IUser.Name</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_DisplayName">IUser.DisplayName</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.IEntity-1.html#AuxLabs_Twitch_IEntity_1_Id">IEntity&lt;string&gt;.Id</a>
-    </div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AsyncEnumerableExtensions</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.Chat.Api.dll</h6>
-  <h5 id="AuxLabs_Twitch_Chat_IChatUser_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a></h6>
+  <h6><strong>Assembly</strong>: AuxLabs.Twitch.dll</h6>
+  <h5 id="AuxLabs_Twitch_AsyncEnumerableExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IChatUser : IUser, IEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static class AsyncEnumerableExtensions</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h5 id="AuxLabs_Twitch_AsyncEnumerableExtensions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This set of extension methods will squash an <see cref="!:IAsyncEnumerable&lt;T>"></see> into a
+single <see cref="!:IEnumerable&lt;T>"></see>. This is often associated with requests that has a
+set limit when requesting.</p>
+</div>
+  <h3 id="methods">Methods
 </h3>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -114,10 +113,18 @@
     </thead>
     <tbody>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatUser_Color" data-uid="AuxLabs.Twitch.Chat.IChatUser.Color">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatUser.html#AuxLabs_Twitch_Chat_IChatUser_Color">Color</a>
+        <td id="AuxLabs_Twitch_AsyncEnumerableExtensions_Flatten__1_IAsyncEnumerable_IEnumerable___0___" data-uid="AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten``1(IAsyncEnumerable{IEnumerable{``0}})">
+          <a class="xref" href="AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_Flatten__1_IAsyncEnumerable_IEnumerable___0___">Flatten&lt;T&gt;(IAsyncEnumerable&lt;IEnumerable&lt;T&gt;&gt;)</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Flattens the specified pages into one <see cref="!:IAsyncEnumerable&lt;T>"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_AsyncEnumerableExtensions_FlattenAsync__1_IAsyncEnumerable_IEnumerable___0___" data-uid="AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync``1(IAsyncEnumerable{IEnumerable{``0}})">
+          <a class="xref" href="AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_FlattenAsync__1_IAsyncEnumerable_IEnumerable___0___">FlattenAsync&lt;T&gt;(IAsyncEnumerable&lt;IEnumerable&lt;T&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Flattens the specified pages into one <see cref="!:IEnumerable&lt;T>"></see> asynchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -129,10 +136,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_IChatUser.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.IChatUser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_AsyncEnumerableExtensions.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.AsyncEnumerableExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat.Api/Contracts/IChatUser.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/abstractions/AuxLabs.Twitch.Core/Utility/Extensions/AsyncEnumerableExtensions.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

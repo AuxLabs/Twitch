@@ -38,6 +38,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.AsyncEnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.AsyncEnumerableExtensions.html",
+          "hash": "HN/ZtrP9WUohOpbXG05bZW3b14QDn9VOXfxa9vcYyFg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.AutomodAction.yml",
       "output": {
         ".html": {
@@ -114,7 +126,19 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.CDN.html",
-          "hash": "6SGqClu9DgK6VWqjITDfwh3kH8j4j+g5rOGA+G7AMMA="
+          "hash": "SsIjqq2o/COioKWWkUdEFrWmQ2JWuauy+Yfx6SmUV1k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Cacheable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Cacheable-2.html",
+          "hash": "87gsIK87yFYGvkRN4LukRjTxZaHRSnAL3rbIDsUqNFg="
         }
       },
       "is_incremental": false,
@@ -186,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html",
-          "hash": "2b+JbjXXB+Ds1qMOR54HYgUj0C/nUMKCnHQ4SHzJv28="
+          "hash": "tKqZ9jzGUePSX/04zBUlYlvfAvk3qewUlMR1ir+hm/Y="
         }
       },
       "is_incremental": false,
@@ -198,7 +222,19 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.html",
-          "hash": "YyGsqMr0msc6lXcjnLOQf1ZXhKUaKZx4/pUFyEvEYhY="
+          "hash": "iOtGdPk4XKyCRf+jXcs1yU3yevnPY8rpyMhKhfT/tNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Chat.Api.TwitchChatException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html",
+          "hash": "BzChqWcGAuhmqHMOMasMfuHpT1MSoUuY9oPL8oMA+io="
         }
       },
       "is_incremental": false,
@@ -210,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Api.html",
-          "hash": "9zFvwFVp9PhEUMZ3leB7XfMOWqOSd4uRpNkkFiz/2wk="
+          "hash": "FCAEkzth1GYONHAJDHNlW5z0AeAw4bNQ9jxNyGVZx+M="
         }
       },
       "is_incremental": false,
@@ -234,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatChannel.html",
-          "hash": "kwP7RmIuxs6Bzbe5yjyZoOmMp1I9egYCjQNirUyj8gc="
+          "hash": "ArStRTZDlFt7NFGnq06VGKzUs/oM35NlOdpNN6BgNzE="
         }
       },
       "is_incremental": false,
@@ -246,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser.html",
-          "hash": "XyqYz7LqVcibwW2CjPHlGjaNsXKAeQejzXUusHTssrI="
+          "hash": "J7D+a46dFlX3ITKoDa5x92lL8UGO8oQcZQ3NkvWb2LE="
         }
       },
       "is_incremental": false,
@@ -258,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatChannelUser.html",
-          "hash": "emYVeCzpalL4l+x65/HqU0aJsARAMvXu1MW1G23v5mI="
+          "hash": "Ik7PwcRaqo0o03Q19j6TVMGpX07RUrpTlZgAbkb+72o="
         }
       },
       "is_incremental": false,
@@ -270,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html",
-          "hash": "0k0jaU5t3IB1ISDY4lUbS2QlVP96sQvSN5bselV08Vs="
+          "hash": "IuGhF9i65lhNF9D8j/FdaWzQJpCzT006ur1vPni9YJI="
         }
       },
       "is_incremental": false,
@@ -282,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatMessage.html",
-          "hash": "VYih6zWfWJtg0ePIKtvMvbTJmcIev1TGZ9H5p0pIsBQ="
+          "hash": "/l5X7RhIaMI+Hiudd2YTJUqEG55WzaJ/eGuQRy0pi9Y="
         }
       },
       "is_incremental": false,
@@ -294,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatMessageReply.html",
-          "hash": "Fg7xKzVHf7GLH96WSit1YkN+5AQxQL1emQOCBdAond4="
+          "hash": "E7568sy6qx/15F3ptmqmFVBXxdOlqyqMTkUtFkl6/yI="
         }
       },
       "is_incremental": false,
@@ -302,11 +338,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatRaidUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html",
-          "hash": "pzNM30kSfY79NAb9bTYnBk98f74Xk+bSz4bsCxVm9xo="
+          "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html",
+          "hash": "YzYQHNeKPAk0gyD8ooK2OAkkJbl9p+nRscTNU8eW8IM="
         }
       },
       "is_incremental": false,
@@ -318,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSelfUser.html",
-          "hash": "ZVELP6gHcdGMvGGYTE0dLkLe3svmVMF07kXZnNyhs0Y="
+          "hash": "tFyP4tlxhPy5TplGHQ3kz6cr1Li23jiQHiZKkKuP7rE="
         }
       },
       "is_incremental": false,
@@ -330,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html",
-          "hash": "bq0LRWQywj7VxwIVlrnXY8IUCFH1E+8vNBLDQrGLot8="
+          "hash": "1wVX11gQqlcTNbMc2N4tJbq6VJXnBk5DWXPhoL5CJqI="
         }
       },
       "is_incremental": false,
@@ -342,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html",
-          "hash": "X8RigMcmjGLupjR8X6gVmMQtNeoxtq8OULGqsnB1dEo="
+          "hash": "w/a/Df7GBm1rg51jQj5ePVUvNc31C8UEtBvKdP7BzZ8="
         }
       },
       "is_incremental": false,
@@ -354,7 +390,19 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.html",
-          "hash": "IQDBU4xWtbIA/KEdmM5cJWHKhGdxJg4En1VJJwR2ajY="
+          "hash": "bcjOnEk3uO0UHJzBjnXadf6aGNmbMmVkRHxVgJNLTg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html",
+          "hash": "X3RjdpcKbyMn0Xvm57zikJumDNIMPxmVDRJ6wkVU170="
         }
       },
       "is_incremental": false,
@@ -366,7 +414,19 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatUser.html",
-          "hash": "20Bweqait9WP9+ib+ar3q6+gE0RzpxW+S+yKNtp9Ik4="
+          "hash": "aZaVdjR5ecJFUehjcp4MQua08GkSntPNCFO97EH1jZg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html",
+          "hash": "6lxlYkdZZqcNKbDxrUOTpb7TKA4ryzsTcCz4jKf3ut0="
         }
       },
       "is_incremental": false,
@@ -378,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.Entities.html",
-          "hash": "wg9bZphIn5MogVw2ZQlbtR3UKEp/1QpShjMqcogiZ3s="
+          "hash": "UxV/QNYy7BkGRnYnYtxLWKKyYXoPgl0pbmwAdRQvp5Y="
         }
       },
       "is_incremental": false,
@@ -391,18 +451,6 @@
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.IChatMessage.html",
           "hash": "fNkylouM63V9tmD0mcVx6tcNz6h9YHCbqoqD8OKXMEs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Chat.IChatUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Chat.IChatUser.html",
-          "hash": "5643mlJzulJg5AaXzB04gauFuUkwhVGYjVTggoz3pZ4="
         }
       },
       "is_incremental": false,
@@ -906,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.TwitchChatClient.html",
-          "hash": "J1H76NO5RZ59TbekoY/MZZ+k8Q2IcP+3DSQ7ctup7c0="
+          "hash": "fM6WttVXLDqhy72b0fFjVjjraxfMhO3ZYn/XIBKCRN8="
         }
       },
       "is_incremental": false,
@@ -918,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.TwitchChatConfig.html",
-          "hash": "kfYR8FXKSSvjVVqzAhiUq3AcsGQhM68ANgISO4USuTM="
+          "hash": "gf1SBdzJFaKEnMWQTjFrrTXGJ15OWCXZArga4zyg+pU="
         }
       },
       "is_incremental": false,
@@ -954,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Chat.html",
-          "hash": "nX7CqrpaFBclxldj/Hk6qo6U3DkD10JX3fdtfdv4Bas="
+          "hash": "rsXMyYyiH7bUJzdq1m24iMtUfuRUNTDfoyJnoc6a/1E="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html",
-          "hash": "us7MAINiOVtZTKoXHkb+gdt1xpBNPPP5L0T0znepeug="
+          "hash": "UzxLC1/ZZDb+7UV3mb8WgTPl4YMA75QOuHt1MwRdtZ8="
         }
       },
       "is_incremental": false,
@@ -1194,7 +1242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.html",
-          "hash": "36nhTM+t2AasJaF+PqluUK2IBqSz9PFnMAUdkZCPd5s="
+          "hash": "VWiMrmVyWX7DQV2KlFXrIuL62/RnK2/YzBPzTwC5olw="
         }
       },
       "is_incremental": false,
@@ -1830,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.EventSub.TwitchEventSubConfig.html",
-          "hash": "a4mWTgs67dx5zpCf+SiDPXUMbnEJ4LI8W3phaFbDqHA="
+          "hash": "kgY93OCVsKIrP/x2qMjJWkcsnD8EJv6+NlQTT6rnuGQ="
         }
       },
       "is_incremental": false,
@@ -1946,11 +1994,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.IChannelInfo.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.IChatUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.IChannelInfo.html",
-          "hash": "h1nPMdqQgMAa33/8Tg8cf0NatVuVcwi3KuDSzB2lc0U="
+          "relative_path": "api/AuxLabs.Twitch.IChatUser.html",
+          "hash": "f2kJpOHuOkzJwuBQ5EqHuWAVMI6xecFAoBRUTXHHNJ4="
         }
       },
       "is_incremental": false,
@@ -1998,7 +2046,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.IUser.html",
-          "hash": "dgUXOx/G1cNvmNwDy5CPEPzfgLIKWQzQA09eHSCAgmM="
+          "hash": "MmwQdNFGRG7jxEIPjaSPX+jm6hXMxl2gy4rzTKGLSMk="
         }
       },
       "is_incremental": false,
@@ -2226,7 +2274,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html",
-          "hash": "RC6DVIZcRLm4gf4O+BxVeigV1hX9AOBAwnwGggte5CM="
+          "hash": "ICmb3SXKCkyEB+CvEYW8lUtByPNUaS2dCMYeaMVkyVE="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2286,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html",
-          "hash": "TOUGuPUBiA0241dBj6ZYkwc9HSKslggMp0XrHqjLLoE="
+          "hash": "FPRz4DsT88wSba3sFwzBOI76ypW04XsObyKz4L2z94I="
         }
       },
       "is_incremental": false,
@@ -2442,7 +2490,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestBroadcast.html",
-          "hash": "CBG0vnVJAakRnE/g2ISCCk/kA1nUf+D8cpl0eJNMIh0="
+          "hash": "obtKnRwkLbf8lUra18h+tyqxnR/BC35j3Y7Iu9CaOK8="
         }
       },
       "is_incremental": false,
@@ -2462,11 +2510,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChatUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html",
-          "hash": "vFqDn1P2JvIHt3IHiA+8TlAet8IV5b6GDT6jOH90NhM="
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html",
+          "hash": "4KYOfFkD8tdbMHXx/naJkh+Ai0qH4LyMbNYX2mh/lCg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.html",
+          "hash": "q8EErIlHNnqyJB8wgOoeTHdP7d34Xg4MoICqD2h9eO0="
         }
       },
       "is_incremental": false,
@@ -2562,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html",
-          "hash": "Mu4ZwKzZc6vsZzJWf83WC+zd/ECbJRRhE8WDRQLVpD4="
+          "hash": "04UdwsF8FxwPS3DgMmcjH9vOPISn5t59Obei806kavc="
         }
       },
       "is_incremental": false,
@@ -2594,23 +2654,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html",
-          "hash": "hDHrdH+X8T3iU3if1dIBOys6U6xq93ye/K2zuq1pbNo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.yml",
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html",
-          "hash": "J0netcVA8DwkV7powTTmlbmNeMhUeMe/N4nhmm5ZsbQ="
+          "hash": "jiui9iMjhfhfyF9MWp3FE5mHSKK+76vDbGdkkN9qmhw="
         }
       },
       "is_incremental": false,
@@ -2634,7 +2682,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.html",
-          "hash": "ckpb8Jj28Zg2MWD3w/mVPSbGWzkraQdUrhFj/O+i/gs="
+          "hash": "azcIJuTvwzxIdF2AcxcXWMKlFUg7cvU2/hxF9pAlhoY="
         }
       },
       "is_incremental": false,
@@ -5826,7 +5874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.html",
-          "hash": "ViCJdLa6fO1pgatdb+MJUfGsffgYz9ypTz11EhaIdto="
+          "hash": "WvFB75gJpIxuns1VRp/slJ/5PGqMB6sJ4/is2sUAiVI="
         }
       },
       "is_incremental": false,
@@ -5934,7 +5982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.TwitchConstants.html",
-          "hash": "t5lMmUyxaTuBVJ/1KX+uAGeJYaNCDes+4Biod0SOMww="
+          "hash": "98p8bGdAvKrQ+w+/YPrlsevlkwSORV36HTgKV+0hzf4="
         }
       },
       "is_incremental": false,
@@ -5946,7 +5994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.TwitchException.html",
-          "hash": "ceX5EJ3b/3Qx+Sw2MZ9+R/XGgPsnGiGVyyTtEzXM00U="
+          "hash": "98n2Fri++8nntUIgXX/3NoxNGU7MWDJeVqchUNg/C6E="
         }
       },
       "is_incremental": false,
@@ -6050,18 +6098,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html",
-          "hash": "f4lvHDmQpHUFtmZ5bwJb2nh4O1Nz7oAjKa5dch+9VCg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.WebSockets.ConnectionState.yml",
       "output": {
         ".html": {
@@ -6098,11 +6134,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.WebSockets.ISocketClient-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html",
-          "hash": "ixdw5MsIJl11TK8F1wgTDkaRhQMkAe1fGjV8POHzt1U="
+          "relative_path": "api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html",
+          "hash": "ofp2kS766NwuAUwr63LJvo9XZW1WC5GEOvCC/tsHQQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html",
+          "hash": "rmR3jlOt8WZjdeUu5EKDSxioMYmlKv5wvaawVmT3vTA="
         }
       },
       "is_incremental": false,
@@ -6126,7 +6174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.WebSockets.html",
-          "hash": "4z47cEG1Gs6et2Oo+Nirsaf/sGST1QjaoIygQ7LV5NE="
+          "hash": "VLhdV7XwD8chJHMPEWOxE5tb14Mtdtfyf4AhiIRTJHU="
         }
       },
       "is_incremental": false,
@@ -6138,7 +6186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.html",
-          "hash": "yAVizG98IfbYAXx2S2W5nJV8/I4vCxYh4toPOceAtmk="
+          "hash": "RoPqLooxwVWun6t3gUzftQ0SKuPkHtAkx3iUI5/JhnQ="
         }
       },
       "is_incremental": false,
@@ -6162,7 +6210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "opjWVlv0l22Ojfq5o4dmrWhtme7oTDboUaI5w39KA0Y="
+          "hash": "wEKHTixI3n5iK3JE2Pi+7KFk1qaIXbTgsGhJv/YSPH8="
         }
       },
       "is_incremental": false,
@@ -6170,11 +6218,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/chat/init.md",
+      "source_relative_path": "guides/en/chat/init.md",
       "output": {
         ".html": {
-          "relative_path": "guides/chat/init.html",
-          "hash": "3Zlz3H37yiE5f7RBNe7cP7YpKW8IK5NARXSsgawhNx0="
+          "relative_path": "guides/en/chat/init.html",
+          "hash": "yIr3tGQ/W5ZitWAaEe0NrY5R3PUCTVe3Gzh3MvhEU+s="
         }
       },
       "is_incremental": false,
@@ -6182,11 +6230,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/chat/ratelimits.md",
+      "source_relative_path": "guides/en/chat/ratelimits.md",
       "output": {
         ".html": {
-          "relative_path": "guides/chat/ratelimits.html",
-          "hash": "GeOjHEhojoPCTxtT2JWec1P7KM97UDYsNbUxFPqgY4Y="
+          "relative_path": "guides/en/chat/ratelimits.html",
+          "hash": "ngxDf0dMd4kP4ziiqCz1e8Sm0x+jME2OvkGLbaXY6Y4="
         }
       },
       "is_incremental": false,
@@ -6194,11 +6242,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/eventsub/init.md",
+      "source_relative_path": "guides/en/eventsub/init.md",
       "output": {
         ".html": {
-          "relative_path": "guides/eventsub/init.html",
-          "hash": "HhT0t1gh9S+sHLShDI/wbIs3MoKkRjpuekNN/S+p/mE="
+          "relative_path": "guides/en/eventsub/init.html",
+          "hash": "a9jh+Dw2yCS7+3kzqAxbdIp9+Y1OE2wcSyDHWPohdZo="
         }
       },
       "is_incremental": false,
@@ -6206,11 +6254,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/eventsub/ratelimits.md",
+      "source_relative_path": "guides/en/eventsub/ratelimits.md",
       "output": {
         ".html": {
-          "relative_path": "guides/eventsub/ratelimits.html",
-          "hash": "izBoxEauLCG0B/hKoxxMRlat/vuLWwaGsYXQeypPvS8="
+          "relative_path": "guides/en/eventsub/ratelimits.html",
+          "hash": "sP/674C+SEoJsSruIdBX15QtIwkYZCOut/bTLThHXVY="
         }
       },
       "is_incremental": false,
@@ -6218,11 +6266,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/getting-started.md",
+      "source_relative_path": "guides/en/pubsub/init.md",
       "output": {
         ".html": {
-          "relative_path": "guides/getting-started.html",
-          "hash": "/rBzXzKWxIt8yHUDqDmwF39YJhO+MrI+QNuh7Q0VSEE="
+          "relative_path": "guides/en/pubsub/init.html",
+          "hash": "oRM0D/ybh6gEZLvRSI7Hp5NE8RFfNmNQGSqWMYC5xfE="
         }
       },
       "is_incremental": false,
@@ -6230,11 +6278,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/pubsub/init.md",
+      "source_relative_path": "guides/en/pubsub/ratelimits.md",
       "output": {
         ".html": {
-          "relative_path": "guides/pubsub/init.html",
-          "hash": "fwiEKgWfe3NYCLAWSuBm5mG+4D8Vc/LmGOq0ui5UXD4="
+          "relative_path": "guides/en/pubsub/ratelimits.html",
+          "hash": "W7fzccQja7OIb6JyxwMmvk8wWoD9kjzYaaKjnp1lUkY="
         }
       },
       "is_incremental": false,
@@ -6242,11 +6290,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/pubsub/ratelimits.md",
+      "source_relative_path": "guides/en/rest/init.md",
       "output": {
         ".html": {
-          "relative_path": "guides/pubsub/ratelimits.html",
-          "hash": "e6Ntiw4jRPycfd5dahVID2ciPcd4ibWh7I9IxFFB/GA="
+          "relative_path": "guides/en/rest/init.html",
+          "hash": "jwabs+BKpzJRMiD92mHum3jrnmqO2ptb+/Cf943I1Yw="
         }
       },
       "is_incremental": false,
@@ -6254,11 +6302,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/rest/init.md",
+      "source_relative_path": "guides/en/rest/ratelimits.md",
       "output": {
         ".html": {
-          "relative_path": "guides/rest/init.html",
-          "hash": "rc/SWK1NRJn3P3xWiZ+6UsYZpdEOLKhKupjIzwyCVrw="
+          "relative_path": "guides/en/rest/ratelimits.html",
+          "hash": "n7YzNsdYrczbDx6hJvaaz7uopxbq3h+5chupUrpyvsM="
         }
       },
       "is_incremental": false,
@@ -6266,23 +6314,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/rest/ratelimits.md",
+      "source_relative_path": "guides/index.md",
       "output": {
         ".html": {
-          "relative_path": "guides/rest/ratelimits.html",
-          "hash": "0XmnOOzgv3meuPlM9CKSwkLSXmrGLpDi6NZw+Q2I9+I="
+          "relative_path": "guides/index.html",
+          "hash": "+pk4hxsTl+6bsxDwEltz+eBTeIgPzw5ibU2LGLoxDJ4="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "guides/toc.yml",
       "output": {
         ".html": {
           "relative_path": "guides/toc.html",
-          "hash": "aCSbAjPkRjbnu23oFkWCmeL/3NTtv5MNtGFNLXXTTfQ="
+          "hash": "3WHAhjwNd9lh3tIOYEI5CWncGGMvDT2NG8ValZ1z6Go="
         }
       },
       "is_incremental": false,
@@ -6301,12 +6352,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "p4canb+B14JXmLU1y1FLRpm6cDH5ZijRIdQIq0GFRy8="
+          "hash": "ioiQ4u2GJARTqYz/L7LqGM4zqiYjJPhf3KnOzZ9v7e8="
         }
       },
       "is_incremental": false,
@@ -6333,7 +6387,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 511,
+          "total_file_count": 515,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

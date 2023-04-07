@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ChatMessageReply
+    <title>Class ChatSubscriptionMessage
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ChatMessageReply
+    <meta name="title" content="Class ChatSubscriptionMessage
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.Entities.ChatMessageReply">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage">
 
 
-  <h1 id="AuxLabs_Twitch_Chat_Entities_ChatMessageReply" data-uid="AuxLabs.Twitch.Chat.Entities.ChatMessageReply" class="text-break">Class ChatMessageReply
+  <h1 id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage" class="text-break">Class ChatSubscriptionMessage
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -89,7 +89,9 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html">ChatEntity</a>&lt;<span class="xref">string</span>&gt;</div>
-    <div class="level2"><span class="xref">ChatMessageReply</span></div>
+    <div class="level2"><a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html">ChatSimpleMessage</a></div>
+    <div class="level3"><a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessage.html">ChatMessage</a></div>
+    <div class="level4"><span class="xref">ChatSubscriptionMessage</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -98,10 +100,34 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html#AuxLabs_Twitch_Chat_Entities_ChatEntity_1_Id">ChatEntity&lt;string&gt;.Id</a>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessage.html#AuxLabs_Twitch_Chat_Entities_ChatMessage_Reply">ChatMessage.Reply</a>
     </div>
     <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html#AuxLabs_Twitch_Chat_Entities_ChatEntity_1_ToString">ChatEntity&lt;string&gt;.ToString()</a>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessage.html#AuxLabs_Twitch_Chat_Entities_ChatMessage_Type">ChatMessage.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessage.html#AuxLabs_Twitch_Chat_Entities_ChatMessage_BitsAmount">ChatMessage.BitsAmount</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessage.html#AuxLabs_Twitch_Chat_Entities_ChatMessage_Emotes">ChatMessage.Emotes</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleMessage_Channel">ChatSimpleMessage.Channel</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleMessage_Author">ChatSimpleMessage.Author</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleMessage_Timestamp">ChatSimpleMessage.Timestamp</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleMessage_Content">ChatSimpleMessage.Content</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleMessage_ToString">ChatSimpleMessage.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html#AuxLabs_Twitch_Chat_Entities_ChatEntity_1_Id">ChatEntity&lt;string&gt;.Id</a>
     </div>
     <div>
       <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html#AuxLabs_Twitch_Chat_Entities_ChatEntity_1_Equals_AuxLabs_Twitch_Chat_Entities_ChatEntity__0__">ChatEntity&lt;string&gt;.Equals(ChatEntity&lt;string&gt;)</a>
@@ -115,9 +141,9 @@
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a>.<a class="xref" href="AuxLabs.Twitch.Chat.Entities.html">Entities</a></h6>
   <h6><strong>Assembly</strong>: AuxLabs.Twitch.Chat.dll</h6>
-  <h5 id="AuxLabs_Twitch_Chat_Entities_ChatMessageReply_syntax">Syntax</h5>
+  <h5 id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ChatMessageReply : ChatEntity&lt;string&gt;, IEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ChatSubscriptionMessage : ChatMessage, IEntity&lt;string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -130,16 +156,39 @@
     </thead>
     <tbody>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_Entities_ChatMessageReply_Author" data-uid="AuxLabs.Twitch.Chat.Entities.ChatMessageReply.Author">
-          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessageReply.html#AuxLabs_Twitch_Chat_Entities_ChatMessageReply_Author">Author</a>
+        <td id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_IsStreakShared" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared">
+          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_IsStreakShared">IsStreakShared</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Indicates whether the user wants their streaks shared.</p>
+</td>
       </tr>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_Entities_ChatMessageReply_Content" data-uid="AuxLabs.Twitch.Chat.Entities.ChatMessageReply.Content">
-          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatMessageReply.html#AuxLabs_Twitch_Chat_Entities_ChatMessageReply_Content">Content</a>
+        <td id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_StreakMonths" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths">
+          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_StreakMonths">StreakMonths</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>The number of consecutive months the user has subscribed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionName" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName">
+          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionName">SubscriptionName</a>
+        </td>
+        <td class="markdown level1 summary"><p>The display name of the subscription plan. This may be a default name or one created by the channel owner</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionType" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType">
+          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionType">SubscriptionType</a>
+        </td>
+        <td class="markdown level1 summary"><p>The type of subscription plan being used.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_TotalMonths" data-uid="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths">
+          <a class="xref" href="AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_TotalMonths">TotalMonths</a>
+        </td>
+        <td class="markdown level1 summary"><p>The total number of months the user has subscribed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,10 +200,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_Entities_ChatMessageReply.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.Entities.ChatMessageReply%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/Entities/Messages/ChatMessageReply.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/Entities/Messages/ChatSubscriptionMessage.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

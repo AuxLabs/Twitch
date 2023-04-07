@@ -131,12 +131,6 @@
     </thead>
     <tbody>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_CanSendMessages" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_CanSendMessages">CanSendMessages</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Channels" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Channels">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Channels">Channels</a>
         </td>
@@ -163,6 +157,12 @@
       <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_IRC" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.IRC">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IRC">IRC</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly">IsReadOnly</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -202,6 +202,12 @@
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize">UserCacheSize</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -234,12 +240,6 @@
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_HandleEventAsync_AuxLabs_Twitch_Chat_Api_IrcPayload_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync(AuxLabs.Twitch.Chat.Api.IrcPayload)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_HandleEventAsync_AuxLabs_Twitch_Chat_Api_IrcPayload_">HandleEventAsync(IrcPayload)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{CancellationToken})">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_CancellationToken__">JoinChannelAsync(string, CancellationToken?)</a>
         </td>
@@ -264,6 +264,18 @@
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{CancellationToken})">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_CancellationToken__">LeaveChannelAsync(string, CancellationToken?)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_">LeaveChannelAsync(string)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{CancellationToken})">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_CancellationToken__">LeaveChannelsAsync(string[], CancellationToken?)</a>
         </td>
@@ -282,8 +294,8 @@
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_">SendMessageAsync(string, string, string)</a>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__">SendMessageAsync(string, string, string, CancellationToken?)</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -315,7 +327,8 @@
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelBitsTierUnlocked" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelBitsTierUnlocked">ChannelBitsTierUnlocked</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Triggered when a user shares that they just unlocked a new bits tier.</p>
+</td>
       </tr>
       <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelJoined" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined">
@@ -335,13 +348,8 @@
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaided" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided">
           <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaided">ChannelRaided</a>
         </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaidEnded" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaidEnded">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaidEnded">ChannelRaidEnded</a>
-        </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Triggered when a user raids the specified channel.</p>
+</td>
       </tr>
       <tr>
         <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRitual" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual">
@@ -424,8 +432,15 @@
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UnhandledCommand" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UnhandledCommand">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UnhandledCommand">UnhandledCommand</a>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionMessageReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionMessageReceived">SubscriptionMessageReceived</a>
+        </td>
+        <td class="markdown level1 summary"><p>Triggered when a subscription message is received in a channel</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UnknownEventReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived">
+          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UnknownEventReceived">UnknownEventReceived</a>
         </td>
         <td class="markdown level1 summary"><p>Triggered when an unknown event is received</p>
 </td>

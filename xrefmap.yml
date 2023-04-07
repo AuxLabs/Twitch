@@ -61,6 +61,44 @@ references:
   commentId: F:AuxLabs.Twitch.AnnouncementColor.Purple
   fullName: AuxLabs.Twitch.AnnouncementColor.Purple
   nameWithType: AnnouncementColor.Purple
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions
+  name: AsyncEnumerableExtensions
+  href: api/AuxLabs.Twitch.AsyncEnumerableExtensions.html
+  commentId: T:AuxLabs.Twitch.AsyncEnumerableExtensions
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions
+  nameWithType: AsyncEnumerableExtensions
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten*
+  name: Flatten
+  href: api/AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_Flatten_
+  commentId: Overload:AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten
+  nameWithType: AsyncEnumerableExtensions.Flatten
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten``1(IAsyncEnumerable{IEnumerable{``0}})
+  name: Flatten<T>(IAsyncEnumerable<IEnumerable<T>>)
+  href: api/AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_Flatten__1_IAsyncEnumerable_IEnumerable___0___
+  commentId: M:AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten``1(IAsyncEnumerable{IEnumerable{``0}})
+  name.vb: Flatten(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten<T>(IAsyncEnumerable<IEnumerable<T>>)
+  fullName.vb: AuxLabs.Twitch.AsyncEnumerableExtensions.Flatten(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
+  nameWithType: AsyncEnumerableExtensions.Flatten<T>(IAsyncEnumerable<IEnumerable<T>>)
+  nameWithType.vb: AsyncEnumerableExtensions.Flatten(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync*
+  name: FlattenAsync
+  href: api/AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_FlattenAsync_
+  commentId: Overload:AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync
+  nameWithType: AsyncEnumerableExtensions.FlattenAsync
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync``1(IAsyncEnumerable{IEnumerable{``0}})
+  name: FlattenAsync<T>(IAsyncEnumerable<IEnumerable<T>>)
+  href: api/AuxLabs.Twitch.AsyncEnumerableExtensions.html#AuxLabs_Twitch_AsyncEnumerableExtensions_FlattenAsync__1_IAsyncEnumerable_IEnumerable___0___
+  commentId: M:AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync``1(IAsyncEnumerable{IEnumerable{``0}})
+  name.vb: FlattenAsync(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync<T>(IAsyncEnumerable<IEnumerable<T>>)
+  fullName.vb: AuxLabs.Twitch.AsyncEnumerableExtensions.FlattenAsync(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
+  nameWithType: AsyncEnumerableExtensions.FlattenAsync<T>(IAsyncEnumerable<IEnumerable<T>>)
+  nameWithType.vb: AsyncEnumerableExtensions.FlattenAsync(Of T)(IAsyncEnumerable(Of IEnumerable(Of T)))
 - uid: AuxLabs.Twitch.AutomodAction
   name: AutomodAction
   href: api/AuxLabs.Twitch.AutomodAction.html
@@ -241,18 +279,106 @@ references:
   commentId: F:AuxLabs.Twitch.BroadcastType.WatchParty
   fullName: AuxLabs.Twitch.BroadcastType.WatchParty
   nameWithType: BroadcastType.WatchParty
+- uid: AuxLabs.Twitch.Cacheable`2
+  name: Cacheable<TEntity, TId>
+  href: api/AuxLabs.Twitch.Cacheable-2.html
+  commentId: T:AuxLabs.Twitch.Cacheable`2
+  name.vb: Cacheable(Of TEntity, TId)
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId)
+  nameWithType: Cacheable<TEntity, TId>
+  nameWithType.vb: Cacheable(Of TEntity, TId)
+- uid: AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  name: DownloadAsync()
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_DownloadAsync
+  commentId: M:AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.DownloadAsync()
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).DownloadAsync()
+  nameWithType: Cacheable<TEntity, TId>.DownloadAsync()
+  nameWithType.vb: Cacheable(Of TEntity, TId).DownloadAsync()
+- uid: AuxLabs.Twitch.Cacheable`2.DownloadAsync*
+  name: DownloadAsync
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_DownloadAsync_
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.DownloadAsync
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).DownloadAsync
+  nameWithType: Cacheable<TEntity, TId>.DownloadAsync
+  nameWithType.vb: Cacheable(Of TEntity, TId).DownloadAsync
+- uid: AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  name: GetOrDownloadAsync()
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_GetOrDownloadAsync
+  commentId: M:AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.GetOrDownloadAsync()
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).GetOrDownloadAsync()
+  nameWithType: Cacheable<TEntity, TId>.GetOrDownloadAsync()
+  nameWithType.vb: Cacheable(Of TEntity, TId).GetOrDownloadAsync()
+- uid: AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync*
+  name: GetOrDownloadAsync
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_GetOrDownloadAsync_
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.GetOrDownloadAsync
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).GetOrDownloadAsync
+  nameWithType: Cacheable<TEntity, TId>.GetOrDownloadAsync
+  nameWithType.vb: Cacheable(Of TEntity, TId).GetOrDownloadAsync
+- uid: AuxLabs.Twitch.Cacheable`2.HasValue
+  name: HasValue
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_HasValue
+  commentId: P:AuxLabs.Twitch.Cacheable`2.HasValue
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.HasValue
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).HasValue
+  nameWithType: Cacheable<TEntity, TId>.HasValue
+  nameWithType.vb: Cacheable(Of TEntity, TId).HasValue
+- uid: AuxLabs.Twitch.Cacheable`2.HasValue*
+  name: HasValue
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_HasValue_
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.HasValue
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.HasValue
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).HasValue
+  nameWithType: Cacheable<TEntity, TId>.HasValue
+  nameWithType.vb: Cacheable(Of TEntity, TId).HasValue
+- uid: AuxLabs.Twitch.Cacheable`2.Id
+  name: Id
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_Id
+  commentId: P:AuxLabs.Twitch.Cacheable`2.Id
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Id
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Id
+  nameWithType: Cacheable<TEntity, TId>.Id
+  nameWithType.vb: Cacheable(Of TEntity, TId).Id
+- uid: AuxLabs.Twitch.Cacheable`2.Id*
+  name: Id
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_Id_
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.Id
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Id
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Id
+  nameWithType: Cacheable<TEntity, TId>.Id
+  nameWithType.vb: Cacheable(Of TEntity, TId).Id
+- uid: AuxLabs.Twitch.Cacheable`2.Value
+  name: Value
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_Value
+  commentId: P:AuxLabs.Twitch.Cacheable`2.Value
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Value
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Value
+  nameWithType: Cacheable<TEntity, TId>.Value
+  nameWithType.vb: Cacheable(Of TEntity, TId).Value
+- uid: AuxLabs.Twitch.Cacheable`2.Value*
+  name: Value
+  href: api/AuxLabs.Twitch.Cacheable-2.html#AuxLabs_Twitch_Cacheable_2_Value_
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.Value
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Value
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Value
+  nameWithType: Cacheable<TEntity, TId>.Value
+  nameWithType.vb: Cacheable(Of TEntity, TId).Value
 - uid: AuxLabs.Twitch.CDN
   name: CDN
   href: api/AuxLabs.Twitch.CDN.html
   commentId: T:AuxLabs.Twitch.CDN
   fullName: AuxLabs.Twitch.CDN
   nameWithType: CDN
-- uid: AuxLabs.Twitch.CDN.EmoteImageUrl
-  name: EmoteImageUrl
-  href: api/AuxLabs.Twitch.CDN.html#AuxLabs_Twitch_CDN_EmoteImageUrl
-  commentId: F:AuxLabs.Twitch.CDN.EmoteImageUrl
-  fullName: AuxLabs.Twitch.CDN.EmoteImageUrl
-  nameWithType: CDN.EmoteImageUrl
 - uid: AuxLabs.Twitch.CDN.GetEmoteImageUrl(System.String,AuxLabs.Twitch.EmoteFormat,AuxLabs.Twitch.EmoteTheme,AuxLabs.Twitch.EmoteScale)
   name: GetEmoteImageUrl(string, EmoteFormat, EmoteTheme, EmoteScale)
   href: api/AuxLabs.Twitch.CDN.html#AuxLabs_Twitch_CDN_GetEmoteImageUrl_System_String_AuxLabs_Twitch_EmoteFormat_AuxLabs_Twitch_EmoteTheme_AuxLabs_Twitch_EmoteScale_
@@ -924,28 +1050,59 @@ references:
   commentId: F:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.CommandsRequested
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.CommandsRequested
   nameWithType: TwitchChatApiClient.CommandsRequested
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Connected
+  name: Connected
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Connected
+  commentId: E:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Connected
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Connected
+  nameWithType: TwitchChatApiClient.Connected
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Disconnected
+  name: Disconnected
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Disconnected
+  commentId: E:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Disconnected
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Disconnected
+  nameWithType: TwitchChatApiClient.Disconnected
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose
+  name: Dispose()
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Dispose
+  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose()
+  nameWithType: TwitchChatApiClient.Dispose()
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Dispose_System_Boolean_
+  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose(bool)
+  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose(Boolean)
+  nameWithType: TwitchChatApiClient.Dispose(bool)
+  nameWithType.vb: TwitchChatApiClient.Dispose(Boolean)
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose*
+  name: Dispose
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Dispose_
+  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Dispose
+  nameWithType: TwitchChatApiClient.Dispose
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.GlobalUserStateReceived
   name: GlobalUserStateReceived
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_GlobalUserStateReceived
   commentId: E:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.GlobalUserStateReceived
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.GlobalUserStateReceived
   nameWithType: TwitchChatApiClient.GlobalUserStateReceived
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent(AuxLabs.Twitch.Chat.Api.IrcPayload,TaskCompletionSource{System.Boolean})
-  name: HandleEvent(IrcPayload, TaskCompletionSource<bool>)
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_HandleEvent_AuxLabs_Twitch_Chat_Api_IrcPayload_TaskCompletionSource_System_Boolean__
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent(AuxLabs.Twitch.Chat.Api.IrcPayload,TaskCompletionSource{System.Boolean})
-  name.vb: HandleEvent(IrcPayload, TaskCompletionSource(Of Boolean))
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent(AuxLabs.Twitch.Chat.Api.IrcPayload, TaskCompletionSource<bool>)
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent(AuxLabs.Twitch.Chat.Api.IrcPayload, TaskCompletionSource(Of Boolean))
-  nameWithType: TwitchChatApiClient.HandleEvent(IrcPayload, TaskCompletionSource<bool>)
-  nameWithType.vb: TwitchChatApiClient.HandleEvent(IrcPayload, TaskCompletionSource(Of Boolean))
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent*
-  name: HandleEvent
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_HandleEvent_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous
+  name: IsAnonymous
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_IsAnonymous
+  commentId: P:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous
+  nameWithType: TwitchChatApiClient.IsAnonymous
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous*
+  name: IsAnonymous
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_IsAnonymous_
+  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.HandleEvent
-  nameWithType: TwitchChatApiClient.HandleEvent
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.IsAnonymous
+  nameWithType: TwitchChatApiClient.IsAnonymous
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.MessageCleared
   name: MessageCleared
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_MessageCleared
@@ -1008,45 +1165,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.RunAsync
   nameWithType: TwitchChatApiClient.RunAsync
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat
-  name: SendHeartbeat()
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendHeartbeat
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat()
-  nameWithType: TwitchChatApiClient.SendHeartbeat()
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat*
-  name: SendHeartbeat
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendHeartbeat_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeat
-  nameWithType: TwitchChatApiClient.SendHeartbeat
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck
-  name: SendHeartbeatAck()
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendHeartbeatAck
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck()
-  nameWithType: TwitchChatApiClient.SendHeartbeatAck()
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck*
-  name: SendHeartbeatAck
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendHeartbeatAck_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendHeartbeatAck
-  nameWithType: TwitchChatApiClient.SendHeartbeatAck
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify
-  name: SendIdentify()
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendIdentify
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify()
-  nameWithType: TwitchChatApiClient.SendIdentify()
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify*
-  name: SendIdentify
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendIdentify_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendIdentify
-  nameWithType: TwitchChatApiClient.SendIdentify
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoin(System.String[])
   name: SendJoin(params string[])
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendJoin_System_String___
@@ -1063,31 +1181,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoin
   nameWithType: TwitchChatApiClient.SendJoin
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(System.String[],System.Nullable{CancellationToken})
-  name: SendJoinAsync(string[], CancellationToken?)
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendJoinAsync_System_String___System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(System.String[],System.Nullable{CancellationToken})
-  name.vb: SendJoinAsync(String(), CancellationToken?)
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(string[], CancellationToken?)
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(String(), CancellationToken?)
-  nameWithType: TwitchChatApiClient.SendJoinAsync(string[], CancellationToken?)
-  nameWithType.vb: TwitchChatApiClient.SendJoinAsync(String(), CancellationToken?)
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(System.String[])
-  name: SendJoinAsync(params string[])
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendJoinAsync_System_String___
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(System.String[])
-  name.vb: SendJoinAsync(ParamArray String())
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(params string[])
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync(ParamArray String())
-  nameWithType: TwitchChatApiClient.SendJoinAsync(params string[])
-  nameWithType.vb: TwitchChatApiClient.SendJoinAsync(ParamArray String())
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync*
-  name: SendJoinAsync
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendJoinAsync_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendJoinAsync
-  nameWithType: TwitchChatApiClient.SendJoinAsync
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessage(System.String,System.String,System.String)
   name: SendMessage(string, string, string)
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendMessage_System_String_System_String_System_String_
@@ -1104,31 +1197,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessage
   nameWithType: TwitchChatApiClient.SendMessage
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})
-  name: SendMessageAsync(string, string, string, CancellationToken?)
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})
-  name.vb: SendMessageAsync(String, String, String, CancellationToken?)
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(string, string, string, CancellationToken?)
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(String, String, String, CancellationToken?)
-  nameWithType: TwitchChatApiClient.SendMessageAsync(string, string, string, CancellationToken?)
-  nameWithType.vb: TwitchChatApiClient.SendMessageAsync(String, String, String, CancellationToken?)
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(System.String,System.String,System.String)
-  name: SendMessageAsync(string, string, string)
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendMessageAsync_System_String_System_String_System_String_
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(System.String,System.String,System.String)
-  name.vb: SendMessageAsync(String, String, String)
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(string, string, string)
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync(String, String, String)
-  nameWithType: TwitchChatApiClient.SendMessageAsync(string, string, string)
-  nameWithType.vb: TwitchChatApiClient.SendMessageAsync(String, String, String)
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendMessageAsync_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendMessageAsync
-  nameWithType: TwitchChatApiClient.SendMessageAsync
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPart(System.String[])
   name: SendPart(params string[])
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendPart_System_String___
@@ -1145,50 +1213,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPart
   nameWithType: TwitchChatApiClient.SendPart
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(System.String[],System.Nullable{CancellationToken})
-  name: SendPartAsync(string[], CancellationToken?)
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendPartAsync_System_String___System_Nullable_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(System.String[],System.Nullable{CancellationToken})
-  name.vb: SendPartAsync(String(), CancellationToken?)
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(string[], CancellationToken?)
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(String(), CancellationToken?)
-  nameWithType: TwitchChatApiClient.SendPartAsync(string[], CancellationToken?)
-  nameWithType.vb: TwitchChatApiClient.SendPartAsync(String(), CancellationToken?)
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(System.String[])
-  name: SendPartAsync(params string[])
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendPartAsync_System_String___
-  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(System.String[])
-  name.vb: SendPartAsync(ParamArray String())
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(params string[])
-  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync(ParamArray String())
-  nameWithType: TwitchChatApiClient.SendPartAsync(params string[])
-  nameWithType.vb: TwitchChatApiClient.SendPartAsync(ParamArray String())
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync*
-  name: SendPartAsync
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_SendPartAsync_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State
+  name: State
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_State
+  commentId: P:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State
+  nameWithType: TwitchChatApiClient.State
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State*
+  name: State
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_State_
+  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.SendPartAsync
-  nameWithType: TwitchChatApiClient.SendPartAsync
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer
-  name: Serializer
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Serializer
-  commentId: P:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer
-  nameWithType: TwitchChatApiClient.Serializer
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer*
-  name: Serializer
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_Serializer_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.Serializer
-  nameWithType: TwitchChatApiClient.Serializer
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.ShouldHandleEvents
-  name: ShouldHandleEvents
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_ShouldHandleEvents
-  commentId: F:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.ShouldHandleEvents
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.ShouldHandleEvents
-  nameWithType: TwitchChatApiClient.ShouldHandleEvents
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.State
+  nameWithType: TwitchChatApiClient.State
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.TagsRequested
   name: TagsRequested
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_TagsRequested
@@ -1207,6 +1244,12 @@ references:
   commentId: F:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.ThrowOnUnknownEvent
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.ThrowOnUnknownEvent
   nameWithType: TwitchChatApiClient.ThrowOnUnknownEvent
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.UnknownEventReceived
+  name: UnknownEventReceived
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_UnknownEventReceived
+  commentId: E:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.UnknownEventReceived
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.UnknownEventReceived
+  nameWithType: TwitchChatApiClient.UnknownEventReceived
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.UserNoticeReceived
   name: UserNoticeReceived
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiClient_UserNoticeReceived
@@ -1292,19 +1335,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.RequestTags
   nameWithType: TwitchChatApiConfig.RequestTags
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents
-  name: ShouldHandleEvents
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiConfig_ShouldHandleEvents
-  commentId: P:AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents
-  nameWithType: TwitchChatApiConfig.ShouldHandleEvents
-- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents*
-  name: ShouldHandleEvents
-  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiConfig_ShouldHandleEvents_
-  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ShouldHandleEvents
-  nameWithType: TwitchChatApiConfig.ShouldHandleEvents
 - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.ThrowOnUnhandledTags
   name: ThrowOnUnhandledTags
   href: api/AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.html#AuxLabs_Twitch_Chat_Api_TwitchChatApiConfig_ThrowOnUnhandledTags
@@ -1344,6 +1374,49 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig.UseVerifiedRateLimits
   nameWithType: TwitchChatApiConfig.UseVerifiedRateLimits
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatException
+  name: TwitchChatException
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html
+  commentId: T:AuxLabs.Twitch.Chat.Api.TwitchChatException
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatException
+  nameWithType: TwitchChatException
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor
+  name: TwitchChatException()
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html#AuxLabs_Twitch_Chat_Api_TwitchChatException__ctor
+  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor
+  name.vb: New()
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatException.TwitchChatException()
+  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatException.New()
+  nameWithType: TwitchChatException.TwitchChatException()
+  nameWithType.vb: TwitchChatException.New()
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor(AuxLabs.Twitch.Chat.Models.NoticeEventArgs)
+  name: TwitchChatException(NoticeEventArgs)
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html#AuxLabs_Twitch_Chat_Api_TwitchChatException__ctor_AuxLabs_Twitch_Chat_Models_NoticeEventArgs_
+  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor(AuxLabs.Twitch.Chat.Models.NoticeEventArgs)
+  name.vb: New(NoticeEventArgs)
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatException.TwitchChatException(AuxLabs.Twitch.Chat.Models.NoticeEventArgs)
+  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatException.New(AuxLabs.Twitch.Chat.Models.NoticeEventArgs)
+  nameWithType: TwitchChatException.TwitchChatException(NoticeEventArgs)
+  nameWithType.vb: TwitchChatException.New(NoticeEventArgs)
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor(System.String)
+  name: TwitchChatException(string)
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html#AuxLabs_Twitch_Chat_Api_TwitchChatException__ctor_System_String_
+  commentId: M:AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatException.TwitchChatException(string)
+  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatException.New(String)
+  nameWithType: TwitchChatException.TwitchChatException(string)
+  nameWithType.vb: TwitchChatException.New(String)
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor*
+  name: TwitchChatException
+  href: api/AuxLabs.Twitch.Chat.Api.TwitchChatException.html#AuxLabs_Twitch_Chat_Api_TwitchChatException__ctor_
+  commentId: Overload:AuxLabs.Twitch.Chat.Api.TwitchChatException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatException.TwitchChatException
+  fullName.vb: AuxLabs.Twitch.Chat.Api.TwitchChatException.New
+  nameWithType: TwitchChatException.TwitchChatException
+  nameWithType.vb: TwitchChatException.New
 - uid: AuxLabs.Twitch.Chat.Badge
   name: Badge
   href: api/AuxLabs.Twitch.Chat.Badge.html
@@ -1810,60 +1883,25 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatMessageReply.Content
   nameWithType: ChatMessageReply.Content
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity
-  name: ChatNamedEntity
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html
-  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity
-  nameWithType: ChatNamedEntity
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(AuxLabs.Twitch.Chat.Entities.ChatNamedEntity)
-  name: Equals(ChatNamedEntity)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_Equals_AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(AuxLabs.Twitch.Chat.Entities.ChatNamedEntity)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(AuxLabs.Twitch.Chat.Entities.ChatNamedEntity)
-  nameWithType: ChatNamedEntity.Equals(ChatNamedEntity)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(System.Object)
-  name: Equals(object)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_Equals_System_Object_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(System.Object)
-  name.vb: Equals(Object)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(object)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals(Object)
-  nameWithType: ChatNamedEntity.Equals(object)
-  nameWithType.vb: ChatNamedEntity.Equals(Object)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals*
-  name: Equals
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_Equals_
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals
+- uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+  name: ChatRaidUser
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+  nameWithType: ChatRaidUser
+- uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl
+  name: ProfileImageUrl
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html#AuxLabs_Twitch_Chat_Entities_ChatRaidUser_ProfileImageUrl
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl
+  nameWithType: ChatRaidUser.ProfileImageUrl
+- uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl*
+  name: ProfileImageUrl
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html#AuxLabs_Twitch_Chat_Entities_ChatRaidUser_ProfileImageUrl_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Equals
-  nameWithType: ChatNamedEntity.Equals
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode
-  name: GetHashCode()
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_GetHashCode
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode()
-  nameWithType: ChatNamedEntity.GetHashCode()
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode*
-  name: GetHashCode
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_GetHashCode_
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.GetHashCode
-  nameWithType: ChatNamedEntity.GetHashCode
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name
-  name: Name
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_Name
-  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name
-  nameWithType: ChatNamedEntity.Name
-- uid: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name*
-  name: Name
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.html#AuxLabs_Twitch_Chat_Entities_ChatNamedEntity_Name_
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatNamedEntity.Name
-  nameWithType: ChatNamedEntity.Name
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.ProfileImageUrl
+  nameWithType: ChatRaidUser.ProfileImageUrl
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
   name: ChatSelfUser
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSelfUser.html
@@ -2069,6 +2107,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync
   nameWithType: ChatSimpleChannel.ModifyChatSettingsAsync
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
+  name: MyUser
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_MyUser
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
+  nameWithType: ChatSimpleChannel.MyUser
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser*
+  name: MyUser
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_MyUser_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
+  nameWithType: ChatSimpleChannel.MyUser
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Name
   name: Name
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_Name
@@ -2143,19 +2194,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString
   nameWithType: ChatSimpleChannel.ToString
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users
-  name: Users
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_Users
-  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users
-  nameWithType: ChatSimpleChannel.Users
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users*
-  name: Users
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_Users_
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Users
-  nameWithType: ChatSimpleChannel.Users
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage
   name: ChatSimpleMessage
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html
@@ -2311,6 +2349,77 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
   nameWithType: ChatSimpleUser.ToString
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage
+  name: ChatSubscriptionMessage
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage
+  nameWithType: ChatSubscriptionMessage
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared
+  name: IsStreakShared
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_IsStreakShared
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared
+  nameWithType: ChatSubscriptionMessage.IsStreakShared
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared*
+  name: IsStreakShared
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_IsStreakShared_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.IsStreakShared
+  nameWithType: ChatSubscriptionMessage.IsStreakShared
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths
+  name: StreakMonths
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_StreakMonths
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths
+  nameWithType: ChatSubscriptionMessage.StreakMonths
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths*
+  name: StreakMonths
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_StreakMonths_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.StreakMonths
+  nameWithType: ChatSubscriptionMessage.StreakMonths
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName
+  name: SubscriptionName
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionName
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName
+  nameWithType: ChatSubscriptionMessage.SubscriptionName
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName*
+  name: SubscriptionName
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionName_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionName
+  nameWithType: ChatSubscriptionMessage.SubscriptionName
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType
+  name: SubscriptionType
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionType
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType
+  nameWithType: ChatSubscriptionMessage.SubscriptionType
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType*
+  name: SubscriptionType
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_SubscriptionType_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.SubscriptionType
+  nameWithType: ChatSubscriptionMessage.SubscriptionType
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths
+  name: TotalMonths
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_TotalMonths
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths
+  nameWithType: ChatSubscriptionMessage.TotalMonths
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths*
+  name: TotalMonths
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSubscriptionMessage_TotalMonths_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage.TotalMonths
+  nameWithType: ChatSubscriptionMessage.TotalMonths
 - uid: AuxLabs.Twitch.Chat.Entities.ChatUser
   name: ChatUser
   href: api/AuxLabs.Twitch.Chat.Entities.ChatUser.html
@@ -2369,6 +2478,77 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.Entities.ChatUser.UserType
   nameWithType: ChatUser.UserType
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+  name: ChatWhisperMessage
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+  nameWithType: ChatWhisperMessage
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action
+  name: Action
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Action
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action
+  nameWithType: ChatWhisperMessage.Action
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action*
+  name: Action
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Action_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Action
+  nameWithType: ChatWhisperMessage.Action
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author
+  name: Author
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Author
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author
+  nameWithType: ChatWhisperMessage.Author
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author*
+  name: Author
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Author_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Author
+  nameWithType: ChatWhisperMessage.Author
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content
+  name: Content
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Content
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content
+  nameWithType: ChatWhisperMessage.Content
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content*
+  name: Content
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Content_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Content
+  nameWithType: ChatWhisperMessage.Content
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes
+  name: Emotes
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Emotes
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes
+  nameWithType: ChatWhisperMessage.Emotes
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes*
+  name: Emotes
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_Emotes_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.Emotes
+  nameWithType: ChatWhisperMessage.Emotes
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId
+  name: ThreadId
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_ThreadId
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId
+  nameWithType: ChatWhisperMessage.ThreadId
+- uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId*
+  name: ThreadId
+  href: api/AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html#AuxLabs_Twitch_Chat_Entities_ChatWhisperMessage_ThreadId_
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.ThreadId
+  nameWithType: ChatWhisperMessage.ThreadId
 - uid: AuxLabs.Twitch.Chat.IChatMessage
   name: IChatMessage
   href: api/AuxLabs.Twitch.Chat.IChatMessage.html
@@ -2609,25 +2789,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.IChatMessage.Timestamp
   nameWithType: IChatMessage.Timestamp
-- uid: AuxLabs.Twitch.Chat.IChatUser
-  name: IChatUser
-  href: api/AuxLabs.Twitch.Chat.IChatUser.html
-  commentId: T:AuxLabs.Twitch.Chat.IChatUser
-  fullName: AuxLabs.Twitch.Chat.IChatUser
-  nameWithType: IChatUser
-- uid: AuxLabs.Twitch.Chat.IChatUser.Color
-  name: Color
-  href: api/AuxLabs.Twitch.Chat.IChatUser.html#AuxLabs_Twitch_Chat_IChatUser_Color
-  commentId: P:AuxLabs.Twitch.Chat.IChatUser.Color
-  fullName: AuxLabs.Twitch.Chat.IChatUser.Color
-  nameWithType: IChatUser.Color
-- uid: AuxLabs.Twitch.Chat.IChatUser.Color*
-  name: Color
-  href: api/AuxLabs.Twitch.Chat.IChatUser.html#AuxLabs_Twitch_Chat_IChatUser_Color_
-  commentId: Overload:AuxLabs.Twitch.Chat.IChatUser.Color
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.IChatUser.Color
-  nameWithType: IChatUser.Color
 - uid: AuxLabs.Twitch.Chat.IMessage
   name: IMessage
   href: api/AuxLabs.Twitch.Chat.IMessage.html
@@ -7264,19 +7425,6 @@ references:
   fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.New
   nameWithType: TwitchChatClient.TwitchChatClient
   nameWithType.vb: TwitchChatClient.New
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages
-  name: CanSendMessages
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_CanSendMessages
-  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages
-  nameWithType: TwitchChatClient.CanSendMessages
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages*
-  name: CanSendMessages
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_CanSendMessages_
-  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CanSendMessages
-  nameWithType: TwitchChatClient.CanSendMessages
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked
   name: ChannelBitsTierUnlocked
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelBitsTierUnlocked
@@ -7301,12 +7449,6 @@ references:
   commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
   nameWithType: TwitchChatClient.ChannelRaided
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaidEnded
-  name: ChannelRaidEnded
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaidEnded
-  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaidEnded
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaidEnded
-  nameWithType: TwitchChatClient.ChannelRaidEnded
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual
   name: ChannelRitual
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRitual
@@ -7424,19 +7566,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName
   nameWithType: TwitchChatClient.GetChannelByName
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync(AuxLabs.Twitch.Chat.Api.IrcPayload)
-  name: HandleEventAsync(IrcPayload)
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_HandleEventAsync_AuxLabs_Twitch_Chat_Api_IrcPayload_
-  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync(AuxLabs.Twitch.Chat.Api.IrcPayload)
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync(AuxLabs.Twitch.Chat.Api.IrcPayload)
-  nameWithType: TwitchChatClient.HandleEventAsync(IrcPayload)
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync*
-  name: HandleEventAsync
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_HandleEventAsync_
-  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.HandleEventAsync
-  nameWithType: TwitchChatClient.HandleEventAsync
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.Identity
   name: Identity
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Identity
@@ -7463,6 +7592,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IRC
   nameWithType: TwitchChatClient.IRC
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  name: IsReadOnly
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  nameWithType: TwitchChatClient.IsReadOnly
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly*
+  name: IsReadOnly
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly_
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  nameWithType: TwitchChatClient.IsReadOnly
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{CancellationToken})
   name: JoinChannelAsync(string, CancellationToken?)
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_CancellationToken__
@@ -7517,6 +7659,31 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync
   nameWithType: TwitchChatClient.JoinMyChannelAsync
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{CancellationToken})
+  name: LeaveChannelAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{CancellationToken})
+  name.vb: LeaveChannelAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(String, CancellationToken?)
+  nameWithType: TwitchChatClient.LeaveChannelAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchChatClient.LeaveChannelAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)
+  name: LeaveChannelAsync(string)
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)
+  name.vb: LeaveChannelAsync(String)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(string)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(String)
+  nameWithType: TwitchChatClient.LeaveChannelAsync(string)
+  nameWithType.vb: TwitchChatClient.LeaveChannelAsync(String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync*
+  name: LeaveChannelAsync
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync
+  nameWithType: TwitchChatClient.LeaveChannelAsync
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{CancellationToken})
   name: LeaveChannelsAsync(string[], CancellationToken?)
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_CancellationToken__
@@ -7618,15 +7785,15 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
   nameWithType: TwitchChatClient.RunAsync
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String)
-  name: SendMessageAsync(string, string, string)
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_
-  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String)
-  name.vb: SendMessageAsync(String, String, String)
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(string, string, string)
-  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(String, String, String)
-  nameWithType: TwitchChatClient.SendMessageAsync(string, string, string)
-  nameWithType.vb: TwitchChatClient.SendMessageAsync(String, String, String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})
+  name: SendMessageAsync(string, string, string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})
+  name.vb: SendMessageAsync(String, String, String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(string, string, string, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(String, String, String, CancellationToken?)
+  nameWithType: TwitchChatClient.SendMessageAsync(string, string, string, CancellationToken?)
+  nameWithType.vb: TwitchChatClient.SendMessageAsync(String, String, String, CancellationToken?)
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync*
   name: SendMessageAsync
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_
@@ -7652,6 +7819,12 @@ references:
   commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
   nameWithType: TwitchChatClient.SubscriptionGiftUpgraded
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  name: SubscriptionMessageReceived
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionMessageReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  nameWithType: TwitchChatClient.SubscriptionMessageReceived
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
   name: TagsRequested
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_TagsRequested
@@ -7678,12 +7851,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
   nameWithType: TwitchChatClient.ThrowOnUnknownEvent
-- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UnhandledCommand
-  name: UnhandledCommand
-  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UnhandledCommand
-  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UnhandledCommand
-  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UnhandledCommand
-  nameWithType: TwitchChatClient.UnhandledCommand
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  name: UnknownEventReceived
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UnknownEventReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  nameWithType: TwitchChatClient.UnknownEventReceived
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
   name: UseBufferedResponses
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UseBufferedResponses
@@ -7703,6 +7876,19 @@ references:
   commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
   fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
   nameWithType: TwitchChatClient.UserBanned
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  name: UserCacheSize
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  nameWithType: TwitchChatClient.UserCacheSize
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize*
+  name: UserCacheSize
+  href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize_
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  nameWithType: TwitchChatClient.UserCacheSize
 - uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel
   name: UserJoinedChannel
   href: api/AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserJoinedChannel
@@ -7794,6 +7980,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Chat.TwitchChatConfig.UseBufferedResponses
   nameWithType: TwitchChatConfig.UseBufferedResponses
+- uid: AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize
+  name: UserCacheSize
+  href: api/AuxLabs.Twitch.Chat.TwitchChatConfig.html#AuxLabs_Twitch_Chat_TwitchChatConfig_UserCacheSize
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize
+  nameWithType: TwitchChatConfig.UserCacheSize
+- uid: AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize*
+  name: UserCacheSize
+  href: api/AuxLabs.Twitch.Chat.TwitchChatConfig.html#AuxLabs_Twitch_Chat_TwitchChatConfig_UserCacheSize_
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Chat.TwitchChatConfig.UserCacheSize
+  nameWithType: TwitchChatConfig.UserCacheSize
 - uid: AuxLabs.Twitch.Chat.UserNoticeType
   name: UserNoticeType
   href: api/AuxLabs.Twitch.Chat.UserNoticeType.html
@@ -8808,6 +9007,40 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityDonation
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityDonation
   nameWithType: TwitchEventSubApiClient.CharityDonation
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Connected
+  name: Connected
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Connected
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Connected
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Connected
+  nameWithType: TwitchEventSubApiClient.Connected
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Disconnected
+  name: Disconnected
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Disconnected
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Disconnected
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Disconnected
+  nameWithType: TwitchEventSubApiClient.Disconnected
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose
+  name: Dispose()
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose
+  commentId: M:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose()
+  nameWithType: TwitchEventSubApiClient.Dispose()
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose_System_Boolean_
+  commentId: M:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose(bool)
+  fullName.vb: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose(Boolean)
+  nameWithType: TwitchEventSubApiClient.Dispose(bool)
+  nameWithType.vb: TwitchEventSubApiClient.Dispose(Boolean)
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose*
+  name: Dispose
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose
+  nameWithType: TwitchEventSubApiClient.Dispose
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.DropEntitlementGranted
   name: DropEntitlementGranted
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_DropEntitlementGranted
@@ -8832,22 +9065,6 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalStarted
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalStarted
   nameWithType: TwitchEventSubApiClient.GoalStarted
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent(AuxLabs.Twitch.EventSub.Api.EventSubFrame,TaskCompletionSource{System.Boolean})
-  name: HandleEvent(EventSubFrame, TaskCompletionSource<bool>)
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HandleEvent_AuxLabs_Twitch_EventSub_Api_EventSubFrame_TaskCompletionSource_System_Boolean__
-  commentId: M:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent(AuxLabs.Twitch.EventSub.Api.EventSubFrame,TaskCompletionSource{System.Boolean})
-  name.vb: HandleEvent(EventSubFrame, TaskCompletionSource(Of Boolean))
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent(AuxLabs.Twitch.EventSub.Api.EventSubFrame, TaskCompletionSource<bool>)
-  fullName.vb: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent(AuxLabs.Twitch.EventSub.Api.EventSubFrame, TaskCompletionSource(Of Boolean))
-  nameWithType: TwitchEventSubApiClient.HandleEvent(EventSubFrame, TaskCompletionSource<bool>)
-  nameWithType.vb: TwitchEventSubApiClient.HandleEvent(EventSubFrame, TaskCompletionSource(Of Boolean))
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent*
-  name: HandleEvent
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HandleEvent_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HandleEvent
-  nameWithType: TwitchEventSubApiClient.HandleEvent
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainEnded
   name: HypeTrainEnded
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainEnded
@@ -8988,19 +9205,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RunAsync
   nameWithType: TwitchEventSubApiClient.RunAsync
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer
-  name: Serializer
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Serializer
-  commentId: P:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer
-  nameWithType: TwitchEventSubApiClient.Serializer
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer*
-  name: Serializer
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Serializer_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Serializer
-  nameWithType: TwitchEventSubApiClient.Serializer
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Session
   name: Session
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Session
@@ -9032,12 +9236,6 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeStarted
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeStarted
   nameWithType: TwitchEventSubApiClient.ShieldModeStarted
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShouldHandleNotificationEvents
-  name: ShouldHandleNotificationEvents
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShouldHandleNotificationEvents
-  commentId: F:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShouldHandleNotificationEvents
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShouldHandleNotificationEvents
-  nameWithType: TwitchEventSubApiClient.ShouldHandleNotificationEvents
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutCreated
   name: ShoutoutCreated
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutCreated
@@ -9050,6 +9248,19 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutReceived
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutReceived
   nameWithType: TwitchEventSubApiClient.ShoutoutReceived
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State
+  name: State
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_State
+  commentId: P:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State
+  nameWithType: TwitchEventSubApiClient.State
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State*
+  name: State
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_State_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State
+  nameWithType: TwitchEventSubApiClient.State
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Subscription
   name: Subscription
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Subscription
@@ -9080,6 +9291,12 @@ references:
   commentId: F:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ThrowOnUnknownEvent
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ThrowOnUnknownEvent
   nameWithType: TwitchEventSubApiClient.ThrowOnUnknownEvent
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UnknownEventReceived
+  name: UnknownEventReceived
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UnknownEventReceived
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UnknownEventReceived
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UnknownEventReceived
+  nameWithType: TwitchEventSubApiClient.UnknownEventReceived
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserBanned
   name: UserBanned
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserBanned
@@ -9104,19 +9321,6 @@ references:
   commentId: T:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
   nameWithType: TwitchEventSubApiConfig
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-  name: ShouldHandleNotificationEvents
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_ShouldHandleNotificationEvents
-  commentId: P:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-  nameWithType: TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents*
-  name: ShouldHandleNotificationEvents
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_ShouldHandleNotificationEvents_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ShouldHandleNotificationEvents
-  nameWithType: TwitchEventSubApiConfig.ShouldHandleNotificationEvents
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.ThrowOnUnknownEvent
   name: ThrowOnUnknownEvent
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_ThrowOnUnknownEvent
@@ -14115,12 +14319,25 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.IChannel.Name
   nameWithType: IChannel.Name
-- uid: AuxLabs.Twitch.IChannelInfo
-  name: IChannelInfo
-  href: api/AuxLabs.Twitch.IChannelInfo.html
-  commentId: T:AuxLabs.Twitch.IChannelInfo
-  fullName: AuxLabs.Twitch.IChannelInfo
-  nameWithType: IChannelInfo
+- uid: AuxLabs.Twitch.IChatUser
+  name: IChatUser
+  href: api/AuxLabs.Twitch.IChatUser.html
+  commentId: T:AuxLabs.Twitch.IChatUser
+  fullName: AuxLabs.Twitch.IChatUser
+  nameWithType: IChatUser
+- uid: AuxLabs.Twitch.IChatUser.Color
+  name: Color
+  href: api/AuxLabs.Twitch.IChatUser.html#AuxLabs_Twitch_IChatUser_Color
+  commentId: P:AuxLabs.Twitch.IChatUser.Color
+  fullName: AuxLabs.Twitch.IChatUser.Color
+  nameWithType: IChatUser.Color
+- uid: AuxLabs.Twitch.IChatUser.Color*
+  name: Color
+  href: api/AuxLabs.Twitch.IChatUser.html#AuxLabs_Twitch_IChatUser_Color_
+  commentId: Overload:AuxLabs.Twitch.IChatUser.Color
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.IChatUser.Color
+  nameWithType: IChatUser.Color
 - uid: AuxLabs.Twitch.IEntity`1
   name: IEntity<TId>
   href: api/AuxLabs.Twitch.IEntity-1.html
@@ -15090,22 +15307,40 @@ references:
   fullName.vb: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.New
   nameWithType: TwitchPubSubApiClient.TwitchPubSubApiClient
   nameWithType.vb: TwitchPubSubApiClient.New
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent(AuxLabs.Twitch.PubSub.PubSubPayload,TaskCompletionSource{System.Boolean})
-  name: HandleEvent(PubSubPayload, TaskCompletionSource<bool>)
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_HandleEvent_AuxLabs_Twitch_PubSub_PubSubPayload_TaskCompletionSource_System_Boolean__
-  commentId: M:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent(AuxLabs.Twitch.PubSub.PubSubPayload,TaskCompletionSource{System.Boolean})
-  name.vb: HandleEvent(PubSubPayload, TaskCompletionSource(Of Boolean))
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent(AuxLabs.Twitch.PubSub.PubSubPayload, TaskCompletionSource<bool>)
-  fullName.vb: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent(AuxLabs.Twitch.PubSub.PubSubPayload, TaskCompletionSource(Of Boolean))
-  nameWithType: TwitchPubSubApiClient.HandleEvent(PubSubPayload, TaskCompletionSource<bool>)
-  nameWithType.vb: TwitchPubSubApiClient.HandleEvent(PubSubPayload, TaskCompletionSource(Of Boolean))
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent*
-  name: HandleEvent
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_HandleEvent_
-  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Connected
+  name: Connected
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Connected
+  commentId: E:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Connected
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Connected
+  nameWithType: TwitchPubSubApiClient.Connected
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Disconnected
+  name: Disconnected
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Disconnected
+  commentId: E:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Disconnected
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Disconnected
+  nameWithType: TwitchPubSubApiClient.Disconnected
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose
+  name: Dispose()
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Dispose
+  commentId: M:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose()
+  nameWithType: TwitchPubSubApiClient.Dispose()
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Dispose_System_Boolean_
+  commentId: M:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose(bool)
+  fullName.vb: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose(Boolean)
+  nameWithType: TwitchPubSubApiClient.Dispose(bool)
+  nameWithType.vb: TwitchPubSubApiClient.Dispose(Boolean)
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose*
+  name: Dispose
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Dispose_
+  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose
   isSpec: "True"
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.HandleEvent
-  nameWithType: TwitchPubSubApiClient.HandleEvent
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Dispose
+  nameWithType: TwitchPubSubApiClient.Dispose
 - uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Run
   name: Run()
   href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Run
@@ -15132,64 +15367,50 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.RunAsync
   nameWithType: TwitchPubSubApiClient.RunAsync
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat
-  name: SendHeartbeat()
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_SendHeartbeat
-  commentId: M:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat()
-  nameWithType: TwitchPubSubApiClient.SendHeartbeat()
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat*
-  name: SendHeartbeat
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_SendHeartbeat_
-  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State
+  name: State
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_State
+  commentId: P:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State
+  nameWithType: TwitchPubSubApiClient.State
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State*
+  name: State
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_State_
+  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State
   isSpec: "True"
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeat
-  nameWithType: TwitchPubSubApiClient.SendHeartbeat
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck
-  name: SendHeartbeatAck()
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_SendHeartbeatAck
-  commentId: M:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck()
-  nameWithType: TwitchPubSubApiClient.SendHeartbeatAck()
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck*
-  name: SendHeartbeatAck
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_SendHeartbeatAck_
-  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.SendHeartbeatAck
-  nameWithType: TwitchPubSubApiClient.SendHeartbeatAck
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer
-  name: Serializer
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Serializer
-  commentId: P:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer
-  nameWithType: TwitchPubSubApiClient.Serializer
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer*
-  name: Serializer
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_Serializer_
-  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.Serializer
-  nameWithType: TwitchPubSubApiClient.Serializer
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.State
+  nameWithType: TwitchPubSubApiClient.State
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.ThrowOnUnknownEvent
+  name: ThrowOnUnknownEvent
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_ThrowOnUnknownEvent
+  commentId: F:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.ThrowOnUnknownEvent
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.ThrowOnUnknownEvent
+  nameWithType: TwitchPubSubApiClient.ThrowOnUnknownEvent
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.UnknownEventReceived
+  name: UnknownEventReceived
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiClient_UnknownEventReceived
+  commentId: E:AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.UnknownEventReceived
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient.UnknownEventReceived
+  nameWithType: TwitchPubSubApiClient.UnknownEventReceived
 - uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig
   name: TwitchPubSubApiConfig
   href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html
   commentId: T:AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig
   fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig
   nameWithType: TwitchPubSubApiConfig
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer
-  name: Serializer
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiConfig_Serializer
-  commentId: P:AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer
-  nameWithType: TwitchPubSubApiConfig.Serializer
-- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer*
-  name: Serializer
-  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiConfig_Serializer_
-  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent
+  name: ThrowOnUnknownEvent
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiConfig_ThrowOnUnknownEvent
+  commentId: P:AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent
+  nameWithType: TwitchPubSubApiConfig.ThrowOnUnknownEvent
+- uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent*
+  name: ThrowOnUnknownEvent
+  href: api/AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.html#AuxLabs_Twitch_PubSub_TwitchPubSubApiConfig_ThrowOnUnknownEvent_
+  commentId: Overload:AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent
   isSpec: "True"
-  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.Serializer
-  nameWithType: TwitchPubSubApiConfig.Serializer
+  fullName: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig.ThrowOnUnknownEvent
+  nameWithType: TwitchPubSubApiConfig.ThrowOnUnknownEvent
 - uid: AuxLabs.Twitch.QueryMap
   name: QueryMap
   href: api/AuxLabs.Twitch.QueryMap.html
@@ -19185,6 +19406,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestBroadcast.Title
   nameWithType: RestBroadcast.Title
+- uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString
+  name: ToString()
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBroadcast.html#AuxLabs_Twitch_Rest_Entities_RestBroadcast_ToString
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString()
+  nameWithType: RestBroadcast.ToString()
+- uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString*
+  name: ToString
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBroadcast.html#AuxLabs_Twitch_Rest_Entities_RestBroadcast_ToString_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBroadcast.ToString
+  nameWithType: RestBroadcast.ToString
 - uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast.Type
   name: Type
   href: api/AuxLabs.Twitch.Rest.Entities.RestBroadcast.html#AuxLabs_Twitch_Rest_Entities_RestBroadcast_Type
@@ -19334,44 +19568,82 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestChannel.UpdateAsync
   nameWithType: RestChannel.UpdateAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestEditorUser
-  name: RestEditorUser
-  href: api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html
-  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEditorUser
-  fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser
-  nameWithType: RestEditorUser
-- uid: AuxLabs.Twitch.Rest.Entities.RestEditorUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
-  name: RestEditorUser(TwitchRestClient, string)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html#AuxLabs_Twitch_Rest_Entities_RestEditorUser__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestEditorUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser
+  name: RestChatUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestChatUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser
+  nameWithType: RestChatUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestChatUser(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html#AuxLabs_Twitch_Rest_Entities_RestChatUser__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
   name.vb: New(TwitchRestClient, String)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser.RestEditorUser(AuxLabs.Twitch.Rest.TwitchRestClient, string)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEditorUser.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
-  nameWithType: RestEditorUser.RestEditorUser(TwitchRestClient, string)
-  nameWithType.vb: RestEditorUser.New(TwitchRestClient, String)
-- uid: AuxLabs.Twitch.Rest.Entities.RestEditorUser.#ctor*
-  name: RestEditorUser
-  href: api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html#AuxLabs_Twitch_Rest_Entities_RestEditorUser__ctor_
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEditorUser.#ctor
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser.RestChatUser(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestChatUser.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestChatUser.RestChatUser(TwitchRestClient, string)
+  nameWithType.vb: RestChatUser.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser.#ctor*
+  name: RestChatUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html#AuxLabs_Twitch_Rest_Entities_RestChatUser__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChatUser.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser.RestEditorUser
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEditorUser.New
-  nameWithType: RestEditorUser.RestEditorUser
-  nameWithType.vb: RestEditorUser.New
-- uid: AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
-  name: CreatedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html#AuxLabs_Twitch_Rest_Entities_RestEditorUser_CreatedAt
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
-  fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
-  nameWithType: RestEditorUser.CreatedAt
-- uid: AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt*
-  name: CreatedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestEditorUser.html#AuxLabs_Twitch_Rest_Entities_RestEditorUser_CreatedAt_
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser.RestChatUser
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestChatUser.New
+  nameWithType: RestChatUser.RestChatUser
+  nameWithType.vb: RestChatUser.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
+  name: Color
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html#AuxLabs_Twitch_Rest_Entities_RestChatUser_Color
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
+  nameWithType: RestChatUser.Color
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser.Color*
+  name: Color
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html#AuxLabs_Twitch_Rest_Entities_RestChatUser_Color_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Entities.RestEditorUser.CreatedAt
-  nameWithType: RestEditorUser.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
+  nameWithType: RestChatUser.Color
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor
+  name: RestEditor
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEditor
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor
+  nameWithType: RestEditor
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestEditor(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html#AuxLabs_Twitch_Rest_Entities_RestEditor__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestEditor.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor.RestEditor(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEditor.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestEditor.RestEditor(TwitchRestClient, string)
+  nameWithType.vb: RestEditor.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor.#ctor*
+  name: RestEditor
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html#AuxLabs_Twitch_Rest_Entities_RestEditor__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEditor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor.RestEditor
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEditor.New
+  nameWithType: RestEditor.RestEditor
+  nameWithType.vb: RestEditor.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html#AuxLabs_Twitch_Rest_Entities_RestEditor_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt
+  nameWithType: RestEditor.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html#AuxLabs_Twitch_Rest_Entities_RestEditor_CreatedAt_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt
+  nameWithType: RestEditor.CreatedAt
 - uid: AuxLabs.Twitch.Rest.Entities.RestEmote
   name: RestEmote
   href: api/AuxLabs.Twitch.Rest.Entities.RestEmote.html
@@ -20050,44 +20322,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
   nameWithType: RestSimpleChannel.Name
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
-  name: RestSimpleChatUser
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html
-  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser
-  nameWithType: RestSimpleChatUser
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
-  name: RestSimpleChatUser(TwitchRestClient, string)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
-  name.vb: New(TwitchRestClient, String)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.RestSimpleChatUser(AuxLabs.Twitch.Rest.TwitchRestClient, string)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
-  nameWithType: RestSimpleChatUser.RestSimpleChatUser(TwitchRestClient, string)
-  nameWithType.vb: RestSimpleChatUser.New(TwitchRestClient, String)
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor*
-  name: RestSimpleChatUser
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser__ctor_
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.RestSimpleChatUser
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.New
-  nameWithType: RestSimpleChatUser.RestSimpleChatUser
-  nameWithType.vb: RestSimpleChatUser.New
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
-  name: Color
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser_Color
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
-  nameWithType: RestSimpleChatUser.Color
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color*
-  name: Color
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChatUser_Color_
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChatUser.Color
-  nameWithType: RestSimpleChatUser.Color
 - uid: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
   name: RestSimpleUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html
@@ -40474,12 +40708,15 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByNameAsync
   nameWithType: TwitchRestClient.GetBroadcastByNameAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastsArgs)
-  name: GetBroadcastsAsync(GetBroadcastsArgs)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastsArgs_
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastsArgs)
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastsArgs)
-  nameWithType: TwitchRestClient.GetBroadcastsAsync(GetBroadcastsArgs)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(System.String[],System.String[],System.String[],System.String[],System.Int32,System.Nullable{CancellationToken})
+  name: GetBroadcastsAsync(string[], string[], string[], string[], int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBroadcastsAsync_System_String___System_String___System_String___System_String___System_Int32_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(System.String[],System.String[],System.String[],System.String[],System.Int32,System.Nullable{CancellationToken})
+  name.vb: GetBroadcastsAsync(String(), String(), String(), String(), Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(string[], string[], string[], string[], int, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync(String(), String(), String(), String(), Integer, CancellationToken?)
+  nameWithType: TwitchRestClient.GetBroadcastsAsync(string[], string[], string[], string[], int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetBroadcastsAsync(String(), String(), String(), String(), Integer, CancellationToken?)
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsAsync*
   name: GetBroadcastsAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBroadcastsAsync_
@@ -41407,12 +41644,18 @@ references:
   commentId: F:AuxLabs.Twitch.TwitchConstants.ChatWebSocketUrl
   fullName: AuxLabs.Twitch.TwitchConstants.ChatWebSocketUrl
   nameWithType: TwitchConstants.ChatWebSocketUrl
-- uid: AuxLabs.Twitch.TwitchConstants.EmoteUrl
-  name: EmoteUrl
-  href: api/AuxLabs.Twitch.TwitchConstants.html#AuxLabs_Twitch_TwitchConstants_EmoteUrl
-  commentId: F:AuxLabs.Twitch.TwitchConstants.EmoteUrl
-  fullName: AuxLabs.Twitch.TwitchConstants.EmoteUrl
-  nameWithType: TwitchConstants.EmoteUrl
+- uid: AuxLabs.Twitch.TwitchConstants.DefaultMaxPerPage
+  name: DefaultMaxPerPage
+  href: api/AuxLabs.Twitch.TwitchConstants.html#AuxLabs_Twitch_TwitchConstants_DefaultMaxPerPage
+  commentId: F:AuxLabs.Twitch.TwitchConstants.DefaultMaxPerPage
+  fullName: AuxLabs.Twitch.TwitchConstants.DefaultMaxPerPage
+  nameWithType: TwitchConstants.DefaultMaxPerPage
+- uid: AuxLabs.Twitch.TwitchConstants.EmoteImageUrl
+  name: EmoteImageUrl
+  href: api/AuxLabs.Twitch.TwitchConstants.html#AuxLabs_Twitch_TwitchConstants_EmoteImageUrl
+  commentId: F:AuxLabs.Twitch.TwitchConstants.EmoteImageUrl
+  fullName: AuxLabs.Twitch.TwitchConstants.EmoteImageUrl
+  nameWithType: TwitchConstants.EmoteImageUrl
 - uid: AuxLabs.Twitch.TwitchConstants.EventSubUrl
   name: EventSubUrl
   href: api/AuxLabs.Twitch.TwitchConstants.html#AuxLabs_Twitch_TwitchConstants_EventSubUrl
@@ -41834,338 +42077,6 @@ references:
   commentId: N:AuxLabs.Twitch.WebSockets
   fullName: AuxLabs.Twitch.WebSockets
   nameWithType: AuxLabs.Twitch.WebSockets
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1
-  name: BaseSocketClient<TPayload>
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html
-  commentId: T:AuxLabs.Twitch.WebSockets.BaseSocketClient`1
-  name.vb: BaseSocketClient(Of TPayload)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload)
-  nameWithType: BaseSocketClient<TPayload>
-  nameWithType.vb: BaseSocketClient(Of TPayload)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1._url
-  name: _url
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1__url
-  commentId: F:AuxLabs.Twitch.WebSockets.BaseSocketClient`1._url
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>._url
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload)._url
-  nameWithType: BaseSocketClient<TPayload>._url
-  nameWithType.vb: BaseSocketClient(Of TPayload)._url
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.#ctor(System.Int32,System.Boolean,System.Boolean)
-  name: BaseSocketClient(int, bool, bool)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1__ctor_System_Int32_System_Boolean_System_Boolean_
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.#ctor(System.Int32,System.Boolean,System.Boolean)
-  name.vb: New(Integer, Boolean, Boolean)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.BaseSocketClient(int, bool, bool)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).New(Integer, Boolean, Boolean)
-  nameWithType: BaseSocketClient<TPayload>.BaseSocketClient(int, bool, bool)
-  nameWithType.vb: BaseSocketClient(Of TPayload).New(Integer, Boolean, Boolean)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.#ctor*
-  name: BaseSocketClient
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1__ctor_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.BaseSocketClient
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).New
-  nameWithType: BaseSocketClient<TPayload>.BaseSocketClient
-  nameWithType.vb: BaseSocketClient(Of TPayload).New
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Connected
-  name: Connected
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Connected
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Connected
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Connected
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Connected
-  nameWithType: BaseSocketClient<TPayload>.Connected
-  nameWithType.vb: BaseSocketClient(Of TPayload).Connected
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.DeserializationError
-  name: DeserializationError
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_DeserializationError
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.DeserializationError
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.DeserializationError
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).DeserializationError
-  nameWithType: BaseSocketClient<TPayload>.DeserializationError
-  nameWithType.vb: BaseSocketClient(Of TPayload).DeserializationError
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Disconnected
-  name: Disconnected
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Disconnected
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Disconnected
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Disconnected
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Disconnected
-  nameWithType: BaseSocketClient<TPayload>.Disconnected
-  nameWithType.vb: BaseSocketClient(Of TPayload).Disconnected
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Dispose
-  name: Dispose()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Dispose
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Dispose
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Dispose()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Dispose()
-  nameWithType: BaseSocketClient<TPayload>.Dispose()
-  nameWithType.vb: BaseSocketClient(Of TPayload).Dispose()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Dispose*
-  name: Dispose
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Dispose_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Dispose
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Dispose
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Dispose
-  nameWithType: BaseSocketClient<TPayload>.Dispose
-  nameWithType.vb: BaseSocketClient(Of TPayload).Dispose
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.HandleEvent(`0,TaskCompletionSource{System.Boolean})
-  name: HandleEvent(TPayload, TaskCompletionSource<bool>)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_HandleEvent__0_TaskCompletionSource_System_Boolean__
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.HandleEvent(`0,TaskCompletionSource{System.Boolean})
-  name.vb: HandleEvent(TPayload, TaskCompletionSource(Of Boolean))
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.HandleEvent(TPayload, TaskCompletionSource<bool>)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).HandleEvent(TPayload, TaskCompletionSource(Of Boolean))
-  nameWithType: BaseSocketClient<TPayload>.HandleEvent(TPayload, TaskCompletionSource<bool>)
-  nameWithType.vb: BaseSocketClient(Of TPayload).HandleEvent(TPayload, TaskCompletionSource(Of Boolean))
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.HandleEvent*
-  name: HandleEvent
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_HandleEvent_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.HandleEvent
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.HandleEvent
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).HandleEvent
-  nameWithType: BaseSocketClient<TPayload>.HandleEvent
-  nameWithType.vb: BaseSocketClient(Of TPayload).HandleEvent
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.OnUnknownEventReceived(`0)
-  name: OnUnknownEventReceived(TPayload)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_OnUnknownEventReceived__0_
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.OnUnknownEventReceived(`0)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.OnUnknownEventReceived(TPayload)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).OnUnknownEventReceived(TPayload)
-  nameWithType: BaseSocketClient<TPayload>.OnUnknownEventReceived(TPayload)
-  nameWithType.vb: BaseSocketClient(Of TPayload).OnUnknownEventReceived(TPayload)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.OnUnknownEventReceived*
-  name: OnUnknownEventReceived
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_OnUnknownEventReceived_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.OnUnknownEventReceived
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.OnUnknownEventReceived
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).OnUnknownEventReceived
-  nameWithType: BaseSocketClient<TPayload>.OnUnknownEventReceived
-  nameWithType.vb: BaseSocketClient(Of TPayload).OnUnknownEventReceived
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.PayloadReceived
-  name: PayloadReceived
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_PayloadReceived
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.PayloadReceived
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.PayloadReceived
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).PayloadReceived
-  nameWithType: BaseSocketClient<TPayload>.PayloadReceived
-  nameWithType.vb: BaseSocketClient(Of TPayload).PayloadReceived
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.PayloadSent
-  name: PayloadSent
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_PayloadSent
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.PayloadSent
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.PayloadSent
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).PayloadSent
-  nameWithType: BaseSocketClient<TPayload>.PayloadSent
-  nameWithType.vb: BaseSocketClient(Of TPayload).PayloadSent
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.ReceivedData
-  name: ReceivedData
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_ReceivedData
-  commentId: F:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.ReceivedData
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.ReceivedData
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).ReceivedData
-  nameWithType: BaseSocketClient<TPayload>.ReceivedData
-  nameWithType.vb: BaseSocketClient(Of TPayload).ReceivedData
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run
-  name: Run()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Run
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Run()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Run()
-  nameWithType: BaseSocketClient<TPayload>.Run()
-  nameWithType.vb: BaseSocketClient(Of TPayload).Run()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run(System.String)
-  name: Run(string)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Run_System_String_
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run(System.String)
-  name.vb: Run(String)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Run(string)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Run(String)
-  nameWithType: BaseSocketClient<TPayload>.Run(string)
-  nameWithType.vb: BaseSocketClient(Of TPayload).Run(String)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run*
-  name: Run
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Run_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Run
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Run
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Run
-  nameWithType: BaseSocketClient<TPayload>.Run
-  nameWithType.vb: BaseSocketClient(Of TPayload).Run
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync
-  name: RunAsync()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_RunAsync
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.RunAsync()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).RunAsync()
-  nameWithType: BaseSocketClient<TPayload>.RunAsync()
-  nameWithType.vb: BaseSocketClient(Of TPayload).RunAsync()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync(System.String)
-  name: RunAsync(string)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_RunAsync_System_String_
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync(System.String)
-  name.vb: RunAsync(String)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.RunAsync(string)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).RunAsync(String)
-  nameWithType: BaseSocketClient<TPayload>.RunAsync(string)
-  nameWithType.vb: BaseSocketClient(Of TPayload).RunAsync(String)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync*
-  name: RunAsync
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_RunAsync_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.RunAsync
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.RunAsync
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).RunAsync
-  nameWithType: BaseSocketClient<TPayload>.RunAsync
-  nameWithType.vb: BaseSocketClient(Of TPayload).RunAsync
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Send(`0)
-  name: Send(TPayload)
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Send__0_
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Send(`0)
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Send(TPayload)
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Send(TPayload)
-  nameWithType: BaseSocketClient<TPayload>.Send(TPayload)
-  nameWithType.vb: BaseSocketClient(Of TPayload).Send(TPayload)
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Send*
-  name: Send
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Send_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Send
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Send
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Send
-  nameWithType: BaseSocketClient<TPayload>.Send
-  nameWithType.vb: BaseSocketClient(Of TPayload).Send
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeat
-  name: SendHeartbeat()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendHeartbeat
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeat
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendHeartbeat()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendHeartbeat()
-  nameWithType: BaseSocketClient<TPayload>.SendHeartbeat()
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendHeartbeat()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeat*
-  name: SendHeartbeat
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendHeartbeat_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeat
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendHeartbeat
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendHeartbeat
-  nameWithType: BaseSocketClient<TPayload>.SendHeartbeat
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendHeartbeat
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeatAck
-  name: SendHeartbeatAck()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendHeartbeatAck
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeatAck
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendHeartbeatAck()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendHeartbeatAck()
-  nameWithType: BaseSocketClient<TPayload>.SendHeartbeatAck()
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendHeartbeatAck()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeatAck*
-  name: SendHeartbeatAck
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendHeartbeatAck_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendHeartbeatAck
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendHeartbeatAck
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendHeartbeatAck
-  nameWithType: BaseSocketClient<TPayload>.SendHeartbeatAck
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendHeartbeatAck
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendIdentify
-  name: SendIdentify()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendIdentify
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendIdentify
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendIdentify()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendIdentify()
-  nameWithType: BaseSocketClient<TPayload>.SendIdentify()
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendIdentify()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendIdentify*
-  name: SendIdentify
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_SendIdentify_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.SendIdentify
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.SendIdentify
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).SendIdentify
-  nameWithType: BaseSocketClient<TPayload>.SendIdentify
-  nameWithType.vb: BaseSocketClient(Of TPayload).SendIdentify
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Serializer
-  name: Serializer
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Serializer
-  commentId: P:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Serializer
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Serializer
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Serializer
-  nameWithType: BaseSocketClient<TPayload>.Serializer
-  nameWithType.vb: BaseSocketClient(Of TPayload).Serializer
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Serializer*
-  name: Serializer
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Serializer_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Serializer
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Serializer
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Serializer
-  nameWithType: BaseSocketClient<TPayload>.Serializer
-  nameWithType.vb: BaseSocketClient(Of TPayload).Serializer
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.State
-  name: State
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_State
-  commentId: P:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.State
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.State
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).State
-  nameWithType: BaseSocketClient<TPayload>.State
-  nameWithType.vb: BaseSocketClient(Of TPayload).State
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.State*
-  name: State
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_State_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.State
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.State
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).State
-  nameWithType: BaseSocketClient<TPayload>.State
-  nameWithType.vb: BaseSocketClient(Of TPayload).State
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Stop
-  name: Stop()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Stop
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Stop
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Stop()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Stop()
-  nameWithType: BaseSocketClient<TPayload>.Stop()
-  nameWithType.vb: BaseSocketClient(Of TPayload).Stop()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Stop*
-  name: Stop
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_Stop_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.Stop
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.Stop
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).Stop
-  nameWithType: BaseSocketClient<TPayload>.Stop
-  nameWithType.vb: BaseSocketClient(Of TPayload).Stop
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.StopAsync
-  name: StopAsync()
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_StopAsync
-  commentId: M:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.StopAsync
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.StopAsync()
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).StopAsync()
-  nameWithType: BaseSocketClient<TPayload>.StopAsync()
-  nameWithType.vb: BaseSocketClient(Of TPayload).StopAsync()
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.StopAsync*
-  name: StopAsync
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_StopAsync_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.StopAsync
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.StopAsync
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).StopAsync
-  nameWithType: BaseSocketClient<TPayload>.StopAsync
-  nameWithType.vb: BaseSocketClient(Of TPayload).StopAsync
-- uid: AuxLabs.Twitch.WebSockets.BaseSocketClient`1.UnknownEventReceived
-  name: UnknownEventReceived
-  href: api/AuxLabs.Twitch.WebSockets.BaseSocketClient-1.html#AuxLabs_Twitch_WebSockets_BaseSocketClient_1_UnknownEventReceived
-  commentId: E:AuxLabs.Twitch.WebSockets.BaseSocketClient`1.UnknownEventReceived
-  fullName: AuxLabs.Twitch.WebSockets.BaseSocketClient<TPayload>.UnknownEventReceived
-  fullName.vb: AuxLabs.Twitch.WebSockets.BaseSocketClient(Of TPayload).UnknownEventReceived
-  nameWithType: BaseSocketClient<TPayload>.UnknownEventReceived
-  nameWithType.vb: BaseSocketClient(Of TPayload).UnknownEventReceived
 - uid: AuxLabs.Twitch.WebSockets.ConnectionState
   name: ConnectionState
   href: api/AuxLabs.Twitch.WebSockets.ConnectionState.html
@@ -42259,69 +42170,239 @@ references:
   fullName.vb: AuxLabs.Twitch.WebSockets.ISerializer(Of TPayload).Write
   nameWithType: ISerializer<TPayload>.Write
   nameWithType.vb: ISerializer(Of TPayload).Write
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1
-  name: JsonSerializer<TPayload>
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html
-  commentId: T:AuxLabs.Twitch.WebSockets.JsonSerializer`1
-  name.vb: JsonSerializer(Of TPayload)
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload)
-  nameWithType: JsonSerializer<TPayload>
-  nameWithType.vb: JsonSerializer(Of TPayload)
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.#ctor(JsonSerializerOptions)
-  name: JsonSerializer(JsonSerializerOptions)
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1__ctor_JsonSerializerOptions_
-  commentId: M:AuxLabs.Twitch.WebSockets.JsonSerializer`1.#ctor(JsonSerializerOptions)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  name: ISocketClient<TPayload>
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html
+  commentId: T:AuxLabs.Twitch.WebSockets.ISocketClient`1
+  name.vb: ISocketClient(Of TPayload)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload)
+  nameWithType: ISocketClient<TPayload>
+  nameWithType.vb: ISocketClient(Of TPayload)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Connected
+  name: Connected
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Connected
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Connected
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Connected
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Connected
+  nameWithType: ISocketClient<TPayload>.Connected
+  nameWithType.vb: ISocketClient(Of TPayload).Connected
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Disconnected
+  name: Disconnected
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Disconnected
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Disconnected
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Disconnected
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Disconnected
+  nameWithType: ISocketClient<TPayload>.Disconnected
+  nameWithType.vb: ISocketClient(Of TPayload).Disconnected
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Heartbeat
+  name: Heartbeat
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Heartbeat
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Heartbeat
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Heartbeat
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Heartbeat
+  nameWithType: ISocketClient<TPayload>.Heartbeat
+  nameWithType.vb: ISocketClient(Of TPayload).Heartbeat
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Identify
+  name: Identify
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Identify
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Identify
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Identify
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Identify
+  nameWithType: ISocketClient<TPayload>.Identify
+  nameWithType.vb: ISocketClient(Of TPayload).Identify
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.PayloadReceived
+  name: PayloadReceived
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_PayloadReceived
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.PayloadReceived
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.PayloadReceived
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).PayloadReceived
+  nameWithType: ISocketClient<TPayload>.PayloadReceived
+  nameWithType.vb: ISocketClient(Of TPayload).PayloadReceived
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Run(System.String)
+  name: Run(string)
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Run_System_String_
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Run(System.String)
+  name.vb: Run(String)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Run(string)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Run(String)
+  nameWithType: ISocketClient<TPayload>.Run(string)
+  nameWithType.vb: ISocketClient(Of TPayload).Run(String)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Run*
+  name: Run
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Run_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Run
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Run
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Run
+  nameWithType: ISocketClient<TPayload>.Run
+  nameWithType.vb: ISocketClient(Of TPayload).Run
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync(System.String)
+  name: RunAsync(string)
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_RunAsync_System_String_
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync(System.String)
+  name.vb: RunAsync(String)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.RunAsync(string)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).RunAsync(String)
+  nameWithType: ISocketClient<TPayload>.RunAsync(string)
+  nameWithType.vb: ISocketClient(Of TPayload).RunAsync(String)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync*
+  name: RunAsync
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_RunAsync_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.RunAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).RunAsync
+  nameWithType: ISocketClient<TPayload>.RunAsync
+  nameWithType.vb: ISocketClient(Of TPayload).RunAsync
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Send(`0)
+  name: Send(TPayload)
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Send__0_
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Send(`0)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Send(TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Send(TPayload)
+  nameWithType: ISocketClient<TPayload>.Send(TPayload)
+  nameWithType.vb: ISocketClient(Of TPayload).Send(TPayload)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Send*
+  name: Send
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Send_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Send
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Send
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Send
+  nameWithType: ISocketClient<TPayload>.Send
+  nameWithType.vb: ISocketClient(Of TPayload).Send
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync(`0,CancellationToken)
+  name: SendAsync(TPayload, CancellationToken)
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_SendAsync__0_CancellationToken_
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync(`0,CancellationToken)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.SendAsync(TPayload, CancellationToken)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).SendAsync(TPayload, CancellationToken)
+  nameWithType: ISocketClient<TPayload>.SendAsync(TPayload, CancellationToken)
+  nameWithType.vb: ISocketClient(Of TPayload).SendAsync(TPayload, CancellationToken)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync*
+  name: SendAsync
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_SendAsync_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.SendAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).SendAsync
+  nameWithType: ISocketClient<TPayload>.SendAsync
+  nameWithType.vb: ISocketClient(Of TPayload).SendAsync
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  name: State
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_State
+  commentId: P:AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.State
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).State
+  nameWithType: ISocketClient<TPayload>.State
+  nameWithType.vb: ISocketClient(Of TPayload).State
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.State*
+  name: State
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_State_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.State
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).State
+  nameWithType: ISocketClient<TPayload>.State
+  nameWithType.vb: ISocketClient(Of TPayload).State
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  name: Stop()
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Stop
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Stop()
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Stop()
+  nameWithType: ISocketClient<TPayload>.Stop()
+  nameWithType.vb: ISocketClient(Of TPayload).Stop()
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop*
+  name: Stop
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_Stop_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Stop
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Stop
+  nameWithType: ISocketClient<TPayload>.Stop
+  nameWithType.vb: ISocketClient(Of TPayload).Stop
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  name: StopAsync()
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_StopAsync
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.StopAsync()
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).StopAsync()
+  nameWithType: ISocketClient<TPayload>.StopAsync()
+  nameWithType.vb: ISocketClient(Of TPayload).StopAsync()
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync*
+  name: StopAsync
+  href: api/AuxLabs.Twitch.WebSockets.ISocketClient-1.html#AuxLabs_Twitch_WebSockets_ISocketClient_1_StopAsync_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.StopAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).StopAsync
+  nameWithType: ISocketClient<TPayload>.StopAsync
+  nameWithType.vb: ISocketClient(Of TPayload).StopAsync
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+  name: TwitchJsonSerializer<TPayload>
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html
+  commentId: T:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+  name.vb: TwitchJsonSerializer(Of TPayload)
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload)
+  nameWithType: TwitchJsonSerializer<TPayload>
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload)
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.#ctor(JsonSerializerOptions)
+  name: TwitchJsonSerializer(JsonSerializerOptions)
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1__ctor_JsonSerializerOptions_
+  commentId: M:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.#ctor(JsonSerializerOptions)
   name.vb: New(JsonSerializerOptions)
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.JsonSerializer(JsonSerializerOptions)
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).New(JsonSerializerOptions)
-  nameWithType: JsonSerializer<TPayload>.JsonSerializer(JsonSerializerOptions)
-  nameWithType.vb: JsonSerializer(Of TPayload).New(JsonSerializerOptions)
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.#ctor*
-  name: JsonSerializer
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1__ctor_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.JsonSerializer`1.#ctor
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.TwitchJsonSerializer(JsonSerializerOptions)
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).New(JsonSerializerOptions)
+  nameWithType: TwitchJsonSerializer<TPayload>.TwitchJsonSerializer(JsonSerializerOptions)
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).New(JsonSerializerOptions)
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.#ctor*
+  name: TwitchJsonSerializer
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1__ctor_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.JsonSerializer
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).New
-  nameWithType: JsonSerializer<TPayload>.JsonSerializer
-  nameWithType.vb: JsonSerializer(Of TPayload).New
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.Read(ReadOnlySpan{System.Byte}@)
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.TwitchJsonSerializer
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).New
+  nameWithType: TwitchJsonSerializer<TPayload>.TwitchJsonSerializer
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).New
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Read(ReadOnlySpan{System.Byte}@)
   name: Read(ref ReadOnlySpan<byte>)
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1_Read_ReadOnlySpan_System_Byte___
-  commentId: M:AuxLabs.Twitch.WebSockets.JsonSerializer`1.Read(ReadOnlySpan{System.Byte}@)
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1_Read_ReadOnlySpan_System_Byte___
+  commentId: M:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Read(ReadOnlySpan{System.Byte}@)
   name.vb: Read(ReadOnlySpan(Of Byte))
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.Read(ref ReadOnlySpan<byte>)
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).Read(ReadOnlySpan(Of Byte))
-  nameWithType: JsonSerializer<TPayload>.Read(ref ReadOnlySpan<byte>)
-  nameWithType.vb: JsonSerializer(Of TPayload).Read(ReadOnlySpan(Of Byte))
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.Read*
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.Read(ref ReadOnlySpan<byte>)
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).Read(ReadOnlySpan(Of Byte))
+  nameWithType: TwitchJsonSerializer<TPayload>.Read(ref ReadOnlySpan<byte>)
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).Read(ReadOnlySpan(Of Byte))
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Read*
   name: Read
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1_Read_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.JsonSerializer`1.Read
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1_Read_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Read
   isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.Read
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).Read
-  nameWithType: JsonSerializer<TPayload>.Read
-  nameWithType.vb: JsonSerializer(Of TPayload).Read
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.Write(`0)
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.Read
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).Read
+  nameWithType: TwitchJsonSerializer<TPayload>.Read
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).Read
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Write(`0)
   name: Write(TPayload)
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1_Write__0_
-  commentId: M:AuxLabs.Twitch.WebSockets.JsonSerializer`1.Write(`0)
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.Write(TPayload)
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).Write(TPayload)
-  nameWithType: JsonSerializer<TPayload>.Write(TPayload)
-  nameWithType.vb: JsonSerializer(Of TPayload).Write(TPayload)
-- uid: AuxLabs.Twitch.WebSockets.JsonSerializer`1.Write*
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1_Write__0_
+  commentId: M:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Write(`0)
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.Write(TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).Write(TPayload)
+  nameWithType: TwitchJsonSerializer<TPayload>.Write(TPayload)
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).Write(TPayload)
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Write*
   name: Write
-  href: api/AuxLabs.Twitch.WebSockets.JsonSerializer-1.html#AuxLabs_Twitch_WebSockets_JsonSerializer_1_Write_
-  commentId: Overload:AuxLabs.Twitch.WebSockets.JsonSerializer`1.Write
+  href: api/AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html#AuxLabs_Twitch_WebSockets_TwitchJsonSerializer_1_Write_
+  commentId: Overload:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1.Write
   isSpec: "True"
-  fullName: AuxLabs.Twitch.WebSockets.JsonSerializer<TPayload>.Write
-  fullName.vb: AuxLabs.Twitch.WebSockets.JsonSerializer(Of TPayload).Write
-  nameWithType: JsonSerializer<TPayload>.Write
-  nameWithType.vb: JsonSerializer(Of TPayload).Write
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>.Write
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload).Write
+  nameWithType: TwitchJsonSerializer<TPayload>.Write
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload).Write
 - uid: AuxLabs.Twitch.WebSockets.WebSocketClosedException
   name: WebSocketClosedException
   href: api/AuxLabs.Twitch.WebSockets.WebSocketClosedException.html
