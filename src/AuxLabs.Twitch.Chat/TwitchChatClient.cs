@@ -31,6 +31,7 @@ namespace AuxLabs.Twitch.Chat
 
         public bool UseBufferedResponses { get; }
         public int MessageCacheSize { get; }
+        public int UserCacheSize { get; }
         public bool IsReadOnly { get; private set; } = true;   
 
         public ChatSelfUser MyUser { get; internal set; }
@@ -46,11 +47,11 @@ namespace AuxLabs.Twitch.Chat
             config ??= new TwitchChatConfig();
             UseBufferedResponses = config.UseBufferedResponses;
             MessageCacheSize = config.MessageCacheSize;
+            UserCacheSize = config.UserCacheSize;
 
             Rest = new TwitchRestClient(config.RestConfig ??= new TwitchRestConfig());
             IRC = new TwitchChatApiClient(url, config);
 
-            //IRC.PayloadReceived += (p, s) => HandleEventAsync(p).ConfigureAwait(false);
             IRC.Connected += () => _connectedEvent.InvokeAsync().ConfigureAwait(false);
             IRC.Disconnected += ex => _disconnectedEvent.InvokeAsync(ex).ConfigureAwait(false);
             IRC.UnknownEventReceived += payload => _unknownEventReceivedEvent.InvokeAsync(payload).ConfigureAwait(false);
@@ -138,7 +139,10 @@ namespace AuxLabs.Twitch.Chat
         public async IAsyncEnumerable<ChatChannel> JoinChannelsAsync(string[] channelNames, CancellationToken? cancelToken = null)
         {
             foreach (var channelName in channelNames)
-                yield return await JoinChannelAsync(channelName, cancelToken).ConfigureAwait(false);
+            {
+                var channel = await JoinChannelAsync(channelName, cancelToken);
+                yield return channel;
+            }
         }
 
         public Task<ChatSimpleChannel> LeaveChannelAsync(string channelName)
@@ -236,23 +240,23 @@ namespace AuxLabs.Twitch.Chat
             _channels[channel.Id] = channel;
             _channelNameMap[channel.Name] = channel.Id;
         }
-        internal ChatSimpleChannel RemoveChannel(string id)
-        {
-            if (id == null) return null;
-            if (_channels.TryRemove(id, out var channel))
-            {
-                _channelNameMap.Remove(channel.Name, out _);
-                return channel;
-            }
-            return null;
-        }
-        internal ChatSimpleChannel RemoveChannelByName(string name)
-        {
-            if (name == null) return null;
-            if (_channelNameMap.TryGetValue(name, out var id))
-                return RemoveChannel(id);
-            return null;
-        }
+        //internal ChatSimpleChannel RemoveChannel(string id)
+        //{
+        //    if (id == null) return null;
+        //    if (_channels.TryRemove(id, out var channel))
+        //    {
+        //        _channelNameMap.Remove(channel.Name, out _);
+        //        return channel;
+        //    }
+        //    return null;
+        //}
+        //internal ChatSimpleChannel RemoveChannelByName(string name)
+        //{
+        //    if (name == null) return null;
+        //    if (_channelNameMap.TryGetValue(name, out var id))
+        //        return RemoveChannel(id);
+        //    return null;
+        //}
 
         #endregion
         #region Handle Events
@@ -275,9 +279,14 @@ namespace AuxLabs.Twitch.Chat
             }
             else
             {
+                var cacheable = new Cacheable<IChatUser, string>(user, args.Tags.TargetUserId, user != null, async () =>
+                {
+                    return await Rest.GetUserChatColorAsync(args.Tags.TargetUserId);
+                });
+
                 if (args.Tags.BanDuration == null)
                     channel.RemoveUser(user.Id);
-                _userBannedEvent.InvokeAsync((ChatChannel)channel, user, args.Tags.BanDuration).ConfigureAwait(false);
+                _userBannedEvent.InvokeAsync((ChatChannel)channel, cacheable, args.Tags.BanDuration).ConfigureAwait(false);
             }
         }
 
@@ -312,8 +321,8 @@ namespace AuxLabs.Twitch.Chat
         {
             if (args.UserName == CurrentName)
             {
-                var channel = RemoveChannelByName(args.ChannelName);
-                _channelLeftEvent.InvokeAsync(channel).ConfigureAwait(false);
+                //var channel = RemoveChannelByName(args.ChannelName);
+                //_channelLeftEvent.InvokeAsync(channel).ConfigureAwait(false);
             }
             else
             {
@@ -326,23 +335,30 @@ namespace AuxLabs.Twitch.Chat
         {
             var channel = GetChannelByName(args.ChannelName);
 
-            ChatSimpleUser beforeUser = null;
-            if (channel != null)
-                beforeUser = channel.GetUser(args.Tags.UserId);
-
-            var user = ChatChannelSelfUser.Create(this, args);
+            var beforeUser = channel?.MyUser;
+            var user = ChatChannelSelfUser.Create(this, MyUser.Id, args);
             user.Channel = channel;
 
-            channel?.AddUser(user);
-            _userStateUpdatedEvent.InvokeAsync(beforeUser as ChatChannelSelfUser, user, args.Tags.MessageId).ConfigureAwait(false);
+            if (channel != null)
+                channel.MyUser = user;
+
+            _userStateUpdatedEvent.InvokeAsync(beforeUser, user, args.Tags.MessageId).ConfigureAwait(false);
         }
 
         private void OnRoomState(RoomStateEventArgs args)
         {
-            var beforeChannel = GetChannel(args.Tags.ChannelId);
+            var beforeChannel = GetChannelByName(args.ChannelName);
             var channel = ChatChannel.Create(this, args);
 
-            AddChannel(channel);
+            if (beforeChannel != null)      // RoomState is a channel updated event
+            {
+                beforeChannel.Update(args);
+                AddChannel(beforeChannel);
+            } else                          // RoomState is a post-join event
+            {
+                AddChannel(channel);
+            }
+
             _channelStateUpdated.InvokeAsync(beforeChannel as ChatChannel, channel).ConfigureAwait(false);
         }
 
@@ -356,9 +372,11 @@ namespace AuxLabs.Twitch.Chat
             }
 
             var author = (ChatChannelUser)channel.GetUser(args.Tags.AuthorId);
+            author?.Update(args);
             author ??= ChatChannelUser.Create(this, args);
 
             var replyAuthor = channel.GetUser(args.Tags.ReplyAuthorId);
+            replyAuthor?.Update(args);
             replyAuthor ??= ChatSimpleUser.Create(this, args, true);
 
             var message = ChatMessage.Create(this, args, channel, author, replyAuthor);
@@ -379,8 +397,8 @@ namespace AuxLabs.Twitch.Chat
         private void OnUserNotice(UserNoticeEventArgs args)
         {
             var channel = GetChannel(args.Tags.ChannelId);
-            var author = channel.GetUser(args.Tags.AuthorId);
-            //channel.Update(userNoticeArgs);
+            var author = (ChatChannelUser)channel.GetUser(args.Tags.AuthorId);
+            author?.Update(args);
 
             switch (args.Tags)
             {
@@ -408,10 +426,12 @@ namespace AuxLabs.Twitch.Chat
 
                 case SubscriptionTags subTags:
                     {
-                        // VS is trying to force usage of ChatSimpleMessage here but won't allow overriding the inherited member???
-                        // Throwaway bool as a temp fix
-                        var subMessage = ChatSubscriptionMessage.Create(this, args, channel, (ChatChannelUser)author, false);
-                        _messageReceivedEvent.InvokeAsync(subMessage).ConfigureAwait(false);
+                        author ??= ChatChannelUser.Create(this, args);
+                        var message = ChatSubscriptionMessage.Create(this, args, channel, author);
+
+                        channel.AddUser(author);
+                        channel.AddMessage(message);
+                        _subMessageReceivedEvent.InvokeAsync(message).ConfigureAwait(false);
                     }
                     break;
             }

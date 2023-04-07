@@ -4,7 +4,6 @@ using AuxLabs.Twitch.Rest.Requests;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Message = AuxLabs.Twitch.Chat.Models.MessageEventArgs;
 using RoomState = AuxLabs.Twitch.Chat.Models.RoomStateEventArgs;
@@ -13,22 +12,27 @@ namespace AuxLabs.Twitch.Chat.Entities
 {
     public class ChatSimpleChannel : ChatEntity<string>
     {
-        private readonly ConcurrentDictionary<string, ChatSimpleUser> _users;
         private readonly ConcurrentDictionary<string, string> _userNameMap;
-        private readonly MessageCache _messages;
+        private readonly EntityCache<string, ChatMessage> _messages;
+        private readonly EntityCache<string, ChatSimpleUser> _users;
 
-        public IReadOnlyCollection<ChatChannelUser> Users => _users.Select(x => (ChatChannelUser)x.Value).ToArray();
+        /// <summary> The currently authorized user </summary>
+        public ChatChannelSelfUser MyUser { get; internal set; }
 
         /// <summary> The channel's name </summary>
-        public string Name { get; internal set; }
+        public string Name { get; private set; }
 
         internal ChatSimpleChannel(TwitchChatClient twitch, string id)
             : base(twitch, id) 
         {
-            _users = new ConcurrentDictionary<string, ChatSimpleUser>();
             _userNameMap = new ConcurrentDictionary<string, string>();
-            _messages = new MessageCache(twitch.MessageCacheSize);
+            _messages = new EntityCache<string, ChatMessage>(twitch.MessageCacheSize);
+            _users = new EntityCache<string, ChatSimpleUser>(twitch.UserCacheSize);
         }
+
+        public override string ToString() => $"{Name} ({Id})";
+
+        #region Create
 
         internal static ChatSimpleChannel Create(TwitchChatClient twitch, RoomState model)
         {
@@ -51,17 +55,13 @@ namespace AuxLabs.Twitch.Chat.Entities
             Name = model.ChannelName;
         }
 
-        public override string ToString()
-            => $"{Name} ({Id})";
+        #endregion
 
-        // Cache Methods
+        #region Cache
+
+        // Users
         public ChatSimpleUser GetUser(string id)
-        {
-            if (id == null) return null;
-            if (_users.TryGetValue(id, out var user))
-                return user;
-            return null;
-        }
+            => _users?.Get(id);
         public ChatSimpleUser GetUserByName(string name)
         {
             if (name == null) return null;
@@ -69,22 +69,25 @@ namespace AuxLabs.Twitch.Chat.Entities
                 return GetUser(id);
             return null;
         }
-        internal void AddUser(ChatSimpleUser user)
-        {
-            _users[user.Id] = user;
-            _userNameMap[user.Name] = user.Id;
-        }
+
+        internal void AddUser(ChatSimpleUser msg)
+            => _users?.Add(msg);
         internal ChatSimpleUser RemoveUser(string id)
         {
             if (id == null) return null;
-            if (_users.TryRemove(id, out var user))
-            {
-                _userNameMap.Remove(user.Name, out _);
-                return user;
-            }
-            return null;
-        }
 
+            var user = _users?.Remove(id);
+            if (user == null)
+                return null;
+
+            _userNameMap.Remove(user.Name, out _);
+            return user;
+
+        }
+        internal IReadOnlyCollection<ChatSimpleUser> ClearUsers()
+            => _users.RemoveAll();
+
+        // Messages
         public ChatMessage GetMessage(string id)
             => _messages?.Get(id);
         public IReadOnlyCollection<ChatMessage> GetMessages(int count)
@@ -97,14 +100,20 @@ namespace AuxLabs.Twitch.Chat.Entities
         internal IReadOnlyCollection<ChatMessage> ClearMessages()
             => _messages.RemoveAll();
 
-        // Chat Methods
+        #endregion
+        #region Chat Requests
+
         public Task SendMessageAsync(string message)
             => Twitch.SendMessageAsync(Name, message);
+
+        #endregion
+        #region Rest Requests
+
         public Task SendAnnouncementAsync(string message, AnnouncementColor? color = null)
             => Twitch.Rest.SendAnnouncementAsync(Id, message, color);
         public Task SendShoutoutAsync(string channelId)
             => Twitch.Rest.SendShoutoutAsync(Id, channelId);
-        public Task<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(int count = 20)
+        public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(int count = 20)
             => Twitch.Rest.GetChattersAsync(Id, count);
         public Task<IReadOnlyCollection<RestEmote>> GetEmotesAsync()
             => Twitch.Rest.GetEmotesAsync(Id);
@@ -113,7 +122,6 @@ namespace AuxLabs.Twitch.Chat.Entities
         public Task<ChatSettings> ModifyChatSettingsAsync(Action<PatchChatSettingsBody> func)
             => Twitch.Rest.ModifyChatSettingsAsync(Id, func);
 
-        // Rest Methods
 
         /// <summary> Get more info about this channel. </summary>
         public Task<RestChannel> GetChannelAsync()
@@ -127,5 +135,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             => Twitch.Rest.GetFollowerAsync(userId, Id);
         public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
             => Twitch.Rest.GetFollowersAsync(Id, count);
+
+        #endregion
     }
 }
