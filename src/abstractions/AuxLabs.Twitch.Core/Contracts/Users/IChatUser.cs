@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace AuxLabs.Twitch.Chat
+namespace AuxLabs.Twitch
 {
     public interface IChatUser : IUser
     {
