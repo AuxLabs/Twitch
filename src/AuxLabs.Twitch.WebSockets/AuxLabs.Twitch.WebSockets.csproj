@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="../../../AuxLabs.Twitch.targets" />
+  <Import Project="../../AuxLabs.Twitch.targets" />
 
   <PropertyGroup>
     <Description>The core components for implementing any of Twitch's APIs that require WebSockets.</Description>

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\abstractions\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
-    <ProjectReference Include="..\abstractions\AuxLabs.Twitch.WebSockets\AuxLabs.Twitch.WebSockets.csproj" />
+    <ProjectReference Include="..\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+    <ProjectReference Include="..\AuxLabs.Twitch.WebSockets\AuxLabs.Twitch.WebSockets.csproj" />
   </ItemGroup>
 </Project>
