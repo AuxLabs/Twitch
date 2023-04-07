@@ -30,6 +30,9 @@ namespace AuxLabs.Twitch.Chat.Api
                 tags = ReadTags(ref data);
 
             payload.Prefix = new IrcPrefix(ReadPrefix(ref data));
+            if (payload.Prefix.ToString() == null) 
+                return payload;
+
             payload.CommandRaw = ReadCommand(ref data);
             payload.Command = EnumHelper.GetEnumValue<IrcCommand>(payload.CommandRaw);
             payload.Parameters = ReadParameters(ref data);
@@ -124,7 +127,8 @@ namespace AuxLabs.Twitch.Chat.Api
                     return result;
                 }
             }
-            throw new SerializationException("Irc message prefix was not found.");
+            remaining = remaining.Slice(0, remaining.Length - 1);
+            return null;
         }
 
         private static string ReadCommand(ref ReadOnlySpan<byte> remaining)
