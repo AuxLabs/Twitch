@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace AuxLabs.Twitch.Rest.Entities
 {
@@ -64,6 +65,8 @@ namespace AuxLabs.Twitch.Rest.Entities
             RawThumbnailUrl = model.ThumbnailUrl;
             IsMature = model.IsMature;
         }
+
+        public override string ToString() => User.ToString();
 
         public string GetThumbnailUrl(int width, int height)
             => RawThumbnailUrl.Replace("{width}x{height}", $"{width}x{height}");
