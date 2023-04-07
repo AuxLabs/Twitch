@@ -4,6 +4,7 @@ env:
   TWITCH_CLI_VERSION: "1.1.15"
   HOMEBREW_NO_ENV_HINTS: true
   HOMEBREW_NO_INSTALL_CLEANUP: true
+  NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
@@ -66,7 +67,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
       packages: write
     steps:
       - uses: actions/checkout@v3
@@ -75,8 +75,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
           source-url: https://nuget.pkg.github.com/AuxLabs/index.json
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}        
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
@@ -96,8 +94,8 @@ jobs:
           dotnet pack "./src/AuxLabs.Twitch.Rest/AuxLabs.Twitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.Chat/AuxLabs.Twitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.EventSub/AuxLabs.Twitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-      - name: Publish
-        run: dotnet nuget push "./pkgs/*.nupkg" --api-key ${GITHUB_TOKEN} --skip-duplicate --no-symbols
+      - name: Publish 
+        run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
 
 # Add a publish release to nuget job later
 
