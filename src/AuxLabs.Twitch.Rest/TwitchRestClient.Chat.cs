@@ -33,16 +33,30 @@ namespace AuxLabs.Twitch.Rest
         }
 
         // Paginate
-        public async Task<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(string channelId, int count = 20, CancellationToken? cancelToken = null)
+        public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(string channelId, int count = 20, CancellationToken? cancelToken = null)
         {
             IsUserAuthorized(out var identity);
-            var response = await API.GetChattersAsync(new GetChattersArgs
-            {
-                BroadcasterId = channelId,
-                ModeratorId = identity.UserId,
-                First = count
-            }, cancelToken);
-            return response.Data.Select(x => RestSimpleUser.Create(this, x)).ToImmutableArray();
+            return new PagedAsyncEnumerable<RestSimpleUser>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetChattersAsync(new GetChattersArgs
+                    {
+                        BroadcasterId = channelId,
+                        ModeratorId = identity.UserId,
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestSimpleUser.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                nextPage: (info, amount, cursor) =>
+                {
+                    if (amount != TwitchConstants.DefaultMaxPerPage)
+                        return false;
+                    info.Cursor = cursor;
+                    return true;
+                },
+                count: count);
         }
 
         public async Task<IReadOnlyCollection<RestGlobalEmote>> GetEmotesAsync(CancellationToken? cancelToken = null)
@@ -123,14 +137,14 @@ namespace AuxLabs.Twitch.Rest
             }, cancelToken);
         }
 
-        public async Task<RestSimpleChatUser> GetUserChatColorAsync(string userId, CancellationToken? cancelToken = null)
+        public async Task<RestChatUser> GetUserChatColorAsync(string userId, CancellationToken? cancelToken = null)
             => (await GetUserChatColorsAsync(new[] { userId }))?.SingleOrDefault();
-        public Task<IReadOnlyCollection<RestSimpleChatUser>> GetUserChatColorsAsync(params string[] userIds)
+        public Task<IReadOnlyCollection<RestChatUser>> GetUserChatColorsAsync(params string[] userIds)
             => GetUserChatColorsAsync(userIds, null);
-        public async Task<IReadOnlyCollection<RestSimpleChatUser>> GetUserChatColorsAsync(string[] userIds, CancellationToken? cancelToken = null)
+        public async Task<IReadOnlyCollection<RestChatUser>> GetUserChatColorsAsync(string[] userIds, CancellationToken? cancelToken = null)
         {
             var response = await API.GetUserChatColorsAsync(userIds, cancelToken);
-            return response.Data.Select(x => RestSimpleChatUser.Create(this, x)).ToImmutableArray();
+            return response.Data.Select(x => RestChatUser.Create(this, x)).ToImmutableArray();
         }
     }
 }

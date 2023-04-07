@@ -3,6 +3,7 @@ using AuxLabs.Twitch.Rest.Requests;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest
@@ -43,10 +44,32 @@ namespace AuxLabs.Twitch.Rest
         }
 
         // Paginate
-        public async Task<IReadOnlyCollection<RestBroadcast>> GetBroadcastsAsync(GetBroadcastsArgs args)
+        public IAsyncEnumerable<IReadOnlyCollection<RestBroadcast>> GetBroadcastsAsync(string[] userNames = null, string[] userIds = null, string[] gameIds = null, string[] languages = null,
+            int count = 20, CancellationToken? cancelToken = null)
         {
-            var response = await API.GetBroadcastsAsync(args);
-            return response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray();
+            return new PagedAsyncEnumerable<RestBroadcast>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetBroadcastsAsync(new GetBroadcastsArgs
+                    {
+                        UserNames = userNames,
+                        UserIds = userIds,
+                        GameIds = gameIds,
+                        Languages = languages,
+                        First = info.PageSize,
+                        After = info.Cursor
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                nextPage: (info, amount, cursor) =>
+                {
+                    if (amount != TwitchConstants.DefaultMaxPerPage)
+                        return false;
+                    info.Cursor = cursor;
+                    return true;
+                },
+                count: count);
         }
 
         // GetFollowedBroadcasts
