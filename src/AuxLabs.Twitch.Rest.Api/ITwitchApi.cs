@@ -224,16 +224,16 @@ namespace AuxLabs.Twitch.Rest.Api
         Task<TwitchResponse<Emote>> GetEmoteSetsAsync([QueryMap] GetEmoteSetsArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s list of custom chat badges. </summary>
-        /// <returns> A collection of <see cref="Badge"/> objects. </returns>
+        /// <returns> A collection of <see cref="BadgeSet"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         [Get("chat/badges")]
-        Task<TwitchResponse<Badge>> GetBadgesAsync([QueryMap] GetBadgesArgs args, CancellationToken? cancelToken = null);
+        Task<TwitchResponse<BadgeSet>> GetBadgesAsync([QueryMap] GetBadgesArgs args, CancellationToken? cancelToken = null);
 
         /// <summary> Gets Twitch’s list of chat badges, which users may use in any channel’s chat room. </summary>
-        /// <returns> A collection of <see cref="Badge"/> objects. </returns>
+        /// <returns> A collection of <see cref="BadgeSet"/> objects. </returns>
         /// <exception cref="TwitchRestException"> 401 Unauthorized </exception>
         [Get("chat/badges/global")]
-        Task<TwitchResponse<Badge>> GetBadgesAsync(CancellationToken? cancelToken = null);
+        Task<TwitchResponse<BadgeSet>> GetBadgesAsync(CancellationToken? cancelToken = null);
 
         /// <summary> Gets the broadcaster’s chat settings. </summary>
         /// <returns> A single <see cref="ChatSettings"/> object. </returns>

@@ -277,13 +277,13 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetEmoteSetsAsync(args, cancelToken);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Badge>> GetBadgesAsync(GetBadgesArgs args, CancellationToken? cancelToken = null)
+        public Task<TwitchResponse<BadgeSet>> GetBadgesAsync(GetBadgesArgs args, CancellationToken? cancelToken = null)
         {
             args.Validate();
             return _api.GetBadgesAsync(args, cancelToken);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<Badge>> GetBadgesAsync(CancellationToken? cancelToken = null)
+        public Task<TwitchResponse<BadgeSet>> GetBadgesAsync(CancellationToken? cancelToken = null)
             => _api.GetBadgesAsync(cancelToken);
         /// <inheritdoc/>
         public Task<TwitchResponse<ChatSettings>> GetChatSettingsAsync(GetChatSettingsArgs args, CancellationToken? cancelToken = null)
