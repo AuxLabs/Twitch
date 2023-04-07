@@ -74,13 +74,17 @@ namespace AuxLabs.Twitch.Chat
         internal readonly AsyncEvent<Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task>> _chatClearedEvent = new AsyncEvent<Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task>>();
 
         /// <summary> Triggered when a user is banned in a channel. </summary>
-        /// <remarks> Provides objects that represent the channel, the banned user, and the amount of time they were banned. The ban is permanent if time is null. </remarks>
-        public event Func<ChatChannel, ChatSimpleUser, TimeSpan?, Task> UserBanned
+        /// <remarks> 
+        ///     Provides objects that represent the channel, the banned user if cached, 
+        ///     or their user id, and the amount of time they were banned. The ban is 
+        ///     permanent if time is null. 
+        /// </remarks>
+        public event Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task> UserBanned
         {
             add { _userBannedEvent.Add(value); }
             remove { _userBannedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<ChatChannel, ChatSimpleUser, TimeSpan?, Task>> _userBannedEvent = new AsyncEvent<Func<ChatChannel, ChatSimpleUser, TimeSpan?, Task>>();
+        internal readonly AsyncEvent<Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task>> _userBannedEvent = new AsyncEvent<Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task>>();
 
         /// <summary> Triggered when a message is deleted in a channel. </summary>
         /// <remarks> Provides an object that represents the deleted message. </remarks>
@@ -135,6 +139,15 @@ namespace AuxLabs.Twitch.Chat
             remove { _messageReceivedEvent.Remove(value); }
         }
         internal readonly AsyncEvent<Func<ChatMessage, Task>> _messageReceivedEvent = new AsyncEvent<Func<ChatMessage, Task>>();
+
+        /// <summary> Triggered when a subscription message is received in a channel </summary>
+        /// <remarks> Provides an object that represents any type of subscription message. </remarks>
+        public event Func<ChatMessage, Task> SubscriptionMessageReceived
+        {
+            add { _subMessageReceivedEvent.Add(value); }
+            remove { _subMessageReceivedEvent.Remove(value); }
+        }
+        internal readonly AsyncEvent<Func<ChatMessage, Task>> _subMessageReceivedEvent = new AsyncEvent<Func<ChatMessage, Task>>();
 
         /// <summary> Triggered when the state of a channel is updated. </summary>
         /// <remarks> Provides the channel's state before the change, if cached, and the state after. </remarks>
