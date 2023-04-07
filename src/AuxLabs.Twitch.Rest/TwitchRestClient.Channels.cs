@@ -40,10 +40,10 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestChannel.Create(this, x)).ToImmutableArray();
         }
 
-        public async Task<IReadOnlyCollection<RestEditorUser>> GetChannelEditors(string channelId)
+        public async Task<IReadOnlyCollection<RestEditor>> GetChannelEditors(string channelId)
         {
             var response = await API.GetChannelEditorsAsync(channelId);
-            return response.Data.Select(x => RestEditorUser.Create(this, x)).ToImmutableArray();
+            return response.Data.Select(x => RestEditor.Create(this, x)).ToImmutableArray();
         }
 
         // Get Followed Channels

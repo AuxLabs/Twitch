@@ -3,17 +3,17 @@ using System;
 
 namespace AuxLabs.Twitch.Rest.Entities
 {
-    public class RestEditorUser : RestPartialUser
+    public class RestEditor : RestPartialUser
     {
         /// <summary>  </summary>
         public DateTime CreatedAt { get; private set; }
 
-        public RestEditorUser(TwitchRestClient twitch, string id)
+        public RestEditor(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
-        internal static RestEditorUser Create(TwitchRestClient twitch, ChannelEditor model)
+        internal static RestEditor Create(TwitchRestClient twitch, ChannelEditor model)
         {
-            var entity = new RestEditorUser(twitch, model.UserId);
+            var entity = new RestEditor(twitch, model.UserId);
             entity.Update(model);
             return entity;
         }
