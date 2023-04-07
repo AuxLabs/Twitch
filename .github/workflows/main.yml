@@ -94,7 +94,6 @@ jobs:
           
           dotnet pack "./src/AuxLabs.Twitch.Rest/AuxLabs.Twitch.Rest.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.Chat/AuxLabs.Twitch.Chat.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
-          dotnet pack "./src/AuxLabs.Twitch.PubSub/AuxLabs.Twitch.PubSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
           dotnet pack "./src/AuxLabs.Twitch.EventSub/AuxLabs.Twitch.EventSub.csproj" -c "Release" -o "./pkgs" --no-build /p:BuildNumber="$GITHUB_RUN_NUMBER"
       - name: Publish
         run: dotnet nuget push "./pkgs/*.nupkg" -k "$NUGET_AUTH_TOKEN"
