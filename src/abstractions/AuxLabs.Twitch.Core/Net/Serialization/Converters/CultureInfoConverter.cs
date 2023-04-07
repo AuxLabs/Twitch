@@ -12,7 +12,13 @@ namespace AuxLabs.Twitch
             var value = reader.GetString();
             if (value == null)
                 return CultureInfo.InvariantCulture;
-            return CultureInfo.GetCultureInfo(value);
+            try
+            {
+                return CultureInfo.GetCultureInfo(value);
+            } catch
+            {
+                return CultureInfo.InvariantCulture;
+            }
         }
 
         public override void Write(Utf8JsonWriter writer, CultureInfo value, JsonSerializerOptions options)
