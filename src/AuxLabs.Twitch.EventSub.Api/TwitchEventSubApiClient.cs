@@ -21,6 +21,8 @@ namespace AuxLabs.Twitch.EventSub.Api
         public event Action<EventSubFrame> UnknownEventReceived;
         /// <summary> Triggered when the server needs to terminate the connection. </summary>
         public event Action<Session> Reconnect;
+        /// <summary> Triggered whenever a notification payload is received. </summary>
+        public event Action<EventSubFrame> NotificationReceived;
 
         /// <summary> Triggered when a session is created after connection. </summary>
         public event Action<Session> SessionCreated;
@@ -211,6 +213,7 @@ namespace AuxLabs.Twitch.EventSub.Api
                     break;
 
                 case MessageType.Notification:
+                    NotificationReceived?.Invoke(frame);
                     var eventType = EventSubPayload.EventTypeSelector.SingleOrDefault(x => x.Key == frame.Payload.Subscription.Type).Value;
                     frame.Payload.Event = JsonSerializer.Deserialize((JsonElement)frame.Payload.Event, eventType);
 

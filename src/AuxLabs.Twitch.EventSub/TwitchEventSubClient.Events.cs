@@ -1,4 +1,5 @@
-﻿using AuxLabs.Twitch.EventSub.Models;
+﻿using AuxLabs.Twitch.EventSub.Api;
+using AuxLabs.Twitch.EventSub.Models;
 using AuxLabs.Twitch.Rest;
 using AuxLabs.Twitch.Rest.Entities;
 using System;
@@ -33,6 +34,14 @@ namespace AuxLabs.Twitch.EventSub
             remove { _reconnectEvent.Remove(value); }
         }
         internal readonly AsyncEvent<Func<Session, Task>> _reconnectEvent = new AsyncEvent<Func<Session, Task>>();
+
+        /// <summary> Triggered when a notification payload is received. </summary>
+        public event Func<EventSubFrame, Task> NotificationReceived
+        {
+            add { _notificationReceivedEvent.Add(value); }
+            remove { _notificationReceivedEvent.Remove(value); }
+        }
+        internal readonly AsyncEvent<Func<EventSubFrame, Task>> _notificationReceivedEvent = new AsyncEvent<Func<EventSubFrame, Task>>();
 
         #endregion
         #region Status
