@@ -156,7 +156,7 @@ namespace AuxLabs.Twitch.Rest
 
         public Task DeleteEventSubscriptionAsync(string subscriptionId)
             => API.DeleteEventSubscriptionAsync(subscriptionId);
-        
+
         #endregion
     }
 }

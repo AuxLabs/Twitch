@@ -1,8 +1,7 @@
 ﻿namespace AuxLabs.Twitch
 {
-    public interface IUser : IEntity<string>
+    public interface ISimpleUser : IPartialUser
     {
-        string Name { get; }
         string DisplayName { get; }
     }
 }

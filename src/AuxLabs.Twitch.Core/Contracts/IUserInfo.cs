@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.Twitch
 {
-    public interface IUserInfo : IUser
+    public interface IUserInfo : ISimpleUser
     {
     }
 }

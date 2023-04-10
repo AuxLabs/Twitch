@@ -2,7 +2,7 @@
 
 namespace AuxLabs.Twitch
 {
-    public interface IChatUser : IUser
+    public interface IChatUser : ISimpleUser
     {
         Color? Color { get; }
     }

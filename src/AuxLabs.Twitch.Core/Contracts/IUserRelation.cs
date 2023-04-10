@@ -1,6 +1,6 @@
 ﻿namespace AuxLabs.Twitch
 {
-    public interface IUserRelation : IUser
+    public interface IUserRelation : ISimpleUser
     {
         string RelatedId { get; }
         string RelatedName { get; }

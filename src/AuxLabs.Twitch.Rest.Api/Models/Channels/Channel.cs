@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.Twitch.Rest.Models
 {
-    public class Channel : IUser, IChannel
+    public class Channel : ISimpleUser, IChannel
     {
         /// <summary> An ID that uniquely identifies the broadcaster. </summary>
         [JsonInclude, JsonPropertyName("broadcaster_id")]
@@ -42,8 +42,8 @@ namespace AuxLabs.Twitch.Rest.Models
         [JsonInclude, JsonPropertyName("tags")]
         public IReadOnlyCollection<string> Tags { get; set; }
 
-        string IUser.Name { get => BroadcasterDisplayName; }
-        string IUser.DisplayName { get => BroadcasterDisplayName; }
+        string ISimpleUser.Name { get => BroadcasterDisplayName; }
+        string ISimpleUser.DisplayName { get => BroadcasterDisplayName; }
         string IEntity<string>.Id { get => BroadcasterId; }
         string IChannel.Name { get => BroadcasterName; }
     }
