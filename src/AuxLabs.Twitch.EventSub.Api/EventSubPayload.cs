@@ -66,7 +66,7 @@ namespace AuxLabs.Twitch.EventSub.Api
             [EventSubType.HypeTrainProgress] = typeof(HypeTrainEventArgs),
             [EventSubType.HypeTrainEnd] = typeof(HypeTrainEndedEventArgs),
 
-            [EventSubType.ShieldModeStart] = typeof(ShieldModeStartedEventArgs),
+            [EventSubType.ShieldModeStart] = typeof(ShieldModeEnabledEventArgs),
             [EventSubType.ShieldModeEnd] = typeof(ShieldModeEventArgs),
 
             [EventSubType.ShoutoutCreate] = typeof(ShoutoutCreatedEventArgs),

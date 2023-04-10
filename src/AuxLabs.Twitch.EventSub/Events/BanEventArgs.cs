@@ -1,19 +1,19 @@
 ﻿using AuxLabs.Twitch.EventSub.Entities;
 using System;
-using Model = AuxLabs.Twitch.EventSub.Models.BanEventArgs;
+using Ban = AuxLabs.Twitch.EventSub.Models.BanEventArgs;
 
 namespace AuxLabs.Twitch.EventSub
 {
     public class BanEventArgs
     {
         /// <summary>  </summary>
-        public EventSubUser User { get; private set; }
+        public EventSubSimpleUser User { get; private set; }
 
         /// <summary>  </summary>
-        public EventSubUser Moderator { get; private set; }
+        public EventSubSimpleUser Moderator { get; private set; }
 
         /// <summary>  </summary>
-        public EventSubUser Broadcaster { get; private set; }
+        public EventSubSimpleUser Broadcaster { get; private set; }
 
         /// <summary>  </summary>
         public string Reason { get; private set; }
@@ -27,13 +27,13 @@ namespace AuxLabs.Twitch.EventSub
         /// <summary>  </summary>
         public bool IsPermanent { get; private set; }
 
-        public static BanEventArgs Create(TwitchEventSubClient twitch, Model model)
+        public static BanEventArgs Create(TwitchEventSubClient twitch, Ban model)
         {
             return new BanEventArgs
             {
-                User = EventSubUser.Create(twitch, model, BanUserType.User),
-                Moderator = EventSubUser.Create(twitch, model, BanUserType.Moderator),
-                Broadcaster = EventSubUser.Create(twitch, model, BanUserType.Broadcaster),
+                User = EventSubSimpleUser.Create(twitch, model, ModelUserType.User),
+                Moderator = EventSubSimpleUser.Create(twitch, model, ModelUserType.Moderator),
+                Broadcaster = EventSubSimpleUser.Create(twitch, model, ModelUserType.Broadcaster),
                 Reason = model.Reason,
                 BannedAt = model.BannedAt, 
                 EndsAt = model.EndsAt, 

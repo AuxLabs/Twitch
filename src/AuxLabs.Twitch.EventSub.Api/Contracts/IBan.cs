@@ -2,8 +2,8 @@
 {
     public interface IBan
     {
-        public IUser User { get; }
-        public IUser Broadcaster { get;  }
-        public IUser Moderator { get; }
+        public ISimpleUser User { get; }
+        public ISimpleUser Broadcaster { get;  }
+        public ISimpleUser Moderator { get; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AuxLabs.Twitch.EventSub.Api;
+using AuxLabs.Twitch.EventSub.Entities;
 using AuxLabs.Twitch.EventSub.Models;
 using AuxLabs.Twitch.Rest;
 using AuxLabs.Twitch.Rest.Entities;
@@ -6,8 +7,6 @@ using AuxLabs.Twitch.Rest.Models;
 using AuxLabs.Twitch.Rest.Requests;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.EventSub
@@ -29,12 +28,76 @@ namespace AuxLabs.Twitch.EventSub
             Rest = new TwitchRestClient(config.RestConfig ??= new TwitchRestConfig());
             EventSub = new TwitchEventSubApiClient(config);
 
+            RegisterEvents();
+        }
+
+        private void RegisterEvents()
+        {
             EventSub.Connected += () => _connectedEvent.InvokeAsync().ConfigureAwait(false);
             EventSub.Reconnect += (s) => _reconnectEvent.InvokeAsync(s).ConfigureAwait(false);
             EventSub.Disconnected += (ex) => _disconnectedEvent.InvokeAsync(ex).ConfigureAwait(false);
-            EventSub.NotificationReceived += (p) => _notificationReceivedEvent.InvokeAsync(p).ConfigureAwait(false);
+
             EventSub.SessionCreated += (s) => _sessionCreatedEvent.InvokeAsync(s).ConfigureAwait(false);
             EventSub.Revocation += (s) => _revocationEvent.InvokeAsync(RestEventSubscription.Create(Rest, s)).ConfigureAwait(false);
+            EventSub.NotificationReceived += (p) => _notificationReceivedEvent.InvokeAsync(p).ConfigureAwait(false);
+
+            EventSub.ChannelUpdated += (args, sub) => Task.Delay(0);
+            EventSub.ChannelFollow += (args, sub) => Task.Delay(0);
+            EventSub.ChannelRaided += (args, sub) => Task.Delay(0);
+            EventSub.Subscription += (args, sub) => Task.Delay(0);
+            EventSub.SubscriptionEnded += (args, sub) => Task.Delay(0);
+            EventSub.SubscriptionGifted += (args, sub) => Task.Delay(0);
+            EventSub.SubscriptionMessage += (args, sub) => Task.Delay(0);
+            EventSub.BitsCheered += (args, sub) => Task.Delay(0);
+
+            EventSub.UserBanned += (args, sub) => _userBannedEvent.InvokeAsync(BanEventArgs.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.UserUnbanned += (args, sub) => Task.Delay(0);
+            EventSub.ModeratorAdded += (args, sub) => Task.Delay(0);
+            EventSub.ModeratorRemoved += (args, sub) => Task.Delay(0);
+
+            EventSub.RewardAdded += (args, sub) => Task.Delay(0);
+            EventSub.RewardUpdated += (args, sub) => Task.Delay(0);
+            EventSub.RewardRemoved += (args, sub) => Task.Delay(0);
+            EventSub.RedemptionAdded += (args, sub) => Task.Delay(0);
+            EventSub.RedemptionUpdated += (args, sub) => Task.Delay(0);
+
+            EventSub.PollStarted += (args, sub) => Task.Delay(0);
+            EventSub.PollProgress += (args, sub) => Task.Delay(0);
+            EventSub.PollEnded += (args, sub) => Task.Delay(0);
+
+            EventSub.PredictionStarted += (args, sub) => Task.Delay(0);
+            EventSub.PredictionProgress += (args, sub) => Task.Delay(0);
+            EventSub.PredictionLocked += (args, sub) => Task.Delay(0);
+            EventSub.PredictionEnded += (args, sub) => Task.Delay(0);
+
+            EventSub.CharityDonation += (args, sub) => Task.Delay(0);
+            EventSub.CharityCampaignStarted += (args, sub) => Task.Delay(0);
+            EventSub.CharityCampaignProgress += (args, sub) => Task.Delay(0);
+            EventSub.CharityCampaignEnded += (args, sub) => Task.Delay(0);
+
+            EventSub.DropEntitlementGranted += (args, sub) => Task.Delay(0);
+            EventSub.BitsTransactionCreated += (args, sub) => Task.Delay(0);
+
+            EventSub.GoalStarted += (args, sub) => Task.Delay(0);
+            EventSub.GoalProgress += (args, sub) => Task.Delay(0);
+            EventSub.GoalEnded += (args, sub) => Task.Delay(0);
+
+            EventSub.HypeTrainStarted += (args, sub) => Task.Delay(0);
+            EventSub.HypeTrainProgress += (args, sub) => Task.Delay(0);
+            EventSub.HypeTrainEnded += (args, sub) => Task.Delay(0);
+
+            EventSub.ShieldModeEnabled += (args, sub) => Task.Delay(0);
+            EventSub.ShieldModeDisabled += (args, sub) => Task.Delay(0);
+
+            EventSub.ShoutoutCreated += (args, sub) => Task.Delay(0);
+            EventSub.ShoutoutReceived += (args, sub) => Task.Delay(0);
+
+            EventSub.BroadcastStarted += (args, sub) => _broadcastStartedEvent.InvokeAsync(EventSubBroadcast.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.BroadcastEnded += (args, sub) => _broadcastEndedEvent.InvokeAsync(EventSubSimpleUser.Create(this, args), sub).ConfigureAwait(false);
+
+            EventSub.UserUpdated += (args, sub) => _userUpdatedEvent.InvokeAsync(EventSubUser.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.AuthorizationGranted += (args, sub) => Task.Delay(0);
+            EventSub.AuthorizationRevoked += (args, sub) => Task.Delay(0);
         }
 
         protected virtual void Dispose(bool disposing)
@@ -209,24 +272,5 @@ namespace AuxLabs.Twitch.EventSub
             => Rest.CreateEventSubscriptionAsync(args);
 
         #endregion
-
-        private async Task HandleEventAsync(EventSubFrame frame)
-        {
-            if (frame.Metadata.Type != MessageType.Notification)
-                return;
-
-            var eventType = EventSubPayload.EventTypeSelector.SingleOrDefault(x => x.Key == frame.Payload.Subscription.Type).Value;
-            var eventData = JsonSerializer.Deserialize((JsonElement)frame.Payload.Event, eventType);
-
-            switch (eventData)
-            {
-                case Models.BanEventArgs args:
-                    await _userBannedEvent.InvokeAsync(BanEventArgs.Create(this, args));
-                    break;
-
-                default:
-                    break;
-            }
-        }
     }
 }

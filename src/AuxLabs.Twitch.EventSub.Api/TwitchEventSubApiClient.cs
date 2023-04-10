@@ -111,9 +111,9 @@ namespace AuxLabs.Twitch.EventSub.Api
         public event Action<HypeTrainEndedEventArgs, EventSubscription> HypeTrainEnded;
 
         /// <summary> Sends a notification when the broadcaster activates Shield Mode. </summary>
-        public event Action<ShieldModeStartedEventArgs, EventSubscription> ShieldModeStarted;
+        public event Action<ShieldModeEnabledEventArgs, EventSubscription> ShieldModeEnabled;
         /// <summary> Sends a notification when the broadcaster deactivates Shield Mode. </summary>
-        public event Action<ShieldModeEventArgs, EventSubscription> ShieldModeEnded;
+        public event Action<ShieldModeEventArgs, EventSubscription> ShieldModeDisabled;
 
         /// <summary> Sends a notification when the specified broadcaster sends a Shoutout. </summary>
         public event Action<ShoutoutCreatedEventArgs, EventSubscription> ShoutoutCreated;
@@ -361,12 +361,12 @@ namespace AuxLabs.Twitch.EventSub.Api
                             HypeTrainEnded?.Invoke(args, frame.Payload.Subscription);
                             break;
 
-                        case ShieldModeStartedEventArgs args:
-                            ShieldModeStarted?.Invoke(args, frame.Payload.Subscription);
+                        case ShieldModeEnabledEventArgs args:
+                            ShieldModeEnabled?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case ShieldModeEventArgs args:
-                            ShieldModeEnded?.Invoke(args, frame.Payload.Subscription);
+                            ShieldModeDisabled?.Invoke(args, frame.Payload.Subscription);
                             break;
 
                         case ShoutoutCreatedEventArgs args:
