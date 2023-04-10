@@ -89,10 +89,21 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubEntity-1.html">EventSubEntity</a>&lt;<span class="xref">string</span>&gt;</div>
-    <div class="level2"><span class="xref">EventSubUser</span></div>
+    <div class="level2"><a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html">EventSubSimpleUser</a></div>
+    <div class="level3"><span class="xref">EventSubUser</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ISimpleUser</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_Name">EventSubSimpleUser.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_DisplayName">EventSubSimpleUser.DisplayName</a>
+    </div>
     <div>
       <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubEntity-1.html#AuxLabs_Twitch_EventSub_Entities_EventSubEntity_1_Id">EventSubEntity&lt;string&gt;.Id</a>
     </div>
@@ -101,7 +112,7 @@
   <h6><strong>Assembly</strong>: AuxLabs.Twitch.EventSub.dll</h6>
   <h5 id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EventSubUser : EventSubEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class EventSubUser : EventSubSimpleUser, ISimpleUser</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -132,14 +143,20 @@
     </thead>
     <tbody>
       <tr>
-        <td id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_DisplayName" data-uid="AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_DisplayName">DisplayName</a>
+        <td id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_Description" data-uid="AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description">
+          <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Description">Description</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_Name" data-uid="AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Name">Name</a>
+        <td id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_Email" data-uid="AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email">
+          <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Email">Email</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="AuxLabs_Twitch_EventSub_Entities_EventSubUser_IsEmailVerified" data-uid="AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified">
+          <a class="xref" href="AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_IsEmailVerified">IsEmailVerified</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -156,7 +173,7 @@
                     <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_Entities_EventSubUser.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.Entities.EventSubUser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/Entities/Users/EventSubUser.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/Entities/Users/EventSubUser.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

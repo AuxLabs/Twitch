@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IUserInfo
+    <title>Class ShieldModeEnabledEventArgs
  | AuxLabs.SimpleTwitch Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IUserInfo
+    <meta name="title" content="Class ShieldModeEnabledEventArgs
  | AuxLabs.SimpleTwitch Documentation ">
     <meta name="generator" content="docfx ">
   
@@ -78,31 +78,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.IUserInfo">
+            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs">
 
 
-  <h1 id="AuxLabs_Twitch_IUserInfo" data-uid="AuxLabs.Twitch.IUserInfo" class="text-break">Interface IUserInfo
+  <h1 id="AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs" data-uid="AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs" class="text-break">Class ShieldModeEnabledEventArgs
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html">ShieldModeEventArgs</a></div>
+    <div class="level2"><span class="xref">ShieldModeEnabledEventArgs</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="AuxLabs.Twitch.ISimpleUser.html#AuxLabs_Twitch_ISimpleUser_DisplayName">ISimpleUser.DisplayName</a>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_BroadcasterId">ShieldModeEventArgs.BroadcasterId</a>
     </div>
     <div>
-      <a class="xref" href="AuxLabs.Twitch.IPartialUser.html#AuxLabs_Twitch_IPartialUser_Name">IPartialUser.Name</a>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_BroadcasterName">ShieldModeEventArgs.BroadcasterName</a>
     </div>
     <div>
-      <a class="xref" href="AuxLabs.Twitch.IEntity-1.html#AuxLabs_Twitch_IEntity_1_Id">IEntity&lt;string&gt;.Id</a>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_BroadcasterDisplayName">ShieldModeEventArgs.BroadcasterDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_ModeratorId">ShieldModeEventArgs.ModeratorId</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_ModeratorName">ShieldModeEventArgs.ModeratorName</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEventArgs_ModeratorDisplayName">ShieldModeEventArgs.ModeratorDisplayName</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.dll</h6>
-  <h5 id="AuxLabs_Twitch_IUserInfo_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.html">EventSub</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.Models.html">Models</a></h6>
+  <h6><strong>Assembly</strong>: AuxLabs.Twitch.EventSub.Api.dll</h6>
+  <h5 id="AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IUserInfo : ISimpleUser, IPartialUser, IEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ShieldModeEnabledEventArgs : ShieldModeEventArgs</code></pre>
   </div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs_EnabledAt" data-uid="AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt">
+          <a class="xref" href="AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs_EnabledAt">EnabledAt</a>
+        </td>
+        <td class="markdown level1 summary"><p>The UTC timestamp of when the moderator activated Shield Mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
 
@@ -111,10 +145,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_IUserInfo.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.IUserInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Core/Contracts/IUserInfo.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub.Api/Models/Events/Moderation/ShieldModeStartedEventArgs.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

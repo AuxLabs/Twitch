@@ -9095,6 +9095,12 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorRemoved
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorRemoved
   nameWithType: TwitchEventSubApiClient.ModeratorRemoved
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.NotificationReceived
+  name: NotificationReceived
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_NotificationReceived
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.NotificationReceived
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.NotificationReceived
+  nameWithType: TwitchEventSubApiClient.NotificationReceived
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollEnded
   name: PollEnded
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollEnded
@@ -9224,18 +9230,18 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SessionCreated
   fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SessionCreated
   nameWithType: TwitchEventSubApiClient.SessionCreated
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnded
-  name: ShieldModeEnded
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeEnded
-  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnded
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnded
-  nameWithType: TwitchEventSubApiClient.ShieldModeEnded
-- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeStarted
-  name: ShieldModeStarted
-  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeStarted
-  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeStarted
-  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeStarted
-  nameWithType: TwitchEventSubApiClient.ShieldModeStarted
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeDisabled
+  name: ShieldModeDisabled
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeDisabled
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeDisabled
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeDisabled
+  nameWithType: TwitchEventSubApiClient.ShieldModeDisabled
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnabled
+  name: ShieldModeEnabled
+  href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeEnabled
+  commentId: E:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnabled
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnabled
+  nameWithType: TwitchEventSubApiClient.ShieldModeEnabled
 - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutCreated
   name: ShoutoutCreated
   href: api/AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutCreated
@@ -9450,6 +9456,70 @@ references:
   commentId: N:AuxLabs.Twitch.EventSub.Entities
   fullName: AuxLabs.Twitch.EventSub.Entities
   nameWithType: AuxLabs.Twitch.EventSub.Entities
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+  name: EventSubBroadcast
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html
+  commentId: T:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+  nameWithType: EventSubBroadcast
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name: EventSubBroadcast(TwitchEventSubClient, string)
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast__ctor_AuxLabs_Twitch_EventSub_TwitchEventSubClient_System_String_
+  commentId: M:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name.vb: New(TwitchEventSubClient, String)
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.EventSubBroadcast(AuxLabs.Twitch.EventSub.TwitchEventSubClient, string)
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.New(AuxLabs.Twitch.EventSub.TwitchEventSubClient, String)
+  nameWithType: EventSubBroadcast.EventSubBroadcast(TwitchEventSubClient, string)
+  nameWithType.vb: EventSubBroadcast.New(TwitchEventSubClient, String)
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.#ctor*
+  name: EventSubBroadcast
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast__ctor_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.EventSubBroadcast
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.New
+  nameWithType: EventSubBroadcast.EventSubBroadcast
+  nameWithType.vb: EventSubBroadcast.New
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_Broadcaster
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster
+  nameWithType: EventSubBroadcast.Broadcaster
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster*
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_Broadcaster_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.Broadcaster
+  nameWithType: EventSubBroadcast.Broadcaster
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType
+  name: BroadcastType
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_BroadcastType
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType
+  nameWithType: EventSubBroadcast.BroadcastType
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType*
+  name: BroadcastType
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_BroadcastType_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.BroadcastType
+  nameWithType: EventSubBroadcast.BroadcastType
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt
+  name: StartedAt
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_StartedAt
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt
+  nameWithType: EventSubBroadcast.StartedAt
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt*
+  name: StartedAt
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html#AuxLabs_Twitch_EventSub_Entities_EventSubBroadcast_StartedAt_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.StartedAt
+  nameWithType: EventSubBroadcast.StartedAt
 - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEntity`1
   name: EventSubEntity<T>
   href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEntity-1.html
@@ -9476,6 +9546,57 @@ references:
   fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubEntity(Of T).Id
   nameWithType: EventSubEntity<T>.Id
   nameWithType.vb: EventSubEntity(Of T).Id
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+  name: EventSubSimpleUser
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html
+  commentId: T:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+  nameWithType: EventSubSimpleUser
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name: EventSubSimpleUser(TwitchEventSubClient, string)
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser__ctor_AuxLabs_Twitch_EventSub_TwitchEventSubClient_System_String_
+  commentId: M:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name.vb: New(TwitchEventSubClient, String)
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.EventSubSimpleUser(AuxLabs.Twitch.EventSub.TwitchEventSubClient, string)
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.New(AuxLabs.Twitch.EventSub.TwitchEventSubClient, String)
+  nameWithType: EventSubSimpleUser.EventSubSimpleUser(TwitchEventSubClient, string)
+  nameWithType.vb: EventSubSimpleUser.New(TwitchEventSubClient, String)
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.#ctor*
+  name: EventSubSimpleUser
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser__ctor_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.EventSubSimpleUser
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.New
+  nameWithType: EventSubSimpleUser.EventSubSimpleUser
+  nameWithType.vb: EventSubSimpleUser.New
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName
+  name: DisplayName
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_DisplayName
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName
+  nameWithType: EventSubSimpleUser.DisplayName
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName*
+  name: DisplayName
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_DisplayName_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.DisplayName
+  nameWithType: EventSubSimpleUser.DisplayName
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name
+  name: Name
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_Name
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name
+  nameWithType: EventSubSimpleUser.Name
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubSimpleUser_Name_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.Name
+  nameWithType: EventSubSimpleUser.Name
 - uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser
   name: EventSubUser
   href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html
@@ -9501,32 +9622,45 @@ references:
   fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubUser.New
   nameWithType: EventSubUser.EventSubUser
   nameWithType.vb: EventSubUser.New
-- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName
-  name: DisplayName
-  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_DisplayName
-  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName
-  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName
-  nameWithType: EventSubUser.DisplayName
-- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName*
-  name: DisplayName
-  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_DisplayName_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description
+  name: Description
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Description
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description
+  nameWithType: EventSubUser.Description
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Description_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description
   isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.DisplayName
-  nameWithType: EventSubUser.DisplayName
-- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name
-  name: Name
-  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Name
-  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name
-  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name
-  nameWithType: EventSubUser.Name
-- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name*
-  name: Name
-  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Name_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Description
+  nameWithType: EventSubUser.Description
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email
+  name: Email
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Email
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email
+  nameWithType: EventSubUser.Email
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email*
+  name: Email
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_Email_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email
   isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Name
-  nameWithType: EventSubUser.Name
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.Email
+  nameWithType: EventSubUser.Email
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified
+  name: IsEmailVerified
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_IsEmailVerified
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified
+  nameWithType: EventSubUser.IsEmailVerified
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified*
+  name: IsEmailVerified
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubUser.html#AuxLabs_Twitch_EventSub_Entities_EventSubUser_IsEmailVerified_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubUser.IsEmailVerified
+  nameWithType: EventSubUser.IsEmailVerified
 - uid: AuxLabs.Twitch.EventSub.IBan
   name: IBan
   href: api/AuxLabs.Twitch.EventSub.IBan.html
@@ -12399,6 +12533,25 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.EventSub.Models.Session.Status
   nameWithType: Session.Status
+- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs
+  name: ShieldModeEnabledEventArgs
+  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.html
+  commentId: T:AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs
+  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs
+  nameWithType: ShieldModeEnabledEventArgs
+- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt
+  name: EnabledAt
+  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs_EnabledAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt
+  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt
+  nameWithType: ShieldModeEnabledEventArgs.EnabledAt
+- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt*
+  name: EnabledAt
+  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeEnabledEventArgs_EnabledAt_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs.EnabledAt
+  nameWithType: ShieldModeEnabledEventArgs.EnabledAt
 - uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEndedEventArgs
   name: ShieldModeEndedEventArgs
   href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeEndedEventArgs.html
@@ -12502,25 +12655,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs.ModeratorName
   nameWithType: ShieldModeEventArgs.ModeratorName
-- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs
-  name: ShieldModeStartedEventArgs
-  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.html
-  commentId: T:AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs
-  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs
-  nameWithType: ShieldModeStartedEventArgs
-- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt
-  name: StartedAt
-  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeStartedEventArgs_StartedAt
-  commentId: P:AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt
-  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt
-  nameWithType: ShieldModeStartedEventArgs.StartedAt
-- uid: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt*
-  name: StartedAt
-  href: api/AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.html#AuxLabs_Twitch_EventSub_Models_ShieldModeStartedEventArgs_StartedAt_
-  commentId: Overload:AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.EventSub.Models.ShieldModeStartedEventArgs.StartedAt
-  nameWithType: ShieldModeStartedEventArgs.StartedAt
 - uid: AuxLabs.Twitch.EventSub.Models.ShoutoutCreatedEventArgs
   name: ShoutoutCreatedEventArgs
   href: api/AuxLabs.Twitch.EventSub.Models.ShoutoutCreatedEventArgs.html
@@ -13291,6 +13425,18 @@ references:
   fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.New
   nameWithType: TwitchEventSubClient.TwitchEventSubClient
   nameWithType.vb: TwitchEventSubClient.New
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  name: BroadcastEnded
+  href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_BroadcastEnded
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  nameWithType: TwitchEventSubClient.BroadcastEnded
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  name: BroadcastStarted
+  href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_BroadcastStarted
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  nameWithType: TwitchEventSubClient.BroadcastStarted
 - uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Connected
   name: Connected
   href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_Connected
@@ -13383,6 +13529,12 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
   nameWithType: TwitchEventSubClient.Identity
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  name: NotificationReceived
+  href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_NotificationReceived
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  nameWithType: TwitchEventSubClient.NotificationReceived
 - uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Reconnect
   name: Reconnect
   href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_Reconnect
@@ -13710,6 +13862,12 @@ references:
   commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
   fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
   nameWithType: TwitchEventSubClient.UserBanned
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  name: UserUpdated
+  href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_UserUpdated
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  nameWithType: TwitchEventSubClient.UserUpdated
 - uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(System.String)
   name: ValidateAsync(string)
   href: api/AuxLabs.Twitch.EventSub.TwitchEventSubClient.html#AuxLabs_Twitch_EventSub_TwitchEventSubClient_ValidateAsync_System_String_
@@ -14504,6 +14662,25 @@ references:
   fullName.vb: AuxLabs.Twitch.InterfaceConverterFactory(Of TImpl, TInter).InterfaceType
   nameWithType: InterfaceConverterFactory<TImpl, TInter>.InterfaceType
   nameWithType.vb: InterfaceConverterFactory(Of TImpl, TInter).InterfaceType
+- uid: AuxLabs.Twitch.IPartialUser
+  name: IPartialUser
+  href: api/AuxLabs.Twitch.IPartialUser.html
+  commentId: T:AuxLabs.Twitch.IPartialUser
+  fullName: AuxLabs.Twitch.IPartialUser
+  nameWithType: IPartialUser
+- uid: AuxLabs.Twitch.IPartialUser.Name
+  name: Name
+  href: api/AuxLabs.Twitch.IPartialUser.html#AuxLabs_Twitch_IPartialUser_Name
+  commentId: P:AuxLabs.Twitch.IPartialUser.Name
+  fullName: AuxLabs.Twitch.IPartialUser.Name
+  nameWithType: IPartialUser.Name
+- uid: AuxLabs.Twitch.IPartialUser.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.IPartialUser.html#AuxLabs_Twitch_IPartialUser_Name_
+  commentId: Overload:AuxLabs.Twitch.IPartialUser.Name
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.IPartialUser.Name
+  nameWithType: IPartialUser.Name
 - uid: AuxLabs.Twitch.IRateLimiter
   name: IRateLimiter
   href: api/AuxLabs.Twitch.IRateLimiter.html
@@ -14542,6 +14719,25 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.IRateLimiter.UpdateLimit
   nameWithType: IRateLimiter.UpdateLimit
+- uid: AuxLabs.Twitch.ISimpleUser
+  name: ISimpleUser
+  href: api/AuxLabs.Twitch.ISimpleUser.html
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+  nameWithType: ISimpleUser
+- uid: AuxLabs.Twitch.ISimpleUser.DisplayName
+  name: DisplayName
+  href: api/AuxLabs.Twitch.ISimpleUser.html#AuxLabs_Twitch_ISimpleUser_DisplayName
+  commentId: P:AuxLabs.Twitch.ISimpleUser.DisplayName
+  fullName: AuxLabs.Twitch.ISimpleUser.DisplayName
+  nameWithType: ISimpleUser.DisplayName
+- uid: AuxLabs.Twitch.ISimpleUser.DisplayName*
+  name: DisplayName
+  href: api/AuxLabs.Twitch.ISimpleUser.html#AuxLabs_Twitch_ISimpleUser_DisplayName_
+  commentId: Overload:AuxLabs.Twitch.ISimpleUser.DisplayName
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.ISimpleUser.DisplayName
+  nameWithType: ISimpleUser.DisplayName
 - uid: AuxLabs.Twitch.IUpdatable
   name: IUpdatable
   href: api/AuxLabs.Twitch.IUpdatable.html
@@ -14561,38 +14757,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.IUpdatable.UpdateAsync
   nameWithType: IUpdatable.UpdateAsync
-- uid: AuxLabs.Twitch.IUser
-  name: IUser
-  href: api/AuxLabs.Twitch.IUser.html
-  commentId: T:AuxLabs.Twitch.IUser
-  fullName: AuxLabs.Twitch.IUser
-  nameWithType: IUser
-- uid: AuxLabs.Twitch.IUser.DisplayName
-  name: DisplayName
-  href: api/AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_DisplayName
-  commentId: P:AuxLabs.Twitch.IUser.DisplayName
-  fullName: AuxLabs.Twitch.IUser.DisplayName
-  nameWithType: IUser.DisplayName
-- uid: AuxLabs.Twitch.IUser.DisplayName*
-  name: DisplayName
-  href: api/AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_DisplayName_
-  commentId: Overload:AuxLabs.Twitch.IUser.DisplayName
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.IUser.DisplayName
-  nameWithType: IUser.DisplayName
-- uid: AuxLabs.Twitch.IUser.Name
-  name: Name
-  href: api/AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_Name
-  commentId: P:AuxLabs.Twitch.IUser.Name
-  fullName: AuxLabs.Twitch.IUser.Name
-  nameWithType: IUser.Name
-- uid: AuxLabs.Twitch.IUser.Name*
-  name: Name
-  href: api/AuxLabs.Twitch.IUser.html#AuxLabs_Twitch_IUser_Name_
-  commentId: Overload:AuxLabs.Twitch.IUser.Name
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.IUser.Name
-  nameWithType: IUser.Name
 - uid: AuxLabs.Twitch.IUserFollow
   name: IUserFollow
   href: api/AuxLabs.Twitch.IUserFollow.html
@@ -21008,90 +21172,142 @@ references:
   commentId: T:AuxLabs.Twitch.Rest.Models.Badge
   fullName: AuxLabs.Twitch.Rest.Models.Badge
   nameWithType: Badge
-- uid: AuxLabs.Twitch.Rest.Models.Badge.SetId
-  name: SetId
-  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_SetId
-  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.SetId
-  fullName: AuxLabs.Twitch.Rest.Models.Badge.SetId
-  nameWithType: Badge.SetId
-- uid: AuxLabs.Twitch.Rest.Models.Badge.SetId*
-  name: SetId
-  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_SetId_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.SetId
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  name: ClickAction
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_ClickAction
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  nameWithType: Badge.ClickAction
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickAction*
+  name: ClickAction
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_ClickAction_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.ClickAction
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.Badge.SetId
-  nameWithType: Badge.SetId
-- uid: AuxLabs.Twitch.Rest.Models.Badge.Versions
-  name: Versions
-  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Versions
-  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Versions
-  fullName: AuxLabs.Twitch.Rest.Models.Badge.Versions
-  nameWithType: Badge.Versions
-- uid: AuxLabs.Twitch.Rest.Models.Badge.Versions*
-  name: Versions
-  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Versions_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Versions
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  nameWithType: Badge.ClickAction
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  name: ClickUrl
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_ClickUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  nameWithType: Badge.ClickUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl*
+  name: ClickUrl
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_ClickUrl_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.Badge.Versions
-  nameWithType: Badge.Versions
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion
-  name: BadgeVersion
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html
-  commentId: T:AuxLabs.Twitch.Rest.Models.BadgeVersion
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion
-  nameWithType: BadgeVersion
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  nameWithType: Badge.ClickUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Description
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Description
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Description
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Description
+  nameWithType: Badge.Description
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Description_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Description
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Description
+  nameWithType: Badge.Description
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Id
   name: Id
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_Id
-  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeVersion.Id
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.Id
-  nameWithType: BadgeVersion.Id
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.Id*
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Id
+  nameWithType: Badge.Id
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Id*
   name: Id
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_Id_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeVersion.Id
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Id_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Id
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.Id
-  nameWithType: BadgeVersion.Id
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Id
+  nameWithType: Badge.Id
+- uid: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
   name: LargeImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_LargeImageUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl
-  nameWithType: BadgeVersion.LargeImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl*
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_LargeImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  nameWithType: Badge.LargeImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl*
   name: LargeImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_LargeImageUrl_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_LargeImageUrl_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.LargeImageUrl
-  nameWithType: BadgeVersion.LargeImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  nameWithType: Badge.LargeImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
   name: MediumImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_MediumImageUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl
-  nameWithType: BadgeVersion.MediumImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl*
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_MediumImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  nameWithType: Badge.MediumImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl*
   name: MediumImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_MediumImageUrl_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_MediumImageUrl_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.MediumImageUrl
-  nameWithType: BadgeVersion.MediumImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  nameWithType: Badge.MediumImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
   name: SmallImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_SmallImageUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl
-  nameWithType: BadgeVersion.SmallImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl*
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_SmallImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  nameWithType: Badge.SmallImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl*
   name: SmallImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.BadgeVersion.html#AuxLabs_Twitch_Rest_Models_BadgeVersion_SmallImageUrl_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_SmallImageUrl_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
   isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.BadgeVersion.SmallImageUrl
-  nameWithType: BadgeVersion.SmallImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  nameWithType: Badge.SmallImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Title
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Title
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Title
+  nameWithType: Badge.Title
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Title*
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Models.Badge.html#AuxLabs_Twitch_Rest_Models_Badge_Title_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Title
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Title
+  nameWithType: Badge.Title
+- uid: AuxLabs.Twitch.Rest.Models.BadgeSet
+  name: BadgeSet
+  href: api/AuxLabs.Twitch.Rest.Models.BadgeSet.html
+  commentId: T:AuxLabs.Twitch.Rest.Models.BadgeSet
+  fullName: AuxLabs.Twitch.Rest.Models.BadgeSet
+  nameWithType: BadgeSet
+- uid: AuxLabs.Twitch.Rest.Models.BadgeSet.SetId
+  name: SetId
+  href: api/AuxLabs.Twitch.Rest.Models.BadgeSet.html#AuxLabs_Twitch_Rest_Models_BadgeSet_SetId
+  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeSet.SetId
+  fullName: AuxLabs.Twitch.Rest.Models.BadgeSet.SetId
+  nameWithType: BadgeSet.SetId
+- uid: AuxLabs.Twitch.Rest.Models.BadgeSet.SetId*
+  name: SetId
+  href: api/AuxLabs.Twitch.Rest.Models.BadgeSet.html#AuxLabs_Twitch_Rest_Models_BadgeSet_SetId_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeSet.SetId
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Models.BadgeSet.SetId
+  nameWithType: BadgeSet.SetId
+- uid: AuxLabs.Twitch.Rest.Models.BadgeSet.Versions
+  name: Versions
+  href: api/AuxLabs.Twitch.Rest.Models.BadgeSet.html#AuxLabs_Twitch_Rest_Models_BadgeSet_Versions
+  commentId: P:AuxLabs.Twitch.Rest.Models.BadgeSet.Versions
+  fullName: AuxLabs.Twitch.Rest.Models.BadgeSet.Versions
+  nameWithType: BadgeSet.Versions
+- uid: AuxLabs.Twitch.Rest.Models.BadgeSet.Versions*
+  name: Versions
+  href: api/AuxLabs.Twitch.Rest.Models.BadgeSet.html#AuxLabs_Twitch_Rest_Models_BadgeSet_Versions_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.BadgeSet.Versions
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Models.BadgeSet.Versions
+  nameWithType: BadgeSet.Versions
 - uid: AuxLabs.Twitch.Rest.Models.Ban
   name: Ban
   href: api/AuxLabs.Twitch.Rest.Models.Ban.html
