@@ -52,6 +52,11 @@ namespace AuxLabs.Twitch.Chat
             Rest = new TwitchRestClient(config.RestConfig ??= new TwitchRestConfig());
             IRC = new TwitchChatApiClient(url, config);
 
+            RegisterEvents();
+        }
+
+        private void RegisterEvents()
+        {
             IRC.Connected += () => _connectedEvent.InvokeAsync().ConfigureAwait(false);
             IRC.Disconnected += ex => _disconnectedEvent.InvokeAsync(ex).ConfigureAwait(false);
             IRC.UnknownEventReceived += payload => _unknownEventReceivedEvent.InvokeAsync(payload).ConfigureAwait(false);
@@ -240,23 +245,23 @@ namespace AuxLabs.Twitch.Chat
             _channels[channel.Id] = channel;
             _channelNameMap[channel.Name] = channel.Id;
         }
-        //internal ChatSimpleChannel RemoveChannel(string id)
-        //{
-        //    if (id == null) return null;
-        //    if (_channels.TryRemove(id, out var channel))
-        //    {
-        //        _channelNameMap.Remove(channel.Name, out _);
-        //        return channel;
-        //    }
-        //    return null;
-        //}
-        //internal ChatSimpleChannel RemoveChannelByName(string name)
-        //{
-        //    if (name == null) return null;
-        //    if (_channelNameMap.TryGetValue(name, out var id))
-        //        return RemoveChannel(id);
-        //    return null;
-        //}
+        internal ChatSimpleChannel RemoveChannel(string id)
+        {
+            if (id == null) return null;
+            if (_channels.TryRemove(id, out var channel))
+            {
+                _channelNameMap.Remove(channel.Name, out _);
+                return channel;
+            }
+            return null;
+        }
+        internal ChatSimpleChannel RemoveChannelByName(string name)
+        {
+            if (name == null) return null;
+            if (_channelNameMap.TryGetValue(name, out var id))
+                return RemoveChannel(id);
+            return null;
+        }
 
         #endregion
         #region Handle Events
@@ -321,8 +326,8 @@ namespace AuxLabs.Twitch.Chat
         {
             if (args.UserName == CurrentName)
             {
-                //var channel = RemoveChannelByName(args.ChannelName);
-                //_channelLeftEvent.InvokeAsync(channel).ConfigureAwait(false);
+                var channel = RemoveChannelByName(args.ChannelName);
+                _channelLeftEvent.InvokeAsync(channel).ConfigureAwait(false);
             }
             else
             {
@@ -350,15 +355,7 @@ namespace AuxLabs.Twitch.Chat
             var beforeChannel = GetChannelByName(args.ChannelName);
             var channel = ChatChannel.Create(this, args);
 
-            if (beforeChannel != null)      // RoomState is a channel updated event
-            {
-                beforeChannel.Update(args);
-                AddChannel(beforeChannel);
-            } else                          // RoomState is a post-join event
-            {
-                AddChannel(channel);
-            }
-
+            AddChannel(channel);
             _channelStateUpdated.InvokeAsync(beforeChannel as ChatChannel, channel).ConfigureAwait(false);
         }
 
@@ -410,9 +407,6 @@ namespace AuxLabs.Twitch.Chat
                         var raider = ChatRaidUser.Create(this, raidTags);
                         _channelRaidedEvent.InvokeAsync(raider, channel, raidTags.RaiderViewerCount).ConfigureAwait(false);
                     }
-                    break;
-
-                case RitualTags ritualTags: // Forward this through MessageReceived
                     break;
 
                 case SubscriptionGiftTags subGiftTags:

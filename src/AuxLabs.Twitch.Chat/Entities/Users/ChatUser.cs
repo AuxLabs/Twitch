@@ -39,7 +39,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             IsTurbo = model.Tags.IsTurbo;
         }
 
-        internal new static ChatUser Create(TwitchChatClient twitch, Whisper model)
+        internal static ChatUser Create(TwitchChatClient twitch, Whisper model)
         {
             var entity = new ChatUser(twitch, model.Tags.AuthorId);
             entity.Update(model);
@@ -53,7 +53,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             IsTurbo = model.Tags.IsTurbo;
         }
 
-        internal new static ChatUser Create(TwitchChatClient twitch, GlobalState model)
+        internal static ChatUser Create(TwitchChatClient twitch, GlobalState model)
         {
             var entity = new ChatUser(twitch, model.UserId);
             entity.Update(model);
@@ -68,7 +68,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             IsTurbo = model.IsTurbo;
         }
 
-        internal new static ChatChannelUser Create(TwitchChatClient twitch, UserState model)
+        internal static ChatChannelUser Create(TwitchChatClient twitch, UserState model)
         {
             var entity = new ChatChannelUser(twitch, model.Tags.UserId);
             entity.Update(model);
