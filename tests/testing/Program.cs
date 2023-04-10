@@ -15,7 +15,6 @@ using AuxLabs.Twitch;
 using AuxLabs.Twitch.Chat;
 using AuxLabs.Twitch.Chat.Entities;
 
-
 int msgTotal = 0;
 var timer = new Timer(OnTimer, null, TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(1));
 
