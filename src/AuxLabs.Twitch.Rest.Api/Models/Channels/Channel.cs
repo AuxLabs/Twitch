@@ -42,7 +42,7 @@ namespace AuxLabs.Twitch.Rest.Models
         [JsonInclude, JsonPropertyName("tags")]
         public IReadOnlyCollection<string> Tags { get; set; }
 
-        string ISimpleUser.Name { get => BroadcasterDisplayName; }
+        string IPartialUser.Name { get => BroadcasterName; }
         string ISimpleUser.DisplayName { get => BroadcasterDisplayName; }
         string IEntity<string>.Id { get => BroadcasterId; }
         string IChannel.Name { get => BroadcasterName; }
