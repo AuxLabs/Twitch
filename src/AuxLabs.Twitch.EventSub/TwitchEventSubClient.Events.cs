@@ -1,8 +1,6 @@
 ﻿using AuxLabs.Twitch.EventSub.Api;
 using AuxLabs.Twitch.EventSub.Entities;
 using AuxLabs.Twitch.EventSub.Models;
-using AuxLabs.Twitch.Rest.Entities;
-using AuxLabs.Twitch.Rest.Models;
 using System;
 using System.Threading.Tasks;
 
@@ -56,12 +54,12 @@ namespace AuxLabs.Twitch.EventSub
         internal readonly AsyncEvent<Func<Session, Task>> _sessionCreatedEvent = new AsyncEvent<Func<Session, Task>>();
 
         /// <summary>  </summary>
-        public event Func<RestEventSubscription, Task> Revocation
+        public event Func<EventSubEventSubscription, Task> Revocation
         {
             add { _revocationEvent.Add(value); }
             remove { _revocationEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<RestEventSubscription, Task>> _revocationEvent = new AsyncEvent<Func<RestEventSubscription, Task>>();
+        internal readonly AsyncEvent<Func<EventSubEventSubscription, Task>> _revocationEvent = new AsyncEvent<Func<EventSubEventSubscription, Task>>();
 
         #endregion
         #region Channel
@@ -79,12 +77,12 @@ namespace AuxLabs.Twitch.EventSub
         #region Moderation
 
         /// <summary>  </summary>
-        public event Func<BanEventArgs, EventSubscription, Task> UserBanned
+        public event Func<BanEventArgs, EventSubEventSubscription, Task> UserBanned
         {
             add { _userBannedEvent.Add(value); }
             remove { _userBannedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<BanEventArgs, EventSubscription, Task>> _userBannedEvent = new AsyncEvent<Func<BanEventArgs, EventSubscription, Task>>();
+        internal readonly AsyncEvent<Func<BanEventArgs, EventSubEventSubscription, Task>> _userBannedEvent = new AsyncEvent<Func<BanEventArgs, EventSubEventSubscription, Task>>();
 
         // UserUnbanned
         // ModeratorAdded
@@ -152,31 +150,31 @@ namespace AuxLabs.Twitch.EventSub
         #region Broadcasts
 
         /// <summary>  </summary>
-        public event Func<EventSubBroadcast, EventSubscription, Task> BroadcastStarted
+        public event Func<EventSubBroadcast, EventSubEventSubscription, Task> BroadcastStarted
         {
             add { _broadcastStartedEvent.Add(value); }
             remove { _broadcastStartedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<EventSubBroadcast, EventSubscription, Task>> _broadcastStartedEvent = new AsyncEvent<Func<EventSubBroadcast, EventSubscription, Task>>();
+        internal readonly AsyncEvent<Func<EventSubBroadcast, EventSubEventSubscription, Task>> _broadcastStartedEvent = new AsyncEvent<Func<EventSubBroadcast, EventSubEventSubscription, Task>>();
 
         /// <summary>  </summary>
-        public event Func<EventSubSimpleUser, EventSubscription, Task> BroadcastEnded
+        public event Func<EventSubSimpleUser, EventSubEventSubscription, Task> BroadcastEnded
         {
             add { _broadcastEndedEvent.Add(value); }
             remove { _broadcastEndedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<EventSubSimpleUser, EventSubscription, Task>> _broadcastEndedEvent = new AsyncEvent<Func<EventSubSimpleUser, EventSubscription, Task>>();
+        internal readonly AsyncEvent<Func<EventSubSimpleUser, EventSubEventSubscription, Task>> _broadcastEndedEvent = new AsyncEvent<Func<EventSubSimpleUser, EventSubEventSubscription, Task>>();
 
         #endregion
         #region User
 
         /// <summary>  </summary>
-        public event Func<EventSubUser, EventSubscription, Task> UserUpdated
+        public event Func<EventSubUser, EventSubEventSubscription, Task> UserUpdated
         {
             add { _userUpdatedEvent.Add(value); }
             remove { _userUpdatedEvent.Remove(value); }
         }
-        internal readonly AsyncEvent<Func<EventSubUser, EventSubscription, Task>> _userUpdatedEvent = new AsyncEvent<Func<EventSubUser, EventSubscription, Task>>();
+        internal readonly AsyncEvent<Func<EventSubUser, EventSubEventSubscription, Task>> _userUpdatedEvent = new AsyncEvent<Func<EventSubUser, EventSubEventSubscription, Task>>();
 
         // AuthorizationGranted
         // AuthorizationRevoked

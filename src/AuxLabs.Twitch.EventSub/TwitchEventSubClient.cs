@@ -38,7 +38,7 @@ namespace AuxLabs.Twitch.EventSub
             EventSub.Disconnected += (ex) => _disconnectedEvent.InvokeAsync(ex).ConfigureAwait(false);
 
             EventSub.SessionCreated += (s) => _sessionCreatedEvent.InvokeAsync(s).ConfigureAwait(false);
-            EventSub.Revocation += (s) => _revocationEvent.InvokeAsync(RestEventSubscription.Create(Rest, s)).ConfigureAwait(false);
+            EventSub.Revocation += (sub) => _revocationEvent.InvokeAsync(EventSubEventSubscription.Create(this, sub)).ConfigureAwait(false);
             EventSub.NotificationReceived += (p) => _notificationReceivedEvent.InvokeAsync(p).ConfigureAwait(false);
 
             EventSub.ChannelUpdated += (args, sub) => Task.Delay(0);
@@ -50,7 +50,7 @@ namespace AuxLabs.Twitch.EventSub
             EventSub.SubscriptionMessage += (args, sub) => Task.Delay(0);
             EventSub.BitsCheered += (args, sub) => Task.Delay(0);
 
-            EventSub.UserBanned += (args, sub) => _userBannedEvent.InvokeAsync(BanEventArgs.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.UserBanned += (args, sub) => _userBannedEvent.InvokeAsync(BanEventArgs.Create(this, args), EventSubEventSubscription.Create(this, sub)).ConfigureAwait(false);
             EventSub.UserUnbanned += (args, sub) => Task.Delay(0);
             EventSub.ModeratorAdded += (args, sub) => Task.Delay(0);
             EventSub.ModeratorRemoved += (args, sub) => Task.Delay(0);
@@ -92,10 +92,10 @@ namespace AuxLabs.Twitch.EventSub
             EventSub.ShoutoutCreated += (args, sub) => Task.Delay(0);
             EventSub.ShoutoutReceived += (args, sub) => Task.Delay(0);
 
-            EventSub.BroadcastStarted += (args, sub) => _broadcastStartedEvent.InvokeAsync(EventSubBroadcast.Create(this, args), sub).ConfigureAwait(false);
-            EventSub.BroadcastEnded += (args, sub) => _broadcastEndedEvent.InvokeAsync(EventSubSimpleUser.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.BroadcastStarted += (args, sub) => _broadcastStartedEvent.InvokeAsync(EventSubBroadcast.Create(this, args), EventSubEventSubscription.Create(this, sub)).ConfigureAwait(false);
+            EventSub.BroadcastEnded += (args, sub) => _broadcastEndedEvent.InvokeAsync(EventSubSimpleUser.Create(this, args), EventSubEventSubscription.Create(this, sub)).ConfigureAwait(false);
 
-            EventSub.UserUpdated += (args, sub) => _userUpdatedEvent.InvokeAsync(EventSubUser.Create(this, args), sub).ConfigureAwait(false);
+            EventSub.UserUpdated += (args, sub) => _userUpdatedEvent.InvokeAsync(EventSubUser.Create(this, args), EventSubEventSubscription.Create(this, sub)).ConfigureAwait(false);
             EventSub.AuthorizationGranted += (args, sub) => Task.Delay(0);
             EventSub.AuthorizationRevoked += (args, sub) => Task.Delay(0);
         }
