@@ -1,312 +1,267 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum NoticeType
+      <title>Enum NoticeType
  | AuxLabs.Twitch Documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum NoticeType
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum NoticeType
  | AuxLabs.Twitch Documentation ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  <meta property="docfx:rel" content="../">
-  
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_NoticeType.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.NoticeType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.NoticeType">
+
+        <article data-uid="AuxLabs.Twitch.Chat.NoticeType">
 
 
-  <h1 id="AuxLabs_Twitch_Chat_NoticeType" data-uid="AuxLabs.Twitch.Chat.NoticeType" class="text-break">Enum NoticeType
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.Chat.Api.dll</h6>
-  <h5 id="AuxLabs_Twitch_Chat_NoticeType_syntax">Syntax</h5>
+
+
+  <h1 id="AuxLabs_Twitch_Chat_NoticeType" data-uid="AuxLabs.Twitch.Chat.NoticeType" class="text-break">
+    Enum NoticeType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat.Api/Models/NoticeType.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Chat.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum NoticeType</code></pre>
   </div>
-  <h3 id="fields">Fields
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_ColorChanged">ColorChanged</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_EmoteOnlyOff">EmoteOnlyOff</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_EmoteOnlyOn">EmoteOnlyOn</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_FollowersOff">FollowersOff</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_FollowersOn">FollowersOn</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_FollowersOnZero">FollowersOnZero</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageBadCharacters">MessageBadCharacters</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageBanned">MessageBanned</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageChannelBlocked">MessageChannelBlocked</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageChannelSuspended">MessageChannelSuspended</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageDuplicate">MessageDuplicate</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageEmoteOnly">MessageEmoteOnly</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnly">MessageFollowersOnly</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnlyFollowed">MessageFollowersOnlyFollowed</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnlyZero">MessageFollowersOnlyZero</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageR9k">MessageR9k</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageRatelimited">MessageRatelimited</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageRejected">MessageRejected</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageRejectedMandatory">MessageRejectedMandatory</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageRequiresVerifiedEmail">MessageRequiresVerifiedEmail</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageRequiresVerifiedPhone">MessageRequiresVerifiedPhone</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageSlowmode">MessageSlowmode</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageSubsOnly">MessageSubsOnly</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageSuspended">MessageSuspended</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_MessageTimedout">MessageTimedout</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_R9kOff">R9kOff</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_R9kOn">R9kOn</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_SlowOff">SlowOff</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_SlowOn">SlowOn</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_SubsOff">SubsOff</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_SubsOn">SubsOn</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_TOSBan">TOSBan</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_Unknown">Unknown</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperBanned">WhisperBanned</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperBannedRecipient">WhisperBannedRecipient</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperInvalidLogin">WhisperInvalidLogin</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperInvalidSelf">WhisperInvalidSelf</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperRatelimitedMinute">WhisperRatelimitedMinute</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperRatelimitedSecond">WhisperRatelimitedSecond</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperRestricted">WhisperRestricted</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_NoticeType_WhisperRestrictedRecipient">WhisperRestrictedRecipient</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_NoticeType.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.NoticeType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat.Api/Models/NoticeType.cs/#L5" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AuxLabs.Twitch.EnumHelper.GetStringValue.html#AuxLabs_Twitch_EnumHelper_GetStringValue__1___0_">EnumHelper.GetStringValue&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_ColorChanged"><code>[EnumMember(Value = &quot;color_changed&quot;)]
+ColorChanged = 1</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_EmoteOnlyOff"><code>[EnumMember(Value = &quot;emote_only_off&quot;)]
+EmoteOnlyOff = 3</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_EmoteOnlyOn"><code>[EnumMember(Value = &quot;emote_only_on&quot;)]
+EmoteOnlyOn = 4</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_FollowersOff"><code>[EnumMember(Value = &quot;followers_off&quot;)]
+FollowersOff = 5</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_FollowersOn"><code>[EnumMember(Value = &quot;followers_on&quot;)]
+FollowersOn = 6</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_FollowersOnZero"><code>[EnumMember(Value = &quot;followers_on_zero&quot;)]
+FollowersOnZero = 7</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageBadCharacters"><code>[EnumMember(Value = &quot;msg_bad_characters&quot;)]
+MessageBadCharacters = 15</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageBanned"><code>[EnumMember(Value = &quot;msg_banned&quot;)]
+MessageBanned = 14</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageChannelBlocked"><code>[EnumMember(Value = &quot;msg_channel_blocked&quot;)]
+MessageChannelBlocked = 16</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageChannelSuspended"><code>[EnumMember(Value = &quot;msg_channel_suspended&quot;)]
+MessageChannelSuspended = 17</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageDuplicate"><code>[EnumMember(Value = &quot;msg_duplicate&quot;)]
+MessageDuplicate = 18</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageEmoteOnly"><code>[EnumMember(Value = &quot;msg_emoteonly&quot;)]
+MessageEmoteOnly = 19</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnly"><code>[EnumMember(Value = &quot;msg_followersonly&quot;)]
+MessageFollowersOnly = 20</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnlyFollowed"><code>[EnumMember(Value = &quot;msg_followersonly_followed&quot;)]
+MessageFollowersOnlyFollowed = 21</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageFollowersOnlyZero"><code>[EnumMember(Value = &quot;msg_followersonly_zero&quot;)]
+MessageFollowersOnlyZero = 22</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageR9k"><code>[EnumMember(Value = &quot;msg_R9k&quot;)]
+MessageR9k = 23</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageRatelimited"><code>[EnumMember(Value = &quot;msg_ratelimit&quot;)]
+MessageRatelimited = 24</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageRejected"><code>[EnumMember(Value = &quot;msg_rejected&quot;)]
+MessageRejected = 25</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageRejectedMandatory"><code>[EnumMember(Value = &quot;msg_rejected_mandatory&quot;)]
+MessageRejectedMandatory = 26</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageRequiresVerifiedEmail"><code>[EnumMember(Value = &quot;msg_verified_email&quot;)]
+MessageRequiresVerifiedEmail = 32</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageRequiresVerifiedPhone"><code>[EnumMember(Value = &quot;msg_requires_verified_phone_number&quot;)]
+MessageRequiresVerifiedPhone = 27</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageSlowmode"><code>[EnumMember(Value = &quot;msg_slowmode&quot;)]
+MessageSlowmode = 28</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageSubsOnly"><code>[EnumMember(Value = &quot;msg_subsonly&quot;)]
+MessageSubsOnly = 29</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageSuspended"><code>[EnumMember(Value = &quot;msg_suspended&quot;)]
+MessageSuspended = 30</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_MessageTimedout"><code>[EnumMember(Value = &quot;msg_timedout&quot;)]
+MessageTimedout = 31</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_R9kOff"><code>[EnumMember(Value = &quot;R9k_off&quot;)]
+R9kOff = 8</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_R9kOn"><code>[EnumMember(Value = &quot;R9k_on&quot;)]
+R9kOn = 9</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_SlowOff"><code>[EnumMember(Value = &quot;slow_off&quot;)]
+SlowOff = 10</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_SlowOn"><code>[EnumMember(Value = &quot;slow_on&quot;)]
+SlowOn = 11</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_SubsOff"><code>[EnumMember(Value = &quot;subs_off&quot;)]
+SubsOff = 12</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_SubsOn"><code>[EnumMember(Value = &quot;subs_on&quot;)]
+SubsOn = 13</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_TOSBan"><code>[EnumMember(Value = &quot;tos_ban&quot;)]
+TOSBan = 2</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_Unknown"><code>Unknown = 0</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperBanned"><code>[EnumMember(Value = &quot;whisper_banned&quot;)]
+WhisperBanned = 33</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperBannedRecipient"><code>[EnumMember(Value = &quot;whisper_banned_recipient&quot;)]
+WhisperBannedRecipient = 34</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperInvalidLogin"><code>[EnumMember(Value = &quot;whisper_invalid_login&quot;)]
+WhisperInvalidLogin = 35</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperInvalidSelf"><code>[EnumMember(Value = &quot;whisper_invalid_self&quot;)]
+WhisperInvalidSelf = 36</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperRatelimitedMinute"><code>[EnumMember(Value = &quot;whisper_limit_per_min&quot;)]
+WhisperRatelimitedMinute = 37</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperRatelimitedSecond"><code>[EnumMember(Value = &quot;whisper_limit_per_sec&quot;)]
+WhisperRatelimitedSecond = 38</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperRestricted"><code>[EnumMember(Value = &quot;whisper_restricted&quot;)]
+WhisperRestricted = 39</code></dt>
+    <dd></dd>
+    <dt id="AuxLabs_Twitch_Chat_NoticeType_WhisperRestrictedRecipient"><code>[EnumMember(Value = &quot;whisper_restricted_recipient&quot;)]
+WhisperRestrictedRecipient = 40</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_NoticeType.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.NoticeType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
+
+        
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      AuxLabs.Twitch
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

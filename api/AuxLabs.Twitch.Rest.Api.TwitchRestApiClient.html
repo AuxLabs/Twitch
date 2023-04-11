@@ -1,943 +1,728 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TwitchRestApiClient
+      <title>Class TwitchRestApiClient
  | AuxLabs.Twitch Documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TwitchRestApiClient
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TwitchRestApiClient
  | AuxLabs.Twitch Documentation ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  <meta property="docfx:rel" content="../">
-  
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Api_TwitchRestApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Api.TwitchRestApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient">
+
+        <article data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient">
 
 
-  <h1 id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient" class="text-break">Class TwitchRestApiClient
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">TwitchRestApiClient</span></div>
+
+  <h1 id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient" class="text-break">
+    Class TwitchRestApiClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest.Api/TwitchRestApiClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Api.html">Api</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.Api.dll</dd></dl>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="AuxLabs.Twitch.Rest.Api.ITwitchApi.html">ITwitchApi</a></div>
-    <div><span class="xref">IDisposable</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Api.html">Api</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.Rest.Api.dll</h6>
-  <h5 id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class TwitchRestApiClient : ITwitchApi, IDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.#ctor(AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig)">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_">TwitchRestApiClient(TwitchRestApiConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_System_String_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.#ctor(System.String,AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig)">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_System_String_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_">TwitchRestApiClient(string, TwitchRestApiConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Authorization" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Authorization">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Authorization">Authorization</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ClientId" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ClientId">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ClientId">ClientId</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Identity" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Identity">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Identity">Identity</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBanAsync_AuxLabs_Twitch_Rest_Requests_DeleteBanArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBanAsync(AuxLabs.Twitch.Rest.Requests.DeleteBanArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBanAsync_AuxLabs_Twitch_Rest_Requests_DeleteBanArgs_System_Nullable_CancellationToken__">DeleteBanAsync(DeleteBanArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes the ban or timeout that was placed on the specified user.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBlockAsync(AuxLabs.Twitch.Rest.Requests.DeleteBlockArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockArgs_System_Nullable_CancellationToken__">DeleteBlockAsync(DeleteBlockArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes the user from the broadcaster’s list of blocked users.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockedTermsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBlockedTermAsync(AuxLabs.Twitch.Rest.Requests.DeleteBlockedTermsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockedTermsArgs_System_Nullable_CancellationToken__">DeleteBlockedTermAsync(DeleteBlockedTermsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes the word or phrase from the broadcaster’s list of blocked terms.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteChatMessagesAsync_AuxLabs_Twitch_Rest_Requests_DeleteMessageArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteChatMessagesAsync(AuxLabs.Twitch.Rest.Requests.DeleteMessageArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteChatMessagesAsync_AuxLabs_Twitch_Rest_Requests_DeleteMessageArgs_System_Nullable_CancellationToken__">DeleteChatMessagesAsync(DeleteMessageArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes a single chat message or all chat messages from the broadcaster’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteEventSubscriptionAsync_AuxLabs_Twitch_Rest_Requests_DeleteEventSubscriptionArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteEventSubscriptionAsync(AuxLabs.Twitch.Rest.Requests.DeleteEventSubscriptionArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteEventSubscriptionAsync_AuxLabs_Twitch_Rest_Requests_DeleteEventSubscriptionArgs_System_Nullable_CancellationToken__">DeleteEventSubscriptionAsync(DeleteEventSubscriptionArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Deletes an EventSub subscription.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteModeratorAsync(AuxLabs.Twitch.Rest.Requests.ManageModeratorArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_CancellationToken__">DeleteModeratorAsync(ManageModeratorArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes a moderator from the broadcaster’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRaidAsync_AuxLabs_Twitch_Rest_Requests_DeleteRaidArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteRaidAsync(AuxLabs.Twitch.Rest.Requests.DeleteRaidArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRaidAsync_AuxLabs_Twitch_Rest_Requests_DeleteRaidArgs_System_Nullable_CancellationToken__">DeleteRaidAsync(DeleteRaidArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Cancel a pending raid.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteRewardAsync(AuxLabs.Twitch.Rest.Requests.ManageRewardArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_System_Nullable_CancellationToken__">DeleteRewardAsync(ManageRewardArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteSegmentAsync(AuxLabs.Twitch.Rest.Requests.ManageSegmentArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_System_Nullable_CancellationToken__">DeleteSegmentAsync(ManageSegmentArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates a scheduled broadcast segment.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVideoAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVideoAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_CancellationToken__">DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Deletes one or more videos. You may delete past broadcasts, highlights, or uploads.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVipAsync(AuxLabs.Twitch.Rest.Requests.ManageVipArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_CancellationToken__">DeleteVipAsync(ManageVipArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Removes the specified user as a VIP in the broadcaster’s channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Dispose">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose">Dispose()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose_System_Boolean_" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Dispose(System.Boolean)">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose_System_Boolean_">Dispose(bool)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetActiveExtensionsAsync_AuxLabs_Twitch_Rest_Requests_GetActiveExtensionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetActiveExtensionsAsync(AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetActiveExtensionsAsync_AuxLabs_Twitch_Rest_Requests_GetActiveExtensionsArgs_System_Nullable_CancellationToken__">GetActiveExtensionsAsync(GetActiveExtensionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of all extensions (both active and inactive) that the broadcaster has installed.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetAutomodSettingsAsync(AuxLabs.Twitch.Rest.Requests.AutomodSettingsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_System_Nullable_CancellationToken__">GetAutomodSettingsAsync(AutomodSettingsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s AutoMod settings.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_AuxLabs_Twitch_Rest_Requests_GetBadgesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBadgesAsync(AuxLabs.Twitch.Rest.Requests.GetBadgesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_AuxLabs_Twitch_Rest_Requests_GetBadgesArgs_System_Nullable_CancellationToken__">GetBadgesAsync(GetBadgesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list of custom chat badges.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBadgesAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_System_Nullable_CancellationToken__">GetBadgesAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets Twitch’s list of chat badges, which users may use in any channel’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBannedUsersAsync_AuxLabs_Twitch_Rest_Requests_GetBannedUsersArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBannedUsersAsync(AuxLabs.Twitch.Rest.Requests.GetBannedUsersArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBannedUsersAsync_AuxLabs_Twitch_Rest_Requests_GetBannedUsersArgs_System_Nullable_CancellationToken__">GetBannedUsersAsync(GetBannedUsersArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets all users that the broadcaster banned or put in a timeout.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBitsLeaderboardAsync_AuxLabs_Twitch_Rest_Requests_GetBitsLeaderboardArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBitsLeaderboardAsync(AuxLabs.Twitch.Rest.Requests.GetBitsLeaderboardArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBitsLeaderboardAsync_AuxLabs_Twitch_Rest_Requests_GetBitsLeaderboardArgs_System_Nullable_CancellationToken__">GetBitsLeaderboardAsync(GetBitsLeaderboardArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Bits leaderboard for the authenticated broadcaster.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlockedTermsAsync_AuxLabs_Twitch_Rest_Requests_GetBlockedTermsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBlockedTermsAsync(AuxLabs.Twitch.Rest.Requests.GetBlockedTermsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlockedTermsAsync_AuxLabs_Twitch_Rest_Requests_GetBlockedTermsArgs_System_Nullable_CancellationToken__">GetBlockedTermsAsync(GetBlockedTermsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list of non-private, blocked words or phrases.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlocksAsync_AuxLabs_Twitch_Rest_Requests_GetBlocksArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBlocksAsync(AuxLabs.Twitch.Rest.Requests.GetBlocksArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlocksAsync_AuxLabs_Twitch_Rest_Requests_GetBlocksArgs_System_Nullable_CancellationToken__">GetBlocksAsync(GetBlocksArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the list of users that the broadcaster has blocked.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastKeyAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastKeyArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastKeyAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastKeyArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastKeyAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastKeyArgs_System_Nullable_CancellationToken__">GetBroadcastKeyAsync(GetBroadcastKeyArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the channel’s broadcast key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastMarkersAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastMarkersArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastMarkersAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastMarkersArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastMarkersAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastMarkersArgs_System_Nullable_CancellationToken__">GetBroadcastMarkersAsync(GetBroadcastMarkersArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of markers from the user’s most recent stream or from the specified VOD/video.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastsAsync(AuxLabs.Twitch.Rest.Requests.GetBroadcastsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastsArgs_System_Nullable_CancellationToken__">GetBroadcastsAsync(GetBroadcastsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of all broadcasts.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCategoriesAsync_AuxLabs_Twitch_Rest_Requests_SearchCategoriesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCategoriesAsync(AuxLabs.Twitch.Rest.Requests.SearchCategoriesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCategoriesAsync_AuxLabs_Twitch_Rest_Requests_SearchCategoriesArgs_System_Nullable_CancellationToken__">GetCategoriesAsync(SearchCategoriesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the games or categories that match the specified query.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelEditorsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelEditorsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelEditorsAsync(AuxLabs.Twitch.Rest.Requests.GetChannelEditorsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelEditorsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelEditorsArgs_System_Nullable_CancellationToken__">GetChannelEditorsAsync(GetChannelEditorsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list editors.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelsAsync(AuxLabs.Twitch.Rest.Requests.GetChannelsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelsArgs_System_Nullable_CancellationToken__">GetChannelsAsync(GetChannelsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about one or more channels.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_SearchChannelsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelsAsync(AuxLabs.Twitch.Rest.Requests.SearchChannelsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_SearchChannelsArgs_System_Nullable_CancellationToken__">GetChannelsAsync(SearchChannelsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the channels that match the specified query and have streamed content within the past 6 months.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityCampaignAsync_AuxLabs_Twitch_Rest_Requests_GetCharityCampaignArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCharityCampaignAsync(AuxLabs.Twitch.Rest.Requests.GetCharityCampaignArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityCampaignAsync_AuxLabs_Twitch_Rest_Requests_GetCharityCampaignArgs_System_Nullable_CancellationToken__">GetCharityCampaignAsync(GetCharityCampaignArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about the charity campaign that a broadcaster is running.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_Twitch_Rest_Requests_GetCharityDonationsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCharityDonationsAsync(AuxLabs.Twitch.Rest.Requests.GetCharityDonationsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_Twitch_Rest_Requests_GetCharityDonationsArgs_System_Nullable_CancellationToken__">GetCharityDonationsAsync(GetCharityDonationsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the list of donations that users have made to the broadcaster’s active charity campaign.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_GetChatSettingsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChatSettingsAsync(AuxLabs.Twitch.Rest.Requests.GetChatSettingsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_GetChatSettingsArgs_System_Nullable_CancellationToken__">GetChatSettingsAsync(GetChatSettingsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s chat settings.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChattersAsync_AuxLabs_Twitch_Rest_Requests_GetChattersArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChattersAsync(AuxLabs.Twitch.Rest.Requests.GetChattersArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChattersAsync_AuxLabs_Twitch_Rest_Requests_GetChattersArgs_System_Nullable_CancellationToken__">GetChattersAsync(GetChattersArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the list of users that are connected to the broadcaster’s chat session.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCheermotesAsync_AuxLabs_Twitch_Rest_Requests_GetCheermotesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCheermotesAsync(AuxLabs.Twitch.Rest.Requests.GetCheermotesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCheermotesAsync_AuxLabs_Twitch_Rest_Requests_GetCheermotesArgs_System_Nullable_CancellationToken__">GetCheermotesAsync(GetCheermotesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetClipsAsync_AuxLabs_Twitch_Rest_Requests_GetClipsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetClipsAsync(AuxLabs.Twitch.Rest.Requests.GetClipsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetClipsAsync_AuxLabs_Twitch_Rest_Requests_GetClipsArgs_System_Nullable_CancellationToken__">GetClipsAsync(GetClipsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets one or more video clips that were captured from streams.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCurrentTrackAsync_AuxLabs_Twitch_Rest_Requests_GetCurrentTrackArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCurrentTrackAsync(AuxLabs.Twitch.Rest.Requests.GetCurrentTrackArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCurrentTrackAsync_AuxLabs_Twitch_Rest_Requests_GetCurrentTrackArgs_System_Nullable_CancellationToken__">GetCurrentTrackAsync(GetCurrentTrackArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Soundtrack track that the broadcaster is playing.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_GetDropStatusArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetDropsStatusAsync(AuxLabs.Twitch.Rest.Requests.GetDropStatusArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_GetDropStatusArgs_System_Nullable_CancellationToken__">GetDropsStatusAsync(GetDropStatusArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an organization’s list of entitlements that have been granted to a game, a user, or both.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_AuxLabs_Twitch_Rest_Requests_GetEmotesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmotesAsync(AuxLabs.Twitch.Rest.Requests.GetEmotesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_AuxLabs_Twitch_Rest_Requests_GetEmotesArgs_System_Nullable_CancellationToken__">GetEmotesAsync(GetEmotesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list of custom emotes.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmotesAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_System_Nullable_CancellationToken__">GetEmotesAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the list of global emotes.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmoteSetsAsync_AuxLabs_Twitch_Rest_Requests_GetEmoteSetsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmoteSetsAsync(AuxLabs.Twitch.Rest.Requests.GetEmoteSetsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmoteSetsAsync_AuxLabs_Twitch_Rest_Requests_GetEmoteSetsArgs_System_Nullable_CancellationToken__">GetEmoteSetsAsync(GetEmoteSetsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets emotes for one or more specified emote sets.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEventSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetEventSubscriptionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEventSubscriptionsAsync(AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEventSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetEventSubscriptionsArgs_System_Nullable_CancellationToken__">GetEventSubscriptionsAsync(GetEventSubscriptionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a collection of EventSub subscriptions that the client in the access token created.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionAnalyticsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetExtensionAnalyticsAsync(AuxLabs.Twitch.Rest.Requests.GetExtensionAnalyticsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionAnalyticsArgs_System_Nullable_CancellationToken__">GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports (CSV files).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionTransactionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetExtensionTransactionsAsync(AuxLabs.Twitch.Rest.Requests.GetExtensionTransactionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionTransactionsArgs_System_Nullable_CancellationToken__">GetExtensionTransactionsAsync(GetExtensionTransactionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an extension’s list of transactions.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedBroadcastsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowedBroadcastsAsync(AuxLabs.Twitch.Rest.Requests.GetFollowedBroadcastsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedBroadcastsArgs_System_Nullable_CancellationToken__">GetFollowedBroadcastsAsync(GetFollowedBroadcastsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the list of broadcasters that the user follows and that are streaming live.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedChannelsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowedChannelsAsync(AuxLabs.Twitch.Rest.Requests.GetFollowedChannelsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedChannelsArgs_System_Nullable_CancellationToken__">GetFollowedChannelsAsync(GetFollowedChannelsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of broadcasters that the specified user follows.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowersAsync_AuxLabs_Twitch_Rest_Requests_GetFollowersArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowersAsync(AuxLabs.Twitch.Rest.Requests.GetFollowersArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowersAsync_AuxLabs_Twitch_Rest_Requests_GetFollowersArgs_System_Nullable_CancellationToken__">GetFollowersAsync(GetFollowersArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of users that follow the specified broadcaster.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGameAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetGameAnalyticsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGameAnalyticsAsync(AuxLabs.Twitch.Rest.Requests.GetGameAnalyticsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGameAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetGameAnalyticsArgs_System_Nullable_CancellationToken__">GetGameAnalyticsAsync(GetGameAnalyticsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGamesAsync_AuxLabs_Twitch_Rest_Requests_GetGamesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGamesAsync(AuxLabs.Twitch.Rest.Requests.GetGamesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGamesAsync_AuxLabs_Twitch_Rest_Requests_GetGamesArgs_System_Nullable_CancellationToken__">GetGamesAsync(GetGamesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about specified categories or games.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGoalsAsync_AuxLabs_Twitch_Rest_Requests_GetGoalsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGoalsAsync(AuxLabs.Twitch.Rest.Requests.GetGoalsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGoalsAsync_AuxLabs_Twitch_Rest_Requests_GetGoalsArgs_System_Nullable_CancellationToken__">GetGoalsAsync(GetGoalsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list of active goals.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetHypetrainEventsAsync_AuxLabs_Twitch_Rest_Requests_GetHypeTrainsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetHypetrainEventsAsync(AuxLabs.Twitch.Rest.Requests.GetHypeTrainsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetHypetrainEventsAsync_AuxLabs_Twitch_Rest_Requests_GetHypeTrainsArgs_System_Nullable_CancellationToken__">GetHypetrainEventsAsync(GetHypeTrainsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about the broadcaster’s current or most recent Hype Train event.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetModeratorsAsync_AuxLabs_Twitch_Rest_Requests_GetModeratorsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetModeratorsAsync(AuxLabs.Twitch.Rest.Requests.GetModeratorsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetModeratorsAsync_AuxLabs_Twitch_Rest_Requests_GetModeratorsArgs_System_Nullable_CancellationToken__">GetModeratorsAsync(GetModeratorsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets all users allowed to moderate the broadcaster’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistsAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPlaylistsAsync(AuxLabs.Twitch.Rest.Requests.GetPlaylistsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistsAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistsArgs_System_Nullable_CancellationToken__">GetPlaylistsAsync(GetPlaylistsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of Soundtrack playlists.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistTracksAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistTracksArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPlaylistTracksAsync(AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistTracksAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistTracksArgs_System_Nullable_CancellationToken__">GetPlaylistTracksAsync(GetPlaylistTracksArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Soundtrack playlist’s tracks.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPollAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPollAsync(AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPollAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_CancellationToken__">GetPollAsync(GetPredictionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of polls that the broadcaster created.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPredictionAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPredictionAsync(AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPredictionAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_CancellationToken__">GetPredictionAsync(GetPredictionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of Channel Points Predictions that the broadcaster created.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_Twitch_Rest_Requests_GetRedemptionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetRewardRedemptionAsync(AuxLabs.Twitch.Rest.Requests.GetRedemptionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_Twitch_Rest_Requests_GetRedemptionsArgs_System_Nullable_CancellationToken__">GetRewardRedemptionAsync(GetRedemptionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of redemptions for the specified custom reward. Only the app that created a reward is able to see it's redemptions.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardsAsync_AuxLabs_Twitch_Rest_Requests_GetRewardArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetRewardsAsync(AuxLabs.Twitch.Rest.Requests.GetRewardArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardsAsync_AuxLabs_Twitch_Rest_Requests_GetRewardArgs_System_Nullable_CancellationToken__">GetRewardsAsync(GetRewardArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of custom rewards that the specified broadcaster created.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetScheduleAsync_AuxLabs_Twitch_Rest_Requests_GetScheduleArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetScheduleAsync(AuxLabs.Twitch.Rest.Requests.GetScheduleArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetScheduleAsync_AuxLabs_Twitch_Rest_Requests_GetScheduleArgs_System_Nullable_CancellationToken__">GetScheduleAsync(GetScheduleArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s streaming schedule.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetShieldModeAsync_AuxLabs_Twitch_Rest_Requests_GetShieldModeArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetShieldModeAsync(AuxLabs.Twitch.Rest.Requests.GetShieldModeArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetShieldModeAsync_AuxLabs_Twitch_Rest_Requests_GetShieldModeArgs_System_Nullable_CancellationToken__">GetShieldModeAsync(GetShieldModeArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Activates or deactivates the broadcaster’s Shield Mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriberAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriberArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetSubscriberAsync(AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriberAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriberArgs_System_Nullable_CancellationToken__">GetSubscriberAsync(GetSubscriberArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Checks whether the user subscribes to the broadcaster’s channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriptionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetSubscriptionsAsync(AuxLabs.Twitch.Rest.Requests.GetSubscriptionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriptionsArgs_System_Nullable_CancellationToken__">GetSubscriptionsAsync(GetSubscriptionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the specified user’s information.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamAsync_AuxLabs_Twitch_Rest_Requests_GetTeamArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTeamAsync(AuxLabs.Twitch.Rest.Requests.GetTeamArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamAsync_AuxLabs_Twitch_Rest_Requests_GetTeamArgs_System_Nullable_CancellationToken__">GetTeamAsync(GetTeamArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about the specified Twitch team.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelTeamsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTeamsAsync(AuxLabs.Twitch.Rest.Requests.GetChannelTeamsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelTeamsArgs_System_Nullable_CancellationToken__">GetTeamsAsync(GetChannelTeamsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about one or more users.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTopGamesAsync_AuxLabs_Twitch_Rest_Requests_GetTopGamesArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTopGamesAsync(AuxLabs.Twitch.Rest.Requests.GetTopGamesArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTopGamesAsync_AuxLabs_Twitch_Rest_Requests_GetTopGamesArgs_System_Nullable_CancellationToken__">GetTopGamesAsync(GetTopGamesArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about all broadcasts on Twitch.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorsAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync(AuxLabs.Twitch.Rest.Requests.GetUserColorArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorsAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_CancellationToken__">GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the color used for the user’s name in chat.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserExtensionsAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserExtensionsAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserExtensionsAsync_System_Nullable_CancellationToken__">GetUserExtensionsAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of all extensions (both active and inactive) that the broadcaster has installed.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUsersAsync_AuxLabs_Twitch_Rest_Requests_GetUsersArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUsersAsync(AuxLabs.Twitch.Rest.Requests.GetUsersArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUsersAsync_AuxLabs_Twitch_Rest_Requests_GetUsersArgs_System_Nullable_CancellationToken__">GetUsersAsync(GetUsersArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about one or more users.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVideosAsync_AuxLabs_Twitch_Rest_Requests_GetVideosArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetVideosAsync(AuxLabs.Twitch.Rest.Requests.GetVideosArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVideosAsync_AuxLabs_Twitch_Rest_Requests_GetVideosArgs_System_Nullable_CancellationToken__">GetVideosAsync(GetVideosArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets information about one or more published videos.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVipsAsync_AuxLabs_Twitch_Rest_Requests_GetVipsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetVipsAsync(AuxLabs.Twitch.Rest.Requests.GetVipsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVipsAsync_AuxLabs_Twitch_Rest_Requests_GetVipsArgs_System_Nullable_CancellationToken__">GetVipsAsync(GetVipsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets a list of the broadcaster’s VIPs.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChannelAsync_AuxLabs_Twitch_Rest_Requests_PatchChannelArgs_AuxLabs_Twitch_Rest_Requests_PatchChannelBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchChannelAsync(AuxLabs.Twitch.Rest.Requests.PatchChannelArgs,AuxLabs.Twitch.Rest.Requests.PatchChannelBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChannelAsync_AuxLabs_Twitch_Rest_Requests_PatchChannelArgs_AuxLabs_Twitch_Rest_Requests_PatchChannelBody_System_Nullable_CancellationToken__">PatchChannelAsync(PatchChannelArgs, PatchChannelBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates a channel’s properties.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsArgs_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchChatSettingsAsync(AuxLabs.Twitch.Rest.Requests.PatchChatSettingsArgs,AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsArgs_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsBody_System_Nullable_CancellationToken__">PatchChatSettingsAsync(PatchChatSettingsArgs, PatchChatSettingsBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the broadcaster’s chat settings.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_PatchDropsStatusArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchDropsStatusAsync(AuxLabs.Twitch.Rest.Requests.PatchDropsStatusArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_PatchDropsStatusArgs_System_Nullable_CancellationToken__">PatchDropsStatusAsync(PatchDropsStatusArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the Drop entitlement’s fulfillment status.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPollAsync_AuxLabs_Twitch_Rest_Requests_PatchPollBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchPollAsync(AuxLabs.Twitch.Rest.Requests.PatchPollBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPollAsync_AuxLabs_Twitch_Rest_Requests_PatchPollBody_System_Nullable_CancellationToken__">PatchPollAsync(PatchPollBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Ends an active poll.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPredictionaAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchPredictionaAsync(AuxLabs.Twitch.Rest.Requests.PostPredictionBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPredictionaAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_CancellationToken__">PatchPredictionaAsync(PostPredictionBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Locks, resolves, or cancels a Channel Points Prediction.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchRewardAsync(AuxLabs.Twitch.Rest.Requests.ManageRewardArgs,AuxLabs.Twitch.Rest.Requests.PostRewardBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_CancellationToken__">PatchRewardAsync(ManageRewardArgs, PostRewardBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates a custom reward. The app used to create the reward is the only app that may update the reward.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardRedemptionAsync_AuxLabs_Twitch_RedemptionStatus_AuxLabs_Twitch_Rest_Requests_ModifyRedemptionsArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchRewardRedemptionAsync(AuxLabs.Twitch.RedemptionStatus,AuxLabs.Twitch.Rest.Requests.ModifyRedemptionsArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardRedemptionAsync_AuxLabs_Twitch_RedemptionStatus_AuxLabs_Twitch_Rest_Requests_ModifyRedemptionsArgs_System_Nullable_CancellationToken__">PatchRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates a redemption’s status. The app used to create the reward is the only app that may update the redemption.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchScheduleAsync_AuxLabs_Twitch_Rest_Requests_PatchScheduleArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchScheduleAsync(AuxLabs.Twitch.Rest.Requests.PatchScheduleArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchScheduleAsync_AuxLabs_Twitch_Rest_Requests_PatchScheduleArgs_System_Nullable_CancellationToken__">PatchScheduleAsync(PatchScheduleArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the broadcaster’s schedule settings, such as scheduling a vacation.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_AuxLabs_Twitch_Rest_Requests_PatchSegmentBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchSegmentAsync(AuxLabs.Twitch.Rest.Requests.ManageSegmentArgs,AuxLabs.Twitch.Rest.Requests.PatchSegmentBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_AuxLabs_Twitch_Rest_Requests_PatchSegmentBody_System_Nullable_CancellationToken__">PatchSegmentAsync(ManageSegmentArgs, PatchSegmentBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates a scheduled broadcast segment.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostAutomodMessageAsync_AuxLabs_Twitch_Rest_Requests_PostAutomodMessageArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostAutomodMessageAsync(AuxLabs.Twitch.Rest.Requests.PostAutomodMessageArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostAutomodMessageAsync_AuxLabs_Twitch_Rest_Requests_PostAutomodMessageArgs_System_Nullable_CancellationToken__">PostAutomodMessageAsync(PostAutomodMessageArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Allow or deny the message that AutoMod flagged for review.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBanAsync_AuxLabs_Twitch_Rest_Requests_PostBanArgs_AuxLabs_Twitch_Rest_Requests_PostBanBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBanAsync(AuxLabs.Twitch.Rest.Requests.PostBanArgs,AuxLabs.Twitch.Rest.Requests.PostBanBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBanAsync_AuxLabs_Twitch_Rest_Requests_PostBanArgs_AuxLabs_Twitch_Rest_Requests_PostBanBody_System_Nullable_CancellationToken__">PostBanAsync(PostBanArgs, PostBanBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Bans a user from participating in the specified broadcaster’s chat room or puts them in a timeout.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_PostBlockedTermArgs_AuxLabs_Twitch_Rest_Requests_PostBlockedTermBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBlockedTermAsync(AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs,AuxLabs.Twitch.Rest.Requests.PostBlockedTermBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_PostBlockedTermArgs_AuxLabs_Twitch_Rest_Requests_PostBlockedTermBody_System_Nullable_CancellationToken__">PostBlockedTermAsync(PostBlockedTermArgs, PostBlockedTermBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the broadcaster’s list of non-private, blocked words or phrases.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBroadcastMarkerAsync_AuxLabs_Twitch_Rest_Requests_PostBroadcastMarkerBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBroadcastMarkerAsync(AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBroadcastMarkerAsync_AuxLabs_Twitch_Rest_Requests_PostBroadcastMarkerBody_System_Nullable_CancellationToken__">PostBroadcastMarkerAsync(PostBroadcastMarkerBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Adds a marker to a live stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostChatAnnouncementAsync_AuxLabs_Twitch_Rest_Requests_PostAnnouncementArgs_AuxLabs_Twitch_Rest_Requests_PostAnnouncementBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostChatAnnouncementAsync(AuxLabs.Twitch.Rest.Requests.PostAnnouncementArgs,AuxLabs.Twitch.Rest.Requests.PostAnnouncementBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostChatAnnouncementAsync_AuxLabs_Twitch_Rest_Requests_PostAnnouncementArgs_AuxLabs_Twitch_Rest_Requests_PostAnnouncementBody_System_Nullable_CancellationToken__">PostChatAnnouncementAsync(PostAnnouncementArgs, PostAnnouncementBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends an announcement to the broadcaster’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostClipAsync_AuxLabs_Twitch_Rest_Requests_PostClipArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostClipAsync(AuxLabs.Twitch.Rest.Requests.PostClipArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostClipAsync_AuxLabs_Twitch_Rest_Requests_PostClipArgs_System_Nullable_CancellationToken__">PostClipAsync(PostClipArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Creates a clip from the broadcaster’s stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostCommercialAsync_AuxLabs_Twitch_Rest_Requests_PostCommercialBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostCommercialAsync(AuxLabs.Twitch.Rest.Requests.PostCommercialBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostCommercialAsync_AuxLabs_Twitch_Rest_Requests_PostCommercialBody_System_Nullable_CancellationToken__">PostCommercialAsync(PostCommercialBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Starts a commercial on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEnforcementStatusAsync_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusArgs_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEnforcementStatusAsync(AuxLabs.Twitch.Rest.Requests.PostEnforcementStatusArgs,AuxLabs.Twitch.Rest.Requests.PostEnforcementStatusBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEnforcementStatusAsync_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusArgs_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusBody_System_Nullable_CancellationToken__">PostEnforcementStatusAsync(PostEnforcementStatusArgs, PostEnforcementStatusBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Checks whether AutoMod would flag the specified message for review.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEventSubscriptionAsync__1_AuxLabs_Twitch_Rest_Requests_PostEventSubscriptionBody___0__System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEventSubscriptionAsync``1(AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody{``0},System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEventSubscriptionAsync__1_AuxLabs_Twitch_Rest_Requests_PostEventSubscriptionBody___0__System_Nullable_CancellationToken__">PostEventSubscriptionAsync&lt;TCondition&gt;(PostEventSubscriptionBody&lt;TCondition&gt;, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Creates an EventSub subscription.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostModeratorAsync(AuxLabs.Twitch.Rest.Requests.ManageModeratorArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_CancellationToken__">PostModeratorAsync(ManageModeratorArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Adds a moderator to the broadcaster’s chat room.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPollAsync_AuxLabs_Twitch_Rest_Requests_PutPollBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostPollAsync(AuxLabs.Twitch.Rest.Requests.PutPollBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPollAsync_AuxLabs_Twitch_Rest_Requests_PutPollBody_System_Nullable_CancellationToken__">PostPollAsync(PutPollBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Creates a poll that viewers in the broadcaster’s channel can vote on.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPredictionAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostPredictionAsync(AuxLabs.Twitch.Rest.Requests.PostPredictionBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPredictionAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_CancellationToken__">PostPredictionAsync(PostPredictionBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Creates a Channel Points Prediction.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRaidAsync_AuxLabs_Twitch_Rest_Requests_PostRaidArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostRaidAsync(AuxLabs.Twitch.Rest.Requests.PostRaidArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRaidAsync_AuxLabs_Twitch_Rest_Requests_PostRaidArgs_System_Nullable_CancellationToken__">PostRaidAsync(PostRaidArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Raid another channel by sending the broadcaster’s viewers to the targeted channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRewardsAsync_AuxLabs_Twitch_Rest_Requests_PostRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostRewardsAsync(AuxLabs.Twitch.Rest.Requests.PostRewardArgs,AuxLabs.Twitch.Rest.Requests.PostRewardBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRewardsAsync_AuxLabs_Twitch_Rest_Requests_PostRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_CancellationToken__">PostRewardsAsync(PostRewardArgs, PostRewardBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Creates a custom reward in the broadcaster’s channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostSegmentAsync_AuxLabs_Twitch_Rest_Requests_PostSegmentArgs_AuxLabs_Twitch_Rest_Requests_PostSegmentBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostSegmentAsync(AuxLabs.Twitch.Rest.Requests.PostSegmentArgs,AuxLabs.Twitch.Rest.Requests.PostSegmentBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostSegmentAsync_AuxLabs_Twitch_Rest_Requests_PostSegmentArgs_AuxLabs_Twitch_Rest_Requests_PostSegmentBody_System_Nullable_CancellationToken__">PostSegmentAsync(PostSegmentArgs, PostSegmentBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Adds a single or recurring broadcast to the broadcaster’s streaming schedule.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostShoutoutAsync_AuxLabs_Twitch_Rest_Requests_PostShoutoutArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostShoutoutAsync(AuxLabs.Twitch.Rest.Requests.PostShoutoutArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostShoutoutAsync_AuxLabs_Twitch_Rest_Requests_PostShoutoutArgs_System_Nullable_CancellationToken__">PostShoutoutAsync(PostShoutoutArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a shoutout to the specified broadcaster.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostVipAsync(AuxLabs.Twitch.Rest.Requests.ManageVipArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_CancellationToken__">PostVipAsync(ManageVipArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Adds the specified user as a VIP in the broadcaster’s channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostWhisperAsync_AuxLabs_Twitch_Rest_Requests_PostWhisperArgs_AuxLabs_Twitch_Rest_Requests_PostWhisperBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostWhisperAsync(AuxLabs.Twitch.Rest.Requests.PostWhisperArgs,AuxLabs.Twitch.Rest.Requests.PostWhisperBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostWhisperAsync_AuxLabs_Twitch_Rest_Requests_PostWhisperArgs_AuxLabs_Twitch_Rest_Requests_PostWhisperBody_System_Nullable_CancellationToken__">PostWhisperAsync(PostWhisperArgs, PostWhisperBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a whisper message to the specified user.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_AuxLabs_Twitch_Rest_Requests_PutAutomodSettingsBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutAutomodSettingsAsync(AuxLabs.Twitch.Rest.Requests.AutomodSettingsArgs,AuxLabs.Twitch.Rest.Requests.PutAutomodSettingsBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_AuxLabs_Twitch_Rest_Requests_PutAutomodSettingsBody_System_Nullable_CancellationToken__">PutAutomodSettingsAsync(AutomodSettingsArgs, PutAutomodSettingsBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the broadcaster’s AutoMod settings.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutBlockAsync_AuxLabs_Twitch_Rest_Requests_PutBlockArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutBlockAsync(AuxLabs.Twitch.Rest.Requests.PutBlockArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutBlockAsync_AuxLabs_Twitch_Rest_Requests_PutBlockArgs_System_Nullable_CancellationToken__">PutBlockAsync(PutBlockArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Blocks the specified user from interacting with or having contact with the broadcaster.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutExtensionsAsync_AuxLabs_Twitch_Rest_Models_ExtensionMap_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutExtensionsAsync(AuxLabs.Twitch.Rest.Models.ExtensionMap,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutExtensionsAsync_AuxLabs_Twitch_Rest_Models_ExtensionMap_System_Nullable_CancellationToken__">PutExtensionsAsync(ExtensionMap, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates an installed extension’s information.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutShieldModeAsync_AuxLabs_Twitch_Rest_Requests_PutShieldModeArgs_AuxLabs_Twitch_Rest_Requests_PutShieldModeBody_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutShieldModeAsync(AuxLabs.Twitch.Rest.Requests.PutShieldModeArgs,AuxLabs.Twitch.Rest.Requests.PutShieldModeBody,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutShieldModeAsync_AuxLabs_Twitch_Rest_Requests_PutShieldModeArgs_AuxLabs_Twitch_Rest_Requests_PutShieldModeBody_System_Nullable_CancellationToken__">PutShieldModeAsync(PutShieldModeArgs, PutShieldModeBody, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Activates or deactivates the broadcaster’s Shield Mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserAsync_AuxLabs_Twitch_Rest_Requests_PutUserArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserAsync(AuxLabs.Twitch.Rest.Requests.PutUserArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserAsync_AuxLabs_Twitch_Rest_Requests_PutUserArgs_System_Nullable_CancellationToken__">PutUserAsync(PutUserArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the specified user’s information.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync(AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_CancellationToken__">PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Updates the color used for the user's name in chat.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RefreshTokenAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.RefreshTokenAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RefreshTokenAsync_System_Nullable_CancellationToken__">RefreshTokenAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Refresh the token for the authorized user.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RevokeTokenAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.RevokeTokenAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RevokeTokenAsync_System_Nullable_CancellationToken__">RevokeTokenAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Revoke the currently authorized user's token.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ValidateAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_Nullable_CancellationToken__">ValidateAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_String_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ValidateAsync(System.String,System.String,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_String_System_String_System_Nullable_CancellationToken__">ValidateAsync(string, string, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Api_TwitchRestApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Api.TwitchRestApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest.Api/TwitchRestApiClient.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TwitchRestApiClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="AuxLabs.Twitch.Rest.Api.ITwitchApi.html">ITwitchApi</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.-ctor.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_">TwitchRestApiClient(TwitchRestApiConfig)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.-ctor.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient__ctor_System_String_AuxLabs_Twitch_Rest_Api_TwitchRestApiConfig_">TwitchRestApiClient(string, TwitchRestApiConfig)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Authorization.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Authorization">Authorization</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ClientId.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ClientId">ClientId</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Identity.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Identity">Identity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBanAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBanAsync_AuxLabs_Twitch_Rest_Requests_DeleteBanArgs_System_Nullable_System_Threading_CancellationToken__">DeleteBanAsync(DeleteBanArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes the ban or timeout that was placed on the specified user.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBlockAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockArgs_System_Nullable_System_Threading_CancellationToken__">DeleteBlockAsync(DeleteBlockArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes the user from the broadcaster’s list of blocked users.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteBlockedTermAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_DeleteBlockedTermsArgs_System_Nullable_System_Threading_CancellationToken__">DeleteBlockedTermAsync(DeleteBlockedTermsArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes the word or phrase from the broadcaster’s list of blocked terms.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteChatMessagesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteChatMessagesAsync_AuxLabs_Twitch_Rest_Requests_DeleteMessageArgs_System_Nullable_System_Threading_CancellationToken__">DeleteChatMessagesAsync(DeleteMessageArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes a single chat message or all chat messages from the broadcaster’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteEventSubscriptionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteEventSubscriptionAsync_AuxLabs_Twitch_Rest_Requests_DeleteEventSubscriptionArgs_System_Nullable_System_Threading_CancellationToken__">DeleteEventSubscriptionAsync(DeleteEventSubscriptionArgs, CancellationToken?)</a></dt>
+    <dd><p>Deletes an EventSub subscription.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteModeratorAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_System_Threading_CancellationToken__">DeleteModeratorAsync(ManageModeratorArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes a moderator from the broadcaster’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteRaidAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRaidAsync_AuxLabs_Twitch_Rest_Requests_DeleteRaidArgs_System_Nullable_System_Threading_CancellationToken__">DeleteRaidAsync(DeleteRaidArgs, CancellationToken?)</a></dt>
+    <dd><p>Cancel a pending raid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteRewardAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_System_Nullable_System_Threading_CancellationToken__">DeleteRewardAsync(ManageRewardArgs, CancellationToken?)</a></dt>
+    <dd><p>Deletes a custom reward that the broadcaster created. Only the app that created a reward is able to delete it.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteSegmentAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_System_Nullable_System_Threading_CancellationToken__">DeleteSegmentAsync(ManageSegmentArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates a scheduled broadcast segment.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVideoAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_System_Threading_CancellationToken__">DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)</a></dt>
+    <dd><p>Deletes one or more videos. You may delete past broadcasts, highlights, or uploads.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVipAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_System_Threading_CancellationToken__">DeleteVipAsync(ManageVipArgs, CancellationToken?)</a></dt>
+    <dd><p>Removes the specified user as a VIP in the broadcaster’s channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Dispose.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose">Dispose()</a></dt>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.Dispose.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetActiveExtensionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetActiveExtensionsAsync_AuxLabs_Twitch_Rest_Requests_GetActiveExtensionsArgs_System_Nullable_System_Threading_CancellationToken__">GetActiveExtensionsAsync(GetActiveExtensionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of all extensions (both active and inactive) that the broadcaster has installed.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetAutomodSettingsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_System_Nullable_System_Threading_CancellationToken__">GetAutomodSettingsAsync(AutomodSettingsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s AutoMod settings.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBadgesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_AuxLabs_Twitch_Rest_Requests_GetBadgesArgs_System_Nullable_System_Threading_CancellationToken__">GetBadgesAsync(GetBadgesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list of custom chat badges.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBadgesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBadgesAsync_System_Nullable_System_Threading_CancellationToken__">GetBadgesAsync(CancellationToken?)</a></dt>
+    <dd><p>Gets Twitch’s list of chat badges, which users may use in any channel’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBannedUsersAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBannedUsersAsync_AuxLabs_Twitch_Rest_Requests_GetBannedUsersArgs_System_Nullable_System_Threading_CancellationToken__">GetBannedUsersAsync(GetBannedUsersArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets all users that the broadcaster banned or put in a timeout.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBitsLeaderboardAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBitsLeaderboardAsync_AuxLabs_Twitch_Rest_Requests_GetBitsLeaderboardArgs_System_Nullable_System_Threading_CancellationToken__">GetBitsLeaderboardAsync(GetBitsLeaderboardArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the Bits leaderboard for the authenticated broadcaster.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBlockedTermsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlockedTermsAsync_AuxLabs_Twitch_Rest_Requests_GetBlockedTermsArgs_System_Nullable_System_Threading_CancellationToken__">GetBlockedTermsAsync(GetBlockedTermsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list of non-private, blocked words or phrases.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBlocksAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBlocksAsync_AuxLabs_Twitch_Rest_Requests_GetBlocksArgs_System_Nullable_System_Threading_CancellationToken__">GetBlocksAsync(GetBlocksArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the list of users that the broadcaster has blocked.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastKeyAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastKeyAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastKeyArgs_System_Nullable_System_Threading_CancellationToken__">GetBroadcastKeyAsync(GetBroadcastKeyArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the channel’s broadcast key.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastMarkersAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastMarkersAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastMarkersArgs_System_Nullable_System_Threading_CancellationToken__">GetBroadcastMarkersAsync(GetBroadcastMarkersArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of markers from the user’s most recent stream or from the specified VOD/video.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetBroadcastsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetBroadcastsArgs_System_Nullable_System_Threading_CancellationToken__">GetBroadcastsAsync(GetBroadcastsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of all broadcasts.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCategoriesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCategoriesAsync_AuxLabs_Twitch_Rest_Requests_SearchCategoriesArgs_System_Nullable_System_Threading_CancellationToken__">GetCategoriesAsync(SearchCategoriesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the games or categories that match the specified query.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelEditorsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelEditorsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelEditorsArgs_System_Nullable_System_Threading_CancellationToken__">GetChannelEditorsAsync(GetChannelEditorsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list editors.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelsArgs_System_Nullable_System_Threading_CancellationToken__">GetChannelsAsync(GetChannelsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about one or more channels.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChannelsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChannelsAsync_AuxLabs_Twitch_Rest_Requests_SearchChannelsArgs_System_Nullable_System_Threading_CancellationToken__">GetChannelsAsync(SearchChannelsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the channels that match the specified query and have streamed content within the past 6 months.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCharityCampaignAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityCampaignAsync_AuxLabs_Twitch_Rest_Requests_GetCharityCampaignArgs_System_Nullable_System_Threading_CancellationToken__">GetCharityCampaignAsync(GetCharityCampaignArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about the charity campaign that a broadcaster is running.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCharityDonationsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCharityDonationsAsync_AuxLabs_Twitch_Rest_Requests_GetCharityDonationsArgs_System_Nullable_System_Threading_CancellationToken__">GetCharityDonationsAsync(GetCharityDonationsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the list of donations that users have made to the broadcaster’s active charity campaign.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChatSettingsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_GetChatSettingsArgs_System_Nullable_System_Threading_CancellationToken__">GetChatSettingsAsync(GetChatSettingsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s chat settings.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetChattersAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetChattersAsync_AuxLabs_Twitch_Rest_Requests_GetChattersArgs_System_Nullable_System_Threading_CancellationToken__">GetChattersAsync(GetChattersArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the list of users that are connected to the broadcaster’s chat session.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCheermotesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCheermotesAsync_AuxLabs_Twitch_Rest_Requests_GetCheermotesArgs_System_Nullable_System_Threading_CancellationToken__">GetCheermotesAsync(GetCheermotesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a collection of Cheermotes that can be used to cheer bits in any bits-enabled channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetClipsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetClipsAsync_AuxLabs_Twitch_Rest_Requests_GetClipsArgs_System_Nullable_System_Threading_CancellationToken__">GetClipsAsync(GetClipsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets one or more video clips that were captured from streams.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetCurrentTrackAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetCurrentTrackAsync_AuxLabs_Twitch_Rest_Requests_GetCurrentTrackArgs_System_Nullable_System_Threading_CancellationToken__">GetCurrentTrackAsync(GetCurrentTrackArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the Soundtrack track that the broadcaster is playing.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetDropsStatusAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_GetDropStatusArgs_System_Nullable_System_Threading_CancellationToken__">GetDropsStatusAsync(GetDropStatusArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets an organization’s list of entitlements that have been granted to a game, a user, or both.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmotesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_AuxLabs_Twitch_Rest_Requests_GetEmotesArgs_System_Nullable_System_Threading_CancellationToken__">GetEmotesAsync(GetEmotesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list of custom emotes.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmotesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmotesAsync_System_Nullable_System_Threading_CancellationToken__">GetEmotesAsync(CancellationToken?)</a></dt>
+    <dd><p>Gets the list of global emotes.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEmoteSetsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEmoteSetsAsync_AuxLabs_Twitch_Rest_Requests_GetEmoteSetsArgs_System_Nullable_System_Threading_CancellationToken__">GetEmoteSetsAsync(GetEmoteSetsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets emotes for one or more specified emote sets.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetEventSubscriptionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetEventSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetEventSubscriptionsArgs_System_Nullable_System_Threading_CancellationToken__">GetEventSubscriptionsAsync(GetEventSubscriptionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a collection of EventSub subscriptions that the client in the access token created.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetExtensionAnalyticsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionAnalyticsArgs_System_Nullable_System_Threading_CancellationToken__">GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets an analytics report for one or more extensions. The response contains the URLs used to download the reports (CSV files).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetExtensionTransactionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetExtensionTransactionsAsync_AuxLabs_Twitch_Rest_Requests_GetExtensionTransactionsArgs_System_Nullable_System_Threading_CancellationToken__">GetExtensionTransactionsAsync(GetExtensionTransactionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets an extension’s list of transactions.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowedBroadcastsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedBroadcastsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedBroadcastsArgs_System_Nullable_System_Threading_CancellationToken__">GetFollowedBroadcastsAsync(GetFollowedBroadcastsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the list of broadcasters that the user follows and that are streaming live.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowedChannelsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowedChannelsAsync_AuxLabs_Twitch_Rest_Requests_GetFollowedChannelsArgs_System_Nullable_System_Threading_CancellationToken__">GetFollowedChannelsAsync(GetFollowedChannelsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of broadcasters that the specified user follows.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetFollowersAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetFollowersAsync_AuxLabs_Twitch_Rest_Requests_GetFollowersArgs_System_Nullable_System_Threading_CancellationToken__">GetFollowersAsync(GetFollowersArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of users that follow the specified broadcaster.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGameAnalyticsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGameAnalyticsAsync_AuxLabs_Twitch_Rest_Requests_GetGameAnalyticsArgs_System_Nullable_System_Threading_CancellationToken__">GetGameAnalyticsAsync(GetGameAnalyticsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets an analytics report for one or more games. The response contains the URLs used to download the reports (CSV files).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGamesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGamesAsync_AuxLabs_Twitch_Rest_Requests_GetGamesArgs_System_Nullable_System_Threading_CancellationToken__">GetGamesAsync(GetGamesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about specified categories or games.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetGoalsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetGoalsAsync_AuxLabs_Twitch_Rest_Requests_GetGoalsArgs_System_Nullable_System_Threading_CancellationToken__">GetGoalsAsync(GetGoalsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list of active goals.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetHypetrainEventsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetHypetrainEventsAsync_AuxLabs_Twitch_Rest_Requests_GetHypeTrainsArgs_System_Nullable_System_Threading_CancellationToken__">GetHypetrainEventsAsync(GetHypeTrainsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about the broadcaster’s current or most recent Hype Train event.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetModeratorsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetModeratorsAsync_AuxLabs_Twitch_Rest_Requests_GetModeratorsArgs_System_Nullable_System_Threading_CancellationToken__">GetModeratorsAsync(GetModeratorsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets all users allowed to moderate the broadcaster’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPlaylistsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistsAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistsArgs_System_Nullable_System_Threading_CancellationToken__">GetPlaylistsAsync(GetPlaylistsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of Soundtrack playlists.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPlaylistTracksAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPlaylistTracksAsync_AuxLabs_Twitch_Rest_Requests_GetPlaylistTracksArgs_System_Nullable_System_Threading_CancellationToken__">GetPlaylistTracksAsync(GetPlaylistTracksArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the Soundtrack playlist’s tracks.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPollAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPollAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_System_Threading_CancellationToken__">GetPollAsync(GetPredictionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of polls that the broadcaster created.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetPredictionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetPredictionAsync_AuxLabs_Twitch_Rest_Requests_GetPredictionsArgs_System_Nullable_System_Threading_CancellationToken__">GetPredictionAsync(GetPredictionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of Channel Points Predictions that the broadcaster created.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetRewardRedemptionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardRedemptionAsync_AuxLabs_Twitch_Rest_Requests_GetRedemptionsArgs_System_Nullable_System_Threading_CancellationToken__">GetRewardRedemptionAsync(GetRedemptionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of redemptions for the specified custom reward. Only the app that created a reward is able to see it's redemptions.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetRewardsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetRewardsAsync_AuxLabs_Twitch_Rest_Requests_GetRewardArgs_System_Nullable_System_Threading_CancellationToken__">GetRewardsAsync(GetRewardArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of custom rewards that the specified broadcaster created.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetScheduleAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetScheduleAsync_AuxLabs_Twitch_Rest_Requests_GetScheduleArgs_System_Nullable_System_Threading_CancellationToken__">GetScheduleAsync(GetScheduleArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s streaming schedule.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetShieldModeAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetShieldModeAsync_AuxLabs_Twitch_Rest_Requests_GetShieldModeArgs_System_Nullable_System_Threading_CancellationToken__">GetShieldModeAsync(GetShieldModeArgs, CancellationToken?)</a></dt>
+    <dd><p>Activates or deactivates the broadcaster’s Shield Mode.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetSubscriberAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriberAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriberArgs_System_Nullable_System_Threading_CancellationToken__">GetSubscriberAsync(GetSubscriberArgs, CancellationToken?)</a></dt>
+    <dd><p>Checks whether the user subscribes to the broadcaster’s channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetSubscriptionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetSubscriptionsAsync_AuxLabs_Twitch_Rest_Requests_GetSubscriptionsArgs_System_Nullable_System_Threading_CancellationToken__">GetSubscriptionsAsync(GetSubscriptionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates the specified user’s information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTeamAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamAsync_AuxLabs_Twitch_Rest_Requests_GetTeamArgs_System_Nullable_System_Threading_CancellationToken__">GetTeamAsync(GetTeamArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about the specified Twitch team.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTeamsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTeamsAsync_AuxLabs_Twitch_Rest_Requests_GetChannelTeamsArgs_System_Nullable_System_Threading_CancellationToken__">GetTeamsAsync(GetChannelTeamsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about one or more users.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetTopGamesAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetTopGamesAsync_AuxLabs_Twitch_Rest_Requests_GetTopGamesArgs_System_Nullable_System_Threading_CancellationToken__">GetTopGamesAsync(GetTopGamesArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about all broadcasts on Twitch.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserChatColorsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserChatColorsAsync_AuxLabs_Twitch_Rest_Requests_GetUserColorArgs_System_Nullable_System_Threading_CancellationToken__">GetUserChatColorsAsync(GetUserColorArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets the color used for the user’s name in chat.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUserExtensionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUserExtensionsAsync_System_Nullable_System_Threading_CancellationToken__">GetUserExtensionsAsync(CancellationToken?)</a></dt>
+    <dd><p>Gets a list of all extensions (both active and inactive) that the broadcaster has installed.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetUsersAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetUsersAsync_AuxLabs_Twitch_Rest_Requests_GetUsersArgs_System_Nullable_System_Threading_CancellationToken__">GetUsersAsync(GetUsersArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about one or more users.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetVideosAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVideosAsync_AuxLabs_Twitch_Rest_Requests_GetVideosArgs_System_Nullable_System_Threading_CancellationToken__">GetVideosAsync(GetVideosArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets information about one or more published videos.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.GetVipsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_GetVipsAsync_AuxLabs_Twitch_Rest_Requests_GetVipsArgs_System_Nullable_System_Threading_CancellationToken__">GetVipsAsync(GetVipsArgs, CancellationToken?)</a></dt>
+    <dd><p>Gets a list of the broadcaster’s VIPs.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchChannelAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChannelAsync_AuxLabs_Twitch_Rest_Requests_PatchChannelArgs_AuxLabs_Twitch_Rest_Requests_PatchChannelBody_System_Nullable_System_Threading_CancellationToken__">PatchChannelAsync(PatchChannelArgs, PatchChannelBody, CancellationToken?)</a></dt>
+    <dd><p>Updates a channel’s properties.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchChatSettingsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchChatSettingsAsync_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsArgs_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsBody_System_Nullable_System_Threading_CancellationToken__">PatchChatSettingsAsync(PatchChatSettingsArgs, PatchChatSettingsBody, CancellationToken?)</a></dt>
+    <dd><p>Updates the broadcaster’s chat settings.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchDropsStatusAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchDropsStatusAsync_AuxLabs_Twitch_Rest_Requests_PatchDropsStatusArgs_System_Nullable_System_Threading_CancellationToken__">PatchDropsStatusAsync(PatchDropsStatusArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates the Drop entitlement’s fulfillment status.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchPollAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPollAsync_AuxLabs_Twitch_Rest_Requests_PatchPollBody_System_Nullable_System_Threading_CancellationToken__">PatchPollAsync(PatchPollBody, CancellationToken?)</a></dt>
+    <dd><p>Ends an active poll.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchPredictionaAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchPredictionaAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_System_Threading_CancellationToken__">PatchPredictionaAsync(PostPredictionBody, CancellationToken?)</a></dt>
+    <dd><p>Locks, resolves, or cancels a Channel Points Prediction.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchRewardAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardAsync_AuxLabs_Twitch_Rest_Requests_ManageRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_System_Threading_CancellationToken__">PatchRewardAsync(ManageRewardArgs, PostRewardBody, CancellationToken?)</a></dt>
+    <dd><p>Updates a custom reward. The app used to create the reward is the only app that may update the reward.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchRewardRedemptionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchRewardRedemptionAsync_AuxLabs_Twitch_RedemptionStatus_AuxLabs_Twitch_Rest_Requests_ModifyRedemptionsArgs_System_Nullable_System_Threading_CancellationToken__">PatchRewardRedemptionAsync(RedemptionStatus, ModifyRedemptionsArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates a redemption’s status. The app used to create the reward is the only app that may update the redemption.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchScheduleAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchScheduleAsync_AuxLabs_Twitch_Rest_Requests_PatchScheduleArgs_System_Nullable_System_Threading_CancellationToken__">PatchScheduleAsync(PatchScheduleArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates the broadcaster’s schedule settings, such as scheduling a vacation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PatchSegmentAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PatchSegmentAsync_AuxLabs_Twitch_Rest_Requests_ManageSegmentArgs_AuxLabs_Twitch_Rest_Requests_PatchSegmentBody_System_Nullable_System_Threading_CancellationToken__">PatchSegmentAsync(ManageSegmentArgs, PatchSegmentBody, CancellationToken?)</a></dt>
+    <dd><p>Updates a scheduled broadcast segment.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostAutomodMessageAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostAutomodMessageAsync_AuxLabs_Twitch_Rest_Requests_PostAutomodMessageArgs_System_Nullable_System_Threading_CancellationToken__">PostAutomodMessageAsync(PostAutomodMessageArgs, CancellationToken?)</a></dt>
+    <dd><p>Allow or deny the message that AutoMod flagged for review.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBanAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBanAsync_AuxLabs_Twitch_Rest_Requests_PostBanArgs_AuxLabs_Twitch_Rest_Requests_PostBanBody_System_Nullable_System_Threading_CancellationToken__">PostBanAsync(PostBanArgs, PostBanBody, CancellationToken?)</a></dt>
+    <dd><p>Bans a user from participating in the specified broadcaster’s chat room or puts them in a timeout.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBlockedTermAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBlockedTermAsync_AuxLabs_Twitch_Rest_Requests_PostBlockedTermArgs_AuxLabs_Twitch_Rest_Requests_PostBlockedTermBody_System_Nullable_System_Threading_CancellationToken__">PostBlockedTermAsync(PostBlockedTermArgs, PostBlockedTermBody, CancellationToken?)</a></dt>
+    <dd><p>Gets the broadcaster’s list of non-private, blocked words or phrases.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostBroadcastMarkerAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostBroadcastMarkerAsync_AuxLabs_Twitch_Rest_Requests_PostBroadcastMarkerBody_System_Nullable_System_Threading_CancellationToken__">PostBroadcastMarkerAsync(PostBroadcastMarkerBody, CancellationToken?)</a></dt>
+    <dd><p>Adds a marker to a live stream.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostChatAnnouncementAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostChatAnnouncementAsync_AuxLabs_Twitch_Rest_Requests_PostAnnouncementArgs_AuxLabs_Twitch_Rest_Requests_PostAnnouncementBody_System_Nullable_System_Threading_CancellationToken__">PostChatAnnouncementAsync(PostAnnouncementArgs, PostAnnouncementBody, CancellationToken?)</a></dt>
+    <dd><p>Sends an announcement to the broadcaster’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostClipAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostClipAsync_AuxLabs_Twitch_Rest_Requests_PostClipArgs_System_Nullable_System_Threading_CancellationToken__">PostClipAsync(PostClipArgs, CancellationToken?)</a></dt>
+    <dd><p>Creates a clip from the broadcaster’s stream.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostCommercialAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostCommercialAsync_AuxLabs_Twitch_Rest_Requests_PostCommercialBody_System_Nullable_System_Threading_CancellationToken__">PostCommercialAsync(PostCommercialBody, CancellationToken?)</a></dt>
+    <dd><p>Starts a commercial on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEnforcementStatusAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEnforcementStatusAsync_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusArgs_AuxLabs_Twitch_Rest_Requests_PostEnforcementStatusBody_System_Nullable_System_Threading_CancellationToken__">PostEnforcementStatusAsync(PostEnforcementStatusArgs, PostEnforcementStatusBody, CancellationToken?)</a></dt>
+    <dd><p>Checks whether AutoMod would flag the specified message for review.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEventSubscriptionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostEventSubscriptionAsync__1_AuxLabs_Twitch_Rest_Requests_PostEventSubscriptionBody___0__System_Nullable_System_Threading_CancellationToken__">PostEventSubscriptionAsync&lt;TCondition&gt;(PostEventSubscriptionBody&lt;TCondition&gt;, CancellationToken?)</a></dt>
+    <dd><p>Creates an EventSub subscription.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostModeratorAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostModeratorAsync_AuxLabs_Twitch_Rest_Requests_ManageModeratorArgs_System_Nullable_System_Threading_CancellationToken__">PostModeratorAsync(ManageModeratorArgs, CancellationToken?)</a></dt>
+    <dd><p>Adds a moderator to the broadcaster’s chat room.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostPollAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPollAsync_AuxLabs_Twitch_Rest_Requests_PutPollBody_System_Nullable_System_Threading_CancellationToken__">PostPollAsync(PutPollBody, CancellationToken?)</a></dt>
+    <dd><p>Creates a poll that viewers in the broadcaster’s channel can vote on.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostPredictionAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostPredictionAsync_AuxLabs_Twitch_Rest_Requests_PostPredictionBody_System_Nullable_System_Threading_CancellationToken__">PostPredictionAsync(PostPredictionBody, CancellationToken?)</a></dt>
+    <dd><p>Creates a Channel Points Prediction.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostRaidAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRaidAsync_AuxLabs_Twitch_Rest_Requests_PostRaidArgs_System_Nullable_System_Threading_CancellationToken__">PostRaidAsync(PostRaidArgs, CancellationToken?)</a></dt>
+    <dd><p>Raid another channel by sending the broadcaster’s viewers to the targeted channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostRewardsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostRewardsAsync_AuxLabs_Twitch_Rest_Requests_PostRewardArgs_AuxLabs_Twitch_Rest_Requests_PostRewardBody_System_Nullable_System_Threading_CancellationToken__">PostRewardsAsync(PostRewardArgs, PostRewardBody, CancellationToken?)</a></dt>
+    <dd><p>Creates a custom reward in the broadcaster’s channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostSegmentAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostSegmentAsync_AuxLabs_Twitch_Rest_Requests_PostSegmentArgs_AuxLabs_Twitch_Rest_Requests_PostSegmentBody_System_Nullable_System_Threading_CancellationToken__">PostSegmentAsync(PostSegmentArgs, PostSegmentBody, CancellationToken?)</a></dt>
+    <dd><p>Adds a single or recurring broadcast to the broadcaster’s streaming schedule.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostShoutoutAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostShoutoutAsync_AuxLabs_Twitch_Rest_Requests_PostShoutoutArgs_System_Nullable_System_Threading_CancellationToken__">PostShoutoutAsync(PostShoutoutArgs, CancellationToken?)</a></dt>
+    <dd><p>Sends a shoutout to the specified broadcaster.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostVipAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_System_Threading_CancellationToken__">PostVipAsync(ManageVipArgs, CancellationToken?)</a></dt>
+    <dd><p>Adds the specified user as a VIP in the broadcaster’s channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostWhisperAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PostWhisperAsync_AuxLabs_Twitch_Rest_Requests_PostWhisperArgs_AuxLabs_Twitch_Rest_Requests_PostWhisperBody_System_Nullable_System_Threading_CancellationToken__">PostWhisperAsync(PostWhisperArgs, PostWhisperBody, CancellationToken?)</a></dt>
+    <dd><p>Sends a whisper message to the specified user.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutAutomodSettingsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutAutomodSettingsAsync_AuxLabs_Twitch_Rest_Requests_AutomodSettingsArgs_AuxLabs_Twitch_Rest_Requests_PutAutomodSettingsBody_System_Nullable_System_Threading_CancellationToken__">PutAutomodSettingsAsync(AutomodSettingsArgs, PutAutomodSettingsBody, CancellationToken?)</a></dt>
+    <dd><p>Updates the broadcaster’s AutoMod settings.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutBlockAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutBlockAsync_AuxLabs_Twitch_Rest_Requests_PutBlockArgs_System_Nullable_System_Threading_CancellationToken__">PutBlockAsync(PutBlockArgs, CancellationToken?)</a></dt>
+    <dd><p>Blocks the specified user from interacting with or having contact with the broadcaster.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutExtensionsAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutExtensionsAsync_AuxLabs_Twitch_Rest_Models_ExtensionMap_System_Nullable_System_Threading_CancellationToken__">PutExtensionsAsync(ExtensionMap, CancellationToken?)</a></dt>
+    <dd><p>Updates an installed extension’s information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutShieldModeAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutShieldModeAsync_AuxLabs_Twitch_Rest_Requests_PutShieldModeArgs_AuxLabs_Twitch_Rest_Requests_PutShieldModeBody_System_Nullable_System_Threading_CancellationToken__">PutShieldModeAsync(PutShieldModeArgs, PutShieldModeBody, CancellationToken?)</a></dt>
+    <dd><p>Activates or deactivates the broadcaster’s Shield Mode.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserAsync_AuxLabs_Twitch_Rest_Requests_PutUserArgs_System_Nullable_System_Threading_CancellationToken__">PutUserAsync(PutUserArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates the specified user’s information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PutUserChatColorAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_PutUserChatColorAsync_AuxLabs_Twitch_Rest_Requests_PutUserChatColorArgs_System_Nullable_System_Threading_CancellationToken__">PutUserChatColorAsync(PutUserChatColorArgs, CancellationToken?)</a></dt>
+    <dd><p>Updates the color used for the user's name in chat.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.RefreshTokenAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RefreshTokenAsync_System_Nullable_System_Threading_CancellationToken__">RefreshTokenAsync(CancellationToken?)</a></dt>
+    <dd><p>Refresh the token for the authorized user.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.RevokeTokenAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_RevokeTokenAsync_System_Nullable_System_Threading_CancellationToken__">RevokeTokenAsync(CancellationToken?)</a></dt>
+    <dd><p>Revoke the currently authorized user's token.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ValidateAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_Nullable_System_Threading_CancellationToken__">ValidateAsync(CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.ValidateAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_ValidateAsync_System_String_System_String_System_Nullable_System_Threading_CancellationToken__">ValidateAsync(string, string, CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Api_TwitchRestApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Api.TwitchRestApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
+
+        
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      AuxLabs.Twitch
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

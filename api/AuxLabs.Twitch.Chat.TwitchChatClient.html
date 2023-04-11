@@ -1,526 +1,414 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TwitchChatClient
+      <title>Class TwitchChatClient
  | AuxLabs.Twitch Documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TwitchChatClient
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TwitchChatClient
  | AuxLabs.Twitch Documentation ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  <meta property="docfx:rel" content="../">
-  
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_TwitchChatClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.TwitchChatClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient">
+
+        <article data-uid="AuxLabs.Twitch.Chat.TwitchChatClient">
 
 
-  <h1 id="AuxLabs_Twitch_Chat_TwitchChatClient" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient" class="text-break">Class TwitchChatClient
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">TwitchChatClient</span></div>
+
+  <h1 id="AuxLabs_Twitch_Chat_TwitchChatClient" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient" class="text-break">
+    Class TwitchChatClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Chat.dll</dd></dl>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.Chat.dll</h6>
-  <h5 id="AuxLabs_Twitch_Chat_TwitchChatClient_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class TwitchChatClient</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient__ctor_AuxLabs_Twitch_Chat_TwitchChatConfig_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient__ctor_AuxLabs_Twitch_Chat_TwitchChatConfig_">TwitchChatClient(TwitchChatConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient__ctor_System_String_AuxLabs_Twitch_Chat_TwitchChatConfig_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(System.String,AuxLabs.Twitch.Chat.TwitchChatConfig)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient__ctor_System_String_AuxLabs_Twitch_Chat_TwitchChatConfig_">TwitchChatClient(string, TwitchChatConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Channels" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Channels">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Channels">Channels</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_CommandsRequested" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_CommandsRequested">CommandsRequested</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_CurrentName" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_CurrentName">CurrentName</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Identity" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Identity">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Identity">Identity</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_IRC" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.IRC">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IRC">IRC</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly">IsReadOnly</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_MessageCacheSize" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_MessageCacheSize">MessageCacheSize</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_MyUser" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.MyUser">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_MyUser">MyUser</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Rest" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Rest">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Rest">Rest</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_TagsRequested" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_TagsRequested">TagsRequested</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ThrowOnUnknownEvent" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ThrowOnUnknownEvent">ThrowOnUnknownEvent</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UseBufferedResponses" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UseBufferedResponses">UseBufferedResponses</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize">UserCacheSize</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Dispose_System_Boolean_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(System.Boolean)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Dispose_System_Boolean_">Dispose(bool)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_GetChannel_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(System.String)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_GetChannel_System_String_">GetChannel(string)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Get a channel from the cache</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_GetChannelByName_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(System.String)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_GetChannelByName_System_String_">GetChannelByName(string)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_CancellationToken__">JoinChannelAsync(string, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[],System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___System_Nullable_CancellationToken__">JoinChannelsAsync(string[], CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[])">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___">JoinChannelsAsync(params string[])</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_JoinMyChannelAsync_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinMyChannelAsync_System_Nullable_CancellationToken__">JoinMyChannelAsync(CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_CancellationToken__">LeaveChannelAsync(string, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_">LeaveChannelAsync(string)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_CancellationToken__">LeaveChannelsAsync(string[], CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[])">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___">LeaveChannelsAsync(params string[])</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_RunAsync" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_RunAsync">RunAsync()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{CancellationToken})">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_CancellationToken__">SendMessageAsync(string, string, string, CancellationToken?)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync">ValidateAsync()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync_System_String_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(System.String,System.String)">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync_System_String_System_String_">ValidateAsync(string, string)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelBitsTierUnlocked" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelBitsTierUnlocked">ChannelBitsTierUnlocked</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a user shares that they just unlocked a new bits tier.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelJoined" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelJoined">ChannelJoined</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the currently authorized user joins a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelLeft" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelLeft">ChannelLeft</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the currently authorized user leaves a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaided" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRaided">ChannelRaided</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a user raids the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRitual" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelRitual">ChannelRitual</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChannelStateUpdated" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChannelStateUpdated">ChannelStateUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the state of a channel is updated.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_ChatCleared" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_ChatCleared">ChatCleared</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the entire chat is cleared in a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Connected" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Connected">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Connected">Connected</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the socket connection is established</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Disconnected" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Disconnected">Disconnected</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the socket connection is closed</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_LoggedIn" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_LoggedIn">LoggedIn</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the socket connection is established</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_MessageDeleted" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_MessageDeleted">MessageDeleted</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a message is deleted in a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_MessageReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_MessageReceived">MessageReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a message is received in a channel</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Reconnect" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Reconnect">Reconnect</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the server tells the client to reconnect</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_Subscription" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.Subscription">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_Subscription">Subscription</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionGifted" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionGifted">SubscriptionGifted</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionGiftUpgraded" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionGiftUpgraded">SubscriptionGiftUpgraded</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionMessageReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_SubscriptionMessageReceived">SubscriptionMessageReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a subscription message is received in a channel</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UnknownEventReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UnknownEventReceived">UnknownEventReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when an unknown event is received</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserBanned" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserBanned">UserBanned</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a user is banned in a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserJoinedChannel" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserJoinedChannel">UserJoinedChannel</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when any user joins a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserLeftChannel" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserLeftChannel">UserLeftChannel</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when any user leaves a channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_UserStateUpdated" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserStateUpdated">UserStateUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the current user's state is updated.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_TwitchChatClient_WhisperReceived" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived">
-          <a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.html#AuxLabs_Twitch_Chat_TwitchChatClient_WhisperReceived">WhisperReceived</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_TwitchChatClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.TwitchChatClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs/#L9" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TwitchChatClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.-ctor.html#AuxLabs_Twitch_Chat_TwitchChatClient__ctor_AuxLabs_Twitch_Chat_TwitchChatConfig_">TwitchChatClient(TwitchChatConfig)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.-ctor.html#AuxLabs_Twitch_Chat_TwitchChatClient__ctor_System_String_AuxLabs_Twitch_Chat_TwitchChatConfig_">TwitchChatClient(string, TwitchChatConfig)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Channels.html#AuxLabs_Twitch_Chat_TwitchChatClient_Channels">Channels</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested.html#AuxLabs_Twitch_Chat_TwitchChatClient_CommandsRequested">CommandsRequested</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName.html#AuxLabs_Twitch_Chat_TwitchChatClient_CurrentName">CurrentName</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Identity.html#AuxLabs_Twitch_Chat_TwitchChatClient_Identity">Identity</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.IRC.html#AuxLabs_Twitch_Chat_TwitchChatClient_IRC">IRC</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly.html#AuxLabs_Twitch_Chat_TwitchChatClient_IsReadOnly">IsReadOnly</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize.html#AuxLabs_Twitch_Chat_TwitchChatClient_MessageCacheSize">MessageCacheSize</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.MyUser.html#AuxLabs_Twitch_Chat_TwitchChatClient_MyUser">MyUser</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Rest.html#AuxLabs_Twitch_Chat_TwitchChatClient_Rest">Rest</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested.html#AuxLabs_Twitch_Chat_TwitchChatClient_TagsRequested">TagsRequested</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent.html#AuxLabs_Twitch_Chat_TwitchChatClient_ThrowOnUnknownEvent">ThrowOnUnknownEvent</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses.html#AuxLabs_Twitch_Chat_TwitchChatClient_UseBufferedResponses">UseBufferedResponses</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize.html#AuxLabs_Twitch_Chat_TwitchChatClient_UserCacheSize">UserCacheSize</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Dispose.html#AuxLabs_Twitch_Chat_TwitchChatClient_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel.html#AuxLabs_Twitch_Chat_TwitchChatClient_GetChannel_System_String_">GetChannel(string)</a></dt>
+    <dd><p>Get a channel from the cache</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName.html#AuxLabs_Twitch_Chat_TwitchChatClient_GetChannelByName_System_String_">GetChannelByName(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelAsync_System_String_System_Nullable_System_Threading_CancellationToken__">JoinChannelAsync(string, CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___System_Nullable_System_Threading_CancellationToken__">JoinChannelsAsync(string[], CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinChannelsAsync_System_String___">JoinChannelsAsync(params string[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_JoinMyChannelAsync_System_Nullable_System_Threading_CancellationToken__">JoinMyChannelAsync(CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_System_Nullable_System_Threading_CancellationToken__">LeaveChannelAsync(string, CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelAsync_System_String_">LeaveChannelAsync(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___System_Nullable_System_Threading_CancellationToken__">LeaveChannelsAsync(string[], CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_LeaveChannelsAsync_System_String___">LeaveChannelsAsync(params string[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_RunAsync">RunAsync()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_SendMessageAsync_System_String_System_String_System_String_System_Nullable_System_Threading_CancellationToken__">SendMessageAsync(string, string, string, CancellationToken?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync">ValidateAsync()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync.html#AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync_System_String_System_String_">ValidateAsync(string, string)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="events">Events
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked.html">ChannelBitsTierUnlocked</a></dt>
+    <dd><p>Triggered when a user shares that they just unlocked a new bits tier.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined.html">ChannelJoined</a></dt>
+    <dd><p>Triggered when the currently authorized user joins a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft.html">ChannelLeft</a></dt>
+    <dd><p>Triggered when the currently authorized user leaves a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided.html">ChannelRaided</a></dt>
+    <dd><p>Triggered when a user raids the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual.html">ChannelRitual</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated.html">ChannelStateUpdated</a></dt>
+    <dd><p>Triggered when the state of a channel is updated.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared.html">ChatCleared</a></dt>
+    <dd><p>Triggered when the entire chat is cleared in a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Connected.html">Connected</a></dt>
+    <dd><p>Triggered when the socket connection is established</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected.html">Disconnected</a></dt>
+    <dd><p>Triggered when the socket connection is closed</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn.html">LoggedIn</a></dt>
+    <dd><p>Triggered when the socket connection is established</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted.html">MessageDeleted</a></dt>
+    <dd><p>Triggered when a message is deleted in a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived.html">MessageReceived</a></dt>
+    <dd><p>Triggered when a message is received in a channel</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect.html">Reconnect</a></dt>
+    <dd><p>Triggered when the server tells the client to reconnect</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.Subscription.html">Subscription</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted.html">SubscriptionGifted</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded.html">SubscriptionGiftUpgraded</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived.html">SubscriptionMessageReceived</a></dt>
+    <dd><p>Triggered when a subscription message is received in a channel</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived.html">UnknownEventReceived</a></dt>
+    <dd><p>Triggered when an unknown event is received</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned.html">UserBanned</a></dt>
+    <dd><p>Triggered when a user is banned in a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel.html">UserJoinedChannel</a></dt>
+    <dd><p>Triggered when any user joins a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel.html">UserLeftChannel</a></dt>
+    <dd><p>Triggered when any user leaves a channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated.html">UserStateUpdated</a></dt>
+    <dd><p>Triggered when the current user's state is updated.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived.html">WhisperReceived</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_TwitchChatClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.TwitchChatClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
+
+        
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      AuxLabs.Twitch
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

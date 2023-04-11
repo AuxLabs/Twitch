@@ -1,619 +1,490 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TwitchEventSubApiClient
+      <title>Class TwitchEventSubApiClient
  | AuxLabs.Twitch Documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TwitchEventSubApiClient
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TwitchEventSubApiClient
  | AuxLabs.Twitch Documentation ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  <meta property="docfx:rel" content="../">
-  
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient">
+
+        <article data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient">
 
 
-  <h1 id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient" class="text-break">Class TwitchEventSubApiClient
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">TwitchEventSubApiClient</span></div>
+
+  <h1 id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient" class="text-break">
+    Class TwitchEventSubApiClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub.Api/TwitchEventSubApiClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.html">EventSub</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.Api.html">Api</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.EventSub.Api.dll</dd></dl>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.html">EventSub</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.Api.html">Api</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.EventSub.Api.dll</h6>
-  <h5 id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class TwitchEventSubApiClient : IDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.#ctor(AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig)">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_">TwitchEventSubApiClient(TwitchEventSubApiConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_System_String_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.#ctor(System.String,AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig)">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_System_String_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_">TwitchEventSubApiClient(string, TwitchEventSubApiConfig)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ThrowOnUnknownEvent" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ThrowOnUnknownEvent">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ThrowOnUnknownEvent">ThrowOnUnknownEvent</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Session" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Session">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Session">Session</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_State" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_State">State</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose">Dispose()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose_System_Boolean_" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose(System.Boolean)">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose_System_Boolean_">Dispose(bool)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Run" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Run">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Run">Run()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RunAsync" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RunAsync">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RunAsync">RunAsync()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_AuthorizationGranted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.AuthorizationGranted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_AuthorizationGranted">AuthorizationGranted</a>
-        </td>
-        <td class="markdown level1 summary"><p>A user’s authorization has been granted to your client id.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_AuthorizationRevoked" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.AuthorizationRevoked">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_AuthorizationRevoked">AuthorizationRevoked</a>
-        </td>
-        <td class="markdown level1 summary"><p>A user’s authorization has been revoked for your client id.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BitsCheered" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BitsCheered">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BitsCheered">BitsCheered</a>
-        </td>
-        <td class="markdown level1 summary"><p>A user cheers on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BitsTransactionCreated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BitsTransactionCreated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BitsTransactionCreated">BitsTransactionCreated</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Bits transaction occurred for a specified Twitch Extension.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BroadcastEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BroadcastEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BroadcastEnded">BroadcastEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>The specified broadcaster stops a stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BroadcastStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BroadcastStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_BroadcastStarted">BroadcastStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>The specified broadcaster starts a stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelFollow" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelFollow">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelFollow">ChannelFollow</a>
-        </td>
-        <td class="markdown level1 summary"><p>A specified channel receives a follow.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelRaided" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelRaided">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelRaided">ChannelRaided</a>
-        </td>
-        <td class="markdown level1 summary"><p>A broadcaster raids another broadcaster’s channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelUpdated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelUpdated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ChannelUpdated">ChannelUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>A broadcaster updates their channel properties e.g., category, title, mature flag, broadcast, or language.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignEnded">CharityCampaignEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends an event notification when the broadcaster stops a charity campaign.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignProgress" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignProgress">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignProgress">CharityCampaignProgress</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends an event notification when progress is made towards the campaign’s goal or when the broadcaster changes the fundraising goal.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityCampaignStarted">CharityCampaignStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends an event notification when the broadcaster starts a charity campaign.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityDonation" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityDonation">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_CharityDonation">CharityDonation</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends an event notification when a user donates to the broadcaster’s charity campaign.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Connected" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Connected">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Connected">Connected</a>
-        </td>
-        <td class="markdown level1 summary"><p>The client has successfully made a connection to the server.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Disconnected" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Disconnected">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Disconnected">Disconnected</a>
-        </td>
-        <td class="markdown level1 summary"><p>The client was forcibly disconnected from the server.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_DropEntitlementGranted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.DropEntitlementGranted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_DropEntitlementGranted">DropEntitlementGranted</a>
-        </td>
-        <td class="markdown level1 summary"><p>An entitlement for a Drop is granted to a user.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalEnded">GoalEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>Get notified when a broadcaster ends a goal.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalProgress" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalProgress">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalProgress">GoalProgress</a>
-        </td>
-        <td class="markdown level1 summary"><p>Get notified when progress (either positive or negative) is made towards a broadcaster’s goal.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_GoalStarted">GoalStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>Get notified when a broadcaster begins a goal.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainEnded">HypeTrainEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Hype Train ends on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainProgress" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainProgress">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainProgress">HypeTrainProgress</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Hype Train makes progress on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_HypeTrainStarted">HypeTrainStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Hype Train begins on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ModeratorAdded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorAdded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ModeratorAdded">ModeratorAdded</a>
-        </td>
-        <td class="markdown level1 summary"><p>Moderator privileges were added to a user on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ModeratorRemoved" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorRemoved">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ModeratorRemoved">ModeratorRemoved</a>
-        </td>
-        <td class="markdown level1 summary"><p>Moderator privileges were removed from a user on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_NotificationReceived" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.NotificationReceived">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_NotificationReceived">NotificationReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered whenever a notification payload is received.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollEnded">PollEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A poll ended on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollProgress" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollProgress">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollProgress">PollProgress</a>
-        </td>
-        <td class="markdown level1 summary"><p>Users respond to a poll on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PollStarted">PollStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>A poll started on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionEnded">PredictionEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Prediction ended on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionLocked" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionLocked">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionLocked">PredictionLocked</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Prediction was locked on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionProgress" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionProgress">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionProgress">PredictionProgress</a>
-        </td>
-        <td class="markdown level1 summary"><p>Users participated in a Prediction on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionStarted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionStarted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_PredictionStarted">PredictionStarted</a>
-        </td>
-        <td class="markdown level1 summary"><p>A Prediction started on a specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Reconnect" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Reconnect">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Reconnect">Reconnect</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the server needs to terminate the connection.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RedemptionAdded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RedemptionAdded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RedemptionAdded">RedemptionAdded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A viewer has redeemed a custom channel points reward on the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RedemptionUpdated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RedemptionUpdated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RedemptionUpdated">RedemptionUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>A redemption of a channel points custom reward has been updated for the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Revocation" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Revocation">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Revocation">Revocation</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when the user no longer exists or they revoked the authorization token that the subscription relied on.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardAdded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardAdded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardAdded">RewardAdded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A custom channel points reward has been created for the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardRemoved" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardRemoved">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardRemoved">RewardRemoved</a>
-        </td>
-        <td class="markdown level1 summary"><p>A custom channel points reward has been removed from the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardUpdated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardUpdated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RewardUpdated">RewardUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>A custom channel points reward has been updated for the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SessionCreated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SessionCreated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SessionCreated">SessionCreated</a>
-        </td>
-        <td class="markdown level1 summary"><p>Triggered when a session is created after connection.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeDisabled" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeDisabled">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeDisabled">ShieldModeDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a notification when the broadcaster deactivates Shield Mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeEnabled" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnabled">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShieldModeEnabled">ShieldModeEnabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a notification when the broadcaster activates Shield Mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutCreated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutCreated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutCreated">ShoutoutCreated</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a notification when the specified broadcaster sends a Shoutout.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutReceived" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutReceived">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_ShoutoutReceived">ShoutoutReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>Sends a notification when the specified broadcaster receives a Shoutout.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Subscription" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Subscription">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Subscription">Subscription</a>
-        </td>
-        <td class="markdown level1 summary"><p>A notification when a specified channel receives a subscriber. This does not include resubscribes.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionEnded" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionEnded">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionEnded">SubscriptionEnded</a>
-        </td>
-        <td class="markdown level1 summary"><p>A notification when a subscription to the specified channel ends.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionGifted" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionGifted">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionGifted">SubscriptionGifted</a>
-        </td>
-        <td class="markdown level1 summary"><p>A notification when a viewer gives a gift subscription to one or more users in the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionMessage" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionMessage">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_SubscriptionMessage">SubscriptionMessage</a>
-        </td>
-        <td class="markdown level1 summary"><p>A notification when a user sends a resubscription chat message in a specific channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UnknownEventReceived" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UnknownEventReceived">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UnknownEventReceived">UnknownEventReceived</a>
-        </td>
-        <td class="markdown level1 summary"><p>An unhandled irc command was received.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserBanned" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserBanned">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserBanned">UserBanned</a>
-        </td>
-        <td class="markdown level1 summary"><p>A viewer is banned from the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserUnbanned" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserUnbanned">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserUnbanned">UserUnbanned</a>
-        </td>
-        <td class="markdown level1 summary"><p>A viewer is unbanned from the specified channel.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserUpdated" data-uid="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserUpdated">
-          <a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_UserUpdated">UserUpdated</a>
-        </td>
-        <td class="markdown level1 summary"><p>A user has updated their account.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub.Api/TwitchEventSubApiClient.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TwitchEventSubApiClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.-ctor.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_">TwitchEventSubApiClient(TwitchEventSubApiConfig)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.-ctor.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient__ctor_System_String_AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiConfig_">TwitchEventSubApiClient(string, TwitchEventSubApiConfig)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ThrowOnUnknownEvent.html">ThrowOnUnknownEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Session.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Session">Session</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.State.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_State">State</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose">Dispose()</a></dt>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Dispose.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Run.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_Run">Run()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RunAsync.html#AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient_RunAsync">RunAsync()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="events">Events
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.AuthorizationGranted.html">AuthorizationGranted</a></dt>
+    <dd><p>A user’s authorization has been granted to your client id.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.AuthorizationRevoked.html">AuthorizationRevoked</a></dt>
+    <dd><p>A user’s authorization has been revoked for your client id.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BitsCheered.html">BitsCheered</a></dt>
+    <dd><p>A user cheers on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BitsTransactionCreated.html">BitsTransactionCreated</a></dt>
+    <dd><p>A Bits transaction occurred for a specified Twitch Extension.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BroadcastEnded.html">BroadcastEnded</a></dt>
+    <dd><p>The specified broadcaster stops a stream.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.BroadcastStarted.html">BroadcastStarted</a></dt>
+    <dd><p>The specified broadcaster starts a stream.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelFollow.html">ChannelFollow</a></dt>
+    <dd><p>A specified channel receives a follow.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelRaided.html">ChannelRaided</a></dt>
+    <dd><p>A broadcaster raids another broadcaster’s channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ChannelUpdated.html">ChannelUpdated</a></dt>
+    <dd><p>A broadcaster updates their channel properties e.g., category, title, mature flag, broadcast, or language.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignEnded.html">CharityCampaignEnded</a></dt>
+    <dd><p>Sends an event notification when the broadcaster stops a charity campaign.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignProgress.html">CharityCampaignProgress</a></dt>
+    <dd><p>Sends an event notification when progress is made towards the campaign’s goal or when the broadcaster changes the fundraising goal.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityCampaignStarted.html">CharityCampaignStarted</a></dt>
+    <dd><p>Sends an event notification when the broadcaster starts a charity campaign.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.CharityDonation.html">CharityDonation</a></dt>
+    <dd><p>Sends an event notification when a user donates to the broadcaster’s charity campaign.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Connected.html">Connected</a></dt>
+    <dd><p>The client has successfully made a connection to the server.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Disconnected.html">Disconnected</a></dt>
+    <dd><p>The client was forcibly disconnected from the server.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.DropEntitlementGranted.html">DropEntitlementGranted</a></dt>
+    <dd><p>An entitlement for a Drop is granted to a user.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalEnded.html">GoalEnded</a></dt>
+    <dd><p>Get notified when a broadcaster ends a goal.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalProgress.html">GoalProgress</a></dt>
+    <dd><p>Get notified when progress (either positive or negative) is made towards a broadcaster’s goal.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.GoalStarted.html">GoalStarted</a></dt>
+    <dd><p>Get notified when a broadcaster begins a goal.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainEnded.html">HypeTrainEnded</a></dt>
+    <dd><p>A Hype Train ends on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainProgress.html">HypeTrainProgress</a></dt>
+    <dd><p>A Hype Train makes progress on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.HypeTrainStarted.html">HypeTrainStarted</a></dt>
+    <dd><p>A Hype Train begins on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorAdded.html">ModeratorAdded</a></dt>
+    <dd><p>Moderator privileges were added to a user on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ModeratorRemoved.html">ModeratorRemoved</a></dt>
+    <dd><p>Moderator privileges were removed from a user on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.NotificationReceived.html">NotificationReceived</a></dt>
+    <dd><p>Triggered whenever a notification payload is received.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollEnded.html">PollEnded</a></dt>
+    <dd><p>A poll ended on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollProgress.html">PollProgress</a></dt>
+    <dd><p>Users respond to a poll on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PollStarted.html">PollStarted</a></dt>
+    <dd><p>A poll started on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionEnded.html">PredictionEnded</a></dt>
+    <dd><p>A Prediction ended on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionLocked.html">PredictionLocked</a></dt>
+    <dd><p>A Prediction was locked on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionProgress.html">PredictionProgress</a></dt>
+    <dd><p>Users participated in a Prediction on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.PredictionStarted.html">PredictionStarted</a></dt>
+    <dd><p>A Prediction started on a specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Reconnect.html">Reconnect</a></dt>
+    <dd><p>Triggered when the server needs to terminate the connection.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RedemptionAdded.html">RedemptionAdded</a></dt>
+    <dd><p>A viewer has redeemed a custom channel points reward on the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RedemptionUpdated.html">RedemptionUpdated</a></dt>
+    <dd><p>A redemption of a channel points custom reward has been updated for the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Revocation.html">Revocation</a></dt>
+    <dd><p>Triggered when the user no longer exists or they revoked the authorization token that the subscription relied on.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardAdded.html">RewardAdded</a></dt>
+    <dd><p>A custom channel points reward has been created for the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardRemoved.html">RewardRemoved</a></dt>
+    <dd><p>A custom channel points reward has been removed from the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.RewardUpdated.html">RewardUpdated</a></dt>
+    <dd><p>A custom channel points reward has been updated for the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SessionCreated.html">SessionCreated</a></dt>
+    <dd><p>Triggered when a session is created after connection.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeDisabled.html">ShieldModeDisabled</a></dt>
+    <dd><p>Sends a notification when the broadcaster deactivates Shield Mode.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShieldModeEnabled.html">ShieldModeEnabled</a></dt>
+    <dd><p>Sends a notification when the broadcaster activates Shield Mode.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutCreated.html">ShoutoutCreated</a></dt>
+    <dd><p>Sends a notification when the specified broadcaster sends a Shoutout.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.ShoutoutReceived.html">ShoutoutReceived</a></dt>
+    <dd><p>Sends a notification when the specified broadcaster receives a Shoutout.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.Subscription.html">Subscription</a></dt>
+    <dd><p>A notification when a specified channel receives a subscriber. This does not include resubscribes.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionEnded.html">SubscriptionEnded</a></dt>
+    <dd><p>A notification when a subscription to the specified channel ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionGifted.html">SubscriptionGifted</a></dt>
+    <dd><p>A notification when a viewer gives a gift subscription to one or more users in the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.SubscriptionMessage.html">SubscriptionMessage</a></dt>
+    <dd><p>A notification when a user sends a resubscription chat message in a specific channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UnknownEventReceived.html">UnknownEventReceived</a></dt>
+    <dd><p>An unhandled irc command was received.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserBanned.html">UserBanned</a></dt>
+    <dd><p>A viewer is banned from the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserUnbanned.html">UserUnbanned</a></dt>
+    <dd><p>A viewer is unbanned from the specified channel.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.UserUpdated.html">UserUpdated</a></dt>
+    <dd><p>A user has updated their account.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_Api_TwitchEventSubApiClient.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
+
+        
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      AuxLabs.Twitch
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

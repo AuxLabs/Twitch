@@ -1,292 +1,248 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IChatMessage
+      <title>Interface IChatMessage
  | AuxLabs.Twitch Documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IChatMessage
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IChatMessage
  | AuxLabs.Twitch Documentation ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  <meta property="docfx:rel" content="../">
-  
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_IChatMessage.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.IChatMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AuxLabs.Twitch.Chat.IChatMessage">
+
+        <article data-uid="AuxLabs.Twitch.Chat.IChatMessage">
 
 
-  <h1 id="AuxLabs_Twitch_Chat_IChatMessage" data-uid="AuxLabs.Twitch.Chat.IChatMessage" class="text-break">Interface IChatMessage
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_AuthorId">IMessage.AuthorId</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_AuthorName">IMessage.AuthorName</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_AuthorDisplayName">IMessage.AuthorDisplayName</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_AuthorType">IMessage.AuthorType</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_AuthorColor">IMessage.AuthorColor</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_Content">IMessage.Content</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_Action">IMessage.Action</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_IsTurbo">IMessage.IsTurbo</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_Badges">IMessage.Badges</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.html#AuxLabs_Twitch_Chat_IMessage_Emotes">IMessage.Emotes</a>
-    </div>
-    <div>
-      <a class="xref" href="AuxLabs.Twitch.IEntity-1.html#AuxLabs_Twitch_IEntity_1_Id">IEntity&lt;string&gt;.Id</a>
-    </div>
+
+  <h1 id="AuxLabs_Twitch_Chat_IChatMessage" data-uid="AuxLabs.Twitch.Chat.IChatMessage" class="text-break">
+    Interface IChatMessage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat.Api/Contracts/Messages/IChatMessage.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Chat.Api.dll</dd></dl>
   </div>
-  <h6><strong>Namespace</strong>: <span class="xref">AuxLabs</span>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Chat.html">Chat</a></h6>
-  <h6><strong>Assembly</strong>: AuxLabs.Twitch.Chat.Api.dll</h6>
-  <h5 id="AuxLabs_Twitch_Chat_IChatMessage_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IChatMessage : IMessage, IEntity&lt;string&gt;</code></pre>
   </div>
-  <h3 id="properties">Properties
-</h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_BadgeInfo" data-uid="AuxLabs.Twitch.Chat.IChatMessage.BadgeInfo">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_BadgeInfo">BadgeInfo</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_BitsAmount" data-uid="AuxLabs.Twitch.Chat.IChatMessage.BitsAmount">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_BitsAmount">BitsAmount</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ChannelId" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ChannelId">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ChannelId">ChannelId</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ChannelName" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ChannelName">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ChannelName">ChannelName</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_CustomRewardId" data-uid="AuxLabs.Twitch.Chat.IChatMessage.CustomRewardId">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_CustomRewardId">CustomRewardId</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_IsEmoteOnly" data-uid="AuxLabs.Twitch.Chat.IChatMessage.IsEmoteOnly">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsEmoteOnly">IsEmoteOnly</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_IsFirstMessage" data-uid="AuxLabs.Twitch.Chat.IChatMessage.IsFirstMessage">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsFirstMessage">IsFirstMessage</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_IsModerator" data-uid="AuxLabs.Twitch.Chat.IChatMessage.IsModerator">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsModerator">IsModerator</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_IsSubscriber" data-uid="AuxLabs.Twitch.Chat.IChatMessage.IsSubscriber">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsSubscriber">IsSubscriber</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_IsVip" data-uid="AuxLabs.Twitch.Chat.IChatMessage.IsVip">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsVip">IsVip</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_MessageType" data-uid="AuxLabs.Twitch.Chat.IChatMessage.MessageType">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_MessageType">MessageType</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_Nonce" data-uid="AuxLabs.Twitch.Chat.IChatMessage.Nonce">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_Nonce">Nonce</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorDisplayName" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorDisplayName">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorDisplayName">ReplyAuthorDisplayName</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorId" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorId">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorId">ReplyAuthorId</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorName" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorName">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorName">ReplyAuthorName</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageContent" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ReplyMessageContent">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageContent">ReplyMessageContent</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageId" data-uid="AuxLabs.Twitch.Chat.IChatMessage.ReplyMessageId">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageId">ReplyMessageId</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="AuxLabs_Twitch_Chat_IChatMessage_Timestamp" data-uid="AuxLabs.Twitch.Chat.IChatMessage.Timestamp">
-          <a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.html#AuxLabs_Twitch_Chat_IChatMessage_Timestamp">Timestamp</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_IChatMessage.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.IChatMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat.Api/Contracts/Messages/IChatMessage.cs/#L5" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.AuthorId.html#AuxLabs_Twitch_Chat_IMessage_AuthorId">IMessage.AuthorId</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.AuthorName.html#AuxLabs_Twitch_Chat_IMessage_AuthorName">IMessage.AuthorName</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.AuthorDisplayName.html#AuxLabs_Twitch_Chat_IMessage_AuthorDisplayName">IMessage.AuthorDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.AuthorType.html#AuxLabs_Twitch_Chat_IMessage_AuthorType">IMessage.AuthorType</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.AuthorColor.html#AuxLabs_Twitch_Chat_IMessage_AuthorColor">IMessage.AuthorColor</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.Content.html#AuxLabs_Twitch_Chat_IMessage_Content">IMessage.Content</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.Action.html#AuxLabs_Twitch_Chat_IMessage_Action">IMessage.Action</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.IsTurbo.html#AuxLabs_Twitch_Chat_IMessage_IsTurbo">IMessage.IsTurbo</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.Badges.html#AuxLabs_Twitch_Chat_IMessage_Badges">IMessage.Badges</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Chat.IMessage.Emotes.html#AuxLabs_Twitch_Chat_IMessage_Emotes">IMessage.Emotes</a>
+    </div>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.IEntity-1.Id.html#AuxLabs_Twitch_IEntity_1_Id">IEntity&lt;string&gt;.Id</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.BadgeInfo.html#AuxLabs_Twitch_Chat_IChatMessage_BadgeInfo">BadgeInfo</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.BitsAmount.html#AuxLabs_Twitch_Chat_IChatMessage_BitsAmount">BitsAmount</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ChannelId.html#AuxLabs_Twitch_Chat_IChatMessage_ChannelId">ChannelId</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ChannelName.html#AuxLabs_Twitch_Chat_IChatMessage_ChannelName">ChannelName</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.CustomRewardId.html#AuxLabs_Twitch_Chat_IChatMessage_CustomRewardId">CustomRewardId</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.IsEmoteOnly.html#AuxLabs_Twitch_Chat_IChatMessage_IsEmoteOnly">IsEmoteOnly</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.IsFirstMessage.html#AuxLabs_Twitch_Chat_IChatMessage_IsFirstMessage">IsFirstMessage</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.IsModerator.html#AuxLabs_Twitch_Chat_IChatMessage_IsModerator">IsModerator</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.IsSubscriber.html#AuxLabs_Twitch_Chat_IChatMessage_IsSubscriber">IsSubscriber</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.IsVip.html#AuxLabs_Twitch_Chat_IChatMessage_IsVip">IsVip</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.MessageType.html#AuxLabs_Twitch_Chat_IChatMessage_MessageType">MessageType</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.Nonce.html#AuxLabs_Twitch_Chat_IChatMessage_Nonce">Nonce</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorDisplayName.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorDisplayName">ReplyAuthorDisplayName</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorId.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorId">ReplyAuthorId</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ReplyAuthorName.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyAuthorName">ReplyAuthorName</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ReplyMessageContent.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageContent">ReplyMessageContent</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.ReplyMessageId.html#AuxLabs_Twitch_Chat_IChatMessage_ReplyMessageId">ReplyMessageId</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Chat.IChatMessage.Timestamp.html#AuxLabs_Twitch_Chat_IChatMessage_Timestamp">Timestamp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Chat_IChatMessage.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Chat.IChatMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
+
+        
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      AuxLabs.Twitch
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

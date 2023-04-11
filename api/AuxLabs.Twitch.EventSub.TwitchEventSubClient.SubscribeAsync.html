@@ -1,0 +1,1755 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method SubscribeAsync
+ | AuxLabs.Twitch Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method SubscribeAsync
+ | AuxLabs.Twitch Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*">
+
+
+
+
+
+<h1 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*" class="text-break">
+  Method SubscribeAsync
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L135"><i class="bi bi-code-slash"></i></a>
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.EventSub.html">EventSub</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.EventSub.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_BroadcastEndedSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)">
+  SubscribeAsync(BroadcastEndedSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L135"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(BroadcastEndedSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription.html">BroadcastEndedSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_BroadcastStartedSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)">
+  SubscribeAsync(BroadcastStartedSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L137"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(BroadcastStartedSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription.html">BroadcastStartedSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ChannelUpdateSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)">
+  SubscribeAsync(ChannelUpdateSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L143"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ChannelUpdateSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription.html">ChannelUpdateSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_CheerSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)">
+  SubscribeAsync(CheerSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L145"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(CheerSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.CheerSubscription.html">CheerSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_FollowSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)">
+  SubscribeAsync(FollowSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L147"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(FollowSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.FollowSubscription.html">FollowSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RaidSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)">
+  SubscribeAsync(RaidSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L149"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RaidSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RaidSubscription.html">RaidSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ShoutoutCreateSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)">
+  SubscribeAsync(ShoutoutCreateSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L151"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ShoutoutCreateSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription.html">ShoutoutCreateSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ShoutoutReceiveSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)">
+  SubscribeAsync(ShoutoutReceiveSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L153"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ShoutoutReceiveSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription.html">ShoutoutReceiveSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_CampaignProgressSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)">
+  SubscribeAsync(CampaignProgressSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L159"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(CampaignProgressSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription.html">CampaignProgressSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_CampaignStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)">
+  SubscribeAsync(CampaignStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L161"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(CampaignStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription.html">CampaignStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_CampaignStopSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)">
+  SubscribeAsync(CampaignStopSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L163"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(CampaignStopSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription.html">CampaignStopSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_DonationSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)">
+  SubscribeAsync(DonationSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L165"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(DonationSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.DonationSubscription.html">DonationSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_EntitlementGrantSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)">
+  SubscribeAsync(EntitlementGrantSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L171"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(EntitlementGrantSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription.html">EntitlementGrantSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_BitsTransactionSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)">
+  SubscribeAsync(BitsTransactionSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L177"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(BitsTransactionSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription.html">BitsTransactionSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_GoalEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)">
+  SubscribeAsync(GoalEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L183"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(GoalEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.GoalEndSubscription.html">GoalEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_GoalProgressSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)">
+  SubscribeAsync(GoalProgressSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L185"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(GoalProgressSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription.html">GoalProgressSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_GoalStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)">
+  SubscribeAsync(GoalStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L187"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(GoalStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.GoalStartSubscription.html">GoalStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_HypetrainEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)">
+  SubscribeAsync(HypetrainEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L193"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(HypetrainEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription.html">HypetrainEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_HypetrainProgressSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)">
+  SubscribeAsync(HypetrainProgressSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L195"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(HypetrainProgressSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription.html">HypetrainProgressSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_HypetrainStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)">
+  SubscribeAsync(HypetrainStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L197"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(HypetrainStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription.html">HypetrainStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_BanSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)">
+  SubscribeAsync(BanSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L203"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(BanSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.BanSubscription.html">BanSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ModeratorAddSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)">
+  SubscribeAsync(ModeratorAddSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L205"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ModeratorAddSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.html">ModeratorAddSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ModeratorRemoveSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)">
+  SubscribeAsync(ModeratorRemoveSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L207"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ModeratorRemoveSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription.html">ModeratorRemoveSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ShieldModeEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)">
+  SubscribeAsync(ShieldModeEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L209"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ShieldModeEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription.html">ShieldModeEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_ShieldModeStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)">
+  SubscribeAsync(ShieldModeStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L211"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(ShieldModeStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription.html">ShieldModeStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_UnbanSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)">
+  SubscribeAsync(UnbanSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L213"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(UnbanSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.UnbanSubscription.html">UnbanSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PollEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)">
+  SubscribeAsync(PollEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L219"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PollEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PollEndSubscription.html">PollEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PollProgressSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)">
+  SubscribeAsync(PollProgressSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L221"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PollProgressSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PollProgressSubscription.html">PollProgressSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PollStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)">
+  SubscribeAsync(PollStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L223"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PollStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PollStartSubscription.html">PollStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PredictionEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)">
+  SubscribeAsync(PredictionEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L229"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PredictionEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription.html">PredictionEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PredictionLockSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)">
+  SubscribeAsync(PredictionLockSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L231"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PredictionLockSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription.html">PredictionLockSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PredictionProgressSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)">
+  SubscribeAsync(PredictionProgressSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L233"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PredictionProgressSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription.html">PredictionProgressSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_PredictionStartSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)">
+  SubscribeAsync(PredictionStartSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L235"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(PredictionStartSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription.html">PredictionStartSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RedemptionAddSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)">
+  SubscribeAsync(RedemptionAddSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L241"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RedemptionAddSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription.html">RedemptionAddSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RedemptionUpdateSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)">
+  SubscribeAsync(RedemptionUpdateSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L243"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RedemptionUpdateSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription.html">RedemptionUpdateSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RewardAddSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)">
+  SubscribeAsync(RewardAddSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L245"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RewardAddSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RewardAddSubscription.html">RewardAddSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RewardRemoveSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)">
+  SubscribeAsync(RewardRemoveSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L247"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RewardRemoveSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription.html">RewardRemoveSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_RewardUpdateSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)">
+  SubscribeAsync(RewardUpdateSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L249"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(RewardUpdateSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription.html">RewardUpdateSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_SubscribeSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)">
+  SubscribeAsync(SubscribeSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L255"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(SubscribeSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.SubscribeSubscription.html">SubscribeSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_SubscriptionEndSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)">
+  SubscribeAsync(SubscriptionEndSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L257"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(SubscriptionEndSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription.html">SubscriptionEndSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_SubscriptionGiftSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)">
+  SubscribeAsync(SubscriptionGiftSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L259"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(SubscriptionGiftSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription.html">SubscriptionGiftSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_SubscriptionMessageSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)">
+  SubscribeAsync(SubscriptionMessageSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L261"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(SubscriptionMessageSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription.html">SubscriptionMessageSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_AuthorizationGrantedSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)">
+  SubscribeAsync(AuthorizationGrantedSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L267"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(AuthorizationGrantedSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription.html">AuthorizationGrantedSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_AuthorizationRevokedSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)">
+  SubscribeAsync(AuthorizationRevokedSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L269"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(AuthorizationRevokedSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription.html">AuthorizationRevokedSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*"></a>
+
+<h3 id="AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_AuxLabs_Twitch_Rest_Requests_UserUpdateSubscription_" data-uid="AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)">
+  SubscribeAsync(UserUpdateSubscription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs/#L271"><i class="bi bi-code-slash"></i></a>
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;RestEventSubscription&gt; SubscribeAsync(UserUpdateSubscription args)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>args</code> <a class="xref" href="AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription.html">UserUpdateSubscription</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_EventSub_TwitchEventSubClient_SubscribeAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          AuxLabs.Twitch
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
