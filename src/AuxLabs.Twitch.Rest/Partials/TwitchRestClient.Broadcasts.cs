@@ -43,7 +43,6 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray();
         }
 
-        // Paginate
         public IAsyncEnumerable<IReadOnlyCollection<RestBroadcast>> GetBroadcastsAsync(string[] userNames = null, string[] userIds = null, string[] gameIds = null, string[] languages = null,
             int count = 20, CancellationToken? cancelToken = null)
         {
