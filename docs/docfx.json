@@ -12,7 +12,7 @@
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
-      "namespaceLayout": "flattened"
+      "namespaceLayout": "nested"
     }
   ],
   "build": {
@@ -57,8 +57,8 @@
       "_templates/memberpage"
     ],
     "globalMetadata": {
-      "_appTitle": "AuxLabs.SimpleTwitch Documentation",
-      "_appFooter": "AuxLabs.SimpleTwitch",
+      "_appTitle": "AuxLabs.Twitch Documentation",
+      "_appFooter": "AuxLabs.Twitch",
       "_enableSearch": true
     }
   }
