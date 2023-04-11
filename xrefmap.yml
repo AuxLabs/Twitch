@@ -9546,6 +9546,148 @@ references:
   fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubEntity(Of T).Id
   nameWithType: EventSubEntity<T>.Id
   nameWithType.vb: EventSubEntity(Of T).Id
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+  name: EventSubEventSubscription
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  commentId: T:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+  nameWithType: EventSubEventSubscription
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name: EventSubEventSubscription(TwitchEventSubClient, string)
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription__ctor_AuxLabs_Twitch_EventSub_TwitchEventSubClient_System_String_
+  commentId: M:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubClient,System.String)
+  name.vb: New(TwitchEventSubClient, String)
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.EventSubEventSubscription(AuxLabs.Twitch.EventSub.TwitchEventSubClient, string)
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.New(AuxLabs.Twitch.EventSub.TwitchEventSubClient, String)
+  nameWithType: EventSubEventSubscription.EventSubEventSubscription(TwitchEventSubClient, string)
+  nameWithType.vb: EventSubEventSubscription.New(TwitchEventSubClient, String)
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.#ctor*
+  name: EventSubEventSubscription
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription__ctor_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.EventSubEventSubscription
+  fullName.vb: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.New
+  nameWithType: EventSubEventSubscription.EventSubEventSubscription
+  nameWithType.vb: EventSubEventSubscription.New
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition
+  name: Condition
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Condition
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition
+  nameWithType: EventSubEventSubscription.Condition
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition*
+  name: Condition
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Condition_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Condition
+  nameWithType: EventSubEventSubscription.Condition
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost
+  name: Cost
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Cost
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost
+  nameWithType: EventSubEventSubscription.Cost
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost*
+  name: Cost
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Cost_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Cost
+  nameWithType: EventSubEventSubscription.Cost
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_CreatedAt
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt
+  nameWithType: EventSubEventSubscription.CreatedAt
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_CreatedAt_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.CreatedAt
+  nameWithType: EventSubEventSubscription.CreatedAt
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync
+  name: DeleteAsync()
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_DeleteAsync
+  commentId: M:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync()
+  nameWithType: EventSubEventSubscription.DeleteAsync()
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync*
+  name: DeleteAsync
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_DeleteAsync_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.DeleteAsync
+  nameWithType: EventSubEventSubscription.DeleteAsync
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status
+  name: Status
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Status
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status
+  nameWithType: EventSubEventSubscription.Status
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status*
+  name: Status
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Status_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Status
+  nameWithType: EventSubEventSubscription.Status
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString
+  name: ToString()
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_ToString
+  commentId: M:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString()
+  nameWithType: EventSubEventSubscription.ToString()
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString*
+  name: ToString
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_ToString_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.ToString
+  nameWithType: EventSubEventSubscription.ToString
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport
+  name: Transport
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Transport
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport
+  nameWithType: EventSubEventSubscription.Transport
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport*
+  name: Transport
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Transport_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Transport
+  nameWithType: EventSubEventSubscription.Transport
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type
+  name: Type
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Type
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type
+  nameWithType: EventSubEventSubscription.Type
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type*
+  name: Type
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Type_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Type
+  nameWithType: EventSubEventSubscription.Type
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version
+  name: Version
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Version
+  commentId: P:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version
+  nameWithType: EventSubEventSubscription.Version
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version*
+  name: Version
+  href: api/AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html#AuxLabs_Twitch_EventSub_Entities_EventSubEventSubscription_Version_
+  commentId: Overload:AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.Version
+  nameWithType: EventSubEventSubscription.Version
 - uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
   name: EventSubSimpleUser
   href: api/AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html
@@ -19418,6 +19560,57 @@ references:
   commentId: N:AuxLabs.Twitch.Rest.Entities
   fullName: AuxLabs.Twitch.Rest.Entities
   nameWithType: AuxLabs.Twitch.Rest.Entities
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  name: RestBitsUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  nameWithType: RestBitsUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestBitsUser(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestBitsUser.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.RestBitsUser(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestBitsUser.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestBitsUser.RestBitsUser(TwitchRestClient, string)
+  nameWithType.vb: RestBitsUser.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.#ctor*
+  name: RestBitsUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser__ctor_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestBitsUser.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.RestBitsUser
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestBitsUser.New
+  nameWithType: RestBitsUser.RestBitsUser
+  nameWithType.vb: RestBitsUser.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank
+  name: Rank
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser_Rank
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank
+  nameWithType: RestBitsUser.Rank
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank*
+  name: Rank
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser_Rank_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank
+  nameWithType: RestBitsUser.Rank
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits
+  name: TotalBits
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser_TotalBits
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits
+  nameWithType: RestBitsUser.TotalBits
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits*
+  name: TotalBits
+  href: api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html#AuxLabs_Twitch_Rest_Entities_RestBitsUser_TotalBits_
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser.TotalBits
+  nameWithType: RestBitsUser.TotalBits
 - uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast
   name: RestBroadcast
   href: api/AuxLabs.Twitch.Rest.Entities.RestBroadcast.html
@@ -21618,6 +21811,19 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Models.BitsUser.TotalBits
   nameWithType: BitsUser.TotalBits
+- uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName
+  name: UserDisplayName
+  href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName
+  nameWithType: BitsUser.UserDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName*
+  name: UserDisplayName
+  href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserDisplayName_
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.Models.BitsUser.UserDisplayName
+  nameWithType: BitsUser.UserDisplayName
 - uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserId
   name: UserId
   href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserId
@@ -21631,19 +21837,6 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.Models.BitsUser.UserId
   nameWithType: BitsUser.UserId
-- uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin
-  name: UserLogin
-  href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserLogin
-  commentId: P:AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin
-  fullName: AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin
-  nameWithType: BitsUser.UserLogin
-- uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin*
-  name: UserLogin
-  href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserLogin_
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin
-  isSpec: "True"
-  fullName: AuxLabs.Twitch.Rest.Models.BitsUser.UserLogin
-  nameWithType: BitsUser.UserLogin
 - uid: AuxLabs.Twitch.Rest.Models.BitsUser.UserName
   name: UserName
   href: api/AuxLabs.Twitch.Rest.Models.BitsUser.html#AuxLabs_Twitch_Rest_Models_BitsUser_UserName
@@ -40892,6 +41085,22 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.Dispose
   nameWithType: TwitchRestClient.Dispose
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync(System.String,System.Nullable{DateTime},System.Nullable{BitsPeriod},System.Int32,System.Nullable{CancellationToken})
+  name: GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBitsLeaderboardAsync_System_String_System_Nullable_DateTime__System_Nullable_BitsPeriod__System_Int32_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync(System.String,System.Nullable{DateTime},System.Nullable{BitsPeriod},System.Int32,System.Nullable{CancellationToken})
+  name.vb: GetBitsLeaderboardAsync(String, DateTime?, BitsPeriod?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync(String, DateTime?, BitsPeriod?, Integer, CancellationToken?)
+  nameWithType: TwitchRestClient.GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetBitsLeaderboardAsync(String, DateTime?, BitsPeriod?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync*
+  name: GetBitsLeaderboardAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBitsLeaderboardAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync
+  nameWithType: TwitchRestClient.GetBitsLeaderboardAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByIdAsync(System.String)
   name: GetBroadcastByIdAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetBroadcastByIdAsync_System_String_
@@ -41147,6 +41356,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetEventSubscriptionsAsync
   nameWithType: TwitchRestClient.GetEventSubscriptionsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Nullable{CancellationToken})
+  name: GetExtensionAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetExtensionAnalyticAsync_System_String_System_Nullable_DateTime__System_Nullable_DateTime__System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Nullable{CancellationToken})
+  name.vb: GetExtensionAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+  nameWithType: TwitchRestClient.GetExtensionAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetExtensionAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync*
+  name: GetExtensionAnalyticAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetExtensionAnalyticAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync
+  nameWithType: TwitchRestClient.GetExtensionAnalyticAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Int32,System.Nullable{CancellationToken})
+  name: GetExtensionAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetExtensionAnalyticsAsync_System_String_System_Nullable_DateTime__System_Nullable_DateTime__System_Int32_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Int32,System.Nullable{CancellationToken})
+  name.vb: GetExtensionAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+  nameWithType: TwitchRestClient.GetExtensionAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetExtensionAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync*
+  name: GetExtensionAnalyticsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetExtensionAnalyticsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync
+  nameWithType: TwitchRestClient.GetExtensionAnalyticsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionTransactionsAsync(System.String,System.Int32,System.String[])
   name: GetExtensionTransactionsAsync(string, int, params string[])
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetExtensionTransactionsAsync_System_String_System_Int32_System_String___
@@ -41236,6 +41477,38 @@ references:
   isSpec: "True"
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync
   nameWithType: TwitchRestClient.GetFollowersAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Nullable{CancellationToken})
+  name: GetGameAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameAnalyticAsync_System_String_System_Nullable_DateTime__System_Nullable_DateTime__System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Nullable{CancellationToken})
+  name.vb: GetGameAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+  nameWithType: TwitchRestClient.GetGameAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGameAnalyticAsync(String, DateTime?, DateTime?, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync*
+  name: GetGameAnalyticAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameAnalyticAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync
+  nameWithType: TwitchRestClient.GetGameAnalyticAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Int32,System.Nullable{CancellationToken})
+  name: GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameAnalyticsAsync_System_String_System_Nullable_DateTime__System_Nullable_DateTime__System_Int32_System_Nullable_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync(System.String,System.Nullable{DateTime},System.Nullable{DateTime},System.Int32,System.Nullable{CancellationToken})
+  name.vb: GetGameAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+  nameWithType: TwitchRestClient.GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGameAnalyticsAsync(String, DateTime?, DateTime?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync*
+  name: GetGameAnalyticsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameAnalyticsAsync_
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
+  isSpec: "True"
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
+  nameWithType: TwitchRestClient.GetGameAnalyticsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMyChannelAsync
   name: GetMyChannelAsync()
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetMyChannelAsync
