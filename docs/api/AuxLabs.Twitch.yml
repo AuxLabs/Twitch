@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  id: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.AnalyticType
+  - AuxLabs.Twitch.AnnouncementColor
+  - AuxLabs.Twitch.AsyncEnumerableExtensions
+  - AuxLabs.Twitch.AutomodAction
+  - AuxLabs.Twitch.AutomodFilter
+  - AuxLabs.Twitch.BitsPeriod
+  - AuxLabs.Twitch.BlockContext
+  - AuxLabs.Twitch.BroadcasterType
+  - AuxLabs.Twitch.BroadcastType
+  - AuxLabs.Twitch.Cacheable`2
+  - AuxLabs.Twitch.CDN
+  - AuxLabs.Twitch.Chat
+  - AuxLabs.Twitch.ChatColor
+  - AuxLabs.Twitch.CheermoteType
+  - AuxLabs.Twitch.CostType
+  - AuxLabs.Twitch.CultureInfoConverter
+  - AuxLabs.Twitch.DateRange
+  - AuxLabs.Twitch.DefaultRateLimiter
+  - AuxLabs.Twitch.DropStatus
+  - AuxLabs.Twitch.EmoteFormat
+  - AuxLabs.Twitch.EmotePosition
+  - AuxLabs.Twitch.EmotePositionConverter
+  - AuxLabs.Twitch.EmoteScale
+  - AuxLabs.Twitch.EmoteTheme
+  - AuxLabs.Twitch.EmoteType
+  - AuxLabs.Twitch.EnumHelper
+  - AuxLabs.Twitch.EventSub
+  - AuxLabs.Twitch.EventSubStatus
+  - AuxLabs.Twitch.EventSubType
+  - AuxLabs.Twitch.ExtensionType
+  - AuxLabs.Twitch.FulfillmentStatus
+  - AuxLabs.Twitch.GoalType
+  - AuxLabs.Twitch.HttpException
+  - AuxLabs.Twitch.HypeTrainContributionType
+  - AuxLabs.Twitch.IChannel
+  - AuxLabs.Twitch.IChatUser
+  - AuxLabs.Twitch.IEntity`1
+  - AuxLabs.Twitch.InterfaceConverter`2
+  - AuxLabs.Twitch.InterfaceConverterFactory`2
+  - AuxLabs.Twitch.IPartialUser
+  - AuxLabs.Twitch.IRateLimiter
+  - AuxLabs.Twitch.ISimpleUser
+  - AuxLabs.Twitch.IUpdatable
+  - AuxLabs.Twitch.IUserFollow
+  - AuxLabs.Twitch.IUserInfo
+  - AuxLabs.Twitch.IUserRelation
+  - AuxLabs.Twitch.MissingScopeException
+  - AuxLabs.Twitch.NoEqualityComparer
+  - AuxLabs.Twitch.PollStatus
+  - AuxLabs.Twitch.PredictionColor
+  - AuxLabs.Twitch.PredictionStatus
+  - AuxLabs.Twitch.ProductType
+  - AuxLabs.Twitch.PubSub
+  - AuxLabs.Twitch.QueryMap
+  - AuxLabs.Twitch.RateLimitedException
+  - AuxLabs.Twitch.RateLimitInfo
+  - AuxLabs.Twitch.RedemptionSort
+  - AuxLabs.Twitch.RedemptionStatus
+  - AuxLabs.Twitch.Require
+  - AuxLabs.Twitch.Rest
+  - AuxLabs.Twitch.RFCDateTimeConverter
+  - AuxLabs.Twitch.SimpleReward
+  - AuxLabs.Twitch.SubscriptionType
+  - AuxLabs.Twitch.Title
+  - AuxLabs.Twitch.TokenType
+  - AuxLabs.Twitch.TrackSourceType
+  - AuxLabs.Twitch.TransportMethod
+  - AuxLabs.Twitch.TwitchConstants
+  - AuxLabs.Twitch.TwitchException
+  - AuxLabs.Twitch.TwitchImage
+  - AuxLabs.Twitch.TwitchRestException
+  - AuxLabs.Twitch.UnexpectedTagsException
+  - AuxLabs.Twitch.UserType
+  - AuxLabs.Twitch.VideoPeriod
+  - AuxLabs.Twitch.VideoSort
+  - AuxLabs.Twitch.VideoType
+  - AuxLabs.Twitch.WebSocketClosedException
+  - AuxLabs.Twitch.WebSockets
+  langs:
+  - csharp
+  - vb
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch
+references:
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+- uid: AuxLabs.Twitch.EventSub
+  commentId: N:AuxLabs.Twitch.EventSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub
+  nameWithType: AuxLabs.Twitch.EventSub
+  fullName: AuxLabs.Twitch.EventSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+- uid: AuxLabs.Twitch.PubSub
+  commentId: N:AuxLabs.Twitch.PubSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.PubSub
+  nameWithType: AuxLabs.Twitch.PubSub
+  fullName: AuxLabs.Twitch.PubSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+- uid: AuxLabs.Twitch.WebSockets
+  commentId: N:AuxLabs.Twitch.WebSockets
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.WebSockets
+  nameWithType: AuxLabs.Twitch.WebSockets
+  fullName: AuxLabs.Twitch.WebSockets
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+- uid: AuxLabs.Twitch.AnalyticType
+  commentId: T:AuxLabs.Twitch.AnalyticType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AnalyticType.html
+  name: AnalyticType
+  nameWithType: AnalyticType
+  fullName: AuxLabs.Twitch.AnalyticType
+- uid: AuxLabs.Twitch.AnnouncementColor
+  commentId: T:AuxLabs.Twitch.AnnouncementColor
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AnnouncementColor.html
+  name: AnnouncementColor
+  nameWithType: AnnouncementColor
+  fullName: AuxLabs.Twitch.AnnouncementColor
+- uid: AuxLabs.Twitch.AsyncEnumerableExtensions
+  commentId: T:AuxLabs.Twitch.AsyncEnumerableExtensions
+  href: AuxLabs.Twitch.AsyncEnumerableExtensions.html
+  name: AsyncEnumerableExtensions
+  nameWithType: AsyncEnumerableExtensions
+  fullName: AuxLabs.Twitch.AsyncEnumerableExtensions
+- uid: AuxLabs.Twitch.AutomodAction
+  commentId: T:AuxLabs.Twitch.AutomodAction
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AutomodAction.html
+  name: AutomodAction
+  nameWithType: AutomodAction
+  fullName: AuxLabs.Twitch.AutomodAction
+- uid: AuxLabs.Twitch.AutomodFilter
+  commentId: T:AuxLabs.Twitch.AutomodFilter
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AutomodFilter.html
+  name: AutomodFilter
+  nameWithType: AutomodFilter
+  fullName: AuxLabs.Twitch.AutomodFilter
+- uid: AuxLabs.Twitch.BitsPeriod
+  commentId: T:AuxLabs.Twitch.BitsPeriod
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.BitsPeriod.html
+  name: BitsPeriod
+  nameWithType: BitsPeriod
+  fullName: AuxLabs.Twitch.BitsPeriod
+- uid: AuxLabs.Twitch.BlockContext
+  commentId: T:AuxLabs.Twitch.BlockContext
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.BlockContext.html
+  name: BlockContext
+  nameWithType: BlockContext
+  fullName: AuxLabs.Twitch.BlockContext
+- uid: AuxLabs.Twitch.BroadcasterType
+  commentId: T:AuxLabs.Twitch.BroadcasterType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.BroadcasterType.html
+  name: BroadcasterType
+  nameWithType: BroadcasterType
+  fullName: AuxLabs.Twitch.BroadcasterType
+- uid: AuxLabs.Twitch.BroadcastType
+  commentId: T:AuxLabs.Twitch.BroadcastType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.BroadcastType.html
+  name: BroadcastType
+  nameWithType: BroadcastType
+  fullName: AuxLabs.Twitch.BroadcastType
+- uid: AuxLabs.Twitch.Cacheable`2
+  commentId: T:AuxLabs.Twitch.Cacheable`2
+  href: AuxLabs.Twitch.Cacheable-2.html
+  name: Cacheable<TEntity, TId>
+  nameWithType: Cacheable<TEntity, TId>
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>
+  nameWithType.vb: Cacheable(Of TEntity, TId)
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId)
+  name.vb: Cacheable(Of TEntity, TId)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Cacheable`2
+    name: Cacheable
+    href: AuxLabs.Twitch.Cacheable-2.html
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.Cacheable`2
+    name: Cacheable
+    href: AuxLabs.Twitch.Cacheable-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: )
+- uid: AuxLabs.Twitch.CDN
+  commentId: T:AuxLabs.Twitch.CDN
+  href: AuxLabs.Twitch.CDN.html
+  name: CDN
+  nameWithType: CDN
+  fullName: AuxLabs.Twitch.CDN
+- uid: AuxLabs.Twitch.ChatColor
+  commentId: T:AuxLabs.Twitch.ChatColor
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ChatColor.html
+  name: ChatColor
+  nameWithType: ChatColor
+  fullName: AuxLabs.Twitch.ChatColor
+- uid: AuxLabs.Twitch.CheermoteType
+  commentId: T:AuxLabs.Twitch.CheermoteType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.CheermoteType.html
+  name: CheermoteType
+  nameWithType: CheermoteType
+  fullName: AuxLabs.Twitch.CheermoteType
+- uid: AuxLabs.Twitch.CostType
+  commentId: T:AuxLabs.Twitch.CostType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.CostType.html
+  name: CostType
+  nameWithType: CostType
+  fullName: AuxLabs.Twitch.CostType
+- uid: AuxLabs.Twitch.CultureInfoConverter
+  commentId: T:AuxLabs.Twitch.CultureInfoConverter
+  href: AuxLabs.Twitch.CultureInfoConverter.html
+  name: CultureInfoConverter
+  nameWithType: CultureInfoConverter
+  fullName: AuxLabs.Twitch.CultureInfoConverter
+- uid: AuxLabs.Twitch.DateRange
+  commentId: T:AuxLabs.Twitch.DateRange
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.DateRange.html
+  name: DateRange
+  nameWithType: DateRange
+  fullName: AuxLabs.Twitch.DateRange
+- uid: AuxLabs.Twitch.DefaultRateLimiter
+  commentId: T:AuxLabs.Twitch.DefaultRateLimiter
+  href: AuxLabs.Twitch.DefaultRateLimiter.html
+  name: DefaultRateLimiter
+  nameWithType: DefaultRateLimiter
+  fullName: AuxLabs.Twitch.DefaultRateLimiter
+- uid: AuxLabs.Twitch.DropStatus
+  commentId: T:AuxLabs.Twitch.DropStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.DropStatus.html
+  name: DropStatus
+  nameWithType: DropStatus
+  fullName: AuxLabs.Twitch.DropStatus
+- uid: AuxLabs.Twitch.EmoteFormat
+  commentId: T:AuxLabs.Twitch.EmoteFormat
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteFormat.html
+  name: EmoteFormat
+  nameWithType: EmoteFormat
+  fullName: AuxLabs.Twitch.EmoteFormat
+- uid: AuxLabs.Twitch.EmotePosition
+  commentId: T:AuxLabs.Twitch.EmotePosition
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmotePosition.html
+  name: EmotePosition
+  nameWithType: EmotePosition
+  fullName: AuxLabs.Twitch.EmotePosition
+- uid: AuxLabs.Twitch.EmotePositionConverter
+  commentId: T:AuxLabs.Twitch.EmotePositionConverter
+  href: AuxLabs.Twitch.EmotePositionConverter.html
+  name: EmotePositionConverter
+  nameWithType: EmotePositionConverter
+  fullName: AuxLabs.Twitch.EmotePositionConverter
+- uid: AuxLabs.Twitch.EmoteScale
+  commentId: T:AuxLabs.Twitch.EmoteScale
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteScale.html
+  name: EmoteScale
+  nameWithType: EmoteScale
+  fullName: AuxLabs.Twitch.EmoteScale
+- uid: AuxLabs.Twitch.EmoteTheme
+  commentId: T:AuxLabs.Twitch.EmoteTheme
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteTheme.html
+  name: EmoteTheme
+  nameWithType: EmoteTheme
+  fullName: AuxLabs.Twitch.EmoteTheme
+- uid: AuxLabs.Twitch.EmoteType
+  commentId: T:AuxLabs.Twitch.EmoteType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteType.html
+  name: EmoteType
+  nameWithType: EmoteType
+  fullName: AuxLabs.Twitch.EmoteType
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.EventSubStatus
+  commentId: T:AuxLabs.Twitch.EventSubStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EventSubStatus.html
+  name: EventSubStatus
+  nameWithType: EventSubStatus
+  fullName: AuxLabs.Twitch.EventSubStatus
+- uid: AuxLabs.Twitch.EventSubType
+  commentId: T:AuxLabs.Twitch.EventSubType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EventSubType.html
+  name: EventSubType
+  nameWithType: EventSubType
+  fullName: AuxLabs.Twitch.EventSubType
+- uid: AuxLabs.Twitch.ExtensionType
+  commentId: T:AuxLabs.Twitch.ExtensionType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ExtensionType.html
+  name: ExtensionType
+  nameWithType: ExtensionType
+  fullName: AuxLabs.Twitch.ExtensionType
+- uid: AuxLabs.Twitch.FulfillmentStatus
+  commentId: T:AuxLabs.Twitch.FulfillmentStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.FulfillmentStatus.html
+  name: FulfillmentStatus
+  nameWithType: FulfillmentStatus
+  fullName: AuxLabs.Twitch.FulfillmentStatus
+- uid: AuxLabs.Twitch.GoalType
+  commentId: T:AuxLabs.Twitch.GoalType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.GoalType.html
+  name: GoalType
+  nameWithType: GoalType
+  fullName: AuxLabs.Twitch.GoalType
+- uid: AuxLabs.Twitch.HttpException
+  commentId: T:AuxLabs.Twitch.HttpException
+  href: AuxLabs.Twitch.HttpException.html
+  name: HttpException
+  nameWithType: HttpException
+  fullName: AuxLabs.Twitch.HttpException
+- uid: AuxLabs.Twitch.HypeTrainContributionType
+  commentId: T:AuxLabs.Twitch.HypeTrainContributionType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.HypeTrainContributionType.html
+  name: HypeTrainContributionType
+  nameWithType: HypeTrainContributionType
+  fullName: AuxLabs.Twitch.HypeTrainContributionType
+- uid: AuxLabs.Twitch.IChannel
+  commentId: T:AuxLabs.Twitch.IChannel
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IChannel.html
+  name: IChannel
+  nameWithType: IChannel
+  fullName: AuxLabs.Twitch.IChannel
+- uid: AuxLabs.Twitch.IChatUser
+  commentId: T:AuxLabs.Twitch.IChatUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IChatUser.html
+  name: IChatUser
+  nameWithType: IChatUser
+  fullName: AuxLabs.Twitch.IChatUser
+- uid: AuxLabs.Twitch.IEntity`1
+  commentId: T:AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<TId>
+  nameWithType: IEntity<TId>
+  fullName: AuxLabs.Twitch.IEntity<TId>
+  nameWithType.vb: IEntity(Of TId)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of TId)
+  name.vb: IEntity(Of TId)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: AuxLabs.Twitch.InterfaceConverter`2
+  commentId: T:AuxLabs.Twitch.InterfaceConverter`2
+  href: AuxLabs.Twitch.InterfaceConverter-2.html
+  name: InterfaceConverter<TImpl, TInter>
+  nameWithType: InterfaceConverter<TImpl, TInter>
+  fullName: AuxLabs.Twitch.InterfaceConverter<TImpl, TInter>
+  nameWithType.vb: InterfaceConverter(Of TImpl, TInter)
+  fullName.vb: AuxLabs.Twitch.InterfaceConverter(Of TImpl, TInter)
+  name.vb: InterfaceConverter(Of TImpl, TInter)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.InterfaceConverter`2
+    name: InterfaceConverter
+    href: AuxLabs.Twitch.InterfaceConverter-2.html
+  - name: <
+  - name: TImpl
+  - name: ','
+  - name: " "
+  - name: TInter
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.InterfaceConverter`2
+    name: InterfaceConverter
+    href: AuxLabs.Twitch.InterfaceConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImpl
+  - name: ','
+  - name: " "
+  - name: TInter
+  - name: )
+- uid: AuxLabs.Twitch.InterfaceConverterFactory`2
+  commentId: T:AuxLabs.Twitch.InterfaceConverterFactory`2
+  href: AuxLabs.Twitch.InterfaceConverterFactory-2.html
+  name: InterfaceConverterFactory<TImpl, TInter>
+  nameWithType: InterfaceConverterFactory<TImpl, TInter>
+  fullName: AuxLabs.Twitch.InterfaceConverterFactory<TImpl, TInter>
+  nameWithType.vb: InterfaceConverterFactory(Of TImpl, TInter)
+  fullName.vb: AuxLabs.Twitch.InterfaceConverterFactory(Of TImpl, TInter)
+  name.vb: InterfaceConverterFactory(Of TImpl, TInter)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.InterfaceConverterFactory`2
+    name: InterfaceConverterFactory
+    href: AuxLabs.Twitch.InterfaceConverterFactory-2.html
+  - name: <
+  - name: TImpl
+  - name: ','
+  - name: " "
+  - name: TInter
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.InterfaceConverterFactory`2
+    name: InterfaceConverterFactory
+    href: AuxLabs.Twitch.InterfaceConverterFactory-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImpl
+  - name: ','
+  - name: " "
+  - name: TInter
+  - name: )
+- uid: AuxLabs.Twitch.IPartialUser
+  commentId: T:AuxLabs.Twitch.IPartialUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: AuxLabs.Twitch.IPartialUser
+- uid: AuxLabs.Twitch.IRateLimiter
+  commentId: T:AuxLabs.Twitch.IRateLimiter
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IRateLimiter.html
+  name: IRateLimiter
+  nameWithType: IRateLimiter
+  fullName: AuxLabs.Twitch.IRateLimiter
+- uid: AuxLabs.Twitch.ISimpleUser
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ISimpleUser.html
+  name: ISimpleUser
+  nameWithType: ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+- uid: AuxLabs.Twitch.IUpdatable
+  commentId: T:AuxLabs.Twitch.IUpdatable
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IUpdatable.html
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: AuxLabs.Twitch.IUpdatable
+- uid: AuxLabs.Twitch.IUserFollow
+  commentId: T:AuxLabs.Twitch.IUserFollow
+  href: AuxLabs.Twitch.IUserFollow.html
+  name: IUserFollow
+  nameWithType: IUserFollow
+  fullName: AuxLabs.Twitch.IUserFollow
+- uid: AuxLabs.Twitch.IUserInfo
+  commentId: T:AuxLabs.Twitch.IUserInfo
+  href: AuxLabs.Twitch.IUserInfo.html
+  name: IUserInfo
+  nameWithType: IUserInfo
+  fullName: AuxLabs.Twitch.IUserInfo
+- uid: AuxLabs.Twitch.IUserRelation
+  commentId: T:AuxLabs.Twitch.IUserRelation
+  href: AuxLabs.Twitch.IUserRelation.html
+  name: IUserRelation
+  nameWithType: IUserRelation
+  fullName: AuxLabs.Twitch.IUserRelation
+- uid: AuxLabs.Twitch.MissingScopeException
+  commentId: T:AuxLabs.Twitch.MissingScopeException
+  href: AuxLabs.Twitch.MissingScopeException.html
+  name: MissingScopeException
+  nameWithType: MissingScopeException
+  fullName: AuxLabs.Twitch.MissingScopeException
+- uid: AuxLabs.Twitch.NoEqualityComparer
+  commentId: T:AuxLabs.Twitch.NoEqualityComparer
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.NoEqualityComparer.html
+  name: NoEqualityComparer
+  nameWithType: NoEqualityComparer
+  fullName: AuxLabs.Twitch.NoEqualityComparer
+- uid: AuxLabs.Twitch.PollStatus
+  commentId: T:AuxLabs.Twitch.PollStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PollStatus.html
+  name: PollStatus
+  nameWithType: PollStatus
+  fullName: AuxLabs.Twitch.PollStatus
+- uid: AuxLabs.Twitch.PredictionColor
+  commentId: T:AuxLabs.Twitch.PredictionColor
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PredictionColor.html
+  name: PredictionColor
+  nameWithType: PredictionColor
+  fullName: AuxLabs.Twitch.PredictionColor
+- uid: AuxLabs.Twitch.PredictionStatus
+  commentId: T:AuxLabs.Twitch.PredictionStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PredictionStatus.html
+  name: PredictionStatus
+  nameWithType: PredictionStatus
+  fullName: AuxLabs.Twitch.PredictionStatus
+- uid: AuxLabs.Twitch.ProductType
+  commentId: T:AuxLabs.Twitch.ProductType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ProductType.html
+  name: ProductType
+  nameWithType: ProductType
+  fullName: AuxLabs.Twitch.ProductType
+- uid: AuxLabs.Twitch.QueryMap
+  commentId: T:AuxLabs.Twitch.QueryMap
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.QueryMap.html
+  name: QueryMap
+  nameWithType: QueryMap
+  fullName: AuxLabs.Twitch.QueryMap
+- uid: AuxLabs.Twitch.RateLimitedException
+  commentId: T:AuxLabs.Twitch.RateLimitedException
+  href: AuxLabs.Twitch.RateLimitedException.html
+  name: RateLimitedException
+  nameWithType: RateLimitedException
+  fullName: AuxLabs.Twitch.RateLimitedException
+- uid: AuxLabs.Twitch.RateLimitInfo
+  commentId: T:AuxLabs.Twitch.RateLimitInfo
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.RateLimitInfo.html
+  name: RateLimitInfo
+  nameWithType: RateLimitInfo
+  fullName: AuxLabs.Twitch.RateLimitInfo
+- uid: AuxLabs.Twitch.RedemptionSort
+  commentId: T:AuxLabs.Twitch.RedemptionSort
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.RedemptionSort.html
+  name: RedemptionSort
+  nameWithType: RedemptionSort
+  fullName: AuxLabs.Twitch.RedemptionSort
+- uid: AuxLabs.Twitch.RedemptionStatus
+  commentId: T:AuxLabs.Twitch.RedemptionStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.RedemptionStatus.html
+  name: RedemptionStatus
+  nameWithType: RedemptionStatus
+  fullName: AuxLabs.Twitch.RedemptionStatus
+- uid: AuxLabs.Twitch.Require
+  commentId: T:AuxLabs.Twitch.Require
+  href: AuxLabs.Twitch.Require.html
+  name: Require
+  nameWithType: Require
+  fullName: AuxLabs.Twitch.Require
+- uid: AuxLabs.Twitch.RFCDateTimeConverter
+  commentId: T:AuxLabs.Twitch.RFCDateTimeConverter
+  href: AuxLabs.Twitch.RFCDateTimeConverter.html
+  name: RFCDateTimeConverter
+  nameWithType: RFCDateTimeConverter
+  fullName: AuxLabs.Twitch.RFCDateTimeConverter
+- uid: AuxLabs.Twitch.SimpleReward
+  commentId: T:AuxLabs.Twitch.SimpleReward
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.SimpleReward.html
+  name: SimpleReward
+  nameWithType: SimpleReward
+  fullName: AuxLabs.Twitch.SimpleReward
+- uid: AuxLabs.Twitch.SubscriptionType
+  commentId: T:AuxLabs.Twitch.SubscriptionType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.SubscriptionType.html
+  name: SubscriptionType
+  nameWithType: SubscriptionType
+  fullName: AuxLabs.Twitch.SubscriptionType
+- uid: AuxLabs.Twitch.Title
+  commentId: T:AuxLabs.Twitch.Title
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.Title.html
+  name: Title
+  nameWithType: Title
+  fullName: AuxLabs.Twitch.Title
+- uid: AuxLabs.Twitch.TokenType
+  commentId: T:AuxLabs.Twitch.TokenType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: AuxLabs.Twitch.TokenType
+- uid: AuxLabs.Twitch.TrackSourceType
+  commentId: T:AuxLabs.Twitch.TrackSourceType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.TrackSourceType.html
+  name: TrackSourceType
+  nameWithType: TrackSourceType
+  fullName: AuxLabs.Twitch.TrackSourceType
+- uid: AuxLabs.Twitch.TransportMethod
+  commentId: T:AuxLabs.Twitch.TransportMethod
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.TransportMethod.html
+  name: TransportMethod
+  nameWithType: TransportMethod
+  fullName: AuxLabs.Twitch.TransportMethod
+- uid: AuxLabs.Twitch.TwitchConstants
+  commentId: T:AuxLabs.Twitch.TwitchConstants
+  href: AuxLabs.Twitch.TwitchConstants.html
+  name: TwitchConstants
+  nameWithType: TwitchConstants
+  fullName: AuxLabs.Twitch.TwitchConstants
+- uid: AuxLabs.Twitch.TwitchException
+  commentId: T:AuxLabs.Twitch.TwitchException
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.TwitchException.html
+  name: TwitchException
+  nameWithType: TwitchException
+  fullName: AuxLabs.Twitch.TwitchException
+- uid: AuxLabs.Twitch.TwitchImage
+  commentId: T:AuxLabs.Twitch.TwitchImage
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.TwitchImage.html
+  name: TwitchImage
+  nameWithType: TwitchImage
+  fullName: AuxLabs.Twitch.TwitchImage
+- uid: AuxLabs.Twitch.TwitchRestException
+  commentId: T:AuxLabs.Twitch.TwitchRestException
+  href: AuxLabs.Twitch.TwitchRestException.html
+  name: TwitchRestException
+  nameWithType: TwitchRestException
+  fullName: AuxLabs.Twitch.TwitchRestException
+- uid: AuxLabs.Twitch.UnexpectedTagsException
+  commentId: T:AuxLabs.Twitch.UnexpectedTagsException
+  href: AuxLabs.Twitch.UnexpectedTagsException.html
+  name: UnexpectedTagsException
+  nameWithType: UnexpectedTagsException
+  fullName: AuxLabs.Twitch.UnexpectedTagsException
+- uid: AuxLabs.Twitch.UserType
+  commentId: T:AuxLabs.Twitch.UserType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.UserType.html
+  name: UserType
+  nameWithType: UserType
+  fullName: AuxLabs.Twitch.UserType
+- uid: AuxLabs.Twitch.VideoPeriod
+  commentId: T:AuxLabs.Twitch.VideoPeriod
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.VideoPeriod.html
+  name: VideoPeriod
+  nameWithType: VideoPeriod
+  fullName: AuxLabs.Twitch.VideoPeriod
+- uid: AuxLabs.Twitch.VideoSort
+  commentId: T:AuxLabs.Twitch.VideoSort
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.VideoSort.html
+  name: VideoSort
+  nameWithType: VideoSort
+  fullName: AuxLabs.Twitch.VideoSort
+- uid: AuxLabs.Twitch.VideoType
+  commentId: T:AuxLabs.Twitch.VideoType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.VideoType.html
+  name: VideoType
+  nameWithType: VideoType
+  fullName: AuxLabs.Twitch.VideoType
+- uid: AuxLabs.Twitch.WebSocketClosedException
+  commentId: T:AuxLabs.Twitch.WebSocketClosedException
+  href: AuxLabs.Twitch.WebSocketClosedException.html
+  name: WebSocketClosedException
+  nameWithType: WebSocketClosedException
+  fullName: AuxLabs.Twitch.WebSocketClosedException
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+memberLayout: SeparatePages

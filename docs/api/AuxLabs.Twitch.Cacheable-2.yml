@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Cacheable`2
+  commentId: T:AuxLabs.Twitch.Cacheable`2
+  id: Cacheable`2
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  - AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  - AuxLabs.Twitch.Cacheable`2.HasValue
+  - AuxLabs.Twitch.Cacheable`2.Id
+  - AuxLabs.Twitch.Cacheable`2.Value
+  langs:
+  - csharp
+  - vb
+  name: Cacheable<TEntity, TId>
+  nameWithType: Cacheable<TEntity, TId>
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>
+  type: Struct
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Cacheable
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: 'public struct Cacheable<TEntity, TId> where TEntity : IEntity<TId> where TId : IEquatable<TId>'
+    typeParameters:
+    - id: TEntity
+    - id: TId
+    content.vb: Public Structure Cacheable(Of TEntity As IEntity(Of TId), TId As IEquatable(Of TId))
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: Cacheable(Of TEntity, TId)
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId)
+  name.vb: Cacheable(Of TEntity, TId)
+- uid: AuxLabs.Twitch.Cacheable`2.HasValue
+  commentId: P:AuxLabs.Twitch.Cacheable`2.HasValue
+  id: HasValue
+  parent: AuxLabs.Twitch.Cacheable`2
+  langs:
+  - csharp
+  - vb
+  name: HasValue
+  nameWithType: Cacheable<TEntity, TId>.HasValue
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.HasValue
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: HasValue
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public readonly bool HasValue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasValue As Boolean
+  overload: AuxLabs.Twitch.Cacheable`2.HasValue*
+  nameWithType.vb: Cacheable(Of TEntity, TId).HasValue
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).HasValue
+- uid: AuxLabs.Twitch.Cacheable`2.Id
+  commentId: P:AuxLabs.Twitch.Cacheable`2.Id
+  id: Id
+  parent: AuxLabs.Twitch.Cacheable`2
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Cacheable<TEntity, TId>.Id
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public readonly TId Id { get; }
+    parameters: []
+    return:
+      type: '{TId}'
+    content.vb: Public ReadOnly Property Id As TId
+  overload: AuxLabs.Twitch.Cacheable`2.Id*
+  nameWithType.vb: Cacheable(Of TEntity, TId).Id
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Id
+- uid: AuxLabs.Twitch.Cacheable`2.Value
+  commentId: P:AuxLabs.Twitch.Cacheable`2.Value
+  id: Value
+  parent: AuxLabs.Twitch.Cacheable`2
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Cacheable<TEntity, TId>.Value
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Value
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Value
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public readonly TEntity Value { get; }
+    parameters: []
+    return:
+      type: '{TEntity}'
+    content.vb: Public ReadOnly Property Value As TEntity
+  overload: AuxLabs.Twitch.Cacheable`2.Value*
+  nameWithType.vb: Cacheable(Of TEntity, TId).Value
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Value
+- uid: AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  commentId: M:AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  id: DownloadAsync
+  parent: AuxLabs.Twitch.Cacheable`2
+  langs:
+  - csharp
+  - vb
+  name: DownloadAsync()
+  nameWithType: Cacheable<TEntity, TId>.DownloadAsync()
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.DownloadAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DownloadAsync
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 24
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public Task<TEntity> DownloadAsync()
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Public Function DownloadAsync() As Task(Of TEntity)
+  overload: AuxLabs.Twitch.Cacheable`2.DownloadAsync*
+  nameWithType.vb: Cacheable(Of TEntity, TId).DownloadAsync()
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).DownloadAsync()
+- uid: AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  commentId: M:AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  id: GetOrDownloadAsync
+  parent: AuxLabs.Twitch.Cacheable`2
+  langs:
+  - csharp
+  - vb
+  name: GetOrDownloadAsync()
+  nameWithType: Cacheable<TEntity, TId>.GetOrDownloadAsync()
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.GetOrDownloadAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GetOrDownloadAsync
+    path: ../src/AuxLabs.Twitch.Core/Utility/Caching/Cacheable.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public Task<TEntity> GetOrDownloadAsync()
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Public Function GetOrDownloadAsync() As Task(Of TEntity)
+  overload: AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync*
+  nameWithType.vb: Cacheable(Of TEntity, TId).GetOrDownloadAsync()
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).GetOrDownloadAsync()
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Cacheable`2.HasValue*
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.HasValue
+  href: AuxLabs.Twitch.Cacheable-2.HasValue.html
+  name: HasValue
+  nameWithType: Cacheable<TEntity, TId>.HasValue
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.HasValue
+  nameWithType.vb: Cacheable(Of TEntity, TId).HasValue
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).HasValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.Cacheable`2.Id*
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.Id
+  href: AuxLabs.Twitch.Cacheable-2.Id.html
+  name: Id
+  nameWithType: Cacheable<TEntity, TId>.Id
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Id
+  nameWithType.vb: Cacheable(Of TEntity, TId).Id
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Id
+- uid: '{TId}'
+  commentId: '!:TId'
+  definition: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: AuxLabs.Twitch.Cacheable`2.Value*
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.Value
+  href: AuxLabs.Twitch.Cacheable-2.Value.html
+  name: Value
+  nameWithType: Cacheable<TEntity, TId>.Value
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.Value
+  nameWithType.vb: Cacheable(Of TEntity, TId).Value
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).Value
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  commentId: '!:TEntity'
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: AuxLabs.Twitch.Cacheable`2.DownloadAsync*
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.DownloadAsync
+  href: AuxLabs.Twitch.Cacheable-2.DownloadAsync.html
+  name: DownloadAsync
+  nameWithType: Cacheable<TEntity, TId>.DownloadAsync
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.DownloadAsync
+  nameWithType.vb: Cacheable(Of TEntity, TId).DownloadAsync
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).DownloadAsync
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync*
+  commentId: Overload:AuxLabs.Twitch.Cacheable`2.GetOrDownloadAsync
+  href: AuxLabs.Twitch.Cacheable-2.GetOrDownloadAsync.html
+  name: GetOrDownloadAsync
+  nameWithType: Cacheable<TEntity, TId>.GetOrDownloadAsync
+  fullName: AuxLabs.Twitch.Cacheable<TEntity, TId>.GetOrDownloadAsync
+  nameWithType.vb: Cacheable(Of TEntity, TId).GetOrDownloadAsync
+  fullName.vb: AuxLabs.Twitch.Cacheable(Of TEntity, TId).GetOrDownloadAsync
+memberLayout: SeparatePages

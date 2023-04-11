@@ -1,0 +1,316 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.PredictionStatus
+  commentId: T:AuxLabs.Twitch.PredictionStatus
+  id: PredictionStatus
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.PredictionStatus.Active
+  - AuxLabs.Twitch.PredictionStatus.Cancelled
+  - AuxLabs.Twitch.PredictionStatus.Locked
+  - AuxLabs.Twitch.PredictionStatus.Resolved
+  langs:
+  - csharp
+  - vb
+  name: PredictionStatus
+  nameWithType: PredictionStatus
+  fullName: AuxLabs.Twitch.PredictionStatus
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PredictionStatus
+    path: ../src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum PredictionStatus
+    content.vb: Public Enum PredictionStatus
+  extensionMethods:
+  - AuxLabs.Twitch.PredictionStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.PredictionStatus.Active
+  commentId: F:AuxLabs.Twitch.PredictionStatus.Active
+  id: Active
+  parent: AuxLabs.Twitch.PredictionStatus
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: PredictionStatus.Active
+  fullName: AuxLabs.Twitch.PredictionStatus.Active
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Active
+    path: ../src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The Prediction is running and viewers can make predictions.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "ACTIVE")]
+
+      Active = 0
+    return:
+      type: AuxLabs.Twitch.PredictionStatus
+    content.vb: >-
+      <EnumMember(Value:="ACTIVE")>
+
+      Active = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ACTIVE
+- uid: AuxLabs.Twitch.PredictionStatus.Cancelled
+  commentId: F:AuxLabs.Twitch.PredictionStatus.Cancelled
+  id: Cancelled
+  parent: AuxLabs.Twitch.PredictionStatus
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: PredictionStatus.Cancelled
+  fullName: AuxLabs.Twitch.PredictionStatus.Cancelled
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Cancelled
+    path: ../src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The broadcaster canceled the Prediction and refunded the Channel Points to the participants.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CANCELED")]
+
+      Cancelled = 1
+    return:
+      type: AuxLabs.Twitch.PredictionStatus
+    content.vb: >-
+      <EnumMember(Value:="CANCELED")>
+
+      Cancelled = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CANCELED
+- uid: AuxLabs.Twitch.PredictionStatus.Locked
+  commentId: F:AuxLabs.Twitch.PredictionStatus.Locked
+  id: Locked
+  parent: AuxLabs.Twitch.PredictionStatus
+  langs:
+  - csharp
+  - vb
+  name: Locked
+  nameWithType: PredictionStatus.Locked
+  fullName: AuxLabs.Twitch.PredictionStatus.Locked
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Locked
+    path: ../src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The broadcaster locked the Prediction, which means viewers can no longer make predictions.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "LOCKED")]
+
+      Locked = 2
+    return:
+      type: AuxLabs.Twitch.PredictionStatus
+    content.vb: >-
+      <EnumMember(Value:="LOCKED")>
+
+      Locked = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: LOCKED
+- uid: AuxLabs.Twitch.PredictionStatus.Resolved
+  commentId: F:AuxLabs.Twitch.PredictionStatus.Resolved
+  id: Resolved
+  parent: AuxLabs.Twitch.PredictionStatus
+  langs:
+  - csharp
+  - vb
+  name: Resolved
+  nameWithType: PredictionStatus.Resolved
+  fullName: AuxLabs.Twitch.PredictionStatus.Resolved
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Resolved
+    path: ../src/AuxLabs.Twitch.Core/Models/Predictions/PredictionStatus.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The winning outcome was determined and the Channel Points were distributed to the viewers who predicted the correct outcome.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "RESOLVED")]
+
+      Resolved = 3
+    return:
+      type: AuxLabs.Twitch.PredictionStatus
+    content.vb: >-
+      <EnumMember(Value:="RESOLVED")>
+
+      Resolved = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: RESOLVED
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.PredictionStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PredictionStatus).html
+  name: GetStringValue<PredictionStatus>(PredictionStatus)
+  nameWithType: EnumHelper.GetStringValue<PredictionStatus>(PredictionStatus)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.PredictionStatus>(AuxLabs.Twitch.PredictionStatus)
+  nameWithType.vb: EnumHelper.GetStringValue(Of PredictionStatus)(PredictionStatus)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.PredictionStatus)(AuxLabs.Twitch.PredictionStatus)
+  name.vb: GetStringValue(Of PredictionStatus)(PredictionStatus)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PredictionStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PredictionStatus).html
+  - name: <
+  - uid: AuxLabs.Twitch.PredictionStatus
+    name: PredictionStatus
+    href: AuxLabs.Twitch.PredictionStatus.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.PredictionStatus
+    name: PredictionStatus
+    href: AuxLabs.Twitch.PredictionStatus.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PredictionStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PredictionStatus).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.PredictionStatus
+    name: PredictionStatus
+    href: AuxLabs.Twitch.PredictionStatus.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.PredictionStatus
+    name: PredictionStatus
+    href: AuxLabs.Twitch.PredictionStatus.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.PredictionStatus
+  commentId: T:AuxLabs.Twitch.PredictionStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PredictionStatus.html
+  name: PredictionStatus
+  nameWithType: PredictionStatus
+  fullName: AuxLabs.Twitch.PredictionStatus
+memberLayout: SeparatePages

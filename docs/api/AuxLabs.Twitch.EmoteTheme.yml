@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EmoteTheme
+  commentId: T:AuxLabs.Twitch.EmoteTheme
+  id: EmoteTheme
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.EmoteTheme.Dark
+  - AuxLabs.Twitch.EmoteTheme.Light
+  langs:
+  - csharp
+  - vb
+  name: EmoteTheme
+  nameWithType: EmoteTheme
+  fullName: AuxLabs.Twitch.EmoteTheme
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EmoteTheme
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum EmoteTheme
+    content.vb: Public Enum EmoteTheme
+  extensionMethods:
+  - AuxLabs.Twitch.EmoteTheme.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.EmoteTheme.Dark
+  commentId: F:AuxLabs.Twitch.EmoteTheme.Dark
+  id: Dark
+  parent: AuxLabs.Twitch.EmoteTheme
+  langs:
+  - csharp
+  - vb
+  name: Dark
+  nameWithType: EmoteTheme.Dark
+  fullName: AuxLabs.Twitch.EmoteTheme.Dark
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Dark
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "dark")]
+
+      Dark = 0
+    return:
+      type: AuxLabs.Twitch.EmoteTheme
+    content.vb: >-
+      <EnumMember(Value:="dark")>
+
+      Dark = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: dark
+- uid: AuxLabs.Twitch.EmoteTheme.Light
+  commentId: F:AuxLabs.Twitch.EmoteTheme.Light
+  id: Light
+  parent: AuxLabs.Twitch.EmoteTheme
+  langs:
+  - csharp
+  - vb
+  name: Light
+  nameWithType: EmoteTheme.Light
+  fullName: AuxLabs.Twitch.EmoteTheme.Light
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Light
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteTheme.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "light")]
+
+      Light = 1
+    return:
+      type: AuxLabs.Twitch.EmoteTheme
+    content.vb: >-
+      <EnumMember(Value:="light")>
+
+      Light = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: light
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.EmoteTheme.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteTheme).html
+  name: GetStringValue<EmoteTheme>(EmoteTheme)
+  nameWithType: EnumHelper.GetStringValue<EmoteTheme>(EmoteTheme)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.EmoteTheme>(AuxLabs.Twitch.EmoteTheme)
+  nameWithType.vb: EnumHelper.GetStringValue(Of EmoteTheme)(EmoteTheme)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.EmoteTheme)(AuxLabs.Twitch.EmoteTheme)
+  name.vb: GetStringValue(Of EmoteTheme)(EmoteTheme)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EmoteTheme)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteTheme).html
+  - name: <
+  - uid: AuxLabs.Twitch.EmoteTheme
+    name: EmoteTheme
+    href: AuxLabs.Twitch.EmoteTheme.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.EmoteTheme
+    name: EmoteTheme
+    href: AuxLabs.Twitch.EmoteTheme.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EmoteTheme)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteTheme).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EmoteTheme
+    name: EmoteTheme
+    href: AuxLabs.Twitch.EmoteTheme.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.EmoteTheme
+    name: EmoteTheme
+    href: AuxLabs.Twitch.EmoteTheme.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.EmoteTheme
+  commentId: T:AuxLabs.Twitch.EmoteTheme
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteTheme.html
+  name: EmoteTheme
+  nameWithType: EmoteTheme
+  fullName: AuxLabs.Twitch.EmoteTheme
+memberLayout: SeparatePages

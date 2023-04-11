@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.WebSockets
+  commentId: N:AuxLabs.Twitch.WebSockets
+  id: WebSockets
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.WebSockets.ConnectionState
+  - AuxLabs.Twitch.WebSockets.IPayload
+  - AuxLabs.Twitch.WebSockets.ISerializer`1
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1
+  - AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+  - AuxLabs.Twitch.WebSockets.WebSocketClosedException
+  langs:
+  - csharp
+  - vb
+  name: WebSockets
+  nameWithType: AuxLabs.Twitch.WebSockets
+  fullName: AuxLabs.Twitch.WebSockets
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  name.csharp: AuxLabs.Twitch.WebSockets
+  name.vb: AuxLabs.Twitch.WebSockets
+references:
+- uid: AuxLabs.Twitch.WebSockets.ConnectionState
+  commentId: T:AuxLabs.Twitch.WebSockets.ConnectionState
+  parent: AuxLabs.Twitch.WebSockets
+  href: AuxLabs.Twitch.WebSockets.ConnectionState.html
+  name: ConnectionState
+  nameWithType: ConnectionState
+  fullName: AuxLabs.Twitch.WebSockets.ConnectionState
+- uid: AuxLabs.Twitch.WebSockets.IPayload
+  commentId: T:AuxLabs.Twitch.WebSockets.IPayload
+  parent: AuxLabs.Twitch.WebSockets
+  href: AuxLabs.Twitch.WebSockets.IPayload.html
+  name: IPayload
+  nameWithType: IPayload
+  fullName: AuxLabs.Twitch.WebSockets.IPayload
+- uid: AuxLabs.Twitch.WebSockets.ISerializer`1
+  commentId: T:AuxLabs.Twitch.WebSockets.ISerializer`1
+  href: AuxLabs.Twitch.WebSockets.ISerializer-1.html
+  name: ISerializer<TPayload>
+  nameWithType: ISerializer<TPayload>
+  fullName: AuxLabs.Twitch.WebSockets.ISerializer<TPayload>
+  nameWithType.vb: ISerializer(Of TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISerializer(Of TPayload)
+  name.vb: ISerializer(Of TPayload)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.WebSockets.ISerializer`1
+    name: ISerializer
+    href: AuxLabs.Twitch.WebSockets.ISerializer-1.html
+  - name: <
+  - name: TPayload
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.WebSockets.ISerializer`1
+    name: ISerializer
+    href: AuxLabs.Twitch.WebSockets.ISerializer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPayload
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  commentId: T:AuxLabs.Twitch.WebSockets.ISocketClient`1
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.html
+  name: ISocketClient<TPayload>
+  nameWithType: ISocketClient<TPayload>
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>
+  nameWithType.vb: ISocketClient(Of TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload)
+  name.vb: ISocketClient(Of TPayload)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+    name: ISocketClient
+    href: AuxLabs.Twitch.WebSockets.ISocketClient-1.html
+  - name: <
+  - name: TPayload
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+    name: ISocketClient
+    href: AuxLabs.Twitch.WebSockets.ISocketClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPayload
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+  commentId: T:AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+  href: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html
+  name: TwitchJsonSerializer<TPayload>
+  nameWithType: TwitchJsonSerializer<TPayload>
+  fullName: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer<TPayload>
+  nameWithType.vb: TwitchJsonSerializer(Of TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer(Of TPayload)
+  name.vb: TwitchJsonSerializer(Of TPayload)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+    name: TwitchJsonSerializer
+    href: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html
+  - name: <
+  - name: TPayload
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+    name: TwitchJsonSerializer
+    href: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPayload
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets.WebSocketClosedException
+  commentId: T:AuxLabs.Twitch.WebSockets.WebSocketClosedException
+  href: AuxLabs.Twitch.WebSockets.WebSocketClosedException.html
+  name: WebSocketClosedException
+  nameWithType: WebSocketClosedException
+  fullName: AuxLabs.Twitch.WebSockets.WebSocketClosedException
+- uid: AuxLabs.Twitch.WebSockets
+  commentId: N:AuxLabs.Twitch.WebSockets
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.WebSockets
+  nameWithType: AuxLabs.Twitch.WebSockets
+  fullName: AuxLabs.Twitch.WebSockets
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+memberLayout: SeparatePages

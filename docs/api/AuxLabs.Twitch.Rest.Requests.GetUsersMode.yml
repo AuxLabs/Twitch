@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  commentId: T:AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  id: GetUsersMode
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.GetUsersMode.Id
+  - AuxLabs.Twitch.Rest.Requests.GetUsersMode.Name
+  langs:
+  - csharp
+  - vb
+  name: GetUsersMode
+  nameWithType: GetUsersMode
+  fullName: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GetUsersMode
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+    startLine: 48
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public enum GetUsersMode
+    content.vb: Public Enum GetUsersMode
+  extensionMethods:
+  - AuxLabs.Twitch.Rest.Requests.GetUsersMode.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode.Id
+  commentId: F:AuxLabs.Twitch.Rest.Requests.GetUsersMode.Id
+  id: Id
+  parent: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: GetUsersMode.Id
+  fullName: AuxLabs.Twitch.Rest.Requests.GetUsersMode.Id
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+    startLine: 50
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: Id = 0
+    return:
+      type: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+- uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode.Name
+  commentId: F:AuxLabs.Twitch.Rest.Requests.GetUsersMode.Name
+  id: Name
+  parent: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: GetUsersMode.Name
+  fullName: AuxLabs.Twitch.Rest.Requests.GetUsersMode.Name
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Name
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Users/GetUsersArgs.cs
+    startLine: 51
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: Name = 1
+    return:
+      type: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Rest.Requests.GetUsersMode).html
+  name: GetStringValue<GetUsersMode>(GetUsersMode)
+  nameWithType: EnumHelper.GetStringValue<GetUsersMode>(GetUsersMode)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.Rest.Requests.GetUsersMode>(AuxLabs.Twitch.Rest.Requests.GetUsersMode)
+  nameWithType.vb: EnumHelper.GetStringValue(Of GetUsersMode)(GetUsersMode)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.Rest.Requests.GetUsersMode)(AuxLabs.Twitch.Rest.Requests.GetUsersMode)
+  name.vb: GetStringValue(Of GetUsersMode)(GetUsersMode)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Rest.Requests.GetUsersMode)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Rest.Requests.GetUsersMode).html
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+    name: GetUsersMode
+    href: AuxLabs.Twitch.Rest.Requests.GetUsersMode.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+    name: GetUsersMode
+    href: AuxLabs.Twitch.Rest.Requests.GetUsersMode.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Rest.Requests.GetUsersMode)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Rest.Requests.GetUsersMode).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+    name: GetUsersMode
+    href: AuxLabs.Twitch.Rest.Requests.GetUsersMode.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+    name: GetUsersMode
+    href: AuxLabs.Twitch.Rest.Requests.GetUsersMode.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  commentId: T:AuxLabs.Twitch.Rest.Requests.GetUsersMode
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.GetUsersMode.html
+  name: GetUsersMode
+  nameWithType: GetUsersMode
+  fullName: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+memberLayout: SeparatePages

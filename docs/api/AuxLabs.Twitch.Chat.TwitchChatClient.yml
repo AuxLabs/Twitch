@@ -1,0 +1,3763 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient
+  commentId: T:AuxLabs.Twitch.Chat.TwitchChatClient
+  id: TwitchChatClient
+  parent: AuxLabs.Twitch.Chat
+  children:
+  - AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(System.String,AuxLabs.Twitch.Chat.TwitchChatConfig)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared
+  - AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Connected
+  - AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(System.Boolean)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(System.String)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(System.String)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+  - AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+  - AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  - AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[])
+  - AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[])
+  - AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn
+  - AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+  - AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted
+  - AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived
+  - AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+  - AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
+  - AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Chat.TwitchChatClient.Subscription
+  - AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted
+  - AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
+  - AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  - AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel
+  - AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync
+  - AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(System.String,System.String)
+  - AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived
+  langs:
+  - csharp
+  - vb
+  name: TwitchChatClient
+  nameWithType: TwitchChatClient
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TwitchChatClient
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public class TwitchChatClient
+    content.vb: Public Class TwitchChatClient
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+  id: IRC
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: IRC
+  nameWithType: TwitchChatClient.IRC
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IRC
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: protected TwitchChatApiClient IRC { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient
+    content.vb: Protected ReadOnly Property IRC As TwitchChatApiClient
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.IRC*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+  id: Rest
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Rest
+  nameWithType: TwitchChatClient.Rest
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Rest
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public TwitchRestClient Rest { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.TwitchRestClient
+    content.vb: Public ReadOnly Property Rest As TwitchRestClient
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.Rest*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+  id: CurrentName
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: CurrentName
+  nameWithType: TwitchChatClient.CurrentName
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CurrentName
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public string CurrentName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentName As String
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+  id: Identity
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: TwitchChatClient.Identity
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Identity
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public UserIdentity Identity { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.Models.UserIdentity
+    content.vb: Public ReadOnly Property Identity As UserIdentity
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.Identity*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+  id: CommandsRequested
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: CommandsRequested
+  nameWithType: TwitchChatClient.CommandsRequested
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CommandsRequested
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public bool CommandsRequested { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CommandsRequested As Boolean
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+  id: TagsRequested
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: TagsRequested
+  nameWithType: TwitchChatClient.TagsRequested
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagsRequested
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 28
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public bool TagsRequested { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property TagsRequested As Boolean
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+  id: ThrowOnUnknownEvent
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ThrowOnUnknownEvent
+  nameWithType: TwitchChatClient.ThrowOnUnknownEvent
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ThrowOnUnknownEvent
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public bool ThrowOnUnknownEvent { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ThrowOnUnknownEvent As Boolean
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+  id: UseBufferedResponses
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UseBufferedResponses
+  nameWithType: TwitchChatClient.UseBufferedResponses
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UseBufferedResponses
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 31
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public bool UseBufferedResponses { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseBufferedResponses As Boolean
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+  id: MessageCacheSize
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: MessageCacheSize
+  nameWithType: TwitchChatClient.MessageCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageCacheSize
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 32
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public int MessageCacheSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MessageCacheSize As Integer
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  id: UserCacheSize
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UserCacheSize
+  nameWithType: TwitchChatClient.UserCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserCacheSize
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public int UserCacheSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property UserCacheSize As Integer
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  id: IsReadOnly
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: TwitchChatClient.IsReadOnly
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsReadOnly
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 34
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsReadOnly As Boolean
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+  id: MyUser
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: MyUser
+  nameWithType: TwitchChatClient.MyUser
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MyUser
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 36
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public ChatSelfUser MyUser { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+    content.vb: Public Property MyUser As ChatSelfUser
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+  commentId: P:AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+  id: Channels
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: TwitchChatClient.Channels
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Channels
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public IReadOnlyCollection<ChatSimpleChannel> Channels { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+    content.vb: Public ReadOnly Property Channels As IReadOnlyCollection(Of ChatSimpleChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.Channels*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig)
+  id: '#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig)'
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: TwitchChatClient(TwitchChatConfig)
+  nameWithType: TwitchChatClient.TwitchChatClient(TwitchChatConfig)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.TwitchChatClient(AuxLabs.Twitch.Chat.TwitchChatConfig)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 39
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public TwitchChatClient(TwitchChatConfig config = null)
+    parameters:
+    - id: config
+      type: AuxLabs.Twitch.Chat.TwitchChatConfig
+    content.vb: Public Sub New(config As TwitchChatConfig = Nothing)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor*
+  nameWithType.vb: TwitchChatClient.New(TwitchChatConfig)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.New(AuxLabs.Twitch.Chat.TwitchChatConfig)
+  name.vb: New(TwitchChatConfig)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(System.String,AuxLabs.Twitch.Chat.TwitchChatConfig)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(System.String,AuxLabs.Twitch.Chat.TwitchChatConfig)
+  id: '#ctor(System.String,AuxLabs.Twitch.Chat.TwitchChatConfig)'
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: TwitchChatClient(string, TwitchChatConfig)
+  nameWithType: TwitchChatClient.TwitchChatClient(string, TwitchChatConfig)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.TwitchChatClient(string, AuxLabs.Twitch.Chat.TwitchChatConfig)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 41
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public TwitchChatClient(string url, TwitchChatConfig config = null)
+    parameters:
+    - id: url
+      type: System.String
+    - id: config
+      type: AuxLabs.Twitch.Chat.TwitchChatConfig
+    content.vb: Public Sub New(url As String, config As TwitchChatConfig = Nothing)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor*
+  nameWithType.vb: TwitchChatClient.New(String, TwitchChatConfig)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.New(String, AuxLabs.Twitch.Chat.TwitchChatConfig)
+  name.vb: New(String, TwitchChatConfig)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(System.Boolean)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: TwitchChatClient.Dispose(bool)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Dispose
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 76
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose*
+  nameWithType.vb: TwitchChatClient.Dispose(Boolean)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync
+  id: ValidateAsync
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync()
+  nameWithType: TwitchChatClient.ValidateAsync()
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ValidateAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 90
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task ValidateAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ValidateAsync() As Task
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(System.String,System.String)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(System.String,System.String)
+  id: ValidateAsync(System.String,System.String)
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(string, string)
+  nameWithType: TwitchChatClient.ValidateAsync(string, string)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ValidateAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 92
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task ValidateAsync(string token, string refreshToken = null)
+    parameters:
+    - id: token
+      type: System.String
+    - id: refreshToken
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ValidateAsync(token As String, refreshToken As String = Nothing) As Task
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync*
+  nameWithType.vb: TwitchChatClient.ValidateAsync(String, String)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(String, String)
+  name.vb: ValidateAsync(String, String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
+  id: RunAsync
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: TwitchChatClient.RunAsync()
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RunAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 95
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task RunAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RunAsync() As Task
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Nullable{System.Threading.CancellationToken})
+  id: JoinMyChannelAsync(System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: JoinMyChannelAsync(CancellationToken?)
+  nameWithType: TwitchChatClient.JoinMyChannelAsync(CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: JoinMyChannelAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 113
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task<ChatChannel> JoinMyChannelAsync(CancellationToken? cancelToken = null)
+    parameters:
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+    content.vb: Public Function JoinMyChannelAsync(cancelToken As CancellationToken? = Nothing) As Task(Of ChatChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync*
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  id: JoinChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: JoinChannelAsync(string, CancellationToken?)
+  nameWithType: TwitchChatClient.JoinChannelAsync(string, CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(string, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: JoinChannelAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 115
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task<ChatChannel> JoinChannelAsync(string channelName, CancellationToken? cancelToken = null)
+    parameters:
+    - id: channelName
+      type: System.String
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+    content.vb: Public Function JoinChannelAsync(channelName As String, cancelToken As CancellationToken? = Nothing) As Task(Of ChatChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync*
+  nameWithType.vb: TwitchChatClient.JoinChannelAsync(String, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(String, System.Threading.CancellationToken?)
+  name.vb: JoinChannelAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[])
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[])
+  id: JoinChannelsAsync(System.String[])
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: JoinChannelsAsync(params string[])
+  nameWithType: TwitchChatClient.JoinChannelsAsync(params string[])
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(params string[])
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: JoinChannelsAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 141
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public IAsyncEnumerable<ChatChannel> JoinChannelsAsync(params string[] channelNames)
+    parameters:
+    - id: channelNames
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+    content.vb: Public Function JoinChannelsAsync(ParamArray channelNames As String()) As IAsyncEnumerable(Of ChatChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync*
+  nameWithType.vb: TwitchChatClient.JoinChannelsAsync(ParamArray String())
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(ParamArray String())
+  name.vb: JoinChannelsAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  id: JoinChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: JoinChannelsAsync(string[], CancellationToken?)
+  nameWithType: TwitchChatClient.JoinChannelsAsync(string[], CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(string[], System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: JoinChannelsAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 143
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public IAsyncEnumerable<ChatChannel> JoinChannelsAsync(string[] channelNames, CancellationToken? cancelToken = null)
+    parameters:
+    - id: channelNames
+      type: System.String[]
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+    content.vb: Public Function JoinChannelsAsync(channelNames As String(), cancelToken As CancellationToken? = Nothing) As IAsyncEnumerable(Of ChatChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync*
+  nameWithType.vb: TwitchChatClient.JoinChannelsAsync(String(), CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(String(), System.Threading.CancellationToken?)
+  name.vb: JoinChannelsAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String)
+  id: LeaveChannelAsync(System.String)
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: LeaveChannelAsync(string)
+  nameWithType: TwitchChatClient.LeaveChannelAsync(string)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LeaveChannelAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 152
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task<ChatSimpleChannel> LeaveChannelAsync(string channelName)
+    parameters:
+    - id: channelName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+    content.vb: Public Function LeaveChannelAsync(channelName As String) As Task(Of ChatSimpleChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync*
+  nameWithType.vb: TwitchChatClient.LeaveChannelAsync(String)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(String)
+  name.vb: LeaveChannelAsync(String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  id: LeaveChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: LeaveChannelAsync(string, CancellationToken?)
+  nameWithType: TwitchChatClient.LeaveChannelAsync(string, CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(string, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LeaveChannelAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 154
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task<ChatSimpleChannel> LeaveChannelAsync(string channelName, CancellationToken? cancelToken = null)
+    parameters:
+    - id: channelName
+      type: System.String
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+    content.vb: Public Function LeaveChannelAsync(channelName As String, cancelToken As CancellationToken? = Nothing) As Task(Of ChatSimpleChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync*
+  nameWithType.vb: TwitchChatClient.LeaveChannelAsync(String, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(String, System.Threading.CancellationToken?)
+  name.vb: LeaveChannelAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[])
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[])
+  id: LeaveChannelsAsync(System.String[])
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: LeaveChannelsAsync(params string[])
+  nameWithType: TwitchChatClient.LeaveChannelsAsync(params string[])
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(params string[])
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LeaveChannelsAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 180
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public IAsyncEnumerable<ChatSimpleChannel> LeaveChannelsAsync(params string[] channelNames)
+    parameters:
+    - id: channelNames
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+    content.vb: Public Function LeaveChannelsAsync(ParamArray channelNames As String()) As IAsyncEnumerable(Of ChatSimpleChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync*
+  nameWithType.vb: TwitchChatClient.LeaveChannelsAsync(ParamArray String())
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(ParamArray String())
+  name.vb: LeaveChannelsAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  id: LeaveChannelsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: LeaveChannelsAsync(string[], CancellationToken?)
+  nameWithType: TwitchChatClient.LeaveChannelsAsync(string[], CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(string[], System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LeaveChannelsAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 182
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public IAsyncEnumerable<ChatSimpleChannel> LeaveChannelsAsync(string[] channelNames, CancellationToken? cancelToken = null)
+    parameters:
+    - id: channelNames
+      type: System.String[]
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+    content.vb: Public Function LeaveChannelsAsync(channelNames As String(), cancelToken As CancellationToken? = Nothing) As IAsyncEnumerable(Of ChatSimpleChannel)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync*
+  nameWithType.vb: TwitchChatClient.LeaveChannelsAsync(String(), CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(String(), System.Threading.CancellationToken?)
+  name.vb: LeaveChannelsAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  id: SendMessageAsync(System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: SendMessageAsync(string, string, string, CancellationToken?)
+  nameWithType: TwitchChatClient.SendMessageAsync(string, string, string, CancellationToken?)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(string, string, string, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SendMessageAsync
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 188
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public Task<string> SendMessageAsync(string channelName, string text, string replyMessageId = null, CancellationToken? cancelToken = null)
+    parameters:
+    - id: channelName
+      type: System.String
+    - id: text
+      type: System.String
+    - id: replyMessageId
+      type: System.String
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function SendMessageAsync(channelName As String, text As String, replyMessageId As String = Nothing, cancelToken As CancellationToken? = Nothing) As Task(Of String)
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync*
+  nameWithType.vb: TwitchChatClient.SendMessageAsync(String, String, String, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(String, String, String, System.Threading.CancellationToken?)
+  name.vb: SendMessageAsync(String, String, String, CancellationToken?)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(System.String)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(System.String)
+  id: GetChannel(System.String)
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: GetChannel(string)
+  nameWithType: TwitchChatClient.GetChannel(string)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GetChannel
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 228
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Get a channel from the cache
+  example: []
+  syntax:
+    content: public ChatSimpleChannel GetChannel(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    content.vb: Public Function GetChannel(id As String) As ChatSimpleChannel
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel*
+  nameWithType.vb: TwitchChatClient.GetChannel(String)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(String)
+  name.vb: GetChannel(String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(System.String)
+  commentId: M:AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(System.String)
+  id: GetChannelByName(System.String)
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: GetChannelByName(string)
+  nameWithType: TwitchChatClient.GetChannelByName(string)
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GetChannelByName
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.cs
+    startLine: 235
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public ChatSimpleChannel GetChannelByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    content.vb: Public Function GetChannelByName(name As String) As ChatSimpleChannel
+  overload: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName*
+  nameWithType.vb: TwitchChatClient.GetChannelByName(String)
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(String)
+  name.vb: GetChannelByName(String)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Connected
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.Connected
+  id: Connected
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: TwitchChatClient.Connected
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Connected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Connected
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the socket connection is established
+  example: []
+  syntax:
+    content: public event Func<Task> Connected
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event Connected As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected
+  id: Disconnected
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: TwitchChatClient.Disconnected
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Disconnected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Disconnected
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the socket connection is closed
+  example: []
+  syntax:
+    content: public event Func<Exception, Task> Disconnected
+    return:
+      type: System.Func{System.Exception,System.Threading.Tasks.Task}
+    content.vb: Public Event Disconnected As Func(Of Exception, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect
+  id: Reconnect
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Reconnect
+  nameWithType: TwitchChatClient.Reconnect
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Reconnect
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Reconnect
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the server tells the client to reconnect
+  example: []
+  syntax:
+    content: public event Func<Task> Reconnect
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event Reconnect As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  id: UnknownEventReceived
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UnknownEventReceived
+  nameWithType: TwitchChatClient.UnknownEventReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UnknownEventReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UnknownEventReceived
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when an unknown event is received
+  example: []
+  syntax:
+    content: public event Func<IrcPayload, Task> UnknownEventReceived
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Api.IrcPayload,System.Threading.Tasks.Task}
+    content.vb: Public Event UnknownEventReceived As Func(Of IrcPayload, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn
+  id: LoggedIn
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: LoggedIn
+  nameWithType: TwitchChatClient.LoggedIn
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LoggedIn
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LoggedIn
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 48
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the socket connection is established
+  example: []
+  syntax:
+    content: public event Func<ChatSelfUser, Task> LoggedIn
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSelfUser,System.Threading.Tasks.Task}
+    content.vb: Public Event LoggedIn As Func(Of ChatSelfUser, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived
+  id: WhisperReceived
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: WhisperReceived
+  nameWithType: TwitchChatClient.WhisperReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.WhisperReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: WhisperReceived
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 56
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<ChatWhisperMessage, Task> WhisperReceived
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage,System.Threading.Tasks.Task}
+    content.vb: Public Event WhisperReceived As Func(Of ChatWhisperMessage, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared
+  id: ChatCleared
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChatCleared
+  nameWithType: TwitchChatClient.ChatCleared
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChatCleared
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChatCleared
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 68
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the entire chat is cleared in a channel.
+  remarks: Provides an object that represents the channel and a collection of messages that were deleted, if cached.
+  example: []
+  syntax:
+    content: public event Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task> ChatCleared
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatMessage},System.Threading.Tasks.Task}
+    content.vb: Public Event ChatCleared As Func(Of ChatChannel, IReadOnlyCollection(Of ChatMessage), Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
+  id: UserBanned
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UserBanned
+  nameWithType: TwitchChatClient.UserBanned
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserBanned
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserBanned
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 81
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a user is banned in a channel.
+  remarks: >-
+    Provides objects that represent the channel, the banned user if cached, 
+
+    or their user id, and the amount of time they were banned. The ban is 
+
+    permanent if time is null.
+  example: []
+  syntax:
+    content: public event Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task> UserBanned
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Cacheable{AuxLabs.Twitch.IChatUser,System.String},System.Nullable{System.TimeSpan},System.Threading.Tasks.Task}
+    content.vb: Public Event UserBanned As Func(Of ChatChannel, Cacheable(Of IChatUser, String), TimeSpan?, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted
+  id: MessageDeleted
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: MessageDeleted
+  nameWithType: TwitchChatClient.MessageDeleted
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MessageDeleted
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageDeleted
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 90
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a message is deleted in a channel.
+  remarks: Provides an object that represents the deleted message.
+  example: []
+  syntax:
+    content: public event Func<ChatSimpleMessage, Task> MessageDeleted
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage,System.Threading.Tasks.Task}
+    content.vb: Public Event MessageDeleted As Func(Of ChatSimpleMessage, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined
+  id: ChannelJoined
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelJoined
+  nameWithType: TwitchChatClient.ChannelJoined
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelJoined
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelJoined
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 99
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the currently authorized user joins a channel.
+  remarks: Provides a string that represents the channel's name.
+  example: []
+  syntax:
+    content: public event Func<string, Task> ChannelJoined
+    return:
+      type: System.Func{System.String,System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelJoined As Func(Of String, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel
+  id: UserJoinedChannel
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UserJoinedChannel
+  nameWithType: TwitchChatClient.UserJoinedChannel
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserJoinedChannel
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserJoinedChannel
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 108
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when any user joins a channel.
+  remarks: Provides an object that represents the channel, and a string that represents the user's name.
+  example: []
+  syntax:
+    content: public event Func<ChatSimpleChannel, string, Task> UserJoinedChannel
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.String,System.Threading.Tasks.Task}
+    content.vb: Public Event UserJoinedChannel As Func(Of ChatSimpleChannel, String, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft
+  id: ChannelLeft
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelLeft
+  nameWithType: TwitchChatClient.ChannelLeft
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelLeft
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelLeft
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 117
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the currently authorized user leaves a channel.
+  remarks: Provides an object that represents the channel, if cached.
+  example: []
+  syntax:
+    content: public event Func<ChatSimpleChannel, Task> ChannelLeft
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelLeft As Func(Of ChatSimpleChannel, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel
+  id: UserLeftChannel
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UserLeftChannel
+  nameWithType: TwitchChatClient.UserLeftChannel
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserLeftChannel
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserLeftChannel
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 126
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when any user leaves a channel.
+  remarks: Provides an object that represents the channel, and a string that represents the user's name.
+  example: []
+  syntax:
+    content: public event Func<ChatSimpleChannel, string, Task> UserLeftChannel
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.String,System.Threading.Tasks.Task}
+    content.vb: Public Event UserLeftChannel As Func(Of ChatSimpleChannel, String, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived
+  id: MessageReceived
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: MessageReceived
+  nameWithType: TwitchChatClient.MessageReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MessageReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageReceived
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 135
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a message is received in a channel
+  remarks: Provides an object that represents the message.
+  example: []
+  syntax:
+    content: public event Func<ChatMessage, Task> MessageReceived
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatMessage,System.Threading.Tasks.Task}
+    content.vb: Public Event MessageReceived As Func(Of ChatMessage, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  id: SubscriptionMessageReceived
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionMessageReceived
+  nameWithType: TwitchChatClient.SubscriptionMessageReceived
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionMessageReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionMessageReceived
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 144
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a subscription message is received in a channel
+  remarks: Provides an object that represents any type of subscription message.
+  example: []
+  syntax:
+    content: public event Func<ChatMessage, Task> SubscriptionMessageReceived
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatMessage,System.Threading.Tasks.Task}
+    content.vb: Public Event SubscriptionMessageReceived As Func(Of ChatMessage, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated
+  id: ChannelStateUpdated
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelStateUpdated
+  nameWithType: TwitchChatClient.ChannelStateUpdated
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelStateUpdated
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelStateUpdated
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 153
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the state of a channel is updated.
+  remarks: Provides the channel's state before the change, if cached, and the state after.
+  example: []
+  syntax:
+    content: public event Func<ChatChannel, ChatChannel, Task> ChannelStateUpdated
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelStateUpdated As Func(Of ChatChannel, ChatChannel, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated
+  id: UserStateUpdated
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: UserStateUpdated
+  nameWithType: TwitchChatClient.UserStateUpdated
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserStateUpdated
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserStateUpdated
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 162
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when the current user's state is updated.
+  remarks: Provides the user's state before the change, if cached, the state after, and a message Id if one was sent.
+  example: []
+  syntax:
+    content: public event Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task> UserStateUpdated
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,System.String,System.Threading.Tasks.Task}
+    content.vb: Public Event UserStateUpdated As Func(Of ChatChannelSelfUser, ChatChannelSelfUser, String, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked
+  id: ChannelBitsTierUnlocked
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelBitsTierUnlocked
+  nameWithType: TwitchChatClient.ChannelBitsTierUnlocked
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelBitsTierUnlocked
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelBitsTierUnlocked
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 174
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a user shares that they just unlocked a new bits tier.
+  remarks: ''
+  example: []
+  syntax:
+    content: public event Func<Task> ChannelBitsTierUnlocked
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelBitsTierUnlocked As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
+  id: ChannelRaided
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelRaided
+  nameWithType: TwitchChatClient.ChannelRaided
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRaided
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelRaided
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 183
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: Triggered when a user raids the specified channel.
+  remarks: Provides an object that represents the raider, the channel that was raided, and the number of viewers.
+  example: []
+  syntax:
+    content: public event Func<ChatRaidUser, ChatSimpleChannel, int, Task> ChannelRaided
+    return:
+      type: System.Func{AuxLabs.Twitch.Chat.Entities.ChatRaidUser,AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Int32,System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelRaided As Func(Of ChatRaidUser, ChatSimpleChannel, Integer, Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual
+  id: ChannelRitual
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: ChannelRitual
+  nameWithType: TwitchChatClient.ChannelRitual
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ChannelRitual
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelRitual
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 191
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<Task> ChannelRitual
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event ChannelRitual As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted
+  id: SubscriptionGifted
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionGifted
+  nameWithType: TwitchChatClient.SubscriptionGifted
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGifted
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionGifted
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 199
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<Task> SubscriptionGifted
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event SubscriptionGifted As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
+  id: SubscriptionGiftUpgraded
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionGiftUpgraded
+  nameWithType: TwitchChatClient.SubscriptionGiftUpgraded
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SubscriptionGiftUpgraded
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionGiftUpgraded
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 207
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<Task> SubscriptionGiftUpgraded
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event SubscriptionGiftUpgraded As Func(Of Task)
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Subscription
+  commentId: E:AuxLabs.Twitch.Chat.TwitchChatClient.Subscription
+  id: Subscription
+  parent: AuxLabs.Twitch.Chat.TwitchChatClient
+  langs:
+  - csharp
+  - vb
+  name: Subscription
+  nameWithType: TwitchChatClient.Subscription
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Subscription
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Subscription
+    path: ../src/AuxLabs.Twitch.Chat/TwitchChatClient.Events.cs
+    startLine: 215
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<Task> Subscription
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event Subscription As Func(Of Task)
+references:
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IRC*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.IRC.html
+  name: IRC
+  nameWithType: TwitchChatClient.IRC
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IRC
+- uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient
+  commentId: T:AuxLabs.Twitch.Chat.Api.TwitchChatApiClient
+  parent: AuxLabs.Twitch.Chat.Api
+  href: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient.html
+  name: TwitchChatApiClient
+  nameWithType: TwitchChatApiClient
+  fullName: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient
+- uid: AuxLabs.Twitch.Chat.Api
+  commentId: N:AuxLabs.Twitch.Chat.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Api
+  nameWithType: AuxLabs.Twitch.Chat.Api
+  fullName: AuxLabs.Twitch.Chat.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Rest*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.Rest.html
+  name: Rest
+  nameWithType: TwitchChatClient.Rest
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Rest
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient
+  commentId: T:AuxLabs.Twitch.Rest.TwitchRestClient
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.TwitchRestClient.html
+  name: TwitchRestClient
+  nameWithType: TwitchRestClient
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName.html
+  name: CurrentName
+  nameWithType: TwitchChatClient.CurrentName
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CurrentName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Identity*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.Identity.html
+  name: Identity
+  nameWithType: TwitchChatClient.Identity
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Identity
+- uid: AuxLabs.Twitch.Rest.Models.UserIdentity
+  commentId: T:AuxLabs.Twitch.Rest.Models.UserIdentity
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.UserIdentity.html
+  name: UserIdentity
+  nameWithType: UserIdentity
+  fullName: AuxLabs.Twitch.Rest.Models.UserIdentity
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested.html
+  name: CommandsRequested
+  nameWithType: TwitchChatClient.CommandsRequested
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.CommandsRequested
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested.html
+  name: TagsRequested
+  nameWithType: TwitchChatClient.TagsRequested
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.TagsRequested
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent.html
+  name: ThrowOnUnknownEvent
+  nameWithType: TwitchChatClient.ThrowOnUnknownEvent
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ThrowOnUnknownEvent
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses.html
+  name: UseBufferedResponses
+  nameWithType: TwitchChatClient.UseBufferedResponses
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UseBufferedResponses
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize.html
+  name: MessageCacheSize
+  nameWithType: TwitchChatClient.MessageCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MessageCacheSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize.html
+  name: UserCacheSize
+  nameWithType: TwitchChatClient.UserCacheSize
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.UserCacheSize
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly.html
+  name: IsReadOnly
+  nameWithType: TwitchChatClient.IsReadOnly
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.IsReadOnly
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser.html
+  name: MyUser
+  nameWithType: TwitchChatClient.MyUser
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.MyUser
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatSelfUser.html
+  name: ChatSelfUser
+  nameWithType: ChatSelfUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+- uid: AuxLabs.Twitch.Chat.Entities
+  commentId: N:AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Entities
+  nameWithType: AuxLabs.Twitch.Chat.Entities
+  fullName: AuxLabs.Twitch.Chat.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Channels*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.Channels.html
+  name: Channels
+  nameWithType: TwitchChatClient.Channels
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Channels
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ChatSimpleChannel>
+  nameWithType: IReadOnlyCollection<ChatSimpleChannel>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel>
+  nameWithType.vb: IReadOnlyCollection(Of ChatSimpleChannel)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel)
+  name.vb: IReadOnlyCollection(Of ChatSimpleChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.#ctor
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.#ctor(AuxLabs.Twitch.Chat.TwitchChatConfig).html
+  name: TwitchChatClient
+  nameWithType: TwitchChatClient.TwitchChatClient
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.TwitchChatClient
+  nameWithType.vb: TwitchChatClient.New
+  fullName.vb: AuxLabs.Twitch.Chat.TwitchChatClient.New
+  name.vb: New
+- uid: AuxLabs.Twitch.Chat.TwitchChatConfig
+  commentId: T:AuxLabs.Twitch.Chat.TwitchChatConfig
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.TwitchChatConfig.html
+  name: TwitchChatConfig
+  nameWithType: TwitchChatConfig
+  fullName: AuxLabs.Twitch.Chat.TwitchChatConfig
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.Dispose
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose(System.Boolean).html
+  name: Dispose
+  nameWithType: TwitchChatClient.Dispose
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.Dispose
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync.html
+  name: ValidateAsync
+  nameWithType: TwitchChatClient.ValidateAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync.html
+  name: RunAsync
+  nameWithType: TwitchChatClient.RunAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.RunAsync
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync(System.Nullable{System.Threading.CancellationToken}).html
+  name: JoinMyChannelAsync
+  nameWithType: TwitchChatClient.JoinMyChannelAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinMyChannelAsync
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ChatChannel>
+  nameWithType: Task<ChatChannel>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Chat.Entities.ChatChannel>
+  nameWithType.vb: Task(Of ChatChannel)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Chat.Entities.ChatChannel)
+  name.vb: Task(Of ChatChannel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync(System.String,System.Nullable{System.Threading.CancellationToken}).html
+  name: JoinChannelAsync
+  nameWithType: TwitchChatClient.JoinChannelAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelAsync
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync(System.String[]).html
+  name: JoinChannelsAsync
+  nameWithType: TwitchChatClient.JoinChannelsAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.JoinChannelsAsync
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+  commentId: T:System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IAsyncEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<ChatChannel>
+  nameWithType: IAsyncEnumerable<ChatChannel>
+  fullName: System.Collections.Generic.IAsyncEnumerable<AuxLabs.Twitch.Chat.Entities.ChatChannel>
+  nameWithType.vb: IAsyncEnumerable(Of ChatChannel)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of AuxLabs.Twitch.Chat.Entities.ChatChannel)
+  name.vb: IAsyncEnumerable(Of ChatChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerable`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<T>
+  nameWithType: IAsyncEnumerable<T>
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>
+  nameWithType.vb: IAsyncEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T)
+  name.vb: IAsyncEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync(System.String).html
+  name: LeaveChannelAsync
+  nameWithType: TwitchChatClient.LeaveChannelAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelAsync
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ChatSimpleChannel>
+  nameWithType: Task<ChatSimpleChannel>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel>
+  nameWithType.vb: Task(Of ChatSimpleChannel)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel)
+  name.vb: Task(Of ChatSimpleChannel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: )
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync(System.String[]).html
+  name: LeaveChannelsAsync
+  nameWithType: TwitchChatClient.LeaveChannelsAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.LeaveChannelsAsync
+- uid: System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  commentId: T:System.Collections.Generic.IAsyncEnumerable{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IAsyncEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<ChatSimpleChannel>
+  nameWithType: IAsyncEnumerable<ChatSimpleChannel>
+  fullName: System.Collections.Generic.IAsyncEnumerable<AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel>
+  nameWithType.vb: IAsyncEnumerable(Of ChatSimpleChannel)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel)
+  name.vb: IAsyncEnumerable(Of ChatSimpleChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: )
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync(System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken}).html
+  name: SendMessageAsync
+  nameWithType: TwitchChatClient.SendMessageAsync
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.SendMessageAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel(System.String).html
+  name: GetChannel
+  nameWithType: TwitchChatClient.GetChannel
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannel
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  name: ChatSimpleChannel
+  nameWithType: ChatSimpleChannel
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName*
+  commentId: Overload:AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName(System.String).html
+  name: GetChannelByName
+  nameWithType: TwitchChatClient.GetChannelByName
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient.GetChannelByName
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{System.Exception,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Exception,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Exception, Task>
+  nameWithType: Func<Exception, Task>
+  fullName: System.Func<System.Exception, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Exception, Task)
+  fullName.vb: System.Func(Of System.Exception, System.Threading.Tasks.Task)
+  name.vb: Func(Of Exception, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Api.IrcPayload,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Api.IrcPayload,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IrcPayload, Task>
+  nameWithType: Func<IrcPayload, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Api.IrcPayload, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of IrcPayload, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Api.IrcPayload, System.Threading.Tasks.Task)
+  name.vb: Func(Of IrcPayload, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Api.IrcPayload
+    name: IrcPayload
+    href: AuxLabs.Twitch.Chat.Api.IrcPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Api.IrcPayload
+    name: IrcPayload
+    href: AuxLabs.Twitch.Chat.Api.IrcPayload.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSelfUser,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatSelfUser,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ChatSelfUser, Task>
+  nameWithType: Func<ChatSelfUser, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatSelfUser, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatSelfUser, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatSelfUser, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatSelfUser, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+    name: ChatSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+    name: ChatSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ChatWhisperMessage, Task>
+  nameWithType: Func<ChatWhisperMessage, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatWhisperMessage, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatWhisperMessage, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+    name: ChatWhisperMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+    name: ChatWhisperMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatMessage},System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Entities.ChatMessage},System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task>
+  nameWithType: Func<ChatChannel, IReadOnlyCollection<ChatMessage>, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatChannel, System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Chat.Entities.ChatMessage>, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatChannel, IReadOnlyCollection(Of ChatMessage), Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatChannel, System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Chat.Entities.ChatMessage), System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatChannel, IReadOnlyCollection(Of ChatMessage), Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatMessage
+    name: ChatMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatMessage.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatMessage
+    name: ChatMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatMessage.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Cacheable{AuxLabs.Twitch.IChatUser,System.String},System.Nullable{System.TimeSpan},System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Cacheable{AuxLabs.Twitch.IChatUser,System.String},System.Nullable{System.TimeSpan},System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task>
+  nameWithType: Func<ChatChannel, Cacheable<IChatUser, string>, TimeSpan?, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatChannel, AuxLabs.Twitch.Cacheable<AuxLabs.Twitch.IChatUser, string>, System.TimeSpan?, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatChannel, Cacheable(Of IChatUser, String), TimeSpan?, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatChannel, AuxLabs.Twitch.Cacheable(Of AuxLabs.Twitch.IChatUser, String), System.TimeSpan?, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatChannel, Cacheable(Of IChatUser, String), TimeSpan?, Task)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Cacheable`2
+    name: Cacheable
+    href: AuxLabs.Twitch.Cacheable-2.html
+  - name: <
+  - uid: AuxLabs.Twitch.IChatUser
+    name: IChatUser
+    href: AuxLabs.Twitch.IChatUser.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Cacheable`2
+    name: Cacheable
+    href: AuxLabs.Twitch.Cacheable-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.IChatUser
+    name: IChatUser
+    href: AuxLabs.Twitch.IChatUser.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`4
+  commentId: T:System.Func`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T1, T2, T3, TResult>
+  nameWithType: Func<T1, T2, T3, TResult>
+  fullName: System.Func<T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  name.vb: Func(Of T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ChatSimpleMessage, Task>
+  nameWithType: Func<ChatSimpleMessage, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatSimpleMessage, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatSimpleMessage, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage
+    name: ChatSimpleMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage
+    name: ChatSimpleMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{System.String,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.String,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, Task>
+  nameWithType: Func<string, Task>
+  fullName: System.Func<string, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of String, Task)
+  fullName.vb: System.Func(Of String, System.Threading.Tasks.Task)
+  name.vb: Func(Of String, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.String,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.String,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ChatSimpleChannel, string, Task>
+  nameWithType: Func<ChatSimpleChannel, string, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, string, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatSimpleChannel, String, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, String, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatSimpleChannel, String, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ChatSimpleChannel, Task>
+  nameWithType: Func<ChatSimpleChannel, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatSimpleChannel, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatSimpleChannel, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatMessage,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatMessage,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ChatMessage, Task>
+  nameWithType: Func<ChatMessage, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatMessage, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatMessage, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatMessage, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatMessage, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatMessage
+    name: ChatMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatMessage
+    name: ChatMessage
+    href: AuxLabs.Twitch.Chat.Entities.ChatMessage.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannel,AuxLabs.Twitch.Chat.Entities.ChatChannel,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ChatChannel, ChatChannel, Task>
+  nameWithType: Func<ChatChannel, ChatChannel, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatChannel, AuxLabs.Twitch.Chat.Entities.ChatChannel, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatChannel, ChatChannel, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatChannel, AuxLabs.Twitch.Chat.Entities.ChatChannel, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatChannel, ChatChannel, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+    name: ChatChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,System.String,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser,System.String,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task>
+  nameWithType: Func<ChatChannelSelfUser, ChatChannelSelfUser, string, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser, AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser, string, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatChannelSelfUser, ChatChannelSelfUser, String, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser, AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser, String, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatChannelSelfUser, ChatChannelSelfUser, String, Task)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+    name: ChatChannelSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+    name: ChatChannelSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+    name: ChatChannelSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+    name: ChatChannelSelfUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.Chat.Entities.ChatRaidUser,AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Int32,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.Chat.Entities.ChatRaidUser,AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel,System.Int32,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<ChatRaidUser, ChatSimpleChannel, int, Task>
+  nameWithType: Func<ChatRaidUser, ChatSimpleChannel, int, Task>
+  fullName: System.Func<AuxLabs.Twitch.Chat.Entities.ChatRaidUser, AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, int, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ChatRaidUser, ChatSimpleChannel, Integer, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.Chat.Entities.ChatRaidUser, AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel, Integer, System.Threading.Tasks.Task)
+  name.vb: Func(Of ChatRaidUser, ChatSimpleChannel, Integer, Task)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+    name: ChatRaidUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+    name: ChatRaidUser
+    href: AuxLabs.Twitch.Chat.Entities.ChatRaidUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    name: ChatSimpleChannel
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+memberLayout: SeparatePages

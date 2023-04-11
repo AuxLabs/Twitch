@@ -1,0 +1,810 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  id: PostEventSubscriptionBody`1
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String,System.String)
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String)
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate
+  - AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version
+  langs:
+  - csharp
+  - vb
+  name: PostEventSubscriptionBody<TCondition>
+  nameWithType: PostEventSubscriptionBody<TCondition>
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostEventSubscriptionBody
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: 'public class PostEventSubscriptionBody<TCondition> where TCondition : IEventCondition'
+    typeParameters:
+    - id: TCondition
+    content.vb: Public Class PostEventSubscriptionBody(Of TCondition As IEventCondition)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AuxLabs.Twitch.Rest.Requests.AuthorizationSubscriptionBase
+  - AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+  - AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+  - AuxLabs.Twitch.Rest.Requests.BroadcasterSubscriptionBase
+  - AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+  - AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+  - AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+  - AuxLabs.Twitch.Rest.Requests.ModeratorSubscriptionBase
+  - AuxLabs.Twitch.Rest.Requests.RaidSubscription
+  - AuxLabs.Twitch.Rest.Requests.RewardSubscriptionBase
+  - AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition)
+  name.vb: PostEventSubscriptionBody(Of TCondition)
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type
+  id: Type
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PostEventSubscriptionBody<TCondition>.Type
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Type
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Type
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The type of subscription to create.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("type")]
+
+      [JsonConverter(typeof(JsonStringEnumMemberConverter))]
+
+      public EventSubType Type { get; set; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSubType
+    content.vb: >-
+      <JsonPropertyName("type")>
+
+      <JsonConverter(GetType(JsonStringEnumMemberConverter))>
+
+      Public Property Type As EventSubType
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: type
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.Text.Json.Serialization.JsonStringEnumMemberConverter
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Type
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Type
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version
+  id: Version
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: PostEventSubscriptionBody<TCondition>.Version
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Version
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Version
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The version number that identifies the definition of the subscription type that you want the response to use.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("version")]
+
+      public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("version")>
+
+      Public Property Version As String
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: version
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Version
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Version
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition
+  id: Condition
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: PostEventSubscriptionBody<TCondition>.Condition
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Condition
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Condition
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Parameter values that are specific to the specified subscription type.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("condition")]
+
+      public TCondition Condition { get; set; }
+    parameters: []
+    return:
+      type: '{TCondition}'
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("condition")>
+
+      Public Property Condition As TCondition
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: condition
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Condition
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Condition
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport
+  id: Transport
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: Transport
+  nameWithType: PostEventSubscriptionBody<TCondition>.Transport
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Transport
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Transport
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The transport details that you want Twitch to use when sending you notifications.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("transport")]
+
+      public Transport Transport { get; set; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.Models.Transport
+    content.vb: >-
+      <JsonPropertyName("transport")>
+
+      Public Property Transport As Transport
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: transport
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Transport
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Transport
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor
+  id: '#ctor'
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: PostEventSubscriptionBody()
+  nameWithType: PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody()
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody()
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 24
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public PostEventSubscriptionBody()
+    content.vb: Public Sub New()
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor*
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).New()
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).New()
+  name.vb: New()
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: PostEventSubscriptionBody(string)
+  nameWithType: PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody(string)
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 30
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Constructor for websocket based event subscriptions.
+  example: []
+  syntax:
+    content: public PostEventSubscriptionBody(string sessionId)
+    parameters:
+    - id: sessionId
+      type: System.String
+      description: The session id of the websocket instance.
+    content.vb: Public Sub New(sessionId As String)
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor*
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).New(String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).New(String)
+  name.vb: New(String)
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String,System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: PostEventSubscriptionBody(string, string)
+  nameWithType: PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody(string, string)
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 44
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Constructor for webhook based event subscriptions
+  example: []
+  syntax:
+    content: public PostEventSubscriptionBody(string callbackUrl, string secret)
+    parameters:
+    - id: callbackUrl
+      type: System.String
+      description: The callback URL where the notifications are sent.
+    - id: secret
+      type: System.String
+      description: The secret used to verify the event signature.
+    content.vb: Public Sub New(callbackUrl As String, secret As String)
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor*
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).New(String, String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).New(String, String)
+  name.vb: New(String, String)
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate
+  id: Validate
+  parent: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: PostEventSubscriptionBody<TCondition>.Validate()
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Validate()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/EventSub/PostEventSubscriptionBody.cs
+    startLine: 54
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public void Validate()
+    content.vb: Public Sub Validate()
+  overload: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate*
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Validate()
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Validate()
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Type
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.Type.html
+  name: Type
+  nameWithType: PostEventSubscriptionBody<TCondition>.Type
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Type
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Type
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Type
+- uid: AuxLabs.Twitch.EventSubType
+  commentId: T:AuxLabs.Twitch.EventSubType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EventSubType.html
+  name: EventSubType
+  nameWithType: EventSubType
+  fullName: AuxLabs.Twitch.EventSubType
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Version
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.Version.html
+  name: Version
+  nameWithType: PostEventSubscriptionBody<TCondition>.Version
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Version
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Version
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Version
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Condition
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.Condition.html
+  name: Condition
+  nameWithType: PostEventSubscriptionBody<TCondition>.Condition
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Condition
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Condition
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Condition
+- uid: '{TCondition}'
+  commentId: '!:TCondition'
+  definition: TCondition
+  name: TCondition
+  nameWithType: TCondition
+  fullName: TCondition
+- uid: TCondition
+  name: TCondition
+  nameWithType: TCondition
+  fullName: TCondition
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Transport
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.Transport.html
+  name: Transport
+  nameWithType: PostEventSubscriptionBody<TCondition>.Transport
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Transport
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Transport
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Transport
+- uid: AuxLabs.Twitch.Rest.Models.Transport
+  commentId: T:AuxLabs.Twitch.Rest.Models.Transport
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.Transport.html
+  name: Transport
+  nameWithType: Transport
+  fullName: AuxLabs.Twitch.Rest.Models.Transport
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.#ctor
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.#ctor.html
+  name: PostEventSubscriptionBody
+  nameWithType: PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.PostEventSubscriptionBody
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).New
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).New
+  name.vb: New
+- uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1.Validate
+  href: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody-1.Validate.html
+  name: Validate
+  nameWithType: PostEventSubscriptionBody<TCondition>.Validate
+  fullName: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody<TCondition>.Validate
+  nameWithType.vb: PostEventSubscriptionBody(Of TCondition).Validate
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition).Validate
+memberLayout: SeparatePages

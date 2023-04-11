@@ -1,0 +1,1273 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.Clip
+  commentId: T:AuxLabs.Twitch.Rest.Models.Clip
+  id: Clip
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+  - AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+  - AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+  - AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+  - AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+  - AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+  - AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+  - AuxLabs.Twitch.Rest.Models.Clip.GameId
+  - AuxLabs.Twitch.Rest.Models.Clip.Language
+  - AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+  - AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+  - AuxLabs.Twitch.Rest.Models.Clip.Title
+  - AuxLabs.Twitch.Rest.Models.Clip.Url
+  - AuxLabs.Twitch.Rest.Models.Clip.VideoId
+  - AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+  langs:
+  - csharp
+  - vb
+  name: Clip
+  nameWithType: Clip
+  fullName: AuxLabs.Twitch.Rest.Models.Clip
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Clip
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: 'public class Clip : SimpleClip'
+    content.vb: Public Class Clip Inherits SimpleClip
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.Rest.Models.SimpleClip
+  inheritedMembers:
+  - AuxLabs.Twitch.Rest.Models.SimpleClip.Id
+  - AuxLabs.Twitch.Rest.Models.SimpleClip.EditUrl
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Url
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.Url
+  id: Url
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: Clip.Url
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Url
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Url
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to the clip.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("url")]
+
+      public string Url { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("url")>
+
+      Public Property Url As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.Url*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: url
+- uid: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+  id: EmbedUrl
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: EmbedUrl
+  nameWithType: Clip.EmbedUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EmbedUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL that you can use in an iframe to embed the clip.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("embed_url")]
+
+      public string EmbedUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("embed_url")>
+
+      Public Property EmbedUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: embed_url
+- uid: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: Clip.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the broadcaster that the video was clipped from.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_id")]
+
+      public string BroadcasterId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_id
+- uid: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: Clip.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_name")]
+
+      public string BroadcasterDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_name")>
+
+      Public Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_name
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+  id: CreatorId
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: CreatorId
+  nameWithType: Clip.CreatorId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CreatorId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the user that created the clip.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("creator_id")]
+
+      public string CreatorId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("creator_id")>
+
+      Public Property CreatorId As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.CreatorId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: creator_id
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+  id: CreatorDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: CreatorDisplayName
+  nameWithType: Clip.CreatorDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CreatorDisplayName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The user’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("creator_name")]
+
+      public string CreatorDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("creator_name")>
+
+      Public Property CreatorDisplayName As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: creator_name
+- uid: AuxLabs.Twitch.Rest.Models.Clip.VideoId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.VideoId
+  id: VideoId
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: VideoId
+  nameWithType: Clip.VideoId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.VideoId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: VideoId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the video that the clip came from.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("video_id")]
+
+      public string VideoId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("video_id")>
+
+      Public Property VideoId As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.VideoId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: video_id
+- uid: AuxLabs.Twitch.Rest.Models.Clip.GameId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.GameId
+  id: GameId
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: GameId
+  nameWithType: Clip.GameId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.GameId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GameId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The ID of the game that was being played when the clip was created.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("game_id")]
+
+      public string GameId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("game_id")>
+
+      Public Property GameId As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.GameId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: game_id
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Language
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.Language
+  id: Language
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: Clip.Language
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Language
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Language
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 41
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The language that the broadcaster broadcasts in.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("language")]
+
+      public CultureInfo Language { get; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("language")>
+
+      Public Property Language As CultureInfo
+  overload: AuxLabs.Twitch.Rest.Models.Clip.Language*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: language
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Title
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.Title
+  id: Title
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Clip.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 45
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The title of the clip.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("title")]
+
+      public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+  id: ViewCount
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: ViewCount
+  nameWithType: Clip.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ViewCount
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 49
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The number of times the clip has been viewed.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("view_count")]
+
+      public int ViewCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("view_count")>
+
+      Public Property ViewCount As Integer
+  overload: AuxLabs.Twitch.Rest.Models.Clip.ViewCount*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: view_count
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+  id: CreatedAt
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: Clip.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CreatedAt
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 53
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The date and time of when the clip was created.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("created_at")]
+
+      public DateTime CreatedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("created_at")>
+
+      Public Property CreatedAt As Date
+  overload: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: created_at
+- uid: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+  id: ThumbnailUrl
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: ThumbnailUrl
+  nameWithType: Clip.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ThumbnailUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 57
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to a thumbnail image of the clip.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("thumbnail_url")]
+
+      public string ThumbnailUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("thumbnail_url")>
+
+      Public Property ThumbnailUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: thumbnail_url
+- uid: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+  id: DurationSeconds
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: Clip.DurationSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DurationSeconds
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 61
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The length of the clip, in seconds.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("duration")]
+
+      public float DurationSeconds { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("duration")>
+
+      Public Property DurationSeconds As Single
+  overload: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: duration
+- uid: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+  commentId: P:AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+  id: OffsetSeconds
+  parent: AuxLabs.Twitch.Rest.Models.Clip
+  langs:
+  - csharp
+  - vb
+  name: OffsetSeconds
+  nameWithType: Clip.OffsetSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: OffsetSeconds
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Clips/Clip.cs
+    startLine: 65
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The zero-based offset, in seconds, to where the clip starts in the video
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("vod_offset")]
+
+      public int OffsetSeconds { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("vod_offset")>
+
+      Public Property OffsetSeconds As Integer
+  overload: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: vod_offset
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Rest.Models.SimpleClip
+  commentId: T:AuxLabs.Twitch.Rest.Models.SimpleClip
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.SimpleClip.html
+  name: SimpleClip
+  nameWithType: SimpleClip
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleClip
+- uid: AuxLabs.Twitch.Rest.Models.SimpleClip.Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleClip.Id
+  parent: AuxLabs.Twitch.Rest.Models.SimpleClip
+  href: AuxLabs.Twitch.Rest.Models.SimpleClip.Id.html
+  name: Id
+  nameWithType: SimpleClip.Id
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleClip.Id
+- uid: AuxLabs.Twitch.Rest.Models.SimpleClip.EditUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleClip.EditUrl
+  parent: AuxLabs.Twitch.Rest.Models.SimpleClip
+  href: AuxLabs.Twitch.Rest.Models.SimpleClip.EditUrl.html
+  name: EditUrl
+  nameWithType: SimpleClip.EditUrl
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleClip.EditUrl
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Url*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.Url
+  href: AuxLabs.Twitch.Rest.Models.Clip.Url.html
+  name: Url
+  nameWithType: Clip.Url
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Url
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+  href: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl.html
+  name: EmbedUrl
+  nameWithType: Clip.EmbedUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.EmbedUrl
+- uid: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+  href: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: Clip.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+  href: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: Clip.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatorId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+  href: AuxLabs.Twitch.Rest.Models.Clip.CreatorId.html
+  name: CreatorId
+  nameWithType: Clip.CreatorId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatorId
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+  href: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName.html
+  name: CreatorDisplayName
+  nameWithType: Clip.CreatorDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatorDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.Clip.VideoId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.VideoId
+  href: AuxLabs.Twitch.Rest.Models.Clip.VideoId.html
+  name: VideoId
+  nameWithType: Clip.VideoId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.VideoId
+- uid: AuxLabs.Twitch.Rest.Models.Clip.GameId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.GameId
+  href: AuxLabs.Twitch.Rest.Models.Clip.GameId.html
+  name: GameId
+  nameWithType: Clip.GameId
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.GameId
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Language*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.Language
+  href: AuxLabs.Twitch.Rest.Models.Clip.Language.html
+  name: Language
+  nameWithType: Clip.Language
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Language
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: AuxLabs.Twitch.Rest.Models.Clip.Title*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.Title
+  href: AuxLabs.Twitch.Rest.Models.Clip.Title.html
+  name: Title
+  nameWithType: Clip.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.Title
+- uid: AuxLabs.Twitch.Rest.Models.Clip.ViewCount*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+  href: AuxLabs.Twitch.Rest.Models.Clip.ViewCount.html
+  name: ViewCount
+  nameWithType: Clip.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.ViewCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+  href: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt.html
+  name: CreatedAt
+  nameWithType: Clip.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+  href: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl.html
+  name: ThumbnailUrl
+  nameWithType: Clip.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+  href: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds.html
+  name: DurationSeconds
+  nameWithType: Clip.DurationSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.DurationSeconds
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+  href: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds.html
+  name: OffsetSeconds
+  nameWithType: Clip.OffsetSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Clip.OffsetSeconds
+memberLayout: SeparatePages

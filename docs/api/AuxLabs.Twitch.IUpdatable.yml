@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.IUpdatable
+  commentId: T:AuxLabs.Twitch.IUpdatable
+  id: IUpdatable
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.IUpdatable.UpdateAsync
+  langs:
+  - csharp
+  - vb
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: AuxLabs.Twitch.IUpdatable
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUpdatable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IUpdatable
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUpdatable.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public interface IUpdatable
+    content.vb: Public Interface IUpdatable
+- uid: AuxLabs.Twitch.IUpdatable.UpdateAsync
+  commentId: M:AuxLabs.Twitch.IUpdatable.UpdateAsync
+  id: UpdateAsync
+  parent: AuxLabs.Twitch.IUpdatable
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync()
+  nameWithType: IUpdatable.UpdateAsync()
+  fullName: AuxLabs.Twitch.IUpdatable.UpdateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUpdatable.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UpdateAsync
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUpdatable.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: Task UpdateAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAsync() As Task
+  overload: AuxLabs.Twitch.IUpdatable.UpdateAsync*
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.IUpdatable.UpdateAsync*
+  commentId: Overload:AuxLabs.Twitch.IUpdatable.UpdateAsync
+  href: AuxLabs.Twitch.IUpdatable.UpdateAsync.html
+  name: UpdateAsync
+  nameWithType: IUpdatable.UpdateAsync
+  fullName: AuxLabs.Twitch.IUpdatable.UpdateAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.RitualType
+  commentId: T:AuxLabs.Twitch.Chat.RitualType
+  id: RitualType
+  parent: AuxLabs.Twitch.Chat
+  children:
+  - AuxLabs.Twitch.Chat.RitualType.NewChatter
+  - AuxLabs.Twitch.Chat.RitualType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: RitualType
+  nameWithType: RitualType
+  fullName: AuxLabs.Twitch.Chat.RitualType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RitualType
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 36
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public enum RitualType
+    content.vb: Public Enum RitualType
+  extensionMethods:
+  - AuxLabs.Twitch.Chat.RitualType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.Chat.RitualType.Unknown
+  commentId: F:AuxLabs.Twitch.Chat.RitualType.Unknown
+  id: Unknown
+  parent: AuxLabs.Twitch.Chat.RitualType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: RitualType.Unknown
+  fullName: AuxLabs.Twitch.Chat.RitualType.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unknown
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 38
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: Unknown = 0
+    return:
+      type: AuxLabs.Twitch.Chat.RitualType
+- uid: AuxLabs.Twitch.Chat.RitualType.NewChatter
+  commentId: F:AuxLabs.Twitch.Chat.RitualType.NewChatter
+  id: NewChatter
+  parent: AuxLabs.Twitch.Chat.RitualType
+  langs:
+  - csharp
+  - vb
+  name: NewChatter
+  nameWithType: RitualType.NewChatter
+  fullName: AuxLabs.Twitch.Chat.RitualType.NewChatter
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: NewChatter
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 40
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "new_chatter")]
+
+      NewChatter = 1
+    return:
+      type: AuxLabs.Twitch.Chat.RitualType
+    content.vb: >-
+      <EnumMember(Value:="new_chatter")>
+
+      NewChatter = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: new_chatter
+references:
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+- uid: AuxLabs.Twitch.Chat.RitualType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.RitualType).html
+  name: GetStringValue<RitualType>(RitualType)
+  nameWithType: EnumHelper.GetStringValue<RitualType>(RitualType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.Chat.RitualType>(AuxLabs.Twitch.Chat.RitualType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of RitualType)(RitualType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.Chat.RitualType)(AuxLabs.Twitch.Chat.RitualType)
+  name.vb: GetStringValue(Of RitualType)(RitualType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.RitualType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.RitualType).html
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.RitualType
+    name: RitualType
+    href: AuxLabs.Twitch.Chat.RitualType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.RitualType
+    name: RitualType
+    href: AuxLabs.Twitch.Chat.RitualType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.RitualType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.RitualType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.RitualType
+    name: RitualType
+    href: AuxLabs.Twitch.Chat.RitualType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.RitualType
+    name: RitualType
+    href: AuxLabs.Twitch.Chat.RitualType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Chat.RitualType
+  commentId: T:AuxLabs.Twitch.Chat.RitualType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.RitualType.html
+  name: RitualType
+  nameWithType: RitualType
+  fullName: AuxLabs.Twitch.Chat.RitualType
+memberLayout: SeparatePages

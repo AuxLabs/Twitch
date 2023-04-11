@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs
+  commentId: T:AuxLabs.Twitch.EventSub.BanEventArgs
+  id: BanEventArgs
+  parent: AuxLabs.Twitch.EventSub
+  children:
+  - AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+  - AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+  - AuxLabs.Twitch.EventSub.BanEventArgs.Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient,AuxLabs.Twitch.EventSub.Models.BanEventArgs)
+  - AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+  - AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+  - AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+  - AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+  - AuxLabs.Twitch.EventSub.BanEventArgs.User
+  langs:
+  - csharp
+  - vb
+  name: BanEventArgs
+  nameWithType: BanEventArgs
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BanEventArgs
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public class BanEventArgs
+    content.vb: Public Class BanEventArgs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.User
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.User
+  id: User
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: BanEventArgs.User
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.User
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: User
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public EventSubSimpleUser User { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+    content.vb: Public Property User As EventSubSimpleUser
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.User*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+  id: Moderator
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Moderator
+  nameWithType: BanEventArgs.Moderator
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Moderator
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public EventSubSimpleUser Moderator { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+    content.vb: Public Property Moderator As EventSubSimpleUser
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+  id: Broadcaster
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Broadcaster
+  nameWithType: BanEventArgs.Broadcaster
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Broadcaster
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public EventSubSimpleUser Broadcaster { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+    content.vb: Public Property Broadcaster As EventSubSimpleUser
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+  id: Reason
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Reason
+  nameWithType: BanEventArgs.Reason
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Reason
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public string Reason { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Reason As String
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.Reason*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+  id: BannedAt
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BannedAt
+  nameWithType: BanEventArgs.BannedAt
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BannedAt
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public DateTime BannedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property BannedAt As Date
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+  id: EndsAt
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: EndsAt
+  nameWithType: BanEventArgs.EndsAt
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EndsAt
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 24
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public DateTime? EndsAt { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property EndsAt As Date?
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+  commentId: P:AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+  id: IsPermanent
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: IsPermanent
+  nameWithType: BanEventArgs.IsPermanent
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsPermanent
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public bool IsPermanent { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPermanent As Boolean
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent*
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient,AuxLabs.Twitch.EventSub.Models.BanEventArgs)
+  commentId: M:AuxLabs.Twitch.EventSub.BanEventArgs.Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient,AuxLabs.Twitch.EventSub.Models.BanEventArgs)
+  id: Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient,AuxLabs.Twitch.EventSub.Models.BanEventArgs)
+  parent: AuxLabs.Twitch.EventSub.BanEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Create(TwitchEventSubClient, BanEventArgs)
+  nameWithType: BanEventArgs.Create(TwitchEventSubClient, BanEventArgs)
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient, AuxLabs.Twitch.EventSub.Models.BanEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Create
+    path: ../src/AuxLabs.Twitch.EventSub/Events/BanEventArgs.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public static BanEventArgs Create(TwitchEventSubClient twitch, BanEventArgs model)
+    parameters:
+    - id: twitch
+      type: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+    - id: model
+      type: AuxLabs.Twitch.EventSub.Models.BanEventArgs
+    return:
+      type: AuxLabs.Twitch.EventSub.BanEventArgs
+    content.vb: Public Shared Function Create(twitch As TwitchEventSubClient, model As BanEventArgs) As BanEventArgs
+  overload: AuxLabs.Twitch.EventSub.BanEventArgs.Create*
+references:
+- uid: AuxLabs.Twitch.EventSub
+  commentId: N:AuxLabs.Twitch.EventSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub
+  nameWithType: AuxLabs.Twitch.EventSub
+  fullName: AuxLabs.Twitch.EventSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.User*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.User
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.User.html
+  name: User
+  nameWithType: BanEventArgs.User
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.User
+- uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+  commentId: T:AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+  parent: AuxLabs.Twitch.EventSub.Entities
+  href: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html
+  name: EventSubSimpleUser
+  nameWithType: EventSubSimpleUser
+  fullName: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+- uid: AuxLabs.Twitch.EventSub.Entities
+  commentId: N:AuxLabs.Twitch.EventSub.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Entities
+  nameWithType: AuxLabs.Twitch.EventSub.Entities
+  fullName: AuxLabs.Twitch.EventSub.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Entities
+    name: Entities
+    href: AuxLabs.Twitch.EventSub.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Entities
+    name: Entities
+    href: AuxLabs.Twitch.EventSub.Entities.html
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator.html
+  name: Moderator
+  nameWithType: BanEventArgs.Moderator
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Moderator
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster.html
+  name: Broadcaster
+  nameWithType: BanEventArgs.Broadcaster
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Broadcaster
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Reason*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.Reason.html
+  name: Reason
+  nameWithType: BanEventArgs.Reason
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Reason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt.html
+  name: BannedAt
+  nameWithType: BanEventArgs.BannedAt
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.BannedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt.html
+  name: EndsAt
+  nameWithType: BanEventArgs.EndsAt
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.EndsAt
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent.html
+  name: IsPermanent
+  nameWithType: BanEventArgs.IsPermanent
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.IsPermanent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs.Create*
+  commentId: Overload:AuxLabs.Twitch.EventSub.BanEventArgs.Create
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.Create(AuxLabs.Twitch.EventSub.TwitchEventSubClient,AuxLabs.Twitch.EventSub.Models.BanEventArgs).html
+  name: Create
+  nameWithType: BanEventArgs.Create
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs.Create
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  commentId: T:AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  parent: AuxLabs.Twitch.EventSub
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.html
+  name: TwitchEventSubClient
+  nameWithType: TwitchEventSubClient
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+- uid: AuxLabs.Twitch.EventSub.Models.BanEventArgs
+  commentId: T:AuxLabs.Twitch.EventSub.Models.BanEventArgs
+  parent: AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.Twitch.EventSub.Models.BanEventArgs.html
+  name: BanEventArgs
+  nameWithType: BanEventArgs
+  fullName: AuxLabs.Twitch.EventSub.Models.BanEventArgs
+- uid: AuxLabs.Twitch.EventSub.BanEventArgs
+  commentId: T:AuxLabs.Twitch.EventSub.BanEventArgs
+  parent: AuxLabs.Twitch.EventSub
+  href: AuxLabs.Twitch.EventSub.BanEventArgs.html
+  name: BanEventArgs
+  nameWithType: BanEventArgs
+  fullName: AuxLabs.Twitch.EventSub.BanEventArgs
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+memberLayout: SeparatePages

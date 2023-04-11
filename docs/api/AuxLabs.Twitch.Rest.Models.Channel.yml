@@ -1,0 +1,1093 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.Channel
+  commentId: T:AuxLabs.Twitch.Rest.Models.Channel
+  id: Channel
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+  - AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+  - AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+  - AuxLabs.Twitch.Rest.Models.Channel.Culture
+  - AuxLabs.Twitch.Rest.Models.Channel.Delay
+  - AuxLabs.Twitch.Rest.Models.Channel.GameId
+  - AuxLabs.Twitch.Rest.Models.Channel.GameName
+  - AuxLabs.Twitch.Rest.Models.Channel.Tags
+  - AuxLabs.Twitch.Rest.Models.Channel.Title
+  langs:
+  - csharp
+  - vb
+  name: Channel
+  nameWithType: Channel
+  fullName: AuxLabs.Twitch.Rest.Models.Channel
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Channel
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: 'public class Channel : ISimpleUser, IPartialUser, IChannel, IEntity<string>'
+    content.vb: Public Class Channel Implements ISimpleUser, IPartialUser, IChannel, IEntity(Of String)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AuxLabs.Twitch.Rest.Models.ChannelBroadcast
+  implements:
+  - AuxLabs.Twitch.ISimpleUser
+  - AuxLabs.Twitch.IPartialUser
+  - AuxLabs.Twitch.IChannel
+  - AuxLabs.Twitch.IEntity{System.String}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: Channel.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that uniquely identifies the broadcaster.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_id")]
+
+      public string BroadcasterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_id
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: Channel.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s login name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_login")]
+
+      public string BroadcasterName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_login")>
+
+      Public Property BroadcasterName As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_login
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: Channel.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_name")]
+
+      public string BroadcasterDisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_name")>
+
+      Public Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_name
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Culture
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.Culture
+  id: Culture
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: Channel.Culture
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Culture
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Culture
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s preferred language.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_language")]
+
+      public CultureInfo Culture { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_language")>
+
+      Public Property Culture As CultureInfo
+  overload: AuxLabs.Twitch.Rest.Models.Channel.Culture*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_language
+- uid: AuxLabs.Twitch.Rest.Models.Channel.GameId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.GameId
+  id: GameId
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: GameId
+  nameWithType: Channel.GameId
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.GameId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GameId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that uniquely identifies the game that the broadcaster is playing or last played.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("game_id")]
+
+      public string GameId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("game_id")>
+
+      Public Property GameId As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.GameId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: game_id
+- uid: AuxLabs.Twitch.Rest.Models.Channel.GameName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.GameName
+  id: GameName
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: GameName
+  nameWithType: Channel.GameName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.GameName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GameName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The name of the game that the broadcaster is playing or last played.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("game_name")]
+
+      public string GameName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("game_name")>
+
+      Public Property GameName As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.GameName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: game_name
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Title
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.Title
+  id: Title
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Channel.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The title of the stream that the broadcaster is currently streaming or last streamed.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("title")]
+
+      public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.Rest.Models.Channel.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Delay
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.Delay
+  id: Delay
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: Delay
+  nameWithType: Channel.Delay
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Delay
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Delay
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The value of the broadcaster’s stream delay setting, in seconds.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("delay")]
+
+      public uint Delay { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("delay")>
+
+      Public Property Delay As UInteger
+  overload: AuxLabs.Twitch.Rest.Models.Channel.Delay*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: delay
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Tags
+  commentId: P:AuxLabs.Twitch.Rest.Models.Channel.Tags
+  id: Tags
+  parent: AuxLabs.Twitch.Rest.Models.Channel
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: Channel.Tags
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Tags
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Tags
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Channels/Channel.cs
+    startLine: 41
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The tags applied to the channel.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("tags")]
+
+      public IReadOnlyCollection<string> Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("tags")>
+
+      Public Property Tags As IReadOnlyCollection(Of String)
+  overload: AuxLabs.Twitch.Rest.Models.Channel.Tags*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: tags
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.ISimpleUser
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ISimpleUser.html
+  name: ISimpleUser
+  nameWithType: ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+- uid: AuxLabs.Twitch.IPartialUser
+  commentId: T:AuxLabs.Twitch.IPartialUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: AuxLabs.Twitch.IPartialUser
+- uid: AuxLabs.Twitch.IChannel
+  commentId: T:AuxLabs.Twitch.IChannel
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IChannel.html
+  name: IChannel
+  nameWithType: IChannel
+  fullName: AuxLabs.Twitch.IChannel
+- uid: AuxLabs.Twitch.IEntity{System.String}
+  commentId: T:AuxLabs.Twitch.IEntity{System.String}
+  parent: AuxLabs.Twitch
+  definition: AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<string>
+  nameWithType: IEntity<string>
+  fullName: AuxLabs.Twitch.IEntity<string>
+  nameWithType.vb: IEntity(Of String)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of String)
+  name.vb: IEntity(Of String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.IEntity`1
+  commentId: T:AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<TId>
+  nameWithType: IEntity<TId>
+  fullName: AuxLabs.Twitch.IEntity<TId>
+  nameWithType.vb: IEntity(Of TId)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of TId)
+  name.vb: IEntity(Of TId)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+  href: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: Channel.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+  href: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: Channel.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterName
+- uid: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+  href: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: Channel.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Culture*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.Culture
+  href: AuxLabs.Twitch.Rest.Models.Channel.Culture.html
+  name: Culture
+  nameWithType: Channel.Culture
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Culture
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: AuxLabs.Twitch.Rest.Models.Channel.GameId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.GameId
+  href: AuxLabs.Twitch.Rest.Models.Channel.GameId.html
+  name: GameId
+  nameWithType: Channel.GameId
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.GameId
+- uid: AuxLabs.Twitch.Rest.Models.Channel.GameName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.GameName
+  href: AuxLabs.Twitch.Rest.Models.Channel.GameName.html
+  name: GameName
+  nameWithType: Channel.GameName
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.GameName
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Title*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.Title
+  href: AuxLabs.Twitch.Rest.Models.Channel.Title.html
+  name: Title
+  nameWithType: Channel.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Title
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Delay*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.Delay
+  href: AuxLabs.Twitch.Rest.Models.Channel.Delay.html
+  name: Delay
+  nameWithType: Channel.Delay
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Delay
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: AuxLabs.Twitch.Rest.Models.Channel.Tags*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Channel.Tags
+  href: AuxLabs.Twitch.Rest.Models.Channel.Tags.html
+  name: Tags
+  nameWithType: Channel.Tags
+  fullName: AuxLabs.Twitch.Rest.Models.Channel.Tags
+- uid: System.Collections.Generic.IReadOnlyCollection{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<string>
+  nameWithType: IReadOnlyCollection<string>
+  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  nameWithType.vb: IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  name.vb: IReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.ExtensionType
+  commentId: T:AuxLabs.Twitch.ExtensionType
+  id: ExtensionType
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.ExtensionType.Component
+  - AuxLabs.Twitch.ExtensionType.Mobile
+  - AuxLabs.Twitch.ExtensionType.Overlay
+  - AuxLabs.Twitch.ExtensionType.Panel
+  - AuxLabs.Twitch.ExtensionType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: ExtensionType
+  nameWithType: ExtensionType
+  fullName: AuxLabs.Twitch.ExtensionType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ExtensionType
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum ExtensionType
+    content.vb: Public Enum ExtensionType
+  extensionMethods:
+  - AuxLabs.Twitch.ExtensionType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.ExtensionType.Unknown
+  commentId: F:AuxLabs.Twitch.ExtensionType.Unknown
+  id: Unknown
+  parent: AuxLabs.Twitch.ExtensionType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: ExtensionType.Unknown
+  fullName: AuxLabs.Twitch.ExtensionType.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unknown
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: Unknown = 0
+    return:
+      type: AuxLabs.Twitch.ExtensionType
+- uid: AuxLabs.Twitch.ExtensionType.Component
+  commentId: F:AuxLabs.Twitch.ExtensionType.Component
+  id: Component
+  parent: AuxLabs.Twitch.ExtensionType
+  langs:
+  - csharp
+  - vb
+  name: Component
+  nameWithType: ExtensionType.Component
+  fullName: AuxLabs.Twitch.ExtensionType.Component
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Component
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "component")]
+
+      Component = 1
+    return:
+      type: AuxLabs.Twitch.ExtensionType
+    content.vb: >-
+      <EnumMember(Value:="component")>
+
+      Component = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: component
+- uid: AuxLabs.Twitch.ExtensionType.Mobile
+  commentId: F:AuxLabs.Twitch.ExtensionType.Mobile
+  id: Mobile
+  parent: AuxLabs.Twitch.ExtensionType
+  langs:
+  - csharp
+  - vb
+  name: Mobile
+  nameWithType: ExtensionType.Mobile
+  fullName: AuxLabs.Twitch.ExtensionType.Mobile
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Mobile
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "mobile")]
+
+      Mobile = 2
+    return:
+      type: AuxLabs.Twitch.ExtensionType
+    content.vb: >-
+      <EnumMember(Value:="mobile")>
+
+      Mobile = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: mobile
+- uid: AuxLabs.Twitch.ExtensionType.Overlay
+  commentId: F:AuxLabs.Twitch.ExtensionType.Overlay
+  id: Overlay
+  parent: AuxLabs.Twitch.ExtensionType
+  langs:
+  - csharp
+  - vb
+  name: Overlay
+  nameWithType: ExtensionType.Overlay
+  fullName: AuxLabs.Twitch.ExtensionType.Overlay
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Overlay
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "overlay")]
+
+      Overlay = 3
+    return:
+      type: AuxLabs.Twitch.ExtensionType
+    content.vb: >-
+      <EnumMember(Value:="overlay")>
+
+      Overlay = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: overlay
+- uid: AuxLabs.Twitch.ExtensionType.Panel
+  commentId: F:AuxLabs.Twitch.ExtensionType.Panel
+  id: Panel
+  parent: AuxLabs.Twitch.ExtensionType
+  langs:
+  - csharp
+  - vb
+  name: Panel
+  nameWithType: ExtensionType.Panel
+  fullName: AuxLabs.Twitch.ExtensionType.Panel
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Panel
+    path: ../src/AuxLabs.Twitch.Core/Models/Extensions/ExtensionType.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "panel")]
+
+      Panel = 4
+    return:
+      type: AuxLabs.Twitch.ExtensionType
+    content.vb: >-
+      <EnumMember(Value:="panel")>
+
+      Panel = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: panel
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.ExtensionType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.ExtensionType).html
+  name: GetStringValue<ExtensionType>(ExtensionType)
+  nameWithType: EnumHelper.GetStringValue<ExtensionType>(ExtensionType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.ExtensionType>(AuxLabs.Twitch.ExtensionType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of ExtensionType)(ExtensionType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.ExtensionType)(AuxLabs.Twitch.ExtensionType)
+  name.vb: GetStringValue(Of ExtensionType)(ExtensionType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.ExtensionType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.ExtensionType).html
+  - name: <
+  - uid: AuxLabs.Twitch.ExtensionType
+    name: ExtensionType
+    href: AuxLabs.Twitch.ExtensionType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.ExtensionType
+    name: ExtensionType
+    href: AuxLabs.Twitch.ExtensionType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.ExtensionType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.ExtensionType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.ExtensionType
+    name: ExtensionType
+    href: AuxLabs.Twitch.ExtensionType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.ExtensionType
+    name: ExtensionType
+    href: AuxLabs.Twitch.ExtensionType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.ExtensionType
+  commentId: T:AuxLabs.Twitch.ExtensionType
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ExtensionType.html
+  name: ExtensionType
+  nameWithType: ExtensionType
+  fullName: AuxLabs.Twitch.ExtensionType
+memberLayout: SeparatePages

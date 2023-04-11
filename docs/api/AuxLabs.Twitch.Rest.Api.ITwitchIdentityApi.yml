@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  commentId: T:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  id: ITwitchIdentityApi
+  parent: AuxLabs.Twitch.Rest.Api
+  children:
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  langs:
+  - csharp
+  - vb
+  name: ITwitchIdentityApi
+  nameWithType: ITwitchIdentityApi
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ITwitchIdentityApi
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/Twitch)")]
+
+      public interface ITwitchIdentityApi : IDisposable
+    content.vb: >-
+      <Header("User-Agent", "AuxLabs (https://github.com/AuxLabs/Twitch)")>
+
+      Public Interface ITwitchIdentityApi Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: RestEase.HeaderAttribute
+    ctor: RestEase.HeaderAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: User-Agent
+    - type: System.String
+      value: AuxLabs (https://github.com/AuxLabs/Twitch)
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  id: ValidateAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(string, CancellationToken?)
+  nameWithType: ITwitchIdentityApi.ValidateAsync(string, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(string, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ValidateAsync
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Get("validate")]
+
+      Task<AccessTokenInfo> ValidateAsync(string token, CancellationToken? cancelToken = null)
+    parameters:
+    - id: token
+      type: System.String
+      attributes:
+      - type: RestEase.HeaderAttribute
+        ctor: RestEase.HeaderAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: Authorization
+        namedArguments:
+        - name: Format
+          type: System.String
+          value: Bearer {0}
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+    content.vb: >-
+      <Get("validate")>
+
+      Function ValidateAsync(token As String, cancelToken As CancellationToken? = Nothing) As Task(Of AccessTokenInfo)
+  overload: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync*
+  attributes:
+  - type: RestEase.GetAttribute
+    ctor: RestEase.GetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: validate
+  nameWithType.vb: ITwitchIdentityApi.ValidateAsync(String, CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(String, System.Threading.CancellationToken?)
+  name.vb: ValidateAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  id: RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: RevokeTokenAsync(PostRevokeTokenArgs, CancellationToken?)
+  nameWithType: ITwitchIdentityApi.RevokeTokenAsync(PostRevokeTokenArgs, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RevokeTokenAsync
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Get("revoke")]
+
+      Task RevokeTokenAsync(PostRevokeTokenArgs args, CancellationToken? cancelToken = null)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs
+      attributes:
+      - type: RestEase.BodyAttribute
+        ctor: RestEase.BodyAttribute.#ctor(RestEase.BodySerializationMethod)
+        arguments:
+        - type: RestEase.BodySerializationMethod
+          value: 1
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Get("revoke")>
+
+      Function RevokeTokenAsync(args As PostRevokeTokenArgs, cancelToken As CancellationToken? = Nothing) As Task
+  overload: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync*
+  attributes:
+  - type: RestEase.GetAttribute
+    ctor: RestEase.GetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: revoke
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  id: PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: PostRefreshTokenAsync(PostRefreshTokenArgs, CancellationToken?)
+  nameWithType: ITwitchIdentityApi.PostRefreshTokenAsync(PostRefreshTokenArgs, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostRefreshTokenAsync
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Post("token")]
+
+      [Header("Content-Type", "application/x-www-form-urlencoded")]
+
+      Task<UserIdentity> PostRefreshTokenAsync(PostRefreshTokenArgs args, CancellationToken? cancelToken = null)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs
+      attributes:
+      - type: RestEase.BodyAttribute
+        ctor: RestEase.BodyAttribute.#ctor(RestEase.BodySerializationMethod)
+        arguments:
+        - type: RestEase.BodySerializationMethod
+          value: 1
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.UserIdentity}
+    content.vb: >-
+      <Post("token")>
+
+      <Header("Content-Type", "application/x-www-form-urlencoded")>
+
+      Function PostRefreshTokenAsync(args As PostRefreshTokenArgs, cancelToken As CancellationToken? = Nothing) As Task(Of UserIdentity)
+  overload: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync*
+  attributes:
+  - type: RestEase.PostAttribute
+    ctor: RestEase.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: token
+  - type: RestEase.HeaderAttribute
+    ctor: RestEase.HeaderAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Content-Type
+    - type: System.String
+      value: application/x-www-form-urlencoded
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  id: PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: PostAccessTokenAsync(PostAppAccessTokenArgs, CancellationToken?)
+  nameWithType: ITwitchIdentityApi.PostAccessTokenAsync(PostAppAccessTokenArgs, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostAccessTokenAsync
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Post("token")]
+
+      [Header("Content-Type", "application/x-www-form-urlencoded")]
+
+      Task<AppIdentity> PostAccessTokenAsync(PostAppAccessTokenArgs args, CancellationToken? cancelToken = null)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs
+      attributes:
+      - type: RestEase.BodyAttribute
+        ctor: RestEase.BodyAttribute.#ctor(RestEase.BodySerializationMethod)
+        arguments:
+        - type: RestEase.BodySerializationMethod
+          value: 1
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AppIdentity}
+    content.vb: >-
+      <Post("token")>
+
+      <Header("Content-Type", "application/x-www-form-urlencoded")>
+
+      Function PostAccessTokenAsync(args As PostAppAccessTokenArgs, cancelToken As CancellationToken? = Nothing) As Task(Of AppIdentity)
+  overload: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync*
+  attributes:
+  - type: RestEase.PostAttribute
+    ctor: RestEase.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: token
+  - type: RestEase.HeaderAttribute
+    ctor: RestEase.HeaderAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Content-Type
+    - type: System.String
+      value: application/x-www-form-urlencoded
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  id: PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs,System.Nullable{System.Threading.CancellationToken})
+  parent: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: PostAccessTokenAsync(PostUserAccessTokenArgs, CancellationToken?)
+  nameWithType: ITwitchIdentityApi.PostAccessTokenAsync(PostUserAccessTokenArgs, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostAccessTokenAsync
+    path: ../src/AuxLabs.Twitch.Rest.Api/ITwitchIdentityApi.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Api
+  syntax:
+    content: >-
+      [Post("token")]
+
+      [Header("Content-Type", "application/x-www-form-urlencoded")]
+
+      Task<UserIdentity> PostAccessTokenAsync(PostUserAccessTokenArgs args, CancellationToken? cancelToken = null)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs
+      attributes:
+      - type: RestEase.BodyAttribute
+        ctor: RestEase.BodyAttribute.#ctor(RestEase.BodySerializationMethod)
+        arguments:
+        - type: RestEase.BodySerializationMethod
+          value: 1
+    - id: cancelToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.UserIdentity}
+    content.vb: >-
+      <Post("token")>
+
+      <Header("Content-Type", "application/x-www-form-urlencoded")>
+
+      Function PostAccessTokenAsync(args As PostUserAccessTokenArgs, cancelToken As CancellationToken? = Nothing) As Task(Of UserIdentity)
+  overload: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync*
+  attributes:
+  - type: RestEase.PostAttribute
+    ctor: RestEase.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: token
+  - type: RestEase.HeaderAttribute
+    ctor: RestEase.HeaderAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Content-Type
+    - type: System.String
+      value: application/x-www-form-urlencoded
+references:
+- uid: AuxLabs.Twitch.Rest.Api
+  commentId: N:AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Api
+  nameWithType: AuxLabs.Twitch.Rest.Api
+  fullName: AuxLabs.Twitch.Rest.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync*
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync
+  href: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync(System.String,System.Nullable{System.Threading.CancellationToken}).html
+  name: ValidateAsync
+  nameWithType: ITwitchIdentityApi.ValidateAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.ValidateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AccessTokenInfo>
+  nameWithType: Task<AccessTokenInfo>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Rest.Models.AccessTokenInfo>
+  nameWithType.vb: Task(Of AccessTokenInfo)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Rest.Models.AccessTokenInfo)
+  name.vb: Task(Of AccessTokenInfo)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.AccessTokenInfo
+    name: AccessTokenInfo
+    href: AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.AccessTokenInfo
+    name: AccessTokenInfo
+    href: AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync*
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync
+  href: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs,System.Nullable{System.Threading.CancellationToken}).html
+  name: RevokeTokenAsync
+  nameWithType: ITwitchIdentityApi.RevokeTokenAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.RevokeTokenAsync
+- uid: AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs.html
+  name: PostRevokeTokenArgs
+  nameWithType: PostRevokeTokenArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync*
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync
+  href: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync(AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs,System.Nullable{System.Threading.CancellationToken}).html
+  name: PostRefreshTokenAsync
+  nameWithType: ITwitchIdentityApi.PostRefreshTokenAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostRefreshTokenAsync
+- uid: AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs.html
+  name: PostRefreshTokenArgs
+  nameWithType: PostRefreshTokenArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.UserIdentity}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.UserIdentity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UserIdentity>
+  nameWithType: Task<UserIdentity>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Rest.Models.UserIdentity>
+  nameWithType.vb: Task(Of UserIdentity)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Rest.Models.UserIdentity)
+  name.vb: Task(Of UserIdentity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.UserIdentity
+    name: UserIdentity
+    href: AuxLabs.Twitch.Rest.Models.UserIdentity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.UserIdentity
+    name: UserIdentity
+    href: AuxLabs.Twitch.Rest.Models.UserIdentity.html
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync*
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync
+  href: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync(AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs,System.Nullable{System.Threading.CancellationToken}).html
+  name: PostAccessTokenAsync
+  nameWithType: ITwitchIdentityApi.PostAccessTokenAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.PostAccessTokenAsync
+- uid: AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs.html
+  name: PostAppAccessTokenArgs
+  nameWithType: PostAppAccessTokenArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AppIdentity}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AppIdentity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AppIdentity>
+  nameWithType: Task<AppIdentity>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Rest.Models.AppIdentity>
+  nameWithType.vb: Task(Of AppIdentity)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Rest.Models.AppIdentity)
+  name.vb: Task(Of AppIdentity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.AppIdentity
+    name: AppIdentity
+    href: AuxLabs.Twitch.Rest.Models.AppIdentity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.AppIdentity
+    name: AppIdentity
+    href: AuxLabs.Twitch.Rest.Models.AppIdentity.html
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs.html
+  name: PostUserAccessTokenArgs
+  nameWithType: PostUserAccessTokenArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs
+memberLayout: SeparatePages

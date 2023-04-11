@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  commentId: T:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  id: DropEntitlementCondition
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor(System.String,System.String,System.String)
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)~System.ValueTuple{System.String,System.String,System.String}
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(System.ValueTuple{System.String,System.String,System.String})~AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  - AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+  langs:
+  - csharp
+  - vb
+  name: DropEntitlementCondition
+  nameWithType: DropEntitlementCondition
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DropEntitlementCondition
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: 'public class DropEntitlementCondition : IEventCondition'
+    content.vb: Public Class DropEntitlementCondition Implements IEventCondition
+  inheritance:
+  - System.Object
+  implements:
+  - AuxLabs.Twitch.Rest.IEventCondition
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+  commentId: P:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+  id: OrganizationId
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: OrganizationId
+  nameWithType: DropEntitlementCondition.OrganizationId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: OrganizationId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The organization ID of the organization that owns the game on the developer portal.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("organization_id")]
+
+      public string OrganizationId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("organization_id")>
+
+      Public Property OrganizationId As String
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: organization_id
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+  commentId: P:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+  id: CategoryId
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: DropEntitlementCondition.CategoryId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CategoryId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: Optional. The category (or game) ID of the game for which notifications will be received.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("category_id")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string CategoryId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("category_id")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property CategoryId As String
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: category_id
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+  commentId: P:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+  id: CampaignId
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: CampaignId
+  nameWithType: DropEntitlementCondition.CampaignId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CampaignId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: Optional. The campaign ID for a specific campaign for which notifications will be received.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("campaign_id")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string CampaignId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("campaign_id")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property CampaignId As String
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: campaign_id
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor
+  commentId: M:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor
+  id: '#ctor'
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: DropEntitlementCondition()
+  nameWithType: DropEntitlementCondition.DropEntitlementCondition()
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.DropEntitlementCondition()
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public DropEntitlementCondition()
+    content.vb: Public Sub New()
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor*
+  nameWithType.vb: DropEntitlementCondition.New()
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.New()
+  name.vb: New()
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor(System.String,System.String,System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: DropEntitlementCondition(string, string, string)
+  nameWithType: DropEntitlementCondition.DropEntitlementCondition(string, string, string)
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.DropEntitlementCondition(string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public DropEntitlementCondition(string organizationId, string categoryId = null, string campaignId = null)
+    parameters:
+    - id: organizationId
+      type: System.String
+    - id: categoryId
+      type: System.String
+    - id: campaignId
+      type: System.String
+    content.vb: Public Sub New(organizationId As String, categoryId As String = Nothing, campaignId As String = Nothing)
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor*
+  nameWithType.vb: DropEntitlementCondition.New(String, String, String)
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.New(String, String, String)
+  name.vb: New(String, String, String)
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)~System.ValueTuple{System.String,System.String,System.String}
+  commentId: M:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)~System.ValueTuple{System.String,System.String,System.String}
+  id: op_Implicit(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)~System.ValueTuple{System.String,System.String,System.String}
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: implicit operator (string, string, string)(DropEntitlementCondition)
+  nameWithType: DropEntitlementCondition.implicit operator (string, string, string)(DropEntitlementCondition)
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.implicit operator (string, string, string)(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 34
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public static implicit operator (string, string, string)(DropEntitlementCondition value)
+    parameters:
+    - id: value
+      type: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+    return:
+      type: System.ValueTuple{System.String,System.String,System.String}
+    content.vb: Public Shared Widening Operator CType(value As DropEntitlementCondition) As (String, String, String)
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit*
+  nameWithType.vb: DropEntitlementCondition.CType(DropEntitlementCondition)
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CType(AuxLabs.Twitch.Rest.Models.DropEntitlementCondition)
+  name.vb: CType(DropEntitlementCondition)
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(System.ValueTuple{System.String,System.String,System.String})~AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  commentId: M:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit(System.ValueTuple{System.String,System.String,System.String})~AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  id: op_Implicit(System.ValueTuple{System.String,System.String,System.String})~AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  parent: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  langs:
+  - csharp
+  - vb
+  name: implicit operator DropEntitlementCondition((string, string, string))
+  nameWithType: DropEntitlementCondition.implicit operator DropEntitlementCondition((string, string, string))
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.implicit operator AuxLabs.Twitch.Rest.Models.DropEntitlementCondition((string, string, string))
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/EventSub/Conditions/DropEntitlementCondition.cs
+    startLine: 36
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public static implicit operator DropEntitlementCondition((string, string, string) value)
+    parameters:
+    - id: value
+      type: System.ValueTuple{System.String,System.String,System.String}
+    return:
+      type: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+    content.vb: Public Shared Widening Operator CType(value As (String, String, String)) As DropEntitlementCondition
+  overload: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit*
+  nameWithType.vb: DropEntitlementCondition.CType((String, String, String))
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CType((String, String, String))
+  name.vb: CType((String, String, String))
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Rest.IEventCondition
+  commentId: T:AuxLabs.Twitch.Rest.IEventCondition
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.IEventCondition.html
+  name: IEventCondition
+  nameWithType: IEventCondition
+  fullName: AuxLabs.Twitch.Rest.IEventCondition
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+  href: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId.html
+  name: OrganizationId
+  nameWithType: DropEntitlementCondition.OrganizationId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.OrganizationId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+  href: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId.html
+  name: CategoryId
+  nameWithType: DropEntitlementCondition.CategoryId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CategoryId
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+  href: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId.html
+  name: CampaignId
+  nameWithType: DropEntitlementCondition.CampaignId
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CampaignId
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor
+  href: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.#ctor.html
+  name: DropEntitlementCondition
+  nameWithType: DropEntitlementCondition.DropEntitlementCondition
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.DropEntitlementCondition
+  nameWithType.vb: DropEntitlementCondition.New
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.New
+  name.vb: New
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.op_Implicit
+  name: implicit operator
+  nameWithType: DropEntitlementCondition.implicit operator
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.implicit operator
+  nameWithType.vb: DropEntitlementCondition.CType
+  fullName.vb: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  commentId: T:AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition.html
+  name: DropEntitlementCondition
+  nameWithType: DropEntitlementCondition
+  fullName: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+- uid: System.ValueTuple{System.String,System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String,System.String}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string, string, string)
+  nameWithType: (string, string, string)
+  fullName: (string, string, string)
+  nameWithType.vb: (String, String, String)
+  fullName.vb: (String, String, String)
+  name.vb: (String, String, String)
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+memberLayout: SeparatePages

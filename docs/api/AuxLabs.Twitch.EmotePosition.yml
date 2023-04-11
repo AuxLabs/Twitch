@@ -1,0 +1,653 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EmotePosition
+  commentId: T:AuxLabs.Twitch.EmotePosition
+  id: EmotePosition
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.EmotePosition.#ctor(System.String,System.Range)
+  - AuxLabs.Twitch.EmotePosition.Id
+  - AuxLabs.Twitch.EmotePosition.Parse(System.String,System.String,AuxLabs.Twitch.EmotePosition@)
+  - AuxLabs.Twitch.EmotePosition.Range
+  - AuxLabs.Twitch.EmotePosition.ToString
+  - AuxLabs.Twitch.EmotePosition.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}@)
+  langs:
+  - csharp
+  - vb
+  name: EmotePosition
+  nameWithType: EmotePosition
+  fullName: AuxLabs.Twitch.EmotePosition
+  type: Struct
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EmotePosition
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public readonly struct EmotePosition
+    content.vb: Public Structure EmotePosition
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AuxLabs.Twitch.EmotePosition.Id
+  commentId: P:AuxLabs.Twitch.EmotePosition.Id
+  id: Id
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EmotePosition.Id
+  fullName: AuxLabs.Twitch.EmotePosition.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: An ID that uniquely identifies this emote
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: AuxLabs.Twitch.EmotePosition.Id*
+- uid: AuxLabs.Twitch.EmotePosition.Range
+  commentId: P:AuxLabs.Twitch.EmotePosition.Range
+  id: Range
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: EmotePosition.Range
+  fullName: AuxLabs.Twitch.EmotePosition.Range
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Range
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The position of this emote in a message
+  example: []
+  syntax:
+    content: public Range Range { get; }
+    parameters: []
+    return:
+      type: System.Range
+    content.vb: Public ReadOnly Property Range As Range
+  overload: AuxLabs.Twitch.EmotePosition.Range*
+- uid: AuxLabs.Twitch.EmotePosition.#ctor(System.String,System.Range)
+  commentId: M:AuxLabs.Twitch.EmotePosition.#ctor(System.String,System.Range)
+  id: '#ctor(System.String,System.Range)'
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: EmotePosition(string, Range)
+  nameWithType: EmotePosition.EmotePosition(string, Range)
+  fullName: AuxLabs.Twitch.EmotePosition.EmotePosition(string, System.Range)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public EmotePosition(string id, Range range)
+    parameters:
+    - id: id
+      type: System.String
+    - id: range
+      type: System.Range
+    content.vb: Public Sub New(id As String, range As Range)
+  overload: AuxLabs.Twitch.EmotePosition.#ctor*
+  nameWithType.vb: EmotePosition.New(String, Range)
+  fullName.vb: AuxLabs.Twitch.EmotePosition.New(String, System.Range)
+  name.vb: New(String, Range)
+- uid: AuxLabs.Twitch.EmotePosition.ToString
+  commentId: M:AuxLabs.Twitch.EmotePosition.ToString
+  id: ToString
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: EmotePosition.ToString()
+  fullName: AuxLabs.Twitch.EmotePosition.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ToString
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: AuxLabs.Twitch.EmotePosition.ToString*
+- uid: AuxLabs.Twitch.EmotePosition.Parse(System.String,System.String,AuxLabs.Twitch.EmotePosition@)
+  commentId: M:AuxLabs.Twitch.EmotePosition.Parse(System.String,System.String,AuxLabs.Twitch.EmotePosition@)
+  id: Parse(System.String,System.String,AuxLabs.Twitch.EmotePosition@)
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: Parse(string, string, out EmotePosition)
+  nameWithType: EmotePosition.Parse(string, string, out EmotePosition)
+  fullName: AuxLabs.Twitch.EmotePosition.Parse(string, string, out AuxLabs.Twitch.EmotePosition)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Parse
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public static void Parse(string id, string range, out EmotePosition emote)
+    parameters:
+    - id: id
+      type: System.String
+    - id: range
+      type: System.String
+    - id: emote
+      type: AuxLabs.Twitch.EmotePosition
+    content.vb: Public Shared Sub Parse(id As String, range As String, emote As EmotePosition)
+  overload: AuxLabs.Twitch.EmotePosition.Parse*
+  nameWithType.vb: EmotePosition.Parse(String, String, EmotePosition)
+  fullName.vb: AuxLabs.Twitch.EmotePosition.Parse(String, String, AuxLabs.Twitch.EmotePosition)
+  name.vb: Parse(String, String, EmotePosition)
+- uid: AuxLabs.Twitch.EmotePosition.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}@)
+  commentId: M:AuxLabs.Twitch.EmotePosition.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}@)
+  id: TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}@)
+  parent: AuxLabs.Twitch.EmotePosition
+  langs:
+  - csharp
+  - vb
+  name: TryParseMany(string, out IReadOnlyCollection<EmotePosition>)
+  nameWithType: EmotePosition.TryParseMany(string, out IReadOnlyCollection<EmotePosition>)
+  fullName: AuxLabs.Twitch.EmotePosition.TryParseMany(string, out System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.EmotePosition>)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TryParseMany
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmotePosition.cs
+    startLine: 28
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public static bool TryParseMany(string value, out IReadOnlyCollection<EmotePosition> emotes)
+    parameters:
+    - id: value
+      type: System.String
+    - id: emotes
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryParseMany(value As String, emotes As IReadOnlyCollection(Of EmotePosition)) As Boolean
+  overload: AuxLabs.Twitch.EmotePosition.TryParseMany*
+  nameWithType.vb: EmotePosition.TryParseMany(String, IReadOnlyCollection(Of EmotePosition))
+  fullName.vb: AuxLabs.Twitch.EmotePosition.TryParseMany(String, System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.EmotePosition))
+  name.vb: TryParseMany(String, IReadOnlyCollection(Of EmotePosition))
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EmotePosition.Id*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.Id
+  href: AuxLabs.Twitch.EmotePosition.Id.html
+  name: Id
+  nameWithType: EmotePosition.Id
+  fullName: AuxLabs.Twitch.EmotePosition.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EmotePosition.Range*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.Range
+  href: AuxLabs.Twitch.EmotePosition.Range.html
+  name: Range
+  nameWithType: EmotePosition.Range
+  fullName: AuxLabs.Twitch.EmotePosition.Range
+- uid: System.Range
+  commentId: T:System.Range
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.range
+  name: Range
+  nameWithType: Range
+  fullName: System.Range
+- uid: AuxLabs.Twitch.EmotePosition.#ctor*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.#ctor
+  href: AuxLabs.Twitch.EmotePosition.#ctor(System.String,System.Range).html
+  name: EmotePosition
+  nameWithType: EmotePosition.EmotePosition
+  fullName: AuxLabs.Twitch.EmotePosition.EmotePosition
+  nameWithType.vb: EmotePosition.New
+  fullName.vb: AuxLabs.Twitch.EmotePosition.New
+  name.vb: New
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.EmotePosition.ToString*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.ToString
+  href: AuxLabs.Twitch.EmotePosition.ToString.html
+  name: ToString
+  nameWithType: EmotePosition.ToString
+  fullName: AuxLabs.Twitch.EmotePosition.ToString
+- uid: AuxLabs.Twitch.EmotePosition.Parse*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.Parse
+  href: AuxLabs.Twitch.EmotePosition.Parse(System.String,System.String,AuxLabs.Twitch.EmotePosition@).html
+  name: Parse
+  nameWithType: EmotePosition.Parse
+  fullName: AuxLabs.Twitch.EmotePosition.Parse
+- uid: AuxLabs.Twitch.EmotePosition
+  commentId: T:AuxLabs.Twitch.EmotePosition
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmotePosition.html
+  name: EmotePosition
+  nameWithType: EmotePosition
+  fullName: AuxLabs.Twitch.EmotePosition
+- uid: AuxLabs.Twitch.EmotePosition.TryParseMany*
+  commentId: Overload:AuxLabs.Twitch.EmotePosition.TryParseMany
+  href: AuxLabs.Twitch.EmotePosition.TryParseMany(System.String,System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}@).html
+  name: TryParseMany
+  nameWithType: EmotePosition.TryParseMany
+  fullName: AuxLabs.Twitch.EmotePosition.TryParseMany
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<EmotePosition>
+  nameWithType: IReadOnlyCollection<EmotePosition>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.EmotePosition>
+  nameWithType.vb: IReadOnlyCollection(Of EmotePosition)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.EmotePosition)
+  name.vb: IReadOnlyCollection(Of EmotePosition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.EmotePosition
+    name: EmotePosition
+    href: AuxLabs.Twitch.EmotePosition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EmotePosition
+    name: EmotePosition
+    href: AuxLabs.Twitch.EmotePosition.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

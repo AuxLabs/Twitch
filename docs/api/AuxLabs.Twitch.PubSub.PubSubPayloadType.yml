@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  commentId: T:AuxLabs.Twitch.PubSub.PubSubPayloadType
+  id: PubSubPayloadType
+  parent: AuxLabs.Twitch.PubSub
+  children:
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.Listen
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.Message
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.Response
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.Unknown
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.Unlisten
+  langs:
+  - csharp
+  - vb
+  name: PubSubPayloadType
+  nameWithType: PubSubPayloadType
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PubSubPayloadType
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: public enum PubSubPayloadType
+    content.vb: Public Enum PubSubPayloadType
+  extensionMethods:
+  - AuxLabs.Twitch.PubSub.PubSubPayloadType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.Unknown
+  commentId: F:AuxLabs.Twitch.PubSub.PubSubPayloadType.Unknown
+  id: Unknown
+  parent: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PubSubPayloadType.Unknown
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unknown
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: Unknown = 0
+    return:
+      type: AuxLabs.Twitch.PubSub.PubSubPayloadType
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.Listen
+  commentId: F:AuxLabs.Twitch.PubSub.PubSubPayloadType.Listen
+  id: Listen
+  parent: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  langs:
+  - csharp
+  - vb
+  name: Listen
+  nameWithType: PubSubPayloadType.Listen
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType.Listen
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Listen
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: >-
+      [EnumMember(Value = "LISTEN")]
+
+      Listen = 1
+    return:
+      type: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    content.vb: >-
+      <EnumMember(Value:="LISTEN")>
+
+      Listen = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: LISTEN
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.Unlisten
+  commentId: F:AuxLabs.Twitch.PubSub.PubSubPayloadType.Unlisten
+  id: Unlisten
+  parent: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  langs:
+  - csharp
+  - vb
+  name: Unlisten
+  nameWithType: PubSubPayloadType.Unlisten
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType.Unlisten
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unlisten
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 31
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: >-
+      [EnumMember(Value = "UNLISTEN")]
+
+      Unlisten = 2
+    return:
+      type: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    content.vb: >-
+      <EnumMember(Value:="UNLISTEN")>
+
+      Unlisten = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: UNLISTEN
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.Response
+  commentId: F:AuxLabs.Twitch.PubSub.PubSubPayloadType.Response
+  id: Response
+  parent: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: PubSubPayloadType.Response
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType.Response
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Response
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: >-
+      [EnumMember(Value = "RESPONSE")]
+
+      Response = 3
+    return:
+      type: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    content.vb: >-
+      <EnumMember(Value:="RESPONSE")>
+
+      Response = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: RESPONSE
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.Message
+  commentId: F:AuxLabs.Twitch.PubSub.PubSubPayloadType.Message
+  id: Message
+  parent: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: PubSubPayloadType.Message
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType.Message
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Message
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 35
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: >-
+      [EnumMember(Value = "MESSAGE")]
+
+      Message = 4
+    return:
+      type: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    content.vb: >-
+      <EnumMember(Value:="MESSAGE")>
+
+      Message = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: MESSAGE
+references:
+- uid: AuxLabs.Twitch.PubSub
+  commentId: N:AuxLabs.Twitch.PubSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.PubSub
+  nameWithType: AuxLabs.Twitch.PubSub
+  fullName: AuxLabs.Twitch.PubSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PubSub.PubSubPayloadType).html
+  name: GetStringValue<PubSubPayloadType>(PubSubPayloadType)
+  nameWithType: EnumHelper.GetStringValue<PubSubPayloadType>(PubSubPayloadType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.PubSub.PubSubPayloadType>(AuxLabs.Twitch.PubSub.PubSubPayloadType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of PubSubPayloadType)(PubSubPayloadType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.PubSub.PubSubPayloadType)(AuxLabs.Twitch.PubSub.PubSubPayloadType)
+  name.vb: GetStringValue(Of PubSubPayloadType)(PubSubPayloadType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PubSub.PubSubPayloadType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PubSub.PubSubPayloadType).html
+  - name: <
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    name: PubSubPayloadType
+    href: AuxLabs.Twitch.PubSub.PubSubPayloadType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    name: PubSubPayloadType
+    href: AuxLabs.Twitch.PubSub.PubSubPayloadType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PubSub.PubSubPayloadType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PubSub.PubSubPayloadType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    name: PubSubPayloadType
+    href: AuxLabs.Twitch.PubSub.PubSubPayloadType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+    name: PubSubPayloadType
+    href: AuxLabs.Twitch.PubSub.PubSubPayloadType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+  commentId: T:AuxLabs.Twitch.PubSub.PubSubPayloadType
+  parent: AuxLabs.Twitch.PubSub
+  href: AuxLabs.Twitch.PubSub.PubSubPayloadType.html
+  name: PubSubPayloadType
+  nameWithType: PubSubPayloadType
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayloadType
+memberLayout: SeparatePages

@@ -1,0 +1,1136 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  id: DeleteVideosArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor(System.String[])
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)~System.String[]
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  - AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+  langs:
+  - csharp
+  - vb
+  name: DeleteVideosArgs
+  nameWithType: DeleteVideosArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DeleteVideosArgs
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: 'public class DeleteVideosArgs : QueryMap, IDictionary<string, string>, ICollection<KeyValuePair<string, string>>, IEnumerable<KeyValuePair<string, string>>, IEnumerable, IScopedRequest'
+    content.vb: Public Class DeleteVideosArgs Inherits QueryMap Implements IDictionary(Of String, String), ICollection(Of KeyValuePair(Of String, String)), IEnumerable(Of KeyValuePair(Of String, String)), IEnumerable, IScopedRequest
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.QueryMap
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.IEnumerable
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+  id: Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: DeleteVideosArgs.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Scopes
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The scopes required for this request.
+  example: []
+  syntax:
+    content: public string[] Scopes { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property Scopes As String()
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+  commentId: P:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+  id: VideoIds
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: VideoIds
+  nameWithType: DeleteVideosArgs.VideoIds
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: VideoIds
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The collection of video ids to delete.
+  example: []
+  syntax:
+    content: public string[] VideoIds { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property VideoIds As String()
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds*
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor
+  id: '#ctor'
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: DeleteVideosArgs()
+  nameWithType: DeleteVideosArgs.DeleteVideosArgs()
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.DeleteVideosArgs()
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public DeleteVideosArgs()
+    content.vb: Public Sub New()
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor*
+  nameWithType.vb: DeleteVideosArgs.New()
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.New()
+  name.vb: New()
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor(System.String[])
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: DeleteVideosArgs(params string[])
+  nameWithType: DeleteVideosArgs.DeleteVideosArgs(params string[])
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.DeleteVideosArgs(params string[])
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public DeleteVideosArgs(params string[] videoIds)
+    parameters:
+    - id: videoIds
+      type: System.String[]
+    content.vb: Public Sub New(ParamArray videoIds As String())
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor*
+  nameWithType.vb: DeleteVideosArgs.New(ParamArray String())
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.New(ParamArray String())
+  name.vb: New(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String})
+  id: Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<string>)
+  nameWithType: DeleteVideosArgs.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public void Validate(IEnumerable<string> scopes)
+    parameters:
+    - id: scopes
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub Validate(scopes As IEnumerable(Of String))
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  nameWithType.vb: DeleteVideosArgs.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap
+  id: CreateQueryMap
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: CreateQueryMap()
+  nameWithType: DeleteVideosArgs.CreateQueryMap()
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CreateQueryMap
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public override IDictionary<string, string> CreateQueryMap()
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public Overrides Function CreateQueryMap() As IDictionary(Of String, String)
+  overridden: AuxLabs.Twitch.QueryMap.CreateQueryMap
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap*
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)~System.String[]
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)~System.String[]
+  id: op_Implicit(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)~System.String[]
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string[](DeleteVideosArgs)
+  nameWithType: DeleteVideosArgs.implicit operator string[](DeleteVideosArgs)
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.implicit operator string[](AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 36
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public static implicit operator string[](DeleteVideosArgs value)
+    parameters:
+    - id: value
+      type: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+    return:
+      type: System.String[]
+    content.vb: Public Shared Widening Operator CType(value As DeleteVideosArgs) As String()
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit*
+  nameWithType.vb: DeleteVideosArgs.CType(DeleteVideosArgs)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CType(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs)
+  name.vb: CType(DeleteVideosArgs)
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  commentId: M:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit(System.String[])~AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  id: op_Implicit(System.String[])~AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  parent: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  langs:
+  - csharp
+  - vb
+  name: implicit operator DeleteVideosArgs(string[])
+  nameWithType: DeleteVideosArgs.implicit operator DeleteVideosArgs(string[])
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.implicit operator AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs(string[])
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Videos/DeleteVideosArgs.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public static implicit operator DeleteVideosArgs(string[] v)
+    parameters:
+    - id: v
+      type: System.String[]
+    return:
+      type: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+    content.vb: Public Shared Widening Operator CType(v As String()) As DeleteVideosArgs
+  overload: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit*
+  nameWithType.vb: DeleteVideosArgs.CType(String())
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CType(String())
+  name.vb: CType(String())
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.QueryMap
+  commentId: T:AuxLabs.Twitch.QueryMap
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.QueryMap.html
+  name: QueryMap
+  nameWithType: QueryMap
+  fullName: AuxLabs.Twitch.QueryMap
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<string, string>>
+  nameWithType: ICollection<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: ICollection(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, string>>
+  nameWithType: IEnumerable<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  commentId: T:AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.html
+  name: IScopedRequest
+  nameWithType: IScopedRequest
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes.html
+  name: Scopes
+  nameWithType: DeleteVideosArgs.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Scopes
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes.html
+  name: Scopes
+  nameWithType: IScopedRequest.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds.html
+  name: VideoIds
+  nameWithType: DeleteVideosArgs.VideoIds
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.VideoIds
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.#ctor.html
+  name: DeleteVideosArgs
+  nameWithType: DeleteVideosArgs.DeleteVideosArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.DeleteVideosArgs
+  nameWithType.vb: DeleteVideosArgs.New
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.New
+  name.vb: New
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  name: Validate
+  nameWithType: DeleteVideosArgs.Validate
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.Validate
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  isExternal: true
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  name: Validate(IEnumerable<string>)
+  nameWithType: IScopedRequest.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable<string>)
+  nameWithType.vb: IScopedRequest.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+  commentId: M:AuxLabs.Twitch.QueryMap.CreateQueryMap
+  parent: AuxLabs.Twitch.QueryMap
+  href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  name: CreateQueryMap()
+  nameWithType: QueryMap.CreateQueryMap()
+  fullName: AuxLabs.Twitch.QueryMap.CreateQueryMap()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+    name: CreateQueryMap
+    href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+    name: CreateQueryMap
+    href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap.html
+  name: CreateQueryMap
+  nameWithType: DeleteVideosArgs.CreateQueryMap
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CreateQueryMap
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.op_Implicit
+  name: implicit operator
+  nameWithType: DeleteVideosArgs.implicit operator
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.implicit operator
+  nameWithType.vb: DeleteVideosArgs.CType
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  commentId: T:AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs.html
+  name: DeleteVideosArgs
+  nameWithType: DeleteVideosArgs
+  fullName: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+memberLayout: SeparatePages

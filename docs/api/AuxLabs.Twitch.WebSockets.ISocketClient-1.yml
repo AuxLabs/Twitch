@@ -1,0 +1,806 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  commentId: T:AuxLabs.Twitch.WebSockets.ISocketClient`1
+  id: ISocketClient`1
+  parent: AuxLabs.Twitch.WebSockets
+  children:
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Connected
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Disconnected
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Heartbeat
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Identify
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.PayloadReceived
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Run(System.String)
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync(System.String)
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Send(`0)
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync(`0,System.Threading.CancellationToken)
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  - AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  langs:
+  - csharp
+  - vb
+  name: ISocketClient<TPayload>
+  nameWithType: ISocketClient<TPayload>
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ISocketClient
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: 'public interface ISocketClient<TPayload> : IDisposable where TPayload : IPayload'
+    typeParameters:
+    - id: TPayload
+    content.vb: Public Interface ISocketClient(Of TPayload As IPayload) Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  nameWithType.vb: ISocketClient(Of TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload)
+  name.vb: ISocketClient(Of TPayload)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Connected
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Connected
+  id: Connected
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: ISocketClient<TPayload>.Connected
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Connected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Connected
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: event Action Connected
+    return:
+      type: System.Action
+    content.vb: Event Connected As Action
+  nameWithType.vb: ISocketClient(Of TPayload).Connected
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Connected
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Disconnected
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Disconnected
+  id: Disconnected
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: ISocketClient<TPayload>.Disconnected
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Disconnected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Disconnected
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: event Action<Exception> Disconnected
+    return:
+      type: System.Action{System.Exception}
+    content.vb: Event Disconnected As Action(Of Exception)
+  nameWithType.vb: ISocketClient(Of TPayload).Disconnected
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Disconnected
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.PayloadReceived
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.PayloadReceived
+  id: PayloadReceived
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: PayloadReceived
+  nameWithType: ISocketClient<TPayload>.PayloadReceived
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.PayloadReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PayloadReceived
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: event Action<TPayload, TaskCompletionSource<bool>> PayloadReceived
+    return:
+      type: System.Action{{TPayload},System.Threading.Tasks.TaskCompletionSource{System.Boolean}}
+    content.vb: Event PayloadReceived As Action(Of TPayload, TaskCompletionSource(Of Boolean))
+  nameWithType.vb: ISocketClient(Of TPayload).PayloadReceived
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).PayloadReceived
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Heartbeat
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Heartbeat
+  id: Heartbeat
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Heartbeat
+  nameWithType: ISocketClient<TPayload>.Heartbeat
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Heartbeat
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Heartbeat
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: event Action Heartbeat
+    return:
+      type: System.Action
+    content.vb: Event Heartbeat As Action
+  nameWithType.vb: ISocketClient(Of TPayload).Heartbeat
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Heartbeat
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Identify
+  commentId: E:AuxLabs.Twitch.WebSockets.ISocketClient`1.Identify
+  id: Identify
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Identify
+  nameWithType: ISocketClient<TPayload>.Identify
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Identify
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Identify
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: event Action Identify
+    return:
+      type: System.Action
+    content.vb: Event Identify As Action
+  nameWithType.vb: ISocketClient(Of TPayload).Identify
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Identify
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  commentId: P:AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  id: State
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: ISocketClient<TPayload>.State
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.State
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: State
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: ConnectionState State { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.WebSockets.ConnectionState
+    content.vb: ReadOnly Property State As ConnectionState
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.State*
+  nameWithType.vb: ISocketClient(Of TPayload).State
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).State
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Run(System.String)
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Run(System.String)
+  id: Run(System.String)
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Run(string)
+  nameWithType: ISocketClient<TPayload>.Run(string)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Run(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Run
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: void Run(string url)
+    parameters:
+    - id: url
+      type: System.String
+    content.vb: Sub Run(url As String)
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.Run*
+  nameWithType.vb: ISocketClient(Of TPayload).Run(String)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Run(String)
+  name.vb: Run(String)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync(System.String)
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync(System.String)
+  id: RunAsync(System.String)
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: RunAsync(string)
+  nameWithType: ISocketClient<TPayload>.RunAsync(string)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.RunAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RunAsync
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: Task RunAsync(string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RunAsync(url As String) As Task
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync*
+  nameWithType.vb: ISocketClient(Of TPayload).RunAsync(String)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).RunAsync(String)
+  name.vb: RunAsync(String)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Send(`0)
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Send(`0)
+  id: Send(`0)
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Send(TPayload)
+  nameWithType: ISocketClient<TPayload>.Send(TPayload)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Send(TPayload)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Send
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: void Send(TPayload payload)
+    parameters:
+    - id: payload
+      type: '{TPayload}'
+    content.vb: Sub Send(payload As TPayload)
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.Send*
+  nameWithType.vb: ISocketClient(Of TPayload).Send(TPayload)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Send(TPayload)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync(`0,System.Threading.CancellationToken)
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync(`0,System.Threading.CancellationToken)
+  id: SendAsync(`0,System.Threading.CancellationToken)
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(TPayload, CancellationToken)
+  nameWithType: ISocketClient<TPayload>.SendAsync(TPayload, CancellationToken)
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.SendAsync(TPayload, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SendAsync
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: Task SendAsync(TPayload payload, CancellationToken cancelToken)
+    parameters:
+    - id: payload
+      type: '{TPayload}'
+    - id: cancelToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SendAsync(payload As TPayload, cancelToken As CancellationToken) As Task
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync*
+  nameWithType.vb: ISocketClient(Of TPayload).SendAsync(TPayload, CancellationToken)
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).SendAsync(TPayload, System.Threading.CancellationToken)
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  id: Stop
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ISocketClient<TPayload>.Stop()
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Stop
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: void Stop()
+    content.vb: Sub [Stop]()
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop*
+  nameWithType.vb: ISocketClient(Of TPayload).Stop()
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Stop()
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  commentId: M:AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  id: StopAsync
+  parent: AuxLabs.Twitch.WebSockets.ISocketClient`1
+  langs:
+  - csharp
+  - vb
+  name: StopAsync()
+  nameWithType: ISocketClient<TPayload>.StopAsync()
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.StopAsync()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: StopAsync
+    path: ../src/AuxLabs.Twitch.WebSockets/ISocketClient.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.WebSockets
+  namespace: AuxLabs.Twitch.WebSockets
+  syntax:
+    content: Task StopAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function StopAsync() As Task
+  overload: AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync*
+  nameWithType.vb: ISocketClient(Of TPayload).StopAsync()
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).StopAsync()
+references:
+- uid: AuxLabs.Twitch.WebSockets
+  commentId: N:AuxLabs.Twitch.WebSockets
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.WebSockets
+  nameWithType: AuxLabs.Twitch.WebSockets
+  fullName: AuxLabs.Twitch.WebSockets
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.Exception}
+  commentId: T:System.Action{System.Exception}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Exception>
+  nameWithType: Action<Exception>
+  fullName: System.Action<System.Exception>
+  nameWithType.vb: Action(Of Exception)
+  fullName.vb: System.Action(Of System.Exception)
+  name.vb: Action(Of Exception)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{{TPayload},System.Threading.Tasks.TaskCompletionSource{System.Boolean}}
+  commentId: T:System.Action{`0,System.Threading.Tasks.TaskCompletionSource{System.Boolean}}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TPayload, TaskCompletionSource<bool>>
+  nameWithType: Action<TPayload, TaskCompletionSource<bool>>
+  fullName: System.Action<TPayload, System.Threading.Tasks.TaskCompletionSource<bool>>
+  nameWithType.vb: Action(Of TPayload, TaskCompletionSource(Of Boolean))
+  fullName.vb: System.Action(Of TPayload, System.Threading.Tasks.TaskCompletionSource(Of Boolean))
+  name.vb: Action(Of TPayload, TaskCompletionSource(Of Boolean))
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TPayload
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcompletionsource-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPayload
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcompletionsource-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.State*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.State
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.State.html
+  name: State
+  nameWithType: ISocketClient<TPayload>.State
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.State
+  nameWithType.vb: ISocketClient(Of TPayload).State
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).State
+- uid: AuxLabs.Twitch.WebSockets.ConnectionState
+  commentId: T:AuxLabs.Twitch.WebSockets.ConnectionState
+  parent: AuxLabs.Twitch.WebSockets
+  href: AuxLabs.Twitch.WebSockets.ConnectionState.html
+  name: ConnectionState
+  nameWithType: ConnectionState
+  fullName: AuxLabs.Twitch.WebSockets.ConnectionState
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Run*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Run
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.Run(System.String).html
+  name: Run
+  nameWithType: ISocketClient<TPayload>.Run
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Run
+  nameWithType.vb: ISocketClient(Of TPayload).Run
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Run
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.RunAsync
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.RunAsync(System.String).html
+  name: RunAsync
+  nameWithType: ISocketClient<TPayload>.RunAsync
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.RunAsync
+  nameWithType.vb: ISocketClient(Of TPayload).RunAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).RunAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Send*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Send
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.Send(-0).html
+  name: Send
+  nameWithType: ISocketClient<TPayload>.Send
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Send
+  nameWithType.vb: ISocketClient(Of TPayload).Send
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Send
+- uid: '{TPayload}'
+  commentId: '!:TPayload'
+  definition: TPayload
+  name: TPayload
+  nameWithType: TPayload
+  fullName: TPayload
+- uid: TPayload
+  name: TPayload
+  nameWithType: TPayload
+  fullName: TPayload
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.SendAsync
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.SendAsync(-0,System.Threading.CancellationToken).html
+  name: SendAsync
+  nameWithType: ISocketClient<TPayload>.SendAsync
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.SendAsync
+  nameWithType.vb: ISocketClient(Of TPayload).SendAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).SendAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.Stop
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.Stop.html
+  name: Stop
+  nameWithType: ISocketClient<TPayload>.Stop
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.Stop
+  nameWithType.vb: ISocketClient(Of TPayload).Stop
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).Stop
+- uid: AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync*
+  commentId: Overload:AuxLabs.Twitch.WebSockets.ISocketClient`1.StopAsync
+  href: AuxLabs.Twitch.WebSockets.ISocketClient-1.StopAsync.html
+  name: StopAsync
+  nameWithType: ISocketClient<TPayload>.StopAsync
+  fullName: AuxLabs.Twitch.WebSockets.ISocketClient<TPayload>.StopAsync
+  nameWithType.vb: ISocketClient(Of TPayload).StopAsync
+  fullName.vb: AuxLabs.Twitch.WebSockets.ISocketClient(Of TPayload).StopAsync
+memberLayout: SeparatePages

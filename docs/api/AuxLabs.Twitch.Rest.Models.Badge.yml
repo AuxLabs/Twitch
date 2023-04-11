@@ -1,0 +1,782 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.Badge
+  commentId: T:AuxLabs.Twitch.Rest.Models.Badge
+  id: Badge
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  - AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  - AuxLabs.Twitch.Rest.Models.Badge.Description
+  - AuxLabs.Twitch.Rest.Models.Badge.Id
+  - AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  - AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  - AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  - AuxLabs.Twitch.Rest.Models.Badge.Title
+  langs:
+  - csharp
+  - vb
+  name: Badge
+  nameWithType: Badge
+  fullName: AuxLabs.Twitch.Rest.Models.Badge
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Badge
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public class Badge
+    content.vb: Public Class Badge
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Id
+  id: Id
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Badge.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies this version of the badge. The ID can be any value.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("id")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("id")>
+
+      Public Property Id As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Title
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Title
+  id: Title
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Badge.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The title of the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("title")]
+
+      public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Description
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.Description
+  id: Description
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Badge.Description
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Description
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Description
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The description of the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("description")]
+
+      public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("description")>
+
+      Public Property Description As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.Description*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  id: ClickAction
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: ClickAction
+  nameWithType: Badge.ClickAction
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ClickAction
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The action to take when clicking on the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("click_action")]
+
+      public string ClickAction { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("click_action")>
+
+      Public Property ClickAction As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.ClickAction*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: click_action
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  id: ClickUrl
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: ClickUrl
+  nameWithType: Badge.ClickUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ClickUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The URL to navigate to when clicking on the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("click_url")]
+
+      public string ClickUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("click_url")>
+
+      Public Property ClickUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: click_url
+- uid: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  id: SmallImageUrl
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: SmallImageUrl
+  nameWithType: Badge.SmallImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SmallImageUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to the small version (18px x 18px) of the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("image_url_1x")]
+
+      public string SmallImageUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("image_url_1x")>
+
+      Public Property SmallImageUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: image_url_1x
+- uid: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  id: MediumImageUrl
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: MediumImageUrl
+  nameWithType: Badge.MediumImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MediumImageUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 31
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to the medium version (36px x 36px) of the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("image_url_2x")]
+
+      public string MediumImageUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("image_url_2x")>
+
+      Public Property MediumImageUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: image_url_2x
+- uid: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  id: LargeImageUrl
+  parent: AuxLabs.Twitch.Rest.Models.Badge
+  langs:
+  - csharp
+  - vb
+  name: LargeImageUrl
+  nameWithType: Badge.LargeImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LargeImageUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Chat/Badge.cs
+    startLine: 35
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to the large version (72px x 72px) of the badge.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("image_url_4x")]
+
+      public string LargeImageUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("image_url_4x")>
+
+      Public Property LargeImageUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: image_url_4x
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Id*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Id
+  href: AuxLabs.Twitch.Rest.Models.Badge.Id.html
+  name: Id
+  nameWithType: Badge.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Title*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Title
+  href: AuxLabs.Twitch.Rest.Models.Badge.Title.html
+  name: Title
+  nameWithType: Badge.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Title
+- uid: AuxLabs.Twitch.Rest.Models.Badge.Description*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.Description
+  href: AuxLabs.Twitch.Rest.Models.Badge.Description.html
+  name: Description
+  nameWithType: Badge.Description
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.Description
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickAction*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+  href: AuxLabs.Twitch.Rest.Models.Badge.ClickAction.html
+  name: ClickAction
+  nameWithType: Badge.ClickAction
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickAction
+- uid: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+  href: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl.html
+  name: ClickUrl
+  nameWithType: Badge.ClickUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.ClickUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+  href: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl.html
+  name: SmallImageUrl
+  nameWithType: Badge.SmallImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.SmallImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+  href: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl.html
+  name: MediumImageUrl
+  nameWithType: Badge.MediumImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.MediumImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+  href: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl.html
+  name: LargeImageUrl
+  nameWithType: Badge.LargeImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.Badge.LargeImageUrl
+memberLayout: SeparatePages

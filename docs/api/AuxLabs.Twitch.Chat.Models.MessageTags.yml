@@ -1,0 +1,2167 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags
+  commentId: T:AuxLabs.Twitch.Chat.Models.MessageTags
+  id: MessageTags
+  parent: AuxLabs.Twitch.Chat.Models
+  children:
+  - AuxLabs.Twitch.Chat.Models.MessageTags.Action
+  - AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+  - AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+  - AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+  - AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+  - AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+  - AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+  - AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap
+  - AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+  - AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+  - AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  - AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+  - AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+  - AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+  - AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+  langs:
+  - csharp
+  - vb
+  name: MessageTags
+  nameWithType: MessageTags
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageTags
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  syntax:
+    content: 'public class MessageTags : BaseTags, IDictionary<string, string>, ICollection<KeyValuePair<string, string>>, IEnumerable<KeyValuePair<string, string>>, IEnumerable'
+    content.vb: Public Class MessageTags Inherits BaseTags Implements IDictionary(Of String, String), ICollection(Of KeyValuePair(Of String, String)), IEnumerable(Of KeyValuePair(Of String, String)), IEnumerable
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.QueryMap
+  - AuxLabs.Twitch.Chat.Models.BaseTags
+  derivedClasses:
+  - AuxLabs.Twitch.Chat.Models.UserNoticeTags
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+  id: Timestamp
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: MessageTags.Timestamp
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Timestamp
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The date and time that the message was sent.
+  example: []
+  syntax:
+    content: public DateTimeOffset Timestamp { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property Timestamp As DateTimeOffset
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+  id: MessageId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: MessageId
+  nameWithType: MessageTags.MessageId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: An ID that uniquely identifies the message.
+  example: []
+  syntax:
+    content: public string MessageId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MessageId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+  id: ChannelId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ChannelId
+  nameWithType: MessageTags.ChannelId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: An ID that identifies the channel.
+  example: []
+  syntax:
+    content: public string ChannelId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ChannelId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+  id: AuthorId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: AuthorId
+  nameWithType: MessageTags.AuthorId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AuthorId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The ID of the user that sent the message.
+  example: []
+  syntax:
+    content: public string AuthorId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AuthorId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+  id: AuthorName
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: AuthorName
+  nameWithType: MessageTags.AuthorName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AuthorName
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The user’s login name.
+  example: []
+  syntax:
+    content: public string AuthorName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AuthorName As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+  id: AuthorDisplayName
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: AuthorDisplayName
+  nameWithType: MessageTags.AuthorDisplayName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AuthorDisplayName
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 24
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The user’s display name.
+  example: []
+  syntax:
+    content: public string AuthorDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AuthorDisplayName As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+  id: AuthorType
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: AuthorType
+  nameWithType: MessageTags.AuthorType
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AuthorType
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The type of user.
+  example: []
+  syntax:
+    content: public UserType AuthorType { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Chat.UserType
+    content.vb: Public Property AuthorType As UserType
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+  id: AuthorColor
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: AuthorColor
+  nameWithType: MessageTags.AuthorColor
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AuthorColor
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 30
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The color of the user’s name in the chat room.
+  example: []
+  syntax:
+    content: public Color AuthorColor { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Property AuthorColor As Color
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+  id: Nonce
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: Nonce
+  nameWithType: MessageTags.Nonce
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Nonce
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: A unique value used to identify requests
+  example: []
+  syntax:
+    content: public string Nonce { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nonce As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+  id: CustomRewardId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: CustomRewardId
+  nameWithType: MessageTags.CustomRewardId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CustomRewardId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 36
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: ''
+  example: []
+  syntax:
+    content: public string CustomRewardId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomRewardId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+  id: ReplyMessageId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ReplyMessageId
+  nameWithType: MessageTags.ReplyMessageId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ReplyMessageId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 39
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: An ID that uniquely identifies the parent message that this message is replying to.
+  example: []
+  syntax:
+    content: public string ReplyMessageId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReplyMessageId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+  id: ReplyMessageContent
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ReplyMessageContent
+  nameWithType: MessageTags.ReplyMessageContent
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ReplyMessageContent
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 42
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The text of the parent message.
+  example: []
+  syntax:
+    content: public string ReplyMessageContent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReplyMessageContent As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+  id: ReplyAuthorId
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ReplyAuthorId
+  nameWithType: MessageTags.ReplyAuthorId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ReplyAuthorId
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 45
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: An ID that identifies the sender of the parent message.
+  example: []
+  syntax:
+    content: public string ReplyAuthorId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReplyAuthorId As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+  id: ReplyAuthorName
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ReplyAuthorName
+  nameWithType: MessageTags.ReplyAuthorName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ReplyAuthorName
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 48
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The login name of the sender of the parent message.
+  example: []
+  syntax:
+    content: public string ReplyAuthorName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReplyAuthorName As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+  id: ReplyAuthorDisplayName
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: ReplyAuthorDisplayName
+  nameWithType: MessageTags.ReplyAuthorDisplayName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ReplyAuthorDisplayName
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 51
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The display name of the sender of the parent message.
+  example: []
+  syntax:
+    content: public string ReplyAuthorDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReplyAuthorDisplayName As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+  id: BitsAmount
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: BitsAmount
+  nameWithType: MessageTags.BitsAmount
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsAmount
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 54
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The amount of Bits the user cheered. Only a Bits cheer message includes this tag.
+  example: []
+  syntax:
+    content: public int BitsAmount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BitsAmount As Integer
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+  id: IsModerator
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsModerator
+  nameWithType: MessageTags.IsModerator
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsModerator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 57
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether the user is a moderator.
+  example: []
+  syntax:
+    content: public bool IsModerator { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsModerator As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+  id: IsSubscriber
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsSubscriber
+  nameWithType: MessageTags.IsSubscriber
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsSubscriber
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 60
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether the user is a subscriber.
+  example: []
+  syntax:
+    content: public bool IsSubscriber { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSubscriber As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+  id: IsTurbo
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsTurbo
+  nameWithType: MessageTags.IsTurbo
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsTurbo
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 63
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether the user has site-wide commercial free mode enabled.
+  example: []
+  syntax:
+    content: public bool IsTurbo { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsTurbo As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+  id: IsVIP
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsVIP
+  nameWithType: MessageTags.IsVIP
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsVIP
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 66
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether the user is a VIP.
+  example: []
+  syntax:
+    content: public bool IsVIP { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsVIP As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+  id: IsFirstMessage
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsFirstMessage
+  nameWithType: MessageTags.IsFirstMessage
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsFirstMessage
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 69
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether this is the user's first message in the channel
+  example: []
+  syntax:
+    content: public bool IsFirstMessage { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsFirstMessage As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+  id: IsEmoteOnly
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: IsEmoteOnly
+  nameWithType: MessageTags.IsEmoteOnly
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsEmoteOnly
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 72
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Indicates whether this message contains only emotes
+  example: []
+  syntax:
+    content: public bool IsEmoteOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsEmoteOnly As Boolean
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+  id: MessageType
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: MessageType
+  nameWithType: MessageTags.MessageType
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageType
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 75
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: A value that indicates if a message has unique properties
+  example: []
+  syntax:
+    content: public MessageType MessageType { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Chat.MessageType
+    content.vb: Public Property MessageType As MessageType
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+  id: Badges
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: Badges
+  nameWithType: MessageTags.Badges
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Badges
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 78
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: A collection of badges the user has.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<Badge> Badges { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Badge}
+    content.vb: Public Property Badges As IReadOnlyCollection(Of Badge)
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.Badges*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+  id: BadgeInfo
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: BadgeInfo
+  nameWithType: MessageTags.BadgeInfo
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BadgeInfo
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 81
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Contains metadata related to the chat badges in the badges tag. Currently, this tag contains metadata only for subscriber badges, to indicate the number of months the user has been a subscriber.
+  example: []
+  syntax:
+    content: public string BadgeInfo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BadgeInfo As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+  id: Emotes
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: Emotes
+  nameWithType: MessageTags.Emotes
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Emotes
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 84
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: A collection of emotes and their position in the message.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<EmotePosition> Emotes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+    content.vb: Public Property Emotes As IReadOnlyCollection(Of EmotePosition)
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Action
+  commentId: P:AuxLabs.Twitch.Chat.Models.MessageTags.Action
+  id: Action
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: MessageTags.Action
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Action
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Action
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 87
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: The message value when someone uses the /me chat command
+  example: []
+  syntax:
+    content: public string Action { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Action As String
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.Action*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap
+  commentId: M:AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap
+  id: CreateQueryMap
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: CreateQueryMap()
+  nameWithType: MessageTags.CreateQueryMap()
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CreateQueryMap
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 89
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  example: []
+  syntax:
+    content: public override IDictionary<string, string> CreateQueryMap()
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public Overrides Function CreateQueryMap() As IDictionary(Of String, String)
+  overridden: AuxLabs.Twitch.QueryMap.CreateQueryMap
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap*
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  commentId: M:AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  id: LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: AuxLabs.Twitch.Chat.Models.MessageTags
+  langs:
+  - csharp
+  - vb
+  name: LoadQueryMap(IReadOnlyDictionary<string, string>)
+  nameWithType: MessageTags.LoadQueryMap(IReadOnlyDictionary<string, string>)
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary<string, string>)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: LoadQueryMap
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/Tags/MessageTags.cs
+    startLine: 121
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Models
+  summary: Fill a dictionary with tags in their query format.
+  example: []
+  syntax:
+    content: public override void LoadQueryMap(IReadOnlyDictionary<string, string> map)
+    parameters:
+    - id: map
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public Overrides Sub LoadQueryMap(map As IReadOnlyDictionary(Of String, String))
+  overridden: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  overload: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap*
+  nameWithType.vb: MessageTags.LoadQueryMap(IReadOnlyDictionary(Of String, String))
+  fullName.vb: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary(Of String, String))
+  name.vb: LoadQueryMap(IReadOnlyDictionary(Of String, String))
+references:
+- uid: AuxLabs.Twitch.Chat.Models
+  commentId: N:AuxLabs.Twitch.Chat.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Models
+  nameWithType: AuxLabs.Twitch.Chat.Models
+  fullName: AuxLabs.Twitch.Chat.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Models
+    name: Models
+    href: AuxLabs.Twitch.Chat.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Models
+    name: Models
+    href: AuxLabs.Twitch.Chat.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.QueryMap
+  commentId: T:AuxLabs.Twitch.QueryMap
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.QueryMap.html
+  name: QueryMap
+  nameWithType: QueryMap
+  fullName: AuxLabs.Twitch.QueryMap
+- uid: AuxLabs.Twitch.Chat.Models.BaseTags
+  commentId: T:AuxLabs.Twitch.Chat.Models.BaseTags
+  parent: AuxLabs.Twitch.Chat.Models
+  href: AuxLabs.Twitch.Chat.Models.BaseTags.html
+  name: BaseTags
+  nameWithType: BaseTags
+  fullName: AuxLabs.Twitch.Chat.Models.BaseTags
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<string, string>>
+  nameWithType: ICollection<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: ICollection(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, string>>
+  nameWithType: IEnumerable<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp.html
+  name: Timestamp
+  nameWithType: MessageTags.Timestamp
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Timestamp
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId.html
+  name: MessageId
+  nameWithType: MessageTags.MessageId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.MessageId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId.html
+  name: ChannelId
+  nameWithType: MessageTags.ChannelId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ChannelId
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId.html
+  name: AuthorId
+  nameWithType: MessageTags.AuthorId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorId
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName.html
+  name: AuthorName
+  nameWithType: MessageTags.AuthorName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorName
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName.html
+  name: AuthorDisplayName
+  nameWithType: MessageTags.AuthorDisplayName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorDisplayName
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType.html
+  name: AuthorType
+  nameWithType: MessageTags.AuthorType
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorType
+- uid: AuxLabs.Twitch.Chat.UserType
+  commentId: T:AuxLabs.Twitch.Chat.UserType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.UserType.html
+  name: UserType
+  nameWithType: UserType
+  fullName: AuxLabs.Twitch.Chat.UserType
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor.html
+  name: AuthorColor
+  nameWithType: MessageTags.AuthorColor
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.AuthorColor
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce.html
+  name: Nonce
+  nameWithType: MessageTags.Nonce
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Nonce
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId.html
+  name: CustomRewardId
+  nameWithType: MessageTags.CustomRewardId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.CustomRewardId
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId.html
+  name: ReplyMessageId
+  nameWithType: MessageTags.ReplyMessageId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageId
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent.html
+  name: ReplyMessageContent
+  nameWithType: MessageTags.ReplyMessageContent
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyMessageContent
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId.html
+  name: ReplyAuthorId
+  nameWithType: MessageTags.ReplyAuthorId
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorId
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName.html
+  name: ReplyAuthorName
+  nameWithType: MessageTags.ReplyAuthorName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorName
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName.html
+  name: ReplyAuthorDisplayName
+  nameWithType: MessageTags.ReplyAuthorDisplayName
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.ReplyAuthorDisplayName
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount.html
+  name: BitsAmount
+  nameWithType: MessageTags.BitsAmount
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.BitsAmount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator.html
+  name: IsModerator
+  nameWithType: MessageTags.IsModerator
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsModerator
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber.html
+  name: IsSubscriber
+  nameWithType: MessageTags.IsSubscriber
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsSubscriber
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo.html
+  name: IsTurbo
+  nameWithType: MessageTags.IsTurbo
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsTurbo
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP.html
+  name: IsVIP
+  nameWithType: MessageTags.IsVIP
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsVIP
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage.html
+  name: IsFirstMessage
+  nameWithType: MessageTags.IsFirstMessage
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsFirstMessage
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly.html
+  name: IsEmoteOnly
+  nameWithType: MessageTags.IsEmoteOnly
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.IsEmoteOnly
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType.html
+  name: MessageType
+  nameWithType: MessageTags.MessageType
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.MessageType
+- uid: AuxLabs.Twitch.Chat.MessageType
+  commentId: T:AuxLabs.Twitch.Chat.MessageType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.MessageType.html
+  name: MessageType
+  nameWithType: MessageType
+  fullName: AuxLabs.Twitch.Chat.MessageType
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Badges*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.Badges.html
+  name: Badges
+  nameWithType: MessageTags.Badges
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Badges
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Badge}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Chat.Badge}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<Badge>
+  nameWithType: IReadOnlyCollection<Badge>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Chat.Badge>
+  nameWithType.vb: IReadOnlyCollection(Of Badge)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Chat.Badge)
+  name.vb: IReadOnlyCollection(Of Badge)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Badge
+    name: Badge
+    href: AuxLabs.Twitch.Chat.Badge.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Badge
+    name: Badge
+    href: AuxLabs.Twitch.Chat.Badge.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo.html
+  name: BadgeInfo
+  nameWithType: MessageTags.BadgeInfo
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.BadgeInfo
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes.html
+  name: Emotes
+  nameWithType: MessageTags.Emotes
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Emotes
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EmotePosition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<EmotePosition>
+  nameWithType: IReadOnlyCollection<EmotePosition>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.EmotePosition>
+  nameWithType.vb: IReadOnlyCollection(Of EmotePosition)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.EmotePosition)
+  name.vb: IReadOnlyCollection(Of EmotePosition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.EmotePosition
+    name: EmotePosition
+    href: AuxLabs.Twitch.EmotePosition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EmotePosition
+    name: EmotePosition
+    href: AuxLabs.Twitch.EmotePosition.html
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.Action*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.Action
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.Action.html
+  name: Action
+  nameWithType: MessageTags.Action
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.Action
+- uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+  commentId: M:AuxLabs.Twitch.QueryMap.CreateQueryMap
+  parent: AuxLabs.Twitch.QueryMap
+  href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  name: CreateQueryMap()
+  nameWithType: QueryMap.CreateQueryMap()
+  fullName: AuxLabs.Twitch.QueryMap.CreateQueryMap()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+    name: CreateQueryMap
+    href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.QueryMap.CreateQueryMap
+    name: CreateQueryMap
+    href: AuxLabs.Twitch.QueryMap.CreateQueryMap.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap.html
+  name: CreateQueryMap
+  nameWithType: MessageTags.CreateQueryMap
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.CreateQueryMap
+- uid: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  commentId: M:AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: AuxLabs.Twitch.Chat.Models.BaseTags
+  isExternal: true
+  href: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}).html
+  name: LoadQueryMap(IReadOnlyDictionary<string, string>)
+  nameWithType: BaseTags.LoadQueryMap(IReadOnlyDictionary<string, string>)
+  fullName: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary<string, string>)
+  nameWithType.vb: BaseTags.LoadQueryMap(IReadOnlyDictionary(Of String, String))
+  fullName.vb: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary(Of String, String))
+  name.vb: LoadQueryMap(IReadOnlyDictionary(Of String, String))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+    name: LoadQueryMap
+    href: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+    name: LoadQueryMap
+    href: AuxLabs.Twitch.Chat.Models.BaseTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap*
+  commentId: Overload:AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap
+  href: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}).html
+  name: LoadQueryMap
+  nameWithType: MessageTags.LoadQueryMap
+  fullName: AuxLabs.Twitch.Chat.Models.MessageTags.LoadQueryMap
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+memberLayout: SeparatePages

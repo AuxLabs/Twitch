@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.RedemptionStatus
+  commentId: T:AuxLabs.Twitch.RedemptionStatus
+  id: RedemptionStatus
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.RedemptionStatus.Cancelled
+  - AuxLabs.Twitch.RedemptionStatus.Fulfilled
+  - AuxLabs.Twitch.RedemptionStatus.Unfulfilled
+  langs:
+  - csharp
+  - vb
+  name: RedemptionStatus
+  nameWithType: RedemptionStatus
+  fullName: AuxLabs.Twitch.RedemptionStatus
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RedemptionStatus
+    path: ../src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum RedemptionStatus
+    content.vb: Public Enum RedemptionStatus
+  extensionMethods:
+  - AuxLabs.Twitch.RedemptionStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.RedemptionStatus.Unfulfilled
+  commentId: F:AuxLabs.Twitch.RedemptionStatus.Unfulfilled
+  id: Unfulfilled
+  parent: AuxLabs.Twitch.RedemptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Unfulfilled
+  nameWithType: RedemptionStatus.Unfulfilled
+  fullName: AuxLabs.Twitch.RedemptionStatus.Unfulfilled
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unfulfilled
+    path: ../src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "UNFULFILLED")]
+
+      Unfulfilled = 0
+    return:
+      type: AuxLabs.Twitch.RedemptionStatus
+    content.vb: >-
+      <EnumMember(Value:="UNFULFILLED")>
+
+      Unfulfilled = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: UNFULFILLED
+- uid: AuxLabs.Twitch.RedemptionStatus.Cancelled
+  commentId: F:AuxLabs.Twitch.RedemptionStatus.Cancelled
+  id: Cancelled
+  parent: AuxLabs.Twitch.RedemptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: RedemptionStatus.Cancelled
+  fullName: AuxLabs.Twitch.RedemptionStatus.Cancelled
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Cancelled
+    path: ../src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "CANCELED")]
+
+      Cancelled = 1
+    return:
+      type: AuxLabs.Twitch.RedemptionStatus
+    content.vb: >-
+      <EnumMember(Value:="CANCELED")>
+
+      Cancelled = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CANCELED
+- uid: AuxLabs.Twitch.RedemptionStatus.Fulfilled
+  commentId: F:AuxLabs.Twitch.RedemptionStatus.Fulfilled
+  id: Fulfilled
+  parent: AuxLabs.Twitch.RedemptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Fulfilled
+  nameWithType: RedemptionStatus.Fulfilled
+  fullName: AuxLabs.Twitch.RedemptionStatus.Fulfilled
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Fulfilled
+    path: ../src/AuxLabs.Twitch.Core/Models/Rewards/RedemptionStatus.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "FULFILLED")]
+
+      Fulfilled = 2
+    return:
+      type: AuxLabs.Twitch.RedemptionStatus
+    content.vb: >-
+      <EnumMember(Value:="FULFILLED")>
+
+      Fulfilled = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: FULFILLED
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.RedemptionStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.RedemptionStatus).html
+  name: GetStringValue<RedemptionStatus>(RedemptionStatus)
+  nameWithType: EnumHelper.GetStringValue<RedemptionStatus>(RedemptionStatus)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.RedemptionStatus>(AuxLabs.Twitch.RedemptionStatus)
+  nameWithType.vb: EnumHelper.GetStringValue(Of RedemptionStatus)(RedemptionStatus)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.RedemptionStatus)(AuxLabs.Twitch.RedemptionStatus)
+  name.vb: GetStringValue(Of RedemptionStatus)(RedemptionStatus)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.RedemptionStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.RedemptionStatus).html
+  - name: <
+  - uid: AuxLabs.Twitch.RedemptionStatus
+    name: RedemptionStatus
+    href: AuxLabs.Twitch.RedemptionStatus.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.RedemptionStatus
+    name: RedemptionStatus
+    href: AuxLabs.Twitch.RedemptionStatus.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.RedemptionStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.RedemptionStatus).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.RedemptionStatus
+    name: RedemptionStatus
+    href: AuxLabs.Twitch.RedemptionStatus.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.RedemptionStatus
+    name: RedemptionStatus
+    href: AuxLabs.Twitch.RedemptionStatus.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.RedemptionStatus
+  commentId: T:AuxLabs.Twitch.RedemptionStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.RedemptionStatus.html
+  name: RedemptionStatus
+  nameWithType: RedemptionStatus
+  fullName: AuxLabs.Twitch.RedemptionStatus
+memberLayout: SeparatePages

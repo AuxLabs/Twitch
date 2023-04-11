@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.PollStatus
+  commentId: T:AuxLabs.Twitch.PollStatus
+  id: PollStatus
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.PollStatus.Active
+  - AuxLabs.Twitch.PollStatus.Archived
+  - AuxLabs.Twitch.PollStatus.Completed
+  - AuxLabs.Twitch.PollStatus.Invalid
+  - AuxLabs.Twitch.PollStatus.Moderated
+  - AuxLabs.Twitch.PollStatus.Terminated
+  langs:
+  - csharp
+  - vb
+  name: PollStatus
+  nameWithType: PollStatus
+  fullName: AuxLabs.Twitch.PollStatus
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PollStatus
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum PollStatus
+    content.vb: Public Enum PollStatus
+  extensionMethods:
+  - AuxLabs.Twitch.PollStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.PollStatus.Invalid
+  commentId: F:AuxLabs.Twitch.PollStatus.Invalid
+  id: Invalid
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: PollStatus.Invalid
+  fullName: AuxLabs.Twitch.PollStatus.Invalid
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Invalid
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: Something went wrong while determining the state.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "INVALID")]
+
+      Invalid = 0
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="INVALID")>
+
+      Invalid = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: INVALID
+- uid: AuxLabs.Twitch.PollStatus.Active
+  commentId: F:AuxLabs.Twitch.PollStatus.Active
+  id: Active
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: PollStatus.Active
+  fullName: AuxLabs.Twitch.PollStatus.Active
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Active
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The poll is running.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "ACTIVE")]
+
+      Active = 1
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="ACTIVE")>
+
+      Active = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ACTIVE
+- uid: AuxLabs.Twitch.PollStatus.Completed
+  commentId: F:AuxLabs.Twitch.PollStatus.Completed
+  id: Completed
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: PollStatus.Completed
+  fullName: AuxLabs.Twitch.PollStatus.Completed
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Completed
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The poll ended on schedule.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "COMPLETED")]
+
+      Completed = 2
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="COMPLETED")>
+
+      Completed = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: COMPLETED
+- uid: AuxLabs.Twitch.PollStatus.Terminated
+  commentId: F:AuxLabs.Twitch.PollStatus.Terminated
+  id: Terminated
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Terminated
+  nameWithType: PollStatus.Terminated
+  fullName: AuxLabs.Twitch.PollStatus.Terminated
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Terminated
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The poll was terminated before its scheduled end.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "TERMINATED")]
+
+      Terminated = 3
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="TERMINATED")>
+
+      Terminated = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: TERMINATED
+- uid: AuxLabs.Twitch.PollStatus.Archived
+  commentId: F:AuxLabs.Twitch.PollStatus.Archived
+  id: Archived
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Archived
+  nameWithType: PollStatus.Archived
+  fullName: AuxLabs.Twitch.PollStatus.Archived
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Archived
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The poll has been archived and is no longer visible on the channel.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "ARCHIVED")]
+
+      Archived = 4
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="ARCHIVED")>
+
+      Archived = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ARCHIVED
+- uid: AuxLabs.Twitch.PollStatus.Moderated
+  commentId: F:AuxLabs.Twitch.PollStatus.Moderated
+  id: Moderated
+  parent: AuxLabs.Twitch.PollStatus
+  langs:
+  - csharp
+  - vb
+  name: Moderated
+  nameWithType: PollStatus.Moderated
+  fullName: AuxLabs.Twitch.PollStatus.Moderated
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Moderated
+    path: ../src/AuxLabs.Twitch.Core/Models/PollStatus.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The poll was deleted.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "MODERATED")]
+
+      Moderated = 5
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <EnumMember(Value:="MODERATED")>
+
+      Moderated = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: MODERATED
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.PollStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PollStatus).html
+  name: GetStringValue<PollStatus>(PollStatus)
+  nameWithType: EnumHelper.GetStringValue<PollStatus>(PollStatus)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.PollStatus>(AuxLabs.Twitch.PollStatus)
+  nameWithType.vb: EnumHelper.GetStringValue(Of PollStatus)(PollStatus)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.PollStatus)(AuxLabs.Twitch.PollStatus)
+  name.vb: GetStringValue(Of PollStatus)(PollStatus)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PollStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PollStatus).html
+  - name: <
+  - uid: AuxLabs.Twitch.PollStatus
+    name: PollStatus
+    href: AuxLabs.Twitch.PollStatus.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.PollStatus
+    name: PollStatus
+    href: AuxLabs.Twitch.PollStatus.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.PollStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.PollStatus).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.PollStatus
+    name: PollStatus
+    href: AuxLabs.Twitch.PollStatus.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.PollStatus
+    name: PollStatus
+    href: AuxLabs.Twitch.PollStatus.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.PollStatus
+  commentId: T:AuxLabs.Twitch.PollStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PollStatus.html
+  name: PollStatus
+  nameWithType: PollStatus
+  fullName: AuxLabs.Twitch.PollStatus
+memberLayout: SeparatePages

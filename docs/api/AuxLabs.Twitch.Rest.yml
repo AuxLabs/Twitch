@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  id: Rest
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.Rest.Api
+  - AuxLabs.Twitch.Rest.Entities
+  - AuxLabs.Twitch.Rest.IEventCondition
+  - AuxLabs.Twitch.Rest.Models
+  - AuxLabs.Twitch.Rest.Requests
+  - AuxLabs.Twitch.Rest.TwitchRestClient
+  - AuxLabs.Twitch.Rest.TwitchRestConfig
+  langs:
+  - csharp
+  - vb
+  name: Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.Rest
+  name.csharp: AuxLabs.Twitch.Rest
+  name.vb: AuxLabs.Twitch.Rest
+references:
+- uid: AuxLabs.Twitch.Rest.Api
+  commentId: N:AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Api
+  nameWithType: AuxLabs.Twitch.Rest.Api
+  fullName: AuxLabs.Twitch.Rest.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+- uid: AuxLabs.Twitch.Rest.Entities
+  commentId: N:AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Entities
+  nameWithType: AuxLabs.Twitch.Rest.Entities
+  fullName: AuxLabs.Twitch.Rest.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Rest.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Rest.Entities.html
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: AuxLabs.Twitch.Rest.IEventCondition
+  commentId: T:AuxLabs.Twitch.Rest.IEventCondition
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.IEventCondition.html
+  name: IEventCondition
+  nameWithType: IEventCondition
+  fullName: AuxLabs.Twitch.Rest.IEventCondition
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient
+  commentId: T:AuxLabs.Twitch.Rest.TwitchRestClient
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.TwitchRestClient.html
+  name: TwitchRestClient
+  nameWithType: TwitchRestClient
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient
+- uid: AuxLabs.Twitch.Rest.TwitchRestConfig
+  commentId: T:AuxLabs.Twitch.Rest.TwitchRestConfig
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.TwitchRestConfig.html
+  name: TwitchRestConfig
+  nameWithType: TwitchRestConfig
+  fullName: AuxLabs.Twitch.Rest.TwitchRestConfig
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+memberLayout: SeparatePages

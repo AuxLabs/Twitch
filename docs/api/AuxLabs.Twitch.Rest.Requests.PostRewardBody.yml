@@ -1,0 +1,1239 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  id: PostRewardBody
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+  - AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate
+  langs:
+  - csharp
+  - vb
+  name: PostRewardBody
+  nameWithType: PostRewardBody
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostRewardBody
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public class PostRewardBody
+    content.vb: Public Class PostRewardBody
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+  id: Title
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: PostRewardBody.Title
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The custom reward’s title.
+  remarks: >-
+    The title may contain a maximum of 45 
+       characters and it must be unique amongst all of 
+       the broadcaster’s custom rewards.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("title")]
+
+      public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+  id: Cost
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: Cost
+  nameWithType: PostRewardBody.Cost
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Cost
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 16
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The cost of the reward, in channel points.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cost")]
+
+      public uint Cost { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: >-
+      <JsonPropertyName("cost")>
+
+      Public Property Cost As UInteger
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cost
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+  id: Prompt
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: Prompt
+  nameWithType: PostRewardBody.Prompt
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Prompt
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The prompt shown to the viewer when they redeem the reward.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("prompt")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string Prompt { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("prompt")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property Prompt As String
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: prompt
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+  id: IsEnabled
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: PostRewardBody.IsEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether the reward is enabled.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("is_enabled")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? IsEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("is_enabled")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property IsEnabled As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: is_enabled
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+  id: BackgroundColor
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: PostRewardBody.BackgroundColor
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BackgroundColor
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 30
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The background color to use for the reward.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("color")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public Color? BackgroundColor { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Drawing.Color}
+    content.vb: >-
+      <JsonPropertyName("color")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property BackgroundColor As Color?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: color
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+  id: IsUserInputRequired
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: IsUserInputRequired
+  nameWithType: PostRewardBody.IsUserInputRequired
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsUserInputRequired
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 35
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether the user needs to enter information when redeeming the reward.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("is_user_input_required")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? IsUserInputRequired { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("is_user_input_required")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property IsUserInputRequired As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: is_user_input_required
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+  id: IsMaxPerStreamEnabled
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: IsMaxPerStreamEnabled
+  nameWithType: PostRewardBody.IsMaxPerStreamEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsMaxPerStreamEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 40
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether to limit the maximum number of redemptions allowed per live stream.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("is_max_per_stream_enabled")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? IsMaxPerStreamEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("is_max_per_stream_enabled")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property IsMaxPerStreamEnabled As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: is_max_per_stream_enabled
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+  id: MaxPerStream
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: MaxPerStream
+  nameWithType: PostRewardBody.MaxPerStream
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MaxPerStream
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 45
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The maximum number of redemptions allowed per live stream.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("max_per_stream")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public int? MaxPerStream { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <JsonPropertyName("max_per_stream")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property MaxPerStream As Integer?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: max_per_stream
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+  id: IsMaxPerUserEnabled
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: IsMaxPerUserEnabled
+  nameWithType: PostRewardBody.IsMaxPerUserEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsMaxPerUserEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 50
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether to limit the maximum number of redemptions allowed per user per stream
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("is_max_per_user_per_stream_enabled")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? IsMaxPerUserEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("is_max_per_user_per_stream_enabled")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property IsMaxPerUserEnabled As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: is_max_per_user_per_stream_enabled
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+  id: MaxPerUser
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: MaxPerUser
+  nameWithType: PostRewardBody.MaxPerUser
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MaxPerUser
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 55
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The maximum number of redemptions allowed per user per stream.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("max_per_user_per_stream")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public int? MaxPerUser { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <JsonPropertyName("max_per_user_per_stream")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property MaxPerUser As Integer?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: max_per_user_per_stream
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+  id: IsGlobalCooldownEnabled
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: IsGlobalCooldownEnabled
+  nameWithType: PostRewardBody.IsGlobalCooldownEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsGlobalCooldownEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 60
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether to apply a cooldown period between redemptions
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("is_global_cooldown_enabled")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? IsGlobalCooldownEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("is_global_cooldown_enabled")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property IsGlobalCooldownEnabled As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: is_global_cooldown_enabled
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+  id: GlobalCooldownSeconds
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: GlobalCooldownSeconds
+  nameWithType: PostRewardBody.GlobalCooldownSeconds
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GlobalCooldownSeconds
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 65
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The cooldown period, in seconds.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("global_cooldown_seconds")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public int? GlobalCooldownSeconds { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <JsonPropertyName("global_cooldown_seconds")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property GlobalCooldownSeconds As Integer?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: global_cooldown_seconds
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+  id: ShouldSkipRequestQueue
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: ShouldSkipRequestQueue
+  nameWithType: PostRewardBody.ShouldSkipRequestQueue
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ShouldSkipRequestQueue
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 70
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: Determines whether redemptions should be set to fulfilled status immediately when a reward is redeemed.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("should_redemptions_skip_request_queue")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public bool? ShouldSkipRequestQueue { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("should_redemptions_skip_request_queue")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property ShouldSkipRequestQueue As Boolean?
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: should_redemptions_skip_request_queue
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate
+  id: Validate
+  parent: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: PostRewardBody.Validate()
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/ChannelPoints/PostRewardBody.cs
+    startLine: 74
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: public void Validate()
+    content.vb: Public Sub Validate()
+  overload: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate*
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title.html
+  name: Title
+  nameWithType: PostRewardBody.Title
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost.html
+  name: Cost
+  nameWithType: PostRewardBody.Cost
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Cost
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt.html
+  name: Prompt
+  nameWithType: PostRewardBody.Prompt
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Prompt
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled.html
+  name: IsEnabled
+  nameWithType: PostRewardBody.IsEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsEnabled
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor.html
+  name: BackgroundColor
+  nameWithType: PostRewardBody.BackgroundColor
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.BackgroundColor
+- uid: System.Nullable{System.Drawing.Color}
+  commentId: T:System.Nullable{System.Drawing.Color}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color?
+  nameWithType: Color?
+  fullName: System.Drawing.Color?
+  spec.csharp:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  spec.vb:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired.html
+  name: IsUserInputRequired
+  nameWithType: PostRewardBody.IsUserInputRequired
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsUserInputRequired
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled.html
+  name: IsMaxPerStreamEnabled
+  nameWithType: PostRewardBody.IsMaxPerStreamEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerStreamEnabled
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream.html
+  name: MaxPerStream
+  nameWithType: PostRewardBody.MaxPerStream
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerStream
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled.html
+  name: IsMaxPerUserEnabled
+  nameWithType: PostRewardBody.IsMaxPerUserEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsMaxPerUserEnabled
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser.html
+  name: MaxPerUser
+  nameWithType: PostRewardBody.MaxPerUser
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.MaxPerUser
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled.html
+  name: IsGlobalCooldownEnabled
+  nameWithType: PostRewardBody.IsGlobalCooldownEnabled
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.IsGlobalCooldownEnabled
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds.html
+  name: GlobalCooldownSeconds
+  nameWithType: PostRewardBody.GlobalCooldownSeconds
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.GlobalCooldownSeconds
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue.html
+  name: ShouldSkipRequestQueue
+  nameWithType: PostRewardBody.ShouldSkipRequestQueue
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.ShouldSkipRequestQueue
+- uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate
+  href: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate.html
+  name: Validate
+  nameWithType: PostRewardBody.Validate
+  fullName: AuxLabs.Twitch.Rest.Requests.PostRewardBody.Validate
+memberLayout: SeparatePages

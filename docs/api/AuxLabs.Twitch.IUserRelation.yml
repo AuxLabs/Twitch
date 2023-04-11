@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.IUserRelation
+  commentId: T:AuxLabs.Twitch.IUserRelation
+  id: IUserRelation
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+  - AuxLabs.Twitch.IUserRelation.RelatedId
+  - AuxLabs.Twitch.IUserRelation.RelatedName
+  langs:
+  - csharp
+  - vb
+  name: IUserRelation
+  nameWithType: IUserRelation
+  fullName: AuxLabs.Twitch.IUserRelation
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IUserRelation
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+    startLine: 2
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: 'public interface IUserRelation : ISimpleUser, IPartialUser, IEntity<string>'
+    content.vb: Public Interface IUserRelation Inherits ISimpleUser, IPartialUser, IEntity(Of String)
+  inheritedMembers:
+  - AuxLabs.Twitch.ISimpleUser.DisplayName
+  - AuxLabs.Twitch.IPartialUser.Name
+  - AuxLabs.Twitch.IEntity{System.String}.Id
+- uid: AuxLabs.Twitch.IUserRelation.RelatedId
+  commentId: P:AuxLabs.Twitch.IUserRelation.RelatedId
+  id: RelatedId
+  parent: AuxLabs.Twitch.IUserRelation
+  langs:
+  - csharp
+  - vb
+  name: RelatedId
+  nameWithType: IUserRelation.RelatedId
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RelatedId
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: string RelatedId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property RelatedId As String
+  overload: AuxLabs.Twitch.IUserRelation.RelatedId*
+- uid: AuxLabs.Twitch.IUserRelation.RelatedName
+  commentId: P:AuxLabs.Twitch.IUserRelation.RelatedName
+  id: RelatedName
+  parent: AuxLabs.Twitch.IUserRelation
+  langs:
+  - csharp
+  - vb
+  name: RelatedName
+  nameWithType: IUserRelation.RelatedName
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RelatedName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: string RelatedName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property RelatedName As String
+  overload: AuxLabs.Twitch.IUserRelation.RelatedName*
+- uid: AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+  commentId: P:AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+  id: RelatedDisplayName
+  parent: AuxLabs.Twitch.IUserRelation
+  langs:
+  - csharp
+  - vb
+  name: RelatedDisplayName
+  nameWithType: IUserRelation.RelatedDisplayName
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RelatedDisplayName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserRelation.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: string RelatedDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property RelatedDisplayName As String
+  overload: AuxLabs.Twitch.IUserRelation.RelatedDisplayName*
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.ISimpleUser.DisplayName
+  commentId: P:AuxLabs.Twitch.ISimpleUser.DisplayName
+  parent: AuxLabs.Twitch.ISimpleUser
+  href: AuxLabs.Twitch.ISimpleUser.DisplayName.html
+  name: DisplayName
+  nameWithType: ISimpleUser.DisplayName
+  fullName: AuxLabs.Twitch.ISimpleUser.DisplayName
+- uid: AuxLabs.Twitch.IPartialUser.Name
+  commentId: P:AuxLabs.Twitch.IPartialUser.Name
+  parent: AuxLabs.Twitch.IPartialUser
+  href: AuxLabs.Twitch.IPartialUser.Name.html
+  name: Name
+  nameWithType: IPartialUser.Name
+  fullName: AuxLabs.Twitch.IPartialUser.Name
+- uid: AuxLabs.Twitch.IEntity{System.String}.Id
+  commentId: P:AuxLabs.Twitch.IEntity{System.String}.Id
+  parent: AuxLabs.Twitch.IEntity{System.String}
+  definition: AuxLabs.Twitch.IEntity`1.Id
+  href: AuxLabs.Twitch.IEntity{System.String}.Id.html
+  name: Id
+  nameWithType: IEntity<string>.Id
+  fullName: AuxLabs.Twitch.IEntity<string>.Id
+  nameWithType.vb: IEntity(Of String).Id
+  fullName.vb: AuxLabs.Twitch.IEntity(Of String).Id
+- uid: AuxLabs.Twitch.ISimpleUser
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ISimpleUser.html
+  name: ISimpleUser
+  nameWithType: ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+- uid: AuxLabs.Twitch.IPartialUser
+  commentId: T:AuxLabs.Twitch.IPartialUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: AuxLabs.Twitch.IPartialUser
+- uid: AuxLabs.Twitch.IEntity`1.Id
+  commentId: P:AuxLabs.Twitch.IEntity`1.Id
+  href: AuxLabs.Twitch.IEntity-1.Id.html
+  name: Id
+  nameWithType: IEntity<TId>.Id
+  fullName: AuxLabs.Twitch.IEntity<TId>.Id
+  nameWithType.vb: IEntity(Of TId).Id
+  fullName.vb: AuxLabs.Twitch.IEntity(Of TId).Id
+- uid: AuxLabs.Twitch.IEntity{System.String}
+  commentId: T:AuxLabs.Twitch.IEntity{System.String}
+  parent: AuxLabs.Twitch
+  definition: AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<string>
+  nameWithType: IEntity<string>
+  fullName: AuxLabs.Twitch.IEntity<string>
+  nameWithType.vb: IEntity(Of String)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of String)
+  name.vb: IEntity(Of String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AuxLabs.Twitch.IEntity`1
+  commentId: T:AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<TId>
+  nameWithType: IEntity<TId>
+  fullName: AuxLabs.Twitch.IEntity<TId>
+  nameWithType.vb: IEntity(Of TId)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of TId)
+  name.vb: IEntity(Of TId)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: AuxLabs.Twitch.IUserRelation.RelatedId*
+  commentId: Overload:AuxLabs.Twitch.IUserRelation.RelatedId
+  href: AuxLabs.Twitch.IUserRelation.RelatedId.html
+  name: RelatedId
+  nameWithType: IUserRelation.RelatedId
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.IUserRelation.RelatedName*
+  commentId: Overload:AuxLabs.Twitch.IUserRelation.RelatedName
+  href: AuxLabs.Twitch.IUserRelation.RelatedName.html
+  name: RelatedName
+  nameWithType: IUserRelation.RelatedName
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedName
+- uid: AuxLabs.Twitch.IUserRelation.RelatedDisplayName*
+  commentId: Overload:AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+  href: AuxLabs.Twitch.IUserRelation.RelatedDisplayName.html
+  name: RelatedDisplayName
+  nameWithType: IUserRelation.RelatedDisplayName
+  fullName: AuxLabs.Twitch.IUserRelation.RelatedDisplayName
+memberLayout: SeparatePages

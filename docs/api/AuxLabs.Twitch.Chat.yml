@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  id: Chat
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.Chat.Api
+  - AuxLabs.Twitch.Chat.Badge
+  - AuxLabs.Twitch.Chat.Entities
+  - AuxLabs.Twitch.Chat.IChatMessage
+  - AuxLabs.Twitch.Chat.IMessage
+  - AuxLabs.Twitch.Chat.IUserNoticeMessage
+  - AuxLabs.Twitch.Chat.IWhisperMessage
+  - AuxLabs.Twitch.Chat.MessageType
+  - AuxLabs.Twitch.Chat.Models
+  - AuxLabs.Twitch.Chat.NoticeType
+  - AuxLabs.Twitch.Chat.Requests
+  - AuxLabs.Twitch.Chat.RitualType
+  - AuxLabs.Twitch.Chat.TwitchChatClient
+  - AuxLabs.Twitch.Chat.TwitchChatConfig
+  - AuxLabs.Twitch.Chat.UserNoticeType
+  - AuxLabs.Twitch.Chat.UserType
+  langs:
+  - csharp
+  - vb
+  name: Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  name.csharp: AuxLabs.Twitch.Chat
+  name.vb: AuxLabs.Twitch.Chat
+references:
+- uid: AuxLabs.Twitch.Chat.Api
+  commentId: N:AuxLabs.Twitch.Chat.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Api
+  nameWithType: AuxLabs.Twitch.Chat.Api
+  fullName: AuxLabs.Twitch.Chat.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+- uid: AuxLabs.Twitch.Chat.Entities
+  commentId: N:AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Entities
+  nameWithType: AuxLabs.Twitch.Chat.Entities
+  fullName: AuxLabs.Twitch.Chat.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+- uid: AuxLabs.Twitch.Chat.Models
+  commentId: N:AuxLabs.Twitch.Chat.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Models
+  nameWithType: AuxLabs.Twitch.Chat.Models
+  fullName: AuxLabs.Twitch.Chat.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Models
+    name: Models
+    href: AuxLabs.Twitch.Chat.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Models
+    name: Models
+    href: AuxLabs.Twitch.Chat.Models.html
+- uid: AuxLabs.Twitch.Chat.Requests
+  commentId: N:AuxLabs.Twitch.Chat.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Requests
+  nameWithType: AuxLabs.Twitch.Chat.Requests
+  fullName: AuxLabs.Twitch.Chat.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Chat.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Chat.Requests.html
+- uid: AuxLabs.Twitch.Chat.Badge
+  commentId: T:AuxLabs.Twitch.Chat.Badge
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.Badge.html
+  name: Badge
+  nameWithType: Badge
+  fullName: AuxLabs.Twitch.Chat.Badge
+- uid: AuxLabs.Twitch.Chat.IChatMessage
+  commentId: T:AuxLabs.Twitch.Chat.IChatMessage
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.IChatMessage.html
+  name: IChatMessage
+  nameWithType: IChatMessage
+  fullName: AuxLabs.Twitch.Chat.IChatMessage
+- uid: AuxLabs.Twitch.Chat.IMessage
+  commentId: T:AuxLabs.Twitch.Chat.IMessage
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.IMessage.html
+  name: IMessage
+  nameWithType: IMessage
+  fullName: AuxLabs.Twitch.Chat.IMessage
+- uid: AuxLabs.Twitch.Chat.IUserNoticeMessage
+  commentId: T:AuxLabs.Twitch.Chat.IUserNoticeMessage
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.IUserNoticeMessage.html
+  name: IUserNoticeMessage
+  nameWithType: IUserNoticeMessage
+  fullName: AuxLabs.Twitch.Chat.IUserNoticeMessage
+- uid: AuxLabs.Twitch.Chat.IWhisperMessage
+  commentId: T:AuxLabs.Twitch.Chat.IWhisperMessage
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.IWhisperMessage.html
+  name: IWhisperMessage
+  nameWithType: IWhisperMessage
+  fullName: AuxLabs.Twitch.Chat.IWhisperMessage
+- uid: AuxLabs.Twitch.Chat.MessageType
+  commentId: T:AuxLabs.Twitch.Chat.MessageType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.MessageType.html
+  name: MessageType
+  nameWithType: MessageType
+  fullName: AuxLabs.Twitch.Chat.MessageType
+- uid: AuxLabs.Twitch.Chat.NoticeType
+  commentId: T:AuxLabs.Twitch.Chat.NoticeType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.NoticeType.html
+  name: NoticeType
+  nameWithType: NoticeType
+  fullName: AuxLabs.Twitch.Chat.NoticeType
+- uid: AuxLabs.Twitch.Chat.RitualType
+  commentId: T:AuxLabs.Twitch.Chat.RitualType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.RitualType.html
+  name: RitualType
+  nameWithType: RitualType
+  fullName: AuxLabs.Twitch.Chat.RitualType
+- uid: AuxLabs.Twitch.Chat.TwitchChatClient
+  commentId: T:AuxLabs.Twitch.Chat.TwitchChatClient
+  href: AuxLabs.Twitch.Chat.TwitchChatClient.html
+  name: TwitchChatClient
+  nameWithType: TwitchChatClient
+  fullName: AuxLabs.Twitch.Chat.TwitchChatClient
+- uid: AuxLabs.Twitch.Chat.TwitchChatConfig
+  commentId: T:AuxLabs.Twitch.Chat.TwitchChatConfig
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.TwitchChatConfig.html
+  name: TwitchChatConfig
+  nameWithType: TwitchChatConfig
+  fullName: AuxLabs.Twitch.Chat.TwitchChatConfig
+- uid: AuxLabs.Twitch.Chat.UserNoticeType
+  commentId: T:AuxLabs.Twitch.Chat.UserNoticeType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  name: UserNoticeType
+  nameWithType: UserNoticeType
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType
+- uid: AuxLabs.Twitch.Chat.UserType
+  commentId: T:AuxLabs.Twitch.Chat.UserType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.UserType.html
+  name: UserType
+  nameWithType: UserType
+  fullName: AuxLabs.Twitch.Chat.UserType
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+memberLayout: SeparatePages

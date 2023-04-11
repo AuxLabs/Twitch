@@ -1,0 +1,725 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.DefaultRateLimiter
+  commentId: T:AuxLabs.Twitch.DefaultRateLimiter
+  id: DefaultRateLimiter
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.DefaultRateLimiter.#ctor
+  - AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken)
+  - AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync(System.Threading.CancellationToken)
+  - AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  - AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: DefaultRateLimiter
+  nameWithType: DefaultRateLimiter
+  fullName: AuxLabs.Twitch.DefaultRateLimiter
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DefaultRateLimiter
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: 'public class DefaultRateLimiter : IRateLimiter'
+    content.vb: Public Class DefaultRateLimiter Implements IRateLimiter
+  inheritance:
+  - System.Object
+  implements:
+  - AuxLabs.Twitch.IRateLimiter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.DefaultRateLimiter.#ctor
+  commentId: M:AuxLabs.Twitch.DefaultRateLimiter.#ctor
+  id: '#ctor'
+  parent: AuxLabs.Twitch.DefaultRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: DefaultRateLimiter()
+  nameWithType: DefaultRateLimiter.DefaultRateLimiter()
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.DefaultRateLimiter()
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public DefaultRateLimiter()
+    content.vb: Public Sub New()
+  overload: AuxLabs.Twitch.DefaultRateLimiter.#ctor*
+  nameWithType.vb: DefaultRateLimiter.New()
+  fullName.vb: AuxLabs.Twitch.DefaultRateLimiter.New()
+  name.vb: New()
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  id: EnterLockAsync(System.String,System.Threading.CancellationToken)
+  parent: AuxLabs.Twitch.DefaultRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: EnterLockAsync(string, CancellationToken)
+  nameWithType: DefaultRateLimiter.EnterLockAsync(string, CancellationToken)
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EnterLockAsync
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  example: []
+  syntax:
+    content: public Task EnterLockAsync(string bucketId, CancellationToken cancelToken)
+    parameters:
+    - id: bucketId
+      type: System.String
+    - id: cancelToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function EnterLockAsync(bucketId As String, cancelToken As CancellationToken) As Task
+  overload: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync*
+  implements:
+  - AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: DefaultRateLimiter.EnterLockAsync(String, CancellationToken)
+  fullName.vb: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(String, System.Threading.CancellationToken)
+  name.vb: EnterLockAsync(String, CancellationToken)
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync(System.Threading.CancellationToken)
+  commentId: M:AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync(System.Threading.CancellationToken)
+  id: EnterGlobalLockAsync(System.Threading.CancellationToken)
+  parent: AuxLabs.Twitch.DefaultRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: EnterGlobalLockAsync(CancellationToken)
+  nameWithType: DefaultRateLimiter.EnterGlobalLockAsync(CancellationToken)
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EnterGlobalLockAsync
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public virtual Task EnterGlobalLockAsync(CancellationToken cancelToken)
+    parameters:
+    - id: cancelToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function EnterGlobalLockAsync(cancelToken As CancellationToken) As Task
+  overload: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync*
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken)
+  id: EnterBucketLockAsync(System.String,System.Threading.CancellationToken)
+  parent: AuxLabs.Twitch.DefaultRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: EnterBucketLockAsync(string, CancellationToken)
+  nameWithType: DefaultRateLimiter.EnterBucketLockAsync(string, CancellationToken)
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EnterBucketLockAsync
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public virtual Task EnterBucketLockAsync(string bucketId, CancellationToken cancelToken)
+    parameters:
+    - id: bucketId
+      type: System.String
+    - id: cancelToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function EnterBucketLockAsync(bucketId As String, cancelToken As CancellationToken) As Task
+  overload: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync*
+  nameWithType.vb: DefaultRateLimiter.EnterBucketLockAsync(String, CancellationToken)
+  fullName.vb: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(String, System.Threading.CancellationToken)
+  name.vb: EnterBucketLockAsync(String, CancellationToken)
+- uid: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  commentId: M:AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  id: UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  parent: AuxLabs.Twitch.DefaultRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: UpdateLimit(string, RateLimitInfo, bool)
+  nameWithType: DefaultRateLimiter.UpdateLimit(string, RateLimitInfo, bool)
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(string, AuxLabs.Twitch.RateLimitInfo, bool)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UpdateLimit
+    path: ../src/AuxLabs.Twitch.Core/Throttling/DefaultRateLimiter.cs
+    startLine: 44
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  example: []
+  syntax:
+    content: public virtual void UpdateLimit(string bucketId, RateLimitInfo info, bool isRatelimited = false)
+    parameters:
+    - id: bucketId
+      type: System.String
+    - id: info
+      type: AuxLabs.Twitch.RateLimitInfo
+    - id: isRatelimited
+      type: System.Boolean
+    content.vb: Public Overridable Sub UpdateLimit(bucketId As String, info As RateLimitInfo, isRatelimited As Boolean = False)
+  overload: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit*
+  implements:
+  - AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  nameWithType.vb: DefaultRateLimiter.UpdateLimit(String, RateLimitInfo, Boolean)
+  fullName.vb: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(String, AuxLabs.Twitch.RateLimitInfo, Boolean)
+  name.vb: UpdateLimit(String, RateLimitInfo, Boolean)
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.IRateLimiter
+  commentId: T:AuxLabs.Twitch.IRateLimiter
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IRateLimiter.html
+  name: IRateLimiter
+  nameWithType: IRateLimiter
+  fullName: AuxLabs.Twitch.IRateLimiter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.DefaultRateLimiter.#ctor*
+  commentId: Overload:AuxLabs.Twitch.DefaultRateLimiter.#ctor
+  href: AuxLabs.Twitch.DefaultRateLimiter.#ctor.html
+  name: DefaultRateLimiter
+  nameWithType: DefaultRateLimiter.DefaultRateLimiter
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.DefaultRateLimiter
+  nameWithType.vb: DefaultRateLimiter.New
+  fullName.vb: AuxLabs.Twitch.DefaultRateLimiter.New
+  name.vb: New
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync*
+  commentId: Overload:AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync
+  href: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken).html
+  name: EnterLockAsync
+  nameWithType: DefaultRateLimiter.EnterLockAsync
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterLockAsync
+- uid: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+  parent: AuxLabs.Twitch.IRateLimiter
+  isExternal: true
+  href: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken).html
+  name: EnterLockAsync(string, CancellationToken)
+  nameWithType: IRateLimiter.EnterLockAsync(string, CancellationToken)
+  fullName: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IRateLimiter.EnterLockAsync(String, CancellationToken)
+  fullName.vb: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(String, System.Threading.CancellationToken)
+  name.vb: EnterLockAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+    name: EnterLockAsync
+    href: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken).html
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken)
+    name: EnterLockAsync
+    href: AuxLabs.Twitch.IRateLimiter.EnterLockAsync(System.String,System.Threading.CancellationToken).html
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync*
+  commentId: Overload:AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync
+  href: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync(System.Threading.CancellationToken).html
+  name: EnterGlobalLockAsync
+  nameWithType: DefaultRateLimiter.EnterGlobalLockAsync
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterGlobalLockAsync
+- uid: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync*
+  commentId: Overload:AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync
+  href: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync(System.String,System.Threading.CancellationToken).html
+  name: EnterBucketLockAsync
+  nameWithType: DefaultRateLimiter.EnterBucketLockAsync
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.EnterBucketLockAsync
+- uid: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit*
+  commentId: Overload:AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit
+  href: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean).html
+  name: UpdateLimit
+  nameWithType: DefaultRateLimiter.UpdateLimit
+  fullName: AuxLabs.Twitch.DefaultRateLimiter.UpdateLimit
+- uid: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  commentId: M:AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+  parent: AuxLabs.Twitch.IRateLimiter
+  isExternal: true
+  href: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean).html
+  name: UpdateLimit(string, RateLimitInfo, bool)
+  nameWithType: IRateLimiter.UpdateLimit(string, RateLimitInfo, bool)
+  fullName: AuxLabs.Twitch.IRateLimiter.UpdateLimit(string, AuxLabs.Twitch.RateLimitInfo, bool)
+  nameWithType.vb: IRateLimiter.UpdateLimit(String, RateLimitInfo, Boolean)
+  fullName.vb: AuxLabs.Twitch.IRateLimiter.UpdateLimit(String, AuxLabs.Twitch.RateLimitInfo, Boolean)
+  name.vb: UpdateLimit(String, RateLimitInfo, Boolean)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+    name: UpdateLimit
+    href: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean).html
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.RateLimitInfo
+    name: RateLimitInfo
+    href: AuxLabs.Twitch.RateLimitInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean)
+    name: UpdateLimit
+    href: AuxLabs.Twitch.IRateLimiter.UpdateLimit(System.String,AuxLabs.Twitch.RateLimitInfo,System.Boolean).html
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.RateLimitInfo
+    name: RateLimitInfo
+    href: AuxLabs.Twitch.RateLimitInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AuxLabs.Twitch.RateLimitInfo
+  commentId: T:AuxLabs.Twitch.RateLimitInfo
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.RateLimitInfo.html
+  name: RateLimitInfo
+  nameWithType: RateLimitInfo
+  fullName: AuxLabs.Twitch.RateLimitInfo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages

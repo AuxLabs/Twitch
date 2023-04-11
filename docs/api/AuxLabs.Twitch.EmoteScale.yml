@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EmoteScale
+  commentId: T:AuxLabs.Twitch.EmoteScale
+  id: EmoteScale
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.EmoteScale.Large
+  - AuxLabs.Twitch.EmoteScale.Medium
+  - AuxLabs.Twitch.EmoteScale.Small
+  langs:
+  - csharp
+  - vb
+  name: EmoteScale
+  nameWithType: EmoteScale
+  fullName: AuxLabs.Twitch.EmoteScale
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EmoteScale
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum EmoteScale
+    content.vb: Public Enum EmoteScale
+  extensionMethods:
+  - AuxLabs.Twitch.EmoteScale.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.EmoteScale.Small
+  commentId: F:AuxLabs.Twitch.EmoteScale.Small
+  id: Small
+  parent: AuxLabs.Twitch.EmoteScale
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: EmoteScale.Small
+  fullName: AuxLabs.Twitch.EmoteScale.Small
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Small
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: A small version (28px x 28px) is available.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "1.0")]
+
+      Small = 1
+    return:
+      type: AuxLabs.Twitch.EmoteScale
+    content.vb: >-
+      <EnumMember(Value:="1.0")>
+
+      Small = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: "1.0"
+- uid: AuxLabs.Twitch.EmoteScale.Medium
+  commentId: F:AuxLabs.Twitch.EmoteScale.Medium
+  id: Medium
+  parent: AuxLabs.Twitch.EmoteScale
+  langs:
+  - csharp
+  - vb
+  name: Medium
+  nameWithType: EmoteScale.Medium
+  fullName: AuxLabs.Twitch.EmoteScale.Medium
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Medium
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: A medium version (56px x 56px) is available.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "2.0")]
+
+      Medium = 2
+    return:
+      type: AuxLabs.Twitch.EmoteScale
+    content.vb: >-
+      <EnumMember(Value:="2.0")>
+
+      Medium = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: "2.0"
+- uid: AuxLabs.Twitch.EmoteScale.Large
+  commentId: F:AuxLabs.Twitch.EmoteScale.Large
+  id: Large
+  parent: AuxLabs.Twitch.EmoteScale
+  langs:
+  - csharp
+  - vb
+  name: Large
+  nameWithType: EmoteScale.Large
+  fullName: AuxLabs.Twitch.EmoteScale.Large
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Large
+    path: ../src/AuxLabs.Twitch.Core/Models/Emotes/EmoteScale.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: A large version (112px x 112px) is available.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "3.0")]
+
+      Large = 3
+    return:
+      type: AuxLabs.Twitch.EmoteScale
+    content.vb: >-
+      <EnumMember(Value:="3.0")>
+
+      Large = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: "3.0"
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.EmoteScale.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteScale).html
+  name: GetStringValue<EmoteScale>(EmoteScale)
+  nameWithType: EnumHelper.GetStringValue<EmoteScale>(EmoteScale)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.EmoteScale>(AuxLabs.Twitch.EmoteScale)
+  nameWithType.vb: EnumHelper.GetStringValue(Of EmoteScale)(EmoteScale)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.EmoteScale)(AuxLabs.Twitch.EmoteScale)
+  name.vb: GetStringValue(Of EmoteScale)(EmoteScale)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EmoteScale)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteScale).html
+  - name: <
+  - uid: AuxLabs.Twitch.EmoteScale
+    name: EmoteScale
+    href: AuxLabs.Twitch.EmoteScale.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.EmoteScale
+    name: EmoteScale
+    href: AuxLabs.Twitch.EmoteScale.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EmoteScale)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EmoteScale).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EmoteScale
+    name: EmoteScale
+    href: AuxLabs.Twitch.EmoteScale.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.EmoteScale
+    name: EmoteScale
+    href: AuxLabs.Twitch.EmoteScale.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.EmoteScale
+  commentId: T:AuxLabs.Twitch.EmoteScale
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EmoteScale.html
+  name: EmoteScale
+  nameWithType: EmoteScale
+  fullName: AuxLabs.Twitch.EmoteScale
+memberLayout: SeparatePages

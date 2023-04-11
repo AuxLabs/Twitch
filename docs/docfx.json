@@ -3,59 +3,39 @@
     {
       "src": [
         {
-          "src": "../src",
-          "files": ["**.csproj"]
+          "files":[ "**.csproj" ],
+          "exclude": [
+            "**/tests/**"
+          ],
+          "src": "../"
         }
       ],
       "dest": "api",
       "filter": "filter.yml",
       "includePrivateMembers": false,
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "namespaceLayout": "nested"
+      "namespaceLayout": "nested",
+      "memberLayout": "separatePages"
     }
   ],
   "build": {
     "content": [
       {
-        "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
-      },
-      {
-        "files": [
-          "guides/**.md",
-          "guides/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ]
+        "files": [ "**/*.{md,yml}" ],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
-      }
-    ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": [ "**/images/**", "codesnippet/**" ],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
     "dest": "_site",
     "template": [
       "default",
-      "_templates/material",
-      "_templates/memberpage"
+      "modern"
     ],
+    "postProcessors": [ "ExtractSearchIndex" ],
     "globalMetadata": {
       "_appTitle": "AuxLabs.Twitch Documentation",
       "_appFooter": "AuxLabs.Twitch",

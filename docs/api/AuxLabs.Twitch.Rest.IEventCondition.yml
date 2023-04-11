@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.IEventCondition
+  commentId: T:AuxLabs.Twitch.Rest.IEventCondition
+  id: IEventCondition
+  parent: AuxLabs.Twitch.Rest
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IEventCondition
+  nameWithType: IEventCondition
+  fullName: AuxLabs.Twitch.Rest.IEventCondition
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Contracts/IEventCondition.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IEventCondition
+    path: ../src/AuxLabs.Twitch.Rest.Api/Contracts/IEventCondition.cs
+    startLine: 2
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest
+  syntax:
+    content: public interface IEventCondition
+    content.vb: Public Interface IEventCondition
+references:
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+memberLayout: SeparatePages

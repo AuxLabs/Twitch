@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Api
+  commentId: N:AuxLabs.Twitch.Rest.Api
+  id: Api
+  parent: AuxLabs.Twitch.Rest
+  children:
+  - AuxLabs.Twitch.Rest.Api.ITwitchApi
+  - AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  - AuxLabs.Twitch.Rest.Api.RestError
+  - AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient
+  - AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions
+  - AuxLabs.Twitch.Rest.Api.TwitchRestApiClient
+  - AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig
+  langs:
+  - csharp
+  - vb
+  name: Api
+  nameWithType: AuxLabs.Twitch.Rest.Api
+  fullName: AuxLabs.Twitch.Rest.Api
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  name.csharp: AuxLabs.Twitch.Rest.Api
+  name.vb: AuxLabs.Twitch.Rest.Api
+references:
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi
+  commentId: T:AuxLabs.Twitch.Rest.Api.ITwitchApi
+  parent: AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.Twitch.Rest.Api.ITwitchApi.html
+  name: ITwitchApi
+  nameWithType: ITwitchApi
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  commentId: T:AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+  parent: AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi.html
+  name: ITwitchIdentityApi
+  nameWithType: ITwitchIdentityApi
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+- uid: AuxLabs.Twitch.Rest.Api.RestError
+  commentId: T:AuxLabs.Twitch.Rest.Api.RestError
+  href: AuxLabs.Twitch.Rest.Api.RestError.html
+  name: RestError
+  nameWithType: RestError
+  fullName: AuxLabs.Twitch.Rest.Api.RestError
+- uid: AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient
+  commentId: T:AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient
+  href: AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient.html
+  name: TwitchIdentityApiClient
+  nameWithType: TwitchIdentityApiClient
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient
+- uid: AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions
+  commentId: T:AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions
+  href: AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions.html
+  name: TwitchJsonSerializerOptions
+  nameWithType: TwitchJsonSerializerOptions
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient
+  commentId: T:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient
+  href: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.html
+  name: TwitchRestApiClient
+  nameWithType: TwitchRestApiClient
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig
+  commentId: T:AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig
+  parent: AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig.html
+  name: TwitchRestApiConfig
+  nameWithType: TwitchRestApiConfig
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig
+- uid: AuxLabs.Twitch.Rest.Api
+  commentId: N:AuxLabs.Twitch.Rest.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Api
+  nameWithType: AuxLabs.Twitch.Rest.Api
+  fullName: AuxLabs.Twitch.Rest.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Api
+    name: Api
+    href: AuxLabs.Twitch.Rest.Api.html
+memberLayout: SeparatePages

@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.AutomodAction
+  commentId: T:AuxLabs.Twitch.AutomodAction
+  id: AutomodAction
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.AutomodAction.Allow
+  - AuxLabs.Twitch.AutomodAction.Deny
+  langs:
+  - csharp
+  - vb
+  name: AutomodAction
+  nameWithType: AutomodAction
+  fullName: AuxLabs.Twitch.AutomodAction
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AutomodAction
+    path: ../src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum AutomodAction
+    content.vb: Public Enum AutomodAction
+  extensionMethods:
+  - AuxLabs.Twitch.AutomodAction.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.AutomodAction.Deny
+  commentId: F:AuxLabs.Twitch.AutomodAction.Deny
+  id: Deny
+  parent: AuxLabs.Twitch.AutomodAction
+  langs:
+  - csharp
+  - vb
+  name: Deny
+  nameWithType: AutomodAction.Deny
+  fullName: AuxLabs.Twitch.AutomodAction.Deny
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Deny
+    path: ../src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "DENY")]
+
+      Deny = 0
+    return:
+      type: AuxLabs.Twitch.AutomodAction
+    content.vb: >-
+      <EnumMember(Value:="DENY")>
+
+      Deny = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: DENY
+- uid: AuxLabs.Twitch.AutomodAction.Allow
+  commentId: F:AuxLabs.Twitch.AutomodAction.Allow
+  id: Allow
+  parent: AuxLabs.Twitch.AutomodAction
+  langs:
+  - csharp
+  - vb
+  name: Allow
+  nameWithType: AutomodAction.Allow
+  fullName: AuxLabs.Twitch.AutomodAction.Allow
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Allow
+    path: ../src/AuxLabs.Twitch.Core/Models/Moderation/AutomodAction.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "ALLOW")]
+
+      Allow = 1
+    return:
+      type: AuxLabs.Twitch.AutomodAction
+    content.vb: >-
+      <EnumMember(Value:="ALLOW")>
+
+      Allow = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ALLOW
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.AutomodAction.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AutomodAction).html
+  name: GetStringValue<AutomodAction>(AutomodAction)
+  nameWithType: EnumHelper.GetStringValue<AutomodAction>(AutomodAction)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.AutomodAction>(AuxLabs.Twitch.AutomodAction)
+  nameWithType.vb: EnumHelper.GetStringValue(Of AutomodAction)(AutomodAction)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.AutomodAction)(AuxLabs.Twitch.AutomodAction)
+  name.vb: GetStringValue(Of AutomodAction)(AutomodAction)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.AutomodAction)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AutomodAction).html
+  - name: <
+  - uid: AuxLabs.Twitch.AutomodAction
+    name: AutomodAction
+    href: AuxLabs.Twitch.AutomodAction.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.AutomodAction
+    name: AutomodAction
+    href: AuxLabs.Twitch.AutomodAction.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.AutomodAction)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AutomodAction).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.AutomodAction
+    name: AutomodAction
+    href: AuxLabs.Twitch.AutomodAction.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.AutomodAction
+    name: AutomodAction
+    href: AuxLabs.Twitch.AutomodAction.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.AutomodAction
+  commentId: T:AuxLabs.Twitch.AutomodAction
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AutomodAction.html
+  name: AutomodAction
+  nameWithType: AutomodAction
+  fullName: AuxLabs.Twitch.AutomodAction
+memberLayout: SeparatePages

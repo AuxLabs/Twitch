@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.IBan
+  commentId: T:AuxLabs.Twitch.EventSub.IBan
+  id: IBan
+  parent: AuxLabs.Twitch.EventSub
+  children:
+  - AuxLabs.Twitch.EventSub.IBan.Broadcaster
+  - AuxLabs.Twitch.EventSub.IBan.Moderator
+  - AuxLabs.Twitch.EventSub.IBan.User
+  langs:
+  - csharp
+  - vb
+  name: IBan
+  nameWithType: IBan
+  fullName: AuxLabs.Twitch.EventSub.IBan
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IBan
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+    startLine: 2
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public interface IBan
+    content.vb: Public Interface IBan
+- uid: AuxLabs.Twitch.EventSub.IBan.User
+  commentId: P:AuxLabs.Twitch.EventSub.IBan.User
+  id: User
+  parent: AuxLabs.Twitch.EventSub.IBan
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IBan.User
+  fullName: AuxLabs.Twitch.EventSub.IBan.User
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: User
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: ISimpleUser User { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.ISimpleUser
+    content.vb: ReadOnly Property User As ISimpleUser
+  overload: AuxLabs.Twitch.EventSub.IBan.User*
+- uid: AuxLabs.Twitch.EventSub.IBan.Broadcaster
+  commentId: P:AuxLabs.Twitch.EventSub.IBan.Broadcaster
+  id: Broadcaster
+  parent: AuxLabs.Twitch.EventSub.IBan
+  langs:
+  - csharp
+  - vb
+  name: Broadcaster
+  nameWithType: IBan.Broadcaster
+  fullName: AuxLabs.Twitch.EventSub.IBan.Broadcaster
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Broadcaster
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: ISimpleUser Broadcaster { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.ISimpleUser
+    content.vb: ReadOnly Property Broadcaster As ISimpleUser
+  overload: AuxLabs.Twitch.EventSub.IBan.Broadcaster*
+- uid: AuxLabs.Twitch.EventSub.IBan.Moderator
+  commentId: P:AuxLabs.Twitch.EventSub.IBan.Moderator
+  id: Moderator
+  parent: AuxLabs.Twitch.EventSub.IBan
+  langs:
+  - csharp
+  - vb
+  name: Moderator
+  nameWithType: IBan.Moderator
+  fullName: AuxLabs.Twitch.EventSub.IBan.Moderator
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Moderator
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Contracts/IBan.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: ISimpleUser Moderator { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.ISimpleUser
+    content.vb: ReadOnly Property Moderator As ISimpleUser
+  overload: AuxLabs.Twitch.EventSub.IBan.Moderator*
+references:
+- uid: AuxLabs.Twitch.EventSub
+  commentId: N:AuxLabs.Twitch.EventSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub
+  nameWithType: AuxLabs.Twitch.EventSub
+  fullName: AuxLabs.Twitch.EventSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+- uid: AuxLabs.Twitch.EventSub.IBan.User*
+  commentId: Overload:AuxLabs.Twitch.EventSub.IBan.User
+  href: AuxLabs.Twitch.EventSub.IBan.User.html
+  name: User
+  nameWithType: IBan.User
+  fullName: AuxLabs.Twitch.EventSub.IBan.User
+- uid: AuxLabs.Twitch.ISimpleUser
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ISimpleUser.html
+  name: ISimpleUser
+  nameWithType: ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.EventSub.IBan.Broadcaster*
+  commentId: Overload:AuxLabs.Twitch.EventSub.IBan.Broadcaster
+  href: AuxLabs.Twitch.EventSub.IBan.Broadcaster.html
+  name: Broadcaster
+  nameWithType: IBan.Broadcaster
+  fullName: AuxLabs.Twitch.EventSub.IBan.Broadcaster
+- uid: AuxLabs.Twitch.EventSub.IBan.Moderator*
+  commentId: Overload:AuxLabs.Twitch.EventSub.IBan.Moderator
+  href: AuxLabs.Twitch.EventSub.IBan.Moderator.html
+  name: Moderator
+  nameWithType: IBan.Moderator
+  fullName: AuxLabs.Twitch.EventSub.IBan.Moderator
+memberLayout: SeparatePages

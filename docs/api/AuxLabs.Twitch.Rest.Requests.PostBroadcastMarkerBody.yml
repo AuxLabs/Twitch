@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  id: PostBroadcastMarkerBody
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+  - AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+  - AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+  - AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  - AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  langs:
+  - csharp
+  - vb
+  name: PostBroadcastMarkerBody
+  nameWithType: PostBroadcastMarkerBody
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PostBroadcastMarkerBody
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: 'public class PostBroadcastMarkerBody : IAgentRequest, IScopedRequest'
+    content.vb: Public Class PostBroadcastMarkerBody Implements IAgentRequest, IScopedRequest
+  inheritance:
+  - System.Object
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+  id: Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: PostBroadcastMarkerBody.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Scopes
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The scopes required for this request.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string[] Scopes { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property Scopes As String()
+  overload: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+  id: UserId
+  parent: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: PostBroadcastMarkerBody.UserId
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The ID of the broadcaster that’s streaming content.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("user_id")]
+
+      public string UserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("user_id")>
+
+      Public Property UserId As String
+  overload: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: user_id
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+  id: Description
+  parent: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: PostBroadcastMarkerBody.Description
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Description
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 16
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: A short description of the marker to help the user remember why they marked the location.
+  remarks: The maximum length of the description is 140 characters.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("description")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("description")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property Description As String
+  overload: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<string>, string)
+  nameWithType: PostBroadcastMarkerBody.Validate(IEnumerable<string>, string)
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable<string>, string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public void Validate(IEnumerable<string> scopes, string authedUserId)
+    parameters:
+    - id: scopes
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: authedUserId
+      type: System.String
+    content.vb: Public Sub Validate(scopes As IEnumerable(Of String), authedUserId As String)
+  overload: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  nameWithType.vb: PostBroadcastMarkerBody.Validate(IEnumerable(Of String), String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: Validate(IEnumerable(Of String), String)
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  id: Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<string>)
+  nameWithType: PostBroadcastMarkerBody.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Broadcasts/PostBroadcastMarkerBody.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public void Validate(IEnumerable<string> scopes)
+    parameters:
+    - id: scopes
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub Validate(scopes As IEnumerable(Of String))
+  overload: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  nameWithType.vb: PostBroadcastMarkerBody.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  commentId: T:AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.html
+  name: IAgentRequest
+  nameWithType: IAgentRequest
+  fullName: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  commentId: T:AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.html
+  name: IScopedRequest
+  nameWithType: IScopedRequest
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+  href: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes.html
+  name: Scopes
+  nameWithType: PostBroadcastMarkerBody.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Scopes
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes.html
+  name: Scopes
+  nameWithType: IScopedRequest.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+  href: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId.html
+  name: UserId
+  nameWithType: PostBroadcastMarkerBody.UserId
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.UserId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+  href: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description.html
+  name: Description
+  nameWithType: PostBroadcastMarkerBody.Description
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Description
+- uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate
+  href: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  name: Validate
+  nameWithType: PostBroadcastMarkerBody.Validate
+  fullName: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody.Validate
+- uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  isExternal: true
+  href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  name: Validate(IEnumerable<string>, string)
+  nameWithType: IAgentRequest.Validate(IEnumerable<string>, string)
+  fullName: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable<string>, string)
+  nameWithType.vb: IAgentRequest.Validate(IEnumerable(Of String), String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: Validate(IEnumerable(Of String), String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  isExternal: true
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  name: Validate(IEnumerable<string>)
+  nameWithType: IScopedRequest.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable<string>)
+  nameWithType.vb: IScopedRequest.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+memberLayout: SeparatePages

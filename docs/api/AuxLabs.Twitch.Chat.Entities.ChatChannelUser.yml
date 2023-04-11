@@ -1,0 +1,1025 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  id: ChatChannelUser
+  parent: AuxLabs.Twitch.Chat.Entities
+  children:
+  - AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+  - AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+  - AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+  - AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+  langs:
+  - csharp
+  - vb
+  name: ChatChannelUser
+  nameWithType: ChatChannelUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChatChannelUser
+    path: ../src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat.Entities
+  summary: Data for a user specific to certain channels
+  example: []
+  syntax:
+    content: 'public class ChatChannelUser : ChatUser, IEquatable<ChatEntity<string>>, IChatUser, ISimpleUser, IPartialUser, IEntity<string>'
+    content.vb: Public Class ChatChannelUser Inherits ChatUser Implements IEquatable(Of ChatEntity(Of String)), IChatUser, ISimpleUser, IPartialUser, IEntity(Of String)
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  - AuxLabs.Twitch.Chat.Entities.ChatUser
+  derivedClasses:
+  - AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+  implements:
+  - System.IEquatable{AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}}
+  - AuxLabs.Twitch.IChatUser
+  - AuxLabs.Twitch.ISimpleUser
+  - AuxLabs.Twitch.IPartialUser
+  - AuxLabs.Twitch.IEntity{System.String}
+  inheritedMembers:
+  - AuxLabs.Twitch.Chat.Entities.ChatUser.UserType
+  - AuxLabs.Twitch.Chat.Entities.ChatUser.Badges
+  - AuxLabs.Twitch.Chat.Entities.ChatUser.BadgeInfo
+  - AuxLabs.Twitch.Chat.Entities.ChatUser.IsTurbo
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.DisplayName
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Name
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Color
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync
+  - AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync
+  - AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Id
+  - AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String})
+  - AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object)
+  - AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+  id: Channel
+  parent: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  langs:
+  - csharp
+  - vb
+  name: Channel
+  nameWithType: ChatChannelUser.Channel
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Channel
+    path: ../src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat.Entities
+  syntax:
+    content: public ChatSimpleChannel Channel { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+    content.vb: Public Property Channel As ChatSimpleChannel
+  overload: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel*
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+  id: IsModerator
+  parent: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  langs:
+  - csharp
+  - vb
+  name: IsModerator
+  nameWithType: ChatChannelUser.IsModerator
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsModerator
+    path: ../src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat.Entities
+  syntax:
+    content: public bool IsModerator { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsModerator As Boolean
+  overload: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator*
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+  id: IsSubscriber
+  parent: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  langs:
+  - csharp
+  - vb
+  name: IsSubscriber
+  nameWithType: ChatChannelUser.IsSubscriber
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsSubscriber
+    path: ../src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat.Entities
+  syntax:
+    content: public bool IsSubscriber { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSubscriber As Boolean
+  overload: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber*
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+  id: IsVIP
+  parent: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+  langs:
+  - csharp
+  - vb
+  name: IsVIP
+  nameWithType: ChatChannelUser.IsVIP
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsVIP
+    path: ../src/AuxLabs.Twitch.Chat/Entities/Users/ChatChannelUser.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Chat
+  namespace: AuxLabs.Twitch.Chat.Entities
+  syntax:
+    content: public bool? IsVIP { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsVIP As Boolean?
+  overload: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP*
+references:
+- uid: AuxLabs.Twitch.Chat.Entities
+  commentId: N:AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Entities
+  nameWithType: AuxLabs.Twitch.Chat.Entities
+  fullName: AuxLabs.Twitch.Chat.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Chat.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  parent: AuxLabs.Twitch.Chat.Entities
+  definition: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  name: ChatEntity<string>
+  nameWithType: ChatEntity<string>
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<string>
+  nameWithType.vb: ChatEntity(Of String)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String)
+  name.vb: ChatEntity(Of String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.html
+  name: ChatSimpleUser
+  nameWithType: ChatSimpleUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+- uid: AuxLabs.Twitch.Chat.Entities.ChatUser
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatUser
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatUser.html
+  name: ChatUser
+  nameWithType: ChatUser
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatUser
+- uid: System.IEquatable{AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}}
+  commentId: T:System.IEquatable{AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ChatEntity<string>>
+  nameWithType: IEquatable<ChatEntity<string>>
+  fullName: System.IEquatable<AuxLabs.Twitch.Chat.Entities.ChatEntity<string>>
+  nameWithType.vb: IEquatable(Of ChatEntity(Of String))
+  fullName.vb: System.IEquatable(Of AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String))
+  name.vb: IEquatable(Of ChatEntity(Of String))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: AuxLabs.Twitch.IChatUser
+  commentId: T:AuxLabs.Twitch.IChatUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IChatUser.html
+  name: IChatUser
+  nameWithType: IChatUser
+  fullName: AuxLabs.Twitch.IChatUser
+- uid: AuxLabs.Twitch.ISimpleUser
+  commentId: T:AuxLabs.Twitch.ISimpleUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.ISimpleUser.html
+  name: ISimpleUser
+  nameWithType: ISimpleUser
+  fullName: AuxLabs.Twitch.ISimpleUser
+- uid: AuxLabs.Twitch.IPartialUser
+  commentId: T:AuxLabs.Twitch.IPartialUser
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.IPartialUser.html
+  name: IPartialUser
+  nameWithType: IPartialUser
+  fullName: AuxLabs.Twitch.IPartialUser
+- uid: AuxLabs.Twitch.IEntity{System.String}
+  commentId: T:AuxLabs.Twitch.IEntity{System.String}
+  parent: AuxLabs.Twitch
+  definition: AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<string>
+  nameWithType: IEntity<string>
+  fullName: AuxLabs.Twitch.IEntity<string>
+  nameWithType.vb: IEntity(Of String)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of String)
+  name.vb: IEntity(Of String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatUser.UserType
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatUser.UserType
+  parent: AuxLabs.Twitch.Chat.Entities.ChatUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatUser.UserType.html
+  name: UserType
+  nameWithType: ChatUser.UserType
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatUser.UserType
+- uid: AuxLabs.Twitch.Chat.Entities.ChatUser.Badges
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatUser.Badges
+  parent: AuxLabs.Twitch.Chat.Entities.ChatUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatUser.Badges.html
+  name: Badges
+  nameWithType: ChatUser.Badges
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatUser.Badges
+- uid: AuxLabs.Twitch.Chat.Entities.ChatUser.BadgeInfo
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatUser.BadgeInfo
+  parent: AuxLabs.Twitch.Chat.Entities.ChatUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatUser.BadgeInfo.html
+  name: BadgeInfo
+  nameWithType: ChatUser.BadgeInfo
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatUser.BadgeInfo
+- uid: AuxLabs.Twitch.Chat.Entities.ChatUser.IsTurbo
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatUser.IsTurbo
+  parent: AuxLabs.Twitch.Chat.Entities.ChatUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatUser.IsTurbo.html
+  name: IsTurbo
+  nameWithType: ChatUser.IsTurbo
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatUser.IsTurbo
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.DisplayName
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.DisplayName
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.DisplayName.html
+  name: DisplayName
+  nameWithType: ChatSimpleUser.DisplayName
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.DisplayName
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Name
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Name
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Name.html
+  name: Name
+  nameWithType: ChatSimpleUser.Name
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Name
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Color
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Color
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Color.html
+  name: Color
+  nameWithType: ChatSimpleUser.Color
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.Color
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString.html
+  name: ToString()
+  nameWithType: ChatSimpleUser.ToString()
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
+    name: ToString
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString
+    name: ToString
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.ToString.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync.html
+  name: GetUserAsync()
+  nameWithType: ChatSimpleUser.GetUserAsync()
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync
+    name: GetUserAsync
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync
+    name: GetUserAsync
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetUserAsync.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync
+  parent: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync.html
+  name: GetChannelAsync()
+  nameWithType: ChatSimpleUser.GetChannelAsync()
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync
+    name: GetChannelAsync
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync
+    name: GetChannelAsync
+    href: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser.GetChannelAsync.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Id
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Id
+  parent: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  definition: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Id
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Id.html
+  name: Id
+  nameWithType: ChatEntity<string>.Id
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<string>.Id
+  nameWithType.vb: ChatEntity(Of String).Id
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String).Id
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String})
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String})
+  parent: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  definition: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{`0})
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}).html
+  name: Equals(ChatEntity<string>)
+  nameWithType: ChatEntity<string>.Equals(ChatEntity<string>)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<string>.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity<string>)
+  nameWithType.vb: ChatEntity(Of String).Equals(ChatEntity(Of String))
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String).Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String))
+  name.vb: Equals(ChatEntity(Of String))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String})
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}).html
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String})
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}).html
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object)
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object)
+  parent: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  definition: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(System.Object)
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object).html
+  name: Equals(object)
+  nameWithType: ChatEntity<string>.Equals(object)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<string>.Equals(object)
+  nameWithType.vb: ChatEntity(Of String).Equals(Object)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object)
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object).html
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object)
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.Equals(System.Object).html
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode
+  parent: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}
+  definition: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.GetHashCode
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode.html
+  name: GetHashCode()
+  nameWithType: ChatEntity<string>.GetHashCode()
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<string>.GetHashCode()
+  nameWithType.vb: ChatEntity(Of String).GetHashCode()
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of String).GetHashCode()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode
+    name: GetHashCode
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode
+    name: GetHashCode
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity{System.String}.GetHashCode.html
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  name: ChatEntity<T>
+  nameWithType: ChatEntity<T>
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<T>
+  nameWithType.vb: ChatEntity(Of T)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T)
+  name.vb: ChatEntity(Of T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.IEntity`1
+  commentId: T:AuxLabs.Twitch.IEntity`1
+  href: AuxLabs.Twitch.IEntity-1.html
+  name: IEntity<TId>
+  nameWithType: IEntity<TId>
+  fullName: AuxLabs.Twitch.IEntity<TId>
+  nameWithType.vb: IEntity(Of TId)
+  fullName.vb: AuxLabs.Twitch.IEntity(Of TId)
+  name.vb: IEntity(Of TId)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity
+    href: AuxLabs.Twitch.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Id
+  commentId: P:AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Id
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Id.html
+  name: Id
+  nameWithType: ChatEntity<T>.Id
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<T>.Id
+  nameWithType.vb: ChatEntity(Of T).Id
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T).Id
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{`0})
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{`0})
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{-0}).html
+  name: Equals(ChatEntity<T>)
+  nameWithType: ChatEntity<T>.Equals(ChatEntity<T>)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<T>.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity<T>)
+  nameWithType.vb: ChatEntity(Of T).Equals(ChatEntity(Of T))
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T).Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T))
+  name.vb: Equals(ChatEntity(Of T))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{`0})
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{-0}).html
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{`0})
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(AuxLabs.Twitch.Chat.Entities.ChatEntity{-0}).html
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+    name: ChatEntity
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(System.Object)
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(System.Object)
+  isExternal: true
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(System.Object).html
+  name: Equals(object)
+  nameWithType: ChatEntity<T>.Equals(object)
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<T>.Equals(object)
+  nameWithType.vb: ChatEntity(Of T).Equals(Object)
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(System.Object)
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(System.Object).html
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.Equals(System.Object)
+    name: Equals
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.Equals(System.Object).html
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.GetHashCode
+  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatEntity`1.GetHashCode
+  href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.GetHashCode.html
+  name: GetHashCode()
+  nameWithType: ChatEntity<T>.GetHashCode()
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatEntity<T>.GetHashCode()
+  nameWithType.vb: ChatEntity(Of T).GetHashCode()
+  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatEntity(Of T).GetHashCode()
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.GetHashCode
+    name: GetHashCode
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.GetHashCode.html
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1.GetHashCode
+    name: GetHashCode
+    href: AuxLabs.Twitch.Chat.Entities.ChatEntity-1.GetHashCode.html
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel*
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+  href: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel.html
+  name: Channel
+  nameWithType: ChatChannelUser.Channel
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.Channel
+- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+  commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+  parent: AuxLabs.Twitch.Chat.Entities
+  href: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html
+  name: ChatSimpleChannel
+  nameWithType: ChatSimpleChannel
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator*
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+  href: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator.html
+  name: IsModerator
+  nameWithType: ChatChannelUser.IsModerator
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsModerator
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber*
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+  href: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber.html
+  name: IsSubscriber
+  nameWithType: ChatChannelUser.IsSubscriber
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsSubscriber
+- uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP*
+  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+  href: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP.html
+  name: IsVIP
+  nameWithType: ChatChannelUser.IsVIP
+  fullName: AuxLabs.Twitch.Chat.Entities.ChatChannelUser.IsVIP
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+memberLayout: SeparatePages

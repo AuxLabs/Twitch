@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  commentId: T:AuxLabs.Twitch.Chat.Api.IrcTokenType
+  id: IrcTokenType
+  parent: AuxLabs.Twitch.Chat.Api
+  children:
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.ChannelIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.CommandEnd
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.None
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.ParameterIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixEnd
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixHostIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixUsernameIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.Remainder
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.ServerIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEnd
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEscapedSpace
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.TagIndicator
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueEnd
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueSeparator
+  langs:
+  - csharp
+  - vb
+  name: IrcTokenType
+  nameWithType: IrcTokenType
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IrcTokenType
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 2
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: public enum IrcTokenType
+    content.vb: Public Enum IrcTokenType
+  extensionMethods:
+  - AuxLabs.Twitch.Chat.Api.IrcTokenType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.None
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.None
+  id: None
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: IrcTokenType.None
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.None
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: None
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: None = 0
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.TagIndicator
+  id: TagIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: TagIndicator
+  nameWithType: IrcTokenType.TagIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: TagIndicator = 1
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueSeparator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueSeparator
+  id: TagKeyValueSeparator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: TagKeyValueSeparator
+  nameWithType: IrcTokenType.TagKeyValueSeparator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueSeparator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagKeyValueSeparator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: TagKeyValueSeparator = 2
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueEnd
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueEnd
+  id: TagKeyValueEnd
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: TagKeyValueEnd
+  nameWithType: IrcTokenType.TagKeyValueEnd
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagKeyValueEnd
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagKeyValueEnd
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: TagKeyValueEnd = 3
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEscapedSpace
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEscapedSpace
+  id: TagEscapedSpace
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: TagEscapedSpace
+  nameWithType: IrcTokenType.TagEscapedSpace
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEscapedSpace
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagEscapedSpace
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: TagEscapedSpace = 4
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEnd
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEnd
+  id: TagEnd
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: TagEnd
+  nameWithType: IrcTokenType.TagEnd
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.TagEnd
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TagEnd
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: TagEnd = 5
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixIndicator
+  id: PrefixIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: PrefixIndicator
+  nameWithType: IrcTokenType.PrefixIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PrefixIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: PrefixIndicator = 6
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixUsernameIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixUsernameIndicator
+  id: PrefixUsernameIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: PrefixUsernameIndicator
+  nameWithType: IrcTokenType.PrefixUsernameIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixUsernameIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PrefixUsernameIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: PrefixUsernameIndicator = 7
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixHostIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixHostIndicator
+  id: PrefixHostIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: PrefixHostIndicator
+  nameWithType: IrcTokenType.PrefixHostIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixHostIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PrefixHostIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: PrefixHostIndicator = 8
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixEnd
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixEnd
+  id: PrefixEnd
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: PrefixEnd
+  nameWithType: IrcTokenType.PrefixEnd
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.PrefixEnd
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PrefixEnd
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: PrefixEnd = 9
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.CommandEnd
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.CommandEnd
+  id: CommandEnd
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: CommandEnd
+  nameWithType: IrcTokenType.CommandEnd
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.CommandEnd
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CommandEnd
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: CommandEnd = 10
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.ServerIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.ServerIndicator
+  id: ServerIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: ServerIndicator
+  nameWithType: IrcTokenType.ServerIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.ServerIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ServerIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: ServerIndicator = 11
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.ChannelIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.ChannelIndicator
+  id: ChannelIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: ChannelIndicator
+  nameWithType: IrcTokenType.ChannelIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.ChannelIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: ChannelIndicator = 12
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.ParameterIndicator
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.ParameterIndicator
+  id: ParameterIndicator
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: ParameterIndicator
+  nameWithType: IrcTokenType.ParameterIndicator
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.ParameterIndicator
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ParameterIndicator
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: ParameterIndicator = 13
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.Remainder
+  commentId: F:AuxLabs.Twitch.Chat.Api.IrcTokenType.Remainder
+  id: Remainder
+  parent: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  langs:
+  - csharp
+  - vb
+  name: Remainder
+  nameWithType: IrcTokenType.Remainder
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType.Remainder
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Remainder
+    path: ../src/AuxLabs.Twitch.Chat.Api/Serialization/IrcTokenType.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat.Api
+  syntax:
+    content: Remainder = 14
+    return:
+      type: AuxLabs.Twitch.Chat.Api.IrcTokenType
+references:
+- uid: AuxLabs.Twitch.Chat.Api
+  commentId: N:AuxLabs.Twitch.Chat.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat.Api
+  nameWithType: AuxLabs.Twitch.Chat.Api
+  fullName: AuxLabs.Twitch.Chat.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat.Api
+    name: Api
+    href: AuxLabs.Twitch.Chat.Api.html
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.Api.IrcTokenType).html
+  name: GetStringValue<IrcTokenType>(IrcTokenType)
+  nameWithType: EnumHelper.GetStringValue<IrcTokenType>(IrcTokenType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.Chat.Api.IrcTokenType>(AuxLabs.Twitch.Chat.Api.IrcTokenType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of IrcTokenType)(IrcTokenType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.Chat.Api.IrcTokenType)(AuxLabs.Twitch.Chat.Api.IrcTokenType)
+  name.vb: GetStringValue(Of IrcTokenType)(IrcTokenType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.Api.IrcTokenType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.Api.IrcTokenType).html
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+    name: IrcTokenType
+    href: AuxLabs.Twitch.Chat.Api.IrcTokenType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+    name: IrcTokenType
+    href: AuxLabs.Twitch.Chat.Api.IrcTokenType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.Api.IrcTokenType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.Api.IrcTokenType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+    name: IrcTokenType
+    href: AuxLabs.Twitch.Chat.Api.IrcTokenType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+    name: IrcTokenType
+    href: AuxLabs.Twitch.Chat.Api.IrcTokenType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+  commentId: T:AuxLabs.Twitch.Chat.Api.IrcTokenType
+  parent: AuxLabs.Twitch.Chat.Api
+  href: AuxLabs.Twitch.Chat.Api.IrcTokenType.html
+  name: IrcTokenType
+  nameWithType: IrcTokenType
+  fullName: AuxLabs.Twitch.Chat.Api.IrcTokenType
+memberLayout: SeparatePages

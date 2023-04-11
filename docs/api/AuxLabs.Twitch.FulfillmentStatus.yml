@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.FulfillmentStatus
+  commentId: T:AuxLabs.Twitch.FulfillmentStatus
+  id: FulfillmentStatus
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.FulfillmentStatus.Claimed
+  - AuxLabs.Twitch.FulfillmentStatus.Fulfilled
+  langs:
+  - csharp
+  - vb
+  name: FulfillmentStatus
+  nameWithType: FulfillmentStatus
+  fullName: AuxLabs.Twitch.FulfillmentStatus
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: FulfillmentStatus
+    path: ../src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum FulfillmentStatus
+    content.vb: Public Enum FulfillmentStatus
+  extensionMethods:
+  - AuxLabs.Twitch.FulfillmentStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.FulfillmentStatus.Claimed
+  commentId: F:AuxLabs.Twitch.FulfillmentStatus.Claimed
+  id: Claimed
+  parent: AuxLabs.Twitch.FulfillmentStatus
+  langs:
+  - csharp
+  - vb
+  name: Claimed
+  nameWithType: FulfillmentStatus.Claimed
+  fullName: AuxLabs.Twitch.FulfillmentStatus.Claimed
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Claimed
+    path: ../src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "CLAIMED")]
+
+      Claimed = 0
+    return:
+      type: AuxLabs.Twitch.FulfillmentStatus
+    content.vb: >-
+      <EnumMember(Value:="CLAIMED")>
+
+      Claimed = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CLAIMED
+- uid: AuxLabs.Twitch.FulfillmentStatus.Fulfilled
+  commentId: F:AuxLabs.Twitch.FulfillmentStatus.Fulfilled
+  id: Fulfilled
+  parent: AuxLabs.Twitch.FulfillmentStatus
+  langs:
+  - csharp
+  - vb
+  name: Fulfilled
+  nameWithType: FulfillmentStatus.Fulfilled
+  fullName: AuxLabs.Twitch.FulfillmentStatus.Fulfilled
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Fulfilled
+    path: ../src/AuxLabs.Twitch.Core/Models/FulfillmentStatus.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "FULFILLED")]
+
+      Fulfilled = 1
+    return:
+      type: AuxLabs.Twitch.FulfillmentStatus
+    content.vb: >-
+      <EnumMember(Value:="FULFILLED")>
+
+      Fulfilled = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: FULFILLED
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.FulfillmentStatus.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.FulfillmentStatus).html
+  name: GetStringValue<FulfillmentStatus>(FulfillmentStatus)
+  nameWithType: EnumHelper.GetStringValue<FulfillmentStatus>(FulfillmentStatus)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.FulfillmentStatus>(AuxLabs.Twitch.FulfillmentStatus)
+  nameWithType.vb: EnumHelper.GetStringValue(Of FulfillmentStatus)(FulfillmentStatus)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.FulfillmentStatus)(AuxLabs.Twitch.FulfillmentStatus)
+  name.vb: GetStringValue(Of FulfillmentStatus)(FulfillmentStatus)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.FulfillmentStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.FulfillmentStatus).html
+  - name: <
+  - uid: AuxLabs.Twitch.FulfillmentStatus
+    name: FulfillmentStatus
+    href: AuxLabs.Twitch.FulfillmentStatus.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.FulfillmentStatus
+    name: FulfillmentStatus
+    href: AuxLabs.Twitch.FulfillmentStatus.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.FulfillmentStatus)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.FulfillmentStatus).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.FulfillmentStatus
+    name: FulfillmentStatus
+    href: AuxLabs.Twitch.FulfillmentStatus.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.FulfillmentStatus
+    name: FulfillmentStatus
+    href: AuxLabs.Twitch.FulfillmentStatus.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.FulfillmentStatus
+  commentId: T:AuxLabs.Twitch.FulfillmentStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.FulfillmentStatus.html
+  name: FulfillmentStatus
+  nameWithType: FulfillmentStatus
+  fullName: AuxLabs.Twitch.FulfillmentStatus
+memberLayout: SeparatePages

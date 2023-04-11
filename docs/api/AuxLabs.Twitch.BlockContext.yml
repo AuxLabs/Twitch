@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.BlockContext
+  commentId: T:AuxLabs.Twitch.BlockContext
+  id: BlockContext
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.BlockContext.Chat
+  - AuxLabs.Twitch.BlockContext.Whisper
+  langs:
+  - csharp
+  - vb
+  name: BlockContext
+  nameWithType: BlockContext
+  fullName: AuxLabs.Twitch.BlockContext
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BlockContext
+    path: ../src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum BlockContext
+    content.vb: Public Enum BlockContext
+  extensionMethods:
+  - AuxLabs.Twitch.BlockContext.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.BlockContext.Chat
+  commentId: F:AuxLabs.Twitch.BlockContext.Chat
+  id: Chat
+  parent: AuxLabs.Twitch.BlockContext
+  langs:
+  - csharp
+  - vb
+  name: Chat
+  nameWithType: BlockContext.Chat
+  fullName: AuxLabs.Twitch.BlockContext.Chat
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Chat
+    path: ../src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "chat")]
+
+      Chat = 0
+    return:
+      type: AuxLabs.Twitch.BlockContext
+    content.vb: >-
+      <EnumMember(Value:="chat")>
+
+      Chat = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: chat
+- uid: AuxLabs.Twitch.BlockContext.Whisper
+  commentId: F:AuxLabs.Twitch.BlockContext.Whisper
+  id: Whisper
+  parent: AuxLabs.Twitch.BlockContext
+  langs:
+  - csharp
+  - vb
+  name: Whisper
+  nameWithType: BlockContext.Whisper
+  fullName: AuxLabs.Twitch.BlockContext.Whisper
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Whisper
+    path: ../src/AuxLabs.Twitch.Core/Models/Users/BlockContext.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "whisper")]
+
+      Whisper = 1
+    return:
+      type: AuxLabs.Twitch.BlockContext
+    content.vb: >-
+      <EnumMember(Value:="whisper")>
+
+      Whisper = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: whisper
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.BlockContext.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.BlockContext).html
+  name: GetStringValue<BlockContext>(BlockContext)
+  nameWithType: EnumHelper.GetStringValue<BlockContext>(BlockContext)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.BlockContext>(AuxLabs.Twitch.BlockContext)
+  nameWithType.vb: EnumHelper.GetStringValue(Of BlockContext)(BlockContext)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.BlockContext)(AuxLabs.Twitch.BlockContext)
+  name.vb: GetStringValue(Of BlockContext)(BlockContext)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.BlockContext)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.BlockContext).html
+  - name: <
+  - uid: AuxLabs.Twitch.BlockContext
+    name: BlockContext
+    href: AuxLabs.Twitch.BlockContext.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.BlockContext
+    name: BlockContext
+    href: AuxLabs.Twitch.BlockContext.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.BlockContext)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.BlockContext).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.BlockContext
+    name: BlockContext
+    href: AuxLabs.Twitch.BlockContext.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.BlockContext
+    name: BlockContext
+    href: AuxLabs.Twitch.BlockContext.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.BlockContext
+  commentId: T:AuxLabs.Twitch.BlockContext
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.BlockContext.html
+  name: BlockContext
+  nameWithType: BlockContext
+  fullName: AuxLabs.Twitch.BlockContext
+memberLayout: SeparatePages

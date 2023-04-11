@@ -1,0 +1,1335 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.Poll
+  commentId: T:AuxLabs.Twitch.Rest.Models.Poll
+  id: Poll
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+  - AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+  - AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+  - AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+  - AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+  - AuxLabs.Twitch.Rest.Models.Poll.Choices
+  - AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+  - AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+  - AuxLabs.Twitch.Rest.Models.Poll.Id
+  - AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+  - AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+  - AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+  - AuxLabs.Twitch.Rest.Models.Poll.Status
+  - AuxLabs.Twitch.Rest.Models.Poll.Title
+  langs:
+  - csharp
+  - vb
+  name: Poll
+  nameWithType: Poll
+  fullName: AuxLabs.Twitch.Rest.Models.Poll
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Poll
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public class Poll
+    content.vb: Public Class Poll
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.Id
+  id: Id
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Poll.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("id")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("id")>
+
+      Public Property Id As String
+  overload: AuxLabs.Twitch.Rest.Models.Poll.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: Poll.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the broadcaster that created the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_id")]
+
+      public string BroadcasterId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_id
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: Poll.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_login")]
+
+      public string BroadcasterName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_login")>
+
+      Public Property BroadcasterName As String
+  overload: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_login
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: Poll.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s login name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_name")]
+
+      public string BroadcasterDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_name")>
+
+      Public Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_name
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Title
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.Title
+  id: Title
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Poll.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The question that viewers are voting on.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("title")]
+
+      public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.Rest.Models.Poll.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Choices
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.Choices
+  id: Choices
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: Poll.Choices
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Choices
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Choices
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A list of choices that viewers can choose from.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("choices")]
+
+      public IReadOnlyCollection<PollOption> Choices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("choices")>
+
+      Public Property Choices As IReadOnlyCollection(Of PollOption)
+  overload: AuxLabs.Twitch.Rest.Models.Poll.Choices*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: choices
+- uid: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+  id: IsBitsVotingEnabled
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: IsBitsVotingEnabled
+  nameWithType: Poll.IsBitsVotingEnabled
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsBitsVotingEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: Not used; will be set to false.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("bits_voting_enabled")]
+
+      public bool IsBitsVotingEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("bits_voting_enabled")>
+
+      Public Property IsBitsVotingEnabled As Boolean
+  overload: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bits_voting_enabled
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+  id: BitsPerVote
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: BitsPerVote
+  nameWithType: Poll.BitsPerVote
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsPerVote
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: Not used; will be set to 0.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("bits_per_vote")]
+
+      public int BitsPerVote { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("bits_per_vote")>
+
+      Public Property BitsPerVote As Integer
+  overload: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bits_per_vote
+- uid: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+  id: IsChannelPointsVotingEnabled
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: IsChannelPointsVotingEnabled
+  nameWithType: Poll.IsChannelPointsVotingEnabled
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsChannelPointsVotingEnabled
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 41
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: Indicates whether viewers may cast additional votes using Channel Points.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("channel_points_voting_enabled")]
+
+      public bool IsChannelPointsVotingEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("channel_points_voting_enabled")>
+
+      Public Property IsChannelPointsVotingEnabled As Boolean
+  overload: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: channel_points_voting_enabled
+- uid: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+  id: ChannelPointsPerVote
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: ChannelPointsPerVote
+  nameWithType: Poll.ChannelPointsPerVote
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelPointsPerVote
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 45
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The number of points the viewer must spend to cast one additional vote.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("channel_points_per_vote")]
+
+      public int ChannelPointsPerVote { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("channel_points_per_vote")>
+
+      Public Property ChannelPointsPerVote As Integer
+  overload: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: channel_points_per_vote
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Status
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.Status
+  id: Status
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: Poll.Status
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Status
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Status
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 49
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The poll’s status.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("status")]
+
+      public PollStatus Status { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.PollStatus
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("status")>
+
+      Public Property Status As PollStatus
+  overload: AuxLabs.Twitch.Rest.Models.Poll.Status*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: status
+- uid: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+  id: DurationSeconds
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: Poll.DurationSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DurationSeconds
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 53
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The length of time that the poll will run for.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("duration")]
+
+      public int DurationSeconds { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("duration")>
+
+      Public Property DurationSeconds As Integer
+  overload: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: duration
+- uid: AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+  id: StartedAt
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: StartedAt
+  nameWithType: Poll.StartedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: StartedAt
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 57
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The UTC date and time of when the poll began.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("started_at")]
+
+      public DateTime StartedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("started_at")>
+
+      Public Property StartedAt As Date
+  overload: AuxLabs.Twitch.Rest.Models.Poll.StartedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: started_at
+- uid: AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+  commentId: P:AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+  id: EndedAt
+  parent: AuxLabs.Twitch.Rest.Models.Poll
+  langs:
+  - csharp
+  - vb
+  name: EndedAt
+  nameWithType: Poll.EndedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EndedAt
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Polls/Poll.cs
+    startLine: 61
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The UTC date and time of when the poll ended.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("ended_at")]
+
+      public DateTime? EndedAt { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("ended_at")>
+
+      Public Property EndedAt As Date?
+  overload: AuxLabs.Twitch.Rest.Models.Poll.EndedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ended_at
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Id*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.Id
+  href: AuxLabs.Twitch.Rest.Models.Poll.Id.html
+  name: Id
+  nameWithType: Poll.Id
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+  href: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: Poll.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+  href: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: Poll.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterName
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+  href: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: Poll.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Title*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.Title
+  href: AuxLabs.Twitch.Rest.Models.Poll.Title.html
+  name: Title
+  nameWithType: Poll.Title
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Title
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Choices*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.Choices
+  href: AuxLabs.Twitch.Rest.Models.Poll.Choices.html
+  name: Choices
+  nameWithType: Poll.Choices
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Choices
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<PollOption>
+  nameWithType: IReadOnlyCollection<PollOption>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Rest.Models.PollOption>
+  nameWithType.vb: IReadOnlyCollection(Of PollOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Rest.Models.PollOption)
+  name.vb: IReadOnlyCollection(Of PollOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.PollOption
+    name: PollOption
+    href: AuxLabs.Twitch.Rest.Models.PollOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.PollOption
+    name: PollOption
+    href: AuxLabs.Twitch.Rest.Models.PollOption.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+  href: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled.html
+  name: IsBitsVotingEnabled
+  nameWithType: Poll.IsBitsVotingEnabled
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.IsBitsVotingEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+  href: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote.html
+  name: BitsPerVote
+  nameWithType: Poll.BitsPerVote
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.BitsPerVote
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+  href: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled.html
+  name: IsChannelPointsVotingEnabled
+  nameWithType: Poll.IsChannelPointsVotingEnabled
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.IsChannelPointsVotingEnabled
+- uid: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+  href: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote.html
+  name: ChannelPointsPerVote
+  nameWithType: Poll.ChannelPointsPerVote
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.ChannelPointsPerVote
+- uid: AuxLabs.Twitch.Rest.Models.Poll.Status*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.Status
+  href: AuxLabs.Twitch.Rest.Models.Poll.Status.html
+  name: Status
+  nameWithType: Poll.Status
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.Status
+- uid: AuxLabs.Twitch.PollStatus
+  commentId: T:AuxLabs.Twitch.PollStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PollStatus.html
+  name: PollStatus
+  nameWithType: PollStatus
+  fullName: AuxLabs.Twitch.PollStatus
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+  href: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds.html
+  name: DurationSeconds
+  nameWithType: Poll.DurationSeconds
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.DurationSeconds
+- uid: AuxLabs.Twitch.Rest.Models.Poll.StartedAt*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+  href: AuxLabs.Twitch.Rest.Models.Poll.StartedAt.html
+  name: StartedAt
+  nameWithType: Poll.StartedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.StartedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: AuxLabs.Twitch.Rest.Models.Poll.EndedAt*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+  href: AuxLabs.Twitch.Rest.Models.Poll.EndedAt.html
+  name: EndedAt
+  nameWithType: Poll.EndedAt
+  fullName: AuxLabs.Twitch.Rest.Models.Poll.EndedAt
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+memberLayout: SeparatePages

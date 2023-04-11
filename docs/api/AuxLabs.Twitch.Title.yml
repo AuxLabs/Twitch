@@ -1,0 +1,512 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Title
+  commentId: T:AuxLabs.Twitch.Title
+  id: Title
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.Title.#ctor(System.String)
+  - AuxLabs.Twitch.Title.op_Implicit(AuxLabs.Twitch.Title)~System.String
+  - AuxLabs.Twitch.Title.op_Implicit(System.String)~AuxLabs.Twitch.Title
+  - AuxLabs.Twitch.Title.ToString
+  - AuxLabs.Twitch.Title.Value
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Title
+  fullName: AuxLabs.Twitch.Title
+  type: Struct
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public readonly struct Title
+    content.vb: Public Structure Title
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AuxLabs.Twitch.Title.Value
+  commentId: P:AuxLabs.Twitch.Title.Value
+  id: Value
+  parent: AuxLabs.Twitch.Title
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Title.Value
+  fullName: AuxLabs.Twitch.Title.Value
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Value
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [JsonPropertyName("title")]
+
+      public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("title")>
+
+      Public ReadOnly Property Value As String
+  overload: AuxLabs.Twitch.Title.Value*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.Title.#ctor(System.String)
+  commentId: M:AuxLabs.Twitch.Title.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: AuxLabs.Twitch.Title
+  langs:
+  - csharp
+  - vb
+  name: Title(string)
+  nameWithType: Title.Title(string)
+  fullName: AuxLabs.Twitch.Title.Title(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public Title(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New(value As String)
+  overload: AuxLabs.Twitch.Title.#ctor*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConstructorAttribute
+    ctor: System.Text.Json.Serialization.JsonConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: Title.New(String)
+  fullName.vb: AuxLabs.Twitch.Title.New(String)
+  name.vb: New(String)
+- uid: AuxLabs.Twitch.Title.ToString
+  commentId: M:AuxLabs.Twitch.Title.ToString
+  id: ToString
+  parent: AuxLabs.Twitch.Title
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Title.ToString()
+  fullName: AuxLabs.Twitch.Title.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ToString
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 16
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: AuxLabs.Twitch.Title.ToString*
+- uid: AuxLabs.Twitch.Title.op_Implicit(AuxLabs.Twitch.Title)~System.String
+  commentId: M:AuxLabs.Twitch.Title.op_Implicit(AuxLabs.Twitch.Title)~System.String
+  id: op_Implicit(AuxLabs.Twitch.Title)~System.String
+  parent: AuxLabs.Twitch.Title
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(Title)
+  nameWithType: Title.implicit operator string(Title)
+  fullName: AuxLabs.Twitch.Title.implicit operator string(AuxLabs.Twitch.Title)
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public static implicit operator string(Title value)
+    parameters:
+    - id: value
+      type: AuxLabs.Twitch.Title
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(value As Title) As String
+  overload: AuxLabs.Twitch.Title.op_Implicit*
+  nameWithType.vb: Title.CType(Title)
+  fullName.vb: AuxLabs.Twitch.Title.CType(AuxLabs.Twitch.Title)
+  name.vb: CType(Title)
+- uid: AuxLabs.Twitch.Title.op_Implicit(System.String)~AuxLabs.Twitch.Title
+  commentId: M:AuxLabs.Twitch.Title.op_Implicit(System.String)~AuxLabs.Twitch.Title
+  id: op_Implicit(System.String)~AuxLabs.Twitch.Title
+  parent: AuxLabs.Twitch.Title
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Title(string)
+  nameWithType: Title.implicit operator Title(string)
+  fullName: AuxLabs.Twitch.Title.implicit operator AuxLabs.Twitch.Title(string)
+  type: Operator
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Title.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: op_Implicit
+    path: ../src/AuxLabs.Twitch.Core/Models/Title.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public static implicit operator Title(string v)
+    parameters:
+    - id: v
+      type: System.String
+    return:
+      type: AuxLabs.Twitch.Title
+    content.vb: Public Shared Widening Operator CType(v As String) As Title
+  overload: AuxLabs.Twitch.Title.op_Implicit*
+  nameWithType.vb: Title.CType(String)
+  fullName.vb: AuxLabs.Twitch.Title.CType(String)
+  name.vb: CType(String)
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Title.Value*
+  commentId: Overload:AuxLabs.Twitch.Title.Value
+  href: AuxLabs.Twitch.Title.Value.html
+  name: Value
+  nameWithType: Title.Value
+  fullName: AuxLabs.Twitch.Title.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Title.#ctor*
+  commentId: Overload:AuxLabs.Twitch.Title.#ctor
+  href: AuxLabs.Twitch.Title.#ctor(System.String).html
+  name: Title
+  nameWithType: Title.Title
+  fullName: AuxLabs.Twitch.Title.Title
+  nameWithType.vb: Title.New
+  fullName.vb: AuxLabs.Twitch.Title.New
+  name.vb: New
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Title.ToString*
+  commentId: Overload:AuxLabs.Twitch.Title.ToString
+  href: AuxLabs.Twitch.Title.ToString.html
+  name: ToString
+  nameWithType: Title.ToString
+  fullName: AuxLabs.Twitch.Title.ToString
+- uid: AuxLabs.Twitch.Title.op_Implicit*
+  commentId: Overload:AuxLabs.Twitch.Title.op_Implicit
+  name: implicit operator
+  nameWithType: Title.implicit operator
+  fullName: AuxLabs.Twitch.Title.implicit operator
+  nameWithType.vb: Title.CType
+  fullName.vb: AuxLabs.Twitch.Title.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: AuxLabs.Twitch.Title
+  commentId: T:AuxLabs.Twitch.Title
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.Title.html
+  name: Title
+  nameWithType: Title
+  fullName: AuxLabs.Twitch.Title
+memberLayout: SeparatePages

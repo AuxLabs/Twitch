@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload
+  commentId: T:AuxLabs.Twitch.PubSub.PubSubPayload
+  id: PubSubPayload
+  parent: AuxLabs.Twitch.PubSub
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PubSubPayload
+  nameWithType: PubSubPayload
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PubSubPayload
+    path: ../src/AuxLabs.Twitch.PubSub.Api/PubSubPayload.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.PubSub.Api
+  namespace: AuxLabs.Twitch.PubSub
+  syntax:
+    content: 'public class PubSubPayload : PubSubPayload<PubSubResponse>, IPayload'
+    content.vb: Public Class PubSubPayload Inherits PubSubPayload(Of PubSubResponse) Implements IPayload
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  implements:
+  - AuxLabs.Twitch.WebSockets.IPayload
+  inheritedMembers:
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.IsHelloEvent
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Type
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Nonce
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Error
+  - AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Data
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+references:
+- uid: AuxLabs.Twitch.PubSub
+  commentId: N:AuxLabs.Twitch.PubSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.PubSub
+  nameWithType: AuxLabs.Twitch.PubSub
+  fullName: AuxLabs.Twitch.PubSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    href: AuxLabs.Twitch.PubSub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  commentId: T:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  parent: AuxLabs.Twitch.PubSub
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  name: PubSubPayload<PubSubResponse>
+  nameWithType: PubSubPayload<PubSubResponse>
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>
+  nameWithType.vb: PubSubPayload(Of PubSubResponse)
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse)
+  name.vb: PubSubPayload(Of PubSubResponse)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+    name: PubSubPayload
+    href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  - name: <
+  - uid: AuxLabs.Twitch.PubSub.PubSubResponse
+    name: PubSubResponse
+    href: AuxLabs.Twitch.PubSub.PubSubResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+    name: PubSubPayload
+    href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.PubSub.PubSubResponse
+    name: PubSubResponse
+    href: AuxLabs.Twitch.PubSub.PubSubResponse.html
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets.IPayload
+  commentId: T:AuxLabs.Twitch.WebSockets.IPayload
+  parent: AuxLabs.Twitch.WebSockets
+  href: AuxLabs.Twitch.WebSockets.IPayload.html
+  name: IPayload
+  nameWithType: IPayload
+  fullName: AuxLabs.Twitch.WebSockets.IPayload
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.IsHelloEvent
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.IsHelloEvent
+  parent: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1.IsHelloEvent
+  href: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.IsHelloEvent.html
+  name: IsHelloEvent
+  nameWithType: PubSubPayload<PubSubResponse>.IsHelloEvent
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>.IsHelloEvent
+  nameWithType.vb: PubSubPayload(Of PubSubResponse).IsHelloEvent
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse).IsHelloEvent
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Type
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Type
+  parent: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1.Type
+  href: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Type.html
+  name: Type
+  nameWithType: PubSubPayload<PubSubResponse>.Type
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>.Type
+  nameWithType.vb: PubSubPayload(Of PubSubResponse).Type
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse).Type
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Nonce
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Nonce
+  parent: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1.Nonce
+  href: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Nonce.html
+  name: Nonce
+  nameWithType: PubSubPayload<PubSubResponse>.Nonce
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>.Nonce
+  nameWithType.vb: PubSubPayload(Of PubSubResponse).Nonce
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse).Nonce
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Error
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Error
+  parent: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1.Error
+  href: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Error.html
+  name: Error
+  nameWithType: PubSubPayload<PubSubResponse>.Error
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>.Error
+  nameWithType.vb: PubSubPayload(Of PubSubResponse).Error
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse).Error
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Data
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Data
+  parent: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}
+  definition: AuxLabs.Twitch.PubSub.PubSubPayload`1.Data
+  href: AuxLabs.Twitch.PubSub.PubSubPayload{AuxLabs.Twitch.PubSub.PubSubResponse}.Data.html
+  name: Data
+  nameWithType: PubSubPayload<PubSubResponse>.Data
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<AuxLabs.Twitch.PubSub.PubSubResponse>.Data
+  nameWithType.vb: PubSubPayload(Of PubSubResponse).Data
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of AuxLabs.Twitch.PubSub.PubSubResponse).Data
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+  commentId: T:AuxLabs.Twitch.PubSub.PubSubPayload`1
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  name: PubSubPayload<TPayload>
+  nameWithType: PubSubPayload<TPayload>
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>
+  nameWithType.vb: PubSubPayload(Of TPayload)
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload)
+  name.vb: PubSubPayload(Of TPayload)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+    name: PubSubPayload
+    href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  - name: <
+  - name: TPayload
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+    name: PubSubPayload
+    href: AuxLabs.Twitch.PubSub.PubSubPayload-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPayload
+  - name: )
+- uid: AuxLabs.Twitch.WebSockets
+  commentId: N:AuxLabs.Twitch.WebSockets
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.WebSockets
+  nameWithType: AuxLabs.Twitch.WebSockets
+  fullName: AuxLabs.Twitch.WebSockets
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    href: AuxLabs.Twitch.WebSockets.html
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1.IsHelloEvent
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload`1.IsHelloEvent
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.IsHelloEvent.html
+  name: IsHelloEvent
+  nameWithType: PubSubPayload<TPayload>.IsHelloEvent
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>.IsHelloEvent
+  nameWithType.vb: PubSubPayload(Of TPayload).IsHelloEvent
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload).IsHelloEvent
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1.Type
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload`1.Type
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.Type.html
+  name: Type
+  nameWithType: PubSubPayload<TPayload>.Type
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>.Type
+  nameWithType.vb: PubSubPayload(Of TPayload).Type
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload).Type
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1.Nonce
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload`1.Nonce
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.Nonce.html
+  name: Nonce
+  nameWithType: PubSubPayload<TPayload>.Nonce
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>.Nonce
+  nameWithType.vb: PubSubPayload(Of TPayload).Nonce
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload).Nonce
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1.Error
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload`1.Error
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.Error.html
+  name: Error
+  nameWithType: PubSubPayload<TPayload>.Error
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>.Error
+  nameWithType.vb: PubSubPayload(Of TPayload).Error
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload).Error
+- uid: AuxLabs.Twitch.PubSub.PubSubPayload`1.Data
+  commentId: P:AuxLabs.Twitch.PubSub.PubSubPayload`1.Data
+  href: AuxLabs.Twitch.PubSub.PubSubPayload-1.Data.html
+  name: Data
+  nameWithType: PubSubPayload<TPayload>.Data
+  fullName: AuxLabs.Twitch.PubSub.PubSubPayload<TPayload>.Data
+  nameWithType.vb: PubSubPayload(Of TPayload).Data
+  fullName.vb: AuxLabs.Twitch.PubSub.PubSubPayload(Of TPayload).Data
+memberLayout: SeparatePages

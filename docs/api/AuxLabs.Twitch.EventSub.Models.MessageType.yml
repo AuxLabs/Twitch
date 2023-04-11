@@ -1,0 +1,415 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType
+  commentId: T:AuxLabs.Twitch.EventSub.Models.MessageType
+  id: MessageType
+  parent: AuxLabs.Twitch.EventSub.Models
+  children:
+  - AuxLabs.Twitch.EventSub.Models.MessageType.KeepAlive
+  - AuxLabs.Twitch.EventSub.Models.MessageType.Notification
+  - AuxLabs.Twitch.EventSub.Models.MessageType.Reconnect
+  - AuxLabs.Twitch.EventSub.Models.MessageType.Revocation
+  - AuxLabs.Twitch.EventSub.Models.MessageType.Unknown
+  - AuxLabs.Twitch.EventSub.Models.MessageType.Welcome
+  langs:
+  - csharp
+  - vb
+  name: MessageType
+  nameWithType: MessageType
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: MessageType
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: public enum MessageType
+    content.vb: Public Enum MessageType
+  extensionMethods:
+  - AuxLabs.Twitch.EventSub.Models.MessageType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.Unknown
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.Unknown
+  id: Unknown
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: MessageType.Unknown
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unknown
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: Unknown = 0
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.Welcome
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.Welcome
+  id: Welcome
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Welcome
+  nameWithType: MessageType.Welcome
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.Welcome
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Welcome
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: >-
+      [EnumMember(Value = "session_welcome")]
+
+      Welcome = 1
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+    content.vb: >-
+      <EnumMember(Value:="session_welcome")>
+
+      Welcome = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: session_welcome
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.KeepAlive
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.KeepAlive
+  id: KeepAlive
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: KeepAlive
+  nameWithType: MessageType.KeepAlive
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.KeepAlive
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: KeepAlive
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: >-
+      [EnumMember(Value = "session_keepalive")]
+
+      KeepAlive = 2
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+    content.vb: >-
+      <EnumMember(Value:="session_keepalive")>
+
+      KeepAlive = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: session_keepalive
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.Reconnect
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.Reconnect
+  id: Reconnect
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Reconnect
+  nameWithType: MessageType.Reconnect
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.Reconnect
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Reconnect
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 12
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: >-
+      [EnumMember(Value = "session_reconnect")]
+
+      Reconnect = 3
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+    content.vb: >-
+      <EnumMember(Value:="session_reconnect")>
+
+      Reconnect = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: session_reconnect
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.Revocation
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.Revocation
+  id: Revocation
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Revocation
+  nameWithType: MessageType.Revocation
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.Revocation
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Revocation
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: >-
+      [EnumMember(Value = "revocation")]
+
+      Revocation = 4
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+    content.vb: >-
+      <EnumMember(Value:="revocation")>
+
+      Revocation = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: revocation
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.Notification
+  commentId: F:AuxLabs.Twitch.EventSub.Models.MessageType.Notification
+  id: Notification
+  parent: AuxLabs.Twitch.EventSub.Models.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Notification
+  nameWithType: MessageType.Notification
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType.Notification
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Notification
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/MessageType.cs
+    startLine: 16
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: >-
+      [EnumMember(Value = "notification")]
+
+      Notification = 5
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.MessageType
+    content.vb: >-
+      <EnumMember(Value:="notification")>
+
+      Notification = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: notification
+references:
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EventSub.Models.MessageType).html
+  name: GetStringValue<MessageType>(MessageType)
+  nameWithType: EnumHelper.GetStringValue<MessageType>(MessageType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.EventSub.Models.MessageType>(AuxLabs.Twitch.EventSub.Models.MessageType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of MessageType)(MessageType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.EventSub.Models.MessageType)(AuxLabs.Twitch.EventSub.Models.MessageType)
+  name.vb: GetStringValue(Of MessageType)(MessageType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EventSub.Models.MessageType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EventSub.Models.MessageType).html
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Models.MessageType
+    name: MessageType
+    href: AuxLabs.Twitch.EventSub.Models.MessageType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.EventSub.Models.MessageType
+    name: MessageType
+    href: AuxLabs.Twitch.EventSub.Models.MessageType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.EventSub.Models.MessageType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.EventSub.Models.MessageType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Models.MessageType
+    name: MessageType
+    href: AuxLabs.Twitch.EventSub.Models.MessageType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.EventSub.Models.MessageType
+    name: MessageType
+    href: AuxLabs.Twitch.EventSub.Models.MessageType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.EventSub.Models.MessageType
+  commentId: T:AuxLabs.Twitch.EventSub.Models.MessageType
+  parent: AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.Twitch.EventSub.Models.MessageType.html
+  name: MessageType
+  nameWithType: MessageType
+  fullName: AuxLabs.Twitch.EventSub.Models.MessageType
+memberLayout: SeparatePages

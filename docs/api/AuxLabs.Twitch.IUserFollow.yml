@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.IUserFollow
+  commentId: T:AuxLabs.Twitch.IUserFollow
+  id: IUserFollow
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+  - AuxLabs.Twitch.IUserFollow.BroadcasterId
+  - AuxLabs.Twitch.IUserFollow.BroadcasterName
+  - AuxLabs.Twitch.IUserFollow.FollowedAt
+  - AuxLabs.Twitch.IUserFollow.UserDisplayName
+  - AuxLabs.Twitch.IUserFollow.UserId
+  - AuxLabs.Twitch.IUserFollow.UserName
+  langs:
+  - csharp
+  - vb
+  name: IUserFollow
+  nameWithType: IUserFollow
+  fullName: AuxLabs.Twitch.IUserFollow
+  type: Interface
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IUserFollow
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public interface IUserFollow
+    content.vb: Public Interface IUserFollow
+- uid: AuxLabs.Twitch.IUserFollow.UserId
+  commentId: P:AuxLabs.Twitch.IUserFollow.UserId
+  id: UserId
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: IUserFollow.UserId
+  fullName: AuxLabs.Twitch.IUserFollow.UserId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserId
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The ID of the user that's following <xref href="AuxLabs.Twitch.IUserFollow.BroadcasterId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: string UserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UserId As String
+  overload: AuxLabs.Twitch.IUserFollow.UserId*
+- uid: AuxLabs.Twitch.IUserFollow.UserName
+  commentId: P:AuxLabs.Twitch.IUserFollow.UserName
+  id: UserName
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: IUserFollow.UserName
+  fullName: AuxLabs.Twitch.IUserFollow.UserName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The follower’s login name.
+  example: []
+  syntax:
+    content: string UserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UserName As String
+  overload: AuxLabs.Twitch.IUserFollow.UserName*
+- uid: AuxLabs.Twitch.IUserFollow.UserDisplayName
+  commentId: P:AuxLabs.Twitch.IUserFollow.UserDisplayName
+  id: UserDisplayName
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: UserDisplayName
+  nameWithType: IUserFollow.UserDisplayName
+  fullName: AuxLabs.Twitch.IUserFollow.UserDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserDisplayName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The follower’s display name.
+  example: []
+  syntax:
+    content: string UserDisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UserDisplayName As String
+  overload: AuxLabs.Twitch.IUserFollow.UserDisplayName*
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterId
+  commentId: P:AuxLabs.Twitch.IUserFollow.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: IUserFollow.BroadcasterId
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 16
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The ID of the user that’s being followed by <xref href="AuxLabs.Twitch.IUserFollow.UserId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: string BroadcasterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property BroadcasterId As String
+  overload: AuxLabs.Twitch.IUserFollow.BroadcasterId*
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterName
+  commentId: P:AuxLabs.Twitch.IUserFollow.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: IUserFollow.BroadcasterName
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The login name of the user that’s being followed.
+  example: []
+  syntax:
+    content: string BroadcasterName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property BroadcasterName As String
+  overload: AuxLabs.Twitch.IUserFollow.BroadcasterName*
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: IUserFollow.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The display name of the user that’s being followed.
+  example: []
+  syntax:
+    content: string BroadcasterDisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName*
+- uid: AuxLabs.Twitch.IUserFollow.FollowedAt
+  commentId: P:AuxLabs.Twitch.IUserFollow.FollowedAt
+  id: FollowedAt
+  parent: AuxLabs.Twitch.IUserFollow
+  langs:
+  - csharp
+  - vb
+  name: FollowedAt
+  nameWithType: IUserFollow.FollowedAt
+  fullName: AuxLabs.Twitch.IUserFollow.FollowedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: FollowedAt
+    path: ../src/AuxLabs.Twitch.Core/Contracts/IUserFollow.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  summary: The UTC date and time of when <xref href="AuxLabs.Twitch.IUserFollow.UserId" data-throw-if-not-resolved="false"></xref> began following <xref href="AuxLabs.Twitch.IUserFollow.BroadcasterId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: DateTime FollowedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Property FollowedAt As Date
+  overload: AuxLabs.Twitch.IUserFollow.FollowedAt*
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterId
+  commentId: P:AuxLabs.Twitch.IUserFollow.BroadcasterId
+  href: AuxLabs.Twitch.IUserFollow.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: IUserFollow.BroadcasterId
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterId
+- uid: AuxLabs.Twitch.IUserFollow.UserId*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.UserId
+  href: AuxLabs.Twitch.IUserFollow.UserId.html
+  name: UserId
+  nameWithType: IUserFollow.UserId
+  fullName: AuxLabs.Twitch.IUserFollow.UserId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.IUserFollow.UserName*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.UserName
+  href: AuxLabs.Twitch.IUserFollow.UserName.html
+  name: UserName
+  nameWithType: IUserFollow.UserName
+  fullName: AuxLabs.Twitch.IUserFollow.UserName
+- uid: AuxLabs.Twitch.IUserFollow.UserDisplayName*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.UserDisplayName
+  href: AuxLabs.Twitch.IUserFollow.UserDisplayName.html
+  name: UserDisplayName
+  nameWithType: IUserFollow.UserDisplayName
+  fullName: AuxLabs.Twitch.IUserFollow.UserDisplayName
+- uid: AuxLabs.Twitch.IUserFollow.UserId
+  commentId: P:AuxLabs.Twitch.IUserFollow.UserId
+  href: AuxLabs.Twitch.IUserFollow.UserId.html
+  name: UserId
+  nameWithType: IUserFollow.UserId
+  fullName: AuxLabs.Twitch.IUserFollow.UserId
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.BroadcasterId
+  href: AuxLabs.Twitch.IUserFollow.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: IUserFollow.BroadcasterId
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterId
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.BroadcasterName
+  href: AuxLabs.Twitch.IUserFollow.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: IUserFollow.BroadcasterName
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterName
+- uid: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+  href: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: IUserFollow.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.IUserFollow.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.IUserFollow.FollowedAt*
+  commentId: Overload:AuxLabs.Twitch.IUserFollow.FollowedAt
+  href: AuxLabs.Twitch.IUserFollow.FollowedAt.html
+  name: FollowedAt
+  nameWithType: IUserFollow.FollowedAt
+  fullName: AuxLabs.Twitch.IUserFollow.FollowedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+memberLayout: SeparatePages

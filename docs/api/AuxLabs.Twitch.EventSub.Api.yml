@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.Api
+  commentId: N:AuxLabs.Twitch.EventSub.Api
+  id: Api
+  parent: AuxLabs.Twitch.EventSub
+  children:
+  - AuxLabs.Twitch.EventSub.Api.EventSubFrame
+  - AuxLabs.Twitch.EventSub.Api.EventSubPayload
+  - AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+  - AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload
+  - AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+  - AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
+  langs:
+  - csharp
+  - vb
+  name: Api
+  nameWithType: AuxLabs.Twitch.EventSub.Api
+  fullName: AuxLabs.Twitch.EventSub.Api
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  name.csharp: AuxLabs.Twitch.EventSub.Api
+  name.vb: AuxLabs.Twitch.EventSub.Api
+references:
+- uid: AuxLabs.Twitch.EventSub.Api.EventSubFrame
+  commentId: T:AuxLabs.Twitch.EventSub.Api.EventSubFrame
+  href: AuxLabs.Twitch.EventSub.Api.EventSubFrame.html
+  name: EventSubFrame
+  nameWithType: EventSubFrame
+  fullName: AuxLabs.Twitch.EventSub.Api.EventSubFrame
+- uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload
+  commentId: T:AuxLabs.Twitch.EventSub.Api.EventSubPayload
+  parent: AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.Twitch.EventSub.Api.EventSubPayload.html
+  name: EventSubPayload
+  nameWithType: EventSubPayload
+  fullName: AuxLabs.Twitch.EventSub.Api.EventSubPayload
+- uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+  commentId: T:AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+  href: AuxLabs.Twitch.EventSub.Api.EventSubPayload-1.html
+  name: EventSubPayload<TEvent>
+  nameWithType: EventSubPayload<TEvent>
+  fullName: AuxLabs.Twitch.EventSub.Api.EventSubPayload<TEvent>
+  nameWithType.vb: EventSubPayload(Of TEvent)
+  fullName.vb: AuxLabs.Twitch.EventSub.Api.EventSubPayload(Of TEvent)
+  name.vb: EventSubPayload(Of TEvent)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+    name: EventSubPayload
+    href: AuxLabs.Twitch.EventSub.Api.EventSubPayload-1.html
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+    name: EventSubPayload
+    href: AuxLabs.Twitch.EventSub.Api.EventSubPayload-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload
+  commentId: T:AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload
+  parent: AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload.html
+  name: EventSubWebSocketPayload
+  nameWithType: EventSubWebSocketPayload
+  fullName: AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+  commentId: T:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+  parent: AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html
+  name: TwitchEventSubApiClient
+  nameWithType: TwitchEventSubApiClient
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
+  commentId: T:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
+  parent: AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig.html
+  name: TwitchEventSubApiConfig
+  nameWithType: TwitchEventSubApiConfig
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
+- uid: AuxLabs.Twitch.EventSub.Api
+  commentId: N:AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Api
+  nameWithType: AuxLabs.Twitch.EventSub.Api
+  fullName: AuxLabs.Twitch.EventSub.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Api
+    name: Api
+    href: AuxLabs.Twitch.EventSub.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Api
+    name: Api
+    href: AuxLabs.Twitch.EventSub.Api.html
+memberLayout: SeparatePages

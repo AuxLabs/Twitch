@@ -1,0 +1,935 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  id: PatchPredictionBody
+  parent: AuxLabs.Twitch.Rest.Requests
+  children:
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  - AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+  langs:
+  - csharp
+  - vb
+  name: PatchPredictionBody
+  nameWithType: PatchPredictionBody
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PatchPredictionBody
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 5
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  syntax:
+    content: 'public class PatchPredictionBody : IAgentRequest, IScopedRequest'
+    content.vb: Public Class PatchPredictionBody Implements IAgentRequest, IScopedRequest
+  inheritance:
+  - System.Object
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+  id: Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: PatchPredictionBody.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Scopes
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The scopes required for this request.
+  example: []
+  syntax:
+    content: public string[] Scopes { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property Scopes As String()
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: PatchPredictionBody.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The ID of the broadcaster that’s running the prediction.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("broadcaster_id")]
+
+      public string BroadcasterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("broadcaster_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_id
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+  id: PredictionId
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: PredictionId
+  nameWithType: PatchPredictionBody.PredictionId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PredictionId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The ID of the prediction to update.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("id")]
+
+      public string PredictionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("id")>
+
+      Public Property PredictionId As String
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+  id: Status
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: PatchPredictionBody.Status
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Status
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The status to set the prediction to.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("status")]
+
+      public PredictionStatus Status { get; set; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.PredictionStatus
+    content.vb: >-
+      <JsonPropertyName("status")>
+
+      Public Property Status As PredictionStatus
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: status
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+  commentId: P:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+  id: WinningId
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: WinningId
+  nameWithType: PatchPredictionBody.WinningId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: WinningId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  summary: The ID of the winning outcome.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("winning_outcome_id")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string WinningId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("winning_outcome_id")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property WinningId As String
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: winning_outcome_id
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<string>, string)
+  nameWithType: PatchPredictionBody.Validate(IEnumerable<string>, string)
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable<string>, string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public void Validate(IEnumerable<string> scopes, string authedUserId)
+    parameters:
+    - id: scopes
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: authedUserId
+      type: System.String
+    content.vb: Public Sub Validate(scopes As IEnumerable(Of String), authedUserId As String)
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  nameWithType.vb: PatchPredictionBody.Validate(IEnumerable(Of String), String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: Validate(IEnumerable(Of String), String)
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String})
+  id: Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<string>)
+  nameWithType: PatchPredictionBody.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Validate
+    path: ../src/AuxLabs.Twitch.Rest.Api/Requests/Predictions/PatchPredictionBody.cs
+    startLine: 31
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Requests
+  example: []
+  syntax:
+    content: public void Validate(IEnumerable<string> scopes)
+    parameters:
+    - id: scopes
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub Validate(scopes As IEnumerable(Of String))
+  overload: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate*
+  implements:
+  - AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  nameWithType.vb: PatchPredictionBody.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+references:
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  commentId: T:AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.html
+  name: IAgentRequest
+  nameWithType: IAgentRequest
+  fullName: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  commentId: T:AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.html
+  name: IScopedRequest
+  nameWithType: IScopedRequest
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes.html
+  name: Scopes
+  nameWithType: PatchPredictionBody.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  commentId: P:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes.html
+  name: Scopes
+  nameWithType: IScopedRequest.Scopes
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Scopes
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: PatchPredictionBody.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId.html
+  name: PredictionId
+  nameWithType: PatchPredictionBody.PredictionId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status.html
+  name: Status
+  nameWithType: PatchPredictionBody.Status
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Status
+- uid: AuxLabs.Twitch.PredictionStatus
+  commentId: T:AuxLabs.Twitch.PredictionStatus
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.PredictionStatus.html
+  name: PredictionStatus
+  nameWithType: PredictionStatus
+  fullName: AuxLabs.Twitch.PredictionStatus
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId.html
+  name: WinningId
+  nameWithType: PatchPredictionBody.WinningId
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.WinningId
+- uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate*
+  commentId: Overload:AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate
+  href: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  name: Validate
+  nameWithType: PatchPredictionBody.Validate
+  fullName: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Validate
+- uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+  isExternal: true
+  href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  name: Validate(IEnumerable<string>, string)
+  nameWithType: IAgentRequest.Validate(IEnumerable<string>, string)
+  fullName: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable<string>, string)
+  nameWithType.vb: IAgentRequest.Validate(IEnumerable(Of String), String)
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: Validate(IEnumerable(Of String), String)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String)
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IAgentRequest.Validate(System.Collections.Generic.IEnumerable{System.String},System.String).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+  parent: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+  isExternal: true
+  href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  name: Validate(IEnumerable<string>)
+  nameWithType: IScopedRequest.Validate(IEnumerable<string>)
+  fullName: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable<string>)
+  nameWithType.vb: IScopedRequest.Validate(IEnumerable(Of String))
+  fullName.vb: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Validate(IEnumerable(Of String))
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String})
+    name: Validate
+    href: AuxLabs.Twitch.Rest.Requests.IScopedRequest.Validate(System.Collections.Generic.IEnumerable{System.String}).html
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+memberLayout: SeparatePages

@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  commentId: T:AuxLabs.Twitch.EventSub.Models.BitsProduct
+  id: BitsProduct
+  parent: AuxLabs.Twitch.EventSub.Models
+  children:
+  - AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+  - AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+  - AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+  - AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+  langs:
+  - csharp
+  - vb
+  name: BitsProduct
+  nameWithType: BitsProduct
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsProduct
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: public class BitsProduct
+    content.vb: Public Class BitsProduct
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+  commentId: P:AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+  id: Name
+  parent: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: BitsProduct.Name
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Name
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Product name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("name")]
+
+      public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("name")>
+
+      Public Property Name As String
+  overload: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: name
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+  commentId: P:AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+  id: BitsAmount
+  parent: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  langs:
+  - csharp
+  - vb
+  name: BitsAmount
+  nameWithType: BitsProduct.BitsAmount
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsAmount
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Bits involved in the transaction.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("bits")]
+
+      public int BitsAmount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("bits")>
+
+      Public Property BitsAmount As Integer
+  overload: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bits
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+  commentId: P:AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+  id: Sku
+  parent: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  langs:
+  - csharp
+  - vb
+  name: Sku
+  nameWithType: BitsProduct.Sku
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Sku
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Unique identifier for the product acquired.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("sku")]
+
+      public string Sku { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("sku")>
+
+      Public Property Sku As String
+  overload: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sku
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+  commentId: P:AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+  id: IsDevelopment
+  parent: AuxLabs.Twitch.EventSub.Models.BitsProduct
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopment
+  nameWithType: BitsProduct.IsDevelopment
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: IsDevelopment
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/BitsProduct.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Flag indicating if the product is in development.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("in_development")]
+
+      public bool IsDevelopment { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("in_development")>
+
+      Public Property IsDevelopment As Boolean
+  overload: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: in_development
+references:
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+  href: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name.html
+  name: Name
+  nameWithType: BitsProduct.Name
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+  href: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount.html
+  name: BitsAmount
+  nameWithType: BitsProduct.BitsAmount
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.BitsAmount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+  href: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku.html
+  name: Sku
+  nameWithType: BitsProduct.Sku
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.Sku
+- uid: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+  href: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment.html
+  name: IsDevelopment
+  nameWithType: BitsProduct.IsDevelopment
+  fullName: AuxLabs.Twitch.EventSub.Models.BitsProduct.IsDevelopment
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages

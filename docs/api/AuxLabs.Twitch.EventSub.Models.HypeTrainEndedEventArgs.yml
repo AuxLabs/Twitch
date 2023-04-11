@@ -1,0 +1,1016 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  commentId: T:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  id: HypeTrainEndedEventArgs
+  parent: AuxLabs.Twitch.EventSub.Models
+  children:
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+  - AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+  langs:
+  - csharp
+  - vb
+  name: HypeTrainEndedEventArgs
+  nameWithType: HypeTrainEndedEventArgs
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: HypeTrainEndedEventArgs
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: public class HypeTrainEndedEventArgs
+    content.vb: Public Class HypeTrainEndedEventArgs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+  id: Id
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: HypeTrainEndedEventArgs.Id
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The Hype Train ID.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("id")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("id")>
+
+      Public Property Id As String
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterId
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster ID.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_id")]
+
+      public string BroadcasterId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_id
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterName
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster login.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_login")]
+
+      public string BroadcasterName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_login")>
+
+      Public Property BroadcasterName As String
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_login
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_name")]
+
+      public string BroadcasterDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_name")>
+
+      Public Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_name
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+  id: Level
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: HypeTrainEndedEventArgs.Level
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Level
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The starting level of the Hype Train.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("level")]
+
+      public int Level { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("level")>
+
+      Public Property Level As Integer
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: level
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+  id: Total
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Total
+  nameWithType: HypeTrainEndedEventArgs.Total
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Total
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Total points contributed to the Hype Train.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("total")]
+
+      public int Total { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("total")>
+
+      Public Property Total As Integer
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: total
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+  id: TopContributions
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TopContributions
+  nameWithType: HypeTrainEndedEventArgs.TopContributions
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TopContributions
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 33
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The contributors with the most points contributed.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("top_contributions")]
+
+      public IReadOnlyCollection<EventSubHypetrainContribution> TopContributions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution}
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("top_contributions")>
+
+      Public Property TopContributions As IReadOnlyCollection(Of EventSubHypetrainContribution)
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: top_contributions
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+  id: StartedAt
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: StartedAt
+  nameWithType: HypeTrainEndedEventArgs.StartedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: StartedAt
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The time when the Hype Train started.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("started_at")]
+
+      public DateTime StartedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("started_at")>
+
+      Public Property StartedAt As Date
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: started_at
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+  id: EndedAt
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: EndedAt
+  nameWithType: HypeTrainEndedEventArgs.EndedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EndedAt
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 41
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The time when the Hype Train ended.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("ended_at")]
+
+      public DateTime EndedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("ended_at")>
+
+      Public Property EndedAt As Date
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ended_at
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+  id: CooldownEndsAt
+  parent: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CooldownEndsAt
+  nameWithType: HypeTrainEndedEventArgs.CooldownEndsAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CooldownEndsAt
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/HypeTrain/HypeTrainEndedEventArgs.cs
+    startLine: 45
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The time when the Hype Train cooldown ends so that the next Hype Train can start.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("cooldown_ends_at")]
+
+      public DateTime CooldownEndsAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("cooldown_ends_at")>
+
+      Public Property CooldownEndsAt As Date
+  overload: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cooldown_ends_at
+references:
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id.html
+  name: Id
+  nameWithType: HypeTrainEndedEventArgs.Id
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterId
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterId
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterName
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterName
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: HypeTrainEndedEventArgs.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level.html
+  name: Level
+  nameWithType: HypeTrainEndedEventArgs.Level
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Level
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total.html
+  name: Total
+  nameWithType: HypeTrainEndedEventArgs.Total
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.Total
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions.html
+  name: TopContributions
+  nameWithType: HypeTrainEndedEventArgs.TopContributions
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.TopContributions
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<EventSubHypetrainContribution>
+  nameWithType: IReadOnlyCollection<EventSubHypetrainContribution>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution>
+  nameWithType.vb: IReadOnlyCollection(Of EventSubHypetrainContribution)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution)
+  name.vb: IReadOnlyCollection(Of EventSubHypetrainContribution)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution
+    name: EventSubHypetrainContribution
+    href: AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution
+    name: EventSubHypetrainContribution
+    href: AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt.html
+  name: StartedAt
+  nameWithType: HypeTrainEndedEventArgs.StartedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.StartedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt.html
+  name: EndedAt
+  nameWithType: HypeTrainEndedEventArgs.EndedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.EndedAt
+- uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+  href: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt.html
+  name: CooldownEndsAt
+  nameWithType: HypeTrainEndedEventArgs.CooldownEndsAt
+  fullName: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs.CooldownEndsAt
+memberLayout: SeparatePages

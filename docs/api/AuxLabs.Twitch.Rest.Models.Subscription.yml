@@ -1,0 +1,626 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.Subscription
+  commentId: T:AuxLabs.Twitch.Rest.Models.Subscription
+  id: Subscription
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+  - AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+  - AuxLabs.Twitch.Rest.Models.Subscription.UserId
+  - AuxLabs.Twitch.Rest.Models.Subscription.UserName
+  langs:
+  - csharp
+  - vb
+  name: Subscription
+  nameWithType: Subscription
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Subscription
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: 'public class Subscription : SimpleSubscription'
+    content.vb: Public Class Subscription Inherits SimpleSubscription
+  inheritance:
+  - System.Object
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  inheritedMembers:
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterId
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterName
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterDisplayName
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterId
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterName
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterDisplayName
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.IsGift
+  - AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+  id: PlanName
+  parent: AuxLabs.Twitch.Rest.Models.Subscription
+  langs:
+  - csharp
+  - vb
+  name: PlanName
+  nameWithType: Subscription.PlanName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PlanName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The name of the subscription.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("plan_name")]
+
+      public string PlanName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("plan_name")>
+
+      Public Property PlanName As String
+  overload: AuxLabs.Twitch.Rest.Models.Subscription.PlanName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: plan_name
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Subscription.UserId
+  id: UserId
+  parent: AuxLabs.Twitch.Rest.Models.Subscription
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: Subscription.UserId
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the subscribing user.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("user_id")]
+
+      public string UserId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("user_id")>
+
+      Public Property UserId As String
+  overload: AuxLabs.Twitch.Rest.Models.Subscription.UserId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: user_id
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Subscription.UserName
+  id: UserName
+  parent: AuxLabs.Twitch.Rest.Models.Subscription
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: Subscription.UserName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The user’s login name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("user_login")]
+
+      public string UserName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("user_login")>
+
+      Public Property UserName As String
+  overload: AuxLabs.Twitch.Rest.Models.Subscription.UserName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: user_login
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+  id: UserDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.Subscription
+  langs:
+  - csharp
+  - vb
+  name: UserDisplayName
+  nameWithType: Subscription.UserDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserDisplayName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Subscriptions/Subscription.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The user’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("user_name")]
+
+      public string UserDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("user_name")>
+
+      Public Property UserDisplayName As String
+  overload: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: user_name
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.html
+  name: SimpleSubscription
+  nameWithType: SimpleSubscription
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: SimpleSubscription.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterName
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterName
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: SimpleSubscription.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterName
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: SimpleSubscription.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterId
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterId.html
+  name: GifterId
+  nameWithType: SimpleSubscription.GifterId
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterId
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterName
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterName
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterName.html
+  name: GifterName
+  nameWithType: SimpleSubscription.GifterName
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterName
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterDisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterDisplayName
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterDisplayName.html
+  name: GifterDisplayName
+  nameWithType: SimpleSubscription.GifterDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.GifterDisplayName
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.IsGift
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.IsGift
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.IsGift.html
+  name: IsGift
+  nameWithType: SimpleSubscription.IsGift
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.IsGift
+- uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
+  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
+  parent: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+  href: AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier.html
+  name: Tier
+  nameWithType: SimpleSubscription.Tier
+  fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.PlanName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+  href: AuxLabs.Twitch.Rest.Models.Subscription.PlanName.html
+  name: PlanName
+  nameWithType: Subscription.PlanName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.PlanName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Subscription.UserId
+  href: AuxLabs.Twitch.Rest.Models.Subscription.UserId.html
+  name: UserId
+  nameWithType: Subscription.UserId
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserId
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Subscription.UserName
+  href: AuxLabs.Twitch.Rest.Models.Subscription.UserName.html
+  name: UserName
+  nameWithType: Subscription.UserName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserName
+- uid: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+  href: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName.html
+  name: UserDisplayName
+  nameWithType: Subscription.UserDisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.Subscription.UserDisplayName
+memberLayout: SeparatePages

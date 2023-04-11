@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Entities
+  commentId: N:AuxLabs.Twitch.Rest.Entities
+  id: Entities
+  parent: AuxLabs.Twitch.Rest
+  children:
+  - AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  - AuxLabs.Twitch.Rest.Entities.RestBroadcast
+  - AuxLabs.Twitch.Rest.Entities.RestChannel
+  - AuxLabs.Twitch.Rest.Entities.RestChatUser
+  - AuxLabs.Twitch.Rest.Entities.RestEditor
+  - AuxLabs.Twitch.Rest.Entities.RestEmote
+  - AuxLabs.Twitch.Rest.Entities.RestEntity`1
+  - AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+  - AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction
+  - AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
+  - AuxLabs.Twitch.Rest.Entities.RestFollower
+  - AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  - AuxLabs.Twitch.Rest.Entities.RestPartialUser
+  - AuxLabs.Twitch.Rest.Entities.RestSelfUser
+  - AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
+  - AuxLabs.Twitch.Rest.Entities.RestSimpleUser
+  - AuxLabs.Twitch.Rest.Entities.RestUser
+  langs:
+  - csharp
+  - vb
+  name: Entities
+  nameWithType: AuxLabs.Twitch.Rest.Entities
+  fullName: AuxLabs.Twitch.Rest.Entities
+  type: Namespace
+  assemblies:
+  - AuxLabs.Twitch.Rest
+  name.csharp: AuxLabs.Twitch.Rest.Entities
+  name.vb: AuxLabs.Twitch.Rest.Entities
+references:
+- uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestBitsUser
+  href: AuxLabs.Twitch.Rest.Entities.RestBitsUser.html
+  name: RestBitsUser
+  nameWithType: RestBitsUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBitsUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestBroadcast
+  href: AuxLabs.Twitch.Rest.Entities.RestBroadcast.html
+  name: RestBroadcast
+  nameWithType: RestBroadcast
+  fullName: AuxLabs.Twitch.Rest.Entities.RestBroadcast
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannel
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestChannel
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestChannel.html
+  name: RestChannel
+  nameWithType: RestChannel
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannel
+- uid: AuxLabs.Twitch.Rest.Entities.RestChatUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestChatUser
+  href: AuxLabs.Twitch.Rest.Entities.RestChatUser.html
+  name: RestChatUser
+  nameWithType: RestChatUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestEditor
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEditor
+  href: AuxLabs.Twitch.Rest.Entities.RestEditor.html
+  name: RestEditor
+  nameWithType: RestEditor
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEditor
+- uid: AuxLabs.Twitch.Rest.Entities.RestEmote
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEmote
+  href: AuxLabs.Twitch.Rest.Entities.RestEmote.html
+  name: RestEmote
+  nameWithType: RestEmote
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEmote
+- uid: AuxLabs.Twitch.Rest.Entities.RestEntity`1
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEntity`1
+  href: AuxLabs.Twitch.Rest.Entities.RestEntity-1.html
+  name: RestEntity<T>
+  nameWithType: RestEntity<T>
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEntity<T>
+  nameWithType.vb: RestEntity(Of T)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestEntity(Of T)
+  name.vb: RestEntity(Of T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEntity`1
+    name: RestEntity
+    href: AuxLabs.Twitch.Rest.Entities.RestEntity-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEntity`1
+    name: RestEntity
+    href: AuxLabs.Twitch.Rest.Entities.RestEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+  href: AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html
+  name: RestEventSubscription
+  nameWithType: RestEventSubscription
+  fullName: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+- uid: AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction
+  href: AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.html
+  name: RestExtensionTransaction
+  nameWithType: RestExtensionTransaction
+  fullName: AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction
+- uid: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
+  href: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html
+  name: RestFollowedChannel
+  nameWithType: RestFollowedChannel
+  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
+- uid: AuxLabs.Twitch.Rest.Entities.RestFollower
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestFollower
+  href: AuxLabs.Twitch.Rest.Entities.RestFollower.html
+  name: RestFollower
+  nameWithType: RestFollower
+  fullName: AuxLabs.Twitch.Rest.Entities.RestFollower
+- uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html
+  name: RestGlobalEmote
+  nameWithType: RestGlobalEmote
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestPartialUser
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestPartialUser.html
+  name: RestPartialUser
+  nameWithType: RestPartialUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestSelfUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSelfUser
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestSelfUser.html
+  name: RestSelfUser
+  nameWithType: RestSelfUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSelfUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.html
+  name: RestSimpleChannel
+  nameWithType: RestSimpleChannel
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleUser
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html
+  name: RestSimpleUser
+  nameWithType: RestSimpleUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestUser
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestUser
+  parent: AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.Twitch.Rest.Entities.RestUser.html
+  name: RestUser
+  nameWithType: RestUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestUser
+- uid: AuxLabs.Twitch.Rest.Entities
+  commentId: N:AuxLabs.Twitch.Rest.Entities
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Entities
+  nameWithType: AuxLabs.Twitch.Rest.Entities
+  fullName: AuxLabs.Twitch.Rest.Entities
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Rest.Entities.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Entities
+    name: Entities
+    href: AuxLabs.Twitch.Rest.Entities.html
+memberLayout: SeparatePages

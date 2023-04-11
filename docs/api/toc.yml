@@ -1,0 +1,1108 @@
+### YamlMime:TableOfContent
+items:
+- uid: AuxLabs.Twitch
+  name: AuxLabs.Twitch
+  items:
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    items:
+    - uid: AuxLabs.Twitch.Chat.Api
+      name: Api
+      items:
+      - uid: AuxLabs.Twitch.Chat.Api.DefaultIrcSerializer
+        name: DefaultIrcSerializer
+      - uid: AuxLabs.Twitch.Chat.Api.IrcCommand
+        name: IrcCommand
+      - uid: AuxLabs.Twitch.Chat.Api.IrcPayload
+        name: IrcPayload
+      - uid: AuxLabs.Twitch.Chat.Api.IrcPrefix
+        name: IrcPrefix
+      - uid: AuxLabs.Twitch.Chat.Api.IrcTokenType
+        name: IrcTokenType
+      - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiClient
+        name: TwitchChatApiClient
+      - uid: AuxLabs.Twitch.Chat.Api.TwitchChatApiConfig
+        name: TwitchChatApiConfig
+      - uid: AuxLabs.Twitch.Chat.Api.TwitchChatException
+        name: TwitchChatException
+      name.csharp: AuxLabs.Twitch.Chat.Api
+      name.vb: AuxLabs.Twitch.Chat.Api
+    - uid: AuxLabs.Twitch.Chat.Entities
+      name: Entities
+      items:
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatChannel
+        name: ChatChannel
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelSelfUser
+        name: ChatChannelSelfUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatChannelUser
+        name: ChatChannelUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatEntity`1
+        name: ChatEntity<T>
+        name.vb: ChatEntity(Of T)
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatMessage
+        name: ChatMessage
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatMessageReply
+        name: ChatMessageReply
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatRaidUser
+        name: ChatRaidUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatSelfUser
+        name: ChatSelfUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
+        name: ChatSimpleChannel
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleMessage
+        name: ChatSimpleMessage
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleUser
+        name: ChatSimpleUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatSubscriptionMessage
+        name: ChatSubscriptionMessage
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatUser
+        name: ChatUser
+      - uid: AuxLabs.Twitch.Chat.Entities.ChatWhisperMessage
+        name: ChatWhisperMessage
+      name.csharp: AuxLabs.Twitch.Chat.Entities
+      name.vb: AuxLabs.Twitch.Chat.Entities
+    - uid: AuxLabs.Twitch.Chat.Models
+      name: Models
+      items:
+      - uid: AuxLabs.Twitch.Chat.Models.BaseTags
+        name: BaseTags
+      - uid: AuxLabs.Twitch.Chat.Models.BitsBadgeTierTags
+        name: BitsBadgeTierTags
+      - uid: AuxLabs.Twitch.Chat.Models.ClearChatEventArgs
+        name: ClearChatEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.ClearChatTags
+        name: ClearChatTags
+      - uid: AuxLabs.Twitch.Chat.Models.ClearMessageEventArgs
+        name: ClearMessageEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.ClearMessageTags
+        name: ClearMessageTags
+      - uid: AuxLabs.Twitch.Chat.Models.GlobalUserStateTags
+        name: GlobalUserStateTags
+      - uid: AuxLabs.Twitch.Chat.Models.MembershipEventArgs
+        name: MembershipEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.MessageEventArgs
+        name: MessageEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.MessageTags
+        name: MessageTags
+      - uid: AuxLabs.Twitch.Chat.Models.NamesEventArgs
+        name: NamesEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.NoticeEventArgs
+        name: NoticeEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.NoticeTags
+        name: NoticeTags
+      - uid: AuxLabs.Twitch.Chat.Models.RaidTags
+        name: RaidTags
+      - uid: AuxLabs.Twitch.Chat.Models.RitualTags
+        name: RitualTags
+      - uid: AuxLabs.Twitch.Chat.Models.RoomStateEventArgs
+        name: RoomStateEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.RoomStateTags
+        name: RoomStateTags
+      - uid: AuxLabs.Twitch.Chat.Models.SendMessageTags
+        name: SendMessageTags
+      - uid: AuxLabs.Twitch.Chat.Models.SubscriptionGiftTags
+        name: SubscriptionGiftTags
+      - uid: AuxLabs.Twitch.Chat.Models.SubscriptionGiftUpgradeAnonymousTags
+        name: SubscriptionGiftUpgradeAnonymousTags
+      - uid: AuxLabs.Twitch.Chat.Models.SubscriptionGiftUpgradeTags
+        name: SubscriptionGiftUpgradeTags
+      - uid: AuxLabs.Twitch.Chat.Models.SubscriptionTags
+        name: SubscriptionTags
+      - uid: AuxLabs.Twitch.Chat.Models.UserNoticeEventArgs
+        name: UserNoticeEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.UserNoticeTags
+        name: UserNoticeTags
+      - uid: AuxLabs.Twitch.Chat.Models.UserStateEventArgs
+        name: UserStateEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.UserStateTags
+        name: UserStateTags
+      - uid: AuxLabs.Twitch.Chat.Models.WhisperEventArgs
+        name: WhisperEventArgs
+      - uid: AuxLabs.Twitch.Chat.Models.WhisperTags
+        name: WhisperTags
+      name.csharp: AuxLabs.Twitch.Chat.Models
+      name.vb: AuxLabs.Twitch.Chat.Models
+    - uid: AuxLabs.Twitch.Chat.Requests
+      name: Requests
+      items:
+      - uid: AuxLabs.Twitch.Chat.Requests.BaseChatRequest
+        name: BaseChatRequest
+      - uid: AuxLabs.Twitch.Chat.Requests.CapabilityRequest
+        name: CapabilityRequest
+      - uid: AuxLabs.Twitch.Chat.Requests.JoinChannelsRequest
+        name: JoinChannelsRequest
+      - uid: AuxLabs.Twitch.Chat.Requests.PartChannelsRequest
+        name: PartChannelsRequest
+      - uid: AuxLabs.Twitch.Chat.Requests.SendMessageRequest
+        name: SendMessageRequest
+      name.csharp: AuxLabs.Twitch.Chat.Requests
+      name.vb: AuxLabs.Twitch.Chat.Requests
+    - uid: AuxLabs.Twitch.Chat.Badge
+      name: Badge
+    - uid: AuxLabs.Twitch.Chat.IChatMessage
+      name: IChatMessage
+    - uid: AuxLabs.Twitch.Chat.IMessage
+      name: IMessage
+    - uid: AuxLabs.Twitch.Chat.IUserNoticeMessage
+      name: IUserNoticeMessage
+    - uid: AuxLabs.Twitch.Chat.IWhisperMessage
+      name: IWhisperMessage
+    - uid: AuxLabs.Twitch.Chat.MessageType
+      name: MessageType
+    - uid: AuxLabs.Twitch.Chat.NoticeType
+      name: NoticeType
+    - uid: AuxLabs.Twitch.Chat.RitualType
+      name: RitualType
+    - uid: AuxLabs.Twitch.Chat.TwitchChatClient
+      name: TwitchChatClient
+    - uid: AuxLabs.Twitch.Chat.TwitchChatConfig
+      name: TwitchChatConfig
+    - uid: AuxLabs.Twitch.Chat.UserNoticeType
+      name: UserNoticeType
+    - uid: AuxLabs.Twitch.Chat.UserType
+      name: UserType
+    name.csharp: AuxLabs.Twitch.Chat
+    name.vb: AuxLabs.Twitch.Chat
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    items:
+    - uid: AuxLabs.Twitch.EventSub.Api
+      name: Api
+      items:
+      - uid: AuxLabs.Twitch.EventSub.Api.EventSubFrame
+        name: EventSubFrame
+      - uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload
+        name: EventSubPayload
+      - uid: AuxLabs.Twitch.EventSub.Api.EventSubPayload`1
+        name: EventSubPayload<TEvent>
+        name.vb: EventSubPayload(Of TEvent)
+      - uid: AuxLabs.Twitch.EventSub.Api.EventSubWebSocketPayload
+        name: EventSubWebSocketPayload
+      - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+        name: TwitchEventSubApiClient
+      - uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiConfig
+        name: TwitchEventSubApiConfig
+      name.csharp: AuxLabs.Twitch.EventSub.Api
+      name.vb: AuxLabs.Twitch.EventSub.Api
+    - uid: AuxLabs.Twitch.EventSub.Entities
+      name: Entities
+      items:
+      - uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+        name: EventSubBroadcast
+      - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEntity`1
+        name: EventSubEntity<T>
+        name.vb: EventSubEntity(Of T)
+      - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+        name: EventSubEventSubscription
+      - uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+        name: EventSubSimpleUser
+      - uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser
+        name: EventSubUser
+      name.csharp: AuxLabs.Twitch.EventSub.Entities
+      name.vb: AuxLabs.Twitch.EventSub.Entities
+    - uid: AuxLabs.Twitch.EventSub.Models
+      name: Models
+      items:
+      - uid: AuxLabs.Twitch.EventSub.Models.AuthorizationEventArgs
+        name: AuthorizationEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.BanEventArgs
+        name: BanEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.BitsProduct
+        name: BitsProduct
+      - uid: AuxLabs.Twitch.EventSub.Models.BitsTransactionEventArgs
+        name: BitsTransactionEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.BroadcastEndedEventArgs
+        name: BroadcastEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.BroadcastStartedEventArgs
+        name: BroadcastStartedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.CampaignEndedEventArgs
+        name: CampaignEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.CampaignProgressEventArgs
+        name: CampaignProgressEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.CampaignStartedEventArgs
+        name: CampaignStartedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ChannelFollowEventArgs
+        name: ChannelFollowEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ChannelUpdateEventArgs
+        name: ChannelUpdateEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.CheerEventArgs
+        name: CheerEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.DonationEventArgs
+        name: DonationEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.EntitlementGrantEventArgs
+        name: EntitlementGrantEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.EntitlementGrantEventData
+        name: EntitlementGrantEventData
+      - uid: AuxLabs.Twitch.EventSub.Models.EventSubHypetrainContribution
+        name: EventSubHypetrainContribution
+      - uid: AuxLabs.Twitch.EventSub.Models.GlobalCooldownSetting
+        name: GlobalCooldownSetting
+      - uid: AuxLabs.Twitch.EventSub.Models.GoalEndedEventArgs
+        name: GoalEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEndedEventArgs
+        name: HypeTrainEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.HypeTrainEventArgs
+        name: HypeTrainEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.MessageType
+        name: MessageType
+      - uid: AuxLabs.Twitch.EventSub.Models.ModeratorEventArgs
+        name: ModeratorEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.PollEndedEventArgs
+        name: PollEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+        name: PollEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.PredictionEndedEventArgs
+        name: PredictionEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.PredictionEventArgs
+        name: PredictionEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.RaidEventArgs
+        name: RaidEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.RedemptionEventArgs
+        name: RedemptionEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.RewardEventArgs
+        name: RewardEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.RewardSetting
+        name: RewardSetting
+      - uid: AuxLabs.Twitch.EventSub.Models.Session
+        name: Session
+      - uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEnabledEventArgs
+        name: ShieldModeEnabledEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEndedEventArgs
+        name: ShieldModeEndedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ShieldModeEventArgs
+        name: ShieldModeEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ShoutoutCreatedEventArgs
+        name: ShoutoutCreatedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.ShoutoutReceivedEventArgs
+        name: ShoutoutReceivedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.SubscriptionEventArgs
+        name: SubscriptionEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.SubscriptionGiftedEventArgs
+        name: SubscriptionGiftedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.SubscriptionMessage
+        name: SubscriptionMessage
+      - uid: AuxLabs.Twitch.EventSub.Models.SubscriptionMessageEventArgs
+        name: SubscriptionMessageEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.UnbanEventArgs
+        name: UnbanEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.UserUpdatedEventArgs
+        name: UserUpdatedEventArgs
+      - uid: AuxLabs.Twitch.EventSub.Models.VotingOption
+        name: VotingOption
+      - uid: AuxLabs.Twitch.EventSub.Models.WebSocketMetadata
+        name: WebSocketMetadata
+      name.csharp: AuxLabs.Twitch.EventSub.Models
+      name.vb: AuxLabs.Twitch.EventSub.Models
+    - uid: AuxLabs.Twitch.EventSub.BanEventArgs
+      name: BanEventArgs
+    - uid: AuxLabs.Twitch.EventSub.IBan
+      name: IBan
+    - uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+      name: TwitchEventSubClient
+    - uid: AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+      name: TwitchEventSubConfig
+    name.csharp: AuxLabs.Twitch.EventSub
+    name.vb: AuxLabs.Twitch.EventSub
+  - uid: AuxLabs.Twitch.PubSub
+    name: PubSub
+    items:
+    - uid: AuxLabs.Twitch.PubSub.PubSubPayload
+      name: PubSubPayload
+    - uid: AuxLabs.Twitch.PubSub.PubSubPayload`1
+      name: PubSubPayload<TPayload>
+      name.vb: PubSubPayload(Of TPayload)
+    - uid: AuxLabs.Twitch.PubSub.PubSubPayloadType
+      name: PubSubPayloadType
+    - uid: AuxLabs.Twitch.PubSub.PubSubRequest
+      name: PubSubRequest
+    - uid: AuxLabs.Twitch.PubSub.PubSubResponse
+      name: PubSubResponse
+    - uid: AuxLabs.Twitch.PubSub.PubSubTopic
+      name: PubSubTopic
+    - uid: AuxLabs.Twitch.PubSub.PubSubTopicType
+      name: PubSubTopicType
+    - uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiClient
+      name: TwitchPubSubApiClient
+    - uid: AuxLabs.Twitch.PubSub.TwitchPubSubApiConfig
+      name: TwitchPubSubApiConfig
+    name.csharp: AuxLabs.Twitch.PubSub
+    name.vb: AuxLabs.Twitch.PubSub
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    items:
+    - uid: AuxLabs.Twitch.Rest.Api
+      name: Api
+      items:
+      - uid: AuxLabs.Twitch.Rest.Api.ITwitchApi
+        name: ITwitchApi
+      - uid: AuxLabs.Twitch.Rest.Api.ITwitchIdentityApi
+        name: ITwitchIdentityApi
+      - uid: AuxLabs.Twitch.Rest.Api.RestError
+        name: RestError
+      - uid: AuxLabs.Twitch.Rest.Api.TwitchIdentityApiClient
+        name: TwitchIdentityApiClient
+      - uid: AuxLabs.Twitch.Rest.Api.TwitchJsonSerializerOptions
+        name: TwitchJsonSerializerOptions
+      - uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient
+        name: TwitchRestApiClient
+      - uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiConfig
+        name: TwitchRestApiConfig
+      name.csharp: AuxLabs.Twitch.Rest.Api
+      name.vb: AuxLabs.Twitch.Rest.Api
+    - uid: AuxLabs.Twitch.Rest.Entities
+      name: Entities
+      items:
+      - uid: AuxLabs.Twitch.Rest.Entities.RestBitsUser
+        name: RestBitsUser
+      - uid: AuxLabs.Twitch.Rest.Entities.RestBroadcast
+        name: RestBroadcast
+      - uid: AuxLabs.Twitch.Rest.Entities.RestChannel
+        name: RestChannel
+      - uid: AuxLabs.Twitch.Rest.Entities.RestChatUser
+        name: RestChatUser
+      - uid: AuxLabs.Twitch.Rest.Entities.RestEditor
+        name: RestEditor
+      - uid: AuxLabs.Twitch.Rest.Entities.RestEmote
+        name: RestEmote
+      - uid: AuxLabs.Twitch.Rest.Entities.RestEntity`1
+        name: RestEntity<T>
+        name.vb: RestEntity(Of T)
+      - uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+        name: RestEventSubscription
+      - uid: AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction
+        name: RestExtensionTransaction
+      - uid: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
+        name: RestFollowedChannel
+      - uid: AuxLabs.Twitch.Rest.Entities.RestFollower
+        name: RestFollower
+      - uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
+        name: RestGlobalEmote
+      - uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser
+        name: RestPartialUser
+      - uid: AuxLabs.Twitch.Rest.Entities.RestSelfUser
+        name: RestSelfUser
+      - uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
+        name: RestSimpleChannel
+      - uid: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
+        name: RestSimpleUser
+      - uid: AuxLabs.Twitch.Rest.Entities.RestUser
+        name: RestUser
+      name.csharp: AuxLabs.Twitch.Rest.Entities
+      name.vb: AuxLabs.Twitch.Rest.Entities
+    - uid: AuxLabs.Twitch.Rest.Models
+      name: Models
+      items:
+      - uid: AuxLabs.Twitch.Rest.Models.AcceptedTransport
+        name: AcceptedTransport
+      - uid: AuxLabs.Twitch.Rest.Models.AccessTokenInfo
+        name: AccessTokenInfo
+      - uid: AuxLabs.Twitch.Rest.Models.Album
+        name: Album
+      - uid: AuxLabs.Twitch.Rest.Models.Analytic
+        name: Analytic
+      - uid: AuxLabs.Twitch.Rest.Models.AppIdentity
+        name: AppIdentity
+      - uid: AuxLabs.Twitch.Rest.Models.Artist
+        name: Artist
+      - uid: AuxLabs.Twitch.Rest.Models.AuthorizationCondition
+        name: AuthorizationCondition
+      - uid: AuxLabs.Twitch.Rest.Models.AutomodSettings
+        name: AutomodSettings
+      - uid: AuxLabs.Twitch.Rest.Models.Badge
+        name: Badge
+      - uid: AuxLabs.Twitch.Rest.Models.BadgeSet
+        name: BadgeSet
+      - uid: AuxLabs.Twitch.Rest.Models.Ban
+        name: Ban
+      - uid: AuxLabs.Twitch.Rest.Models.BannedUser
+        name: BannedUser
+      - uid: AuxLabs.Twitch.Rest.Models.BitsTier
+        name: BitsTier
+      - uid: AuxLabs.Twitch.Rest.Models.BitsUser
+        name: BitsUser
+      - uid: AuxLabs.Twitch.Rest.Models.BlockedTerm
+        name: BlockedTerm
+      - uid: AuxLabs.Twitch.Rest.Models.BlockReason
+        name: BlockReason
+      - uid: AuxLabs.Twitch.Rest.Models.Broadcast
+        name: Broadcast
+      - uid: AuxLabs.Twitch.Rest.Models.BroadcasterCondition
+        name: BroadcasterCondition
+      - uid: AuxLabs.Twitch.Rest.Models.BroadcastMarker
+        name: BroadcastMarker
+      - uid: AuxLabs.Twitch.Rest.Models.Category
+        name: Category
+      - uid: AuxLabs.Twitch.Rest.Models.Channel
+        name: Channel
+      - uid: AuxLabs.Twitch.Rest.Models.ChannelBroadcast
+        name: ChannelBroadcast
+      - uid: AuxLabs.Twitch.Rest.Models.ChannelEditor
+        name: ChannelEditor
+      - uid: AuxLabs.Twitch.Rest.Models.ChannelTeam
+        name: ChannelTeam
+      - uid: AuxLabs.Twitch.Rest.Models.CharityAmount
+        name: CharityAmount
+      - uid: AuxLabs.Twitch.Rest.Models.CharityCampaign
+        name: CharityCampaign
+      - uid: AuxLabs.Twitch.Rest.Models.CharityDonation
+        name: CharityDonation
+      - uid: AuxLabs.Twitch.Rest.Models.ChatSettings
+        name: ChatSettings
+      - uid: AuxLabs.Twitch.Rest.Models.Cheermote
+        name: Cheermote
+      - uid: AuxLabs.Twitch.Rest.Models.CheermoteFormat
+        name: CheermoteFormat
+      - uid: AuxLabs.Twitch.Rest.Models.CheermoteImage
+        name: CheermoteImage
+      - uid: AuxLabs.Twitch.Rest.Models.CheermoteTheme
+        name: CheermoteTheme
+      - uid: AuxLabs.Twitch.Rest.Models.Clip
+        name: Clip
+      - uid: AuxLabs.Twitch.Rest.Models.Commercial
+        name: Commercial
+      - uid: AuxLabs.Twitch.Rest.Models.ComponentExtension
+        name: ComponentExtension
+      - uid: AuxLabs.Twitch.Rest.Models.Cost
+        name: Cost
+      - uid: AuxLabs.Twitch.Rest.Models.DropEntitlementCondition
+        name: DropEntitlementCondition
+      - uid: AuxLabs.Twitch.Rest.Models.Emote
+        name: Emote
+      - uid: AuxLabs.Twitch.Rest.Models.Entitlement
+        name: Entitlement
+      - uid: AuxLabs.Twitch.Rest.Models.EntitlementDrop
+        name: EntitlementDrop
+      - uid: AuxLabs.Twitch.Rest.Models.EventSubResponse
+        name: EventSubResponse
+      - uid: AuxLabs.Twitch.Rest.Models.EventSubscription
+        name: EventSubscription
+      - uid: AuxLabs.Twitch.Rest.Models.EventSubscription`1
+        name: EventSubscription<TCondition>
+        name.vb: EventSubscription(Of TCondition)
+      - uid: AuxLabs.Twitch.Rest.Models.Extension
+        name: Extension
+      - uid: AuxLabs.Twitch.Rest.Models.ExtensionAnalytic
+        name: ExtensionAnalytic
+      - uid: AuxLabs.Twitch.Rest.Models.ExtensionCondition
+        name: ExtensionCondition
+      - uid: AuxLabs.Twitch.Rest.Models.ExtensionMap
+        name: ExtensionMap
+      - uid: AuxLabs.Twitch.Rest.Models.ExtensionTransaction
+        name: ExtensionTransaction
+      - uid: AuxLabs.Twitch.Rest.Models.FollowedChannel
+        name: FollowedChannel
+      - uid: AuxLabs.Twitch.Rest.Models.Follower
+        name: Follower
+      - uid: AuxLabs.Twitch.Rest.Models.Game
+        name: Game
+      - uid: AuxLabs.Twitch.Rest.Models.GameAnalytic
+        name: GameAnalytic
+      - uid: AuxLabs.Twitch.Rest.Models.GlobalEmote
+        name: GlobalEmote
+      - uid: AuxLabs.Twitch.Rest.Models.Goal
+        name: Goal
+      - uid: AuxLabs.Twitch.Rest.Models.HypeTrain
+        name: HypeTrain
+      - uid: AuxLabs.Twitch.Rest.Models.HypeTrainContribution
+        name: HypeTrainContribution
+      - uid: AuxLabs.Twitch.Rest.Models.HypeTrainInfo
+        name: HypeTrainInfo
+      - uid: AuxLabs.Twitch.Rest.Models.MockMessage
+        name: MockMessage
+      - uid: AuxLabs.Twitch.Rest.Models.ModeratorCondition
+        name: ModeratorCondition
+      - uid: AuxLabs.Twitch.Rest.Models.Pagination
+        name: Pagination
+      - uid: AuxLabs.Twitch.Rest.Models.Playlist
+        name: Playlist
+      - uid: AuxLabs.Twitch.Rest.Models.Poll
+        name: Poll
+      - uid: AuxLabs.Twitch.Rest.Models.PollOption
+        name: PollOption
+      - uid: AuxLabs.Twitch.Rest.Models.Prediction
+        name: Prediction
+      - uid: AuxLabs.Twitch.Rest.Models.PredictionOption
+        name: PredictionOption
+      - uid: AuxLabs.Twitch.Rest.Models.PredictionUser
+        name: PredictionUser
+      - uid: AuxLabs.Twitch.Rest.Models.ProductData
+        name: ProductData
+      - uid: AuxLabs.Twitch.Rest.Models.Raid
+        name: Raid
+      - uid: AuxLabs.Twitch.Rest.Models.RaidCondition
+        name: RaidCondition
+      - uid: AuxLabs.Twitch.Rest.Models.RaidConditionType
+        name: RaidConditionType
+      - uid: AuxLabs.Twitch.Rest.Models.Redemption
+        name: Redemption
+      - uid: AuxLabs.Twitch.Rest.Models.Reward
+        name: Reward
+      - uid: AuxLabs.Twitch.Rest.Models.RewardCondition
+        name: RewardCondition
+      - uid: AuxLabs.Twitch.Rest.Models.RewardSetting
+        name: RewardSetting
+      - uid: AuxLabs.Twitch.Rest.Models.Schedule
+        name: Schedule
+      - uid: AuxLabs.Twitch.Rest.Models.ScheduleSegment
+        name: ScheduleSegment
+      - uid: AuxLabs.Twitch.Rest.Models.ShieldMode
+        name: ShieldMode
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleChatUser
+        name: SimpleChatUser
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleClip
+        name: SimpleClip
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleExtension
+        name: SimpleExtension
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleSubscription
+        name: SimpleSubscription
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleTeam
+        name: SimpleTeam
+      - uid: AuxLabs.Twitch.Rest.Models.SimpleUser
+        name: SimpleUser
+      - uid: AuxLabs.Twitch.Rest.Models.Soundtrack
+        name: Soundtrack
+      - uid: AuxLabs.Twitch.Rest.Models.Subscription
+        name: Subscription
+      - uid: AuxLabs.Twitch.Rest.Models.Team
+        name: Team
+      - uid: AuxLabs.Twitch.Rest.Models.TeamUser
+        name: TeamUser
+      - uid: AuxLabs.Twitch.Rest.Models.Track
+        name: Track
+      - uid: AuxLabs.Twitch.Rest.Models.TrackSource
+        name: TrackSource
+      - uid: AuxLabs.Twitch.Rest.Models.Transport
+        name: Transport
+      - uid: AuxLabs.Twitch.Rest.Models.TwitchMetaResponse`1
+        name: TwitchMetaResponse<T>
+        name.vb: TwitchMetaResponse(Of T)
+      - uid: AuxLabs.Twitch.Rest.Models.TwitchResponse`1
+        name: TwitchResponse<T>
+        name.vb: TwitchResponse(Of T)
+      - uid: AuxLabs.Twitch.Rest.Models.User
+        name: User
+      - uid: AuxLabs.Twitch.Rest.Models.UserCondition
+        name: UserCondition
+      - uid: AuxLabs.Twitch.Rest.Models.UserIdentity
+        name: UserIdentity
+      - uid: AuxLabs.Twitch.Rest.Models.Vacation
+        name: Vacation
+      - uid: AuxLabs.Twitch.Rest.Models.Video
+        name: Video
+      - uid: AuxLabs.Twitch.Rest.Models.VideoOffset
+        name: VideoOffset
+      name.csharp: AuxLabs.Twitch.Rest.Models
+      name.vb: AuxLabs.Twitch.Rest.Models
+    - uid: AuxLabs.Twitch.Rest.Requests
+      name: Requests
+      items:
+      - uid: AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription
+        name: AuthorizationGrantedSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription
+        name: AuthorizationRevokedSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.AuthorizationSubscriptionBase
+        name: AuthorizationSubscriptionBase
+      - uid: AuxLabs.Twitch.Rest.Requests.AutomodSettingsArgs
+        name: AutomodSettingsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.BanSubscription
+        name: BanSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+        name: BitsTransactionSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+        name: BroadcastEndedSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.BroadcasterSubscriptionBase
+        name: BroadcasterSubscriptionBase
+      - uid: AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+        name: BroadcastStartedSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription
+        name: CampaignProgressSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription
+        name: CampaignStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription
+        name: CampaignStopSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+        name: ChannelUpdateSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.CheerSubscription
+        name: CheerSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteBanArgs
+        name: DeleteBanArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteBlockArgs
+        name: DeleteBlockArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteBlockedTermsArgs
+        name: DeleteBlockedTermsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteEventSubscriptionArgs
+        name: DeleteEventSubscriptionArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteMessageArgs
+        name: DeleteMessageArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteRaidArgs
+        name: DeleteRaidArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs
+        name: DeleteVideosArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.DonationSubscription
+        name: DonationSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+        name: EntitlementGrantSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.FollowSubscription
+        name: FollowSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs
+        name: GetActiveExtensionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetAnalyticsArgs
+        name: GetAnalyticsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBadgesArgs
+        name: GetBadgesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBannedUsersArgs
+        name: GetBannedUsersArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBitsLeaderboardArgs
+        name: GetBitsLeaderboardArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBlockedTermsArgs
+        name: GetBlockedTermsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBlocksArgs
+        name: GetBlocksArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBroadcastKeyArgs
+        name: GetBroadcastKeyArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBroadcastMarkersArgs
+        name: GetBroadcastMarkersArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetBroadcastsArgs
+        name: GetBroadcastsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetChannelEditorsArgs
+        name: GetChannelEditorsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetChannelsArgs
+        name: GetChannelsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetChannelTeamsArgs
+        name: GetChannelTeamsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetCharityCampaignArgs
+        name: GetCharityCampaignArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetCharityDonationsArgs
+        name: GetCharityDonationsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetChatSettingsArgs
+        name: GetChatSettingsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetChattersArgs
+        name: GetChattersArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetCheermotesArgs
+        name: GetCheermotesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetClipsArgs
+        name: GetClipsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetCurrentTrackArgs
+        name: GetCurrentTrackArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetDropStatusArgs
+        name: GetDropStatusArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetEmotesArgs
+        name: GetEmotesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetEmoteSetsArgs
+        name: GetEmoteSetsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs
+        name: GetEventSubscriptionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetExtensionAnalyticsArgs
+        name: GetExtensionAnalyticsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetExtensionTransactionsArgs
+        name: GetExtensionTransactionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetFollowedBroadcastsArgs
+        name: GetFollowedBroadcastsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetFollowedChannelsArgs
+        name: GetFollowedChannelsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetFollowersArgs
+        name: GetFollowersArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetFollowsArgs
+        name: GetFollowsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetGameAnalyticsArgs
+        name: GetGameAnalyticsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetGamesArgs
+        name: GetGamesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetGoalsArgs
+        name: GetGoalsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetHypeTrainsArgs
+        name: GetHypeTrainsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetModeratorsArgs
+        name: GetModeratorsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetPlaylistsArgs
+        name: GetPlaylistsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs
+        name: GetPlaylistTracksArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetPollsArgs
+        name: GetPollsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs
+        name: GetPredictionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetRedemptionsArgs
+        name: GetRedemptionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetRewardArgs
+        name: GetRewardArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetRolesArgs
+        name: GetRolesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetScheduleArgs
+        name: GetScheduleArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetShieldModeArgs
+        name: GetShieldModeArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs
+        name: GetSubscriberArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetSubscriptionsArgs
+        name: GetSubscriptionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetTeamArgs
+        name: GetTeamArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetTopGamesArgs
+        name: GetTopGamesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetUserColorArgs
+        name: GetUserColorArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetUsersArgs
+        name: GetUsersArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetUsersMode
+        name: GetUsersMode
+      - uid: AuxLabs.Twitch.Rest.Requests.GetVideosArgs
+        name: GetVideosArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GetVipsArgs
+        name: GetVipsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.GoalEndSubscription
+        name: GoalEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription
+        name: GoalProgressSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.GoalStartSubscription
+        name: GoalStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription
+        name: HypetrainEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription
+        name: HypetrainProgressSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription
+        name: HypetrainStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.IAgentRequest
+        name: IAgentRequest
+      - uid: AuxLabs.Twitch.Rest.Requests.IPaginatedRequest
+        name: IPaginatedRequest
+      - uid: AuxLabs.Twitch.Rest.Requests.IScopedRequest
+        name: IScopedRequest
+      - uid: AuxLabs.Twitch.Rest.Requests.ManageModeratorArgs
+        name: ManageModeratorArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ManageRewardArgs
+        name: ManageRewardArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ManageRolesArgs
+        name: ManageRolesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ManageSegmentArgs
+        name: ManageSegmentArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ManageVipArgs
+        name: ManageVipArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription
+        name: ModeratorAddSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription
+        name: ModeratorRemoveSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ModeratorSubscriptionBase
+        name: ModeratorSubscriptionBase
+      - uid: AuxLabs.Twitch.Rest.Requests.ModifyRedemptionsArgs
+        name: ModifyRedemptionsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchChannelArgs
+        name: PatchChannelArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchChannelBody
+        name: PatchChannelBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchChatSettingsArgs
+        name: PatchChatSettingsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody
+        name: PatchChatSettingsBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchDropsStatusArgs
+        name: PatchDropsStatusArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchPollBody
+        name: PatchPollBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchPredictionBody
+        name: PatchPredictionBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchScheduleArgs
+        name: PatchScheduleArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PatchSegmentBody
+        name: PatchSegmentBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PollEndSubscription
+        name: PollEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PollProgressSubscription
+        name: PollProgressSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PollStartSubscription
+        name: PollStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PostAnnouncementArgs
+        name: PostAnnouncementArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostAnnouncementBody
+        name: PostAnnouncementBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostAppAccessTokenArgs
+        name: PostAppAccessTokenArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostAutomodMessageArgs
+        name: PostAutomodMessageArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBanArgs
+        name: PostBanArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBanBody
+        name: PostBanBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBanUser
+        name: PostBanUser
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs
+        name: PostBlockedTermArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBlockedTermBody
+        name: PostBlockedTermBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostBroadcastMarkerBody
+        name: PostBroadcastMarkerBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostClipArgs
+        name: PostClipArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostCommercialBody
+        name: PostCommercialBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostEnforcementStatusArgs
+        name: PostEnforcementStatusArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostEnforcementStatusBody
+        name: PostEnforcementStatusBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody`1
+        name: PostEventSubscriptionBody<TCondition>
+        name.vb: PostEventSubscriptionBody(Of TCondition)
+      - uid: AuxLabs.Twitch.Rest.Requests.PostPredictionBody
+        name: PostPredictionBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostRaidArgs
+        name: PostRaidArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostRefreshTokenArgs
+        name: PostRefreshTokenArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostRevokeTokenArgs
+        name: PostRevokeTokenArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostRewardArgs
+        name: PostRewardArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostRewardBody
+        name: PostRewardBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostSegmentArgs
+        name: PostSegmentArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostSegmentBody
+        name: PostSegmentBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PostShoutoutArgs
+        name: PostShoutoutArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostUserAccessTokenArgs
+        name: PostUserAccessTokenArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostWhisperArgs
+        name: PostWhisperArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PostWhisperBody
+        name: PostWhisperBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription
+        name: PredictionEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription
+        name: PredictionLockSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription
+        name: PredictionProgressSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription
+        name: PredictionStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.PutAutomodSettingsBody
+        name: PutAutomodSettingsBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PutBlockArgs
+        name: PutBlockArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PutPollBody
+        name: PutPollBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PutShieldModeArgs
+        name: PutShieldModeArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PutShieldModeBody
+        name: PutShieldModeBody
+      - uid: AuxLabs.Twitch.Rest.Requests.PutUserArgs
+        name: PutUserArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.PutUserChatColorArgs
+        name: PutUserChatColorArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.RaidSubscription
+        name: RaidSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription
+        name: RedemptionAddSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription
+        name: RedemptionUpdateSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.RewardAddSubscription
+        name: RewardAddSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription
+        name: RewardRemoveSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.RewardSubscriptionBase
+        name: RewardSubscriptionBase
+      - uid: AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription
+        name: RewardUpdateSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.SearchCategoriesArgs
+        name: SearchCategoriesArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.SearchChannelsArgs
+        name: SearchChannelsArgs
+      - uid: AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription
+        name: ShieldModeEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription
+        name: ShieldModeStartSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription
+        name: ShoutoutCreateSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription
+        name: ShoutoutReceiveSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.SubscribeSubscription
+        name: SubscribeSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription
+        name: SubscriptionEndSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription
+        name: SubscriptionGiftSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription
+        name: SubscriptionMessageSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.UnbanSubscription
+        name: UnbanSubscription
+      - uid: AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+        name: UserUpdateSubscription
+      name.csharp: AuxLabs.Twitch.Rest.Requests
+      name.vb: AuxLabs.Twitch.Rest.Requests
+    - uid: AuxLabs.Twitch.Rest.IEventCondition
+      name: IEventCondition
+    - uid: AuxLabs.Twitch.Rest.TwitchRestClient
+      name: TwitchRestClient
+    - uid: AuxLabs.Twitch.Rest.TwitchRestConfig
+      name: TwitchRestConfig
+    name.csharp: AuxLabs.Twitch.Rest
+    name.vb: AuxLabs.Twitch.Rest
+  - uid: AuxLabs.Twitch.WebSockets
+    name: WebSockets
+    items:
+    - uid: AuxLabs.Twitch.WebSockets.ConnectionState
+      name: ConnectionState
+    - uid: AuxLabs.Twitch.WebSockets.IPayload
+      name: IPayload
+    - uid: AuxLabs.Twitch.WebSockets.ISerializer`1
+      name: ISerializer<TPayload>
+      name.vb: ISerializer(Of TPayload)
+    - uid: AuxLabs.Twitch.WebSockets.ISocketClient`1
+      name: ISocketClient<TPayload>
+      name.vb: ISocketClient(Of TPayload)
+    - uid: AuxLabs.Twitch.WebSockets.TwitchJsonSerializer`1
+      name: TwitchJsonSerializer<TPayload>
+      name.vb: TwitchJsonSerializer(Of TPayload)
+    - uid: AuxLabs.Twitch.WebSockets.WebSocketClosedException
+      name: WebSocketClosedException
+    name.csharp: AuxLabs.Twitch.WebSockets
+    name.vb: AuxLabs.Twitch.WebSockets
+  - uid: AuxLabs.Twitch.AnalyticType
+    name: AnalyticType
+  - uid: AuxLabs.Twitch.AnnouncementColor
+    name: AnnouncementColor
+  - uid: AuxLabs.Twitch.AsyncEnumerableExtensions
+    name: AsyncEnumerableExtensions
+  - uid: AuxLabs.Twitch.AutomodAction
+    name: AutomodAction
+  - uid: AuxLabs.Twitch.AutomodFilter
+    name: AutomodFilter
+  - uid: AuxLabs.Twitch.BitsPeriod
+    name: BitsPeriod
+  - uid: AuxLabs.Twitch.BlockContext
+    name: BlockContext
+  - uid: AuxLabs.Twitch.BroadcasterType
+    name: BroadcasterType
+  - uid: AuxLabs.Twitch.BroadcastType
+    name: BroadcastType
+  - uid: AuxLabs.Twitch.Cacheable`2
+    name: Cacheable<TEntity, TId>
+    name.vb: Cacheable(Of TEntity, TId)
+  - uid: AuxLabs.Twitch.CDN
+    name: CDN
+  - uid: AuxLabs.Twitch.ChatColor
+    name: ChatColor
+  - uid: AuxLabs.Twitch.CheermoteType
+    name: CheermoteType
+  - uid: AuxLabs.Twitch.CostType
+    name: CostType
+  - uid: AuxLabs.Twitch.CultureInfoConverter
+    name: CultureInfoConverter
+  - uid: AuxLabs.Twitch.DateRange
+    name: DateRange
+  - uid: AuxLabs.Twitch.DefaultRateLimiter
+    name: DefaultRateLimiter
+  - uid: AuxLabs.Twitch.DropStatus
+    name: DropStatus
+  - uid: AuxLabs.Twitch.EmoteFormat
+    name: EmoteFormat
+  - uid: AuxLabs.Twitch.EmotePosition
+    name: EmotePosition
+  - uid: AuxLabs.Twitch.EmotePositionConverter
+    name: EmotePositionConverter
+  - uid: AuxLabs.Twitch.EmoteScale
+    name: EmoteScale
+  - uid: AuxLabs.Twitch.EmoteTheme
+    name: EmoteTheme
+  - uid: AuxLabs.Twitch.EmoteType
+    name: EmoteType
+  - uid: AuxLabs.Twitch.EnumHelper
+    name: EnumHelper
+  - uid: AuxLabs.Twitch.EventSubStatus
+    name: EventSubStatus
+  - uid: AuxLabs.Twitch.EventSubType
+    name: EventSubType
+  - uid: AuxLabs.Twitch.ExtensionType
+    name: ExtensionType
+  - uid: AuxLabs.Twitch.FulfillmentStatus
+    name: FulfillmentStatus
+  - uid: AuxLabs.Twitch.GoalType
+    name: GoalType
+  - uid: AuxLabs.Twitch.HttpException
+    name: HttpException
+  - uid: AuxLabs.Twitch.HypeTrainContributionType
+    name: HypeTrainContributionType
+  - uid: AuxLabs.Twitch.IChannel
+    name: IChannel
+  - uid: AuxLabs.Twitch.IChatUser
+    name: IChatUser
+  - uid: AuxLabs.Twitch.IEntity`1
+    name: IEntity<TId>
+    name.vb: IEntity(Of TId)
+  - uid: AuxLabs.Twitch.InterfaceConverter`2
+    name: InterfaceConverter<TImpl, TInter>
+    name.vb: InterfaceConverter(Of TImpl, TInter)
+  - uid: AuxLabs.Twitch.InterfaceConverterFactory`2
+    name: InterfaceConverterFactory<TImpl, TInter>
+    name.vb: InterfaceConverterFactory(Of TImpl, TInter)
+  - uid: AuxLabs.Twitch.IPartialUser
+    name: IPartialUser
+  - uid: AuxLabs.Twitch.IRateLimiter
+    name: IRateLimiter
+  - uid: AuxLabs.Twitch.ISimpleUser
+    name: ISimpleUser
+  - uid: AuxLabs.Twitch.IUpdatable
+    name: IUpdatable
+  - uid: AuxLabs.Twitch.IUserFollow
+    name: IUserFollow
+  - uid: AuxLabs.Twitch.IUserInfo
+    name: IUserInfo
+  - uid: AuxLabs.Twitch.IUserRelation
+    name: IUserRelation
+  - uid: AuxLabs.Twitch.MissingScopeException
+    name: MissingScopeException
+  - uid: AuxLabs.Twitch.NoEqualityComparer
+    name: NoEqualityComparer
+  - uid: AuxLabs.Twitch.PollStatus
+    name: PollStatus
+  - uid: AuxLabs.Twitch.PredictionColor
+    name: PredictionColor
+  - uid: AuxLabs.Twitch.PredictionStatus
+    name: PredictionStatus
+  - uid: AuxLabs.Twitch.ProductType
+    name: ProductType
+  - uid: AuxLabs.Twitch.QueryMap
+    name: QueryMap
+  - uid: AuxLabs.Twitch.RateLimitedException
+    name: RateLimitedException
+  - uid: AuxLabs.Twitch.RateLimitInfo
+    name: RateLimitInfo
+  - uid: AuxLabs.Twitch.RedemptionSort
+    name: RedemptionSort
+  - uid: AuxLabs.Twitch.RedemptionStatus
+    name: RedemptionStatus
+  - uid: AuxLabs.Twitch.Require
+    name: Require
+  - uid: AuxLabs.Twitch.RFCDateTimeConverter
+    name: RFCDateTimeConverter
+  - uid: AuxLabs.Twitch.SimpleReward
+    name: SimpleReward
+  - uid: AuxLabs.Twitch.SubscriptionType
+    name: SubscriptionType
+  - uid: AuxLabs.Twitch.Title
+    name: Title
+  - uid: AuxLabs.Twitch.TokenType
+    name: TokenType
+  - uid: AuxLabs.Twitch.TrackSourceType
+    name: TrackSourceType
+  - uid: AuxLabs.Twitch.TransportMethod
+    name: TransportMethod
+  - uid: AuxLabs.Twitch.TwitchConstants
+    name: TwitchConstants
+  - uid: AuxLabs.Twitch.TwitchException
+    name: TwitchException
+  - uid: AuxLabs.Twitch.TwitchImage
+    name: TwitchImage
+  - uid: AuxLabs.Twitch.TwitchRestException
+    name: TwitchRestException
+  - uid: AuxLabs.Twitch.UnexpectedTagsException
+    name: UnexpectedTagsException
+  - uid: AuxLabs.Twitch.UserType
+    name: UserType
+  - uid: AuxLabs.Twitch.VideoPeriod
+    name: VideoPeriod
+  - uid: AuxLabs.Twitch.VideoSort
+    name: VideoSort
+  - uid: AuxLabs.Twitch.VideoType
+    name: VideoType
+  - uid: AuxLabs.Twitch.WebSocketClosedException
+    name: WebSocketClosedException
+memberLayout: SeparatePages

@@ -1,26 +1,51 @@
 - name: Getting Started
-  href: getting-started.md
+- name: Quick Start
+  href: ../index.md
+
+- name: Identity
+- name: Basics
+  href: identity/index.md
+- name: Authorization Flows
+  href: identity/auth-flows.md
+- name: Getting a Token
+  href: identity/getting-tokens.md
+- name: Storing a Token
+  href: identity/storing-tokens.md
+
 - name: Rest
+- name: Initialization
+  href: rest/index.md
+- name: Async Enumerables
+  href: rest/async-enumerables.md
+- name: Advanced
   items:
-  - name: Initialization
-    href: rest/init.md
   - name: Ratelimits
-    href: rest/ratelimits.md
+    href: rest/advanced/ratelimits.md
+
 - name: Chat
+- name: Initialization
+  href: chat/index.md
+- name: Advanced
   items:
-  - name: Initialization
-    href: chat/init.md
-  - name: Ratelimits
-    href: chat/ratelimits.md
+  - name: Cacheing
+    href: chat/advanced/cacheing.md
+  - name: Verified Accounts
+    href: chat/advanced/verified-accounts.md
+
 - name: EventSub
+- name: Initialization
+  href: eventsub/index.md
+- name: Subscription Costs
+  href: eventsub/subscription-costs.md
+- name: Advanced
   items:
-  - name: Initialization
-    href: eventsub/init.md
-  - name: Ratelimits
-    href: eventsub/ratelimits.md
+  - name: Webhooks
+    href: eventsub/advanced/webhooks.md
+
 - name: PubSub
+- name: Initialization
+  href: pubsub/index.md
+- name: Advanced
   items:
-  - name: Initialization
-    href: pubsub/init.md
-  - name: Ratelimits
-    href: pubsub/ratelimits.md
+  - name: Unstable Topics
+    href: pubsub/advanced/unstable-topics.md

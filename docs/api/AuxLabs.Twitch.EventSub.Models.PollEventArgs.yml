@@ -1,0 +1,1014 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  commentId: T:AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  id: PollEventArgs
+  parent: AuxLabs.Twitch.EventSub.Models
+  children:
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+  - AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+  langs:
+  - csharp
+  - vb
+  name: PollEventArgs
+  nameWithType: PollEventArgs
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: PollEventArgs
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  syntax:
+    content: public class PollEventArgs
+    content.vb: Public Class PollEventArgs
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AuxLabs.Twitch.EventSub.Models.PollEndedEventArgs
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+  id: Id
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PollEventArgs.Id
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 10
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: ID of the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("id")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("id")>
+
+      Public Property Id As String
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: PollEventArgs.BroadcasterId
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 14
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster ID.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_id")]
+
+      public string BroadcasterId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_id
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: PollEventArgs.BroadcasterName
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster login.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_login")]
+
+      public string BroadcasterName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_login")>
+
+      Public Property BroadcasterName As String
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_login
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+  id: BroadcasterDisplayName
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterDisplayName
+  nameWithType: PollEventArgs.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterDisplayName
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 22
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The requested broadcaster display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_user_name")]
+
+      public string BroadcasterDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_user_name")>
+
+      Public Property BroadcasterDisplayName As String
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_user_name
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+  id: Title
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: PollEventArgs.Title
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Title
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: Question displayed for the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("title")]
+
+      public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("title")>
+
+      Public Property Title As String
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+  id: Choices
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: PollEventArgs.Choices
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Choices
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 30
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: A collection of choices for the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("choices")]
+
+      public IReadOnlyCollection<PollOption> Choices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("choices")>
+
+      Public Property Choices As IReadOnlyCollection(Of PollOption)
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: choices
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+  id: BitsVoting
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BitsVoting
+  nameWithType: PollEventArgs.BitsVoting
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsVoting
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 34
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The Bits voting settings for the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("bits_voting")]
+
+      public VotingOption BitsVoting { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.VotingOption
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("bits_voting")>
+
+      Public Property BitsVoting As VotingOption
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bits_voting
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+  id: ChannelPointsVoting
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ChannelPointsVoting
+  nameWithType: PollEventArgs.ChannelPointsVoting
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ChannelPointsVoting
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 38
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The Channel Points voting settings for the poll.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("channel_points_voting")]
+
+      public VotingOption ChannelPointsVoting { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.VotingOption
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("channel_points_voting")>
+
+      Public Property ChannelPointsVoting As VotingOption
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: channel_points_voting
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+  id: StartedAt
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: StartedAt
+  nameWithType: PollEventArgs.StartedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: StartedAt
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 42
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The time the poll started.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("started_at")]
+
+      public DateTime StartedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("started_at")>
+
+      Public Property StartedAt As Date
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: started_at
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+  commentId: P:AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+  id: EndsAt
+  parent: AuxLabs.Twitch.EventSub.Models.PollEventArgs
+  langs:
+  - csharp
+  - vb
+  name: EndsAt
+  nameWithType: PollEventArgs.EndsAt
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EndsAt
+    path: ../src/AuxLabs.Twitch.EventSub.Api/Models/Events/Polls/PollEventArgs.cs
+    startLine: 46
+  assemblies:
+  - AuxLabs.Twitch.EventSub.Api
+  namespace: AuxLabs.Twitch.EventSub.Models
+  summary: The time the poll will end.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("ends_at")]
+
+      public DateTime EndsAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("ends_at")>
+
+      Public Property EndsAt As Date
+  overload: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ends_at
+references:
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id.html
+  name: Id
+  nameWithType: PollEventArgs.Id
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: PollEventArgs.BroadcasterId
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterId
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: PollEventArgs.BroadcasterName
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterName
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName.html
+  name: BroadcasterDisplayName
+  nameWithType: PollEventArgs.BroadcasterDisplayName
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BroadcasterDisplayName
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title.html
+  name: Title
+  nameWithType: PollEventArgs.Title
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Title
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices.html
+  name: Choices
+  nameWithType: PollEventArgs.Choices
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.Choices
+- uid: System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Models.PollOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<PollOption>
+  nameWithType: IReadOnlyCollection<PollOption>
+  fullName: System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Rest.Models.PollOption>
+  nameWithType.vb: IReadOnlyCollection(Of PollOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Rest.Models.PollOption)
+  name.vb: IReadOnlyCollection(Of PollOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.PollOption
+    name: PollOption
+    href: AuxLabs.Twitch.Rest.Models.PollOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.PollOption
+    name: PollOption
+    href: AuxLabs.Twitch.Rest.Models.PollOption.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting.html
+  name: BitsVoting
+  nameWithType: PollEventArgs.BitsVoting
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.BitsVoting
+- uid: AuxLabs.Twitch.EventSub.Models.VotingOption
+  commentId: T:AuxLabs.Twitch.EventSub.Models.VotingOption
+  parent: AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.Twitch.EventSub.Models.VotingOption.html
+  name: VotingOption
+  nameWithType: VotingOption
+  fullName: AuxLabs.Twitch.EventSub.Models.VotingOption
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting.html
+  name: ChannelPointsVoting
+  nameWithType: PollEventArgs.ChannelPointsVoting
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.ChannelPointsVoting
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt.html
+  name: StartedAt
+  nameWithType: PollEventArgs.StartedAt
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.StartedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt*
+  commentId: Overload:AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+  href: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt.html
+  name: EndsAt
+  nameWithType: PollEventArgs.EndsAt
+  fullName: AuxLabs.Twitch.EventSub.Models.PollEventArgs.EndsAt
+memberLayout: SeparatePages

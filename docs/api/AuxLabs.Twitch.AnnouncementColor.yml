@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.AnnouncementColor
+  commentId: T:AuxLabs.Twitch.AnnouncementColor
+  id: AnnouncementColor
+  parent: AuxLabs.Twitch
+  children:
+  - AuxLabs.Twitch.AnnouncementColor.Blue
+  - AuxLabs.Twitch.AnnouncementColor.Green
+  - AuxLabs.Twitch.AnnouncementColor.Orange
+  - AuxLabs.Twitch.AnnouncementColor.Primary
+  - AuxLabs.Twitch.AnnouncementColor.Purple
+  langs:
+  - csharp
+  - vb
+  name: AnnouncementColor
+  nameWithType: AnnouncementColor
+  fullName: AuxLabs.Twitch.AnnouncementColor
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: AnnouncementColor
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: public enum AnnouncementColor
+    content.vb: Public Enum AnnouncementColor
+  extensionMethods:
+  - AuxLabs.Twitch.AnnouncementColor.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.AnnouncementColor.Primary
+  commentId: F:AuxLabs.Twitch.AnnouncementColor.Primary
+  id: Primary
+  parent: AuxLabs.Twitch.AnnouncementColor
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: AnnouncementColor.Primary
+  fullName: AuxLabs.Twitch.AnnouncementColor.Primary
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Primary
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "primary")]
+
+      Primary = 0
+    return:
+      type: AuxLabs.Twitch.AnnouncementColor
+    content.vb: >-
+      <EnumMember(Value:="primary")>
+
+      Primary = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: primary
+- uid: AuxLabs.Twitch.AnnouncementColor.Blue
+  commentId: F:AuxLabs.Twitch.AnnouncementColor.Blue
+  id: Blue
+  parent: AuxLabs.Twitch.AnnouncementColor
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: AnnouncementColor.Blue
+  fullName: AuxLabs.Twitch.AnnouncementColor.Blue
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Blue
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 9
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "blue")]
+
+      Blue = 1
+    return:
+      type: AuxLabs.Twitch.AnnouncementColor
+    content.vb: >-
+      <EnumMember(Value:="blue")>
+
+      Blue = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: blue
+- uid: AuxLabs.Twitch.AnnouncementColor.Green
+  commentId: F:AuxLabs.Twitch.AnnouncementColor.Green
+  id: Green
+  parent: AuxLabs.Twitch.AnnouncementColor
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: AnnouncementColor.Green
+  fullName: AuxLabs.Twitch.AnnouncementColor.Green
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Green
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "green")]
+
+      Green = 2
+    return:
+      type: AuxLabs.Twitch.AnnouncementColor
+    content.vb: >-
+      <EnumMember(Value:="green")>
+
+      Green = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: green
+- uid: AuxLabs.Twitch.AnnouncementColor.Orange
+  commentId: F:AuxLabs.Twitch.AnnouncementColor.Orange
+  id: Orange
+  parent: AuxLabs.Twitch.AnnouncementColor
+  langs:
+  - csharp
+  - vb
+  name: Orange
+  nameWithType: AnnouncementColor.Orange
+  fullName: AuxLabs.Twitch.AnnouncementColor.Orange
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Orange
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "orange")]
+
+      Orange = 3
+    return:
+      type: AuxLabs.Twitch.AnnouncementColor
+    content.vb: >-
+      <EnumMember(Value:="orange")>
+
+      Orange = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: orange
+- uid: AuxLabs.Twitch.AnnouncementColor.Purple
+  commentId: F:AuxLabs.Twitch.AnnouncementColor.Purple
+  id: Purple
+  parent: AuxLabs.Twitch.AnnouncementColor
+  langs:
+  - csharp
+  - vb
+  name: Purple
+  nameWithType: AnnouncementColor.Purple
+  fullName: AuxLabs.Twitch.AnnouncementColor.Purple
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Purple
+    path: ../src/AuxLabs.Twitch.Core/Models/Chat/AnnouncementColor.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch
+  namespace: AuxLabs.Twitch
+  syntax:
+    content: >-
+      [EnumMember(Value = "purple")]
+
+      Purple = 4
+    return:
+      type: AuxLabs.Twitch.AnnouncementColor
+    content.vb: >-
+      <EnumMember(Value:="purple")>
+
+      Purple = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: purple
+references:
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.AnnouncementColor.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AnnouncementColor).html
+  name: GetStringValue<AnnouncementColor>(AnnouncementColor)
+  nameWithType: EnumHelper.GetStringValue<AnnouncementColor>(AnnouncementColor)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.AnnouncementColor>(AuxLabs.Twitch.AnnouncementColor)
+  nameWithType.vb: EnumHelper.GetStringValue(Of AnnouncementColor)(AnnouncementColor)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.AnnouncementColor)(AuxLabs.Twitch.AnnouncementColor)
+  name.vb: GetStringValue(Of AnnouncementColor)(AnnouncementColor)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.AnnouncementColor)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AnnouncementColor).html
+  - name: <
+  - uid: AuxLabs.Twitch.AnnouncementColor
+    name: AnnouncementColor
+    href: AuxLabs.Twitch.AnnouncementColor.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.AnnouncementColor
+    name: AnnouncementColor
+    href: AuxLabs.Twitch.AnnouncementColor.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.AnnouncementColor)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.AnnouncementColor).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.AnnouncementColor
+    name: AnnouncementColor
+    href: AuxLabs.Twitch.AnnouncementColor.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.AnnouncementColor
+    name: AnnouncementColor
+    href: AuxLabs.Twitch.AnnouncementColor.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch.AnnouncementColor
+  commentId: T:AuxLabs.Twitch.AnnouncementColor
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.AnnouncementColor.html
+  name: AnnouncementColor
+  nameWithType: AnnouncementColor
+  fullName: AuxLabs.Twitch.AnnouncementColor
+memberLayout: SeparatePages

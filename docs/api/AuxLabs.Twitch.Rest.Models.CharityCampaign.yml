@@ -1,0 +1,903 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  commentId: T:AuxLabs.Twitch.Rest.Models.CharityCampaign
+  id: CharityCampaign
+  parent: AuxLabs.Twitch.Rest.Models
+  children:
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+  - AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+  langs:
+  - csharp
+  - vb
+  name: CharityCampaign
+  nameWithType: CharityCampaign
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CharityCampaign
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  syntax:
+    content: public class CharityCampaign
+    content.vb: Public Class CharityCampaign
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+  id: Id
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: CharityCampaign.Id
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Id
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 7
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the charity campaign.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("id")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("id")>
+
+      Public Property Id As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+  id: BroadcasterId
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterId
+  nameWithType: CharityCampaign.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterId
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: An ID that identifies the broadcaster that’s running the campaign.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_id")]
+
+      public string BroadcasterId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_id")>
+
+      Public Property BroadcasterId As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_id
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+  id: BroadcasterLogin
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterLogin
+  nameWithType: CharityCampaign.BroadcasterLogin
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterLogin
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s login name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_login")]
+
+      public string BroadcasterLogin { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_login")>
+
+      Public Property BroadcasterLogin As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_login
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+  id: BroadcasterName
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: BroadcasterName
+  nameWithType: CharityCampaign.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcasterName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The broadcaster’s display name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("broadcaster_name")]
+
+      public string BroadcasterName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("broadcaster_name")>
+
+      Public Property BroadcasterName As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: broadcaster_name
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+  id: CharityName
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: CharityName
+  nameWithType: CharityCampaign.CharityName
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CharityName
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The charity’s name.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("charity_name")]
+
+      public string CharityName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("charity_name")>
+
+      Public Property CharityName As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: charity_name
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+  id: CharityDescription
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: CharityDescription
+  nameWithType: CharityCampaign.CharityDescription
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CharityDescription
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 27
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A description of the charity.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("charity_description")]
+
+      public string CharityDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("charity_description")>
+
+      Public Property CharityDescription As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: charity_description
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+  id: CharityLogoUrl
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: CharityLogoUrl
+  nameWithType: CharityCampaign.CharityLogoUrl
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CharityLogoUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 31
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to an image of the charity’s logo.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("charity_logo")]
+
+      public string CharityLogoUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("charity_logo")>
+
+      Public Property CharityLogoUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: charity_logo
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+  id: CharityWebsiteUrl
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: CharityWebsiteUrl
+  nameWithType: CharityCampaign.CharityWebsiteUrl
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CharityWebsiteUrl
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 35
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: A URL to the charity’s website.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("charity_website")]
+
+      public string CharityWebsiteUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("charity_website")>
+
+      Public Property CharityWebsiteUrl As String
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: charity_website
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+  id: CurrentAmount
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: CurrentAmount
+  nameWithType: CharityCampaign.CurrentAmount
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: CurrentAmount
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 39
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The current amount of donations that the campaign has received.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("current_amount")]
+
+      public CharityAmount CurrentAmount { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.Models.CharityAmount
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("current_amount")>
+
+      Public Property CurrentAmount As CharityAmount
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: current_amount
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+  commentId: P:AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+  id: TargetAmount
+  parent: AuxLabs.Twitch.Rest.Models.CharityCampaign
+  langs:
+  - csharp
+  - vb
+  name: TargetAmount
+  nameWithType: CharityCampaign.TargetAmount
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TargetAmount
+    path: ../src/AuxLabs.Twitch.Rest.Api/Models/Charity/CharityCampaign.cs
+    startLine: 43
+  assemblies:
+  - AuxLabs.Twitch.Rest.Api
+  namespace: AuxLabs.Twitch.Rest.Models
+  summary: The campaign’s fundraising goal.
+  example: []
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      [JsonPropertyName("target_amount")]
+
+      public CharityAmount TargetAmount { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.Models.CharityAmount
+    content.vb: >-
+      <JsonInclude>
+
+      <JsonPropertyName("target_amount")>
+
+      Public Property TargetAmount As CharityAmount
+  overload: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: target_amount
+references:
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id.html
+  name: Id
+  nameWithType: CharityCampaign.Id
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId.html
+  name: BroadcasterId
+  nameWithType: CharityCampaign.BroadcasterId
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterId
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin.html
+  name: BroadcasterLogin
+  nameWithType: CharityCampaign.BroadcasterLogin
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterLogin
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName.html
+  name: BroadcasterName
+  nameWithType: CharityCampaign.BroadcasterName
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.BroadcasterName
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName.html
+  name: CharityName
+  nameWithType: CharityCampaign.CharityName
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityName
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription.html
+  name: CharityDescription
+  nameWithType: CharityCampaign.CharityDescription
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityDescription
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl.html
+  name: CharityLogoUrl
+  nameWithType: CharityCampaign.CharityLogoUrl
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityLogoUrl
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl.html
+  name: CharityWebsiteUrl
+  nameWithType: CharityCampaign.CharityWebsiteUrl
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CharityWebsiteUrl
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount.html
+  name: CurrentAmount
+  nameWithType: CharityCampaign.CurrentAmount
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.CurrentAmount
+- uid: AuxLabs.Twitch.Rest.Models.CharityAmount
+  commentId: T:AuxLabs.Twitch.Rest.Models.CharityAmount
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.CharityAmount.html
+  name: CharityAmount
+  nameWithType: CharityAmount
+  fullName: AuxLabs.Twitch.Rest.Models.CharityAmount
+- uid: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount*
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+  href: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount.html
+  name: TargetAmount
+  nameWithType: CharityCampaign.TargetAmount
+  fullName: AuxLabs.Twitch.Rest.Models.CharityCampaign.TargetAmount
+memberLayout: SeparatePages

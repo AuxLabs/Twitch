@@ -1,0 +1,701 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.Chat.UserNoticeType
+  commentId: T:AuxLabs.Twitch.Chat.UserNoticeType
+  id: UserNoticeType
+  parent: AuxLabs.Twitch.Chat
+  children:
+  - AuxLabs.Twitch.Chat.UserNoticeType.Announcement
+  - AuxLabs.Twitch.Chat.UserNoticeType.BitsBadgeTier
+  - AuxLabs.Twitch.Chat.UserNoticeType.Raid
+  - AuxLabs.Twitch.Chat.UserNoticeType.Resubscription
+  - AuxLabs.Twitch.Chat.UserNoticeType.RewardGift
+  - AuxLabs.Twitch.Chat.UserNoticeType.Ritual
+  - AuxLabs.Twitch.Chat.UserNoticeType.Subscription
+  - AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGift
+  - AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgrade
+  - AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgradeAnonymous
+  - AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionMysteryGift
+  - AuxLabs.Twitch.Chat.UserNoticeType.Unknown
+  - AuxLabs.Twitch.Chat.UserNoticeType.Unraid
+  langs:
+  - csharp
+  - vb
+  name: UserNoticeType
+  nameWithType: UserNoticeType
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType
+  type: Enum
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserNoticeType
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 4
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: public enum UserNoticeType
+    content.vb: Public Enum UserNoticeType
+  extensionMethods:
+  - AuxLabs.Twitch.Chat.UserNoticeType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Unknown
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Unknown
+  id: Unknown
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UserNoticeType.Unknown
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unknown
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 6
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: Unknown = 0
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Announcement
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Announcement
+  id: Announcement
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Announcement
+  nameWithType: UserNoticeType.Announcement
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Announcement
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Announcement
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "announcement")]
+
+      Announcement = 1
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="announcement")>
+
+      Announcement = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: announcement
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Subscription
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Subscription
+  id: Subscription
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Subscription
+  nameWithType: UserNoticeType.Subscription
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Subscription
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Subscription
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 11
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "sub")]
+
+      Subscription = 2
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="sub")>
+
+      Subscription = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: sub
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Resubscription
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Resubscription
+  id: Resubscription
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Resubscription
+  nameWithType: UserNoticeType.Resubscription
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Resubscription
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Resubscription
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "resub")]
+
+      Resubscription = 3
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="resub")>
+
+      Resubscription = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: resub
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGift
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGift
+  id: SubscriptionGift
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionGift
+  nameWithType: UserNoticeType.SubscriptionGift
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGift
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionGift
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 15
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "subgift")]
+
+      SubscriptionGift = 4
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="subgift")>
+
+      SubscriptionGift = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: subgift
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionMysteryGift
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionMysteryGift
+  id: SubscriptionMysteryGift
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionMysteryGift
+  nameWithType: UserNoticeType.SubscriptionMysteryGift
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionMysteryGift
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionMysteryGift
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "submysterygift")]
+
+      SubscriptionMysteryGift = 5
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="submysterygift")>
+
+      SubscriptionMysteryGift = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: submysterygift
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgrade
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgrade
+  id: SubscriptionGiftUpgrade
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionGiftUpgrade
+  nameWithType: UserNoticeType.SubscriptionGiftUpgrade
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgrade
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionGiftUpgrade
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 19
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "giftpaidupgrade")]
+
+      SubscriptionGiftUpgrade = 6
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="giftpaidupgrade")>
+
+      SubscriptionGiftUpgrade = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: giftpaidupgrade
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.RewardGift
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.RewardGift
+  id: RewardGift
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: RewardGift
+  nameWithType: UserNoticeType.RewardGift
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.RewardGift
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: RewardGift
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "rewardgift")]
+
+      RewardGift = 7
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="rewardgift")>
+
+      RewardGift = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: rewardgift
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgradeAnonymous
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgradeAnonymous
+  id: SubscriptionGiftUpgradeAnonymous
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionGiftUpgradeAnonymous
+  nameWithType: UserNoticeType.SubscriptionGiftUpgradeAnonymous
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.SubscriptionGiftUpgradeAnonymous
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscriptionGiftUpgradeAnonymous
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "anongiftpaidupgrade")]
+
+      SubscriptionGiftUpgradeAnonymous = 8
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="anongiftpaidupgrade")>
+
+      SubscriptionGiftUpgradeAnonymous = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: anongiftpaidupgrade
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Raid
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Raid
+  id: Raid
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Raid
+  nameWithType: UserNoticeType.Raid
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Raid
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Raid
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 26
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "raid")]
+
+      Raid = 9
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="raid")>
+
+      Raid = 9
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: raid
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Unraid
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Unraid
+  id: Unraid
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Unraid
+  nameWithType: UserNoticeType.Unraid
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Unraid
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Unraid
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 28
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "unraid")]
+
+      Unraid = 10
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="unraid")>
+
+      Unraid = 10
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: unraid
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.Ritual
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.Ritual
+  id: Ritual
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: Ritual
+  nameWithType: UserNoticeType.Ritual
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.Ritual
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Ritual
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 30
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "ritual")]
+
+      Ritual = 11
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="ritual")>
+
+      Ritual = 11
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ritual
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.BitsBadgeTier
+  commentId: F:AuxLabs.Twitch.Chat.UserNoticeType.BitsBadgeTier
+  id: BitsBadgeTier
+  parent: AuxLabs.Twitch.Chat.UserNoticeType
+  langs:
+  - csharp
+  - vb
+  name: BitsBadgeTier
+  nameWithType: UserNoticeType.BitsBadgeTier
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType.BitsBadgeTier
+  type: Field
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BitsBadgeTier
+    path: ../src/AuxLabs.Twitch.Chat.Api/Models/UserNoticeType.cs
+    startLine: 32
+  assemblies:
+  - AuxLabs.Twitch.Chat.Api
+  namespace: AuxLabs.Twitch.Chat
+  syntax:
+    content: >-
+      [EnumMember(Value = "bitsbadgetier")]
+
+      BitsBadgeTier = 12
+    return:
+      type: AuxLabs.Twitch.Chat.UserNoticeType
+    content.vb: >-
+      <EnumMember(Value:="bitsbadgetier")>
+
+      BitsBadgeTier = 12
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: bitsbadgetier
+references:
+- uid: AuxLabs.Twitch.Chat
+  commentId: N:AuxLabs.Twitch.Chat
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Chat
+  nameWithType: AuxLabs.Twitch.Chat
+  fullName: AuxLabs.Twitch.Chat
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Chat
+    name: Chat
+    href: AuxLabs.Twitch.Chat.html
+- uid: AuxLabs.Twitch.Chat.UserNoticeType.AuxLabs.Twitch.EnumHelper.GetStringValue``1
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  parent: AuxLabs.Twitch.EnumHelper
+  definition: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.UserNoticeType).html
+  name: GetStringValue<UserNoticeType>(UserNoticeType)
+  nameWithType: EnumHelper.GetStringValue<UserNoticeType>(UserNoticeType)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<AuxLabs.Twitch.Chat.UserNoticeType>(AuxLabs.Twitch.Chat.UserNoticeType)
+  nameWithType.vb: EnumHelper.GetStringValue(Of UserNoticeType)(UserNoticeType)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of AuxLabs.Twitch.Chat.UserNoticeType)(AuxLabs.Twitch.Chat.UserNoticeType)
+  name.vb: GetStringValue(Of UserNoticeType)(UserNoticeType)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.UserNoticeType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.UserNoticeType).html
+  - name: <
+  - uid: AuxLabs.Twitch.Chat.UserNoticeType
+    name: UserNoticeType
+    href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  - name: '>'
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.UserNoticeType
+    name: UserNoticeType
+    href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(AuxLabs.Twitch.Chat.UserNoticeType)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(AuxLabs.Twitch.Chat.UserNoticeType).html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Chat.UserNoticeType
+    name: UserNoticeType
+    href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  - name: )
+  - name: (
+  - uid: AuxLabs.Twitch.Chat.UserNoticeType
+    name: UserNoticeType
+    href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  commentId: M:AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+  href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  name: GetStringValue<T>(T)
+  nameWithType: EnumHelper.GetStringValue<T>(T)
+  fullName: AuxLabs.Twitch.EnumHelper.GetStringValue<T>(T)
+  nameWithType.vb: EnumHelper.GetStringValue(Of T)(T)
+  fullName.vb: AuxLabs.Twitch.EnumHelper.GetStringValue(Of T)(T)
+  name.vb: GetStringValue(Of T)(T)
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: AuxLabs.Twitch.EnumHelper.GetStringValue``1(``0)
+    name: GetStringValue
+    href: AuxLabs.Twitch.EnumHelper.GetStringValue--1(--0).html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EnumHelper
+  commentId: T:AuxLabs.Twitch.EnumHelper
+  parent: AuxLabs.Twitch
+  href: AuxLabs.Twitch.EnumHelper.html
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: AuxLabs.Twitch.EnumHelper
+- uid: AuxLabs.Twitch
+  commentId: N:AuxLabs.Twitch
+  href: AuxLabs.html
+  name: AuxLabs.Twitch
+  nameWithType: AuxLabs.Twitch
+  fullName: AuxLabs.Twitch
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+- uid: AuxLabs.Twitch.Chat.UserNoticeType
+  commentId: T:AuxLabs.Twitch.Chat.UserNoticeType
+  parent: AuxLabs.Twitch.Chat
+  href: AuxLabs.Twitch.Chat.UserNoticeType.html
+  name: UserNoticeType
+  nameWithType: UserNoticeType
+  fullName: AuxLabs.Twitch.Chat.UserNoticeType
+memberLayout: SeparatePages

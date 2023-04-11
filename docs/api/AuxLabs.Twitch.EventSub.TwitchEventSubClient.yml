@@ -1,0 +1,3847 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  commentId: T:AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  id: TwitchEventSubClient
+  parent: AuxLabs.Twitch.EventSub
+  children:
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(System.String,AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Connected
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(System.String)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Disconnected
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(System.Boolean)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(System.String,System.Nullable{AuxLabs.Twitch.EventSubStatus},System.Nullable{AuxLabs.Twitch.EventSubType})
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Reconnect
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Revocation
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SessionCreated
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  - AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TwitchEventSubClient
+  nameWithType: TwitchEventSubClient
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  type: Class
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: TwitchEventSubClient
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 8
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: 'public class TwitchEventSubClient : IDisposable'
+    content.vb: Public Class TwitchEventSubClient Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+  commentId: P:AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+  id: EventSub
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: EventSub
+  nameWithType: TwitchEventSubClient.EventSub
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: EventSub
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 17
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: protected TwitchEventSubApiClient EventSub { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+    content.vb: Protected ReadOnly Property EventSub As TwitchEventSubApiClient
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+  commentId: P:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+  id: Rest
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Rest
+  nameWithType: TwitchEventSubClient.Rest
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Rest
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 18
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public TwitchRestClient Rest { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.TwitchRestClient
+    content.vb: Public ReadOnly Property Rest As TwitchRestClient
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+  commentId: P:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+  id: Identity
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: TwitchEventSubClient.Identity
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Identity
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 20
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public AppIdentity Identity { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.Rest.Models.AppIdentity
+    content.vb: Public ReadOnly Property Identity As AppIdentity
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+  commentId: P:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+  id: Session
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: TwitchEventSubClient.Session
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+  type: Property
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Session
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Session Session { get; }
+    parameters: []
+    return:
+      type: AuxLabs.Twitch.EventSub.Models.Session
+    content.vb: Public ReadOnly Property Session As Session
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  id: '#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)'
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: TwitchEventSubClient(TwitchEventSubConfig)
+  nameWithType: TwitchEventSubClient.TwitchEventSubClient(TwitchEventSubConfig)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.TwitchEventSubClient(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 23
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public TwitchEventSubClient(TwitchEventSubConfig config = null)
+    parameters:
+    - id: config
+      type: AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+    content.vb: Public Sub New(config As TwitchEventSubConfig = Nothing)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor*
+  nameWithType.vb: TwitchEventSubClient.New(TwitchEventSubConfig)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.New(AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  name.vb: New(TwitchEventSubConfig)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(System.String,AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(System.String,AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  id: '#ctor(System.String,AuxLabs.Twitch.EventSub.TwitchEventSubConfig)'
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: TwitchEventSubClient(string, TwitchEventSubConfig)
+  nameWithType: TwitchEventSubClient.TwitchEventSubClient(string, TwitchEventSubConfig)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.TwitchEventSubClient(string, AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  type: Constructor
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: .ctor
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 25
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public TwitchEventSubClient(string url, TwitchEventSubConfig config = null)
+    parameters:
+    - id: url
+      type: System.String
+    - id: config
+      type: AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+    content.vb: Public Sub New(url As String, config As TwitchEventSubConfig = Nothing)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor*
+  nameWithType.vb: TwitchEventSubClient.New(String, TwitchEventSubConfig)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.New(String, AuxLabs.Twitch.EventSub.TwitchEventSubConfig)
+  name.vb: New(String, TwitchEventSubConfig)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(System.Boolean)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: TwitchEventSubClient.Dispose(bool)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Dispose
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 102
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose*
+  nameWithType.vb: TwitchEventSubClient.Dispose(Boolean)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose
+  id: Dispose
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: TwitchEventSubClient.Dispose()
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Dispose
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 112
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(System.String)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(System.String)
+  id: ValidateAsync(System.String)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(string)
+  nameWithType: TwitchEventSubClient.ValidateAsync(string)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: ValidateAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 120
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  example: []
+  syntax:
+    content: public Task<AccessTokenInfo> ValidateAsync(string token)
+    parameters:
+    - id: token
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+    content.vb: Public Function ValidateAsync(token As String) As Task(Of AccessTokenInfo)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync*
+  nameWithType.vb: TwitchEventSubClient.ValidateAsync(String)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(String)
+  name.vb: ValidateAsync(String)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(System.String,System.Nullable{AuxLabs.Twitch.EventSubStatus},System.Nullable{AuxLabs.Twitch.EventSubType})
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(System.String,System.Nullable{AuxLabs.Twitch.EventSubStatus},System.Nullable{AuxLabs.Twitch.EventSubType})
+  id: GetSubscriptionsAsync(System.String,System.Nullable{AuxLabs.Twitch.EventSubStatus},System.Nullable{AuxLabs.Twitch.EventSubType})
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionsAsync(string, EventSubStatus?, EventSubType?)
+  nameWithType: TwitchEventSubClient.GetSubscriptionsAsync(string, EventSubStatus?, EventSubType?)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(string, AuxLabs.Twitch.EventSubStatus?, AuxLabs.Twitch.EventSubType?)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: GetSubscriptionsAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 126
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<IReadOnlyCollection<RestEventSubscription>> GetSubscriptionsAsync(string userId = null, EventSubStatus? status = null, EventSubType? type = null)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: status
+      type: System.Nullable{AuxLabs.Twitch.EventSubStatus}
+    - id: type
+      type: System.Nullable{AuxLabs.Twitch.EventSubType}
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}}
+    content.vb: Public Function GetSubscriptionsAsync(userId As String = Nothing, status As EventSubStatus? = Nothing, type As EventSubType? = Nothing) As Task(Of IReadOnlyCollection(Of RestEventSubscription))
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync*
+  nameWithType.vb: TwitchEventSubClient.GetSubscriptionsAsync(String, EventSubStatus?, EventSubType?)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(String, AuxLabs.Twitch.EventSubStatus?, AuxLabs.Twitch.EventSubType?)
+  name.vb: GetSubscriptionsAsync(String, EventSubStatus?, EventSubType?)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(System.String)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(System.String)
+  id: DeleteSubscriptionAsync(System.String)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteSubscriptionAsync(string)
+  nameWithType: TwitchEventSubClient.DeleteSubscriptionAsync(string)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: DeleteSubscriptionAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 128
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task DeleteSubscriptionAsync(string subscriptionId)
+    parameters:
+    - id: subscriptionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteSubscriptionAsync(subscriptionId As String) As Task
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync*
+  nameWithType.vb: TwitchEventSubClient.DeleteSubscriptionAsync(String)
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(String)
+  name.vb: DeleteSubscriptionAsync(String)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(BroadcastEndedSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(BroadcastEndedSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 134
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(BroadcastEndedSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As BroadcastEndedSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(BroadcastStartedSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(BroadcastStartedSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 136
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(BroadcastStartedSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As BroadcastStartedSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ChannelUpdateSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ChannelUpdateSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 142
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ChannelUpdateSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ChannelUpdateSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(CheerSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(CheerSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CheerSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 144
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(CheerSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.CheerSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As CheerSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(FollowSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(FollowSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.FollowSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 146
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(FollowSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.FollowSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As FollowSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RaidSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RaidSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RaidSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 148
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RaidSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RaidSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RaidSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ShoutoutCreateSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ShoutoutCreateSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 150
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ShoutoutCreateSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ShoutoutCreateSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ShoutoutReceiveSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ShoutoutReceiveSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 152
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ShoutoutReceiveSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ShoutoutReceiveSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(CampaignProgressSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(CampaignProgressSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 158
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(CampaignProgressSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As CampaignProgressSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(CampaignStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(CampaignStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 160
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(CampaignStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As CampaignStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(CampaignStopSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(CampaignStopSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 162
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(CampaignStopSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As CampaignStopSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(DonationSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(DonationSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.DonationSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 164
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(DonationSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.DonationSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As DonationSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(EntitlementGrantSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(EntitlementGrantSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 170
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(EntitlementGrantSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As EntitlementGrantSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(BitsTransactionSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(BitsTransactionSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 176
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(BitsTransactionSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As BitsTransactionSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(GoalEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(GoalEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 182
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(GoalEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.GoalEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As GoalEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(GoalProgressSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(GoalProgressSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 184
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(GoalProgressSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As GoalProgressSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(GoalStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(GoalStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.GoalStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 186
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(GoalStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.GoalStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As GoalStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(HypetrainEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(HypetrainEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 192
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(HypetrainEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As HypetrainEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(HypetrainProgressSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(HypetrainProgressSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 194
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(HypetrainProgressSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As HypetrainProgressSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(HypetrainStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(HypetrainStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 196
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(HypetrainStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As HypetrainStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(BanSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(BanSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BanSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 202
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(BanSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.BanSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As BanSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ModeratorAddSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ModeratorAddSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 204
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ModeratorAddSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ModeratorAddSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ModeratorRemoveSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ModeratorRemoveSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 206
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ModeratorRemoveSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ModeratorRemoveSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ShieldModeEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ShieldModeEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 208
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ShieldModeEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ShieldModeEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(ShieldModeStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(ShieldModeStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 210
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(ShieldModeStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As ShieldModeStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(UnbanSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(UnbanSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UnbanSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 212
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(UnbanSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.UnbanSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As UnbanSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PollEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PollEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 218
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PollEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PollEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PollEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PollProgressSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PollProgressSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollProgressSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 220
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PollProgressSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PollProgressSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PollProgressSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PollStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PollStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PollStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 222
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PollStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PollStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PollStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PredictionEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PredictionEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 228
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PredictionEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PredictionEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PredictionLockSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PredictionLockSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 230
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PredictionLockSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PredictionLockSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PredictionProgressSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PredictionProgressSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 232
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PredictionProgressSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PredictionProgressSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(PredictionStartSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(PredictionStartSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 234
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(PredictionStartSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As PredictionStartSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RedemptionAddSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RedemptionAddSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 240
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RedemptionAddSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RedemptionAddSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RedemptionUpdateSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RedemptionUpdateSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 242
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RedemptionUpdateSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RedemptionUpdateSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RewardAddSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RewardAddSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardAddSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 244
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RewardAddSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RewardAddSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RewardAddSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RewardRemoveSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RewardRemoveSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 246
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RewardRemoveSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RewardRemoveSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(RewardUpdateSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(RewardUpdateSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 248
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(RewardUpdateSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As RewardUpdateSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(SubscribeSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(SubscribeSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscribeSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 254
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(SubscribeSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.SubscribeSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As SubscribeSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(SubscriptionEndSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(SubscriptionEndSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 256
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(SubscriptionEndSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As SubscriptionEndSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(SubscriptionGiftSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(SubscriptionGiftSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 258
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(SubscriptionGiftSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As SubscriptionGiftSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(SubscriptionMessageSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(SubscriptionMessageSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 260
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(SubscriptionMessageSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As SubscriptionMessageSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(AuthorizationGrantedSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(AuthorizationGrantedSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 266
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(AuthorizationGrantedSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As AuthorizationGrantedSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(AuthorizationRevokedSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(AuthorizationRevokedSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 268
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(AuthorizationRevokedSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As AuthorizationRevokedSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)
+  commentId: M:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)
+  id: SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync(UserUpdateSubscription)
+  nameWithType: TwitchEventSubClient.SubscribeAsync(UserUpdateSubscription)
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SubscribeAsync
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.cs
+    startLine: 270
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  syntax:
+    content: public Task<RestEventSubscription> SubscribeAsync(UserUpdateSubscription args)
+    parameters:
+    - id: args
+      type: AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+    return:
+      type: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+    content.vb: Public Function SubscribeAsync(args As UserUpdateSubscription) As Task(Of RestEventSubscription)
+  overload: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Connected
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Connected
+  id: Connected
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: TwitchEventSubClient.Connected
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Connected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Connected
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 13
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: Triggered when the socket connection is established
+  example: []
+  syntax:
+    content: public event Func<Task> Connected
+    return:
+      type: System.Func{System.Threading.Tasks.Task}
+    content.vb: Public Event Connected As Func(Of Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Disconnected
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Disconnected
+  id: Disconnected
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: TwitchEventSubClient.Disconnected
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Disconnected
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Disconnected
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 21
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: Triggered when the socket connection is closed
+  example: []
+  syntax:
+    content: public event Func<Exception, Task> Disconnected
+    return:
+      type: System.Func{System.Exception,System.Threading.Tasks.Task}
+    content.vb: Public Event Disconnected As Func(Of Exception, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Reconnect
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Reconnect
+  id: Reconnect
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Reconnect
+  nameWithType: TwitchEventSubClient.Reconnect
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Reconnect
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Reconnect
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 29
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: Triggered when the server tells the client to reconnect
+  example: []
+  syntax:
+    content: public event Func<Session, Task> Reconnect
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Models.Session,System.Threading.Tasks.Task}
+    content.vb: Public Event Reconnect As Func(Of Session, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  id: NotificationReceived
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: NotificationReceived
+  nameWithType: TwitchEventSubClient.NotificationReceived
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.NotificationReceived
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: NotificationReceived
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 37
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: Triggered when a notification payload is received.
+  example: []
+  syntax:
+    content: public event Func<EventSubFrame, Task> NotificationReceived
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Api.EventSubFrame,System.Threading.Tasks.Task}
+    content.vb: Public Event NotificationReceived As Func(Of EventSubFrame, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SessionCreated
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SessionCreated
+  id: SessionCreated
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: SessionCreated
+  nameWithType: TwitchEventSubClient.SessionCreated
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SessionCreated
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: SessionCreated
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 48
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<Session, Task> SessionCreated
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Models.Session,System.Threading.Tasks.Task}
+    content.vb: Public Event SessionCreated As Func(Of Session, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Revocation
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Revocation
+  id: Revocation
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: Revocation
+  nameWithType: TwitchEventSubClient.Revocation
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Revocation
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: Revocation
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 56
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<EventSubEventSubscription, Task> Revocation
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+    content.vb: Public Event Revocation As Func(Of EventSubEventSubscription, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
+  id: UserBanned
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: UserBanned
+  nameWithType: TwitchEventSubClient.UserBanned
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserBanned
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserBanned
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 79
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<BanEventArgs, EventSubEventSubscription, Task> UserBanned
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.BanEventArgs,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+    content.vb: Public Event UserBanned As Func(Of BanEventArgs, EventSubEventSubscription, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  id: BroadcastStarted
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: BroadcastStarted
+  nameWithType: TwitchEventSubClient.BroadcastStarted
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastStarted
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcastStarted
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 152
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<EventSubBroadcast, EventSubEventSubscription, Task> BroadcastStarted
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+    content.vb: Public Event BroadcastStarted As Func(Of EventSubBroadcast, EventSubEventSubscription, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  id: BroadcastEnded
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: BroadcastEnded
+  nameWithType: TwitchEventSubClient.BroadcastEnded
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.BroadcastEnded
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: BroadcastEnded
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 160
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<EventSubSimpleUser, EventSubEventSubscription, Task> BroadcastEnded
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+    content.vb: Public Event BroadcastEnded As Func(Of EventSubSimpleUser, EventSubEventSubscription, Task)
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  commentId: E:AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  id: UserUpdated
+  parent: AuxLabs.Twitch.EventSub.TwitchEventSubClient
+  langs:
+  - csharp
+  - vb
+  name: UserUpdated
+  nameWithType: TwitchEventSubClient.UserUpdated
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.UserUpdated
+  type: Event
+  source:
+    remote:
+      path: src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+      branch: main
+      repo: https://github.com/AuxLabs/Twitch.git
+    id: UserUpdated
+    path: ../src/AuxLabs.Twitch.EventSub/TwitchEventSubClient.Events.cs
+    startLine: 171
+  assemblies:
+  - AuxLabs.Twitch.EventSub
+  namespace: AuxLabs.Twitch.EventSub
+  summary: ''
+  example: []
+  syntax:
+    content: public event Func<EventSubUser, EventSubEventSubscription, Task> UserUpdated
+    return:
+      type: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+    content.vb: Public Event UserUpdated As Func(Of EventSubUser, EventSubEventSubscription, Task)
+references:
+- uid: AuxLabs.Twitch.EventSub
+  commentId: N:AuxLabs.Twitch.EventSub
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub
+  nameWithType: AuxLabs.Twitch.EventSub
+  fullName: AuxLabs.Twitch.EventSub
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub.html
+  name: EventSub
+  nameWithType: TwitchEventSubClient.EventSub
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.EventSub
+- uid: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+  commentId: T:AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+  parent: AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient.html
+  name: TwitchEventSubApiClient
+  nameWithType: TwitchEventSubApiClient
+  fullName: AuxLabs.Twitch.EventSub.Api.TwitchEventSubApiClient
+- uid: AuxLabs.Twitch.EventSub.Api
+  commentId: N:AuxLabs.Twitch.EventSub.Api
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Api
+  nameWithType: AuxLabs.Twitch.EventSub.Api
+  fullName: AuxLabs.Twitch.EventSub.Api
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Api
+    name: Api
+    href: AuxLabs.Twitch.EventSub.Api.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Api
+    name: Api
+    href: AuxLabs.Twitch.EventSub.Api.html
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest.html
+  name: Rest
+  nameWithType: TwitchEventSubClient.Rest
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Rest
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient
+  commentId: T:AuxLabs.Twitch.Rest.TwitchRestClient
+  parent: AuxLabs.Twitch.Rest
+  href: AuxLabs.Twitch.Rest.TwitchRestClient.html
+  name: TwitchRestClient
+  nameWithType: TwitchRestClient
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient
+- uid: AuxLabs.Twitch.Rest
+  commentId: N:AuxLabs.Twitch.Rest
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest
+  nameWithType: AuxLabs.Twitch.Rest
+  fullName: AuxLabs.Twitch.Rest
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity.html
+  name: Identity
+  nameWithType: TwitchEventSubClient.Identity
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Identity
+- uid: AuxLabs.Twitch.Rest.Models.AppIdentity
+  commentId: T:AuxLabs.Twitch.Rest.Models.AppIdentity
+  parent: AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.Twitch.Rest.Models.AppIdentity.html
+  name: AppIdentity
+  nameWithType: AppIdentity
+  fullName: AuxLabs.Twitch.Rest.Models.AppIdentity
+- uid: AuxLabs.Twitch.Rest.Models
+  commentId: N:AuxLabs.Twitch.Rest.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Models
+  nameWithType: AuxLabs.Twitch.Rest.Models
+  fullName: AuxLabs.Twitch.Rest.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Models
+    name: Models
+    href: AuxLabs.Twitch.Rest.Models.html
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session.html
+  name: Session
+  nameWithType: TwitchEventSubClient.Session
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Session
+- uid: AuxLabs.Twitch.EventSub.Models.Session
+  commentId: T:AuxLabs.Twitch.EventSub.Models.Session
+  parent: AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.Twitch.EventSub.Models.Session.html
+  name: Session
+  nameWithType: Session
+  fullName: AuxLabs.Twitch.EventSub.Models.Session
+- uid: AuxLabs.Twitch.EventSub.Models
+  commentId: N:AuxLabs.Twitch.EventSub.Models
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.EventSub.Models
+  nameWithType: AuxLabs.Twitch.EventSub.Models
+  fullName: AuxLabs.Twitch.EventSub.Models
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub
+    name: EventSub
+    href: AuxLabs.Twitch.EventSub.html
+  - name: .
+  - uid: AuxLabs.Twitch.EventSub.Models
+    name: Models
+    href: AuxLabs.Twitch.EventSub.Models.html
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.#ctor(AuxLabs.Twitch.EventSub.TwitchEventSubConfig).html
+  name: TwitchEventSubClient
+  nameWithType: TwitchEventSubClient.TwitchEventSubClient
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.TwitchEventSubClient
+  nameWithType.vb: TwitchEventSubClient.New
+  fullName.vb: AuxLabs.Twitch.EventSub.TwitchEventSubClient.New
+  name.vb: New
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+  commentId: T:AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+  parent: AuxLabs.Twitch.EventSub
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubConfig.html
+  name: TwitchEventSubConfig
+  nameWithType: TwitchEventSubConfig
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubConfig
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose(System.Boolean).html
+  name: Dispose
+  nameWithType: TwitchEventSubClient.Dispose
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync(System.String).html
+  name: ValidateAsync
+  nameWithType: TwitchEventSubClient.ValidateAsync
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.ValidateAsync
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Models.AccessTokenInfo}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AccessTokenInfo>
+  nameWithType: Task<AccessTokenInfo>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Rest.Models.AccessTokenInfo>
+  nameWithType.vb: Task(Of AccessTokenInfo)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Rest.Models.AccessTokenInfo)
+  name.vb: Task(Of AccessTokenInfo)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Models.AccessTokenInfo
+    name: AccessTokenInfo
+    href: AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Models.AccessTokenInfo
+    name: AccessTokenInfo
+    href: AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync(System.String,System.Nullable{AuxLabs.Twitch.EventSubStatus},System.Nullable{AuxLabs.Twitch.EventSubType}).html
+  name: GetSubscriptionsAsync
+  nameWithType: TwitchEventSubClient.GetSubscriptionsAsync
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.GetSubscriptionsAsync
+- uid: System.Nullable{AuxLabs.Twitch.EventSubStatus}
+  commentId: T:System.Nullable{AuxLabs.Twitch.EventSubStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: AuxLabs.Twitch.EventSubStatus.html
+  name: EventSubStatus?
+  nameWithType: EventSubStatus?
+  fullName: AuxLabs.Twitch.EventSubStatus?
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EventSubStatus
+    name: EventSubStatus
+    href: AuxLabs.Twitch.EventSubStatus.html
+  - name: '?'
+  spec.vb:
+  - uid: AuxLabs.Twitch.EventSubStatus
+    name: EventSubStatus
+    href: AuxLabs.Twitch.EventSubStatus.html
+  - name: '?'
+- uid: System.Nullable{AuxLabs.Twitch.EventSubType}
+  commentId: T:System.Nullable{AuxLabs.Twitch.EventSubType}
+  parent: System
+  definition: System.Nullable`1
+  href: AuxLabs.Twitch.EventSubType.html
+  name: EventSubType?
+  nameWithType: EventSubType?
+  fullName: AuxLabs.Twitch.EventSubType?
+  spec.csharp:
+  - uid: AuxLabs.Twitch.EventSubType
+    name: EventSubType
+    href: AuxLabs.Twitch.EventSubType.html
+  - name: '?'
+  spec.vb:
+  - uid: AuxLabs.Twitch.EventSubType
+    name: EventSubType
+    href: AuxLabs.Twitch.EventSubType.html
+  - name: '?'
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyCollection<RestEventSubscription>>
+  nameWithType: Task<IReadOnlyCollection<RestEventSubscription>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyCollection<AuxLabs.Twitch.Rest.Entities.RestEventSubscription>>
+  nameWithType.vb: Task(Of IReadOnlyCollection(Of RestEventSubscription))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyCollection(Of AuxLabs.Twitch.Rest.Entities.RestEventSubscription))
+  name.vb: Task(Of IReadOnlyCollection(Of RestEventSubscription))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+    name: RestEventSubscription
+    href: AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+    name: RestEventSubscription
+    href: AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html
+  - name: )
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync(System.String).html
+  name: DeleteSubscriptionAsync
+  nameWithType: TwitchEventSubClient.DeleteSubscriptionAsync
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.DeleteSubscriptionAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync*
+  commentId: Overload:AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync
+  href: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync(AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription).html
+  name: SubscribeAsync
+  nameWithType: TwitchEventSubClient.SubscribeAsync
+  fullName: AuxLabs.Twitch.EventSub.TwitchEventSubClient.SubscribeAsync
+- uid: AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription.html
+  name: BroadcastEndedSubscription
+  nameWithType: BroadcastEndedSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.BroadcastEndedSubscription
+- uid: System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+  commentId: T:System.Threading.Tasks.Task{AuxLabs.Twitch.Rest.Entities.RestEventSubscription}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<RestEventSubscription>
+  nameWithType: Task<RestEventSubscription>
+  fullName: System.Threading.Tasks.Task<AuxLabs.Twitch.Rest.Entities.RestEventSubscription>
+  nameWithType.vb: Task(Of RestEventSubscription)
+  fullName.vb: System.Threading.Tasks.Task(Of AuxLabs.Twitch.Rest.Entities.RestEventSubscription)
+  name.vb: Task(Of RestEventSubscription)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+    name: RestEventSubscription
+    href: AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.Rest.Entities.RestEventSubscription
+    name: RestEventSubscription
+    href: AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html
+  - name: )
+- uid: AuxLabs.Twitch.Rest.Requests
+  commentId: N:AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.html
+  name: AuxLabs.Twitch.Rest.Requests
+  nameWithType: AuxLabs.Twitch.Rest.Requests
+  fullName: AuxLabs.Twitch.Rest.Requests
+  spec.csharp:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+  spec.vb:
+  - uid: AuxLabs
+    name: AuxLabs
+    href: AuxLabs.html
+  - name: .
+  - uid: AuxLabs.Twitch
+    name: Twitch
+    href: AuxLabs.Twitch.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest
+    name: Rest
+    href: AuxLabs.Twitch.Rest.html
+  - name: .
+  - uid: AuxLabs.Twitch.Rest.Requests
+    name: Requests
+    href: AuxLabs.Twitch.Rest.Requests.html
+- uid: AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription.html
+  name: BroadcastStartedSubscription
+  nameWithType: BroadcastStartedSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.BroadcastStartedSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription.html
+  name: ChannelUpdateSubscription
+  nameWithType: ChannelUpdateSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ChannelUpdateSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.CheerSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.CheerSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.CheerSubscription.html
+  name: CheerSubscription
+  nameWithType: CheerSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.CheerSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.FollowSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.FollowSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.FollowSubscription.html
+  name: FollowSubscription
+  nameWithType: FollowSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.FollowSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RaidSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RaidSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RaidSubscription.html
+  name: RaidSubscription
+  nameWithType: RaidSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RaidSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription.html
+  name: ShoutoutCreateSubscription
+  nameWithType: ShoutoutCreateSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ShoutoutCreateSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription.html
+  name: ShoutoutReceiveSubscription
+  nameWithType: ShoutoutReceiveSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ShoutoutReceiveSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription.html
+  name: CampaignProgressSubscription
+  nameWithType: CampaignProgressSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.CampaignProgressSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription.html
+  name: CampaignStartSubscription
+  nameWithType: CampaignStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.CampaignStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription.html
+  name: CampaignStopSubscription
+  nameWithType: CampaignStopSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.CampaignStopSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.DonationSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.DonationSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.DonationSubscription.html
+  name: DonationSubscription
+  nameWithType: DonationSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.DonationSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription.html
+  name: EntitlementGrantSubscription
+  nameWithType: EntitlementGrantSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.EntitlementGrantSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription.html
+  name: BitsTransactionSubscription
+  nameWithType: BitsTransactionSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.BitsTransactionSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.GoalEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.GoalEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.GoalEndSubscription.html
+  name: GoalEndSubscription
+  nameWithType: GoalEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.GoalEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription.html
+  name: GoalProgressSubscription
+  nameWithType: GoalProgressSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.GoalProgressSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.GoalStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.GoalStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.GoalStartSubscription.html
+  name: GoalStartSubscription
+  nameWithType: GoalStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.GoalStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription.html
+  name: HypetrainEndSubscription
+  nameWithType: HypetrainEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.HypetrainEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription.html
+  name: HypetrainProgressSubscription
+  nameWithType: HypetrainProgressSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.HypetrainProgressSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription.html
+  name: HypetrainStartSubscription
+  nameWithType: HypetrainStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.HypetrainStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.BanSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.BanSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.BanSubscription.html
+  name: BanSubscription
+  nameWithType: BanSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.BanSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.html
+  name: ModeratorAddSubscription
+  nameWithType: ModeratorAddSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription.html
+  name: ModeratorRemoveSubscription
+  nameWithType: ModeratorRemoveSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ModeratorRemoveSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription.html
+  name: ShieldModeEndSubscription
+  nameWithType: ShieldModeEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ShieldModeEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription.html
+  name: ShieldModeStartSubscription
+  nameWithType: ShieldModeStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.ShieldModeStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.UnbanSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.UnbanSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.UnbanSubscription.html
+  name: UnbanSubscription
+  nameWithType: UnbanSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.UnbanSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PollEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PollEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PollEndSubscription.html
+  name: PollEndSubscription
+  nameWithType: PollEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PollEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PollProgressSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PollProgressSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PollProgressSubscription.html
+  name: PollProgressSubscription
+  nameWithType: PollProgressSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PollProgressSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PollStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PollStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PollStartSubscription.html
+  name: PollStartSubscription
+  nameWithType: PollStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PollStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription.html
+  name: PredictionEndSubscription
+  nameWithType: PredictionEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PredictionEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription.html
+  name: PredictionLockSubscription
+  nameWithType: PredictionLockSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PredictionLockSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription.html
+  name: PredictionProgressSubscription
+  nameWithType: PredictionProgressSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PredictionProgressSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription.html
+  name: PredictionStartSubscription
+  nameWithType: PredictionStartSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.PredictionStartSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription.html
+  name: RedemptionAddSubscription
+  nameWithType: RedemptionAddSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RedemptionAddSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription.html
+  name: RedemptionUpdateSubscription
+  nameWithType: RedemptionUpdateSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RedemptionUpdateSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RewardAddSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RewardAddSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RewardAddSubscription.html
+  name: RewardAddSubscription
+  nameWithType: RewardAddSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RewardAddSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription.html
+  name: RewardRemoveSubscription
+  nameWithType: RewardRemoveSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RewardRemoveSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription.html
+  name: RewardUpdateSubscription
+  nameWithType: RewardUpdateSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.RewardUpdateSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.SubscribeSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.SubscribeSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.SubscribeSubscription.html
+  name: SubscribeSubscription
+  nameWithType: SubscribeSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.SubscribeSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription.html
+  name: SubscriptionEndSubscription
+  nameWithType: SubscriptionEndSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.SubscriptionEndSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription.html
+  name: SubscriptionGiftSubscription
+  nameWithType: SubscriptionGiftSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.SubscriptionGiftSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription.html
+  name: SubscriptionMessageSubscription
+  nameWithType: SubscriptionMessageSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.SubscriptionMessageSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription.html
+  name: AuthorizationGrantedSubscription
+  nameWithType: AuthorizationGrantedSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.AuthorizationGrantedSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription.html
+  name: AuthorizationRevokedSubscription
+  nameWithType: AuthorizationRevokedSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.AuthorizationRevokedSubscription
+- uid: AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+  commentId: T:AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+  parent: AuxLabs.Twitch.Rest.Requests
+  href: AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription.html
+  name: UserUpdateSubscription
+  nameWithType: UserUpdateSubscription
+  fullName: AuxLabs.Twitch.Rest.Requests.UserUpdateSubscription
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{System.Exception,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Exception,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Exception, Task>
+  nameWithType: Func<Exception, Task>
+  fullName: System.Func<System.Exception, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Exception, Task)
+  fullName.vb: System.Func(Of System.Exception, System.Threading.Tasks.Task)
+  name.vb: Func(Of Exception, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Models.Session,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Models.Session,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Session, Task>
+  nameWithType: Func<Session, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Models.Session, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Session, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Models.Session, System.Threading.Tasks.Task)
+  name.vb: Func(Of Session, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Models.Session
+    name: Session
+    href: AuxLabs.Twitch.EventSub.Models.Session.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Models.Session
+    name: Session
+    href: AuxLabs.Twitch.EventSub.Models.Session.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Api.EventSubFrame,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Api.EventSubFrame,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<EventSubFrame, Task>
+  nameWithType: Func<EventSubFrame, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Api.EventSubFrame, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of EventSubFrame, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Api.EventSubFrame, System.Threading.Tasks.Task)
+  name.vb: Func(Of EventSubFrame, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Api.EventSubFrame
+    name: EventSubFrame
+    href: AuxLabs.Twitch.EventSub.Api.EventSubFrame.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Api.EventSubFrame
+    name: EventSubFrame
+    href: AuxLabs.Twitch.EventSub.Api.EventSubFrame.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<EventSubEventSubscription, Task>
+  nameWithType: Func<EventSubEventSubscription, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of EventSubEventSubscription, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task)
+  name.vb: Func(Of EventSubEventSubscription, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.BanEventArgs,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.BanEventArgs,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<BanEventArgs, EventSubEventSubscription, Task>
+  nameWithType: Func<BanEventArgs, EventSubEventSubscription, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.BanEventArgs, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of BanEventArgs, EventSubEventSubscription, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.BanEventArgs, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task)
+  name.vb: Func(Of BanEventArgs, EventSubEventSubscription, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.BanEventArgs
+    name: BanEventArgs
+    href: AuxLabs.Twitch.EventSub.BanEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.BanEventArgs
+    name: BanEventArgs
+    href: AuxLabs.Twitch.EventSub.BanEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<EventSubBroadcast, EventSubEventSubscription, Task>
+  nameWithType: Func<EventSubBroadcast, EventSubEventSubscription, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of EventSubBroadcast, EventSubEventSubscription, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task)
+  name.vb: Func(Of EventSubBroadcast, EventSubEventSubscription, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+    name: EventSubBroadcast
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast
+    name: EventSubBroadcast
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubBroadcast.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<EventSubSimpleUser, EventSubEventSubscription, Task>
+  nameWithType: Func<EventSubSimpleUser, EventSubEventSubscription, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of EventSubSimpleUser, EventSubEventSubscription, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task)
+  name.vb: Func(Of EventSubSimpleUser, EventSubEventSubscription, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+    name: EventSubSimpleUser
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser
+    name: EventSubSimpleUser
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubSimpleUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  commentId: T:System.Func{AuxLabs.Twitch.EventSub.Entities.EventSubUser,AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<EventSubUser, EventSubEventSubscription, Task>
+  nameWithType: Func<EventSubUser, EventSubEventSubscription, Task>
+  fullName: System.Func<AuxLabs.Twitch.EventSub.Entities.EventSubUser, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of EventSubUser, EventSubEventSubscription, Task)
+  fullName.vb: System.Func(Of AuxLabs.Twitch.EventSub.Entities.EventSubUser, AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription, System.Threading.Tasks.Task)
+  name.vb: Func(Of EventSubUser, EventSubEventSubscription, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser
+    name: EventSubUser
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubUser
+    name: EventSubUser
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubUser.html
+  - name: ','
+  - name: " "
+  - uid: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription
+    name: EventSubEventSubscription
+    href: AuxLabs.Twitch.EventSub.Entities.EventSubEventSubscription.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+memberLayout: SeparatePages
