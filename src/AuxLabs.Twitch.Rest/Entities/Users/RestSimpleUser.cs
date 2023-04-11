@@ -34,17 +34,6 @@ namespace AuxLabs.Twitch.Rest.Entities
             DisplayName = model.DisplayName;
         }
 
-        internal static RestSimpleUser Create(TwitchRestClient twitch, Follower model)
-        {
-            var entity = new RestSimpleUser(twitch, model.UserId);
-            entity.Update(model);
-            return entity;
-        }
-        internal virtual void Update(Follower model)
-        {
-            base.Update(model.UserName);
-            DisplayName = model.UserDisplayName;
-        }
         internal static RestSimpleUser Create(TwitchRestClient twitch, ExtensionTransaction model, bool isBroadcaster)
         {
             var id = isBroadcaster ? model.BroadcasterId : model.UserId;
@@ -63,6 +52,17 @@ namespace AuxLabs.Twitch.Rest.Entities
                 base.Update(model.UserName);
                 DisplayName = model.UserDisplayName;
             }
+        }
+
+        internal virtual void Update(Follower model)
+        {
+            base.Update(model.UserName);
+            DisplayName = model.UserDisplayName;
+        }
+        internal virtual void Update(BitsUser model)
+        {
+            base.Update(model.UserName);
+            DisplayName = model.UserDisplayName;
         }
 
         public override string ToString() => DisplayName ?? Name + $"({Id})";

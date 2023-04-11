@@ -10,7 +10,7 @@ namespace AuxLabs.Twitch.Rest.Entities
 
         internal RestFollower(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
-        internal new static RestFollower Create(TwitchRestClient twitch, Model model)
+        internal static RestFollower Create(TwitchRestClient twitch, Model model)
         {
             var entity = new RestFollower(twitch, model.UserId);
             entity.Update(model);

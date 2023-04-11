@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest
@@ -89,11 +90,6 @@ namespace AuxLabs.Twitch.Rest
             });
             return response.Data.FirstOrDefault();
         }
-
-        #endregion
-        #region Analytics
-
-
 
         #endregion
         #region Bits

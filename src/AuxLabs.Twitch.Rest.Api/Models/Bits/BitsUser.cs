@@ -11,11 +11,11 @@ namespace AuxLabs.Twitch.Rest.Models
 
         /// <summary> The user’s login name. </summary>
         [JsonInclude, JsonPropertyName("user_login")]
-        public string UserLogin { get; internal set; }
+        public string UserName { get; internal set; }
 
         /// <summary> The user’s display name. </summary>
         [JsonInclude, JsonPropertyName("user_name")]
-        public string UserName { get; internal set; }
+        public string UserDisplayName { get; internal set; }
 
         /// <summary> The user’s position on the leaderboard. </summary>
         [JsonInclude, JsonPropertyName("rank")]
