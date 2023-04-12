@@ -14937,7 +14937,7 @@
   "api/AuxLabs.Twitch.TwitchConstants.EventSubUrl.html": {
     "href": "api/AuxLabs.Twitch.TwitchConstants.EventSubUrl.html",
     "title": "Field EventSubUrl | AuxLabs.Twitch Documentation",
-    "keywords": "Field EventSubUrl Namespace AuxLabs.Twitch Assembly AuxLabs.Twitch.dll public const string EventSubUrl = \"wss://eventsub-beta.wss.twitch.tv/ws\" Returns string"
+    "keywords": "Field EventSubUrl Namespace AuxLabs.Twitch Assembly AuxLabs.Twitch.dll public const string EventSubUrl = \"wss://eventsub.wss.twitch.tv/ws\" Returns string"
   },
   "api/AuxLabs.Twitch.TwitchConstants.GlobalRatelimitBucket.html": {
     "href": "api/AuxLabs.Twitch.TwitchConstants.GlobalRatelimitBucket.html",
