@@ -14,7 +14,7 @@
         public const string ChatSecureIrcUrl = "irc://irc.chat.twitch.tv:6697";
         public const string AnonymousNamePrefix = "justinfan";
 
-        public const string EventSubUrl = "wss://eventsub-beta.wss.twitch.tv/ws";
+        public const string EventSubUrl = "wss://eventsub.wss.twitch.tv/ws";
 
         public const string PubSubUrl = "wss://pubsub-edge.twitch.tv";
 
