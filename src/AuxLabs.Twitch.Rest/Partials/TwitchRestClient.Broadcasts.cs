@@ -71,8 +71,67 @@ namespace AuxLabs.Twitch.Rest
                 count: count);
         }
 
-        // GetFollowedBroadcasts
-        // CreateMarker
-        // GetMarkers
+        public IAsyncEnumerable<IReadOnlyCollection<RestBroadcast>> GetFollowedBroadcastsAsync(int count = 20, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            return new PagedAsyncEnumerable<RestBroadcast>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetFollowedBroadcastsAsync(new GetFollowedBroadcastsArgs
+                    {
+                        UserId = authorized.UserId,
+                        First = info.PageSize,
+                        After = info.Cursor
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                nextPage: (info, amount, cursor) =>
+                {
+                    if (amount != TwitchConstants.DefaultMaxPerPage)
+                        return false;
+                    info.Cursor = cursor;
+                    return true;
+                },
+                count: count);
+        }
+
+        public async Task<RestMarker> CreateMarkerAsync(string description = null, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            var response = await API.PostBroadcastMarkerAsync(new PostBroadcastMarkerBody
+            {
+                UserId = authorized.UserId,
+                Description = description
+            }, cancelToken);
+            return RestMarker.Create(this, response.Data.SingleOrDefault());
+        }
+
+        public IAsyncEnumerable<IReadOnlyCollection<RestMarker>> GetMarkersAsync(string channelId, string videoId,
+            int count = 20, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            return new PagedAsyncEnumerable<RestMarker>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetBroadcastMarkersAsync(new GetBroadcastMarkersArgs
+                    {
+                        UserId = channelId,
+                        VideoId = videoId,
+                        First = info.PageSize,
+                        After = info.Cursor
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestMarker.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                nextPage: (info, amount, cursor) =>
+                {
+                    if (amount != TwitchConstants.DefaultMaxPerPage)
+                        return false;
+                    info.Cursor = cursor;
+                    return true;
+                },
+                count: count);
+        }
     }
 }
