@@ -126,7 +126,37 @@
       "source_relative_path": "api/AuxLabs.Twitch.CDN.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.CDN.EmoteImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.CDN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.CDN.StreamPreviewImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.CDN.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.CDN.GetEmoteImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.CDN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl.html"
         }
       },
       "version": ""
@@ -13656,6 +13686,36 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Tags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.UpdateAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Culture.html"
         }
       },
@@ -13697,36 +13757,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Delay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Tags.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.UpdateAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.html"
         }
       },
       "version": ""
@@ -13876,6 +13906,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.Status.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.Type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.Version.html"
         }
       },
@@ -13963,20 +14013,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.Status.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.ProductData.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEventSubscription.Type.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.html"
         }
       },
       "version": ""
@@ -14017,26 +14067,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.ProductType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.ProductData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.html"
         }
       },
       "version": ""
@@ -14153,40 +14183,50 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.Description.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.Position.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.ToString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.html"
         }
       },
       "version": ""
@@ -14247,6 +14287,46 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html"
         }
       },
       "version": ""
@@ -14516,6 +14596,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.ClientId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.UserName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.Scopes.html"
         }
       },
@@ -14547,26 +14647,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.ClientId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AccessTokenInfo.UserName.html"
         }
       },
       "version": ""
@@ -14776,46 +14856,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.Swearing.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.RaceEthnicityOrReligion.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.SexBasedTerms.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.BroadcasterId.html"
         }
       },
@@ -14887,6 +14927,46 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.Bullying.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.Swearing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.RaceEthnicityOrReligion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.SexBasedTerms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.html"
         }
       },
       "version": ""
@@ -15076,46 +15156,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.ModeratorDisplayName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.UserId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.UserName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.UserDisplayName.html"
         }
       },
@@ -15167,6 +15207,46 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.ModeratorName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.ModeratorDisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.UserId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BannedUser.UserName.html"
         }
       },
       "version": ""
@@ -15596,16 +15676,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.BroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.-ctor.html"
         }
       },
@@ -15627,6 +15697,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.BroadcasterCondition.BroadcasterId.html"
         }
       },
       "version": ""
@@ -16706,46 +16786,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.GameId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.Status.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.LastUpdatedAt.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.Id.html"
         }
       },
@@ -16777,6 +16817,46 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.UserId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.GameId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.Status.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.LastUpdatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Entitlement.html"
         }
       },
       "version": ""
@@ -17676,36 +17756,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Version.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Data.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Id.html"
         }
       },
@@ -17727,6 +17777,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Timestamp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Version.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.HypeTrainInfo.html"
         }
       },
       "version": ""
@@ -18966,6 +19046,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.Id.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.StartsAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.EndsAt.html"
         }
       },
@@ -19017,26 +19117,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.ScheduleSegment.StartsAt.html"
         }
       },
       "version": ""
@@ -20236,16 +20316,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.Duration.html"
         }
       },
@@ -20267,6 +20337,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.html"
         }
       },
       "version": ""
@@ -22926,6 +23006,36 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.Validate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.CreateQueryMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.Status.html"
         }
       },
@@ -22957,36 +23067,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.After.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.Validate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.CreateQueryMap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetEventSubscriptionsArgs.html"
         }
       },
       "version": ""
@@ -23246,16 +23326,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.Scopes.html"
         }
       },
@@ -23307,6 +23377,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.Validate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetFollowsArgs.html"
         }
       },
       "version": ""
@@ -25846,6 +25926,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.PredictionId.html"
         }
       },
@@ -25887,26 +25987,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId.html"
         }
       },
       "version": ""
@@ -28356,6 +28436,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.Scopes.html"
         }
       },
@@ -28397,26 +28497,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.CreateQueryMap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PutUserArgs.html"
         }
       },
       "version": ""
@@ -29246,6 +29326,36 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMyChannelAsync.html"
         }
       },
@@ -29917,6 +30027,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.TwitchConstants.EmoteImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.TwitchConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.TwitchConstants.StreamPreviewImageUrl.html"
         }
       },
       "version": ""

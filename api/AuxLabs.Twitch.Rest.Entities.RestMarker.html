@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class CDN
+      <title>Class RestMarker
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CDN
+      <meta name="title" content="Class RestMarker
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_CDN.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.CDN%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestMarker.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestMarker%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,25 +74,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.CDN">
+        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestMarker">
 
 
 
-  <h1 id="AuxLabs_Twitch_CDN" data-uid="AuxLabs.Twitch.CDN" class="text-break">
-    Class CDN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Core/CDN.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="AuxLabs_Twitch_Rest_Entities_RestMarker" data-uid="AuxLabs.Twitch.Rest.Entities.RestMarker" class="text-break">
+    Class RestMarker
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/Broadcasts/RestMarker.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a></dd></dl>
-    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Entities.html">Entities</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CDN</code></pre>
+    <pre><code class="lang-csharp hljs">public class RestMarker : RestEntity&lt;string&gt;</code></pre>
   </div>
 
 
@@ -102,7 +102,8 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">CDN</span></div>
+      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.html">RestEntity</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><span class="xref">RestMarker</span></div>
     </dd>
   </dl>
 
@@ -111,6 +112,9 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.Id.html#AuxLabs_Twitch_Rest_Entities_RestEntity_1_Id">RestEntity&lt;string&gt;.Id</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -129,9 +133,6 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
   </dd></dl>
 
 
@@ -142,11 +143,15 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.CDN.EmoteImageUrl.html#AuxLabs_Twitch_CDN_EmoteImageUrl">EmoteImageUrl</a></dt>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestMarker_CreatedAt">CreatedAt</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.CDN.StreamPreviewImageUrl.html#AuxLabs_Twitch_CDN_StreamPreviewImageUrl">StreamPreviewImageUrl</a></dt>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestMarker.Description.html#AuxLabs_Twitch_Rest_Entities_RestMarker_Description">Description</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestMarker.Position.html#AuxLabs_Twitch_Rest_Entities_RestMarker_Position">Position</a></dt>
     <dd></dd>
   </dl>
 
@@ -154,11 +159,7 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.CDN.GetEmoteImageUrl.html#AuxLabs_Twitch_CDN_GetEmoteImageUrl_System_String_AuxLabs_Twitch_EmoteFormat_AuxLabs_Twitch_EmoteTheme_AuxLabs_Twitch_EmoteScale_">GetEmoteImageUrl(string, EmoteFormat, EmoteTheme, EmoteScale)</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl.html#AuxLabs_Twitch_CDN_GetStreamPreviewImageUrl_System_String_System_Int32_System_Int32_">GetStreamPreviewImageUrl(string, int, int)</a></dt>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestMarker.ToString.html#AuxLabs_Twitch_Rest_Entities_RestMarker_ToString">ToString()</a></dt>
     <dd></dd>
   </dl>
 
@@ -167,7 +168,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_CDN.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.CDN%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestMarker.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestMarker%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

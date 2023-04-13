@@ -372,6 +372,18 @@ references:
   commentId: T:AuxLabs.Twitch.CDN
   fullName: AuxLabs.Twitch.CDN
   nameWithType: CDN
+- uid: AuxLabs.Twitch.CDN.EmoteImageUrl
+  name: EmoteImageUrl
+  href: api/AuxLabs.Twitch.CDN.EmoteImageUrl.html#AuxLabs_Twitch_CDN_EmoteImageUrl
+  commentId: P:AuxLabs.Twitch.CDN.EmoteImageUrl
+  fullName: AuxLabs.Twitch.CDN.EmoteImageUrl
+  nameWithType: CDN.EmoteImageUrl
+- uid: AuxLabs.Twitch.CDN.EmoteImageUrl*
+  name: EmoteImageUrl
+  href: api/AuxLabs.Twitch.CDN.EmoteImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.CDN.EmoteImageUrl
+  fullName: AuxLabs.Twitch.CDN.EmoteImageUrl
+  nameWithType: CDN.EmoteImageUrl
 - uid: AuxLabs.Twitch.CDN.GetEmoteImageUrl(System.String,AuxLabs.Twitch.EmoteFormat,AuxLabs.Twitch.EmoteTheme,AuxLabs.Twitch.EmoteScale)
   name: GetEmoteImageUrl(string, EmoteFormat, EmoteTheme, EmoteScale)
   href: api/AuxLabs.Twitch.CDN.GetEmoteImageUrl.html#AuxLabs_Twitch_CDN_GetEmoteImageUrl_System_String_AuxLabs_Twitch_EmoteFormat_AuxLabs_Twitch_EmoteTheme_AuxLabs_Twitch_EmoteScale_
@@ -387,6 +399,33 @@ references:
   commentId: Overload:AuxLabs.Twitch.CDN.GetEmoteImageUrl
   fullName: AuxLabs.Twitch.CDN.GetEmoteImageUrl
   nameWithType: CDN.GetEmoteImageUrl
+- uid: AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl(System.String,System.Int32,System.Int32)
+  name: GetStreamPreviewImageUrl(string, int, int)
+  href: api/AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl.html#AuxLabs_Twitch_CDN_GetStreamPreviewImageUrl_System_String_System_Int32_System_Int32_
+  commentId: M:AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl(System.String,System.Int32,System.Int32)
+  name.vb: GetStreamPreviewImageUrl(String, Integer, Integer)
+  fullName: AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl(string, int, int)
+  fullName.vb: AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl(String, Integer, Integer)
+  nameWithType: CDN.GetStreamPreviewImageUrl(string, int, int)
+  nameWithType.vb: CDN.GetStreamPreviewImageUrl(String, Integer, Integer)
+- uid: AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl*
+  name: GetStreamPreviewImageUrl
+  href: api/AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl
+  fullName: AuxLabs.Twitch.CDN.GetStreamPreviewImageUrl
+  nameWithType: CDN.GetStreamPreviewImageUrl
+- uid: AuxLabs.Twitch.CDN.StreamPreviewImageUrl
+  name: StreamPreviewImageUrl
+  href: api/AuxLabs.Twitch.CDN.StreamPreviewImageUrl.html#AuxLabs_Twitch_CDN_StreamPreviewImageUrl
+  commentId: P:AuxLabs.Twitch.CDN.StreamPreviewImageUrl
+  fullName: AuxLabs.Twitch.CDN.StreamPreviewImageUrl
+  nameWithType: CDN.StreamPreviewImageUrl
+- uid: AuxLabs.Twitch.CDN.StreamPreviewImageUrl*
+  name: StreamPreviewImageUrl
+  href: api/AuxLabs.Twitch.CDN.StreamPreviewImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.CDN.StreamPreviewImageUrl
+  fullName: AuxLabs.Twitch.CDN.StreamPreviewImageUrl
+  nameWithType: CDN.StreamPreviewImageUrl
 - uid: AuxLabs.Twitch.Chat
   name: Chat
   href: api/AuxLabs.Twitch.Chat.html
@@ -18203,6 +18242,60 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
   fullName: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Themes
   nameWithType: RestGlobalEmote.Themes
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker
+  name: RestMarker
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestMarker
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker
+  nameWithType: RestMarker
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestMarker_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt
+  nameWithType: RestMarker.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.CreatedAt
+  nameWithType: RestMarker.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.Description
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.Description.html#AuxLabs_Twitch_Rest_Entities_RestMarker_Description
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestMarker.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.Description
+  nameWithType: RestMarker.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.Description.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestMarker.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.Description
+  nameWithType: RestMarker.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.Position
+  name: Position
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.Position.html#AuxLabs_Twitch_Rest_Entities_RestMarker_Position
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestMarker.Position
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.Position
+  nameWithType: RestMarker.Position
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.Position*
+  name: Position
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.Position.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestMarker.Position
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.Position
+  nameWithType: RestMarker.Position
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
+  name: ToString()
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.ToString.html#AuxLabs_Twitch_Rest_Entities_RestMarker_ToString
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.ToString()
+  nameWithType: RestMarker.ToString()
+- uid: AuxLabs.Twitch.Rest.Entities.RestMarker.ToString*
+  name: ToString
+  href: api/AuxLabs.Twitch.Rest.Entities.RestMarker.ToString.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
+  fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
+  nameWithType: RestMarker.ToString
 - uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser
   name: RestPartialUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html
@@ -37213,6 +37306,21 @@ references:
   fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync(Of TCondition)(System.Action(Of AuxLabs.Twitch.Rest.Requests.PostEventSubscriptionBody(Of TCondition)))
   nameWithType: TwitchRestClient.CreateEventSubscriptionAsync<TCondition>(Action<PostEventSubscriptionBody<TCondition>>)
   nameWithType.vb: TwitchRestClient.CreateEventSubscriptionAsync(Of TCondition)(Action(Of PostEventSubscriptionBody(Of TCondition)))
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: CreateMarkerAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_CreateMarkerAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: CreateMarkerAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.CreateMarkerAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.CreateMarkerAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync*
+  name: CreateMarkerAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.CreateMarkerAsync
+  nameWithType: TwitchRestClient.CreateMarkerAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteEventSubscriptionAsync(System.String)
   name: DeleteEventSubscriptionAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteEventSubscriptionAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_DeleteEventSubscriptionAsync_System_String_
@@ -37558,6 +37666,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionTransactionsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionTransactionsAsync
   nameWithType: TwitchRestClient.GetExtensionTransactionsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetFollowedBroadcastsAsync(int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedBroadcastsAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetFollowedBroadcastsAsync(Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync(int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync(Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetFollowedBroadcastsAsync(int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetFollowedBroadcastsAsync(Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync*
+  name: GetFollowedBroadcastsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedBroadcastsAsync
+  nameWithType: TwitchRestClient.GetFollowedBroadcastsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync(System.String)
   name: GetFollowedChannelAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelAsync_System_String_
@@ -37648,6 +37771,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   nameWithType: TwitchRestClient.GetGameAnalyticsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(System.String,System.String,System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetMarkersAsync(string, string, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetMarkersAsync_System_String_System_String_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(System.String,System.String,System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetMarkersAsync(String, String, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(string, string, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(String, String, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetMarkersAsync(string, string, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetMarkersAsync(String, String, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync*
+  name: GetMarkersAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync
+  nameWithType: TwitchRestClient.GetMarkersAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMyChannelAsync
   name: GetMyChannelAsync()
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMyChannelAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetMyChannelAsync
@@ -38287,6 +38425,12 @@ references:
   commentId: F:AuxLabs.Twitch.TwitchConstants.RestIdentityApiUrl
   fullName: AuxLabs.Twitch.TwitchConstants.RestIdentityApiUrl
   nameWithType: TwitchConstants.RestIdentityApiUrl
+- uid: AuxLabs.Twitch.TwitchConstants.StreamPreviewImageUrl
+  name: StreamPreviewImageUrl
+  href: api/AuxLabs.Twitch.TwitchConstants.StreamPreviewImageUrl.html
+  commentId: F:AuxLabs.Twitch.TwitchConstants.StreamPreviewImageUrl
+  fullName: AuxLabs.Twitch.TwitchConstants.StreamPreviewImageUrl
+  nameWithType: TwitchConstants.StreamPreviewImageUrl
 - uid: AuxLabs.Twitch.TwitchException
   name: TwitchException
   href: api/AuxLabs.Twitch.TwitchException.html
