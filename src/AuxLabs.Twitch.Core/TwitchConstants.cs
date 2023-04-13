@@ -20,5 +20,7 @@
 
         // <id>/<format>/<theme_mode>/<scale>
         public const string EmoteImageUrl = "https://static-cdn.jtvnw.net/emoticons/v2/{0}/{1}/{2}/{3}";
+        // <username>/<width>/<height>
+        public const string StreamPreviewImageUrl = "https://static-cdn.jtvnw.net/previews-ttv/live_user_{0}-{1}x{2}.jpg";
     }
 }
