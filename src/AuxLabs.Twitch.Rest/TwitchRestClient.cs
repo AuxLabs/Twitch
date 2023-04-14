@@ -52,6 +52,14 @@ namespace AuxLabs.Twitch.Rest
             Dispose(true);
         }
 
+        // -- Partials --
+        // ChannelPoints
+        // Chat
+        // Moderation
+        // Schedules
+        // Broadcasts
+        // Users
+
         #region Identity
 
         private void IsUserAuthorized(out UserIdentity identity)
@@ -83,7 +91,7 @@ namespace AuxLabs.Twitch.Rest
         ///     Starts a commercial on the currently authorized user's channel.
         /// </summary>
         /// <param name="length">
-        ///     The length of the commercial in seconds
+        ///     The length of the commercial to run, in seconds.
         /// </param>
         /// <inheritdoc cref="TwitchRestApiClient.PostCommercialAsync(PostCommercialBody, System.Threading.CancellationToken?)" />
         public async Task<Commercial> StartCommercialAsync(int length, CancellationToken? cancelToken = null)
@@ -94,13 +102,12 @@ namespace AuxLabs.Twitch.Rest
                 BroadcasterId = authorized.UserId,
                 Length = length
             }, cancelToken);
-            return response.Data.FirstOrDefault();
+            return response.Data.SingleOrDefault();
         }
 
         #endregion
         #region Bits
 
-        /// <inheritdoc cref="TwitchRestApiClient.GetCheermotesAsync(GetCheermotesArgs)" />
         public async Task<IReadOnlyCollection<Cheermote>> GetCheermotesAsync(string broadcasterId = null)
         {
             var response = await API.GetCheermotesAsync(broadcasterId);
@@ -126,6 +133,18 @@ namespace AuxLabs.Twitch.Rest
             });
             return response.Data.Select(x => RestExtensionTransaction.Create(this, x)).ToImmutableArray();
         }
+
+        #endregion
+        #region Charity
+
+        // GetCharityCampaigns
+        // GetCharityDonations
+
+        #endregion
+        #region Entitlements
+
+        // GetDropStatus
+        // ModifyDropStatus
 
         #endregion
         #region EventSub
@@ -158,6 +177,78 @@ namespace AuxLabs.Twitch.Rest
 
         public Task DeleteEventSubscriptionAsync(string subscriptionId)
             => API.DeleteEventSubscriptionAsync(subscriptionId);
+
+        #endregion
+        #region Games
+
+        // GetTopGames
+        // GetGames
+
+        #endregion
+        #region Goals
+
+        // GetGoals
+
+        #endregion
+        #region HypeTrains
+
+        // GetHypeTrainEvents
+
+        #endregion
+        #region Polls
+
+        // GetPolls
+        // CreatePoll
+        // ModifyPoll
+
+        #endregion
+        #region Predictions
+
+        // GetPredictions
+        // CreatePrediction
+        // ModifyPrediction
+
+        #endregion
+        #region Raids
+
+        // StartRaid
+        // StopRaid
+
+        #endregion
+        #region Search
+
+        // GetCategories
+        // GetChannels
+
+        #endregion
+        #region Soundtrack
+
+        // GetCurrentTrack
+        // GetPlaylistTracks
+        // GetPlaylists
+
+        #endregion
+        #region Subscriptions
+
+        // GetSubscriptions
+        // GetSubscribers
+
+        #endregion
+        #region Teams
+
+        // GetTeams
+        // GetTeam
+
+        #endregion
+        #region Videos
+
+        // GetVideos
+        // DeleteVideo
+
+        #endregion
+        #region Whispers
+
+        // SendWhisper
 
         #endregion
     }

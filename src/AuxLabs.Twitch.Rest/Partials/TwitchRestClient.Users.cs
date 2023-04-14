@@ -42,5 +42,12 @@ namespace AuxLabs.Twitch.Rest
 
             return response.Data.Select(x => RestUser.Create(this, x)).ToImmutableArray();
         }
+
+        // GetBlockedUsers
+        // AddBlockedUser
+        // RemoveBlockedUser
+        // GetExtensions
+        // GetActiveExtensions
+        // ModifyExtensions
     }
 }
