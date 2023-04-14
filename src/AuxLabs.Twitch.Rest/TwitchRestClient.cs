@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest
@@ -78,15 +79,21 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Ads
 
-        /// <inheritdoc cref="TwitchRestApiClient.PostCommercialAsync(PostCommercialBody)" />
-        public async Task<Commercial> StartCommercialAsync(int length)
+        /// <summary>
+        ///     Starts a commercial on the currently authorized user's channel.
+        /// </summary>
+        /// <param name="length">
+        ///     The length of the commercial in seconds
+        /// </param>
+        /// <inheritdoc cref="TwitchRestApiClient.PostCommercialAsync(PostCommercialBody, System.Threading.CancellationToken?)" />
+        public async Task<Commercial> StartCommercialAsync(int length, CancellationToken? cancelToken = null)
         {
             IsUserAuthorized(out var authorized);
             var response = await API.PostCommercialAsync(new PostCommercialBody
             {
                 BroadcasterId = authorized.UserId,
                 Length = length
-            });
+            }, cancelToken);
             return response.Data.FirstOrDefault();
         }
 

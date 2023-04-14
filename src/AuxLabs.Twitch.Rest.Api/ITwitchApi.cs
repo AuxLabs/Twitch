@@ -18,12 +18,26 @@ namespace AuxLabs.Twitch.Rest.Api
 
         #region Ads
 
-        /// <summary> Starts a commercial on the specified channel. </summary>
-        /// <remarks> Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
-        /// with the <c>channel:edit:commercial</c> scope. </remarks>
-        /// <returns> A single <see cref="Commercial"/> object. </returns>
-        /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized, 404 Not Found </exception>
-        /// <exception cref="MissingScopeException" />
+        /// <summary> 
+        ///     Starts a commercial on the specified channel. 
+        /// </summary>
+        /// <remarks> 
+        ///     Requires a <see href="https://dev.twitch.tv/docs/authentication#user-access-tokens">user access token</see>
+        ///     with the <c>channel:edit:commercial</c> scope. 
+        /// </remarks>
+        /// <returns> 
+        ///     A single <see cref="Commercial"/> object.
+        /// </returns>
+        /// <exception cref="TwitchRestException">
+        ///     400 Bad Request
+        ///     <list type="bullet">
+        ///         <item><description> The specified broadcaster is not currently live. </description></item>
+        ///         <item><description> The internal commercial ratelimit has been exceeded. </description></item>
+        ///     </list>
+        /// </exception>
+        /// <exception cref="MissingScopeException">
+        ///     The authorized user does not have the <c>channel:edit:commercial</c> scope.
+        /// </exception>
         [Post("channels/commercial")]
         Task<TwitchResponse<Commercial>> PostCommercialAsync([Body] PostCommercialBody args, CancellationToken? cancelToken = null);
 
