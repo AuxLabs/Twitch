@@ -61,6 +61,8 @@ void OnTimer(object? state)
 Task OnMessageAsync(ChatMessage msg)
 {
     msgTotal++;
+
     //Console.WriteLine($"#{msg.Channel.Name.PadRight(10)[..10]}\t{msg.Author?.DisplayName.PadRight(10)[..10]}\t{msg}");
+
     return Task.CompletedTask;
 }
