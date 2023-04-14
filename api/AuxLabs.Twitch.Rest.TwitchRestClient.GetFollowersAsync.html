@@ -82,7 +82,7 @@
 
 <h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync*" class="text-break">
   Method GetFollowersAsync
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Users.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L63"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -110,29 +110,29 @@
 
 <a id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync*"></a>
 
-<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_System_String_System_Int32_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.String,System.Int32)">
-  GetFollowersAsync(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Users.cs/#L46"><i class="bi bi-code-slash"></i></a>
+<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})">
+  GetFollowersAsync(int, CancellationToken?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L63"><i class="bi bi-code-slash"></i></a>
 </h3>
 
 <div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task&lt;(IReadOnlyCollection&lt;RestFollower&gt; Followers, int Total)&gt; GetFollowersAsync(string broadcasterId, int count = 20)</code></pre>
+  <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;IReadOnlyCollection&lt;RestFollowUser&gt;&gt; GetFollowersAsync(int count = 20, CancellationToken? cancelToken = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>broadcasterId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
   <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>cancelToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>?</dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestFollower.html">RestFollower</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ireadonlycollection-auxlabs.twitch.rest.entities.restfollower-,system.int32-.followers">Followers</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ireadonlycollection-auxlabs.twitch.rest.entities.restfollower-,system.int32-.total">Total</a>)&gt;</dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestFollowUser.html">RestFollowUser</a>&gt;&gt;</dt>
   <dd></dd>
 </dl>
 

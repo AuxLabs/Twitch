@@ -1898,87 +1898,6 @@ references:
   commentId: T:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel
   nameWithType: ChatSimpleChannel
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync
-  name: GetChannelAsync()
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChannelAsync
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync()
-  nameWithType: ChatSimpleChannel.GetChannelAsync()
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync*
-  name: GetChannelAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync
-  nameWithType: ChatSimpleChannel.GetChannelAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
-  name: GetChatSettingsAsync()
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChatSettingsAsync
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync()
-  nameWithType: ChatSimpleChannel.GetChatSettingsAsync()
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync*
-  name: GetChatSettingsAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync
-  nameWithType: ChatSimpleChannel.GetChatSettingsAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(System.Int32)
-  name: GetChattersAsync(int)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetChattersAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(System.Int32)
-  name.vb: GetChattersAsync(Integer)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(int)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync(Integer)
-  nameWithType: ChatSimpleChannel.GetChattersAsync(int)
-  nameWithType.vb: ChatSimpleChannel.GetChattersAsync(Integer)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync*
-  name: GetChattersAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync
-  nameWithType: ChatSimpleChannel.GetChattersAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
-  name: GetEmotesAsync()
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetEmotesAsync
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync()
-  nameWithType: ChatSimpleChannel.GetEmotesAsync()
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync*
-  name: GetEmotesAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync
-  nameWithType: ChatSimpleChannel.GetEmotesAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync(System.String)
-  name: GetFollowerAsync(string)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetFollowerAsync_System_String_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync(System.String)
-  name.vb: GetFollowerAsync(String)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync(string)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync(String)
-  nameWithType: ChatSimpleChannel.GetFollowerAsync(string)
-  nameWithType.vb: ChatSimpleChannel.GetFollowerAsync(String)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync*
-  name: GetFollowerAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync
-  nameWithType: ChatSimpleChannel.GetFollowerAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync(System.Int32)
-  name: GetFollowersAsync(int)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetFollowersAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync(System.Int32)
-  name.vb: GetFollowersAsync(Integer)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync(int)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync(Integer)
-  nameWithType: ChatSimpleChannel.GetFollowersAsync(int)
-  nameWithType.vb: ChatSimpleChannel.GetFollowersAsync(Integer)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync*
-  name: GetFollowersAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync
-  nameWithType: ChatSimpleChannel.GetFollowersAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetMessage(System.String)
   name: GetMessage(string)
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetMessage.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetMessage_System_String_
@@ -2024,18 +1943,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUser
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUser
   nameWithType: ChatSimpleChannel.GetUser
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync
-  name: GetUserAsync()
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetUserAsync
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync()
-  nameWithType: ChatSimpleChannel.GetUserAsync()
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync*
-  name: GetUserAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync
-  nameWithType: ChatSimpleChannel.GetUserAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName(System.String)
   name: GetUserByName(string)
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_GetUserByName_System_String_
@@ -2051,21 +1958,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName
   nameWithType: ChatSimpleChannel.GetUserByName
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody})
-  name: ModifyChatSettingsAsync(Action<PatchChatSettingsBody>)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_ModifyChatSettingsAsync_System_Action_AuxLabs_Twitch_Rest_Requests_PatchChatSettingsBody__
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody})
-  name.vb: ModifyChatSettingsAsync(Action(Of PatchChatSettingsBody))
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(System.Action<AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody>)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync(System.Action(Of AuxLabs.Twitch.Rest.Requests.PatchChatSettingsBody))
-  nameWithType: ChatSimpleChannel.ModifyChatSettingsAsync(Action<PatchChatSettingsBody>)
-  nameWithType.vb: ChatSimpleChannel.ModifyChatSettingsAsync(Action(Of PatchChatSettingsBody))
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync*
-  name: ModifyChatSettingsAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync
-  nameWithType: ChatSimpleChannel.ModifyChatSettingsAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser
   name: MyUser
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_MyUser
@@ -2090,21 +1982,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Name
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.Name
   nameWithType: ChatSimpleChannel.Name
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(System.String,System.Nullable{AuxLabs.Twitch.AnnouncementColor})
-  name: SendAnnouncementAsync(string, AnnouncementColor?)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendAnnouncementAsync_System_String_System_Nullable_AuxLabs_Twitch_AnnouncementColor__
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(System.String,System.Nullable{AuxLabs.Twitch.AnnouncementColor})
-  name.vb: SendAnnouncementAsync(String, AnnouncementColor?)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(string, AuxLabs.Twitch.AnnouncementColor?)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync(String, AuxLabs.Twitch.AnnouncementColor?)
-  nameWithType: ChatSimpleChannel.SendAnnouncementAsync(string, AnnouncementColor?)
-  nameWithType.vb: ChatSimpleChannel.SendAnnouncementAsync(String, AnnouncementColor?)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync*
-  name: SendAnnouncementAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync
-  nameWithType: ChatSimpleChannel.SendAnnouncementAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync(System.String)
   name: SendMessageAsync(string)
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendMessageAsync_System_String_
@@ -2120,21 +1997,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync
   fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync
   nameWithType: ChatSimpleChannel.SendMessageAsync
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(System.String)
-  name: SendShoutoutAsync(string)
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_SendShoutoutAsync_System_String_
-  commentId: M:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(System.String)
-  name.vb: SendShoutoutAsync(String)
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(string)
-  fullName.vb: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync(String)
-  nameWithType: ChatSimpleChannel.SendShoutoutAsync(string)
-  nameWithType.vb: ChatSimpleChannel.SendShoutoutAsync(String)
-- uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync*
-  name: SendShoutoutAsync
-  href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync.html
-  commentId: Overload:AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync
-  fullName: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync
-  nameWithType: ChatSimpleChannel.SendShoutoutAsync
 - uid: AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString
   name: ToString()
   href: api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString.html#AuxLabs_Twitch_Chat_Entities_ChatSimpleChannel_ToString
@@ -17791,6 +17653,168 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
   fullName: AuxLabs.Twitch.Rest.Entities.RestChatUser.Color
   nameWithType: RestChatUser.Color
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip
+  name: RestClip
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestClip
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip
+  nameWithType: RestClip
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Author
+  name: Author
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Author.html#AuxLabs_Twitch_Rest_Entities_RestClip_Author
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Author
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Author
+  nameWithType: RestClip.Author
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Author*
+  name: Author
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Author.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Author
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Author
+  nameWithType: RestClip.Author
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster.html#AuxLabs_Twitch_Rest_Entities_RestClip_Broadcaster
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster
+  nameWithType: RestClip.Broadcaster
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster*
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster
+  nameWithType: RestClip.Broadcaster
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestClip_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt
+  nameWithType: RestClip.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt
+  nameWithType: RestClip.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Culture
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Culture.html#AuxLabs_Twitch_Rest_Entities_RestClip_Culture
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Culture
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Culture
+  nameWithType: RestClip.Culture
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Culture*
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Culture.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Culture
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Culture
+  nameWithType: RestClip.Culture
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Duration
+  name: Duration
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Duration.html#AuxLabs_Twitch_Rest_Entities_RestClip_Duration
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Duration
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Duration
+  nameWithType: RestClip.Duration
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Duration*
+  name: Duration
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Duration.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Duration
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Duration
+  nameWithType: RestClip.Duration
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl
+  name: EmbedUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl.html#AuxLabs_Twitch_Rest_Entities_RestClip_EmbedUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl
+  nameWithType: RestClip.EmbedUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl*
+  name: EmbedUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl
+  nameWithType: RestClip.EmbedUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.GameId
+  name: GameId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.GameId.html#AuxLabs_Twitch_Rest_Entities_RestClip_GameId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.GameId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.GameId
+  nameWithType: RestClip.GameId
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.GameId*
+  name: GameId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.GameId.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.GameId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.GameId
+  nameWithType: RestClip.GameId
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Offset
+  name: Offset
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Offset.html#AuxLabs_Twitch_Rest_Entities_RestClip_Offset
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Offset
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Offset
+  nameWithType: RestClip.Offset
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Offset*
+  name: Offset
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Offset.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Offset
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Offset
+  nameWithType: RestClip.Offset
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Entities_RestClip_ThumbnailUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl
+  nameWithType: RestClip.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl
+  nameWithType: RestClip.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Title
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Title.html#AuxLabs_Twitch_Rest_Entities_RestClip_Title
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Title
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Title
+  nameWithType: RestClip.Title
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Title*
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Title.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Title
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Title
+  nameWithType: RestClip.Title
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Url
+  name: Url
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Url.html#AuxLabs_Twitch_Rest_Entities_RestClip_Url
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.Url
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Url
+  nameWithType: RestClip.Url
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.Url*
+  name: Url
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.Url.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.Url
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.Url
+  nameWithType: RestClip.Url
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.VideoId
+  name: VideoId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.VideoId.html#AuxLabs_Twitch_Rest_Entities_RestClip_VideoId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.VideoId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.VideoId
+  nameWithType: RestClip.VideoId
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.VideoId*
+  name: VideoId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.VideoId.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.VideoId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.VideoId
+  nameWithType: RestClip.VideoId
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount
+  name: ViewCount
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount.html#AuxLabs_Twitch_Rest_Entities_RestClip_ViewCount
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount
+  nameWithType: RestClip.ViewCount
+- uid: AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount*
+  name: ViewCount
+  href: api/AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount
+  nameWithType: RestClip.ViewCount
 - uid: AuxLabs.Twitch.Rest.Entities.RestEditor
   name: RestEditor
   href: api/AuxLabs.Twitch.Rest.Entities.RestEditor.html
@@ -18122,42 +18146,24 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.User
   fullName: AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.User
   nameWithType: RestExtensionTransaction.User
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
-  name: RestFollowedChannel
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html
-  commentId: T:AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel
-  nameWithType: RestFollowedChannel
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestFollowUser
+  name: RestFollowUser
+  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestFollowUser
+  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowUser
+  nameWithType: RestFollowUser
+- uid: AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
   name: FollowedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt.html#AuxLabs_Twitch_Rest_Entities_RestFollowedChannel_FollowedAt
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt
-  nameWithType: RestFollowedChannel.FollowedAt
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt*
+  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt.html#AuxLabs_Twitch_Rest_Entities_RestFollowUser_FollowedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
+  nameWithType: RestFollowUser.FollowedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt*
   name: FollowedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt
-  nameWithType: RestFollowedChannel.FollowedAt
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollower
-  name: RestFollower
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollower.html
-  commentId: T:AuxLabs.Twitch.Rest.Entities.RestFollower
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollower
-  nameWithType: RestFollower
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
-  name: FollowedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt.html#AuxLabs_Twitch_Rest_Entities_RestFollower_FollowedAt
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
-  nameWithType: RestFollower.FollowedAt
-- uid: AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt*
-  name: FollowedAt
-  href: api/AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
-  fullName: AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt
-  nameWithType: RestFollower.FollowedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
+  nameWithType: RestFollowUser.FollowedAt
 - uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
   name: RestGlobalEmote
   href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html
@@ -18320,90 +18326,6 @@ references:
   fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialUser.New
   nameWithType: RestPartialUser.RestPartialUser
   nameWithType.vb: RestPartialUser.New
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync
-  name: GetBroadcastAsync()
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetBroadcastAsync
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync()
-  nameWithType: RestPartialUser.GetBroadcastAsync()
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync*
-  name: GetBroadcastAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync
-  nameWithType: RestPartialUser.GetBroadcastAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync
-  name: GetChannelAsync()
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetChannelAsync
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync()
-  nameWithType: RestPartialUser.GetChannelAsync()
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync*
-  name: GetChannelAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync
-  nameWithType: RestPartialUser.GetChannelAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync(System.String)
-  name: GetFollowedChannelAsync(string)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetFollowedChannelAsync_System_String_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync(System.String)
-  name.vb: GetFollowedChannelAsync(String)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync(string)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync(String)
-  nameWithType: RestPartialUser.GetFollowedChannelAsync(string)
-  nameWithType.vb: RestPartialUser.GetFollowedChannelAsync(String)
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync*
-  name: GetFollowedChannelAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync
-  nameWithType: RestPartialUser.GetFollowedChannelAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync(System.Int32)
-  name: GetFollowedChannelsAsync(int)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetFollowedChannelsAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync(System.Int32)
-  name.vb: GetFollowedChannelsAsync(Integer)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync(int)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync(Integer)
-  nameWithType: RestPartialUser.GetFollowedChannelsAsync(int)
-  nameWithType.vb: RestPartialUser.GetFollowedChannelsAsync(Integer)
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync*
-  name: GetFollowedChannelsAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync
-  nameWithType: RestPartialUser.GetFollowedChannelsAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync(System.String)
-  name: GetFollowerAsync(string)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetFollowerAsync_System_String_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync(System.String)
-  name.vb: GetFollowerAsync(String)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync(string)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync(String)
-  nameWithType: RestPartialUser.GetFollowerAsync(string)
-  nameWithType.vb: RestPartialUser.GetFollowerAsync(String)
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync*
-  name: GetFollowerAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync
-  nameWithType: RestPartialUser.GetFollowerAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync(System.Int32)
-  name: GetFollowersAsync(int)
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_GetFollowersAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync(System.Int32)
-  name.vb: GetFollowersAsync(Integer)
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync(int)
-  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync(Integer)
-  nameWithType: RestPartialUser.GetFollowersAsync(int)
-  nameWithType.vb: RestPartialUser.GetFollowersAsync(Integer)
-- uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync*
-  name: GetFollowersAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync
-  nameWithType: RestPartialUser.GetFollowersAsync
 - uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser.Name
   name: Name
   href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.Name.html#AuxLabs_Twitch_Rest_Entities_RestPartialUser_Name
@@ -18473,48 +18395,24 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSelfUser.UpdateAsync
   fullName: AuxLabs.Twitch.Rest.Entities.RestSelfUser.UpdateAsync
   nameWithType: RestSelfUser.UpdateAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
-  name: RestSimpleChannel
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.html
-  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel
-  nameWithType: RestSimpleChannel
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName
-  name: DisplayName
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_DisplayName
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName
-  nameWithType: RestSimpleChannel.DisplayName
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName*
-  name: DisplayName
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName
-  nameWithType: RestSimpleChannel.DisplayName
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync
-  name: GetUserAsync()
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_GetUserAsync
-  commentId: M:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync()
-  nameWithType: RestSimpleChannel.GetUserAsync()
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync*
-  name: GetUserAsync
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync
-  nameWithType: RestSimpleChannel.GetUserAsync
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
-  name: Name
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_Name
-  commentId: P:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
-  nameWithType: RestSimpleChannel.Name
-- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name*
-  name: Name
-  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
-  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name
-  nameWithType: RestSimpleChannel.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleClip
+  name: RestSimpleClip
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestSimpleClip
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleClip
+  nameWithType: RestSimpleClip
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl
+  name: EditUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html#AuxLabs_Twitch_Rest_Entities_RestSimpleClip_EditUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl
+  nameWithType: RestSimpleClip.EditUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl*
+  name: EditUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl
+  nameWithType: RestSimpleClip.EditUrl
 - uid: AuxLabs.Twitch.Rest.Entities.RestSimpleUser
   name: RestSimpleUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html
@@ -37282,6 +37180,21 @@ references:
   fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.New
   nameWithType: TwitchRestClient.TwitchRestClient
   nameWithType.vb: TwitchRestClient.New
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync(System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name: CreateClipAsync(string, bool, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_CreateClipAsync_System_String_System_Boolean_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync(System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name.vb: CreateClipAsync(String, Boolean, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync(string, bool, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync(String, Boolean, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.CreateClipAsync(string, bool, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.CreateClipAsync(String, Boolean, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync*
+  name: CreateClipAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync
+  nameWithType: TwitchRestClient.CreateClipAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync*
   name: CreateEventSubscriptionAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync.html
@@ -37462,6 +37375,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelAsync
   nameWithType: TwitchRestClient.GetChannelAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetChannelClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChannelClipsAsync_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetChannelClipsAsync(String, Date?, Date?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync(string, System.DateTime?, System.DateTime?, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync(String, Date?, Date?, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetChannelClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetChannelClipsAsync(String, Date?, Date?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync*
+  name: GetChannelClipsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync
+  nameWithType: TwitchRestClient.GetChannelClipsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelEditors(System.String)
   name: GetChannelEditors(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelEditors.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetChannelEditors_System_String_
@@ -37537,6 +37465,45 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetCheermotesAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetCheermotesAsync
   nameWithType: TwitchRestClient.GetCheermotesAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetClipAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetClipAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetClipAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetClipAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetClipAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(System.String[])
+  name: GetClipAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetClipAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(System.String[])
+  name.vb: GetClipAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetClipAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetClipAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync*
+  name: GetClipAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync
+  nameWithType: TwitchRestClient.GetClipAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: GetClipsAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetClipsAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetClipsAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetClipsAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetClipsAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync*
+  name: GetClipsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync
+  nameWithType: TwitchRestClient.GetClipsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync(System.Nullable{System.Threading.CancellationToken})
   name: GetEmotesAsync(CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetEmotesAsync_System_Nullable_System_Threading_CancellationToken__
@@ -37696,45 +37663,45 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync
   nameWithType: TwitchRestClient.GetFollowedChannelAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32)
-  name: GetFollowedChannelsAsync(int)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32)
-  name.vb: GetFollowedChannelsAsync(Integer)
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(int)
-  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(Integer)
-  nameWithType: TwitchRestClient.GetFollowedChannelsAsync(int)
-  nameWithType.vb: TwitchRestClient.GetFollowedChannelsAsync(Integer)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetFollowedChannelsAsync(int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetFollowedChannelsAsync(Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetFollowedChannelsAsync(int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetFollowedChannelsAsync(Integer, CancellationToken?)
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync*
   name: GetFollowedChannelsAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync.html
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync
   nameWithType: TwitchRestClient.GetFollowedChannelsAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(System.String,System.String)
-  name: GetFollowerAsync(string, string)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowerAsync_System_String_System_String_
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(System.String,System.String)
-  name.vb: GetFollowerAsync(String, String)
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(string, string)
-  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(String, String)
-  nameWithType: TwitchRestClient.GetFollowerAsync(string, string)
-  nameWithType.vb: TwitchRestClient.GetFollowerAsync(String, String)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(System.String)
+  name: GetFollowerAsync(string)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowerAsync_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(System.String)
+  name.vb: GetFollowerAsync(String)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(string)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync(String)
+  nameWithType: TwitchRestClient.GetFollowerAsync(string)
+  nameWithType.vb: TwitchRestClient.GetFollowerAsync(String)
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync*
   name: GetFollowerAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync.html
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync
   nameWithType: TwitchRestClient.GetFollowerAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.String,System.Int32)
-  name: GetFollowersAsync(string, int)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_System_String_System_Int32_
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.String,System.Int32)
-  name.vb: GetFollowersAsync(String, Integer)
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(string, int)
-  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(String, Integer)
-  nameWithType: TwitchRestClient.GetFollowersAsync(string, int)
-  nameWithType.vb: TwitchRestClient.GetFollowersAsync(String, Integer)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetFollowersAsync(int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowersAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetFollowersAsync(Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync(Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetFollowersAsync(int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetFollowersAsync(Integer, CancellationToken?)
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync*
   name: GetFollowersAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync.html
@@ -37771,6 +37738,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   nameWithType: TwitchRestClient.GetGameAnalyticsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetGameClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameClipsAsync_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGameClipsAsync(String, Date?, Date?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync(string, System.DateTime?, System.DateTime?, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync(String, Date?, Date?, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGameClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGameClipsAsync(String, Date?, Date?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync*
+  name: GetGameClipsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync
+  nameWithType: TwitchRestClient.GetGameClipsAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(System.String,System.String,System.Int32,System.Nullable{System.Threading.CancellationToken})
   name: GetMarkersAsync(string, string, int, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetMarkersAsync_System_String_System_String_System_Int32_System_Nullable_System_Threading_CancellationToken__
@@ -38035,15 +38017,15 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.SendShoutoutAsync
   nameWithType: TwitchRestClient.SendShoutoutAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(System.Int32)
-  name: StartCommercialAsync(int)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_StartCommercialAsync_System_Int32_
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(System.Int32)
-  name.vb: StartCommercialAsync(Integer)
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(int)
-  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(Integer)
-  nameWithType: TwitchRestClient.StartCommercialAsync(int)
-  nameWithType.vb: TwitchRestClient.StartCommercialAsync(Integer)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: StartCommercialAsync(int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_StartCommercialAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: StartCommercialAsync(Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync(Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.StartCommercialAsync(int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.StartCommercialAsync(Integer, CancellationToken?)
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync*
   name: StartCommercialAsync
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync.html

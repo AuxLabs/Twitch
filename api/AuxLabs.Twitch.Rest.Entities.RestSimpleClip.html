@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class RestSimpleChannel
+      <title>Class RestSimpleClip
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class RestSimpleChannel
+      <meta name="title" content="Class RestSimpleClip
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestSimpleChannel.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestSimpleChannel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestSimpleClip.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestSimpleClip%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,13 +74,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestSimpleChannel">
+        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestSimpleClip">
 
 
 
-  <h1 id="AuxLabs_Twitch_Rest_Entities_RestSimpleChannel" data-uid="AuxLabs.Twitch.Rest.Entities.RestSimpleChannel" class="text-break">
-    Class RestSimpleChannel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/Channels/RestSimpleChannel.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="AuxLabs_Twitch_Rest_Entities_RestSimpleClip" data-uid="AuxLabs.Twitch.Rest.Entities.RestSimpleClip" class="text-break">
+    Class RestSimpleClip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/Clips/RestSimpleClip.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -88,11 +88,12 @@
     <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A simplified instance of a <a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestClip.html">RestClip</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RestSimpleChannel : RestEntity&lt;string&gt;, IChannel, IEntity&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class RestSimpleClip : RestEntity&lt;string&gt;</code></pre>
   </div>
 
 
@@ -103,23 +104,15 @@
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.html">RestEntity</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
-      <div><span class="xref">RestSimpleChannel</span></div>
+      <div><span class="xref">RestSimpleClip</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="AuxLabs.Twitch.IChannel.html">IChannel</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.IEntity-1.html">IEntity</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
-    </dd>
-  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestChannel.html">RestChannel</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html">RestFollowedChannel</a></div>
+      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestClip.html">RestClip</a></div>
     </dd>
   </dl>
 
@@ -160,22 +153,8 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_DisplayName">DisplayName</a></dt>
-    <dd><p>The broadcaster’s display name.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_Name">Name</a></dt>
-    <dd><p>The broadcaster’s login name.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync.html#AuxLabs_Twitch_Rest_Entities_RestSimpleChannel_GetUserAsync">GetUserAsync()</a></dt>
-    <dd><p>Get the user associated with this channel.</p>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html#AuxLabs_Twitch_Rest_Entities_RestSimpleClip_EditUrl">EditUrl</a></dt>
+    <dd><p>A URL that you can use to edit the clip’s title, identify the part of the clip to publish, and publish the clip.</p>
 </dd>
   </dl>
 
@@ -184,7 +163,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestSimpleChannel.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestSimpleChannel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestSimpleClip.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestSimpleClip%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

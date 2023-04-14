@@ -82,7 +82,7 @@
 
 <h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetBitsLeaderboardAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync*" class="text-break">
   Method GetBitsLeaderboardAsync
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Analytics.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Analytics.cs/#L75"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -112,14 +112,14 @@
 
 <h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetBitsLeaderboardAsync_System_String_System_Nullable_System_DateTime__System_Nullable_AuxLabs_Twitch_BitsPeriod__System_Int32_System_Nullable_System_Threading_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync(System.String,System.Nullable{System.DateTime},System.Nullable{AuxLabs.Twitch.BitsPeriod},System.Int32,System.Nullable{System.Threading.CancellationToken})">
   GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Analytics.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Analytics.cs/#L75"><i class="bi bi-code-slash"></i></a>
 </h3>
 
 <div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;IReadOnlyCollection&lt;RestBitsUser&gt;&gt; GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null, int count = 10, CancellationToken? cancelToken = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyCollection&lt;RestBitsUser&gt;&gt; GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null, int count = 10, CancellationToken? cancelToken = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -138,7 +138,7 @@
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestBitsUser.html">RestBitsUser</a>&gt;&gt;</dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestBitsUser.html">RestBitsUser</a>&gt;&gt;</dt>
   <dd></dd>
 </dl>
 

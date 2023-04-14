@@ -152,10 +152,12 @@ with the <code>channel:edit:commercial</code> scope.</p>
 <h4 class="section">Exceptions</h4>
 <dl class="parameters">
   <dt><a class="xref" href="AuxLabs.Twitch.TwitchRestException.html">TwitchRestException</a></dt>
-  <dd><p>400 Bad Request, 401 Unauthorized, 404 Not Found</p>
+  <dd><p>400 Bad Request</p>
+<ul><li> The specified broadcaster is not currently live. </li><li> The internal commercial ratelimit has been exceeded. </li></ul>
 </dd>
   <dt><a class="xref" href="AuxLabs.Twitch.MissingScopeException.html">MissingScopeException</a></dt>
-  <dd></dd>
+  <dd><p>The authorized user does not have the <code>channel:edit:commercial</code> scope.</p>
+</dd>
 </dl>
 
 

@@ -82,7 +82,7 @@
 
 <h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync*" class="text-break">
   Method GetFollowedChannelsAsync
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Users.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L93"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -110,27 +110,29 @@
 
 <a id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync*"></a>
 
-<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_System_Int32_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32)">
-  GetFollowedChannelsAsync(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Users.cs/#L69"><i class="bi bi-code-slash"></i></a>
+<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetFollowedChannelsAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})">
+  GetFollowedChannelsAsync(int, CancellationToken?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L93"><i class="bi bi-code-slash"></i></a>
 </h3>
 
 <div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task&lt;(IReadOnlyCollection&lt;RestFollowedChannel&gt; Channels, int Total)&gt; GetFollowedChannelsAsync(int count = 20)</code></pre>
+  <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;IReadOnlyCollection&lt;RestFollowUser&gt;&gt; GetFollowedChannelsAsync(int count = 20, CancellationToken? cancelToken = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
   <dd></dd>
+  <dt><code>cancelToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>?</dt>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html">RestFollowedChannel</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ireadonlycollection-auxlabs.twitch.rest.entities.restfollowedchannel-,system.int32-.channels">Channels</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ireadonlycollection-auxlabs.twitch.rest.entities.restfollowedchannel-,system.int32-.total">Total</a>)&gt;</dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestFollowUser.html">RestFollowUser</a>&gt;&gt;</dt>
   <dd></dd>
 </dl>
 

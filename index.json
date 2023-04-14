@@ -482,7 +482,7 @@
   "api/AuxLabs.Twitch.Chat.Entities.ChatChannel.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatChannel.html",
     "title": "Class ChatChannel | AuxLabs.Twitch Documentation",
-    "keywords": "Class ChatChannel Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll public class ChatChannel : ChatSimpleChannel, IEquatable<ChatEntity<string>>, IEntity<string> Inheritance object ChatEntity<string> ChatSimpleChannel ChatChannel Implements IEquatable<ChatEntity<string>> IEntity<string> Inherited Members ChatSimpleChannel.MyUser ChatSimpleChannel.Name ChatSimpleChannel.ToString() ChatSimpleChannel.GetUser(string) ChatSimpleChannel.GetUserByName(string) ChatSimpleChannel.GetMessage(string) ChatSimpleChannel.GetMessages(int) ChatSimpleChannel.SendMessageAsync(string) ChatSimpleChannel.SendAnnouncementAsync(string, AnnouncementColor?) ChatSimpleChannel.SendShoutoutAsync(string) ChatSimpleChannel.GetChattersAsync(int) ChatSimpleChannel.GetEmotesAsync() ChatSimpleChannel.GetChatSettingsAsync() ChatSimpleChannel.ModifyChatSettingsAsync(Action<PatchChatSettingsBody>) ChatSimpleChannel.GetChannelAsync() ChatSimpleChannel.GetUserAsync() ChatSimpleChannel.GetFollowerAsync(string) ChatSimpleChannel.GetFollowersAsync(int) ChatEntity<string>.Id ChatEntity<string>.Equals(ChatEntity<string>) ChatEntity<string>.Equals(object) ChatEntity<string>.GetHashCode() object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties IsEmoteOnly IsFollowersOnly IsRitualsEnabled IsSlowEnabled IsSubscribersOnly IsUniqueEnabled RequiredFollowTime SlowModeDelay"
+    "keywords": "Class ChatChannel Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll public class ChatChannel : ChatSimpleChannel, IEquatable<ChatEntity<string>>, IEntity<string> Inheritance object ChatEntity<string> ChatSimpleChannel ChatChannel Implements IEquatable<ChatEntity<string>> IEntity<string> Inherited Members ChatSimpleChannel.MyUser ChatSimpleChannel.Name ChatSimpleChannel.ToString() ChatSimpleChannel.GetUser(string) ChatSimpleChannel.GetUserByName(string) ChatSimpleChannel.GetMessage(string) ChatSimpleChannel.GetMessages(int) ChatSimpleChannel.SendMessageAsync(string) ChatEntity<string>.Id ChatEntity<string>.Equals(ChatEntity<string>) ChatEntity<string>.Equals(object) ChatEntity<string>.GetHashCode() object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties IsEmoteOnly IsFollowersOnly IsRitualsEnabled IsSlowEnabled IsSubscribersOnly IsUniqueEnabled RequiredFollowTime SlowModeDelay"
   },
   "api/AuxLabs.Twitch.Chat.Entities.ChatChannel.IsEmoteOnly.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatChannel.IsEmoteOnly.html",
@@ -644,36 +644,6 @@
     "title": "Class ChatSelfUser | AuxLabs.Twitch Documentation",
     "keywords": "Class ChatSelfUser Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll Global data for the currently authenticated user public class ChatSelfUser : ChatUser, IEquatable<ChatEntity<string>>, IChatUser, ISimpleUser, IPartialUser, IEntity<string> Inheritance object ChatEntity<string> ChatSimpleUser ChatUser ChatSelfUser Implements IEquatable<ChatEntity<string>> IChatUser ISimpleUser IPartialUser IEntity<string> Inherited Members ChatUser.UserType ChatUser.Badges ChatUser.BadgeInfo ChatUser.IsTurbo ChatSimpleUser.DisplayName ChatSimpleUser.Name ChatSimpleUser.Color ChatSimpleUser.ToString() ChatSimpleUser.GetUserAsync() ChatSimpleUser.GetChannelAsync() ChatEntity<string>.Id ChatEntity<string>.Equals(ChatEntity<string>) ChatEntity<string>.Equals(object) ChatEntity<string>.GetHashCode() object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties EmoteSets"
   },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChannelAsync.html",
-    "title": "Method GetChannelAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetChannelAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetChannelAsync() Get more info about this channel. public Task<RestChannel> GetChannelAsync() Returns Task<RestChannel>"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChatSettingsAsync.html",
-    "title": "Method GetChatSettingsAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetChatSettingsAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetChatSettingsAsync() public Task<ChatSettings> GetChatSettingsAsync() Returns Task<ChatSettings>"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetChattersAsync.html",
-    "title": "Method GetChattersAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetChattersAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetChattersAsync(int) public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(int count = 20) Parameters count int Returns IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>>"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetEmotesAsync.html",
-    "title": "Method GetEmotesAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetEmotesAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetEmotesAsync() public Task<IReadOnlyCollection<RestEmote>> GetEmotesAsync() Returns Task<IReadOnlyCollection<RestEmote>>"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowerAsync.html",
-    "title": "Method GetFollowerAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowerAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetFollowerAsync(string) public Task<RestFollower> GetFollowerAsync(string userId) Parameters userId string Returns Task<RestFollower>"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetFollowersAsync.html",
-    "title": "Method GetFollowersAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowersAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetFollowersAsync(int) public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20) Parameters count int Returns Task<(IReadOnlyCollection<RestFollower> Followers, int Total)>"
-  },
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetMessage.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetMessage.html",
     "title": "Method GetMessage | AuxLabs.Twitch Documentation",
@@ -689,11 +659,6 @@
     "title": "Method GetUser | AuxLabs.Twitch Documentation",
     "keywords": "Method GetUser Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetUser(string) public ChatSimpleUser GetUser(string id) Parameters id string Returns ChatSimpleUser"
   },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserAsync.html",
-    "title": "Method GetUserAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetUserAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll GetUserAsync() Get the user associated with this channel. public Task<RestUser> GetUserAsync() Returns Task<RestUser>"
-  },
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.GetUserByName.html",
     "title": "Method GetUserByName | AuxLabs.Twitch Documentation",
@@ -702,12 +667,7 @@
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.html",
     "title": "Class ChatSimpleChannel | AuxLabs.Twitch Documentation",
-    "keywords": "Class ChatSimpleChannel Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll public class ChatSimpleChannel : ChatEntity<string>, IEquatable<ChatEntity<string>>, IEntity<string> Inheritance object ChatEntity<string> ChatSimpleChannel Implements IEquatable<ChatEntity<string>> IEntity<string> Derived ChatChannel Inherited Members ChatEntity<string>.Id ChatEntity<string>.Equals(ChatEntity<string>) ChatEntity<string>.Equals(object) ChatEntity<string>.GetHashCode() object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties MyUser The currently authorized user Name The channel's name Methods GetChannelAsync() Get more info about this channel. GetChatSettingsAsync() GetChattersAsync(int) GetEmotesAsync() GetFollowerAsync(string) GetFollowersAsync(int) GetMessage(string) GetMessages(int) GetUser(string) GetUserAsync() Get the user associated with this channel. GetUserByName(string) ModifyChatSettingsAsync(Action<PatchChatSettingsBody>) SendAnnouncementAsync(string, AnnouncementColor?) SendMessageAsync(string) SendShoutoutAsync(string) ToString()"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ModifyChatSettingsAsync.html",
-    "title": "Method ModifyChatSettingsAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method ModifyChatSettingsAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll ModifyChatSettingsAsync(Action<PatchChatSettingsBody>) public Task<ChatSettings> ModifyChatSettingsAsync(Action<PatchChatSettingsBody> func) Parameters func Action<PatchChatSettingsBody> Returns Task<ChatSettings>"
+    "keywords": "Class ChatSimpleChannel Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll public class ChatSimpleChannel : ChatEntity<string>, IEquatable<ChatEntity<string>>, IEntity<string> Inheritance object ChatEntity<string> ChatSimpleChannel Implements IEquatable<ChatEntity<string>> IEntity<string> Derived ChatChannel Inherited Members ChatEntity<string>.Id ChatEntity<string>.Equals(ChatEntity<string>) ChatEntity<string>.Equals(object) ChatEntity<string>.GetHashCode() object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties MyUser The currently authorized user Name The channel's name Methods GetMessage(string) GetMessages(int) GetUser(string) GetUserByName(string) SendMessageAsync(string) ToString()"
   },
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.MyUser.html",
@@ -719,20 +679,10 @@
     "title": "Property Name | AuxLabs.Twitch Documentation",
     "keywords": "Property Name Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll Name The channel's name public string Name { get; } Property Value string"
   },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendAnnouncementAsync.html",
-    "title": "Method SendAnnouncementAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method SendAnnouncementAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll SendAnnouncementAsync(string, AnnouncementColor?) public Task SendAnnouncementAsync(string message, AnnouncementColor? color = null) Parameters message string color AnnouncementColor? Returns Task"
-  },
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendMessageAsync.html",
     "title": "Method SendMessageAsync | AuxLabs.Twitch Documentation",
     "keywords": "Method SendMessageAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll SendMessageAsync(string) public Task SendMessageAsync(string message) Parameters message string Returns Task"
-  },
-  "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync.html": {
-    "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.SendShoutoutAsync.html",
-    "title": "Method SendShoutoutAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method SendShoutoutAsync Namespace AuxLabs.Twitch.Chat.Entities Assembly AuxLabs.Twitch.Chat.dll SendShoutoutAsync(string) public Task SendShoutoutAsync(string channelId) Parameters channelId string Returns Task"
   },
   "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString.html": {
     "href": "api/AuxLabs.Twitch.Chat.Entities.ChatSimpleChannel.ToString.html",
@@ -5982,7 +5932,7 @@
   "api/AuxLabs.Twitch.Rest.Api.ITwitchApi.PostCommercialAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.Api.ITwitchApi.PostCommercialAsync.html",
     "title": "Method PostCommercialAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method PostCommercialAsync Namespace AuxLabs.Twitch.Rest.Api Assembly AuxLabs.Twitch.Rest.Api.dll PostCommercialAsync(PostCommercialBody, CancellationToken?) Starts a commercial on the specified channel. [Post(\"channels/commercial\")] Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args, CancellationToken? cancelToken = null) Parameters args PostCommercialBody cancelToken CancellationToken? Returns Task<TwitchResponse<Commercial>> A single Commercial object. Remarks Requires a user access token with the channel:edit:commercial scope. Exceptions TwitchRestException 400 Bad Request, 401 Unauthorized, 404 Not Found MissingScopeException"
+    "keywords": "Method PostCommercialAsync Namespace AuxLabs.Twitch.Rest.Api Assembly AuxLabs.Twitch.Rest.Api.dll PostCommercialAsync(PostCommercialBody, CancellationToken?) Starts a commercial on the specified channel. [Post(\"channels/commercial\")] Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args, CancellationToken? cancelToken = null) Parameters args PostCommercialBody cancelToken CancellationToken? Returns Task<TwitchResponse<Commercial>> A single Commercial object. Remarks Requires a user access token with the channel:edit:commercial scope. Exceptions TwitchRestException 400 Bad Request The specified broadcaster is not currently live. The internal commercial ratelimit has been exceeded. MissingScopeException The authorized user does not have the channel:edit:commercial scope."
   },
   "api/AuxLabs.Twitch.Rest.Api.ITwitchApi.PostEnforcementStatusAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.Api.ITwitchApi.PostEnforcementStatusAsync.html",
@@ -6602,7 +6552,7 @@
   "api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostCommercialAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostCommercialAsync.html",
     "title": "Method PostCommercialAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method PostCommercialAsync Namespace AuxLabs.Twitch.Rest.Api Assembly AuxLabs.Twitch.Rest.Api.dll PostCommercialAsync(PostCommercialBody, CancellationToken?) Starts a commercial on the specified channel. public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args, CancellationToken? cancelToken = null) Parameters args PostCommercialBody cancelToken CancellationToken? Returns Task<TwitchResponse<Commercial>> A single Commercial object. Remarks Requires a user access token with the channel:edit:commercial scope. Exceptions TwitchRestException 400 Bad Request, 401 Unauthorized, 404 Not Found MissingScopeException"
+    "keywords": "Method PostCommercialAsync Namespace AuxLabs.Twitch.Rest.Api Assembly AuxLabs.Twitch.Rest.Api.dll PostCommercialAsync(PostCommercialBody, CancellationToken?) Starts a commercial on the specified channel. public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args, CancellationToken? cancelToken = null) Parameters args PostCommercialBody cancelToken CancellationToken? Returns Task<TwitchResponse<Commercial>> A single Commercial object. Remarks Requires a user access token with the channel:edit:commercial scope. Exceptions TwitchRestException 400 Bad Request The specified broadcaster is not currently live. The internal commercial ratelimit has been exceeded. MissingScopeException The authorized user does not have the channel:edit:commercial scope."
   },
   "api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEnforcementStatusAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.PostEnforcementStatusAsync.html",
@@ -6722,7 +6672,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.html",
     "title": "Namespace AuxLabs.Twitch.Rest.Entities | AuxLabs.Twitch Documentation",
-    "keywords": "Namespace AuxLabs.Twitch.Rest.Entities Classes RestBitsUser RestBroadcast RestChannel RestChatUser RestEditor RestEmote RestEntity<T> RestEventSubscription RestExtensionTransaction RestFollowedChannel RestFollower RestGlobalEmote RestMarker RestPartialUser RestSelfUser RestSimpleChannel RestSimpleUser RestUser"
+    "keywords": "Namespace AuxLabs.Twitch.Rest.Entities Classes RestBitsUser RestBroadcast RestChannel RestChatUser RestClip RestEditor RestEmote RestEntity<T> RestEventSubscription RestExtensionTransaction RestFollowUser RestGlobalEmote RestMarker RestPartialUser RestSelfUser RestSimpleClip A simplified instance of a RestClip. RestSimpleUser RestUser"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.-ctor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.-ctor.html",
@@ -6732,7 +6682,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.html",
     "title": "Class RestBitsUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestBitsUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestBitsUser : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestBitsUser Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestBitsUser(TwitchRestClient, string) Properties Rank TotalBits"
+    "keywords": "Class RestBitsUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestBitsUser : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestBitsUser Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestBitsUser(TwitchRestClient, string) Properties Rank TotalBits"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestBitsUser.Rank.html",
@@ -6852,7 +6802,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestChannel.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.html",
     "title": "Class RestChannel | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestChannel Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestChannel : RestSimpleChannel, IChannel, IEntity<string> Inheritance object RestEntity<string> RestSimpleChannel RestChannel Implements IChannel IEntity<string> Inherited Members RestSimpleChannel.DisplayName RestSimpleChannel.Name RestSimpleChannel.GetUserAsync() RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Culture The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. Delay The value of the broadcaster’s stream delay setting. GameId An ID that uniquely identifies the game that the broadcaster is playing or last played. GameName The name of the game that the broadcaster is playing or last played. Tags The tags applied to the channel. Title The title of the stream that the broadcaster is currently streaming or last streamed. Methods UpdateAsync()"
+    "keywords": "Class RestChannel Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestChannel : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestChannel Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties Culture The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. Delay The value of the broadcaster’s stream delay setting. GameId An ID that uniquely identifies the game that the broadcaster is playing or last played. GameName The name of the game that the broadcaster is playing or last played. Tags The tags applied to the channel. Title The title of the stream that the broadcaster is currently streaming or last streamed. Methods UpdateAsync()"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Tags.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.Tags.html",
@@ -6882,7 +6832,77 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html",
     "title": "Class RestChatUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestChatUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestChatUser : RestSimpleUser, IChatUser, ISimpleUser, IPartialUser, IEntity<string> Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestChatUser Implements IChatUser ISimpleUser IPartialUser IEntity<string> Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestChatUser(TwitchRestClient, string) Properties Color"
+    "keywords": "Class RestChatUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestChatUser : RestSimpleUser, IChatUser, ISimpleUser, IPartialUser, IEntity<string> Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestChatUser Implements IChatUser ISimpleUser IPartialUser IEntity<string> Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestChatUser(TwitchRestClient, string) Properties Color"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Author.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Author.html",
+    "title": "Property Author | AuxLabs.Twitch Documentation",
+    "keywords": "Property Author Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Author The user who created the clip. public RestPartialUser Author { get; } Property Value RestPartialUser"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Broadcaster.html",
+    "title": "Property Broadcaster | AuxLabs.Twitch Documentation",
+    "keywords": "Property Broadcaster Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Broadcaster The user whose channel the clip was created on. public RestPartialUser Broadcaster { get; } Property Value RestPartialUser"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.CreatedAt.html",
+    "title": "Property CreatedAt | AuxLabs.Twitch Documentation",
+    "keywords": "Property CreatedAt Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll CreatedAt The date and time of when the clip was created. public DateTime CreatedAt { get; } Property Value DateTime"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Culture.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Culture.html",
+    "title": "Property Culture | AuxLabs.Twitch Documentation",
+    "keywords": "Property Culture Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Culture The language that the broadcaster broadcasts in. public CultureInfo Culture { get; } Property Value CultureInfo"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Duration.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Duration.html",
+    "title": "Property Duration | AuxLabs.Twitch Documentation",
+    "keywords": "Property Duration Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Duration The length of the clip, in seconds. public TimeSpan Duration { get; } Property Value TimeSpan"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.EmbedUrl.html",
+    "title": "Property EmbedUrl | AuxLabs.Twitch Documentation",
+    "keywords": "Property EmbedUrl Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll EmbedUrl A URL that you can use in an iframe to embed the clip. public string EmbedUrl { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.GameId.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.GameId.html",
+    "title": "Property GameId | AuxLabs.Twitch Documentation",
+    "keywords": "Property GameId Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GameId The ID of the game that was being played when the clip was created. public string GameId { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.html",
+    "title": "Class RestClip | AuxLabs.Twitch Documentation",
+    "keywords": "Class RestClip Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestClip : RestSimpleClip Inheritance object RestEntity<string> RestSimpleClip RestClip Inherited Members RestSimpleClip.EditUrl RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Author The user who created the clip. Broadcaster The user whose channel the clip was created on. CreatedAt The date and time of when the clip was created. Culture The language that the broadcaster broadcasts in. Duration The length of the clip, in seconds. EmbedUrl A URL that you can use in an iframe to embed the clip. GameId The ID of the game that was being played when the clip was created. Offset The zero-based offset, in seconds, to where the clip starts in the video ThumbnailUrl A URL to a thumbnail image of the clip. Title The title of the clip. Url A URL to the clip. VideoId An ID that identifies the video that the clip came from. ViewCount The number of times the clip has been viewed."
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Offset.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Offset.html",
+    "title": "Property Offset | AuxLabs.Twitch Documentation",
+    "keywords": "Property Offset Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Offset The zero-based offset, in seconds, to where the clip starts in the video public TimeSpan Offset { get; } Property Value TimeSpan"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.ThumbnailUrl.html",
+    "title": "Property ThumbnailUrl | AuxLabs.Twitch Documentation",
+    "keywords": "Property ThumbnailUrl Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll ThumbnailUrl A URL to a thumbnail image of the clip. public string ThumbnailUrl { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Title.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Title.html",
+    "title": "Property Title | AuxLabs.Twitch Documentation",
+    "keywords": "Property Title Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Title The title of the clip. public string Title { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.Url.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.Url.html",
+    "title": "Property Url | AuxLabs.Twitch Documentation",
+    "keywords": "Property Url Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Url A URL to the clip. public string Url { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.VideoId.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.VideoId.html",
+    "title": "Property VideoId | AuxLabs.Twitch Documentation",
+    "keywords": "Property VideoId Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll VideoId An ID that identifies the video that the clip came from. public string VideoId { get; } Property Value string"
+  },
+  "api/AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestClip.ViewCount.html",
+    "title": "Property ViewCount | AuxLabs.Twitch Documentation",
+    "keywords": "Property ViewCount Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll ViewCount The number of times the clip has been viewed. public int ViewCount { get; } Property Value int"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestEditor.-ctor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.-ctor.html",
@@ -6897,7 +6917,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestEditor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.html",
     "title": "Class RestEditor | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestEditor Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestEditor : RestPartialUser Inheritance object RestEntity<string> RestPartialUser RestEditor Inherited Members RestPartialUser.Name RestPartialUser.ToString() RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestEditor(TwitchRestClient, string) Properties CreatedAt"
+    "keywords": "Class RestEditor Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestEditor : RestPartialUser Inheritance object RestEntity<string> RestPartialUser RestEditor Inherited Members RestPartialUser.Name RestPartialUser.ToString() RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestEditor(TwitchRestClient, string) Properties CreatedAt"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestEmote.-ctor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestEmote.-ctor.html",
@@ -6932,7 +6952,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestEntity-1.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestEntity-1.html",
     "title": "Class RestEntity<T> | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestEntity<T> Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public abstract class RestEntity<T> where T : IEquatable<T> Type Parameters T Inheritance object RestEntity<T> Derived RestBroadcast RestEventSubscription RestExtensionTransaction RestGlobalEmote RestMarker RestPartialUser RestSimpleChannel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Id An ID that uniquely identifies the entity."
+    "keywords": "Class RestEntity<T> Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public abstract class RestEntity<T> where T : IEquatable<T> Type Parameters T Inheritance object RestEntity<T> Derived RestBroadcast RestEventSubscription RestExtensionTransaction RestGlobalEmote RestMarker RestPartialUser RestSimpleClip Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Id An ID that uniquely identifies the entity."
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestEntity-1.Id.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestEntity-1.Id.html",
@@ -7024,25 +7044,15 @@
     "title": "Property User | AuxLabs.Twitch Documentation",
     "keywords": "Property User Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll User The user that purchased the digital product. public RestSimpleUser User { get; } Property Value RestSimpleUser"
   },
-  "api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.FollowedAt.html",
-    "title": "Property FollowedAt | AuxLabs.Twitch Documentation",
-    "keywords": "Property FollowedAt Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll FollowedAt public DateTime FollowedAt { get; set; } Property Value DateTime"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollowedChannel.html",
-    "title": "Class RestFollowedChannel | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestFollowedChannel Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestFollowedChannel : RestSimpleChannel, IChannel, IEntity<string> Inheritance object RestEntity<string> RestSimpleChannel RestFollowedChannel Implements IChannel IEntity<string> Inherited Members RestSimpleChannel.DisplayName RestSimpleChannel.Name RestSimpleChannel.GetUserAsync() RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties FollowedAt"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollower.FollowedAt.html",
+  "api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt.html",
     "title": "Property FollowedAt | AuxLabs.Twitch Documentation",
     "keywords": "Property FollowedAt Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll FollowedAt public DateTime FollowedAt { get; } Property Value DateTime"
   },
-  "api/AuxLabs.Twitch.Rest.Entities.RestFollower.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollower.html",
-    "title": "Class RestFollower | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestFollower Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestFollower : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestFollower Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties FollowedAt"
+  "api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestFollowUser.html",
+    "title": "Class RestFollowUser | AuxLabs.Twitch Documentation",
+    "keywords": "Class RestFollowUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestFollowUser : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestFollowUser Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties FollowedAt"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.-ctor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.-ctor.html",
@@ -7109,40 +7119,10 @@
     "title": "Constructor RestPartialUser | AuxLabs.Twitch Documentation",
     "keywords": "Constructor RestPartialUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll RestPartialUser(TwitchRestClient, string) public RestPartialUser(TwitchRestClient twitch, string id) Parameters twitch TwitchRestClient id string"
   },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetBroadcastAsync.html",
-    "title": "Method GetBroadcastAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetBroadcastAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetBroadcastAsync() Get the broadcast associated with this user. public Task<RestBroadcast> GetBroadcastAsync() Returns Task<RestBroadcast> A RestBroadcast object or null if the user is not currently streaming."
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetChannelAsync.html",
-    "title": "Method GetChannelAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetChannelAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetChannelAsync() Get the channel associated with this user. public Task<RestChannel> GetChannelAsync() Returns Task<RestChannel>"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelAsync.html",
-    "title": "Method GetFollowedChannelAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowedChannelAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelAsync(string) public Task<RestFollowedChannel> GetFollowedChannelAsync(string broadcasterId) Parameters broadcasterId string Returns Task<RestFollowedChannel>"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowedChannelsAsync.html",
-    "title": "Method GetFollowedChannelsAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowedChannelsAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelsAsync(int) public Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20) Parameters count int Returns Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)>"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowerAsync.html",
-    "title": "Method GetFollowerAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowerAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetFollowerAsync(string) public Task<RestFollower> GetFollowerAsync(string userId) Parameters userId string Returns Task<RestFollower>"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.GetFollowersAsync.html",
-    "title": "Method GetFollowersAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowersAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetFollowersAsync(int) public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20) Parameters count int Returns Task<(IReadOnlyCollection<RestFollower> Followers, int Total)>"
-  },
   "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html",
     "title": "Class RestPartialUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestPartialUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestPartialUser : RestEntity<string> Inheritance object RestEntity<string> RestPartialUser Derived RestEditor RestSimpleUser Inherited Members RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestPartialUser(TwitchRestClient, string) Properties Name User’s login name Methods GetBroadcastAsync() Get the broadcast associated with this user. GetChannelAsync() Get the channel associated with this user. GetFollowedChannelAsync(string) GetFollowedChannelsAsync(int) GetFollowerAsync(string) GetFollowersAsync(int) ToString()"
+    "keywords": "Class RestPartialUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestPartialUser : RestEntity<string> Inheritance object RestEntity<string> RestPartialUser Derived RestEditor RestSimpleUser Inherited Members RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestPartialUser(TwitchRestClient, string) Properties Name User’s login name Methods ToString()"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.Name.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.Name.html",
@@ -7162,7 +7142,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestSelfUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestSelfUser.html",
     "title": "Class RestSelfUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestSelfUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestSelfUser : RestUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestUser RestSelfUser Inherited Members RestUser.CreatedAt RestUser.Description RestUser.ViewCount RestUser.OfflineImageUrl RestUser.ProfileImageUrl RestUser.BroadcasterType RestUser.Type RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties Email Date when the user was created Methods ModifyAsync(string) UpdateAsync()"
+    "keywords": "Class RestSelfUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestSelfUser : RestUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestUser RestSelfUser Inherited Members RestUser.CreatedAt RestUser.Description RestUser.ViewCount RestUser.OfflineImageUrl RestUser.ProfileImageUrl RestUser.BroadcasterType RestUser.Type RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties Email Date when the user was created Methods ModifyAsync(string) UpdateAsync()"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestSelfUser.ModifyAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestSelfUser.ModifyAsync.html",
@@ -7174,25 +7154,15 @@
     "title": "Method UpdateAsync | AuxLabs.Twitch Documentation",
     "keywords": "Method UpdateAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll UpdateAsync() public override Task UpdateAsync() Returns Task"
   },
-  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.DisplayName.html",
-    "title": "Property DisplayName | AuxLabs.Twitch Documentation",
-    "keywords": "Property DisplayName Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll DisplayName The broadcaster’s display name. public string DisplayName { get; } Property Value string"
+  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html",
+    "title": "Property EditUrl | AuxLabs.Twitch Documentation",
+    "keywords": "Property EditUrl Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll EditUrl A URL that you can use to edit the clip’s title, identify the part of the clip to publish, and publish the clip. public string EditUrl { get; } Property Value string"
   },
-  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.GetUserAsync.html",
-    "title": "Method GetUserAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetUserAsync Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll GetUserAsync() Get the user associated with this channel. public Task<RestUser> GetUserAsync() Returns Task<RestUser>"
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.html",
-    "title": "Class RestSimpleChannel | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestSimpleChannel Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestSimpleChannel : RestEntity<string>, IChannel, IEntity<string> Inheritance object RestEntity<string> RestSimpleChannel Implements IChannel IEntity<string> Derived RestChannel RestFollowedChannel Inherited Members RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties DisplayName The broadcaster’s display name. Name The broadcaster’s login name. Methods GetUserAsync() Get the user associated with this channel."
-  },
-  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name.html": {
-    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleChannel.Name.html",
-    "title": "Property Name | AuxLabs.Twitch Documentation",
-    "keywords": "Property Name Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll Name The broadcaster’s login name. public string Name { get; } Property Value string"
+  "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html": {
+    "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html",
+    "title": "Class RestSimpleClip | AuxLabs.Twitch Documentation",
+    "keywords": "Class RestSimpleClip Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll A simplified instance of a RestClip. public class RestSimpleClip : RestEntity<string> Inheritance object RestEntity<string> RestSimpleClip Derived RestClip Inherited Members RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties EditUrl A URL that you can use to edit the clip’s title, identify the part of the clip to publish, and publish the clip."
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.-ctor.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.-ctor.html",
@@ -7207,7 +7177,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html",
     "title": "Class RestSimpleUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestSimpleUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestSimpleUser : RestPartialUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser Derived RestBitsUser RestChatUser RestFollower RestUser Inherited Members RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestSimpleUser(TwitchRestClient, string) Properties DisplayName User’s display name Methods ToString()"
+    "keywords": "Class RestSimpleUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestSimpleUser : RestPartialUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser Derived RestBitsUser RestChannel RestChatUser RestFollowUser RestUser Inherited Members RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors RestSimpleUser(TwitchRestClient, string) Properties DisplayName User’s display name Methods ToString()"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.ToString.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.ToString.html",
@@ -7232,7 +7202,7 @@
   "api/AuxLabs.Twitch.Rest.Entities.RestUser.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestUser.html",
     "title": "Class RestUser | AuxLabs.Twitch Documentation",
-    "keywords": "Class RestUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestUser : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestUser Derived RestSelfUser Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestPartialUser.GetChannelAsync() RestPartialUser.GetBroadcastAsync() RestPartialUser.GetFollowerAsync(string) RestPartialUser.GetFollowersAsync(int) RestPartialUser.GetFollowedChannelsAsync(int) RestPartialUser.GetFollowedChannelAsync(string) RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties BroadcasterType User’s broadcaster type CreatedAt User’s verified email address Description User’s channel description OfflineImageUrl URL of the user’s offline image ProfileImageUrl URL of the user’s profile image Type User’s type ViewCount Total number of views of the user’s channel Methods UpdateAsync()"
+    "keywords": "Class RestUser Namespace AuxLabs.Twitch.Rest.Entities Assembly AuxLabs.Twitch.Rest.dll public class RestUser : RestSimpleUser Inheritance object RestEntity<string> RestPartialUser RestSimpleUser RestUser Derived RestSelfUser Inherited Members RestSimpleUser.DisplayName RestSimpleUser.ToString() RestPartialUser.Name RestEntity<string>.Id object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties BroadcasterType User’s broadcaster type CreatedAt User’s verified email address Description User’s channel description OfflineImageUrl URL of the user’s offline image ProfileImageUrl URL of the user’s profile image Type User’s type ViewCount Total number of views of the user’s channel Methods UpdateAsync()"
   },
   "api/AuxLabs.Twitch.Rest.Entities.RestUser.OfflineImageUrl.html": {
     "href": "api/AuxLabs.Twitch.Rest.Entities.RestUser.OfflineImageUrl.html",
@@ -14599,6 +14569,11 @@
     "title": "Constructor TwitchRestClient | AuxLabs.Twitch Documentation",
     "keywords": "Constructor TwitchRestClient Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll TwitchRestClient(TwitchRestConfig) public TwitchRestClient(TwitchRestConfig config = null) Parameters config TwitchRestConfig TwitchRestClient(string, TwitchRestConfig) public TwitchRestClient(string url, TwitchRestConfig config = null) Parameters url string config TwitchRestConfig"
   },
+  "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync.html": {
+    "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateClipAsync.html",
+    "title": "Method CreateClipAsync | AuxLabs.Twitch Documentation",
+    "keywords": "Method CreateClipAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll CreateClipAsync(string, bool, CancellationToken?) public Task<RestSimpleClip> CreateClipAsync(string channelId, bool withDelay = false, CancellationToken? cancelToken = null) Parameters channelId string The channel whose stream you want to create a clip for. withDelay bool cancelToken CancellationToken? Returns Task<RestSimpleClip>"
+  },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync.html",
     "title": "Method CreateEventSubscriptionAsync | AuxLabs.Twitch Documentation",
@@ -14622,7 +14597,7 @@
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync.html",
     "title": "Method GetBitsLeaderboardAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetBitsLeaderboardAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<RestBitsUser>> GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null, int count = 10, CancellationToken? cancelToken = null) Parameters userId string startAt DateTime? bitsPeriod BitsPeriod? count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<RestBitsUser>>"
+    "keywords": "Method GetBitsLeaderboardAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?) public Task<IReadOnlyCollection<RestBitsUser>> GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null, int count = 10, CancellationToken? cancelToken = null) Parameters userId string startAt DateTime? bitsPeriod BitsPeriod? count int cancelToken CancellationToken? Returns Task<IReadOnlyCollection<RestBitsUser>>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByIdAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByIdAsync.html",
@@ -14654,6 +14629,11 @@
     "title": "Method GetChannelAsync | AuxLabs.Twitch Documentation",
     "keywords": "Method GetChannelAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetChannelAsync(string) public Task<RestChannel> GetChannelAsync(string channelId) Parameters channelId string Returns Task<RestChannel>"
   },
+  "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync.html": {
+    "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelClipsAsync.html",
+    "title": "Method GetChannelClipsAsync | AuxLabs.Twitch Documentation",
+    "keywords": "Method GetChannelClipsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetChannelClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<RestClip>> GetChannelClipsAsync(string channelId, DateTime? startAt = null, DateTime? endAt = null, int count = 20, CancellationToken? cancelToken = null) Parameters channelId string startAt DateTime? endAt DateTime? count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<RestClip>>"
+  },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelEditors.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetChannelEditors.html",
     "title": "Method GetChannelEditors | AuxLabs.Twitch Documentation",
@@ -14678,6 +14658,16 @@
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetCheermotesAsync.html",
     "title": "Method GetCheermotesAsync | AuxLabs.Twitch Documentation",
     "keywords": "Method GetCheermotesAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetCheermotesAsync(string) public Task<IReadOnlyCollection<Cheermote>> GetCheermotesAsync(string broadcasterId = null) Parameters broadcasterId string Returns Task<IReadOnlyCollection<Cheermote>>"
+  },
+  "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync.html": {
+    "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipAsync.html",
+    "title": "Method GetClipAsync | AuxLabs.Twitch Documentation",
+    "keywords": "Method GetClipAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetClipAsync(string, CancellationToken?) public Task<RestClip> GetClipAsync(string clipId, CancellationToken? cancelToken = null) Parameters clipId string cancelToken CancellationToken? Returns Task<RestClip> GetClipAsync(params string[]) public Task<IReadOnlyCollection<RestClip>> GetClipAsync(params string[] clipIds) Parameters clipIds string[] Returns Task<IReadOnlyCollection<RestClip>>"
+  },
+  "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync.html": {
+    "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetClipsAsync.html",
+    "title": "Method GetClipsAsync | AuxLabs.Twitch Documentation",
+    "keywords": "Method GetClipsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetClipsAsync(string[], CancellationToken?) public Task<IReadOnlyCollection<RestClip>> GetClipsAsync(string[] clipIds, CancellationToken? cancelToken = null) Parameters clipIds string[] cancelToken CancellationToken? Returns Task<IReadOnlyCollection<RestClip>>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetEmotesAsync.html",
@@ -14722,22 +14712,22 @@
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelAsync.html",
     "title": "Method GetFollowedChannelAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowedChannelAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelAsync(string) public Task<RestFollowedChannel> GetFollowedChannelAsync(string broadcasterId) Parameters broadcasterId string Returns Task<RestFollowedChannel>"
+    "keywords": "Method GetFollowedChannelAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelAsync(string) public Task<RestFollowUser> GetFollowedChannelAsync(string broadcasterId) Parameters broadcasterId string Returns Task<RestFollowUser>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowedChannelsAsync.html",
     "title": "Method GetFollowedChannelsAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowedChannelsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelsAsync(int) public Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20) Parameters count int Returns Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)>"
+    "keywords": "Method GetFollowedChannelsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowedChannelsAsync(int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<RestFollowUser>> GetFollowedChannelsAsync(int count = 20, CancellationToken? cancelToken = null) Parameters count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<RestFollowUser>>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowerAsync.html",
     "title": "Method GetFollowerAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowerAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowerAsync(string, string) public Task<RestFollower> GetFollowerAsync(string broadcasterId, string userId) Parameters broadcasterId string userId string Returns Task<RestFollower>"
+    "keywords": "Method GetFollowerAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowerAsync(string) public Task<RestFollowUser> GetFollowerAsync(string userId) Parameters userId string Returns Task<RestFollowUser>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetFollowersAsync.html",
     "title": "Method GetFollowersAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method GetFollowersAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowersAsync(string, int) public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(string broadcasterId, int count = 20) Parameters broadcasterId string count int Returns Task<(IReadOnlyCollection<RestFollower> Followers, int Total)>"
+    "keywords": "Method GetFollowersAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetFollowersAsync(int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<RestFollowUser>> GetFollowersAsync(int count = 20, CancellationToken? cancelToken = null) Parameters count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<RestFollowUser>>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync.html",
@@ -14748,6 +14738,11 @@
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync.html",
     "title": "Method GetGameAnalyticsAsync | AuxLabs.Twitch Documentation",
     "keywords": "Method GetGameAnalyticsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<GameAnalytic>> GetGameAnalyticsAsync(string gameId = null, DateTime? startAt = null, DateTime? endAt = null, int count = 20, CancellationToken? cancelToken = null) Parameters gameId string startAt DateTime? endAt DateTime? count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<GameAnalytic>>"
+  },
+  "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync.html": {
+    "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync.html",
+    "title": "Method GetGameClipsAsync | AuxLabs.Twitch Documentation",
+    "keywords": "Method GetGameClipsAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll GetGameClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?) public IAsyncEnumerable<IReadOnlyCollection<RestClip>> GetGameClipsAsync(string gameId, DateTime? startAt = null, DateTime? endAt = null, int count = 20, CancellationToken? cancelToken = null) Parameters gameId string startAt DateTime? endAt DateTime? count int cancelToken CancellationToken? Returns IAsyncEnumerable<IReadOnlyCollection<RestClip>>"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html",
@@ -14802,7 +14797,7 @@
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.html",
     "title": "Class TwitchRestClient | AuxLabs.Twitch Documentation",
-    "keywords": "Class TwitchRestClient Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll public class TwitchRestClient : IDisposable Inheritance object TwitchRestClient Implements IDisposable Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TwitchRestClient(TwitchRestConfig) TwitchRestClient(string, TwitchRestConfig) Properties Identity MyChannel MyUser Methods CreateEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition>) CreateEventSubscriptionAsync<TCondition>(Action<PostEventSubscriptionBody<TCondition>>) CreateMarkerAsync(string, CancellationToken?) DeleteEventSubscriptionAsync(string) Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Dispose(bool) GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?) GetBroadcastByIdAsync(string) GetBroadcastByNameAsync(string) GetBroadcastsAsync(string[], string[], string[], string[], int, CancellationToken?) GetBroadcastsByIdAsync(params string[]) GetBroadcastsByNameAsync(params string[]) GetChannelAsync(string) GetChannelEditors(string) GetChannelsAsync(params string[]) GetChatSettingsAsync(string, CancellationToken?) GetChattersAsync(string, int, CancellationToken?) GetCheermotesAsync(string) GetEmotesAsync(CancellationToken?) GetEmotesAsync(string, CancellationToken?) GetEmoteSetAsync(string, CancellationToken?) GetEmoteSetsAsync(string[], CancellationToken?) GetEmoteSetsAsync(params string[]) GetEventSubscriptionsAsync(string, EventSubStatus?, EventSubType?) GetExtensionAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?) GetExtensionAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetExtensionTransactionsAsync(string, int, params string[]) GetExtensionTransactionsAsync(string, int) GetFollowedBroadcastsAsync(int, CancellationToken?) GetFollowedChannelAsync(string) GetFollowedChannelsAsync(int) GetFollowerAsync(string, string) GetFollowersAsync(string, int) GetGameAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?) GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetMarkersAsync(string, string, int, CancellationToken?) GetMyChannelAsync() GetMyUserAsync() GetStreamKeyAsync() GetUserByIdAsync(string) GetUserByNameAsync(string) GetUserChatColorAsync(string, CancellationToken?) GetUserChatColorsAsync(string[], CancellationToken?) GetUserChatColorsAsync(params string[]) GetUsersByIdAsync(params string[]) GetUsersByNameAsync(params string[]) ModifyChatSettingsAsync(string, Action<PatchChatSettingsBody>, CancellationToken?) ModifyMyColorAsync(ChatColor, CancellationToken?) ModifyMyColorAsync(Color, CancellationToken?) ModifyMyUserAsync(string) SendAnnouncementAsync(string, string, AnnouncementColor?, CancellationToken?) SendShoutoutAsync(string, string, CancellationToken?) StartCommercialAsync(int) UpdateMyChannelAsync(Action<PatchChannelBody>) ValidateAsync() ValidateAsync(string, string)"
+    "keywords": "Class TwitchRestClient Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll public class TwitchRestClient : IDisposable Inheritance object TwitchRestClient Implements IDisposable Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TwitchRestClient(TwitchRestConfig) TwitchRestClient(string, TwitchRestConfig) Properties Identity MyChannel MyUser Methods CreateClipAsync(string, bool, CancellationToken?) CreateEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition>) CreateEventSubscriptionAsync<TCondition>(Action<PostEventSubscriptionBody<TCondition>>) CreateMarkerAsync(string, CancellationToken?) DeleteEventSubscriptionAsync(string) Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Dispose(bool) GetBitsLeaderboardAsync(string, DateTime?, BitsPeriod?, int, CancellationToken?) GetBroadcastByIdAsync(string) GetBroadcastByNameAsync(string) GetBroadcastsAsync(string[], string[], string[], string[], int, CancellationToken?) GetBroadcastsByIdAsync(params string[]) GetBroadcastsByNameAsync(params string[]) GetChannelAsync(string) GetChannelClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetChannelEditors(string) GetChannelsAsync(params string[]) GetChatSettingsAsync(string, CancellationToken?) GetChattersAsync(string, int, CancellationToken?) GetCheermotesAsync(string) GetClipAsync(string, CancellationToken?) GetClipAsync(params string[]) GetClipsAsync(string[], CancellationToken?) GetEmotesAsync(CancellationToken?) GetEmotesAsync(string, CancellationToken?) GetEmoteSetAsync(string, CancellationToken?) GetEmoteSetsAsync(string[], CancellationToken?) GetEmoteSetsAsync(params string[]) GetEventSubscriptionsAsync(string, EventSubStatus?, EventSubType?) GetExtensionAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?) GetExtensionAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetExtensionTransactionsAsync(string, int, params string[]) GetExtensionTransactionsAsync(string, int) GetFollowedBroadcastsAsync(int, CancellationToken?) GetFollowedChannelAsync(string) GetFollowedChannelsAsync(int, CancellationToken?) GetFollowerAsync(string) GetFollowersAsync(int, CancellationToken?) GetGameAnalyticAsync(string, DateTime?, DateTime?, CancellationToken?) GetGameAnalyticsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetGameClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?) GetMarkersAsync(string, string, int, CancellationToken?) GetMyChannelAsync() GetMyUserAsync() GetStreamKeyAsync() GetUserByIdAsync(string) GetUserByNameAsync(string) GetUserChatColorAsync(string, CancellationToken?) GetUserChatColorsAsync(string[], CancellationToken?) GetUserChatColorsAsync(params string[]) GetUsersByIdAsync(params string[]) GetUsersByNameAsync(params string[]) ModifyChatSettingsAsync(string, Action<PatchChatSettingsBody>, CancellationToken?) ModifyMyColorAsync(ChatColor, CancellationToken?) ModifyMyColorAsync(Color, CancellationToken?) ModifyMyUserAsync(string) SendAnnouncementAsync(string, string, AnnouncementColor?, CancellationToken?) SendShoutoutAsync(string, string, CancellationToken?) StartCommercialAsync(int, CancellationToken?) Starts a commercial on the currently authorized user's channel. UpdateMyChannelAsync(Action<PatchChannelBody>) ValidateAsync() ValidateAsync(string, string)"
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.Identity.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.Identity.html",
@@ -14847,7 +14842,7 @@
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync.html",
     "title": "Method StartCommercialAsync | AuxLabs.Twitch Documentation",
-    "keywords": "Method StartCommercialAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll StartCommercialAsync(int) public Task<Commercial> StartCommercialAsync(int length) Parameters length int Returns Task<Commercial>"
+    "keywords": "Method StartCommercialAsync Namespace AuxLabs.Twitch.Rest Assembly AuxLabs.Twitch.Rest.dll StartCommercialAsync(int, CancellationToken?) Starts a commercial on the currently authorized user's channel. public Task<Commercial> StartCommercialAsync(int length, CancellationToken? cancelToken = null) Parameters length int The length of the commercial to run, in seconds. cancelToken CancellationToken? Returns Task<Commercial> A single Commercial object. Remarks Requires a user access token with the channel:edit:commercial scope. Exceptions TwitchRestException 400 Bad Request The specified broadcaster is not currently live. The internal commercial ratelimit has been exceeded. MissingScopeException The authorized user does not have the channel:edit:commercial scope."
   },
   "api/AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync.html": {
     "href": "api/AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync.html",
