@@ -13,16 +13,14 @@ namespace AuxLabs.Twitch
 
         private readonly int? _count;
         private readonly Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T> Data, string Cursor)>> _getPage;
-        private readonly Func<PageInfo, int, string, bool> _nextPage;
 
-        public PagedAsyncEnumerable(int pageSize, Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T> Data, string Cursor)>> getPage, Func<PageInfo, int, string, bool> nextPage = null,
+        public PagedAsyncEnumerable(int pageSize, Func<PageInfo, CancellationToken, Task<(IReadOnlyCollection<T> Data, string Cursor)>> getPage,
             int? count = null)
         {
             PageSize = pageSize;
             _count = count;
 
             _getPage = getPage;
-            _nextPage = nextPage;
         }
 
         public IAsyncEnumerator<IReadOnlyCollection<T>> GetAsyncEnumerator(CancellationToken cancellationToken = new CancellationToken()) => new Enumerator(this, cancellationToken);
@@ -66,8 +64,9 @@ namespace AuxLabs.Twitch
 
                 if (_info.Remaining != 0)
                 {
-                    if (!_source._nextPage(_info, Data.Count, Cursor))
+                    if (Data.Count != _info.PageSize) 
                         _info.Remaining = 0;
+                    _info.Cursor = Cursor;
                 }
 
                 return true;

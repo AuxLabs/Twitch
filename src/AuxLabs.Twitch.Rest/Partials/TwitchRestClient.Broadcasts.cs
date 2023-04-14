@@ -61,13 +61,6 @@ namespace AuxLabs.Twitch.Rest
                     }, cancelToken);
                     return (response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
                 },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
-                },
                 count: count);
         }
 
@@ -85,13 +78,6 @@ namespace AuxLabs.Twitch.Rest
                         After = info.Cursor
                     }, cancelToken);
                     return (response.Data.Select(x => RestBroadcast.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
-                },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
                 },
                 count: count);
         }
@@ -123,13 +109,6 @@ namespace AuxLabs.Twitch.Rest
                         After = info.Cursor
                     }, cancelToken);
                     return (response.Data.Select(x => RestMarker.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
-                },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
                 },
                 count: count);
         }

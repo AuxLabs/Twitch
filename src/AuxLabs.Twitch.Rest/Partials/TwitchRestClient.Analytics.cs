@@ -39,13 +39,6 @@ namespace AuxLabs.Twitch.Rest
                     }, cancelToken);
                     return (response.Data.ToImmutableArray(), response.Pagination.Value.Cursor);
                 },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
-                },
                 count: count);
         }
 
@@ -76,34 +69,20 @@ namespace AuxLabs.Twitch.Rest
                     }, cancelToken);
                     return (response.Data.ToImmutableArray(), response.Pagination.Value.Cursor);
                 },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
-                },
                 count: count);
         }
 
-        public IAsyncEnumerable<IReadOnlyCollection<RestBitsUser>> GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null,
+        public async Task<IReadOnlyCollection<RestBitsUser>> GetBitsLeaderboardAsync(string userId = null, DateTime? startAt = null, BitsPeriod? bitsPeriod = null,
             int count = 10, CancellationToken? cancelToken = null)
         {
-            return new PagedAsyncEnumerable<RestBitsUser>(
-                TwitchConstants.DefaultMaxPerPage,
-                async (info, ct) =>
-                {
-                    var response = await API.GetBitsLeaderboardAsync(new GetBitsLeaderboardArgs
-                    {
-                        UserId = userId,
-                        StartedAt = startAt,
-                        Period = bitsPeriod,
-                        Count = info.PageSize,
-                    }, cancelToken);
-                    return (response.Data.Select(x => RestBitsUser.Create(this, x)).ToImmutableArray(), null);
-                },
-                nextPage: (info, amount, cursor) => amount != TwitchConstants.DefaultMaxPerPage,
-                count: count);
+            var response = await API.GetBitsLeaderboardAsync(new GetBitsLeaderboardArgs
+            {
+                UserId = userId,
+                StartedAt = startAt,
+                Period = bitsPeriod,
+                Count = count,
+            }, cancelToken);
+            return response.Data.Select(x => RestBitsUser.Create(this, x)).ToImmutableArray();
         }
     }
 }

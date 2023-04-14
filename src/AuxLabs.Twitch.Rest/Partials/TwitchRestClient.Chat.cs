@@ -49,13 +49,6 @@ namespace AuxLabs.Twitch.Rest
                     }, cancelToken);
                     return (response.Data.Select(x => RestSimpleUser.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
                 },
-                nextPage: (info, amount, cursor) =>
-                {
-                    if (amount != TwitchConstants.DefaultMaxPerPage)
-                        return false;
-                    info.Cursor = cursor;
-                    return true;
-                },
                 count: count);
         }
 
