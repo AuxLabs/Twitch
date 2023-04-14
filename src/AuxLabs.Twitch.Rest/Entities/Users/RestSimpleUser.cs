@@ -64,6 +64,16 @@ namespace AuxLabs.Twitch.Rest.Entities
             base.Update(model.UserName);
             DisplayName = model.UserDisplayName;
         }
+        internal virtual void Update(Channel model)
+        {
+            base.Update(model.BroadcasterName);
+            DisplayName = model.BroadcasterDisplayName;
+        }
+        internal virtual void Update(FollowedChannel model)
+        {
+            base.Update(model.BroadcasterName);
+            DisplayName = model.BroadcasterDisplayName;
+        }
 
         public override string ToString() => DisplayName ?? Name + $"({Id})";
     }

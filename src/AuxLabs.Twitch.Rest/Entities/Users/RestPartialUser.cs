@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-
-namespace AuxLabs.Twitch.Rest.Entities
+﻿namespace AuxLabs.Twitch.Rest.Entities
 {
     public class RestPartialUser : RestEntity<string>
     {
@@ -23,23 +20,5 @@ namespace AuxLabs.Twitch.Rest.Entities
         }
 
         public override string ToString() => Name + $"({Id})";
-
-        /// <summary> Get the channel associated with this user. </summary>
-        public Task<RestChannel> GetChannelAsync()
-            => Twitch.GetChannelAsync(Id);
-
-        /// <summary> Get the broadcast associated with this user. </summary>
-        /// <returns> A <see cref="RestBroadcast"/> object or null if the user is not currently streaming. </returns>
-        public Task<RestBroadcast> GetBroadcastAsync()
-            => Twitch.GetBroadcastByIdAsync(Id);
-
-        public Task<RestFollower> GetFollowerAsync(string userId)
-            => Twitch.GetFollowerAsync(userId, Id);
-        public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
-            => Twitch.GetFollowersAsync(Id, count);
-        public Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
-            => Twitch.GetFollowedChannelsAsync(count);
-        public Task<RestFollowedChannel> GetFollowedChannelAsync(string broadcasterId)
-            => Twitch.GetFollowedChannelAsync(broadcasterId);
     }
 }

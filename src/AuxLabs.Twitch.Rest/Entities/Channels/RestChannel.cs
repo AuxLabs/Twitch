@@ -9,30 +9,30 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest.Entities
 {
-    public class RestChannel : RestSimpleChannel
+    public class RestChannel : RestSimpleUser
     {
         /// <summary> The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. </summary>
-        public CultureInfo Culture { get; internal set; }
+        public CultureInfo Culture { get; private set; }
 
         /// <summary> An ID that uniquely identifies the game that the broadcaster is playing or last played. </summary>
-        public string GameId { get; internal set; }
+        public string GameId { get; private set; }
 
         /// <summary> The name of the game that the broadcaster is playing or last played. </summary>
-        public string GameName { get; internal set; }
+        public string GameName { get; private set; }
 
         /// <summary> The title of the stream that the broadcaster is currently streaming or last streamed. </summary>
-        public string Title { get; internal set; }
+        public string Title { get; private set; }
 
         /// <summary> The value of the broadcaster’s stream delay setting. </summary>
-        public TimeSpan Delay { get; internal set; }
+        public TimeSpan Delay { get; private set; }
 
         /// <summary> The tags applied to the channel. </summary>
-        public IReadOnlyCollection<string> Tags { get; internal set; }
+        public IReadOnlyCollection<string> Tags { get; private set; }
 
         internal RestChannel(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
-        internal new static RestChannel Create(TwitchRestClient twitch, Channel model)
+        internal static RestChannel Create(TwitchRestClient twitch, Channel model)
         {
             var entity = new RestChannel(twitch, model.BroadcasterId);
             entity.Update(model);
@@ -41,12 +41,12 @@ namespace AuxLabs.Twitch.Rest.Entities
         internal override void Update(Channel model)
         {
             base.Update(model);
-            this.Culture = model.Culture;
-            this.GameId = model.GameId;
-            this.GameName = model.GameName;
-            this.Title = model.Title;
-            this.Delay = TimeSpan.FromSeconds(model.Delay);
-            this.Tags = model.Tags.ToList().AsReadOnly();
+            Culture = model.Culture;
+            GameId = model.GameId;
+            GameName = model.GameName;
+            Title = model.Title;
+            Delay = TimeSpan.FromSeconds(model.Delay);
+            Tags = model.Tags.ToList().AsReadOnly();
         }
         internal void Update(PatchChannelBody args)
         {

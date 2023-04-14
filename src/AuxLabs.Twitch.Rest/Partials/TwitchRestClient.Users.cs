@@ -42,51 +42,5 @@ namespace AuxLabs.Twitch.Rest
 
             return response.Data.Select(x => RestUser.Create(this, x)).ToImmutableArray();
         }
-
-        public async Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(string broadcasterId, int count = 20)
-        {
-            var response = await API.GetFollowersAsync(new GetFollowersArgs
-            {
-                BroadcasterId = broadcasterId,
-                First = count
-            });
-            var data = response.Data.Select(x => RestFollower.Create(this, x)).ToImmutableArray();
-            return (data, response.Total.Value);
-        }
-
-        public async Task<RestFollower> GetFollowerAsync(string broadcasterId, string userId)
-        {
-            var response = await API.GetFollowersAsync(new GetFollowersArgs
-            {
-                BroadcasterId = broadcasterId,
-                UserId = userId
-            });
-            return response?.Data == null || response.Data.Count == 0
-                ? null 
-                : RestFollower.Create(this, response.Data.First());
-        }
-
-        public async Task<(IReadOnlyCollection<RestFollowedChannel> Channels, int Total)> GetFollowedChannelsAsync(int count = 20)
-        {
-            var response = await API.GetFollowedChannelsAsync(new GetFollowedChannelsArgs
-            {
-                UserId = MyUser.Id,
-                First = count
-            });
-            var data = response.Data.Select(x => RestFollowedChannel.Create(this, x)).ToImmutableArray();
-            return (data, response.Total.Value);
-        }
-
-        public async Task<RestFollowedChannel> GetFollowedChannelAsync(string broadcasterId)
-        {
-            var response = await API.GetFollowedChannelsAsync(new GetFollowedChannelsArgs
-            {
-                UserId = MyUser.Id,
-                BroadcasterId = broadcasterId
-            });
-            return response?.Data == null || response.Data.Count == 0
-                ? null
-                : RestFollowedChannel.Create(this, response.Data.First());
-        }
     }
 }

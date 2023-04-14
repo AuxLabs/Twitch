@@ -107,35 +107,5 @@ namespace AuxLabs.Twitch.Chat.Entities
             => Twitch.SendMessageAsync(Name, message);
 
         #endregion
-        #region Rest Requests
-
-        public Task SendAnnouncementAsync(string message, AnnouncementColor? color = null)
-            => Twitch.Rest.SendAnnouncementAsync(Id, message, color);
-        public Task SendShoutoutAsync(string channelId)
-            => Twitch.Rest.SendShoutoutAsync(Id, channelId);
-        public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(int count = 20)
-            => Twitch.Rest.GetChattersAsync(Id, count);
-        public Task<IReadOnlyCollection<RestEmote>> GetEmotesAsync()
-            => Twitch.Rest.GetEmotesAsync(Id);
-        public Task<ChatSettings> GetChatSettingsAsync()
-            => Twitch.Rest.GetChatSettingsAsync(Id);
-        public Task<ChatSettings> ModifyChatSettingsAsync(Action<PatchChatSettingsBody> func)
-            => Twitch.Rest.ModifyChatSettingsAsync(Id, func);
-
-
-        /// <summary> Get more info about this channel. </summary>
-        public Task<RestChannel> GetChannelAsync()
-            => Twitch.Rest.GetChannelAsync(Id);
-
-        /// <summary> Get the user associated with this channel. </summary>
-        public Task<RestUser> GetUserAsync()
-            => Twitch.Rest.GetUserByIdAsync(Id);
-
-        public Task<RestFollower> GetFollowerAsync(string userId)
-            => Twitch.Rest.GetFollowerAsync(userId, Id);
-        public Task<(IReadOnlyCollection<RestFollower> Followers, int Total)> GetFollowersAsync(int count = 20)
-            => Twitch.Rest.GetFollowersAsync(Id, count);
-
-        #endregion
     }
 }
