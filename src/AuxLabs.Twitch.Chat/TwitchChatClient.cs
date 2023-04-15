@@ -88,11 +88,12 @@ namespace AuxLabs.Twitch.Chat
             }
         }
 
-        public Task ValidateAsync() => Rest.ValidateAsync();
-
-        public Task ValidateAsync(string token, string refreshToken = null)
+        public Task<AppIdentity> ValidateAsync() => Rest.ValidateAsync();
+        public Task<AccessTokenInfo> ValidateAsync(string token, string refreshToken = null)
             => Rest.ValidateAsync(token, refreshToken);
 
+        public void Run()
+            => RunAsync().GetAwaiter().GetResult();
         public Task RunAsync()
         {
             if (Identity != null)   // Rest is authorized as a user
@@ -108,6 +109,9 @@ namespace AuxLabs.Twitch.Chat
             
             return IRC.RunAsync();
         }
+
+        public void Stop() => IRC.Stop();
+        public Task StopAsync() => IRC.StopAsync();
 
         #region Requests
 
