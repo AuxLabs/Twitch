@@ -119,13 +119,13 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task ValidateAsync()</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;AppIdentity&gt; ValidateAsync()</code></pre>
 </div>
 
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Models.AppIdentity.html">AppIdentity</a>&gt;</dt>
   <dd></dd>
 </dl>
 
@@ -143,14 +143,14 @@
 
 <h3 id="AuxLabs_Twitch_Chat_TwitchChatClient_ValidateAsync_System_String_System_String_" data-uid="AuxLabs.Twitch.Chat.TwitchChatClient.ValidateAsync(System.String,System.String)">
   ValidateAsync(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/TwitchChatClient.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Chat/TwitchChatClient.cs/#L92"><i class="bi bi-code-slash"></i></a>
 </h3>
 
 <div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task ValidateAsync(string token, string refreshToken = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;AccessTokenInfo&gt; ValidateAsync(string token, string refreshToken = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -163,7 +163,7 @@
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Models.AccessTokenInfo.html">AccessTokenInfo</a>&gt;</dt>
   <dd></dd>
 </dl>
 
