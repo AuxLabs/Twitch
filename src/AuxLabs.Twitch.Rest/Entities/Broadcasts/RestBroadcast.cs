@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest.Entities
@@ -70,17 +71,18 @@ namespace AuxLabs.Twitch.Rest.Entities
         public string GetThumbnailUrl(int width, int height)
             => RawThumbnailUrl.Replace("{width}x{height}", $"{width}x{height}");
 
-        public virtual Task UpdateAsync()
+        public virtual async Task UpdateAsync()
         {
-            return Task.CompletedTask;
+            var response = await Twitch.API.GetBroadcastsAsync(new Requests.GetBroadcastsArgs
+            {
+                UserIds = new[] { Id }
+            });
+
+            var model = response.Data.SingleOrDefault();
+            if (model == null)
+                return;
+
+            Update(model);
         }
-
-        /// <summary> Get the channel associated with this broadcast. </summary>
-        public Task<RestChannel> GetChannelAsync()
-            => Twitch.GetChannelAsync(Id);
-
-        /// <summary> Get the user associated with this broadcast. </summary>
-        public Task<RestUser> GetUserAsync()
-            => Twitch.GetUserByIdAsync(Id);
     }
 }

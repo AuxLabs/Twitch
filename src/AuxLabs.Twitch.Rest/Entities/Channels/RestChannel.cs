@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AuxLabs.Twitch.Rest.Entities
 {
-    public class RestChannel : RestSimpleUser
+    public class RestChannel : RestSimpleUser, IUpdatable
     {
         /// <summary> The broadcaster’s preferred language. The value is an ISO 639-1 two-letter language code. </summary>
         public CultureInfo Culture { get; private set; }
@@ -63,7 +63,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         public virtual async Task UpdateAsync()
         {
             var model = await Twitch.API.GetChannelsAsync(new GetChannelsArgs(Id));
-            Update(model.Data.First());
+            Update(model.Data.Single());
         }
     }
 }
