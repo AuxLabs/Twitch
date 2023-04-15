@@ -32,7 +32,6 @@ namespace AuxLabs.Twitch.Rest
             }, cancelToken);
         }
 
-        // Paginate
         public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(string channelId, int count = 20, CancellationToken? cancelToken = null)
         {
             IsUserAuthorized(out var identity);
@@ -74,8 +73,17 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestEmote.Create(this, x)).ToImmutableArray();
         }
 
-        // Get Badges
-        // Get Badges Global
+        public async Task<IReadOnlyCollection<RestBadgeSet>> GetBadgesAsync(string channelId, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetBadgesAsync(channelId, cancelToken);
+            return response.Data.Select(x => RestBadgeSet.Create(this, x)).ToImmutableArray();
+        }
+
+        public async Task<IReadOnlyCollection<RestBadgeSet>> GetBadgesAsync(CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetBadgesAsync(cancelToken);
+            return response.Data.Select(x => RestBadgeSet.Create(this, x)).ToImmutableArray();
+        }
 
         public async Task<ChatSettings> GetChatSettingsAsync(string channelId, CancellationToken? cancelToken = null)
         {

@@ -54,7 +54,6 @@ namespace AuxLabs.Twitch.Rest
 
         // -- Partials --
         // ChannelPoints
-        // Chat
         // Moderation
         // Schedules
         // Broadcasts

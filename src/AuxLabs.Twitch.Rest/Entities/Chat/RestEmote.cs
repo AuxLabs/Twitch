@@ -16,7 +16,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         /// <summary>  </summary>
         public string BroadcasterId { get; private set; }
 
-        public RestEmote(TwitchRestClient twitch, string id)
+        internal RestEmote(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
         internal static RestEmote Create(TwitchRestClient twitch, Emote model)
