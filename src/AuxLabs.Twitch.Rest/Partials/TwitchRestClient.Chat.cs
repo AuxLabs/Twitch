@@ -15,26 +15,26 @@ namespace AuxLabs.Twitch.Rest
     {
         public async Task ModifyMyColorAsync(ChatColor color, CancellationToken? cancelToken = null)
         {
-            IsUserAuthorized(out var identity);
+            IsUserAuthorized(out var authorized);
             await API.PutUserChatColorAsync(new PutUserChatColorArgs
             {
-                UserId = identity.UserId,
+                UserId = authorized.UserId,
                 Color = color
             }, cancelToken);
         }
         public async Task ModifyMyColorAsync(Color color, CancellationToken? cancelToken = null)
         {
-            IsUserAuthorized(out var identity);
+            IsUserAuthorized(out var authorized);
             await API.PutUserChatColorAsync(new PutUserChatColorArgs
             {
-                UserId = identity.UserId,
+                UserId = authorized.UserId,
                 CustomColor = color
             }, cancelToken);
         }
 
         public IAsyncEnumerable<IReadOnlyCollection<RestSimpleUser>> GetChattersAsync(string channelId, int count = 20, CancellationToken? cancelToken = null)
         {
-            IsUserAuthorized(out var identity);
+            IsUserAuthorized(out var authorized);
             return new PagedAsyncEnumerable<RestSimpleUser>(
                 TwitchConstants.DefaultMaxPerPage,
                 async (info, ct) =>
@@ -42,7 +42,7 @@ namespace AuxLabs.Twitch.Rest
                     var response = await API.GetChattersAsync(new GetChattersArgs
                     {
                         BroadcasterId = channelId,
-                        ModeratorId = identity.UserId,
+                        ModeratorId = authorized.UserId,
                         After = info.Cursor,
                         First = info.PageSize
                     }, cancelToken);

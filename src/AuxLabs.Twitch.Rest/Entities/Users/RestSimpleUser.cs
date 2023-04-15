@@ -54,6 +54,39 @@ namespace AuxLabs.Twitch.Rest.Entities
             }
         }
 
+        internal static RestSimpleUser Create(TwitchRestClient twitch, SimpleSubscription model, bool isBroadcaster)
+        {
+            var id = isBroadcaster ? model.BroadcasterId : model.GifterId;
+            var entity = new RestSimpleUser(twitch, id);
+            entity.Update(model, isBroadcaster);
+            return entity;
+        }
+        internal virtual void Update(SimpleSubscription model, bool isBroadcaster)
+        {
+            if (isBroadcaster)
+            {
+                base.Update(model.BroadcasterName);
+                DisplayName = model.BroadcasterDisplayName;
+            }
+            else
+            {
+                base.Update(model.GifterName);
+                DisplayName = model.GifterDisplayName;
+            }
+        }
+
+        internal static RestSimpleUser Create(TwitchRestClient twitch, Subscription model)
+        {
+            var entity = new RestSimpleUser(twitch, model.UserName);
+            entity.Update(model);
+            return entity;
+        }
+        internal virtual void Update(Subscription model)
+        {
+            base.Update(model.UserName);
+            DisplayName = model.UserDisplayName;
+        }
+
         internal virtual void Update(Follower model)
         {
             base.Update(model.UserName);

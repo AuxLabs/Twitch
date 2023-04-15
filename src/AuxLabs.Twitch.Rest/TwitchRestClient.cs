@@ -229,8 +229,60 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Subscriptions
 
-        // GetSubscriptions
-        // GetSubscribers
+        public async Task<(int Points, int Total)> GetSubscriptionInfoAsync(CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            var response = await API.GetSubscriptionsAsync(new GetSubscriptionsArgs
+            {
+                BroadcasterId = authorized.UserId
+            }, cancelToken);
+            return (response.Points.Value, response.Total.Value);
+        }
+
+        public Task<IReadOnlyCollection<RestSubscription>> GetSubscriptionsAsync(params string[] userIds)
+            => GetSubscriptionsAsync(userIds);
+        public async Task<IReadOnlyCollection<RestSubscription>> GetSubscriptionsAsync(string[] userIds, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            var response = await API.GetSubscriptionsAsync(new GetSubscriptionsArgs
+            {
+                BroadcasterId = authorized.UserId,
+                UserIds = userIds
+            }, cancelToken);
+            return response.Data.Select(x => RestSubscription.Create(this, x)).ToImmutableArray();
+        }
+
+        public IAsyncEnumerable<IReadOnlyCollection<RestSubscription>> GetSubscriptionsAsync(int count = 20, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            return new PagedAsyncEnumerable<RestSubscription>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetSubscriptionsAsync(new GetSubscriptionsArgs
+                    {
+                        BroadcasterId = authorized.UserId,
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestSubscription.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                count: count);
+        }
+
+        public async Task<RestSimpleSubscription> GetSubscriberAsync(string channelId, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            var response = await API.GetSubscriberAsync(new GetSubscriberArgs
+            {
+                UserId = authorized.UserId,
+                BroadcasterId = channelId
+            }, cancelToken);
+
+            if (response.Data.Count == 0)
+                return null;
+            return RestSimpleSubscription.Create(this, response.Data.Single());
+        }
 
         #endregion
         #region Teams

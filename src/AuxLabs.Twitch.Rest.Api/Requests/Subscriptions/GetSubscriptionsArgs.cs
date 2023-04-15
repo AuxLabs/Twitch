@@ -27,7 +27,6 @@ namespace AuxLabs.Twitch.Rest.Requests
         {
             Require.Scopes(scopes, Scopes);
             Require.NotEmptyOrWhitespace(BroadcasterId, nameof(BroadcasterId));
-            Require.NotNull(UserIds, nameof(UserIds));
             Require.HasAtLeast(UserIds, 1, nameof(UserIds));
             Require.HasAtMost(UserIds, 100, nameof(UserIds));
 
