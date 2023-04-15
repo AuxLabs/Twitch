@@ -135,6 +135,8 @@ namespace AuxLabs.Twitch.Chat.Api
 
         public void Run() => _client.Run(_url);
         public Task RunAsync() => _client.RunAsync(_url);
+        public void Stop() => _client.Stop();
+        public Task StopAsync() => _client.StopAsync();
 
         /// <summary> Join a channel by name. </summary>
         /// <remarks> Max channels per request is 20 or 2000 for verified accounts. </remarks>
