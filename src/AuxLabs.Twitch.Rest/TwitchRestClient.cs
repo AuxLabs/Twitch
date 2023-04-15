@@ -299,7 +299,18 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Whispers
 
-        // SendWhisper
+        public Task SendWhisperAsync(string userId, string message, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            return API.PostWhisperAsync(new PostWhisperArgs
+            {
+                FromUserId = authorized.UserId,
+                ToUserId = userId
+            }, new PostWhisperBody
+            {
+                Message = message
+            }, cancelToken);
+        }
 
         #endregion
     }
