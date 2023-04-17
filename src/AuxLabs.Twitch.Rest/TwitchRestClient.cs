@@ -180,8 +180,60 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Games
 
-        // GetTopGames
-        // GetGames
+        public IAsyncEnumerable<IReadOnlyCollection<RestGame>> GetTopGamesAsync(int count = 20, CancellationToken? cancelToken = null)
+        {
+            return new PagedAsyncEnumerable<RestGame>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetTopGamesAsync(new GetTopGamesArgs
+                    {
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestGame.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                count: count);
+        }
+
+        public async Task<RestGame> GetGameByIdAsync(string gameId, CancellationToken? cancelToken = null)
+            => (await GetGamesByIdAsync(new[] { gameId }, cancelToken))?.SingleOrDefault();
+        public Task<IReadOnlyCollection<RestGame>> GetGamesByIdAsync(params string[] gameIds)
+            => GetGamesByIdAsync(gameIds, cancelToken: null);
+        public async Task<IReadOnlyCollection<RestGame>> GetGamesByIdAsync(string[] gameIds, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetGamesAsync(new GetGamesArgs
+            {
+                GameIds = gameIds
+            }, cancelToken);
+            return response.Data.Select(x => RestGame.Create(this, x)).ToImmutableArray();
+        }
+
+        public async Task<RestGame> GetGamesByNameAsync(string gameName, CancellationToken? cancelToken = null)
+            => (await GetGamesByNameAsync(new[] { gameName }, cancelToken))?.SingleOrDefault();
+        public Task<IReadOnlyCollection<RestGame>> GetGamesByNameAsync(params string[] gameNames)
+            => GetGamesByNameAsync(gameNames, cancelToken: null);
+        public async Task<IReadOnlyCollection<RestGame>> GetGamesByNameAsync(string[] gameNames, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetGamesAsync(new GetGamesArgs
+            {
+                GameNames = gameNames
+            }, cancelToken);
+            return response.Data.Select(x => RestGame.Create(this, x)).ToImmutableArray();
+        }
+
+        public async Task<RestGame> GetGamesByIgdbIdAsync(string igdbId, CancellationToken? cancelToken = null)
+            => (await GetGamesByIgdbIdAsync(new[] { igdbId }, cancelToken))?.SingleOrDefault();
+        public Task<IReadOnlyCollection<RestGame>> GetGamesByIgdbIdAsync(params string[] igdbIds)
+            => GetGamesByIgdbIdAsync(igdbIds, cancelToken: null);
+        public async Task<IReadOnlyCollection<RestGame>> GetGamesByIgdbIdAsync(string[] igdbIds, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetGamesAsync(new GetGamesArgs
+            {
+                IgdbIds = igdbIds
+            }, cancelToken);
+            return response.Data.Select(x => RestGame.Create(this, x)).ToImmutableArray();
+        }
 
         #endregion
         #region Goals
