@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Property Type
+      <title>Method ModifyMyChannelAsync
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Property Type
+      <meta name="title" content="Method ModifyMyChannelAsync
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Models_Video_Type_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Models.Video.Type*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,20 +74,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.Rest.Models.Video.Type*">
+        <article data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*">
 
 
 
 
 
-<h1 id="AuxLabs_Twitch_Rest_Models_Video_Type_" data-uid="AuxLabs.Twitch.Rest.Models.Video.Type*" class="text-break">
-  Property Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest.Api/Models/Videos/Video.cs/#L66"><i class="bi bi-code-slash"></i></a>
+<h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*" class="text-break">
+  Method ModifyMyChannelAsync
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L21"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Models.html">Models</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.Api.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -108,32 +108,34 @@
 
 
 
-<a id="AuxLabs_Twitch_Rest_Models_Video_Type_" data-uid="AuxLabs.Twitch.Rest.Models.Video.Type*"></a>
+<a id="AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*"></a>
 
-<h3 id="AuxLabs_Twitch_Rest_Models_Video_Type" data-uid="AuxLabs.Twitch.Rest.Models.Video.Type">
-  Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest.Api/Models/Videos/Video.cs/#L66"><i class="bi bi-code-slash"></i></a>
+<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_System_Action_AuxLabs_Twitch_Rest_Requests_PatchChannelBody__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChannelBody})">
+  ModifyMyChannelAsync(Action&lt;PatchChannelBody&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Partials/TwitchRestClient.Channels.cs/#L21"><i class="bi bi-code-slash"></i></a>
 </h3>
 
-<div class="markdown level1 summary"><p>The video’s type.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">[JsonInclude]
-[JsonPropertyName(&quot;type&quot;)]
-public VideoType Type { get; }</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;RestChannel&gt; ModifyMyChannelAsync(Action&lt;PatchChannelBody&gt; func)</code></pre>
 </div>
 
-
-
-
-
-<h4 class="section">Property Value</h4>
+<h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="AuxLabs.Twitch.VideoType.html">VideoType</a></dt>
+  <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Requests.PatchChannelBody.html">PatchChannelBody</a>&gt;</dt>
   <dd></dd>
 </dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestChannel.html">RestChannel</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
 
 
 
@@ -145,7 +147,7 @@ public VideoType Type { get; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Models_Video_Type_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Models.Video.Type*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

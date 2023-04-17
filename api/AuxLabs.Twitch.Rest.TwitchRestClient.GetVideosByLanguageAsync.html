@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method SendWhisperAsync
+      <title>Method GetVideosByLanguageAsync
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method SendWhisperAsync
+      <meta name="title" content="Method GetVideosByLanguageAsync
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_SendWhisperAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,15 +74,15 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync*">
+        <article data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*">
 
 
 
 
 
-<h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_SendWhisperAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync*" class="text-break">
-  Method SendWhisperAsync
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/TwitchRestClient.cs/#L380"><i class="bi bi-code-slash"></i></a>
+<h1 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*" class="text-break">
+  Method GetVideosByLanguageAsync
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/TwitchRestClient.cs/#L346"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -108,25 +108,31 @@
 
 
 
-<a id="AuxLabs_Twitch_Rest_TwitchRestClient_SendWhisperAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync*"></a>
+<a id="AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*"></a>
 
-<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_SendWhisperAsync_System_String_System_String_System_Nullable_System_Threading_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync(System.String,System.String,System.Nullable{System.Threading.CancellationToken})">
-  SendWhisperAsync(string, string, CancellationToken?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/TwitchRestClient.cs/#L380"><i class="bi bi-code-slash"></i></a>
+<h3 id="AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_System_String_System_Nullable_AuxLabs_Twitch_VideoPeriod__System_Nullable_AuxLabs_Twitch_VideoSort__System_Nullable_AuxLabs_Twitch_VideoType__System_Int32_System_Nullable_System_Threading_CancellationToken__" data-uid="AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})">
+  GetVideosByLanguageAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/TwitchRestClient.cs/#L346"><i class="bi bi-code-slash"></i></a>
 </h3>
 
 <div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task SendWhisperAsync(string userId, string message, CancellationToken? cancelToken = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;IReadOnlyCollection&lt;RestVideo&gt;&gt; GetVideosByLanguageAsync(string language, VideoPeriod? period = null, VideoSort? sort = null, VideoType? type = null, int count = 20, CancellationToken? cancelToken = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
   <dd></dd>
-  <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dt><code>period</code> <a class="xref" href="AuxLabs.Twitch.VideoPeriod.html">VideoPeriod</a>?</dt>
+  <dd></dd>
+  <dt><code>sort</code> <a class="xref" href="AuxLabs.Twitch.VideoSort.html">VideoSort</a>?</dt>
+  <dd></dd>
+  <dt><code>type</code> <a class="xref" href="AuxLabs.Twitch.VideoType.html">VideoType</a>?</dt>
+  <dd></dd>
+  <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
   <dd></dd>
   <dt><code>cancelToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>?</dt>
   <dd></dd>
@@ -134,7 +140,7 @@
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.html">RestVideo</a>&gt;&gt;</dt>
   <dd></dd>
 </dl>
 
@@ -151,7 +157,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_SendWhisperAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.SendWhisperAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Video
+      <title>Class RestVideo
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Video
+      <meta name="title" content="Class RestVideo
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Models_Video.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Models.Video%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestVideo.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestVideo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,25 +74,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.Rest.Models.Video">
+        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestVideo">
 
 
 
-  <h1 id="AuxLabs_Twitch_Rest_Models_Video" data-uid="AuxLabs.Twitch.Rest.Models.Video" class="text-break">
-    Class Video
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest.Api/Models/Videos/Video.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h1 id="AuxLabs_Twitch_Rest_Entities_RestVideo" data-uid="AuxLabs.Twitch.Rest.Entities.RestVideo" class="text-break">
+    Class RestVideo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/Videos/RestVideo.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Models.html">Models</a></dd></dl>
-    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.Api.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AuxLabs.html">AuxLabs</a>.<a class="xref" href="AuxLabs.Twitch.html">Twitch</a>.<a class="xref" href="AuxLabs.Twitch.Rest.html">Rest</a>.<a class="xref" href="AuxLabs.Twitch.Rest.Entities.html">Entities</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>AuxLabs.Twitch.Rest.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Video</code></pre>
+    <pre><code class="lang-csharp hljs">public class RestVideo : RestEntity&lt;string&gt;, IDeletable</code></pre>
   </div>
 
 
@@ -102,15 +102,25 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Video</span></div>
+      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.html">RestEntity</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><span class="xref">RestVideo</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="AuxLabs.Twitch.IDeletable.html">IDeletable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.Id.html#AuxLabs_Twitch_Rest_Entities_RestEntity_1_Id">RestEntity&lt;string&gt;.Id</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -138,93 +148,76 @@
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestVideo__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_">RestVideo(TwitchRestClient, string)</a></dt>
+    <dd></dd>
+  </dl>
+
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.BroadcastId.html#AuxLabs_Twitch_Rest_Models_Video_BroadcastId">BroadcastId</a></dt>
-    <dd><p>The ID of the stream that the video originated from if the video is a <a class="xref" href="AuxLabs.Twitch.VideoType.html#AuxLabs_Twitch_VideoType_Archive">Archive</a>.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId.html#AuxLabs_Twitch_Rest_Entities_RestVideo_BroadcastId">BroadcastId</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.CreatedAt.html#AuxLabs_Twitch_Rest_Models_Video_CreatedAt">CreatedAt</a></dt>
-    <dd><p>The date and time, in UTC, of when the video was created.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestVideo_CreatedAt">CreatedAt</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Culture.html#AuxLabs_Twitch_Rest_Models_Video_Culture">Culture</a></dt>
-    <dd><p>The ISO 639-1 two-letter language code that the video was broadcast in.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.Culture.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Culture">Culture</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Description.html#AuxLabs_Twitch_Rest_Models_Video_Description">Description</a></dt>
-    <dd><p>The video’s description.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.Description.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Description">Description</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Duration.html#AuxLabs_Twitch_Rest_Models_Video_Duration">Duration</a></dt>
-    <dd><p>The video’s length in ISO 8601 duration format.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.Duration.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Duration">Duration</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Id.html#AuxLabs_Twitch_Rest_Models_Video_Id">Id</a></dt>
-    <dd><p>An ID that identifies the video.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments.html#AuxLabs_Twitch_Rest_Entities_RestVideo_MutedSegments">MutedSegments</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.MutedSegments.html#AuxLabs_Twitch_Rest_Models_Video_MutedSegments">MutedSegments</a></dt>
-    <dd><p>The segments that Twitch Audio Recognition muted.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt.html#AuxLabs_Twitch_Rest_Entities_RestVideo_PublishedAt">PublishedAt</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.PublishedAt.html#AuxLabs_Twitch_Rest_Models_Video_PublishedAt">PublishedAt</a></dt>
-    <dd><p>The date and time, in UTC, of when the video was published.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Entities_RestVideo_ThumbnailUrl">ThumbnailUrl</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Models_Video_ThumbnailUrl">ThumbnailUrl</a></dt>
-    <dd><p>A URL to a thumbnail image of the video.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.Title.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Title">Title</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Title.html#AuxLabs_Twitch_Rest_Models_Video_Title">Title</a></dt>
-    <dd><p>The video’s title.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.Url.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Url">Url</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Url.html#AuxLabs_Twitch_Rest_Models_Video_Url">Url</a></dt>
-    <dd><p>The video’s URL.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.User.html#AuxLabs_Twitch_Rest_Entities_RestVideo_User">User</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.UserDisplayName.html#AuxLabs_Twitch_Rest_Models_Video_UserDisplayName">UserDisplayName</a></dt>
-    <dd><p>The broadcaster’s display name.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType.html#AuxLabs_Twitch_Rest_Entities_RestVideo_VideoType">VideoType</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.UserId.html#AuxLabs_Twitch_Rest_Models_Video_UserId">UserId</a></dt>
-    <dd><p>The ID of the broadcaster that owns the video.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount.html#AuxLabs_Twitch_Rest_Entities_RestVideo_ViewCount">ViewCount</a></dt>
+    <dd></dd>
   </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.UserName.html#AuxLabs_Twitch_Rest_Models_Video_UserName">UserName</a></dt>
-    <dd><p>The broadcaster’s login name.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.VideoType.html#AuxLabs_Twitch_Rest_Models_Video_VideoType">VideoType</a></dt>
-    <dd><p>The video’s type.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.Viewable.html#AuxLabs_Twitch_Rest_Models_Video_Viewable">Viewable</a></dt>
-    <dd><p>The video’s viewable state. Always set to public.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Models.Video.ViewCount.html#AuxLabs_Twitch_Rest_Models_Video_ViewCount">ViewCount</a></dt>
-    <dd><p>The number of times that users have watched the video.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync.html#AuxLabs_Twitch_Rest_Entities_RestVideo_DeleteAsync">DeleteAsync()</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -232,7 +225,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Models_Video.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Models.Video%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestVideo.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestVideo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

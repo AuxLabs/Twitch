@@ -12709,6 +12709,24 @@ references:
   commentId: Overload:AuxLabs.Twitch.IChatUser.Color
   fullName: AuxLabs.Twitch.IChatUser.Color
   nameWithType: IChatUser.Color
+- uid: AuxLabs.Twitch.IDeletable
+  name: IDeletable
+  href: api/AuxLabs.Twitch.IDeletable.html
+  commentId: T:AuxLabs.Twitch.IDeletable
+  fullName: AuxLabs.Twitch.IDeletable
+  nameWithType: IDeletable
+- uid: AuxLabs.Twitch.IDeletable.DeleteAsync
+  name: DeleteAsync()
+  href: api/AuxLabs.Twitch.IDeletable.DeleteAsync.html#AuxLabs_Twitch_IDeletable_DeleteAsync
+  commentId: M:AuxLabs.Twitch.IDeletable.DeleteAsync
+  fullName: AuxLabs.Twitch.IDeletable.DeleteAsync()
+  nameWithType: IDeletable.DeleteAsync()
+- uid: AuxLabs.Twitch.IDeletable.DeleteAsync*
+  name: DeleteAsync
+  href: api/AuxLabs.Twitch.IDeletable.DeleteAsync.html
+  commentId: Overload:AuxLabs.Twitch.IDeletable.DeleteAsync
+  fullName: AuxLabs.Twitch.IDeletable.DeleteAsync
+  nameWithType: IDeletable.DeleteAsync
 - uid: AuxLabs.Twitch.IEntity`1
   name: IEntity<TId>
   href: api/AuxLabs.Twitch.IEntity-1.html
@@ -14612,18 +14630,18 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteSegmentAsync
   fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteSegmentAsync
   nameWithType: ITwitchApi.DeleteSegmentAsync
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
-  name: DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_DeleteVideoAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_System_Threading_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs, System.Threading.CancellationToken?)
-  nameWithType: ITwitchApi.DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync*
-  name: DeleteVideoAsync
-  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync
-  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideoAsync
-  nameWithType: ITwitchApi.DeleteVideoAsync
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
+  name: DeleteVideosAsync(DeleteVideosArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_DeleteVideosAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs, System.Threading.CancellationToken?)
+  nameWithType: ITwitchApi.DeleteVideosAsync(DeleteVideosArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync*
+  name: DeleteVideosAsync
+  href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync
+  fullName: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVideosAsync
+  nameWithType: ITwitchApi.DeleteVideosAsync
 - uid: AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVipAsync(AuxLabs.Twitch.Rest.Requests.ManageVipArgs,System.Nullable{System.Threading.CancellationToken})
   name: DeleteVipAsync(ManageVipArgs, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.Api.ITwitchApi.DeleteVipAsync.html#AuxLabs_Twitch_Rest_Api_ITwitchApi_DeleteVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_System_Threading_CancellationToken__
@@ -16157,18 +16175,18 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteSegmentAsync
   fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteSegmentAsync
   nameWithType: TwitchRestApiClient.DeleteSegmentAsync
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
-  name: DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVideoAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_System_Threading_CancellationToken__
-  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs, System.Threading.CancellationToken?)
-  nameWithType: TwitchRestApiClient.DeleteVideoAsync(DeleteVideosArgs, CancellationToken?)
-- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync*
-  name: DeleteVideoAsync
-  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync
-  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideoAsync
-  nameWithType: TwitchRestApiClient.DeleteVideoAsync
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
+  name: DeleteVideosAsync(DeleteVideosArgs, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVideosAsync_AuxLabs_Twitch_Rest_Requests_DeleteVideosArgs_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs,System.Nullable{System.Threading.CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync(AuxLabs.Twitch.Rest.Requests.DeleteVideosArgs, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestApiClient.DeleteVideosAsync(DeleteVideosArgs, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync*
+  name: DeleteVideosAsync
+  href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync
+  fullName: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVideosAsync
+  nameWithType: TwitchRestApiClient.DeleteVideosAsync
 - uid: AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVipAsync(AuxLabs.Twitch.Rest.Requests.ManageVipArgs,System.Nullable{System.Threading.CancellationToken})
   name: DeleteVipAsync(ManageVipArgs, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.Api.TwitchRestApiClient.DeleteVipAsync.html#AuxLabs_Twitch_Rest_Api_TwitchRestApiClient_DeleteVipAsync_AuxLabs_Twitch_Rest_Requests_ManageVipArgs_System_Nullable_System_Threading_CancellationToken__
@@ -18749,6 +18767,198 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestUser.ViewCount
   fullName: AuxLabs.Twitch.Rest.Entities.RestUser.ViewCount
   nameWithType: RestUser.ViewCount
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo
+  name: RestVideo
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestVideo
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo
+  nameWithType: RestVideo
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestVideo(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestVideo__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestVideo.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.RestVideo(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestVideo.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestVideo.RestVideo(TwitchRestClient, string)
+  nameWithType.vb: RestVideo.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.#ctor*
+  name: RestVideo
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.RestVideo
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestVideo.New
+  nameWithType: RestVideo.RestVideo
+  nameWithType.vb: RestVideo.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId
+  name: BroadcastId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId.html#AuxLabs_Twitch_Rest_Entities_RestVideo_BroadcastId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId
+  nameWithType: RestVideo.BroadcastId
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId*
+  name: BroadcastId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId
+  nameWithType: RestVideo.BroadcastId
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestVideo_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt
+  nameWithType: RestVideo.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt
+  nameWithType: RestVideo.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Culture
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Culture.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Culture
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.Culture
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Culture
+  nameWithType: RestVideo.Culture
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Culture*
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Culture.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.Culture
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Culture
+  nameWithType: RestVideo.Culture
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync
+  name: DeleteAsync()
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync.html#AuxLabs_Twitch_Rest_Entities_RestVideo_DeleteAsync
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync()
+  nameWithType: RestVideo.DeleteAsync()
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync*
+  name: DeleteAsync
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.DeleteAsync
+  nameWithType: RestVideo.DeleteAsync
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Description
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Description.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Description
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Description
+  nameWithType: RestVideo.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Description.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Description
+  nameWithType: RestVideo.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Duration
+  name: Duration
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Duration.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Duration
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.Duration
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Duration
+  nameWithType: RestVideo.Duration
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Duration*
+  name: Duration
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Duration.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.Duration
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Duration
+  nameWithType: RestVideo.Duration
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments
+  name: MutedSegments
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments.html#AuxLabs_Twitch_Rest_Entities_RestVideo_MutedSegments
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments
+  nameWithType: RestVideo.MutedSegments
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments*
+  name: MutedSegments
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.MutedSegments
+  nameWithType: RestVideo.MutedSegments
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt
+  name: PublishedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt.html#AuxLabs_Twitch_Rest_Entities_RestVideo_PublishedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt
+  nameWithType: RestVideo.PublishedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt*
+  name: PublishedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt
+  nameWithType: RestVideo.PublishedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Entities_RestVideo_ThumbnailUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl
+  nameWithType: RestVideo.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl
+  nameWithType: RestVideo.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Title
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Title.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Title
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.Title
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Title
+  nameWithType: RestVideo.Title
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Title*
+  name: Title
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Title.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.Title
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Title
+  nameWithType: RestVideo.Title
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Url
+  name: Url
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Url.html#AuxLabs_Twitch_Rest_Entities_RestVideo_Url
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.Url
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Url
+  nameWithType: RestVideo.Url
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.Url*
+  name: Url
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.Url.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.Url
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.Url
+  nameWithType: RestVideo.Url
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.User
+  name: User
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.User.html#AuxLabs_Twitch_Rest_Entities_RestVideo_User
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.User
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.User
+  nameWithType: RestVideo.User
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.User*
+  name: User
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.User.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.User
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.User
+  nameWithType: RestVideo.User
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType
+  name: VideoType
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType.html#AuxLabs_Twitch_Rest_Entities_RestVideo_VideoType
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType
+  nameWithType: RestVideo.VideoType
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType*
+  name: VideoType
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.VideoType
+  nameWithType: RestVideo.VideoType
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount
+  name: ViewCount
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount.html#AuxLabs_Twitch_Rest_Entities_RestVideo_ViewCount
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount
+  nameWithType: RestVideo.ViewCount
+- uid: AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount*
+  name: ViewCount
+  href: api/AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount
+  fullName: AuxLabs.Twitch.Rest.Entities.RestVideo.ViewCount
+  nameWithType: RestVideo.ViewCount
 - uid: AuxLabs.Twitch.Rest.IEventCondition
   name: IEventCondition
   href: api/AuxLabs.Twitch.Rest.IEventCondition.html
@@ -25257,6 +25467,18 @@ references:
   commentId: T:AuxLabs.Twitch.Rest.Models.Video
   fullName: AuxLabs.Twitch.Rest.Models.Video
   nameWithType: Video
+- uid: AuxLabs.Twitch.Rest.Models.Video.BroadcastId
+  name: BroadcastId
+  href: api/AuxLabs.Twitch.Rest.Models.Video.BroadcastId.html#AuxLabs_Twitch_Rest_Models_Video_BroadcastId
+  commentId: P:AuxLabs.Twitch.Rest.Models.Video.BroadcastId
+  fullName: AuxLabs.Twitch.Rest.Models.Video.BroadcastId
+  nameWithType: Video.BroadcastId
+- uid: AuxLabs.Twitch.Rest.Models.Video.BroadcastId*
+  name: BroadcastId
+  href: api/AuxLabs.Twitch.Rest.Models.Video.BroadcastId.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.BroadcastId
+  fullName: AuxLabs.Twitch.Rest.Models.Video.BroadcastId
+  nameWithType: Video.BroadcastId
 - uid: AuxLabs.Twitch.Rest.Models.Video.CreatedAt
   name: CreatedAt
   href: api/AuxLabs.Twitch.Rest.Models.Video.CreatedAt.html#AuxLabs_Twitch_Rest_Models_Video_CreatedAt
@@ -25269,6 +25491,18 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.CreatedAt
   fullName: AuxLabs.Twitch.Rest.Models.Video.CreatedAt
   nameWithType: Video.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Models.Video.Culture
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Models.Video.Culture.html#AuxLabs_Twitch_Rest_Models_Video_Culture
+  commentId: P:AuxLabs.Twitch.Rest.Models.Video.Culture
+  fullName: AuxLabs.Twitch.Rest.Models.Video.Culture
+  nameWithType: Video.Culture
+- uid: AuxLabs.Twitch.Rest.Models.Video.Culture*
+  name: Culture
+  href: api/AuxLabs.Twitch.Rest.Models.Video.Culture.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.Culture
+  fullName: AuxLabs.Twitch.Rest.Models.Video.Culture
+  nameWithType: Video.Culture
 - uid: AuxLabs.Twitch.Rest.Models.Video.Description
   name: Description
   href: api/AuxLabs.Twitch.Rest.Models.Video.Description.html#AuxLabs_Twitch_Rest_Models_Video_Description
@@ -25305,18 +25539,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.Id
   fullName: AuxLabs.Twitch.Rest.Models.Video.Id
   nameWithType: Video.Id
-- uid: AuxLabs.Twitch.Rest.Models.Video.Language
-  name: Language
-  href: api/AuxLabs.Twitch.Rest.Models.Video.Language.html#AuxLabs_Twitch_Rest_Models_Video_Language
-  commentId: P:AuxLabs.Twitch.Rest.Models.Video.Language
-  fullName: AuxLabs.Twitch.Rest.Models.Video.Language
-  nameWithType: Video.Language
-- uid: AuxLabs.Twitch.Rest.Models.Video.Language*
-  name: Language
-  href: api/AuxLabs.Twitch.Rest.Models.Video.Language.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.Language
-  fullName: AuxLabs.Twitch.Rest.Models.Video.Language
-  nameWithType: Video.Language
 - uid: AuxLabs.Twitch.Rest.Models.Video.MutedSegments
   name: MutedSegments
   href: api/AuxLabs.Twitch.Rest.Models.Video.MutedSegments.html#AuxLabs_Twitch_Rest_Models_Video_MutedSegments
@@ -25341,18 +25563,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.PublishedAt
   fullName: AuxLabs.Twitch.Rest.Models.Video.PublishedAt
   nameWithType: Video.PublishedAt
-- uid: AuxLabs.Twitch.Rest.Models.Video.StreamId
-  name: StreamId
-  href: api/AuxLabs.Twitch.Rest.Models.Video.StreamId.html#AuxLabs_Twitch_Rest_Models_Video_StreamId
-  commentId: P:AuxLabs.Twitch.Rest.Models.Video.StreamId
-  fullName: AuxLabs.Twitch.Rest.Models.Video.StreamId
-  nameWithType: Video.StreamId
-- uid: AuxLabs.Twitch.Rest.Models.Video.StreamId*
-  name: StreamId
-  href: api/AuxLabs.Twitch.Rest.Models.Video.StreamId.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.StreamId
-  fullName: AuxLabs.Twitch.Rest.Models.Video.StreamId
-  nameWithType: Video.StreamId
 - uid: AuxLabs.Twitch.Rest.Models.Video.ThumbnailUrl
   name: ThumbnailUrl
   href: api/AuxLabs.Twitch.Rest.Models.Video.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Models_Video_ThumbnailUrl
@@ -25377,18 +25587,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.Title
   fullName: AuxLabs.Twitch.Rest.Models.Video.Title
   nameWithType: Video.Title
-- uid: AuxLabs.Twitch.Rest.Models.Video.Type
-  name: Type
-  href: api/AuxLabs.Twitch.Rest.Models.Video.Type.html#AuxLabs_Twitch_Rest_Models_Video_Type
-  commentId: P:AuxLabs.Twitch.Rest.Models.Video.Type
-  fullName: AuxLabs.Twitch.Rest.Models.Video.Type
-  nameWithType: Video.Type
-- uid: AuxLabs.Twitch.Rest.Models.Video.Type*
-  name: Type
-  href: api/AuxLabs.Twitch.Rest.Models.Video.Type.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.Type
-  fullName: AuxLabs.Twitch.Rest.Models.Video.Type
-  nameWithType: Video.Type
 - uid: AuxLabs.Twitch.Rest.Models.Video.Url
   name: Url
   href: api/AuxLabs.Twitch.Rest.Models.Video.Url.html#AuxLabs_Twitch_Rest_Models_Video_Url
@@ -25437,6 +25635,18 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.UserName
   fullName: AuxLabs.Twitch.Rest.Models.Video.UserName
   nameWithType: Video.UserName
+- uid: AuxLabs.Twitch.Rest.Models.Video.VideoType
+  name: VideoType
+  href: api/AuxLabs.Twitch.Rest.Models.Video.VideoType.html#AuxLabs_Twitch_Rest_Models_Video_VideoType
+  commentId: P:AuxLabs.Twitch.Rest.Models.Video.VideoType
+  fullName: AuxLabs.Twitch.Rest.Models.Video.VideoType
+  nameWithType: Video.VideoType
+- uid: AuxLabs.Twitch.Rest.Models.Video.VideoType*
+  name: VideoType
+  href: api/AuxLabs.Twitch.Rest.Models.Video.VideoType.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.Video.VideoType
+  fullName: AuxLabs.Twitch.Rest.Models.Video.VideoType
+  nameWithType: Video.VideoType
 - uid: AuxLabs.Twitch.Rest.Models.Video.Viewable
   name: Viewable
   href: api/AuxLabs.Twitch.Rest.Models.Video.Viewable.html#AuxLabs_Twitch_Rest_Models_Video_Viewable
@@ -37435,6 +37645,45 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteEventSubscriptionAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteEventSubscriptionAsync
   nameWithType: TwitchRestClient.DeleteEventSubscriptionAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync(System.String)
+  name: DeleteVideoAsync(string)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_DeleteVideoAsync_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync(System.String)
+  name.vb: DeleteVideoAsync(String)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync(string)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync(String)
+  nameWithType: TwitchRestClient.DeleteVideoAsync(string)
+  nameWithType.vb: TwitchRestClient.DeleteVideoAsync(String)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync*
+  name: DeleteVideoAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideoAsync
+  nameWithType: TwitchRestClient.DeleteVideoAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: DeleteVideosAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_DeleteVideosAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: DeleteVideosAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.DeleteVideosAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.DeleteVideosAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(System.String[])
+  name: DeleteVideosAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_DeleteVideosAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(System.String[])
+  name.vb: DeleteVideosAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync(ParamArray String())
+  nameWithType: TwitchRestClient.DeleteVideosAsync(params string[])
+  nameWithType.vb: TwitchRestClient.DeleteVideosAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync*
+  name: DeleteVideosAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.DeleteVideosAsync
+  nameWithType: TwitchRestClient.DeleteVideosAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.Dispose
   name: Dispose()
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.Dispose.html#AuxLabs_Twitch_Rest_TwitchRestClient_Dispose
@@ -38170,6 +38419,75 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetUsersByNameAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetUsersByNameAsync
   nameWithType: TwitchRestClient.GetUsersByNameAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: GetVideosAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetVideosAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetVideosAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetVideosAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(System.String[])
+  name: GetVideosAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(System.String[])
+  name.vb: GetVideosAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetVideosAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetVideosAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync*
+  name: GetVideosAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosAsync
+  nameWithType: TwitchRestClient.GetVideosAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetVideosByGameAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByGameAsync_System_String_System_Nullable_AuxLabs_Twitch_VideoPeriod__System_Nullable_AuxLabs_Twitch_VideoSort__System_Nullable_AuxLabs_Twitch_VideoType__System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetVideosByGameAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync(string, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync(String, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetVideosByGameAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetVideosByGameAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync*
+  name: GetVideosByGameAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByGameAsync
+  nameWithType: TwitchRestClient.GetVideosByGameAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetVideosByLanguageAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByLanguageAsync_System_String_System_Nullable_AuxLabs_Twitch_VideoPeriod__System_Nullable_AuxLabs_Twitch_VideoSort__System_Nullable_AuxLabs_Twitch_VideoType__System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetVideosByLanguageAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync(string, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync(String, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetVideosByLanguageAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetVideosByLanguageAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync*
+  name: GetVideosByLanguageAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByLanguageAsync
+  nameWithType: TwitchRestClient.GetVideosByLanguageAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetVideosByUserAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetVideosByUserAsync_System_String_System_Nullable_AuxLabs_Twitch_VideoPeriod__System_Nullable_AuxLabs_Twitch_VideoSort__System_Nullable_AuxLabs_Twitch_VideoType__System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync(System.String,System.Nullable{AuxLabs.Twitch.VideoPeriod},System.Nullable{AuxLabs.Twitch.VideoSort},System.Nullable{AuxLabs.Twitch.VideoType},System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetVideosByUserAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync(string, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync(String, AuxLabs.Twitch.VideoPeriod?, AuxLabs.Twitch.VideoSort?, AuxLabs.Twitch.VideoType?, Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetVideosByUserAsync(string, VideoPeriod?, VideoSort?, VideoType?, int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetVideosByUserAsync(String, VideoPeriod?, VideoSort?, VideoType?, Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync*
+  name: GetVideosByUserAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetVideosByUserAsync
+  nameWithType: TwitchRestClient.GetVideosByUserAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.Identity
   name: Identity
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.Identity.html#AuxLabs_Twitch_Rest_TwitchRestClient_Identity
@@ -38197,6 +38515,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyChatSettingsAsync
   nameWithType: TwitchRestClient.ModifyChatSettingsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChannelBody})
+  name: ModifyMyChannelAsync(Action<PatchChannelBody>)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyChannelAsync_System_Action_AuxLabs_Twitch_Rest_Requests_PatchChannelBody__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChannelBody})
+  name.vb: ModifyMyChannelAsync(Action(Of PatchChannelBody))
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync(System.Action<AuxLabs.Twitch.Rest.Requests.PatchChannelBody>)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync(System.Action(Of AuxLabs.Twitch.Rest.Requests.PatchChannelBody))
+  nameWithType: TwitchRestClient.ModifyMyChannelAsync(Action<PatchChannelBody>)
+  nameWithType.vb: TwitchRestClient.ModifyMyChannelAsync(Action(Of PatchChannelBody))
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync*
+  name: ModifyMyChannelAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyChannelAsync
+  nameWithType: TwitchRestClient.ModifyMyChannelAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync(AuxLabs.Twitch.ChatColor,System.Nullable{System.Threading.CancellationToken})
   name: ModifyMyColorAsync(ChatColor, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.ModifyMyColorAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_ModifyMyColorAsync_AuxLabs_Twitch_ChatColor_System_Nullable_System_Threading_CancellationToken__
@@ -38314,21 +38647,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync
   nameWithType: TwitchRestClient.StartCommercialAsync
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChannelBody})
-  name: UpdateMyChannelAsync(Action<PatchChannelBody>)
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_UpdateMyChannelAsync_System_Action_AuxLabs_Twitch_Rest_Requests_PatchChannelBody__
-  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync(System.Action{AuxLabs.Twitch.Rest.Requests.PatchChannelBody})
-  name.vb: UpdateMyChannelAsync(Action(Of PatchChannelBody))
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync(System.Action<AuxLabs.Twitch.Rest.Requests.PatchChannelBody>)
-  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync(System.Action(Of AuxLabs.Twitch.Rest.Requests.PatchChannelBody))
-  nameWithType: TwitchRestClient.UpdateMyChannelAsync(Action<PatchChannelBody>)
-  nameWithType.vb: TwitchRestClient.UpdateMyChannelAsync(Action(Of PatchChannelBody))
-- uid: AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync*
-  name: UpdateMyChannelAsync
-  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync.html
-  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync
-  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.UpdateMyChannelAsync
-  nameWithType: TwitchRestClient.UpdateMyChannelAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.ValidateAsync
   name: ValidateAsync()
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.ValidateAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_ValidateAsync
