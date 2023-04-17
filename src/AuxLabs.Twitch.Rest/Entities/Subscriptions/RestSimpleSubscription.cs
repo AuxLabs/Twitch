@@ -16,6 +16,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         /// <summary>  </summary>
         public SubscriptionType Tier { get; private set; }
 
+        internal RestSimpleSubscription() { }
         internal static RestSimpleSubscription Create(TwitchRestClient twitch, SimpleSubscription model)
         {
             var entity = new RestSimpleSubscription();

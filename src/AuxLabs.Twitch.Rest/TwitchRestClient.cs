@@ -262,8 +262,21 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Raids
 
-        // StartRaid
-        // StopRaid
+        public async Task<RestRaid> StartRaidAsync(string channelId, CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            var response = await API.PostRaidAsync(new PostRaidArgs
+            {
+                FromBroadcasterId = authorized.UserId,
+                ToBroadcasterId = channelId
+            }, cancelToken);
+            return RestRaid.Create(this, response.Data.Single());
+        }
+        public Task StopRaidAsync(CancellationToken? cancelToken = null)
+        {
+            IsUserAuthorized(out var authorized);
+            return API.DeleteRaidAsync(authorized.UserId, cancelToken);
+        }
 
         #endregion
         #region Search

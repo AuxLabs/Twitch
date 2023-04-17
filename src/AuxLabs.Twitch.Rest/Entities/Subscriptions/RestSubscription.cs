@@ -10,6 +10,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         /// <summary>  </summary>
         public string PlanName { get; private set; }
 
+        internal RestSubscription() { }
         internal static RestSubscription Create(TwitchRestClient twitch, Subscription model)
         {
             var entity = new RestSubscription();
