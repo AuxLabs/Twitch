@@ -287,8 +287,35 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Teams
 
-        // GetTeams
-        // GetTeam
+        public async Task<IReadOnlyCollection<RestChannelTeam>> GetTeamsAsync(string channelId, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetTeamsAsync(channelId, cancelToken);
+            return response.Data.Select(x => RestChannelTeam.Create(this, x)).ToImmutableArray();
+        }
+
+        public async Task<RestTeam> GetTeamByIdAsync(string teamId, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetTeamAsync(new GetTeamArgs
+            {
+                Id = teamId
+            }, cancelToken);
+
+            if (!response.Data.Any())
+                return null;
+            return RestTeam.Create(this, response.Data.Single());
+        }
+
+        public async Task<RestTeam> GetTeamByNameAsync(string teamName, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetTeamAsync(new GetTeamArgs
+            {
+                Name = teamName
+            }, cancelToken);
+
+            if (!response.Data.Any())
+                return null;
+            return RestTeam.Create(this, response.Data.Single());
+        }
 
         #endregion
         #region Videos

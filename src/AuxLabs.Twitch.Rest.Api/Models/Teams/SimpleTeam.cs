@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace AuxLabs.Twitch.Rest.Models
 {
-    public class SimpleTeam
+    public class PartialTeam
     {
         /// <summary> An ID that identifies the team. </summary>
         [JsonInclude, JsonPropertyName("id")]

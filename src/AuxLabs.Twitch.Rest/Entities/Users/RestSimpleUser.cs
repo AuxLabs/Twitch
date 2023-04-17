@@ -34,6 +34,18 @@ namespace AuxLabs.Twitch.Rest.Entities
             entity.Update(model.UserName, model.UserDisplayName);
             return entity;
         }
+        internal static RestSimpleUser Create(TwitchRestClient twitch, TeamUser model)
+        {
+            var entity = new RestSimpleUser(twitch, model.Id);
+            entity.Update(model.Name, model.DisplayName);
+            return entity;
+        }
+        internal static RestSimpleUser Create(TwitchRestClient twitch, ChannelTeam model)
+        {
+            var entity = new RestSimpleUser(twitch, model.BroadcasterId);
+            entity.Update(model.BroadcasterName, model.BroadcasterDisplayName);
+            return entity;
+        }
         internal static RestSimpleUser Create(TwitchRestClient twitch, Video model)
         {
             var entity = new RestSimpleUser(twitch, model.UserId);

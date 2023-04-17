@@ -2,7 +2,7 @@
 
 namespace AuxLabs.Twitch.Rest.Models
 {
-    public class TeamUser : ISimpleUser
+    public class TeamUser
     {
         /// <summary> The ID of the user </summary>
         [JsonInclude, JsonPropertyName("user_id")]

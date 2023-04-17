@@ -2,7 +2,7 @@
 
 namespace AuxLabs.Twitch.Rest.Models
 {
-    public class ChannelTeam : SimpleTeam
+    public class ChannelTeam : PartialTeam
     {
         /// <summary> An ID that identifies the broadcaster. </summary>
         [JsonInclude, JsonPropertyName("broadcaster_id")]
