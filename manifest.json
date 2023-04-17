@@ -13713,6 +13713,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.yml",
       "output": {
         ".html": {
@@ -13787,6 +13827,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.html"
         }
       },
       "version": ""
@@ -13966,6 +14036,16 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.CreatedAt.html"
         }
       },
@@ -13977,16 +14057,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestEditor.html"
         }
       },
       "version": ""
@@ -14253,20 +14323,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGame.html"
         }
       },
       "version": ""
@@ -14323,6 +14403,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.Images.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestMarker.yml",
       "output": {
         ".html": {
@@ -14373,6 +14473,106 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.yml",
       "output": {
         ".html": {
@@ -14407,6 +14607,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestRaid.html"
         }
       },
       "version": ""
@@ -14456,7 +14686,7 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html"
         }
       },
       "version": ""
@@ -14466,7 +14696,7 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleClip.EditUrl.html"
         }
       },
       "version": ""
@@ -14526,6 +14756,16 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.DisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.-ctor.html"
         }
       },
@@ -14547,16 +14787,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSimpleUser.DisplayName.html"
         }
       },
       "version": ""
@@ -14587,6 +14817,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestSubscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.Users.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestTeam.html"
         }
       },
       "version": ""
@@ -14686,76 +14946,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.User.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Title.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Description.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Url.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.ThumbnailUrl.html"
         }
       },
@@ -14837,6 +15027,76 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.BroadcastId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.User.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Title.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Description.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.CreatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.PublishedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Entities.RestVideo.Url.html"
         }
       },
       "version": ""
@@ -15156,6 +15416,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.BroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.ModeratorId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.OverallLevel.html"
         }
       },
@@ -15247,26 +15527,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.BroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.AutomodSettings.ModeratorId.html"
         }
       },
       "version": ""
@@ -15396,16 +15656,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.BroadcasterId.html"
         }
       },
@@ -15447,6 +15697,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.EndsAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Ban.html"
         }
       },
       "version": ""
@@ -15776,66 +16036,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserDisplayName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.GameId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.GameName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.Type.html"
         }
       },
@@ -15917,6 +16117,66 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.Id.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.UserDisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.GameId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Broadcast.GameName.html"
         }
       },
       "version": ""
@@ -16426,6 +16686,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.Amount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.Id.html"
         }
       },
@@ -16467,26 +16747,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.UserName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.Amount.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.CharityDonation.html"
         }
       },
       "version": ""
@@ -17806,6 +18066,36 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.Id.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.BroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.BroadcasterDisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.BroadcasterName.html"
         }
       },
@@ -17867,36 +18157,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.BroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Goal.BroadcasterDisplayName.html"
         }
       },
       "version": ""
@@ -18217,6 +18477,106 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Pagination.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.Description.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.PartialTeam.Id.html"
         }
       },
       "version": ""
@@ -19036,66 +19396,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterLogin.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.Images.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.DefaultImages.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BackgroundColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.IsEnabled.html"
         }
       },
@@ -19197,6 +19497,66 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterLogin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BroadcasterName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.Images.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.DefaultImages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Reward.BackgroundColor.html"
         }
       },
       "version": ""
@@ -19673,106 +20033,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Name.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Description.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleTeam.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.SimpleUser.yml",
       "output": {
         ".html": {
@@ -19816,6 +20076,16 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.Track.html"
         }
       },
@@ -19827,16 +20097,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.Source.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.Soundtrack.html"
         }
       },
       "version": ""
@@ -20616,26 +20876,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.Duration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.Offset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.-ctor.html"
         }
       },
@@ -20647,6 +20887,26 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.Duration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Models.VideoOffset.Offset.html"
         }
       },
       "version": ""
@@ -21586,16 +21846,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.-ctor.html"
         }
       },
@@ -21613,10 +21863,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs.yml",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs.html"
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.FollowSubscription.Scopes.html"
         }
       },
       "version": ""
@@ -21677,6 +21927,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetActiveExtensionsArgs.html"
         }
       },
       "version": ""
@@ -22806,6 +23066,16 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.Scopes.html"
         }
       },
@@ -22873,16 +23143,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetChattersArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetCheermotesArgs.yml",
       "output": {
         ".html": {
@@ -22937,6 +23197,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetCheermotesArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetClipsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetClipsArgs.BroadcasterId.html"
         }
       },
       "version": ""
@@ -23037,16 +23307,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetClipsArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetClipsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetClipsArgs.BroadcasterId.html"
         }
       },
       "version": ""
@@ -23986,16 +24246,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.PlaylistId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.First.html"
         }
       },
@@ -24037,6 +24287,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPlaylistTracksArgs.PlaylistId.html"
         }
       },
       "version": ""
@@ -24186,36 +24446,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.Validate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.CreateQueryMap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.Scopes.html"
         }
       },
@@ -24257,6 +24487,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.After.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.Validate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.CreateQueryMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetPredictionsArgs.html"
         }
       },
       "version": ""
@@ -24616,26 +24876,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.BroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.UserId.html"
         }
       },
@@ -24667,6 +24907,26 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.GetSubscriberArgs.BroadcasterId.html"
         }
       },
       "version": ""
@@ -25666,6 +25926,16 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.-ctor.html"
         }
       },
@@ -25677,16 +25947,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.ModeratorAddSubscription.Scopes.html"
         }
       },
       "version": ""
@@ -26226,16 +26486,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.BroadcasterId.html"
         }
       },
@@ -26287,6 +26537,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PatchPredictionBody.Scopes.html"
         }
       },
       "version": ""
@@ -26936,6 +27196,26 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.BroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.ModeratorId.html"
         }
       },
@@ -26967,26 +27247,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostBlockedTermArgs.BroadcasterId.html"
         }
       },
       "version": ""
@@ -27486,36 +27746,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.Scopes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.FromBroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.ToBroadcasterId.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.Validate.html"
         }
       },
@@ -27537,6 +27767,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.FromBroadcasterId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.Requests.PostRaidArgs.ToBroadcasterId.html"
         }
       },
       "version": ""
@@ -29516,86 +29776,6 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetStreamKeyAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByIdAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsByIdAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByNameAsync.html"
         }
       },
@@ -30076,6 +30256,86 @@
       "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetExtensionAnalyticsAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBitsLeaderboardAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetStreamKeyAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastByIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetBroadcastsByIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.CreateEventSubscriptionAsync.html"
         }
       },
@@ -30087,6 +30347,76 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.DeleteEventSubscriptionAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync.html"
         }
       },
       "version": ""
@@ -30117,6 +30447,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetSubscriberAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync.html"
         }
       },
       "version": ""

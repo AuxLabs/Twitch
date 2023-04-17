@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class RestEntity&lt;T&gt;
+      <title>Class RestRaid
  | AuxLabs.Twitch Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class RestEntity&lt;T&gt;
+      <meta name="title" content="Class RestRaid
  | AuxLabs.Twitch Documentation ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestEntity_1.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestEntity%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestRaid.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestRaid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,13 +74,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestEntity`1">
+        <article data-uid="AuxLabs.Twitch.Rest.Entities.RestRaid">
 
 
 
-  <h1 id="AuxLabs_Twitch_Rest_Entities_RestEntity_1" data-uid="AuxLabs.Twitch.Rest.Entities.RestEntity`1" class="text-break">
-    Class RestEntity&lt;T&gt;
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/RestEntity.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h1 id="AuxLabs_Twitch_Rest_Entities_RestRaid" data-uid="AuxLabs.Twitch.Rest.Entities.RestRaid" class="text-break">
+    Class RestRaid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AuxLabs/Twitch/blob/main/src/AuxLabs.Twitch.Rest/Entities/Raids/RestRaid.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,43 +92,21 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RestEntity&lt;T&gt; where T : IEquatable&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class RestRaid</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">RestEntity&lt;T&gt;</span></div>
+      <div><span class="xref">RestRaid</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestBadge.html">RestBadge</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestBadgeSet.html">RestBadgeSet</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestBroadcast.html">RestBroadcast</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestCategory.html">RestCategory</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEventSubscription.html">RestEventSubscription</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestExtensionTransaction.html">RestExtensionTransaction</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html">RestGlobalEmote</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestMarker.html">RestMarker</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestPartialTeam.html">RestPartialTeam</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestPartialUser.html">RestPartialUser</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestSimpleClip.html">RestSimpleClip</a></div>
-      <div><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestVideo.html">RestVideo</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
@@ -164,9 +142,12 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestEntity-1.Id.html#AuxLabs_Twitch_Rest_Entities_RestEntity_1_Id">Id</a></dt>
-    <dd><p>An ID that uniquely identifies the entity.</p>
-</dd>
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestRaid_CreatedAt">CreatedAt</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature.html#AuxLabs_Twitch_Rest_Entities_RestRaid_IsMature">IsMature</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -174,7 +155,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestEntity_1.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestEntity%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AuxLabs/Twitch/new/main/apiSpec/new?filename=AuxLabs_Twitch_Rest_Entities_RestRaid.md&amp;value=---%0Auid%3A%20AuxLabs.Twitch.Rest.Entities.RestRaid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
 
         

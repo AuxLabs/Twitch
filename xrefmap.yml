@@ -17665,6 +17665,54 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestBroadcast.ViewerCount
   fullName: AuxLabs.Twitch.Rest.Entities.RestBroadcast.ViewerCount
   nameWithType: RestBroadcast.ViewerCount
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory
+  name: RestCategory
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestCategory
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory
+  nameWithType: RestCategory
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestCategory(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestCategory__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestCategory.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.RestCategory(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestCategory.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestCategory.RestCategory(TwitchRestClient, string)
+  nameWithType.vb: RestCategory.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.#ctor*
+  name: RestCategory
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestCategory.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.RestCategory
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestCategory.New
+  nameWithType: RestCategory.RestCategory
+  nameWithType.vb: RestCategory.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl
+  name: BoxArtUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl.html#AuxLabs_Twitch_Rest_Entities_RestCategory_BoxArtUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl
+  nameWithType: RestCategory.BoxArtUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl*
+  name: BoxArtUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.BoxArtUrl
+  nameWithType: RestCategory.BoxArtUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.Name
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.Name.html#AuxLabs_Twitch_Rest_Entities_RestCategory_Name
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestCategory.Name
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.Name
+  nameWithType: RestCategory.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestCategory.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestCategory.Name.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestCategory.Name
+  fullName: AuxLabs.Twitch.Rest.Entities.RestCategory.Name
+  nameWithType: RestCategory.Name
 - uid: AuxLabs.Twitch.Rest.Entities.RestChannel
   name: RestChannel
   href: api/AuxLabs.Twitch.Rest.Entities.RestChannel.html
@@ -17755,6 +17803,42 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChannel.UpdateAsync
   fullName: AuxLabs.Twitch.Rest.Entities.RestChannel.UpdateAsync
   nameWithType: RestChannel.UpdateAsync
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannelTeam
+  name: RestChannelTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestChannelTeam
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannelTeam
+  nameWithType: RestChannelTeam
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestChannelTeam(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestChannelTeam__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestChannelTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.RestChannelTeam(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestChannelTeam.RestChannelTeam(TwitchRestClient, string)
+  nameWithType.vb: RestChannelTeam.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.#ctor*
+  name: RestChannelTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChannelTeam.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.RestChannelTeam
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.New
+  nameWithType: RestChannelTeam.RestChannelTeam
+  nameWithType.vb: RestChannelTeam.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster.html#AuxLabs_Twitch_Rest_Entities_RestChannelTeam_Broadcaster
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster
+  nameWithType: RestChannelTeam.Broadcaster
+- uid: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster*
+  name: Broadcaster
+  href: api/AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster
+  fullName: AuxLabs.Twitch.Rest.Entities.RestChannelTeam.Broadcaster
+  nameWithType: RestChannelTeam.Broadcaster
 - uid: AuxLabs.Twitch.Rest.Entities.RestChatUser
   name: RestChatUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestChatUser.html
@@ -18284,6 +18368,42 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
   fullName: AuxLabs.Twitch.Rest.Entities.RestFollowUser.FollowedAt
   nameWithType: RestFollowUser.FollowedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestGame
+  name: RestGame
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGame.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestGame
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGame
+  nameWithType: RestGame
+- uid: AuxLabs.Twitch.Rest.Entities.RestGame.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestGame(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGame.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestGame__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestGame.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGame.RestGame(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestGame.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestGame.RestGame(TwitchRestClient, string)
+  nameWithType.vb: RestGame.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestGame.#ctor*
+  name: RestGame
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGame.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGame.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGame.RestGame
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestGame.New
+  nameWithType: RestGame.RestGame
+  nameWithType.vb: RestGame.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId
+  name: IgdbId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId.html#AuxLabs_Twitch_Rest_Entities_RestGame_IgdbId
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId
+  nameWithType: RestGame.IgdbId
+- uid: AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId*
+  name: IgdbId
+  href: api/AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId
+  fullName: AuxLabs.Twitch.Rest.Entities.RestGame.IgdbId
+  nameWithType: RestGame.IgdbId
 - uid: AuxLabs.Twitch.Rest.Entities.RestGlobalEmote
   name: RestGlobalEmote
   href: api/AuxLabs.Twitch.Rest.Entities.RestGlobalEmote.html
@@ -18422,6 +18542,126 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
   fullName: AuxLabs.Twitch.Rest.Entities.RestMarker.ToString
   nameWithType: RestMarker.ToString
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam
+  name: RestPartialTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestPartialTeam
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam
+  nameWithType: RestPartialTeam
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestPartialTeam(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.RestPartialTeam(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestPartialTeam.RestPartialTeam(TwitchRestClient, string)
+  nameWithType.vb: RestPartialTeam.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.#ctor*
+  name: RestPartialTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.RestPartialTeam
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.New
+  nameWithType: RestPartialTeam.RestPartialTeam
+  nameWithType.vb: RestPartialTeam.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl
+  name: BackgroundImageUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_BackgroundImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl
+  nameWithType: RestPartialTeam.BackgroundImageUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl*
+  name: BackgroundImageUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BackgroundImageUrl
+  nameWithType: RestPartialTeam.BackgroundImageUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl
+  name: BannerImageUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_BannerImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl
+  nameWithType: RestPartialTeam.BannerImageUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl*
+  name: BannerImageUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.BannerImageUrl
+  nameWithType: RestPartialTeam.BannerImageUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt
+  nameWithType: RestPartialTeam.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.CreatedAt
+  nameWithType: RestPartialTeam.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_Description
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description
+  nameWithType: RestPartialTeam.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Description
+  nameWithType: RestPartialTeam.Description
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName
+  name: DisplayName
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_DisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName
+  nameWithType: RestPartialTeam.DisplayName
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName*
+  name: DisplayName
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.DisplayName
+  nameWithType: RestPartialTeam.DisplayName
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_Name
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name
+  nameWithType: RestPartialTeam.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.Name
+  nameWithType: RestPartialTeam.Name
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_ThumbnailUrl
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl
+  nameWithType: RestPartialTeam.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.ThumbnailUrl
+  nameWithType: RestPartialTeam.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt
+  name: UpdatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt.html#AuxLabs_Twitch_Rest_Entities_RestPartialTeam_UpdatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt
+  nameWithType: RestPartialTeam.UpdatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt*
+  name: UpdatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestPartialTeam.UpdatedAt
+  nameWithType: RestPartialTeam.UpdatedAt
 - uid: AuxLabs.Twitch.Rest.Entities.RestPartialUser
   name: RestPartialUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestPartialUser.html
@@ -18470,6 +18710,36 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestPartialUser.ToString
   fullName: AuxLabs.Twitch.Rest.Entities.RestPartialUser.ToString
   nameWithType: RestPartialUser.ToString
+- uid: AuxLabs.Twitch.Rest.Entities.RestRaid
+  name: RestRaid
+  href: api/AuxLabs.Twitch.Rest.Entities.RestRaid.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestRaid
+  fullName: AuxLabs.Twitch.Rest.Entities.RestRaid
+  nameWithType: RestRaid
+- uid: AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt.html#AuxLabs_Twitch_Rest_Entities_RestRaid_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt
+  nameWithType: RestRaid.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Entities.RestRaid.CreatedAt
+  nameWithType: RestRaid.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature
+  name: IsMature
+  href: api/AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature.html#AuxLabs_Twitch_Rest_Entities_RestRaid_IsMature
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature
+  fullName: AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature
+  nameWithType: RestRaid.IsMature
+- uid: AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature*
+  name: IsMature
+  href: api/AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature
+  fullName: AuxLabs.Twitch.Rest.Entities.RestRaid.IsMature
+  nameWithType: RestRaid.IsMature
 - uid: AuxLabs.Twitch.Rest.Entities.RestSelfUser
   name: RestSelfUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestSelfUser.html
@@ -18665,6 +18935,42 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestSubscription.User
   fullName: AuxLabs.Twitch.Rest.Entities.RestSubscription.User
   nameWithType: RestSubscription.User
+- uid: AuxLabs.Twitch.Rest.Entities.RestTeam
+  name: RestTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestTeam.html
+  commentId: T:AuxLabs.Twitch.Rest.Entities.RestTeam
+  fullName: AuxLabs.Twitch.Rest.Entities.RestTeam
+  nameWithType: RestTeam
+- uid: AuxLabs.Twitch.Rest.Entities.RestTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name: RestTeam(TwitchRestClient, string)
+  href: api/AuxLabs.Twitch.Rest.Entities.RestTeam.-ctor.html#AuxLabs_Twitch_Rest_Entities_RestTeam__ctor_AuxLabs_Twitch_Rest_TwitchRestClient_System_String_
+  commentId: M:AuxLabs.Twitch.Rest.Entities.RestTeam.#ctor(AuxLabs.Twitch.Rest.TwitchRestClient,System.String)
+  name.vb: New(TwitchRestClient, String)
+  fullName: AuxLabs.Twitch.Rest.Entities.RestTeam.RestTeam(AuxLabs.Twitch.Rest.TwitchRestClient, string)
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestTeam.New(AuxLabs.Twitch.Rest.TwitchRestClient, String)
+  nameWithType: RestTeam.RestTeam(TwitchRestClient, string)
+  nameWithType.vb: RestTeam.New(TwitchRestClient, String)
+- uid: AuxLabs.Twitch.Rest.Entities.RestTeam.#ctor*
+  name: RestTeam
+  href: api/AuxLabs.Twitch.Rest.Entities.RestTeam.-ctor.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestTeam.#ctor
+  name.vb: New
+  fullName: AuxLabs.Twitch.Rest.Entities.RestTeam.RestTeam
+  fullName.vb: AuxLabs.Twitch.Rest.Entities.RestTeam.New
+  nameWithType: RestTeam.RestTeam
+  nameWithType.vb: RestTeam.New
+- uid: AuxLabs.Twitch.Rest.Entities.RestTeam.Users
+  name: Users
+  href: api/AuxLabs.Twitch.Rest.Entities.RestTeam.Users.html#AuxLabs_Twitch_Rest_Entities_RestTeam_Users
+  commentId: P:AuxLabs.Twitch.Rest.Entities.RestTeam.Users
+  fullName: AuxLabs.Twitch.Rest.Entities.RestTeam.Users
+  nameWithType: RestTeam.Users
+- uid: AuxLabs.Twitch.Rest.Entities.RestTeam.Users*
+  name: Users
+  href: api/AuxLabs.Twitch.Rest.Entities.RestTeam.Users.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Entities.RestTeam.Users
+  fullName: AuxLabs.Twitch.Rest.Entities.RestTeam.Users
+  nameWithType: RestTeam.Users
 - uid: AuxLabs.Twitch.Rest.Entities.RestUser
   name: RestUser
   href: api/AuxLabs.Twitch.Rest.Entities.RestUser.html
@@ -22867,6 +23173,120 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.Pagination.Cursor
   fullName: AuxLabs.Twitch.Rest.Models.Pagination.Cursor
   nameWithType: Pagination.Cursor
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam
+  name: PartialTeam
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.html
+  commentId: T:AuxLabs.Twitch.Rest.Models.PartialTeam
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam
+  nameWithType: PartialTeam
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl
+  name: BackgroundImageUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl.html#AuxLabs_Twitch_Rest_Models_PartialTeam_BackgroundImageUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl
+  nameWithType: PartialTeam.BackgroundImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl*
+  name: BackgroundImageUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.BackgroundImageUrl
+  nameWithType: PartialTeam.BackgroundImageUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl
+  name: BannerUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl.html#AuxLabs_Twitch_Rest_Models_PartialTeam_BannerUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl
+  nameWithType: PartialTeam.BannerUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl*
+  name: BannerUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.BannerUrl
+  nameWithType: PartialTeam.BannerUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt.html#AuxLabs_Twitch_Rest_Models_PartialTeam_CreatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt
+  nameWithType: PartialTeam.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt*
+  name: CreatedAt
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.CreatedAt
+  nameWithType: PartialTeam.CreatedAt
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Description
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Description.html#AuxLabs_Twitch_Rest_Models_PartialTeam_Description
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.Description
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Description
+  nameWithType: PartialTeam.Description
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Description*
+  name: Description
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Description.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.Description
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Description
+  nameWithType: PartialTeam.Description
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName
+  name: DisplayName
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName.html#AuxLabs_Twitch_Rest_Models_PartialTeam_DisplayName
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName
+  nameWithType: PartialTeam.DisplayName
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName*
+  name: DisplayName
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.DisplayName
+  nameWithType: PartialTeam.DisplayName
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Id
+  name: Id
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Id.html#AuxLabs_Twitch_Rest_Models_PartialTeam_Id
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.Id
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Id
+  nameWithType: PartialTeam.Id
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Id*
+  name: Id
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Id.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.Id
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Id
+  nameWithType: PartialTeam.Id
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Name
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Name.html#AuxLabs_Twitch_Rest_Models_PartialTeam_Name
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.Name
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Name
+  nameWithType: PartialTeam.Name
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.Name*
+  name: Name
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.Name.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.Name
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.Name
+  nameWithType: PartialTeam.Name
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Models_PartialTeam_ThumbnailUrl
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl
+  nameWithType: PartialTeam.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.ThumbnailUrl
+  nameWithType: PartialTeam.ThumbnailUrl
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt
+  name: UpdatedAt
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt.html#AuxLabs_Twitch_Rest_Models_PartialTeam_UpdatedAt
+  commentId: P:AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt
+  nameWithType: PartialTeam.UpdatedAt
+- uid: AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt*
+  name: UpdatedAt
+  href: api/AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt.html
+  commentId: Overload:AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt
+  fullName: AuxLabs.Twitch.Rest.Models.PartialTeam.UpdatedAt
+  nameWithType: PartialTeam.UpdatedAt
 - uid: AuxLabs.Twitch.Rest.Models.Playlist
   name: Playlist
   href: api/AuxLabs.Twitch.Rest.Models.Playlist.html
@@ -24559,120 +24979,6 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
   fullName: AuxLabs.Twitch.Rest.Models.SimpleSubscription.Tier
   nameWithType: SimpleSubscription.Tier
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam
-  name: SimpleTeam
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.html
-  commentId: T:AuxLabs.Twitch.Rest.Models.SimpleTeam
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam
-  nameWithType: SimpleTeam
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl
-  name: BackgroundImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_BackgroundImageUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl
-  nameWithType: SimpleTeam.BackgroundImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl*
-  name: BackgroundImageUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.BackgroundImageUrl
-  nameWithType: SimpleTeam.BackgroundImageUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl
-  name: BannerUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_BannerUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl
-  nameWithType: SimpleTeam.BannerUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl*
-  name: BannerUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.BannerUrl
-  nameWithType: SimpleTeam.BannerUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt
-  name: CreatedAt
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_CreatedAt
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt
-  nameWithType: SimpleTeam.CreatedAt
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt*
-  name: CreatedAt
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.CreatedAt
-  nameWithType: SimpleTeam.CreatedAt
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Description
-  name: Description
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Description.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_Description
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.Description
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Description
-  nameWithType: SimpleTeam.Description
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Description*
-  name: Description
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Description.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.Description
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Description
-  nameWithType: SimpleTeam.Description
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName
-  name: DisplayName
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_DisplayName
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName
-  nameWithType: SimpleTeam.DisplayName
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName*
-  name: DisplayName
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.DisplayName
-  nameWithType: SimpleTeam.DisplayName
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Id
-  name: Id
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Id.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_Id
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.Id
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Id
-  nameWithType: SimpleTeam.Id
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Id*
-  name: Id
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Id.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.Id
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Id
-  nameWithType: SimpleTeam.Id
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Name
-  name: Name
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Name.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_Name
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.Name
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Name
-  nameWithType: SimpleTeam.Name
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.Name*
-  name: Name
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.Name.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.Name
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.Name
-  nameWithType: SimpleTeam.Name
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl
-  name: ThumbnailUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_ThumbnailUrl
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl
-  nameWithType: SimpleTeam.ThumbnailUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl*
-  name: ThumbnailUrl
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.ThumbnailUrl
-  nameWithType: SimpleTeam.ThumbnailUrl
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt
-  name: UpdatedAt
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt.html#AuxLabs_Twitch_Rest_Models_SimpleTeam_UpdatedAt
-  commentId: P:AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt
-  nameWithType: SimpleTeam.UpdatedAt
-- uid: AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt*
-  name: UpdatedAt
-  href: api/AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt.html
-  commentId: Overload:AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt
-  fullName: AuxLabs.Twitch.Rest.Models.SimpleTeam.UpdatedAt
-  nameWithType: SimpleTeam.UpdatedAt
 - uid: AuxLabs.Twitch.Rest.Models.SimpleUser
   name: SimpleUser
   href: api/AuxLabs.Twitch.Rest.Models.SimpleUser.html
@@ -38194,6 +38500,21 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameAnalyticsAsync
   nameWithType: TwitchRestClient.GetGameAnalyticsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetGameByIdAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameByIdAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGameByIdAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGameByIdAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGameByIdAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync*
+  name: GetGameByIdAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameByIdAsync
+  nameWithType: TwitchRestClient.GetGameByIdAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Nullable{System.Threading.CancellationToken})
   name: GetGameClipsAsync(string, DateTime?, DateTime?, int, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGameClipsAsync_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Nullable_System_Threading_CancellationToken__
@@ -38209,6 +38530,96 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGameClipsAsync
   nameWithType: TwitchRestClient.GetGameClipsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: GetGamesByIdAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByIdAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGamesByIdAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGamesByIdAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGamesByIdAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(System.String[])
+  name: GetGamesByIdAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByIdAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(System.String[])
+  name.vb: GetGamesByIdAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetGamesByIdAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetGamesByIdAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync*
+  name: GetGamesByIdAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIdAsync
+  nameWithType: TwitchRestClient.GetGamesByIdAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetGamesByIgdbIdAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByIgdbIdAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGamesByIgdbIdAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGamesByIgdbIdAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGamesByIgdbIdAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: GetGamesByIgdbIdAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByIgdbIdAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGamesByIgdbIdAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGamesByIgdbIdAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGamesByIgdbIdAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String[])
+  name: GetGamesByIgdbIdAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByIgdbIdAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(System.String[])
+  name.vb: GetGamesByIgdbIdAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetGamesByIgdbIdAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetGamesByIgdbIdAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync*
+  name: GetGamesByIgdbIdAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByIgdbIdAsync
+  nameWithType: TwitchRestClient.GetGamesByIgdbIdAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetGamesByNameAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByNameAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGamesByNameAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGamesByNameAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGamesByNameAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name: GetGamesByNameAsync(string[], CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByNameAsync_System_String___System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String[],System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetGamesByNameAsync(String(), CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(string[], System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(String(), System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetGamesByNameAsync(string[], CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetGamesByNameAsync(String(), CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String[])
+  name: GetGamesByNameAsync(params string[])
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetGamesByNameAsync_System_String___
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(System.String[])
+  name.vb: GetGamesByNameAsync(ParamArray String())
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(params string[])
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync(ParamArray String())
+  nameWithType: TwitchRestClient.GetGamesByNameAsync(params string[])
+  nameWithType.vb: TwitchRestClient.GetGamesByNameAsync(ParamArray String())
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync*
+  name: GetGamesByNameAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetGamesByNameAsync
+  nameWithType: TwitchRestClient.GetGamesByNameAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync(System.String,System.String,System.Int32,System.Nullable{System.Threading.CancellationToken})
   name: GetMarkersAsync(string, string, int, CancellationToken?)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetMarkersAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetMarkersAsync_System_String_System_String_System_Int32_System_Nullable_System_Threading_CancellationToken__
@@ -38320,6 +38731,66 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetSubscriptionsAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetSubscriptionsAsync
   nameWithType: TwitchRestClient.GetSubscriptionsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetTeamByIdAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetTeamByIdAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetTeamByIdAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetTeamByIdAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetTeamByIdAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync*
+  name: GetTeamByIdAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByIdAsync
+  nameWithType: TwitchRestClient.GetTeamByIdAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetTeamByNameAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetTeamByNameAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetTeamByNameAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetTeamByNameAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetTeamByNameAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync*
+  name: GetTeamByNameAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamByNameAsync
+  nameWithType: TwitchRestClient.GetTeamByNameAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetTeamsAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetTeamsAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetTeamsAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetTeamsAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetTeamsAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync*
+  name: GetTeamsAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTeamsAsync
+  nameWithType: TwitchRestClient.GetTeamsAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name: GetTopGamesAsync(int, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetTopGamesAsync_System_Int32_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync(System.Int32,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetTopGamesAsync(Integer, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync(int, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync(Integer, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.GetTopGamesAsync(int, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.GetTopGamesAsync(Integer, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync*
+  name: GetTopGamesAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.GetTopGamesAsync
+  nameWithType: TwitchRestClient.GetTopGamesAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.GetUserByIdAsync(System.String)
   name: GetUserByIdAsync(string)
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.GetUserByIdAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_GetUserByIdAsync_System_String_
@@ -38647,6 +39118,33 @@ references:
   commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync
   fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartCommercialAsync
   nameWithType: TwitchRestClient.StartCommercialAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name: StartRaidAsync(string, CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_StartRaidAsync_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync(System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: StartRaidAsync(String, CancellationToken?)
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync(string, System.Threading.CancellationToken?)
+  fullName.vb: AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync(String, System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.StartRaidAsync(string, CancellationToken?)
+  nameWithType.vb: TwitchRestClient.StartRaidAsync(String, CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync*
+  name: StartRaidAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StartRaidAsync
+  nameWithType: TwitchRestClient.StartRaidAsync
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync(System.Nullable{System.Threading.CancellationToken})
+  name: StopRaidAsync(CancellationToken?)
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_StopRaidAsync_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync(System.Nullable{System.Threading.CancellationToken})
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync(System.Threading.CancellationToken?)
+  nameWithType: TwitchRestClient.StopRaidAsync(CancellationToken?)
+- uid: AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync*
+  name: StopRaidAsync
+  href: api/AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync.html
+  commentId: Overload:AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync
+  fullName: AuxLabs.Twitch.Rest.TwitchRestClient.StopRaidAsync
+  nameWithType: TwitchRestClient.StopRaidAsync
 - uid: AuxLabs.Twitch.Rest.TwitchRestClient.ValidateAsync
   name: ValidateAsync()
   href: api/AuxLabs.Twitch.Rest.TwitchRestClient.ValidateAsync.html#AuxLabs_Twitch_Rest_TwitchRestClient_ValidateAsync
