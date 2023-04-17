@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.Json.Serialization;
 
 namespace AuxLabs.Twitch.Rest.Models
@@ -12,7 +13,7 @@ namespace AuxLabs.Twitch.Rest.Models
 
         /// <summary> The ID of the stream that the video originated from if the video is a <see cref="VideoType.Archive"/>. </summary>
         [JsonInclude, JsonPropertyName("stream_id")]
-        public string StreamId { get; internal set; }
+        public string BroadcastId { get; internal set; }
 
         /// <summary> The ID of the broadcaster that owns the video. </summary>
         [JsonInclude, JsonPropertyName("user_id")]
@@ -60,11 +61,11 @@ namespace AuxLabs.Twitch.Rest.Models
 
         /// <summary> The ISO 639-1 two-letter language code that the video was broadcast in. </summary>
         [JsonInclude, JsonPropertyName("language")]
-        public string Language { get; internal set; }
+        public CultureInfo Culture { get; internal set; }
 
         /// <summary> The video’s type. </summary>
         [JsonInclude, JsonPropertyName("type")]
-        public VideoType Type { get; internal set; }
+        public VideoType VideoType { get; internal set; }
 
         /// <summary> The video’s length in ISO 8601 duration format. </summary>
         [JsonInclude, JsonPropertyName("duration")]

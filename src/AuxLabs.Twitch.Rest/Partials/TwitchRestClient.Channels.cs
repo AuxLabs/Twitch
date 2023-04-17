@@ -18,7 +18,7 @@ namespace AuxLabs.Twitch.Rest
             return MyChannel;
         }
 
-        public async Task<RestChannel> UpdateMyChannelAsync(Action<PatchChannelBody> func)
+        public async Task<RestChannel> ModifyMyChannelAsync(Action<PatchChannelBody> func)
         {
             var args = new PatchChannelBody();
             func(args);

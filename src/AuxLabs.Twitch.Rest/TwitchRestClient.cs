@@ -293,8 +293,86 @@ namespace AuxLabs.Twitch.Rest
         #endregion
         #region Videos
 
-        // GetVideos
-        // DeleteVideo
+        public Task<IReadOnlyCollection<RestVideo>> GetVideosAsync(params string[] videoIds)
+            => GetVideosAsync(videoIds);
+        public async Task<IReadOnlyCollection<RestVideo>> GetVideosAsync(string[] videoIds, CancellationToken? cancelToken = null)
+        {
+            var response = await API.GetVideosAsync(new GetVideosArgs
+            {
+                VideoIds = videoIds
+            }, cancelToken);
+            return response.Data.Select(x => RestVideo.Create(this, x)).ToImmutableArray();
+        }
+        public IAsyncEnumerable<IReadOnlyCollection<RestVideo>> GetVideosByUserAsync(string userId, VideoPeriod? period = null, VideoSort? sort = null, VideoType? type = null,
+            int count = 20, CancellationToken? cancelToken = null)
+        {
+            return new PagedAsyncEnumerable<RestVideo>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetVideosAsync(new GetVideosArgs
+                    {
+                        UserId = userId,
+                        Period = period,
+                        Sort = sort,
+                        Type = type,
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestVideo.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                count: count);
+        }
+        public IAsyncEnumerable<IReadOnlyCollection<RestVideo>> GetVideosByGameAsync(string gameId, VideoPeriod? period = null, VideoSort? sort = null, VideoType? type = null,
+            int count = 20, CancellationToken? cancelToken = null)
+        {
+            return new PagedAsyncEnumerable<RestVideo>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetVideosAsync(new GetVideosArgs
+                    {
+                        GameId = gameId,
+                        Period = period,
+                        Sort = sort,
+                        Type = type,
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestVideo.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                count: count);
+        }
+        public IAsyncEnumerable<IReadOnlyCollection<RestVideo>> GetVideosByLanguageAsync(string language, VideoPeriod? period = null, VideoSort? sort = null, VideoType? type = null,
+            int count = 20, CancellationToken? cancelToken = null)
+        {
+            return new PagedAsyncEnumerable<RestVideo>(
+                TwitchConstants.DefaultMaxPerPage,
+                async (info, ct) =>
+                {
+                    var response = await API.GetVideosAsync(new GetVideosArgs
+                    {
+                        Language = language,
+                        Period = period,
+                        Sort = sort,
+                        Type = type,
+                        After = info.Cursor,
+                        First = info.PageSize
+                    }, cancelToken);
+                    return (response.Data.Select(x => RestVideo.Create(this, x)).ToImmutableArray(), response.Pagination.Value.Cursor);
+                },
+                count: count);
+        }
+
+        public async Task<string> DeleteVideoAsync(string videoId)
+            => (await DeleteVideosAsync(videoId))?.SingleOrDefault();
+        public Task<IReadOnlyCollection<string>> DeleteVideosAsync(params string[] videoIds)
+            => DeleteVideosAsync(videoIds, cancelToken: null);
+        public async Task<IReadOnlyCollection<string>> DeleteVideosAsync(string[] videoIds, CancellationToken? cancelToken = null)
+        {
+            var response = await API.DeleteVideosAsync(videoIds, cancelToken);
+            return response.Data;
+        }
 
         #endregion
         #region Whispers

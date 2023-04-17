@@ -918,7 +918,7 @@ namespace AuxLabs.Twitch.Rest.Api
         /// <exception cref="TwitchRestException"> 400 Bad Request, 401 Unauthorized </exception>
         /// <exception cref="MissingScopeException" />
         [Delete("videos")]
-        Task<TwitchResponse<string>> DeleteVideoAsync([QueryMap] DeleteVideosArgs args, CancellationToken? cancelToken = null);
+        Task<TwitchResponse<string>> DeleteVideosAsync([QueryMap] DeleteVideosArgs args, CancellationToken? cancelToken = null);
 
         #endregion
         #region Whispers

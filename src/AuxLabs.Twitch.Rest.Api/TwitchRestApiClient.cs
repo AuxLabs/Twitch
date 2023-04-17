@@ -808,10 +808,10 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetVideosAsync(args, cancelToken);
         }
         /// <inheritdoc/>
-        public Task<TwitchResponse<string>> DeleteVideoAsync(DeleteVideosArgs args, CancellationToken? cancelToken = null)
+        public Task<TwitchResponse<string>> DeleteVideosAsync(DeleteVideosArgs args, CancellationToken? cancelToken = null)
         {
             CheckPermissions(args);
-            return _api.DeleteVideoAsync(args, cancelToken);
+            return _api.DeleteVideosAsync(args, cancelToken);
         }
         
         #endregion

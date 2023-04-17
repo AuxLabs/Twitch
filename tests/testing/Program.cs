@@ -6,14 +6,13 @@ var twitch = new TwitchRestClient();
 var token = Environment.GetEnvironmentVariable("TWITCH_TOKEN", EnvironmentVariableTarget.User);
 var identity = await twitch.ValidateAsync(token);
 
-var info = await twitch.GetSubscriptionInfoAsync();
-Console.WriteLine($"Stats: points {info.Points} total {info.Total}");
+var user = await twitch.GetUserByNameAsync("canadian_dragon");
+var videos = await twitch.GetVideosByUserAsync(user.Id, count: 150).FlattenAsync();
 
-var subscribers = await twitch.GetSubscriptionsAsync(count: int.MaxValue).FlattenAsync();
+foreach (var video in videos)
+    Console.WriteLine($"{video.User}| {video.Title}\t{video.Description}");
 
-foreach (var subscriber in subscribers)
-    Console.WriteLine($"{subscriber.User} {subscriber.Tier}");
-
+await Task.Delay(1000);
 
 //using AuxLabs.Twitch;
 //using AuxLabs.Twitch.Chat;
