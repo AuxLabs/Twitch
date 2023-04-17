@@ -40,7 +40,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         }
         internal virtual void Update(User model)
         {
-            base.Update(model);
+            base.Update(model.Name, model.DisplayName);
             CreatedAt = model.CreatedAt;
             Description = model.Description;
             ViewCount = model.ViewCount;

@@ -17,9 +17,9 @@ namespace AuxLabs.Twitch.Rest.Entities
             entity.Update(model);
             return entity;
         }
-        internal override void Update(Follower model)
+        internal virtual void Update(Follower model)
         {
-            base.Update(model);
+            base.Update(model.UserName, model.UserDisplayName);
             FollowedAt = model.FollowedAt;
         }
 
@@ -29,9 +29,9 @@ namespace AuxLabs.Twitch.Rest.Entities
             entity.Update(model);
             return entity;
         }
-        internal override void Update(FollowedChannel model)
+        internal virtual void Update(FollowedChannel model)
         {
-            base.Update(model);
+            base.Update(model.BroadcasterName, model.BroadcasterDisplayName);
             FollowedAt = model.FollowedAt;
         }
     }

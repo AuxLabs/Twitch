@@ -10,102 +10,65 @@ namespace AuxLabs.Twitch.Rest.Entities
         public RestSimpleUser(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
 
+        internal virtual void Update(string userName, string displayName)
+        {
+            base.Update(userName);
+            DisplayName = displayName;
+        }
+
         internal static RestSimpleUser Create(TwitchRestClient twitch, Broadcast model)
         {
             var entity = new RestSimpleUser(twitch, model.UserId);
-            entity.Update(model);
+            entity.Update(model.UserName, model.UserDisplayName);
             return entity;
         }
-        internal virtual void Update(Broadcast model)
-        {
-            base.Update(model.UserName);
-            DisplayName = model.UserDisplayName;
-        }
-
         internal static RestSimpleUser Create(TwitchRestClient twitch, SimpleUser model)
         {
             var entity = new RestSimpleUser(twitch, model.Id);
-            entity.Update(model);
+            entity.Update(model.Name, model.DisplayName);
             return entity;
         }
-        internal virtual void Update(SimpleUser model)
+        internal static RestSimpleUser Create(TwitchRestClient twitch, Subscription model)
         {
-            base.Update(model.Name);
-            DisplayName = model.DisplayName;
+            var entity = new RestSimpleUser(twitch, model.UserId);
+            entity.Update(model.UserName, model.UserDisplayName);
+            return entity;
+        }
+        internal static RestSimpleUser Create(TwitchRestClient twitch, Video model)
+        {
+            var entity = new RestSimpleUser(twitch, model.UserId);
+            entity.Update(model.UserName, model.UserDisplayName);
+            return entity;
         }
 
         internal static RestSimpleUser Create(TwitchRestClient twitch, ExtensionTransaction model, bool isBroadcaster)
         {
-            var id = isBroadcaster ? model.BroadcasterId : model.UserId;
-            var entity = new RestSimpleUser(twitch, id);
-            entity.Update(model, isBroadcaster);
-            return entity;
-        }
-        internal virtual void Update(ExtensionTransaction model, bool isBroadcaster)
-        {
+            RestSimpleUser entity;
             if (isBroadcaster)
             {
-                base.Update(model.BroadcasterName);
-                DisplayName = model.BroadcasterDisplayName;
+                entity = new RestSimpleUser(twitch, model.BroadcasterId);
+                entity.Update(model.BroadcasterName, model.BroadcasterDisplayName);
             } else
             {
-                base.Update(model.UserName);
-                DisplayName = model.UserDisplayName;
+                entity = new RestSimpleUser(twitch, model.UserId);
+                entity.Update(model.UserName, model.UserDisplayName);
             }
-        }
-
-        internal static RestSimpleUser Create(TwitchRestClient twitch, SimpleSubscription model, bool isBroadcaster)
-        {
-            var id = isBroadcaster ? model.BroadcasterId : model.GifterId;
-            var entity = new RestSimpleUser(twitch, id);
-            entity.Update(model, isBroadcaster);
             return entity;
         }
-        internal virtual void Update(SimpleSubscription model, bool isBroadcaster)
+        internal static RestSimpleUser Create(TwitchRestClient twitch, SimpleSubscription model, bool isBroadcaster)
         {
+            RestSimpleUser entity;
             if (isBroadcaster)
             {
-                base.Update(model.BroadcasterName);
-                DisplayName = model.BroadcasterDisplayName;
+                entity = new RestSimpleUser(twitch, model.BroadcasterId);
+                entity.Update(model.BroadcasterName, model.BroadcasterDisplayName);
             }
             else
             {
-                base.Update(model.GifterName);
-                DisplayName = model.GifterDisplayName;
+                entity = new RestSimpleUser(twitch, model.GifterId);
+                entity.Update(model.GifterName, model.GifterDisplayName);
             }
-        }
-
-        internal static RestSimpleUser Create(TwitchRestClient twitch, Subscription model)
-        {
-            var entity = new RestSimpleUser(twitch, model.UserName);
-            entity.Update(model);
             return entity;
-        }
-        internal virtual void Update(Subscription model)
-        {
-            base.Update(model.UserName);
-            DisplayName = model.UserDisplayName;
-        }
-
-        internal virtual void Update(Follower model)
-        {
-            base.Update(model.UserName);
-            DisplayName = model.UserDisplayName;
-        }
-        internal virtual void Update(BitsUser model)
-        {
-            base.Update(model.UserName);
-            DisplayName = model.UserDisplayName;
-        }
-        internal virtual void Update(Channel model)
-        {
-            base.Update(model.BroadcasterName);
-            DisplayName = model.BroadcasterDisplayName;
-        }
-        internal virtual void Update(FollowedChannel model)
-        {
-            base.Update(model.BroadcasterName);
-            DisplayName = model.BroadcasterDisplayName;
         }
 
         public override string ToString() => DisplayName ?? Name + $"({Id})";

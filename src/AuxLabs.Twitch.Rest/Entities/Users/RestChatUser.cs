@@ -19,7 +19,7 @@ namespace AuxLabs.Twitch.Rest.Entities
         }
         internal virtual void Update(SimpleChatUser model)
         {
-            base.Update(model);
+            base.Update(model.Name, model.DisplayName);
             Color = model.Color;
         }
     }

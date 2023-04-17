@@ -5,10 +5,10 @@ namespace AuxLabs.Twitch.Rest.Entities
     public class RestBitsUser : RestSimpleUser
     {
         /// <summary>  </summary>
-        public int Rank { get; internal set; }
+        public int Rank { get; private set; }
 
         /// <summary>  </summary>
-        public int TotalBits { get; internal set; }
+        public int TotalBits { get; private set; }
 
         public RestBitsUser(TwitchRestClient twitch, string id)
             : base(twitch, id) { }
@@ -19,10 +19,9 @@ namespace AuxLabs.Twitch.Rest.Entities
             entity.Update(model);
             return entity;
         }
-        internal override void Update(BitsUser model)
+        internal virtual void Update(BitsUser model)
         {
-            base.Update(model);
-
+            base.Update(model.UserName, model.UserDisplayName);
             Rank = model.Rank;
             TotalBits = model.TotalBits;
         }

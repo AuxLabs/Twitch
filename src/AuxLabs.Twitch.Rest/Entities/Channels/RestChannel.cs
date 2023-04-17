@@ -38,9 +38,9 @@ namespace AuxLabs.Twitch.Rest.Entities
             entity.Update(model);
             return entity;
         }
-        internal override void Update(Channel model)
+        internal virtual void Update(Channel model)
         {
-            base.Update(model);
+            base.Update(model.BroadcasterName, model.BroadcasterDisplayName);
             Culture = model.Culture;
             GameId = model.GameId;
             GameName = model.GameName;
