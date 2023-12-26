@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../AuxLabs.Twitch.targets" />
+
+  <PropertyGroup>
+    <Description>A high-level implementation of Twitch's Helix REST API.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Partials\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+    <ProjectReference Include="..\AuxLabs.Twitch.Helix.Api\AuxLabs.Twitch.Helix.Api.csproj" />
+    <ProjectReference Include="..\AuxLabs.Twitch.Identity\AuxLabs.Twitch.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

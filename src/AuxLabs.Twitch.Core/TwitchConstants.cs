@@ -1,26 +1,5 @@
-﻿namespace AuxLabs.Twitch
+﻿namespace AuxLabs.Twitch;
+
+public abstract class TwitchConstants
 {
-    public static class TwitchConstants
-    {
-        public const string GlobalRatelimitBucket = "GLOBAL";
-
-        public const string RestApiUrl = "https://api.twitch.tv/helix/";
-        public const string RestIdentityApiUrl = "https://id.twitch.tv/oauth2/";
-        public const int DefaultMaxPerPage = 100;
-
-        public const string ChatWebSocketUrl = "ws://irc-ws.chat.twitch.tv:80";
-        public const string ChatIrcUrl = "	irc://irc.chat.twitch.tv:6667";
-        public const string ChatSecureWebSocketUrl = "wss://irc-ws.chat.twitch.tv:443";
-        public const string ChatSecureIrcUrl = "irc://irc.chat.twitch.tv:6697";
-        public const string AnonymousNamePrefix = "justinfan";
-
-        public const string EventSubUrl = "wss://eventsub.wss.twitch.tv/ws";
-
-        public const string PubSubUrl = "wss://pubsub-edge.twitch.tv";
-
-        // <id>/<format>/<theme_mode>/<scale>
-        public const string EmoteImageUrl = "https://static-cdn.jtvnw.net/emoticons/v2/{0}/{1}/{2}/{3}";
-        // <username>/<width>/<height>
-        public const string StreamPreviewImageUrl = "https://static-cdn.jtvnw.net/previews-ttv/live_user_{0}-{1}x{2}.jpg";
-    }
 }

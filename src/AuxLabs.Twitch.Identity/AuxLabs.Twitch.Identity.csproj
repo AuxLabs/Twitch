@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../AuxLabs.Twitch.targets" />
+
+  <PropertyGroup>
+    <Description>A basic implementation of Twitch's Identity REST APIs.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuxLabs.Twitch.Core\AuxLabs.Twitch.Core.csproj" />
+  </ItemGroup>
+
+</Project>

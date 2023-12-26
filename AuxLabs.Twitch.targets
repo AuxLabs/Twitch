@@ -1,9 +1,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
-		<VersionPrefix>0.1</VersionPrefix>
+		<VersionPrefix>1.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
-		<Authors>Auxesis</Authors>
-		<PackageTags>twitch,tv,dot,net,core,rest,api,lib,library,socket,websocket,chat,irc,tcp</PackageTags>
+		<Authors>Auxl</Authors>
+		<PackageTags>twitch;tv;helix;eventsub;chat;bot</PackageTags>
 		<PackageProjectUrl>https://github.com/AuxLabs/Twitch</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
@@ -11,7 +11,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+		<TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
 		<NoWarn>1701;1702;1591</NoWarn>
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
