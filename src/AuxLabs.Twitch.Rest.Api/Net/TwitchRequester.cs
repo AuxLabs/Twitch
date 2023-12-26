@@ -3,6 +3,8 @@
 using RestEase;
 using RestEase.Implementation;
 using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -27,6 +29,7 @@ namespace AuxLabs.Twitch.Rest.Api
 
         protected override async Task<HttpResponseMessage> SendRequestAsync(IRequestInfo request, bool readBody)
         {
+            var stopwatch = Stopwatch.StartNew();
             var bucketId = GenerateBucketId(request);
             while (true)
             {
@@ -35,6 +38,10 @@ namespace AuxLabs.Twitch.Rest.Api
                 bool allowAnyStatus = request.AllowAnyStatusCode;
                 ((RequestInfo)request).AllowAnyStatusCode = true;
                 var response = await base.SendRequestAsync(request, readBody).ConfigureAwait(false);
+                stopwatch.Stop();
+
+                var tempContent = await response.Content.ReadAsByteArrayAsync();
+                Console.WriteLine($"{request.Method} /{request.Path} {Math.Round(tempContent.Length * 0.001, 2)}kb {stopwatch.ElapsedMilliseconds}ms");
 
                 var info = new RateLimitInfo(response.Headers, request.BasePath, bucketId);
                 if (response.IsSuccessStatusCode)

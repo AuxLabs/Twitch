@@ -209,7 +209,7 @@ namespace AuxLabs.Twitch.Rest
             return response.Data.Select(x => RestGame.Create(this, x)).ToImmutableArray();
         }
 
-        public async Task<RestGame> GetGamesByNameAsync(string gameName, CancellationToken? cancelToken = null)
+        public async Task<RestGame> GetGameByNameAsync(string gameName, CancellationToken? cancelToken = null)
             => (await GetGamesByNameAsync(new[] { gameName }, cancelToken))?.SingleOrDefault();
         public Task<IReadOnlyCollection<RestGame>> GetGamesByNameAsync(params string[] gameNames)
             => GetGamesByNameAsync(gameNames, cancelToken: null);

@@ -2,6 +2,7 @@
 using AuxLabs.Twitch.Rest.Requests;
 using RestEase;
 using System;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
@@ -24,7 +25,17 @@ namespace AuxLabs.Twitch.Rest.Api
         public TwitchRestApiClient(string url, TwitchRestApiConfig config = null)
         {
             config ??= new TwitchRestApiConfig();
-            var httpClient = new HttpClient { BaseAddress = new Uri(url) };
+            var httpClient = new HttpClient(new HttpClientHandler
+            {
+#if NETSTANDARD2_1
+                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+#else
+                AutomaticDecompression = DecompressionMethods.Brotli | DecompressionMethods.GZip | DecompressionMethods.Deflate
+#endif
+            })
+            {
+                BaseAddress = new Uri(url) 
+            };
 
             _api = RestClient.For<ITwitchApi>(new TwitchRequester(httpClient, new DefaultRateLimiter(), TwitchJsonSerializerOptions.Default));
             _identity = new TwitchIdentityApiClient(config.ClientId, config.ClientSecret);
@@ -61,7 +72,7 @@ namespace AuxLabs.Twitch.Rest.Api
                 request.Validate(user.Scopes);
         }
 
-        #region Identity
+#region Identity
 
         /// <inheritdoc cref="TwitchIdentityApiClient.ValidateAsync()" />
         public async Task<AppIdentity> ValidateAsync(CancellationToken? cancelToken = null)
@@ -111,8 +122,8 @@ namespace AuxLabs.Twitch.Rest.Api
             }
         }
 
-        #endregion
-        #region Ads
+#endregion
+#region Ads
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Commercial>> PostCommercialAsync(PostCommercialBody args, CancellationToken? cancelToken = null)
@@ -121,8 +132,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PostCommercialAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Analytics
+#endregion
+#region Analytics
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<ExtensionAnalytic>> GetExtensionAnalyticsAsync(GetExtensionAnalyticsArgs args, CancellationToken? cancelToken = null)
@@ -143,8 +154,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetBitsLeaderboardAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Bits
+#endregion
+#region Bits
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Cheermote>> GetCheermotesAsync(GetCheermotesArgs args, CancellationToken? cancelToken = null)
@@ -159,8 +170,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetExtensionTransactionsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Channels
+#endregion
+#region Channels
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Channel>> GetChannelsAsync(GetChannelsArgs args, CancellationToken? cancelToken = null)
@@ -194,8 +205,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetFollowersAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Channel Points
+#endregion
+#region Channel Points
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Reward>> PostRewardsAsync(PostRewardArgs args, PostRewardBody body, CancellationToken? cancelToken = null)
@@ -236,8 +247,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PatchRewardRedemptionAsync(status, args, cancelToken);
         }
 
-        #endregion
-        #region Charity
+#endregion
+#region Charity
 
         /// <inheritdoc/>
         public Task<TwitchResponse<CharityCampaign>> GetCharityCampaignAsync(GetCharityCampaignArgs args, CancellationToken? cancelToken = null)
@@ -252,8 +263,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetCharityDonationsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Chat
+#endregion
+#region Chat
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<SimpleUser>> GetChattersAsync(GetChattersArgs args, CancellationToken? cancelToken = null)
@@ -324,8 +335,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PutUserChatColorAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Clips
+#endregion
+#region Clips
 
         /// <inheritdoc/>
         public Task<TwitchResponse<SimpleClip>> PostClipAsync(PostClipArgs args, CancellationToken? cancelToken = null)
@@ -340,8 +351,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetClipsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Entitlements
+#endregion
+#region Entitlements
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Entitlement>> GetDropsStatusAsync(GetDropStatusArgs args, CancellationToken? cancelToken = null)
@@ -356,8 +367,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PatchDropsStatusAsync(args, cancelToken);
         }
 
-        #endregion
-        #region EventSub
+#endregion
+#region EventSub
 
         /// <inheritdoc/>
         public Task<EventSubResponse> PostEventSubscriptionAsync<TCondition>(PostEventSubscriptionBody<TCondition> args, CancellationToken? cancelToken = null) 
@@ -383,8 +394,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetEventSubscriptionsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Games
+#endregion
+#region Games
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Game>> GetTopGamesAsync(GetTopGamesArgs args, CancellationToken? cancelToken = null)
@@ -399,8 +410,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetGamesAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Goals
+#endregion
+#region Goals
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Goal>> GetGoalsAsync(GetGoalsArgs args, CancellationToken? cancelToken = null)
@@ -409,8 +420,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetGoalsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region HypeTrain
+#endregion
+#region HypeTrain
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<HypeTrainInfo>> GetHypetrainEventsAsync(GetHypeTrainsArgs args, CancellationToken? cancelToken = null)
@@ -419,8 +430,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetHypetrainEventsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Moderation
+#endregion
+#region Moderation
 
         /// <inheritdoc/>
         public Task<TwitchResponse<MockMessage>> PostEnforcementStatusAsync(PostEnforcementStatusArgs args, PostEnforcementStatusBody body, CancellationToken? cancelToken = null)
@@ -546,8 +557,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetShieldModeAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Polls
+#endregion
+#region Polls
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Poll>> GetPollAsync(GetPredictionsArgs args, CancellationToken? cancelToken = null)
@@ -568,8 +579,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PatchPollAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Predictions
+#endregion
+#region Predictions
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Prediction>> GetPredictionAsync(GetPredictionsArgs args, CancellationToken? cancelToken = null)
@@ -590,8 +601,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PatchPredictionaAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Raids
+#endregion
+#region Raids
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Raid>> PostRaidAsync(PostRaidArgs args, CancellationToken? cancelToken = null)
@@ -606,8 +617,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.DeleteRaidAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Schedules
+#endregion
+#region Schedules
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Schedule>> GetScheduleAsync(GetScheduleArgs args, CancellationToken? cancelToken = null)
@@ -642,8 +653,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.DeleteSegmentAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Search
+#endregion
+#region Search
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Category>> GetCategoriesAsync(SearchCategoriesArgs args, CancellationToken? cancelToken = null)
@@ -658,8 +669,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetChannelsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Soundtrack
+#endregion
+#region Soundtrack
 
         /// <inheritdoc/>
         public Task<TwitchResponse<Soundtrack>> GetCurrentTrackAsync(GetCurrentTrackArgs args, CancellationToken? cancelToken = null)
@@ -680,8 +691,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetPlaylistsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Streams / Broadcasts
+#endregion
+#region Streams / Broadcasts
 
         /// <inheritdoc/>
         public Task<TwitchResponse<string>> GetBroadcastKeyAsync(GetBroadcastKeyArgs args, CancellationToken? cancelToken = null)
@@ -714,8 +725,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetBroadcastMarkersAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Subscriptions
+#endregion
+#region Subscriptions
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Subscription>> GetSubscriptionsAsync(GetSubscriptionsArgs args, CancellationToken? cancelToken = null)
@@ -730,8 +741,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetSubscriberAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Teams
+#endregion
+#region Teams
 
         /// <inheritdoc/>
         public Task<TwitchResponse<ChannelTeam>> GetTeamsAsync(GetChannelTeamsArgs args, CancellationToken? cancelToken = null)
@@ -746,8 +757,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.GetTeamAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Users
+#endregion
+#region Users
 
         /// <inheritdoc/>
         public Task<TwitchResponse<User>> GetUsersAsync(GetUsersArgs args, CancellationToken? cancelToken = null)
@@ -798,8 +809,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PutExtensionsAsync(args, cancelToken);
         }
 
-        #endregion
-        #region Videos
+#endregion
+#region Videos
 
         /// <inheritdoc/>
         public Task<TwitchMetaResponse<Video>> GetVideosAsync(GetVideosArgs args, CancellationToken? cancelToken = null)
@@ -814,8 +825,8 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.DeleteVideosAsync(args, cancelToken);
         }
         
-        #endregion
-        #region Whispers
+#endregion
+#region Whispers
 
         /// <inheritdoc/>
         public Task PostWhisperAsync(PostWhisperArgs args, PostWhisperBody body, CancellationToken? cancelToken = null)
@@ -825,6 +836,6 @@ namespace AuxLabs.Twitch.Rest.Api
             return _api.PostWhisperAsync(args, body, cancelToken);
         }
 
-        #endregion
+#endregion
     }
 }

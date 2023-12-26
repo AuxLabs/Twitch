@@ -1,16 +1,15 @@
-﻿using AuxLabs.Twitch;
-using AuxLabs.Twitch.Rest;
+﻿using AuxLabs.Twitch.Rest;
+using System.Diagnostics;
 
 var twitch = new TwitchRestClient();
 
 var token = Environment.GetEnvironmentVariable("TWITCH_TOKEN", EnvironmentVariableTarget.User);
 var identity = await twitch.ValidateAsync(token);
 
-var user = await twitch.GetUserByNameAsync("canadian_dragon");
-var videos = await twitch.GetVideosByUserAsync(user.Id, count: 150).FlattenAsync();
+var game = await twitch.GetGameByNameAsync("Fortnite");
 
-foreach (var video in videos)
-    Console.WriteLine($"{video.User}| {video.Title}\t{video.Description}");
+//foreach (var stream in streams)
+//    Console.WriteLine($"{stream.User} | {stream.Title}");
 
 await Task.Delay(1000);
 

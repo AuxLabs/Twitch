@@ -9,6 +9,7 @@ namespace AuxLabs.Twitch.Chat.Entities
         public ChatSimpleUser Author { get; internal set; }
         public DateTimeOffset Timestamp { get; internal set; }
         public string Content { get; internal set; }
+        public bool ContainsSpecialCharacters { get; private set; }
 
         internal ChatSimpleMessage(TwitchChatClient twitch, string id, ChatSimpleChannel channel, ChatSimpleUser author)
             : base(twitch, id)
@@ -23,12 +24,7 @@ namespace AuxLabs.Twitch.Chat.Entities
             entity.Update(model);
             return entity;
         }
-        internal static ChatSimpleMessage Create(TwitchChatClient twitch, IChatMessage model, ChatSimpleChannel channel, ChatSimpleUser author)
-        {
-            var entity = new ChatSimpleMessage(twitch, model.Id, channel, author);
-            entity.Update(model);
-            return entity;
-        }
+
         internal virtual void Update(ClearMsg model)
         {
             Timestamp = model.Tags.Timestamp;
